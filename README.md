@@ -236,6 +236,25 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent that you can 
 
 - [Simone](https://github.com/Helmi/claude-simone) - A broader project management workflow for Claude Code that encompasses not just a set of commands, but a system of documents, guidelines, and processes to facilitate project planning and execution.
 
+
+## Wrappers
+
+- [Claude Swarm](https://github.com/parruda/claude-swarm)  - Launch Claude Code session that is connected to a swarm of Claude Code Agents 	
+
+- [Claude Hub](https://github.com/claude-did-this/claude-hub) -  A webhook service that connects Claude Code to GitHub repositories, enabling AI-powered code assistance directly through pull requests and issues. This integration allows Claude to analyze repositories, answer technical questions, and help developers understand and improve their codebase through simple @mentions. 
+
+- [Claude Squad](https://github.com/smtg-ai/claude-squad) - Claude Squad is a terminal app that manages multiple Claude Code, Codex (and other local agents including Aider) in separate workspaces, allowing you to work on multiple tasks simultaneously.
+
+- [Claude Code Flow](https://github.com/ruvnet/claude-code-flow) -  This mode serves as a code-first orchestration layer, enabling Claude to write, edit, test, and optimize code autonomously across recursive agent cycles. 
+
+- [Claude Task Master](https://github.com/eyaltoledano/claude-task-master)  - A task management system for AI-driven development with Claude, designed to work seamlessly with Cursor AI.
+
+- [Claude Code Router](https://github.com/musistudio/claude-code-router) -  Use Claude Code as the foundation for coding infrastructure, allowing you to decide how to interact with the model while enjoying updates from Anthropic.
+
+- [Claude Composer](https://github.com/possibilities/claude-composer) - A tool that adds small enhancements to Claude Code
+
+- [Container Use](https://github.com/dagger/container-use) -  Development environments for coding agents. Enable multiple agents to work safely and independently with your preferred stack.
+
 ## Additional Resources
 
 - [CC Usage](https://github.com/ryoppippi/ccusage) - Handy CLI tool for managing and analyzing Claude Code usage, based on analyzing local Claude Code logs. Presents a nice dashboard regarding cost information, token consumption, etc. \[DISCLAIMER: Keep an eye on the Issues if you are relying on this tool for anything business-critical - the logs that track usage appear to suffer from some "double-counting" problems - this may have been resolved by the time you are reading this, but I wanted to raise awareness - it is not something only affecting this application\].
