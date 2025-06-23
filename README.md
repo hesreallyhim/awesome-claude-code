@@ -91,14 +91,14 @@ A pretty stunning list (88 at the time of this post!) of slash-commands ranging 
 [`CC Usage`](https://github.com/ryoppippi/ccusage) by [ryoppippi](https://github.com/ryoppippi)  
 Handy CLI tool for managing and analyzing Claude Code usage, based on analyzing local Claude Code logs. Presents a nice dashboard regarding cost information, token consumption, etc.  
 
+[`ccswarm`](https://github.com/nwiizo/ccswarm) by [nwiizo](https://github.com/nwiizo)  
+Experimental multi-agent orchestration system that coordinates specialized AI agents (Frontend, Backend, DevOps, QA) through a Master Claude coordinator, featuring autonomous learning, session persistence, and democratic decision-making via Sangha collective intelligence. Note: This is an experimental project under active development.
+
 [`Claude Code Flow`](https://github.com/ruvnet/claude-code-flow) by [ruvnet](https://github.com/ruvnet)  
 This mode serves as a code-first orchestration layer, enabling Claude to write, edit, test, and optimize code autonomously across recursive agent cycles.
 
 [`Claude Code Router`](https://github.com/musistudio/claude-code-router) by [musistudio](https://github.com/musistudio)  
 Use Claude Code as the foundation for coding infrastructure, allowing you to decide how to interact with the model while enjoying updates from Anthropic.
-
-[`ccswarm`](https://github.com/nwiizo/ccswarm) by [nwiizo](https://github.com/nwiizo)  
-Experimental multi-agent orchestration system that coordinates specialized AI agents (Frontend, Backend, DevOps, QA) through a Master Claude coordinator, featuring autonomous learning, session persistence, and democratic decision-making via Sangha collective intelligence. Note: This is an experimental project under active development.
 
 [`Claude Composer`](https://github.com/possibilities/claude-composer) by [Mike Bannister](https://github.com/possibilities)  
 A tool that adds small enhancements to Claude Code.
