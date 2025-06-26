@@ -115,6 +115,9 @@ A task management system for AI-driven development with Claude, designed to work
 [`Container Use`](https://github.com/dagger/container-use) by [dagger](https://github.com/dagger)  
 Development environments for coding agents. Enable multiple agents to work safely and independently with your preferred stack.
 
+[`fetch_commands.py`](https://github.com/hesreallyhim/awesome-claude-code/blob/main/fetch_commands.py)  
+Python script to automatically download all slash commands from this awesome list to your local `~/.claude/commands` directory. Run with `python3 fetch_commands.py` to install all available commands locally.
+
 ### IDE Integrations
 
 [`claude-code.el`](https://github.com/stevemolitor/claude-code.el) by [stevemolitor](https://github.com/stevemolitor)  
