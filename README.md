@@ -36,6 +36,55 @@ This is a curated list of slash-commands, `CLAUDE.md` files, CLI tools, and othe
 
 Claude Code is a cutting-edge CLI-based coding assistant and agent that you can access in your terminal or IDE. It is a rapidly evolving tool that offers a number of powerful capabilities, and allows for a lot of configuration, in a lot of different ways. Users are actively working out best practices and workflows. It is the hope that this repo will help the community share knowledge and understand how to get the most out of Claude Code.
 
+## 🚀 Quick Start: Install All Commands
+
+Want to quickly install all the slash commands from this awesome list? Use the provided Python script:
+
+### Prerequisites
+- Python 3.13 or higher
+- [uv](https://docs.astral.sh/uv/) (recommended) or `requests` library
+
+### Installation
+1. **Clone this repository:**
+   ```bash
+   git clone https://github.com/kotamat/awesome-claude-code.git
+   cd awesome-claude-code
+   ```
+
+2. **Run the installation script:**
+   ```bash
+   # With uv (automatically handles dependencies)
+   uv run fetch_commands.py
+   
+   # Or with standard Python
+   python3 fetch_commands.py
+   ```
+
+3. **That's it!** All slash commands will be downloaded to your `~/.claude/commands/` directory and ready to use.
+
+### Alternative: Run Without Cloning
+
+If you prefer not to clone the repository, you can download and run the script directly:
+
+```bash
+# Download the script
+curl -O https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/main/fetch_commands.py
+
+# Run with remote README fetching (downloads README.md via HTTP)
+uv run fetch_commands.py --remote
+```
+
+This method will:
+- Download the script to your current directory
+- Automatically fetch the README.md from GitHub via HTTP
+- Install all commands without requiring a local repository clone
+
+The script will automatically:
+- Parse the README.md file to find all slash command links
+- Download each command from GitHub/Gist
+- Save them to your local Claude Code commands directory
+- Show progress as it processes each command
+
 <br>
 
 ## Contents
@@ -114,9 +163,6 @@ A task management system for AI-driven development with Claude, designed to work
 
 [`Container Use`](https://github.com/dagger/container-use) by [dagger](https://github.com/dagger)  
 Development environments for coding agents. Enable multiple agents to work safely and independently with your preferred stack.
-
-[`fetch_commands.py`](https://github.com/hesreallyhim/awesome-claude-code/blob/main/fetch_commands.py)  
-Python script to automatically download all slash commands from this awesome list to your local `~/.claude/commands` directory. Run with `python3 fetch_commands.py` to install all available commands locally.
 
 ### IDE Integrations
 

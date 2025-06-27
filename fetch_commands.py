@@ -9,16 +9,27 @@
 """
 Script to fetch slash commands from awesome-claude-code README and set them up locally
 """
-import os
+import argparse
 import re
 import requests
 from pathlib import Path
 import time
 
-def extract_commands_from_readme():
-    """Extract all slash command entries from README.md"""
-    with open('README.md', 'r') as f:
-        content = f.read()
+def extract_commands_from_readme(readme_source=None):
+    """Extract all slash command entries from README.md or remote URL"""
+    if readme_source and readme_source.startswith('http'):
+        # Fetch from remote URL
+        print(f"Fetching README from: {readme_source}")
+        response = requests.get(readme_source, timeout=10)
+        if response.status_code == 200:
+            content = response.text
+        else:
+            raise Exception(f"Failed to fetch README: {response.status_code}")
+    else:
+        # Read from local file
+        readme_path = readme_source or 'README.md'
+        with open(readme_path, 'r') as f:
+            content = f.read()
     
     # Pattern to match slash command entries
     pattern = r'\[`(/[^`]+)`\]\(([^)]+)\)'
@@ -77,13 +88,34 @@ def save_command(command_name, content, output_dir):
     print(f"Saved: {command_name} -> {filepath}")
 
 def main():
+    parser = argparse.ArgumentParser(
+        description='Fetch and install slash commands from awesome-claude-code'
+    )
+    parser.add_argument(
+        '--remote', 
+        action='store_true',
+        help='Fetch README from GitHub instead of using local file'
+    )
+    parser.add_argument(
+        '--readme-url',
+        default='https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/main/README.md',
+        help='URL to fetch README from (only used with --remote)'
+    )
+    
+    args = parser.parse_args()
+    
     # Create output directory
     output_dir = Path.home() / '.claude' / 'commands'
     output_dir.mkdir(parents=True, exist_ok=True)
     
     # Extract commands from README
-    print("Extracting commands from README.md...")
-    commands = extract_commands_from_readme()
+    if args.remote:
+        print("Fetching README from remote repository...")
+        commands = extract_commands_from_readme(args.readme_url)
+    else:
+        print("Extracting commands from local README.md...")
+        commands = extract_commands_from_readme()
+    
     print(f"Found {len(commands)} slash commands")
     
     # Fetch and save each command
