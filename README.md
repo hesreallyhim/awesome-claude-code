@@ -94,6 +94,12 @@ Handy CLI tool for managing and analyzing Claude Code usage, based on analyzing 
 [`Claude Code Flow`](https://github.com/ruvnet/claude-code-flow) by [ruvnet](https://github.com/ruvnet)  
 This mode serves as a code-first orchestration layer, enabling Claude to write, edit, test, and optimize code autonomously across recursive agent cycles.
 
+[`Claude Code Router`](https://github.com/musistudio/claude-code-router) by [musistudio](https://github.com/musistudio)  
+Use Claude Code as the foundation for coding infrastructure, allowing you to decide how to interact with the model while enjoying updates from Anthropic.
+
+[`Claude Code Usage Monitor`](https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor) by [Maciek-roboblog](https://github.com/Maciek-roboblog)
+A real-time terminal-based tool for monitoring Claude Code token usage. It shows live token consumption, burn rate, and predictions for token depletion. Features include visual progress bars, session-aware analytics, and support for multiple subscription plans.
+
 [`Claude Composer`](https://github.com/possibilities/claude-composer) by [Mike Bannister](https://github.com/possibilities)  
 A tool that adds small enhancements to Claude Code.
 
