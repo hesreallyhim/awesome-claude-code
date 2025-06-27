@@ -30,7 +30,7 @@
 
 <!--lint disable double-link-->
 
-This is a curated list of slash-commands, `CLAUDE.md` files, CLI tools, and other resources and guides for enhancing your [Claude Code](https://docs.anthropic.com/en/docs/claude-code) workflow, productivity, and vibse.
+This is a curated list of slash-commands, `CLAUDE.md` files, CLI tools, and other resources and guides for enhancing your [Claude Code](https://docs.anthropic.com/en/docs/claude-code) workflow, productivity, and vibes.
 
 <!--lint enable double-link-->
 
@@ -89,7 +89,7 @@ A pretty stunning list (88 at the time of this post!) of slash-commands ranging 
 > **Tooling** denotes applications that are built on top of Claude Code and consist of more components than slash-commands and `CLAUDE.md` files
 
 [`CC Usage`](https://github.com/ryoppippi/ccusage) by [ryoppippi](https://github.com/ryoppippi)  
-Handy CLI tool for managing and analyzing Claude Code usage, based on analyzing local Claude Code logs. Presents a nice dashboard regarding cost information, token consumption, etc.  
+Handy CLI tool for managing and analyzing Claude Code usage, based on analyzing local Claude Code logs. Presents a nice dashboard regarding cost information, token consumption, etc.
 
 [`Claude Code Flow`](https://github.com/ruvnet/claude-code-flow) by [ruvnet](https://github.com/ruvnet)  
 This mode serves as a code-first orchestration layer, enabling Claude to write, edit, test, and optimize code autonomously across recursive agent cycles.
@@ -97,7 +97,8 @@ This mode serves as a code-first orchestration layer, enabling Claude to write, 
 [`Claude Code Router`](https://github.com/musistudio/claude-code-router) by [musistudio](https://github.com/musistudio)  
 Use Claude Code as the foundation for coding infrastructure, allowing you to decide how to interact with the model while enjoying updates from Anthropic.
 
-[`Claude Code Usage Monitor`](https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor) by [Maciek-roboblog](https://github.com/Maciek-roboblog) — A real-time terminal-based tool for monitoring Claude Code token usage. It shows live token consumption, burn rate, and predictions for token depletion. Features include visual progress bars, session-aware analytics, and support for multiple subscription plans.
+[`Claude Code Usage Monitor`](https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor) by [Maciek-roboblog](https://github.com/Maciek-roboblog)
+A real-time terminal-based tool for monitoring Claude Code token usage. It shows live token consumption, burn rate, and predictions for token depletion. Features include visual progress bars, session-aware analytics, and support for multiple subscription plans.
 
 [`Claude Composer`](https://github.com/possibilities/claude-composer) by [Mike Bannister](https://github.com/possibilities)  
 A tool that adds small enhancements to Claude Code.
@@ -116,6 +117,14 @@ A task management system for AI-driven development with Claude, designed to work
 
 [`Container Use`](https://github.com/dagger/container-use) by [dagger](https://github.com/dagger)  
 Development environments for coding agents. Enable multiple agents to work safely and independently with your preferred stack.
+
+### IDE Integrations
+
+[`claude-code.el`](https://github.com/stevemolitor/claude-code.el) by [stevemolitor](https://github.com/stevemolitor)  
+An Emacs interface for Claude Code CLI.
+
+[`claude-code.nvim`](https://github.com/greggh/claude-code.nvim) by [greggh](https://github.com/greggh)  
+A seamless integration between Claude Code AI assistant and Neovim.
 
 <br>
 
@@ -290,6 +299,9 @@ Gets the next task from TaskMaster and creates a branch for it, integrating with
 
 [`/project_hello_w_name`](https://github.com/disler/just-prompt/blob/main/.claude/commands/project_hello_w_name.md) by [disler](https://github.com/disler)  
 Creates customizable greeting components with name input, demonstrating argument passing, component reusability, state management, and user input handling.
+
+[`/todo`](https://github.com/chrisleyva/todo-slash-command/blob/main/todo.md) by [chrisleyva](https://github.com/chrisleyva)  
+A convenient command to quickly manage project todo items without leaving the Claude Code interface, featuring due dates, sorting, task prioritization, and comprehensive todo list management.
 
 [`/view_commands`](https://github.com/cloudartisan/cloudartisan.github.io/blob/main/.claude/commands/view_commands.md) by [cloudartisan](https://github.com/cloudartisan)  
 Provides an organized directory of available project commands categorized by function, detailing post management commands, site management tools, and content creation capabilities.

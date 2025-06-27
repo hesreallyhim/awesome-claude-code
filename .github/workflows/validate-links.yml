@@ -1,0 +1,143 @@
+name: Validate Links
+
+on:
+  schedule:
+    # Run daily at 2:00 AM UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch: # Allow manual triggering
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  validate-links:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: make install
+
+    - name: Run link validation
+      id: validate
+      run: |
+        make validate-github > validation_results.json
+        echo "::set-output name=has_broken_links::$(python -c "import json; data=json.load(open('validation_results.json')); print('true' if data['broken_links'] else 'false')")"
+        
+    - name: Upload validation results
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: validation-results
+        path: |
+          validation_results.json
+          .myob/scripts/resource-metadata.csv
+        
+    - name: Check for existing issue
+      if: steps.validate.outputs.has_broken_links == 'true'
+      id: check_issue
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const issues = await github.rest.issues.listForRepo({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            state: 'open',
+            labels: 'broken-links'
+          });
+          
+          const today = new Date().toISOString().split('T')[0];
+          const existingIssue = issues.data.find(issue => 
+            issue.title.includes('Broken Links Report') && 
+            issue.title.includes(today)
+          );
+          
+          return existingIssue ? existingIssue.number : null;
+
+    - name: Create or update issue
+      if: steps.validate.outputs.has_broken_links == 'true'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          const results = JSON.parse(fs.readFileSync('validation_results.json', 'utf8'));
+          const today = new Date().toISOString().split('T')[0];
+          
+          let issueBody = `## 🔗 Broken Links Report\n\n`;
+          issueBody += `This automated scan found **${results.broken_links.length}** broken link(s) in the repository.\n\n`;
+          issueBody += `### Broken Links:\n\n`;
+          
+          for (const link of results.broken_links) {
+            issueBody += `- **${link.name}**\n`;
+            issueBody += `  - URL: ${link.url}\n`;
+            issueBody += `  - Status: ${link.status || 'Error'}\n`;
+            issueBody += `  - Row: ${link.row_num}\n\n`;
+          }
+          
+          issueBody += `### Summary\n\n`;
+          issueBody += `- Total links checked: ${results.total_links}\n`;
+          issueBody += `- Active links: ${results.active_links}\n`;
+          issueBody += `- Broken links: ${results.broken_links.length}\n`;
+          issueBody += `- Scan completed: ${results.timestamp}\n\n`;
+          issueBody += `---\n`;
+          issueBody += `*This issue was automatically created by the [link validation workflow](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/workflows/validate-links.yml).*`;
+          
+          const existingIssueNumber = ${{ steps.check_issue.outputs.result }};
+          
+          if (existingIssueNumber) {
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: existingIssueNumber,
+              body: issueBody
+            });
+            console.log(`Updated existing issue #${existingIssueNumber}`);
+          } else {
+            const issue = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `🚨 Broken Links Report - ${today}`,
+              body: issueBody,
+              labels: ['broken-links', 'automated']
+            });
+            console.log(`Created new issue #${issue.data.number}`);
+          }
+
+    - name: Close old broken link issues
+      if: steps.validate.outputs.has_broken_links == 'false'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const issues = await github.rest.issues.listForRepo({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            state: 'open',
+            labels: 'broken-links'
+          });
+          
+          for (const issue of issues.data) {
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              state: 'closed',
+              state_reason: 'completed'
+            });
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              body: '✅ All links are now working! Closing this issue.'
+            });
+            
+            console.log(`Closed issue #${issue.number}`);
+          }
