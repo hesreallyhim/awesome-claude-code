@@ -1,3 +1,10 @@
+# /// script
+# requires-python = ">=3.13"
+# dependencies = [
+#     "requests",
+# ]
+# ///
+
 #!/usr/bin/env python3
 """
 Script to fetch slash commands from awesome-claude-code README and set them up locally
