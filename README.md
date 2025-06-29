@@ -120,6 +120,9 @@ Launch Claude Code session that is connected to a swarm of Claude Code Agents.
 [`Claude Task Master`](https://github.com/eyaltoledano/claude-task-master) by [eyaltoledano](https://github.com/eyaltoledano)  
 A task management system for AI-driven development with Claude, designed to work seamlessly with Cursor AI.
 
+[`Config by Snowfort`](https://github.com/snowfort-ai/config) by [snowfort-ai](https://github.com/snowfort-ai)  
+Lightweight web-based configuration manager for Claude Code, Codex, and Gemini CLI tools with real-time editing, MCP server management, and backup functionality.
+
 [`Container Use`](https://github.com/dagger/container-use) by [dagger](https://github.com/dagger)  
 Development environments for coding agents. Enable multiple agents to work safely and independently with your preferred stack.
 
