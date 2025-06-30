@@ -55,7 +55,7 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent that you can 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▫&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Language-Specific](#language-specific)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▫&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Domain-Specific](#domain-specific)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▫&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Project Scaffolding & MCP](#project-scaffolding--mcp)  
-▪&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Official Documentation](#official-documentation)
+▪&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Official Documentation](#official-documentation)  
 
 <br>
 
@@ -113,6 +113,9 @@ Claude Squad is a terminal app that manages multiple Claude Code, Codex (and oth
 
 [`Claude Swarm`](https://github.com/parruda/claude-swarm) by [parruda](https://github.com/parruda) ⚖️ MIT  
 Launch Claude Code session that is connected to a swarm of Claude Code Agents.
+
+[`SuperClaude`](https://github.com/gwendall/superclaude) by [gwendall](https://github.com/gwendall) ⚖️ MIT  
+Supercharge your GitHub workflow with Claude AI. Transform 'fix stuff' commits into professional messages, generate intelligent changelogs, create comprehensive docs, and get AI code reviews that actually understand your codebase.
 
 [`Claude Task Master`](https://github.com/eyaltoledano/claude-task-master) by [eyaltoledano](https://github.com/eyaltoledano) ⚖️ MIT  
 A task management system for AI-driven development with Claude, designed to work seamlessly with Cursor AI.
@@ -373,13 +376,14 @@ Offers clear step-by-step installation instructions with multiple configuration 
 
 <!--lint disable double-link-->
 
-[`Anthropic Documentation`](https://docs.anthropic.com/en/docs/claude-code) by [Anthropic](https://github.com/anthropics)  &copy;  
+[`Anthropic Documentation`](https://docs.anthropic.com/en/docs/claude-code) by [Anthropic](https://github.com/anthropics) ⚖️ MIT  
 The official documentation for Claude Code, including installation instructions, usage guidelines, API references, tutorials, examples, loads of information that I won't list individually. Like Claude Code, the documentation is frequently updated.
 
 [`Anthropic Quickstarts`](https://github.com/anthropics/anthropic-quickstarts/blob/main/CLAUDE.md) by [Anthropic](https://github.com/anthropics) ⚖️ MIT  
 Offers comprehensive development guides for three distinct AI-powered demo projects with standardized workflows, strict code style guidelines, and containerization instructions.
 
 <br>
+
 
 ## Contributing
 
