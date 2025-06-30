@@ -114,6 +114,9 @@ Claude Squad is a terminal app that manages multiple Claude Code, Codex (and oth
 [`Claude Swarm`](https://github.com/parruda/claude-swarm) by [parruda](https://github.com/parruda) ⚖️ MIT  
 Launch Claude Code session that is connected to a swarm of Claude Code Agents.
 
+[`SuperClaude`](https://github.com/gwendall/superclaude) by [gwendall](https://github.com/gwendall) ⚖️ MIT  
+Supercharge your GitHub workflow with Claude AI. Transform 'fix stuff' commits into professional messages, generate intelligent changelogs, create comprehensive docs, and get AI code reviews that actually understand your codebase.
+
 [`Claude Task Master`](https://github.com/eyaltoledano/claude-task-master) by [eyaltoledano](https://github.com/eyaltoledano) ⚖️ MIT  
 A task management system for AI-driven development with Claude, designed to work seamlessly with Cursor AI.
 
