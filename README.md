@@ -129,6 +129,9 @@ A task management system for AI-driven development with Claude, designed to work
 [`Claude Task Runner`](https://github.com/grahama1970/claude-task-runner) &nbsp; by &nbsp; [grahama1970](https://github.com/grahama1970)    
 A specialized tool to manage context isolation and focused task execution with Claude Code, solving the critical challenge of context length limitations and task focus when working with Claude on complex, multi-step projects.
 
+[`Claudify`](https://github.com/neno-is-ooo/claudify) &nbsp; by &nbsp; [neno-is-ooo](https://github.com/neno-is-ooo)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+SDK and CLI tool that lets you use Claude Code as an LLM provider with your subscription flat fee instead of pay-per-token API keys. Includes streaming support, WebSocket integration, and a quick project scaffolding CLI.
+
 [`Container Use`](https://github.com/dagger/container-use) &nbsp; by &nbsp; [dagger](https://github.com/dagger)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
 Development environments for coding agents. Enable multiple agents to work safely and independently with your preferred stack.
 
