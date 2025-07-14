@@ -132,6 +132,9 @@ A specialized tool to manage context isolation and focused task execution with C
 [`Container Use`](https://github.com/dagger/container-use) &nbsp; by &nbsp; [dagger](https://github.com/dagger)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
 Development environments for coding agents. Enable multiple agents to work safely and independently with your preferred stack.
 
+[`Para`](https://github.com/2mawi2/para) &nbsp; by &nbsp; [2mawi2](https://github.com/2mawi2)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A CLI tool that enables parallel execution of Claude Code sessions through Git worktrees. Each session runs in an isolated VS Code instance with direct IDE access.
+
 
 ### IDE Integrations
 
