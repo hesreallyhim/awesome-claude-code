@@ -137,6 +137,9 @@ Development environments for coding agents. Enable multiple agents to work safel
 
 ### IDE Integrations
 
+[`Claude Code Chat`](https://marketplace.visualstudio.com/items?itemName=AndrePimenta.claude-code-chat) &nbsp; by &nbsp; [andrepimenta](https://github.com/andrepimenta)  
+Beautiful Claude Code Chat Interface for VS Code.
+
 [`claude-code.el`](https://github.com/stevemolitor/claude-code.el) &nbsp; by &nbsp; [stevemolitor](https://github.com/stevemolitor)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
 An Emacs interface for Claude Code CLI.
 
