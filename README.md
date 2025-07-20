@@ -295,6 +295,9 @@ Generates comprehensive product requirement documents outlining detailed specifi
 [`/create-prp`](https://github.com/Wirasm/claudecode-utils/blob/main/.claude/commands/create-prp.md) &nbsp; by &nbsp; [Wirasm](https://github.com/Wirasm)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Creates product requirement plans by reading PRP methodology, following template structure, creating comprehensive requirements, and structuring product definitions for development.
 
+[`/implement`](https://github.com/ayoubben18/report-generator-agent/blob/development/.claude/commands/implement.md) &nbsp; by &nbsp; [ayoubben18](https://github.com/ayoubben18)    
+Guides users through a structured 7-step implementation workflow: understanding the problem, gathering context, clarifying desired outcomes, identifying constraints, creating a plan with todo list, executing step-by-step implementation, and verifying the solution.
+
 [`/project_hello_w_name`](https://github.com/disler/just-prompt/blob/main/.claude/commands/project_hello_w_name.md) &nbsp; by &nbsp; [disler](https://github.com/disler)    
 Creates customizable greeting components with name input, demonstrating argument passing, component reusability, state management, and user input handling.
 
