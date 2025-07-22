@@ -1,54 +1,334 @@
 # Contributing to Awesome Claude Code
 
-## Contribution Guidelines
+Welcome! We're excited that you want to contribute to Awesome Claude Code. This guide will walk you through our contribution process, which has been designed to be as simple as possible.
+
+## Code of Conduct
 
 Please note that this project is released with a [Contributor Code of Conduct](code-of-conduct.md). By participating in this project you agree to abide by its terms.
 
-Thank you for your interest in contributing to Awesome Claude Code! We welcome and appreciate all submissions. We especially look for submissions that: (a) are highly exemplary of effective best practices (and which you have actually used with teams or on your own); (b) are creative and innovative approaches to coding with Claude, or using the Claude Code interface in novel ways; (c) experiments with workflows that other Claude Code users might wish to try, and which provide good frameworks for things like documentation, testing, CI/CD, etc.
+## Quick Start: One-Command Submission
+
+The fastest way to contribute a new resource is:
+
+```bash
+make submit
+```
+
+This single command handles everything from resource entry to pull request creation. Skip to [Prerequisites](#prerequisites) to get started!
+
+## Prerequisites
+
+### Required Tools
+
+1. **Git** - Version control
+2. **Python 3.6+** - For running scripts
+3. **Make** - Build automation
+4. **GitHub CLI (`gh`)** - For PR creation
+
+### Setup Instructions
+
+1. **Install GitHub CLI**
+
+   ```bash
+   # macOS
+   brew install gh
+
+   # Ubuntu/Debian
+   sudo apt install gh
+
+   # Windows
+   scoop install gh
+   # or
+   choco install gh
+   ```
+
+2. **Authenticate with GitHub**
+
+   ```bash
+   gh auth login
+   ```
+
+   Follow the prompts to authenticate via browser or token.
+
+3. **Fork and Clone**
+
+   - Fork this repository on GitHub (click the Fork button)
+   - Clone your fork:
+     ```bash
+     git clone https://github.com/YOUR_USERNAME/awesome-claude-code.git
+     cd awesome-claude-code
+     ```
+   - Add upstream remote:
+     ```bash
+     git remote add upstream https://github.com/hesreallyhim/awesome-claude-code.git
+     ```
+
+4. **Configure Git** (if needed)
+   ```bash
+   git config --global user.name "Your Name"
+   git config --global user.email "your.email@example.com"
+   ```
 
 ## How to Contribute
 
-> **TIP!** There is a project slash-command available in this repository, which is invoked as `/project:add-new-resource`, which can be used like a "wizard" to help users create their submission. If you are a Claude Code user, you may run Claude Code and invoke this command to help guide you through the process of creating a PR. (NOTE: This would be using _your_ Claude Code account/tokens/etc.)
+### Method 1: One-Command Workflow (Recommended)
 
-1. **You do not need to be the owner/author** of the repository or file you're submitting. We are not hosting or distributing any of these files, but linking to them. If you've found (or discovered) a useful Claude Code resource, we'd love to include it! (That being said, do not link to a secondary distribution of a source whose license prohibits redistribution.) Self-contributions are of course welcome, as well.
+Our `make submit` command provides a complete submission workflow:
 
-2. **Follow the PR template** when making your submission. This helps keep contributions organized and consistent. There are two ways to open a PR:
+```bash
+make submit
+```
 
-   - Fork this respository, clone the fork locally, set this repository as the "upstream", and create a new branch for your changes. Then, submit a pull request with your changes.
-   - Use the GitHub web interface to edit the file directly, make a commit, and submit a pull request. (This will automatically create a fork if one doesn't exist.)
+**What happens:**
 
-3. **Make sure the source is "awesome"** - this means that it meets all or some of the following criteria:
+1. ✅ Checks all prerequisites (git, gh auth, fork setup)
+2. 📝 Guides you through resource information entry
+3. 🔍 Validates your inputs
+4. 📄 Updates THE_RESOURCES_TABLE.csv
+5. 🔄 Regenerates README.md
+6. 👀 Shows you the changes for review
+7. 🌿 Creates a feature branch
+8. 💾 Commits your changes
+9. 🔧 Handles pre-commit hooks automatically
+10. 🚀 Pushes to your fork
+11. 🎯 Creates a pull request
+12. 🌐 Opens the PR in your browser
 
-   - It provides genuine value to Claude Code users
-   - It demonstrates innovative or exemplary usage patterns
-   - It follows best practices for `CLAUDE.md` files or slash-commands
-   - It comes from a reputable or noteworthy source (high star count is a plus!)
-   - It works with the latest, or most current, version of Claude Code
+**Important:** Submit one resource per PR. Multiple resources require separate pull requests.
 
-4. **Verify your submission** by checking that links work and content is formatted correctly (meaning, formatted exactly like the existing entries). Slash-commands are ordered by their name, and `CLAUDE.md` files are ordered by their repository name. They are also categorized. We prefer permalinks to GitHub resources. These can be found by clicking on the file or directory in the repo and selecting the "Copy permalink" option from the dropdown.
+### Method 2: Interactive Script Only
 
-5. **Submit your PR** and we'll review it as soon as possible.
+If you prefer to handle git operations manually:
 
-## Contribution Guidelines
+```bash
+make add-resource
+# or
+python scripts/add_resource.py
+```
 
-- Additions to the list should be made by editing the `README.md` file.
-- Descriptions should be concise and informative, and convey what value the resource provides to Claude Code users, or potential use cases.
-- Include proper attribution and links to original sources (prefer permalinks if linking to Github files).
-- Follow the existing organization structure (add your entry to the appropriate category and in the appropriate alphabetical order).
-- **[Workflows](README.md#workflows)** consist of two or more tightly coupled Claude Code resources that work together, or they may be a higher-level description of a particular Claude Code integration or usage pattern.
-- **[Slash-Commands](README.md#slash-commands)** should be named according to the name of the slash-command.
-- **[CLAUDE.md files](README.md#claude-md-files)** should be named according to the repository they are associated with, although the hyperlink should point to the `CLAUDE.md` file itself.
-- Besides GitHub repositories, we welcome blog posts, articles, YouTube videos, Gists, and so on.
-- Please feel free to submit an Issue if: you find that one of the entries on the list is no longer available at the provided link; you believe that one of the entries is particularly unhelpful or contains misinformation, or is no longer relevant to the current version of Claude Code; any other suggestions to improve the repository.
+This will:
+
+- Guide you through resource entry
+- Update the CSV file
+- Generate README.md
+- Create `.pr_template_content.md` with PR description
+
+You'll need to manually:
+
+- Create a branch
+- Commit changes
+- Push to your fork
+- Create a PR (copying content from `.pr_template_content.md`)
+
+### Method 3: Claude Code Command
+
+If you're using Claude Code:
+
+```bash
+/add-new-resource
+```
+
+This provides a guided wizard experience within Claude Code.
+
+### Method 4: Manual Contribution
+
+For complete control over the process:
+
+1. Edit `THE_RESOURCES_TABLE.csv` directly
+2. Run `make validate` to check your changes
+3. Run `make generate` to update README.md
+4. Create a branch, commit, push, and PR manually
+
+## Understanding the Repository
+
+### CSV-Based Architecture
+
+All resources are stored in `THE_RESOURCES_TABLE.csv` with these fields:
+
+| Field          | Description                       | Required        |
+| -------------- | --------------------------------- | --------------- |
+| ID             | Auto-generated unique identifier  | Yes (automatic) |
+| Display Name   | Resource name shown in README     | Yes             |
+| Primary Link   | Main URL for the resource         | Yes             |
+| Secondary Link | Optional secondary URL            | No              |
+| Author Name    | Creator's name/username           | Yes             |
+| Author Link    | Link to author's profile          | Yes             |
+| Category       | Main category (see below)         | Yes             |
+| Sub-Category   | Optional sub-category             | No              |
+| Active         | TRUE for active resources         | Yes             |
+| Last Modified  | Auto-updated by validation        | No              |
+| Last Checked   | Auto-updated by validation        | No              |
+| License        | License type (MIT, etc.)          | Recommended     |
+| Description    | Brief description (1-2 sentences) | Yes             |
+
+### Categories
+
+- **Workflows & Knowledge Guides** - Comprehensive workflow systems
+- **Tooling** - CLI applications and executables
+  - IDE Integrations
+- **Hooks** - Claude Code hook configurations
+- **Slash-Commands** - Individual command files
+  - Version Control & Git
+  - Code Analysis & Testing
+  - Context Loading & Priming
+  - Documentation & Changelogs
+  - CI / Deployment
+  - Project & Task Management
+  - Miscellaneous
+- **CLAUDE.md Files** - Project configuration files
+  - Language-Specific
+  - Domain-Specific
+  - Project Scaffolding & MCP
+- **Official Documentation** - Anthropic resources
+
+## What Makes a Resource "Awesome"?
+
+Your submission should:
+
+- ✨ Provide genuine value to Claude Code users
+- 🚀 Demonstrate innovative or exemplary usage patterns
+- 📚 Follow best practices for the resource type
+- ⭐ Come from a reputable source (high star count helps!)
+- 🔄 Work with the latest version of Claude Code
+- 📝 Include clear documentation
+- ⚖️ Have an appropriate license (for code resources)
+
+We especially welcome:
+
+- Proven workflows used in production
+- Creative experiments pushing Claude Code's boundaries
+- Tools that enhance Claude Code functionality
+- Non-traditional applications (CI/CD, testing, documentation)
+
+## Troubleshooting
+
+### Common Issues and Solutions
+
+**"GitHub CLI is not authenticated"**
+
+```bash
+gh auth login
+```
+
+**"No fork found"**
+
+- Ensure you've forked the repository on GitHub
+- Check your remotes: `git remote -v`
+
+**"Branch already exists"**
+
+```bash
+git branch -D old-branch-name
+# or let the script create a unique branch name
+```
+
+**Pre-commit hook failures**
+
+- The `make submit` workflow handles these automatically
+- For manual commits, stage the auto-fixed files and retry
+
+**"Rate limit exceeded"**
+
+- Wait 1 hour for reset
+- Or authenticate with `gh auth login` for higher limits
+
+### Debug Mode
+
+For verbose output:
+
+```bash
+make submit ARGS="--debug"
+```
+
+## Advanced Usage
+
+### Environment Variables
+
+Optional configuration:
+
+```bash
+# Change remote names (defaults shown)
+export AWESOME_CC_FORK_REMOTE=origin
+export AWESOME_CC_UPSTREAM_REMOTE=upstream
+
+# Disable automatic PR browser opening
+export AWESOME_CC_AUTO_OPEN_PR=false
+```
+
+### Submitting Multiple Resources
+
+While we require one resource per PR, you can streamline multiple submissions:
+
+```bash
+# Submit first resource
+make submit
+
+# After PR is created, start fresh for next resource
+git checkout main
+git pull upstream main
+make submit
+```
+
+### Testing Your Changes
+
+Before submitting:
+
+```bash
+# Validate your CSV entry (requires "GITHUB_TOKEN env variable - can skip)
+make validate
+
+# Test with limited link checking
+make validate MAX_LINKS=10
+
+# Check if README generates correctly
+make generate
+```
 
 ## Badges
 
-If a file comes from a particular GitHub repository, that repository may include a badge to show that it has been featured in the Awesome Claude Code list. The same applies to blogs, websites, etc. This is optional, but encouraged.
+Once your resource is added, you can add a badge to your README:
 
-Here are the badge assets:
 [![Mentioned in Awesome Claude Code](https://awesome.re/mentioned-badge.svg)](https://github.com/hesreallyhim/awesome-claude-code)
+
+```markdown
+[![Mentioned in Awesome Claude Code](https://awesome.re/mentioned-badge.svg)](https://github.com/hesreallyhim/awesome-claude-code)
+```
+
+Or the flat version:
+
 [![Mentioned in Awesome Claude Code](https://awesome.re/mentioned-badge-flat.svg)](https://github.com/hesreallyhim/awesome-claude-code)
 
-We aim to maintain a high-quality collection that helps the Claude Code community. Even small contributions can make a big difference!
+```markdown
+[![Mentioned in Awesome Claude Code](https://awesome.re/mentioned-badge-flat.svg)](https://github.com/hesreallyhim/awesome-claude-code)
+```
 
-Thank you for helping make Awesome Claude Code even more awesome!
+## GitHub Repository Notifications
+
+When your GitHub-hosted resource is added, our automated system will create a friendly notification issue on your repository informing you of the inclusion and providing badge options.
+
+## Getting Help
+
+- 📖 Check existing issues for similar questions
+- 💬 Open a new issue for persistent problems
+- 🐛 Include error messages and debug output
+- 🔒 Report security issues immediately
+
+## Quick Reference
+
+```bash
+# Complete workflow (recommended)
+make submit
+
+# Just add resource (no git operations)
+make add-resource
+
+# Validate CSV integrity
+make validate
+
+# Generate README from CSV
+make generate
+```
+
+---
+
+Thank you for helping make Awesome Claude Code even more awesome! 🚀

@@ -1,0 +1,33 @@
+# Resource Overrides Configuration
+# This file allows manual overrides of specific resource fields
+# Use resource IDs to target specific resources
+# Set field_locked: true to prevent validation scripts from changing the value
+
+# Example override structure:
+# overrides:
+#   cmd-a3f2b9c4:  # Resource ID
+#     license: "LicenseRef-MIT-Commons-Clause"  # Override value
+#     license_locked: true  # Lock this field from validation updates
+#     notes: "Has Commons Clause restriction"  # Optional notes
+
+overrides:
+  # Example: Override license for Claude Task Manager (inactive resource)
+  wf-d0cfdd2b: # Claude Task Manager
+    license: "LicenseRef-MIT-Commons-Clause" # Override value
+    license_locked: true # Lock this field from validation updates
+    notes: "Has Commons Clause restriction" # Optional notes
+
+# Supported override fields:
+# - license: Override the detected license
+# - license_locked: Prevent license validation from updating
+# - active: Override the active status
+# - active_locked: Lock the active status
+# - description: Override the description
+# - description_locked: Lock the description
+# - last_checked: Override last checked timestamp
+# - last_checked_locked: Lock the timestamp field
+#
+# Notes:
+# - Use resource IDs (e.g., cmd-a3f2b9c4) not display names
+# - Locked fields will be skipped during validation
+# - Overrides take precedence over CSV data during generation

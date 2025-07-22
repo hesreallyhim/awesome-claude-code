@@ -1,65 +1,93 @@
-# Awesome Claude Code Contribution
+# Pull Request
 
-Thank you for taking time to submit to `awesome-claude-code`! We appreciate any submission, whether you are the author or not. In the current state, @hesreallyhim is the sole maintainer, and if there are any issues with your submission, these can be discussed in the PR comments.
-
-If you would like some help crafting your submission, and you are a Claude Code user, you may run Claude Code and invoke this project's command: `/add-new-resource`, which will help guide you through the process of creating a PR. (NOTE: This would be using _your_ Claude Code account/tokens/etc.)
-
-## PR Title
-
-### Examples
-
-If you are submitting a new resource, please use the following format:
-
-- RESOURCE: Add slash-command: `/magic-spell`
-- RESOURCE: Add `CLAUDE.md` file for TypeScript projects
-- RESOURCE: Add workflow for time tracking system
-
-If you are submitting a fix to the repo itself, please use the following format:
-
-- REPO: Fix broken link
+<!-- IMPORTANT: Submit only ONE resource per pull request. If you have multiple resources, please create separate PRs. -->
 
 ## Type of Contribution
 
-<!-- Mark the type of contribution with an [x] -->
+<!-- Select ONE by marking with an [x] -->
 
-- [ ] Slash-command example
-- [ ] `CLAUDE.md` file example
-- [ ] Workflow example
-- [ ] `awesome-claude-code` repository improvement/fix
-- [ ] Other/hard-to-classify.
+- [ ] **New Resource** - Adding a new resource to the list (ONE per PR)
+- [ ] **Update Resource** - Updating existing resource information (e.g., broken link, license info)
+- [ ] **Repository Improvement** - Improving the repository itself (not adding resources)
 
-## Source Information
+---
 
-- **Repository/Source Name (name of YouTube video, name of blog post, etc.)**: <!-- e.g., "anthropic/claude" -->
-- **URL (Link to file on GitHub, Gist, Reddit post, or blog post)**: <!-- Link to the original source -->
-- **Category (Optional)**: <!-- e.g., AI/ML, Web Development, CLI Tools, or suggest a new category -->
-- **License (Optional)**:
+## For New Resources
 
-**NOTE**: If you are submitting something from reddit, or a blot post, or your own website, please indicate whether you grant permission for the content to be shared or re-distributed in this repository. We try to respect licensing rules, so if your license does not permit redistribution, we will not redistribute it (this does not prohibit linking to the original source). However, if permitted, we would also prefer the ability to share the content of the resource itself, and to notify others about their rights with respect to the resource. (To reiterate, this is about sharing the _content_ itself, there is no prohibition against linking to publicly available sources.)
+<!-- If you used the script, paste the generated content from .pr_template_content.md here -->
+<!-- If you're manually adding a resource, complete all fields below -->
 
-## Summary
+### Resource Information
 
-<!--
-- Provide a brief summary of the code or example (1-2 sentences), and what makes it "awesome", or worthy of inclusion.
--->
+- **Display Name**: <!-- e.g., "Claude Task Manager" or "/commit" -->
+- **Category**: <!-- Select from: Workflows & Knowledge Guides, Tooling, Hooks, Slash-Commands, CLAUDE.md Files, Official Documentation -->
+- **Sub-Category** (if applicable): <!-- e.g., "Version Control & Git", "Code Analysis & Testing" -->
+- **Primary Link**: <!-- The main URL for the resource -->
+- **Author Name**: <!-- Creator/maintainer name -->
+- **Author Link**: <!-- Link to author's profile -->
+- **License** (if known): <!-- e.g., MIT, Apache-2.0, GPL-3.0 -->
 
-## Verification Checklist
+### Description
 
-<!-- Mark completed items with an [x] -->
+<!-- 1-2 sentences describing what the resource does and why it's valuable to Claude Code users -->
 
-#### Adding a new resource - all checkboxes must be checked
+### Automated Notification
 
-- [ ] Placed in the appropriate directory structure
-- [ ] Follows repository formatting conventions (just refer to the other entries).
-- [ ] Source URL is valid and accessible
-- [ ] Added in the appropriate alphabetical order
-- [ ] Updated `README.md` with new entry
-- [ ] Verified no duplicate entries exist
+<!-- Check if applicable -->
+- [ ] This is a GitHub-hosted resource and will receive an automatic notification issue when merged
 
-#### Proposing a change to the Awesome Claude Code repository itself
+### Checklist for New Resources
 
-- [ ] Is a PR to improve some aspect of the repository itself, and is not a contribution of a resource to the list. (If this is true, all checkboxes above may be disregarded.)
+<!-- All items must be checked -->
 
-## Additional Context
+- [ ] Used `make add-resource` or `python scripts/add_resource.py` to add the resource
+- [ ] OR manually added entry to `THE_RESOURCES_TABLE.csv`
+- [ ] Ran `make generate` to update README.md
+- [ ] Verified link works and points to correct resource
+- [ ] Description is concise (1-2 sentences max)
 
-<!-- Any additional information that would help reviewers understand this contribution -->
+---
+
+## For Resource Updates
+
+### What Changed?
+
+<!-- Describe what you're updating -->
+
+- **Resource Name**:
+- **Change Type**: <!-- e.g., Fix broken link, Update license, Update description -->
+- **Details**:
+
+### Checklist for Updates
+
+- [ ] Updated entry in `THE_RESOURCES_TABLE.csv`
+- [ ] Ran `make generate` to update README.md
+- [ ] Verified new information is correct
+
+---
+
+## For Repository Improvements
+
+### Description of Changes
+
+<!-- Describe what you're improving and why -->
+
+### Checklist for Repository Changes
+
+- [ ] Changes follow existing code style
+- [ ] Updated relevant documentation
+- [ ] Tested changes locally
+- [ ] Pre-commit hooks pass
+
+---
+
+## Additional Notes
+
+<!-- Any additional context that would help reviewers -->
+<!-- Remember: Only ONE resource per PR. Multiple resources require separate pull requests. -->
+
+## Questions?
+
+- See [CONTRIBUTING.md](../CONTRIBUTING.md) for detailed contribution guidelines
+- Use `make add-resource` for guided resource submission
+- The CSV approach ensures consistent formatting - never edit README.md directly!

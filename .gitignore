@@ -1,20 +1,17 @@
-**/.claude/settings.local.json
-
-.myob/*
-.myob/scripts/*
-!.myob/
-!.myob/scripts/
-!.myob/scripts/validate_links.py
-!.myob/scripts/resource-metadata.csv
+.myob/
 
 .mypy_cache/
+.ruff_cache/
+__pycache__/
+.pytest_cache/
 
-# Basically, this is in order to ignore everything in `.claude/` directory EXCEPT the `/add-new-resource` command. 
-.claude/*
-.claude/commands/*
-!CLAUDE.md
-!.claude/
-!.claude/commands/
-!.claude/commands/add-new-resource.md
-
+.claude/
+CLAUDE.md
+!resources/**/CLAUDE.md
 .DS_Store
+
+venv/
+.env
+.pr_template_content.md
+
+*.egg-info/

@@ -1,0 +1,43 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: check-json
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.8.5
+    hooks:
+      # Run the linter
+      - id: ruff
+        types_or: [python, pyi, jupyter]
+        args: [--fix]
+      # Run the formatter
+      - id: ruff-format
+        types_or: [python, pyi, jupyter]
+
+  - repo: local
+    hooks:
+      - id: make-test
+        name: run make test
+        entry: make test
+        language: system
+        types: [python]
+        pass_filenames: false
+        always_run: true
+
+      - id: check-readme-generated
+        name: check README.md is generated from CSV
+        entry: bash -c 'make generate && git diff --exit-code README.md'
+        language: system
+        files: 'resource-metadata\.csv|README\.md'
+        pass_filenames: false
+        description: Ensures README.md is generated from CSV data
