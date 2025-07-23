@@ -119,6 +119,9 @@ A tool that adds small enhancements to Claude Code.
 [`Claude Hub`](https://github.com/claude-did-this/claude-hub) &nbsp; by &nbsp; [Claude Did This](https://github.com/claude-did-this)    
 A webhook service that connects Claude Code to GitHub repositories, enabling AI-powered code assistance directly through pull requests and issues. This integration allows Claude to analyze repositories, answer technical questions, and help developers understand and improve their codebase through simple @mentions.
 
+[`Claude Manager`](https://github.com/ocean1/claude-manager/) &nbsp; by &nbsp; [ocean1](https://github.com/ocean1)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A Python terminal UI application for managing Claude Code projects and configurations stored in `.claude.json`.
+
 [`Claude Squad`](https://github.com/smtg-ai/claude-squad) &nbsp; by &nbsp; [smtg-ai](https://github.com/smtg-ai)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;AGPL-3.0  
 Claude Squad is a terminal app that manages multiple Claude Code, Codex (and other local agents including Aider) in separate workspaces, allowing you to work on multiple tasks simultaneously.
 
