@@ -48,6 +48,7 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent that you can 
 ▪&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Tooling](#tooling-)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▫&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[IDE Integrations](#ide-integrations)  
 ▪&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Hooks](#hooks-)  
+▪&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Agents](#agents-)  
 ▪&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Slash-Commands](#slash-commands-)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▫&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Version Control & Git](#version-control--git)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▫&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Code Analysis & Testing](#code-analysis--testing)  
@@ -173,6 +174,12 @@ Nice set of hooks for enforcing code quality (linting, testing, notifications), 
 A hooks-driven system that monitors file operations in real-time and blocks changes that violate TDD principles.
 
 <br>
+
+## Agents 
+
+> **Agents** are a new feature introduced in Claude  that allows users to have a fleet of specialized agents at their fingertips. Agents are defined in markdown files in ".claude/agents".
+
+You can find some pre built agents in the `agents` folder of this repository.
 
 ## Slash-Commands 🔪
 
