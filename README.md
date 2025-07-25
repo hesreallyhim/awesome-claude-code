@@ -152,6 +152,9 @@ A seamless integration between Claude Code AI assistant and Neovim.
 [`crystal`](https://github.com/stravu/crystal) &nbsp; by &nbsp; [stravu](https://github.com/stravu)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A full-fledged desktop application for orchestrating, monitoring, and interacting with Claude Code agents.
 
+[`Kiro for Claude Code`](https://github.com/notdp/kiro-for-cc) &nbsp; by &nbsp; [notdp](https://github.com/notdp)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Brings the Kiro Spec methodology to Claude Code through VSCode, enforcing a disciplined Requirements→Design→Tasks workflow with review gates and visual project management.
+
 <br>
 
 ## Hooks 🪝
