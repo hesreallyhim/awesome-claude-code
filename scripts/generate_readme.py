@@ -58,7 +58,6 @@ def format_resource_entry(row):
     """Format a single resource entry."""
     display_name = row["Display Name"]
     primary_link = row["Primary Link"]
-    secondary_link = row.get("Secondary Link", "").strip()
     author_name = row.get("Author Name", "").strip()
     author_link = row.get("Author Link", "").strip()
     description = row.get("Description", "").strip()
@@ -66,10 +65,6 @@ def format_resource_entry(row):
 
     # Build the entry
     entry_parts = [f"[`{display_name}`]({primary_link})"]
-
-    # Add secondary link if present
-    if secondary_link:
-        entry_parts.append(f" ([link]({secondary_link}))")
 
     # Add author information
     if author_name:

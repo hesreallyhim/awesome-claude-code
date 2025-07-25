@@ -38,9 +38,7 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent that you can 
 
 ### Announcements
 
-- 2025-07-15: Finalizing the fully optimized, fully managed submission workflow and CI system, apologies for any delays in submission reviews.
-- 2025-07-10: Pushed the updated CI/CD and submission code - all submissions are managed through `THE_RESOURCES_TABLE.csv`, which is used to generate the `README`. Also, planning to add an "Experimental" section for tools/applications that are very new and exciting but which I have not had the chance to personally explore. ALSO: Send in your HOOKS! This is a very powerful addition to Claude Code and we want to see what everyone is experimenting with!
-- 2025-07-04: Added new section for Claude Code _hooks_!
+- 2025-07-18 - I ended up over-engineering the submission workflow, but I think it's done, I just have to smoke test it and update the docs. For anyone with existing PR's, don't worry about updating them (for formatting purposes, that is), I can take care of it myself. For anoyne with new PR's, you _should_ be able to run `make submit` from the root directory of your fork for an interactive experience (as I said, needs smoke testing) - alternatively, add your entry to the bottom of [`THE_RESOURCES_TABLE`](../THE_RESOURCES_TABLE.csv) and run `make generate` to automatically update the `README.md` based on the information you filled in. If it's not working, just open a PR with the relevant information and I'll deal with it, I created this mess anyway 😃.
 
 <br>
 
@@ -109,8 +107,14 @@ A pretty stunning list (88 at the time of this post!) of slash-commands ranging 
 [`CC Usage`](https://github.com/ryoppippi/ccusage) &nbsp; by &nbsp; [ryoppippi](https://github.com/ryoppippi)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Handy CLI tool for managing and analyzing Claude Code usage, based on analyzing local Claude Code logs. Presents a nice dashboard regarding cost information, token consumption, etc.
 
+[`ccexp`](https://github.com/nyatinte/ccexp) &nbsp; by &nbsp; [nyatinte](https://github.com/nyatinte)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Interactive CLI tool for discovering and managing Claude Code configuration files and slash commands with a beautiful terminal UI.
+
 [`Claude Code Flow`](https://github.com/ruvnet/claude-code-flow) &nbsp; by &nbsp; [ruvnet](https://github.com/ruvnet)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 This mode serves as a code-first orchestration layer, enabling Claude to write, edit, test, and optimize code autonomously across recursive agent cycles.
+
+[`Claude Code Usage Monitor`](https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor) &nbsp; by &nbsp; [Maciek-roboblog](https://github.com/Maciek-roboblog)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A real-time terminal-based tool for monitoring Claude Code token usage. It shows live token consumption, burn rate, and predictions for token depletion. Features include visual progress bars, session-aware analytics, and support for multiple subscription plans.
 
 [`Claude Composer`](https://github.com/possibilities/claude-composer) &nbsp; by &nbsp; [Mike Bannister](https://github.com/possibilities)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Unlicense  
 A tool that adds small enhancements to Claude Code.
@@ -305,9 +309,6 @@ A convenient command to quickly manage project todo items without leaving the Cl
 
 
 ### Miscellaneous
-
-[`/act`](https://github.com/sotayamashita/dotfiles/blob/main/.claude/commands/act.md) &nbsp; by &nbsp; [sotayamashita](https://github.com/sotayamashita)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Generates React components with proper accessibility, creating ARIA-compliant components with keyboard navigation that follow React best practices and include comprehensive accessibility testing.
 
 [`/five`](https://github.com/TuckerTucker/tkr-portfolio/blob/main/.claude/commands/five.md) &nbsp; by &nbsp; [TuckerTucker](https://github.com/TuckerTucker)    
 Applies the "five whys" methodology to perform root cause analysis, identify underlying issues, and create solution approaches for complex problems.
