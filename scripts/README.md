@@ -18,6 +18,7 @@ The scripts implement a CSV-first workflow where `THE_RESOURCES_TABLE.csv` serve
 - GitHub repository metadata fetching
 - Duplicate detection
 - CSV backup before modification
+- Automatic pre-push hook installation
 
 ### 2. `generate_readme.py`
 **Purpose**: Generates README.md from CSV data using templates  
@@ -35,6 +36,7 @@ The scripts implement a CSV-first workflow where `THE_RESOURCES_TABLE.csv` serve
 **Features**:
 - Complete automation from add to PR
 - Pre-flight checks (git, gh CLI, authentication)
+- Automatic pre-push hook installation
 - Interactive review points
 - Smart branch naming
 - Pre-commit hook handling
@@ -79,11 +81,22 @@ The scripts implement a CSV-first workflow where `THE_RESOURCES_TABLE.csv` serve
 **Purpose**: Validates individual resources  
 **Usage**: `make validate-single URL=...`  
 **Interface**:
-- `validate_resource()`: Validates URL and fetches metadata
+- `validate_single_resource()`: Validates URL and fetches metadata using kwargs
 - Used by `add_resource.py` for real-time validation
 - Supports both regular URLs and GitHub repositories
 
-### 8. `sort_resources.py`
+### 8. `validate_new_resource.py`
+**Purpose**: Pre-push hook validation for new resources  
+**Usage**: `make validate_new_resource` (or automatically via git pre-push hook)  
+**Features**:
+- Compares current branch against upstream/main
+- Ensures exactly one resource added per PR
+- Validates the new resource entry
+- Updates CSV with validation results
+- Provides clear error messages for common issues
+- Installed automatically by submission workflows
+
+### 9. `sort_resources.py`
 **Purpose**: Sorts CSV entries by category hierarchy  
 **Usage**: `make sort` (called automatically by `make generate`)  
 **Features**:
@@ -93,7 +106,7 @@ The scripts implement a CSV-first workflow where `THE_RESOURCES_TABLE.csv` serve
 
 ## Utility Scripts
 
-### 9. `generate_resource_id.py`
+### 10. `generate_resource_id.py`
 **Purpose**: Interactive resource ID generator  
 **Usage**: `python scripts/generate_resource_id.py`  
 **Features**:
@@ -101,7 +114,7 @@ The scripts implement a CSV-first workflow where `THE_RESOURCES_TABLE.csv` serve
 - Interactive prompts for resource type and name
 - Follows project ID conventions
 
-### 10. `quick_id.py`
+### 11. `quick_id.py`
 **Purpose**: Command-line ID generation  
 **Usage**: `python scripts/quick_id.py <resource_type> <name>`  
 **Features**:
@@ -109,19 +122,21 @@ The scripts implement a CSV-first workflow where `THE_RESOURCES_TABLE.csv` serve
 - No interactive prompts
 - Useful for scripting
 
-### 11. `badge_issue_notification.py`
-**Purpose**: Creates GitHub issues to notify repositories when featured  
+### 12. `badge_issue_notification.py`
+**Purpose**: Creates GitHub issues to notify repositories when featured and updates Date Added for new resources  
 **Usage**: `python scripts/badge_issue_notification.py`  
 **Features**:
 - Tracks processed repos in `.processed_repos.json`
+- Updates "Date Added" field in CSV for new resources
 - Creates friendly notification issues
 - Includes badge markdown for repositories
 - Supports dry-run mode
+- Automatically triggered by GitHub Actions when new resources are merged
 - See `BADGE_AUTOMATION_SETUP.md` for configuration
 
 ## Legacy/Archived Scripts
 
-### 12. `process_resources_to_csv.py`
+### 13. `process_resources_to_csv.py`
 **Status**: LEGACY - From previous workflow where README was source of truth  
 **Purpose**: Extracts resources from README.md to create CSV  
 **Note**: Current workflow is CSV → README, not README → CSV
@@ -132,14 +147,14 @@ The scripts are integrated through the Makefile with these primary workflows:
 
 ### Adding a Resource
 ```bash
-make add_resource      # Interactive addition
+make add_resource      # Interactive addition (installs pre-push hook)
 make generate         # Regenerate README
 make validate         # Validate all links
 ```
 
 ### One-Command Submission
 ```bash
-make submit           # Complete flow from add to PR
+make submit           # Complete flow from add to PR (installs pre-push hook)
 ```
 
 ### Maintenance Tasks
@@ -147,6 +162,8 @@ make submit           # Complete flow from add to PR
 make sort            # Sort CSV entries
 make validate        # Check all links
 make download-resources  # Archive resources
+make validate_new_resource  # Manually run pre-push validation
+make install-hooks   # Manually install git hooks
 ```
 
 ## Configuration
@@ -155,6 +172,7 @@ Scripts respect these configuration files:
 - `.templates/resource-overrides.yaml`: Manual overrides for resources
 - `.processed_repos.json`: Tracks notified repositories
 - `.env`: Environment variables (not tracked in git)
+- `hooks/pre-push`: Git pre-push hook for validation
 
 ## Environment Variables
 
@@ -171,6 +189,8 @@ Scripts respect these configuration files:
 4. Consistent use of pathlib for cross-platform compatibility
 5. Type hints and docstrings throughout
 6. Scripts can be run standalone or through Make targets
+7. Pre-push validation enforces one resource per PR policy
+8. Automatic hook installation in submission workflows
 
 ## Future Considerations
 

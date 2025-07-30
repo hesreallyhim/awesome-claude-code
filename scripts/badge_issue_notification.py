@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 Badge Issue Notification System
-Creates friendly notification issues when NEW repositories are featured in Awesome Claude Code
+Creates friendly notification issues when NEW repositories are featured in
+Awesome Claude Code
 """
 
 import csv
@@ -9,6 +10,7 @@ import json
 import os
 import re
 import sys
+from datetime import datetime
 from typing import Any
 
 from github import Github, GithubException
@@ -52,20 +54,59 @@ class BadgeNotification:
 
         with open(csv_path, encoding="utf-8") as f:
             reader = csv.DictReader(f)
-            for row in reader:
+            for idx, row in enumerate(reader):
                 # Check if it's an active GitHub entry
                 if row.get("Active", "").upper() == "TRUE" and "github.com" in row.get("Primary Link", ""):
                     # Parse repository information
-                    owner, repo_name = self._parse_github_url(row.get("Primary Link", ""))
+                    primary_link = row.get("Primary Link", "")
+                    owner, repo_name = self._parse_github_url(primary_link)
                     if owner and repo_name:
                         repo_full_name = f"{owner}/{repo_name}"
                         github_repos[repo_full_name] = {
                             "url": row.get("Primary Link", ""),
                             "name": row.get("Display Name", ""),
                             "description": row.get("Description", ""),
+                            # Store the row index for updating Date Added
+                            "row_index": idx,
                         }
 
         return github_repos
+
+    def update_date_added_for_new_repos(self, csv_path: str, new_repos: dict):
+        """Update the Date Added field for new repositories in the CSV"""
+        # Read all rows from CSV
+        with open(csv_path, encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            headers = reader.fieldnames
+            rows = list(reader)
+
+        if headers is None:
+            raise ValueError("CSV file has no headers. Please check the file format.")
+
+        # Get today's date
+        today = datetime.now().strftime("%Y-%m-%d")
+
+        # Track updates
+        updates_made = 0
+
+        # Update Date Added for new repos
+        for repo_full_name, info in new_repos.items():
+            row_idx = info.get("row_index")
+            if row_idx is not None and row_idx < len(rows) and not rows[row_idx].get("Date Added", "").strip():
+                rows[row_idx]["Date Added"] = today
+                updates_made += 1
+                name = info.get("name", repo_full_name)
+                print(f"  - Added date {today} for: {name}")
+
+        # Write back to CSV if updates were made
+        if updates_made > 0:
+            with open(csv_path, "w", newline="", encoding="utf-8") as f:
+                writer = csv.DictWriter(f, fieldnames=headers)
+                writer.writeheader()
+                writer.writerows(rows)
+            print(f"  - Updated {updates_made} resources with Date Added = {today}")
+
+        return updates_made
 
     def process_new_entries_only(self, csv_path: str, create_issues: bool = True):
         """Process only NEW GitHub entries from CSV"""
@@ -82,6 +123,10 @@ class BadgeNotification:
             return results
 
         print(f"Found {len(new_repos)} new GitHub entries to process.")
+
+        # Update Date Added for new repos
+        print("\nUpdating Date Added for new resources...")
+        self.update_date_added_for_new_repos(csv_path, new_repos)
 
         if not create_issues:
             print("CREATE_ISSUES is set to false. Marking repos as processed without creating issues.")
@@ -113,6 +158,12 @@ class BadgeNotification:
     def notify_repository(self, repo_url: str, resource_name: str, description: str, repo_full_name: str) -> dict:
         """Create notification issue for a single repository"""
         result = {"repo_url": repo_url, "success": False, "message": "", "issue_url": None}
+
+        # exclude anthropics repo and anthropic.com
+        if "anthropic.com" in repo_url or "anthropics" in repo_full_name:
+            result["message"] = "Skipping Anthropics repository"
+            self.processed_repos.add(repo_full_name)
+            return result
 
         try:
             # Get the repository
@@ -183,15 +234,15 @@ class BadgeNotification:
             repo.create_label(NOTIFICATION_LABEL, "f39c12", "Featured in Awesome Claude Code")
             return True
         except Exception as _e:
-            # This is expected to fail if we don't have write access, so we don't log it
-            # to avoid cluttering the logs
+            print(f"Warning: Could not create label for {repo.full_name}: {_e}")
             return False
 
     def _create_issue_body(self, resource_name: str, description: str) -> str:
         """Create friendly issue body with badge options"""
+        github_url = "https://github.com/hesreallyhim/awesome-claude-code"
         return f"""Hello! 👋
 
-I'm excited to let you know that **{resource_name}** has been featured in the [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code) list!
+I'm excited to let you know that **{resource_name}** has been featured in the [Awesome Claude Code]({github_url}) list!
 
 ## About Awesome Claude Code
 Awesome Claude Code is a curated collection of the best slash-commands, CLAUDE.md files, CLI tools, and other resources for enhancing Claude Code workflows. Your project has been recognized for its valuable contribution to the Claude Code community.
@@ -199,7 +250,7 @@ Awesome Claude Code is a curated collection of the best slash-commands, CLAUDE.m
 ## Your Listing
 {description}
 
-You can find your entry here: [View in Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code)
+You can find your entry here: [View in Awesome Claude Code]({github_url})
 
 ## Show Your Recognition! 🏆
 If you'd like to display a badge in your README to show that your project is featured, you can use one of these:
@@ -208,13 +259,13 @@ If you'd like to display a badge in your README to show that your project is fea
 ```markdown
 [![Mentioned in Awesome Claude Code](https://awesome.re/mentioned-badge.svg)](https://github.com/hesreallyhim/awesome-claude-code)
 ```
-[![Mentioned in Awesome Claude Code](https://awesome.re/mentioned-badge.svg)](https://github.com/hesreallyhim/awesome-claude-code)
+[![Mentioned in Awesome Claude Code](https://awesome.re/mentioned-badge.svg)]({github_url})
 
 ### Option 2: Flat Badge
 ```markdown
-[![Mentioned in Awesome Claude Code](https://awesome.re/mentioned-badge-flat.svg)](https://github.com/hesreallyhim/awesome-claude-code)
+[![Mentioned in Awesome Claude Code](https://awesome.re/mentioned-badge-flat.svg)]({github_url})
 ```
-[![Mentioned in Awesome Claude Code](https://awesome.re/mentioned-badge-flat.svg)](https://github.com/hesreallyhim/awesome-claude-code)
+[![Mentioned in Awesome Claude Code](https://awesome.re/mentioned-badge-flat.svg)]({github_url})
 
 ## No Action Required
 This is just a friendly notification - no action is required on your part. Feel free to close this issue at any time.
@@ -222,7 +273,8 @@ This is just a friendly notification - no action is required on your part. Feel 
 Thank you for contributing to the Claude Code ecosystem! 🙏
 
 ---
-*This notification was sent because your project was added to the Awesome Claude Code list. This is a one-time notification.*"""
+*This notification was sent because your project was added to the Awesome Claude Code list. \
+This is a one-time notification.*"""
 
 
 def initialize_processed_repos_with_existing(csv_path: str):
@@ -256,7 +308,8 @@ def main():
         print("Error: AWESOME_CC_PAT_PUBLIC_REPO environment variable not set")
         print("Note: This script requires a Personal Access Token (PAT) with public_repo scope")
         print(
-            "The default GITHUB_TOKEN from GitHub Actions is not sufficient for creating issues in external repositories"
+            "The default GITHUB_TOKEN from GitHub Actions is not sufficient for "
+            "creating issues in external repositories"
         )
         sys.exit(1)
 

@@ -14,10 +14,10 @@ on:
           - 'false'
   
   # Automated trigger on CSV changes
-  push:
-    branches: [ main ]
-    paths:
-      - 'THE_RESOURCES_TABLE.csv'
+  # push:
+  #   branches: [ main ]
+  #   paths:
+  #     - 'THE_RESOURCES_TABLE.csv'
 
 jobs:
   notify-repositories:
@@ -48,6 +48,8 @@ jobs:
         python scripts/badge_issue_notification.py
     
     - name: Commit processed repos tracking
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       if: success()
       run: |
         git config --local user.email "action@github.com"

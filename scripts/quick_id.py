@@ -7,7 +7,8 @@ import sys
 if len(sys.argv) != 4:
     print("Usage: python quick_id.py 'Display Name' 'https://link.com' 'Category'")
     print(
-        "Categories: Slash-Commands, Workflows & Knowledge Guides, Tooling, CLAUDE.md Files, Hooks, Official Documentation"
+        "Categories: Slash-Commands, Workflows & Knowledge Guides, Tooling, "
+        "CLAUDE.md Files, Hooks, Official Documentation"
     )
     sys.exit(1)
 

@@ -9,6 +9,9 @@
 #     license: "LicenseRef-MIT-Commons-Clause"  # Override value
 #     license_locked: true  # Lock this field from validation updates
 #     notes: "Has Commons Clause restriction"  # Optional notes
+#   cmd-xyz123:  # Resource ID
+#     skip_validation: true  # Skip this resource entirely during validation
+#     notes: "Temporarily unavailable for validation"
 
 overrides:
   # Example: Override license for Claude Task Manager (inactive resource)
@@ -16,7 +19,9 @@ overrides:
     license: "LicenseRef-MIT-Commons-Clause" # Override value
     license_locked: true # Lock this field from validation updates
     notes: "Has Commons Clause restriction" # Optional notes
-
+  tool-984936a7:
+    skip_validation: true # Skip this resource entirely during validation
+    notes: "Temporarily unavailable for validation" # Claude Code Chat
 # Supported override fields:
 # - license: Override the detected license
 # - license_locked: Prevent license validation from updating
@@ -26,8 +31,10 @@ overrides:
 # - description_locked: Lock the description
 # - last_checked: Override last checked timestamp
 # - last_checked_locked: Lock the timestamp field
+# - skip_validation: Skip entire resource during validation (true/false)
 #
 # Notes:
 # - Use resource IDs (e.g., cmd-a3f2b9c4) not display names
 # - Locked fields will be skipped during validation
+# - Resources with skip_validation: true are completely skipped by validation scripts
 # - Overrides take precedence over CSV data during generation

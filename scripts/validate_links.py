@@ -70,10 +70,11 @@ def apply_overrides(row, overrides):
     """Apply overrides to a row if the resource ID has overrides configured."""
     resource_id = row.get(ID_HEADER_NAME, "")
     if not resource_id or resource_id not in overrides:
-        return row, set()
+        return row, set(), False
 
     override_config = overrides[resource_id]
     locked_fields = set()
+    skip_validation = override_config.get("skip_validation", False)
 
     # Apply each override
     for field, value in override_config.items():
@@ -82,7 +83,7 @@ def apply_overrides(row, overrides):
             base_field = field.replace("_locked", "")
             if override_config.get(field, False):
                 locked_fields.add(base_field)
-        elif field != "notes":  # Skip notes field
+        elif field not in ["notes", "skip_validation"]:  # Skip notes and skip_validation fields
             # Apply override value
             if field == "license":
                 row[LICENSE_HEADER_NAME] = value
@@ -95,7 +96,7 @@ def apply_overrides(row, overrides):
             elif field == "description":
                 row["Description"] = value
 
-    return row, locked_fields
+    return row, locked_fields, skip_validation
 
 
 def parse_github_url(url):
@@ -278,10 +279,15 @@ def validate_links(csv_file, max_links=None, ignore_overrides=False):
             break
 
         # Apply overrides
-        row, locked_fields = apply_overrides(row, overrides)
+        row, locked_fields, skip_validation = apply_overrides(row, overrides)
         if locked_fields:
             override_count += 1
             locked_field_count += len(locked_fields)
+
+        # Skip entire validation if skip_validation is true
+        if skip_validation:
+            print(f"Skipping {row['Display Name']} - validation disabled by override")
+            continue
 
         # Skip validation for locked fields
         if "active" in locked_fields and "last_checked" in locked_fields:
