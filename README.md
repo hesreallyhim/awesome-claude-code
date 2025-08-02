@@ -145,6 +145,9 @@ A specialized tool to manage context isolation and focused task execution with C
 [`Container Use`](https://github.com/dagger/container-use) &nbsp; by &nbsp; [dagger](https://github.com/dagger)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
 Development environments for coding agents. Enable multiple agents to work safely and independently with your preferred stack.
 
+[`m1f`](https://github.com/franz-agency/m1f) &nbsp; by &nbsp; [franz-agency](https://github.com/franz-agency)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
+CLI tool for creating context bundles from codebases, combining multiple files into AI-optimized single documents that can be efficiently processed by Claude Code for comprehensive project understanding and development workflows.
+
 [`tweakcc`](https://github.com/Piebald-AI/tweakcc) &nbsp; by &nbsp; [Piebald-AI](https://github.com/Piebald-AI)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Command-line tool to customize your Claude Code styling.
 
@@ -171,8 +174,7 @@ A full-fledged desktop application for orchestrating, monitoring, and interactin
 
 **[Experimental]** - The resources listed in this section have not been fully vetted and may not work as expected, given the bleeding-edge nature of Claude Code hooks. Nevertheless, I wished to include them at least as a source of inspiration and to explore this unknown terrain. YMMV!
 
-[`CC Notify`](https://github.com/dazuiba/CCNotify) &nbsp; by &nbsp; [dazuiba](https://github.com/dazuiba)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-CCNotify provides desktop notifications for Claude Code, alerting you to input needs or task completion, with one-click jumps back to VS Code and task duration display.
+[`CC Notify`](https://github.com/dazuiba/CCNotify) &nbsp; by &nbsp; [dazuiba](https://github.com/dazuiba)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;CCNotify provides desktop notifications for Claude Code, alerting you to input needs or task completion, with one-click jumps back to VS Code and task duration display.
 
 [`cchooks`](https://github.com/GowayLee/cchooks) &nbsp; by &nbsp; [GowayLee](https://github.com/GowayLee)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A lightweight Python SDK with a clean API and good documentation; simplifies the process of writing hooks and integrating them into your codebase, providing a nice abstraction over the JSON configuration files.
