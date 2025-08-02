@@ -150,7 +150,7 @@ Development environments for coding agents. Enable multiple agents to work safel
 Command-line tool to customize your Claude Code styling.
 
 [`claude-code-tools`](https://github.com/pchalasani/claude-code-tools) &nbsp; by &nbsp; [pchalasani](https://github.com/pchalasani)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A comprehensive toolkit for enhancing Claude Code with tmux-cli for terminal automation, find-claude-session for resuming sessions, vault for secure .env backups, and safety hooks for file protection and context management.
+A collection of useful tools, scripts, hooks, and tips to enhance working with Claude Code. Features tmux-cli ("Playwright/Puppeteer for the terminal") enabling Claude to test interactive CLI scripts, launch debuggers, and spawn other agents. Works with Claude Code and other LLM providers. [Recently discussed on Hacker News](https://news.ycombinator.com/item?id=44755086).
 
 
 ### IDE Integrations
