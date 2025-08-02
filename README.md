@@ -47,6 +47,7 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent that you can 
 - [`CC Notify`](https://github.com/dazuiba/CCNotify) by [dazuiba](https://github.com/dazuiba)
 - [`tweakcc`](https://github.com/Piebald-AI/tweakcc) by [Piebald-AI](https://github.com/Piebald-AI)
 - [`cchooks`](https://github.com/GowayLee/cchooks) by [GowayLee](https://github.com/GowayLee)
+- [`claude-code-tools`](https://github.com/pchalasani/claude-code-tools) by [pchalasani](https://github.com/pchalasani)
 
 <br>
 
@@ -147,6 +148,9 @@ Development environments for coding agents. Enable multiple agents to work safel
 
 [`tweakcc`](https://github.com/Piebald-AI/tweakcc) &nbsp; by &nbsp; [Piebald-AI](https://github.com/Piebald-AI)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Command-line tool to customize your Claude Code styling.
+
+[`claude-code-tools`](https://github.com/pchalasani/claude-code-tools) &nbsp; by &nbsp; [pchalasani](https://github.com/pchalasani)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A collection of useful tools, scripts, hooks, and tips to enhance working with Claude Code. Features tmux-cli ("Playwright/Puppeteer for the terminal") enabling Claude to test interactive CLI scripts, launch debuggers, and spawn other agents. Works with Claude Code and other LLM providers. [Recently discussed on Hacker News](https://news.ycombinator.com/item?id=44755086).
 
 
 ### IDE Integrations
