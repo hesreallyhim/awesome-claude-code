@@ -145,6 +145,9 @@ A specialized tool to manage context isolation and focused task execution with C
 [`Container Use`](https://github.com/dagger/container-use) &nbsp; by &nbsp; [dagger](https://github.com/dagger)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
 Development environments for coding agents. Enable multiple agents to work safely and independently with your preferred stack.
 
+[`Git Worktree Helper (gw)`](https://github.com/flmngco/git-worktree-helper) &nbsp; by &nbsp; [flmngco](https://github.com/flmngco)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A powerful git worktree management tool that simplifies working with multiple branches simultaneously. Inspired by Claude Code's documentation, it provides three directory strategies (sibling, parent, global), shell completion, and safety confirmations for destructive operations.
+
 [`TSK - AI Agent Task Manager and Sandbox`](https://github.com/dtormoen/tsk) &nbsp; by &nbsp; [dtormoen](https://github.com/dtormoen)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A Rust CLI tool that lets you delegate development tasks to AI agents running in sandboxed Docker environments. Multiple agents work in parallel, returning git branches for human review.
 
