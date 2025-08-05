@@ -60,18 +60,22 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent that you can 
 
 ## Contributing 🌻
 
-Please note that this project is released with a [Contributor Code of Conduct](code-of-conduct.md). By participating in this project you agree to abide by its terms.
+### 🚀 **[Submit a new resource here!](https://github.com/hesreallyhim/awesome-claude-code/issues/new?template=submit-resource.yml)**
 
-Regarding content, we especially welcome:
+It's easy! Just click the link above and fill out the form. No Git knowledge required - our automated system handles everything for you.
 
-- Proven, effective resources that follow best practices and may even be in use in production.
-- Innovative, creative, or experimental workflows that perhaps are still being iterated upon, but have high potential value, and push the boundaries of Claude Code's documented capabilities and use cases.
-- Additional libraries and tooling that are built on top of Claude Code and offer enhanced functionality.
-- Applications of Claude Code outside of the traditional "coding assistant" context, e.g., CI/CD integration, testing, documentation, dev-ops, etc.
+**We especially welcome:**
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for more information on how to contribute to this project. Or, fire up Claude Code and invoke the `/project:add-new-resource` command and let Claude walk you through it!
+- Proven, effective resources that follow best practices and may even be in use in production
+- Innovative, creative, or experimental workflows that push the boundaries of Claude Code's capabilities
+- Additional libraries and tooling that are built on top of Claude Code
+- Applications of Claude Code outside of the traditional "coding assistant" context (CI/CD, testing, documentation, dev-ops, etc.)
 
-If you have any suggestions or thoughts on how to improve the repo, or how to best organize the list, feel free to start a Discussion topic. This is meant to be for the Claude Code community, and in general I prefer not to act on sole authority.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the complete submission guide and review process.
+
+For suggestions about the repository itself, please [open a general issue](https://github.com/hesreallyhim/awesome-claude-code/issues/new).
+
+This project is released with a [Contributor Code of Conduct](code-of-conduct.md). By participating, you agree to abide by its terms.
 
 ### A note about licenses
 

@@ -118,6 +118,9 @@ Handy CLI tool for managing and analyzing Claude Code usage, based on analyzing 
 [`ccexp`](https://github.com/nyatinte/ccexp) &nbsp; by &nbsp; [nyatinte](https://github.com/nyatinte)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Interactive CLI tool for discovering and managing Claude Code configuration files and slash commands with a beautiful terminal UI.
 
+[`cclogviewer`](https://github.com/Brads3290/cclogviewer) &nbsp; by &nbsp; [Brad S.](https://github.com/Brads3290)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A humble but handy utility for viewing Claude Code `.jsonl` conversation files in a pretty HTML UI.
+
 [`Claude Code Flow`](https://github.com/ruvnet/claude-code-flow) &nbsp; by &nbsp; [ruvnet](https://github.com/ruvnet)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 This mode serves as a code-first orchestration layer, enabling Claude to write, edit, test, and optimize code autonomously across recursive agent cycles.
 
@@ -141,6 +144,9 @@ A task management system for AI-driven development with Claude, designed to work
 
 [`Claude Task Runner`](https://github.com/grahama1970/claude-task-runner) &nbsp; by &nbsp; [grahama1970](https://github.com/grahama1970)    
 A specialized tool to manage context isolation and focused task execution with Claude Code, solving the critical challenge of context length limitations and task focus when working with Claude on complex, multi-step projects.
+
+[`claude-code-tools`](https://github.com/pchalasani/claude-code-tools) &nbsp; by &nbsp; [Prasad Chalasani](https://github.com/pchalasani)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A collection of awesome tools, including tmux integrations, better session management, hooks that enhance security - a really well-done set of Claude Code enhancers, especially for tmux users.
 
 [`Container Use`](https://github.com/dagger/container-use) &nbsp; by &nbsp; [dagger](https://github.com/dagger)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
 Development environments for coding agents. Enable multiple agents to work safely and independently with your preferred stack.
@@ -460,18 +466,22 @@ Official GitHub Actions integration for Claude Code with examples and documentat
 
 ## Contributing 🌻
 
-Please note that this project is released with a [Contributor Code of Conduct](code-of-conduct.md). By participating in this project you agree to abide by its terms.
+### 🚀 **[Submit a new resource here!](https://github.com/hesreallyhim/awesome-claude-code/issues/new?template=submit-resource.yml)**
 
-Regarding content, we especially welcome:
+It's easy! Just click the link above and fill out the form. No Git knowledge required - our automated system handles everything for you.
 
-- Proven, effective resources that follow best practices and may even be in use in production.
-- Innovative, creative, or experimental workflows that perhaps are still being iterated upon, but have high potential value, and push the boundaries of Claude Code's documented capabilities and use cases.
-- Additional libraries and tooling that are built on top of Claude Code and offer enhanced functionality.
-- Applications of Claude Code outside of the traditional "coding assistant" context, e.g., CI/CD integration, testing, documentation, dev-ops, etc.
+**We especially welcome:**
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for more information on how to contribute to this project. Or, fire up Claude Code and invoke the `/project:add-new-resource` command and let Claude walk you through it!
+- Proven, effective resources that follow best practices and may even be in use in production
+- Innovative, creative, or experimental workflows that push the boundaries of Claude Code's capabilities
+- Additional libraries and tooling that are built on top of Claude Code
+- Applications of Claude Code outside of the traditional "coding assistant" context (CI/CD, testing, documentation, dev-ops, etc.)
 
-If you have any suggestions or thoughts on how to improve the repo, or how to best organize the list, feel free to start a Discussion topic. This is meant to be for the Claude Code community, and in general I prefer not to act on sole authority.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the complete submission guide and review process.
+
+For suggestions about the repository itself, please [open a general issue](https://github.com/hesreallyhim/awesome-claude-code/issues/new).
+
+This project is released with a [Contributor Code of Conduct](code-of-conduct.md). By participating, you agree to abide by its terms.
 
 ### A note about licenses
 

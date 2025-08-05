@@ -16,10 +16,10 @@ from typing import Any
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 try:
-    from validate_links import validate_url  # type: ignore[import-not-found]
+    from validate_links import validate_url
 except ImportError:
     # Fallback for when running as a module
-    from .validate_links import validate_url  # type: ignore[import-not-found]
+    from .validate_links import validate_url
 
 
 def validate_single_resource(
