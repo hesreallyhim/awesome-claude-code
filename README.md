@@ -115,6 +115,9 @@ A pretty stunning list (88 at the time of this post!) of slash-commands ranging 
 [`CC Usage`](https://github.com/ryoppippi/ccusage) &nbsp; by &nbsp; [ryoppippi](https://github.com/ryoppippi)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Handy CLI tool for managing and analyzing Claude Code usage, based on analyzing local Claude Code logs. Presents a nice dashboard regarding cost information, token consumption, etc.
 
+[`Claude Context`](https://github.com/zilliztech/claude-context) &nbsp; by &nbsp; [zilliztech](https://github.com/zilliztech)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Toolkit for Claude Code and other code IDEs. Uses context-aware semantic search to efficiently retrieve relevant code from millions of lines without breaking your budget.
+
 [`ccexp`](https://github.com/nyatinte/ccexp) &nbsp; by &nbsp; [nyatinte](https://github.com/nyatinte)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Interactive CLI tool for discovering and managing Claude Code configuration files and slash commands with a beautiful terminal UI.
 
