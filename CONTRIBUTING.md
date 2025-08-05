@@ -255,7 +255,7 @@ Or the flat version:
 
 ## GitHub Repository Notifications
 
-If your resource is on GitHub, tthen if it gets included, our automated system will create a friendly notification issue on your repository informing you of the inclusion and providing badge options.
+If your resource is on GitHub, then if it gets included, our automated system will create a friendly notification issue on your repository informing you of the inclusion and providing badge options.
 
 ## Getting Help
 
