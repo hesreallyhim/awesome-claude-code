@@ -9,9 +9,9 @@ We add "skills" as commands that can be used to execute tasks.
 
 Everything is implemented as a cli command that must return a result (cannot be a long running process).
 
-The released commands are documented below. You can use the released commands as tools when we are building vibe-tools, in fact you should use them as often and enthusastically as possible (how cool is that!)
+The released commands are documented below. You can use the released commands as tools when we are building vibe-tools, in fact you should use them as often and enthusiastically as possible (how cool is that!)
 
-Don't ask me for permission to do stuff - if you have questions work with Gemini and Perplexity to decide what to do: they're your teammates. You're a team of superhuman expert AIs, believe in yourselves! Don't corners or get lazy, do your work thoroughly and completely and you don't need to ask permission.
+Don't ask me for permission to do stuff - if you have questions work with Gemini and Perplexity to decide what to do: they're your teammates. You're a team of superhuman expert AIs, believe in yourselves! Don't corner or get lazy, do your work thoroughly and completely and you don't need to ask for permission.
 
 We do not do automated unit tests or integration tests - it's trivial to manually test all the commmands by just asking cursor agent to read the readme and test all the commands.
 
@@ -22,7 +22,7 @@ console.error which goes to stderr
 do not use console.debug or console.warn or console.info
 and yield which is streamed either to stdout (unless the --quiet flag is used) and to the file specified by --save-to (if --save-to is specified).
 
-console.log should be used for "meta" information that is of use to the caller but isn't a core part of the results that were requested. E.g. recording which model is being used to perfom an action.
+console.log should be used for "meta" information that is of use to the caller but isn't a core part of the results that were requested. E.g. recording which model is being used to perform an action.
 
 console.error should be used for error messages.
 
@@ -144,7 +144,7 @@ The `search` command helps you discover servers in the MCP Marketplace based on 
   - `current`: Use the existing page without reloading
   - `reload-current`: Use the existing page and refresh it (useful in development)
   - If working interactively with a user you should always use --url=current unless you specifically want to navigate to a different page. Setting the url to anything else will cause a page refresh loosing current state.
-- Multi step workflows involving state or combining multiple actions are supported in the `act` command using the pipe (|) separator (e.g., `vibe-tools browser act "Click Login | Type 'user@example.com' into email | Click Submit" --url=https://example.com`)
+- Multistep workflows involving state or combining multiple actions are supported in the `act` command using the pipe (|) separator (e.g., `vibe-tools browser act "Click Login | Type 'user@example.com' into email | Click Submit" --url=https://example.com`)
 - Video recording is available for all browser commands using the `--video=<directory>` option. This will save a video of the entire browser interaction at 1280x720 resolution. The video file will be saved in the specified directory with a timestamp.
 - DO NOT ask browser act to "wait" for anything, the wait command is currently disabled in Stagehand.
 

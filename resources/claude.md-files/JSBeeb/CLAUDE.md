@@ -81,7 +81,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 - **Constants and Magic Numbers**:
 
-  - Local un-exported properties should be used for shared constants
+  - Local unexported properties should be used for shared constants
   - Local constants should be used for temporary values
   - Always use named constants instead of magic numbers in code
   - Use PascalCase for module-level constants (e.g., `const MaxHfeTrackPulses = 3132;`)

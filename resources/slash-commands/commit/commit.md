@@ -36,7 +36,7 @@ Or with options:
   - `feat`: A new feature
   - `fix`: A bug fix
   - `docs`: Documentation changes
-  - `style`: Code style changes (formatting, etc)
+  - `style`: Code style changes (formatting, etc.)
   - `refactor`: Code changes that neither fix bugs nor add features
   - `perf`: Performance improvements
   - `test`: Adding or fixing tests

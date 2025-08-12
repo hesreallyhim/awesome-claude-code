@@ -8,12 +8,12 @@ Run CI checks and fix issues until repo is in a good state and then add files to
 0. Make sure repo is up to date via running `pnpm i`
 1. Check that the linter passes by running `pnpm lint`
 2. Check that types and build pass by running `pnpm nx run-many --targets=build:types,build:dist,build:app,generate:docs,dev:run,typecheck`. 
-   If one of the specific commands fail, save tokens via only running that command while debugging
+   If one of the specific commands fails, save tokens via only running that command while debugging
 3. Check that tests pass via running `pnpm nx run-many --target=test:coverage`
    Source the .env file first before running if it exists
 4. Check package.json is sorted via running `pnpm run sort-package-json`
 5. Check packages are linted via running `pnpm nx run-many --targets=lint:package,lint:deps`
-6. Double check. If you made any fixes run preceeding checks again. For example, if you made fixes on step 3. run steps 1., 2., and 3. again to doublecheck there wasn't a regression on the earlier step.
+6. Double check. If you made any fixes, run preceeding checks again. For example, if you made fixes on step 3. run steps 1., 2., and 3. again to doublecheck there wasn't a regression on the earlier step.
 7. Add files to staging with `git status` and `git add`. Make sure you don't add any git submodules in the `lib/*` folders though
 
 Do NOT continue on to the next step until the command listed succeeds. You may sometimes have prompts in between or have to debug but always continue on unless I specifically give you permission to skip a check.
@@ -28,13 +28,13 @@ Take the following steps if CI breaks
 - Whenever a test is broken first give think very hard and a complete explanation of what broke. Cite source code and logs that support your thesis.
 - If you don't have source code or logs to support your thesis, think hard and look in codebase for proof. 
 - Add console logs if it will help you confirm your thesis or find out why it's broke
-- If you don't know why it's broke or there just isn't enough context ask for help
+- If you don't know why it's broken or there just isn't enough context ask for help
 
 ### 2. Fix issue
 
 - Propose your fix
 - Fully explain why you are doing your fix and why you believe it will work
-- If your fix does not work go back to Step 1
+- If your fix does not work, go back to Step 1
 
 ### 3. Consider if same bug exists elsewhere
 
@@ -87,5 +87,5 @@ Don't be afraid to make fixes to things as the typescript types and tests will w
 When a step requires code changes to fix always do following steps after you are finished fixing that step.
 
 1. Run `pnpm run lint` to make sure files are formatted
-2. ask the the user if they want to add files to staging first
+2. ask the user if they want to add files to staging first
 3. suggest a commit message but don't actually do the commit let the user do it themselves
