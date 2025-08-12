@@ -185,7 +185,7 @@ def validate_parsed_data(data: dict[str, str]) -> tuple[bool, list[str], list[st
 
 def check_for_duplicates(data: dict[str, str]) -> list[str]:
     """Check if resource already exists in the CSV."""
-    warnings = []
+    warnings: list[str] = []
 
     csv_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "THE_RESOURCES_TABLE.csv")
     if not os.path.exists(csv_path):
