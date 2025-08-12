@@ -8,7 +8,7 @@ import csv
 import os
 import shutil
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta
 
 import yaml  # type: ignore[import-untyped]
 
@@ -17,6 +17,15 @@ def load_template(template_path):
     """Load a template file."""
     with open(template_path, encoding="utf-8") as f:
         return f.read()
+
+
+def load_announcements(template_dir):
+    """Load announcements from the announcements.md file."""
+    announcements_path = os.path.join(template_dir, "announcements.md")
+    if os.path.exists(announcements_path):
+        with open(announcements_path, encoding="utf-8") as f:
+            return f.read().strip()
+    return ""
 
 
 def load_structure(structure_path):
@@ -85,6 +94,70 @@ def format_resource_entry(row):
         result += f"  \n{description}"
 
     return result
+
+
+def parse_resource_date(date_string):
+    """Parse a date string that may include timestamp information.
+
+    Handles formats:
+    - YYYY-MM-DD
+    - YYYY-MM-DD:HH-MM-SS
+
+    Returns datetime object or None if parsing fails.
+    """
+    if not date_string:
+        return None
+
+    date_string = date_string.strip()
+
+    # Try different date formats
+    date_formats = [
+        "%Y-%m-%d:%H-%M-%S",  # Full format with timestamp
+        "%Y-%m-%d",  # Date only format
+    ]
+
+    for fmt in date_formats:
+        try:
+            return datetime.strptime(date_string, fmt)
+        except ValueError:
+            continue
+
+    return None
+
+
+def generate_weekly_section(csv_data):
+    """Generate the weekly resources section that appears above Contents."""
+    lines = []
+
+    lines.append("## This Week's Additions ✨")
+    lines.append("")
+    lines.append("> Resources added in the past 7 days")
+
+    # Get resources added in the past week
+    one_week_ago = datetime.now() - timedelta(days=7)
+    weekly_resources = []
+
+    for resource in csv_data:
+        date_added = resource.get("Date Added", "")
+        resource_date = parse_resource_date(date_added)
+
+        if resource_date and resource_date >= one_week_ago:
+            weekly_resources.append(resource)
+
+    if weekly_resources:
+        lines.append("")
+        # Sort by date added (newest first) using parsed dates
+        weekly_resources.sort(key=lambda x: parse_resource_date(x.get("Date Added", "")) or datetime.min, reverse=True)
+
+        for resource in weekly_resources:
+            lines.append(format_resource_entry(resource))
+            lines.append("")
+    else:
+        lines.append("")
+        lines.append("*No new resources added this week.*")
+        lines.append("")
+
+    return "\n".join(lines).rstrip() + "\n"
 
 
 def generate_section_content(section, csv_data):
@@ -210,6 +283,7 @@ def generate_readme_from_templates(csv_path, template_dir, output_path):
     template = load_template(template_path)
     structure = load_structure(structure_path)
     overrides = load_overrides(template_dir)
+    announcements = load_announcements(template_dir)
 
     # Load CSV data
     csv_data = []
@@ -224,15 +298,21 @@ def generate_readme_from_templates(csv_path, template_dir, output_path):
     # Generate table of contents
     toc_content = generate_toc_from_structure(structure)
 
+    # Generate weekly section
+    weekly_section = generate_weekly_section(csv_data)
+
     # Generate body sections
     body_sections = []
     for section in structure.get("sections", []):
-        if section.get("source") == "csv":
+        source_type = section.get("source", "")
+        if source_type == "csv":
             section_content = generate_section_content(section, csv_data)
             body_sections.append(section_content)
 
     # Replace placeholders in template
     readme_content = template
+    readme_content = readme_content.replace("{{ANNOUNCEMENTS}}", announcements)
+    readme_content = readme_content.replace("{{WEEKLY_SECTION}}", weekly_section)
     readme_content = readme_content.replace("{{TABLE_OF_CONTENTS}}", toc_content)
     readme_content = readme_content.replace("{{BODY_SECTIONS}}", "\n<br>\n\n".join(body_sections))
 

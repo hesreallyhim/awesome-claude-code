@@ -1,159 +1,83 @@
 # Contributing to Awesome Claude Code
 
-Welcome! We're excited that you want to contribute to Awesome Claude Code. This guide will walk you through our contribution process, which has been designed to be as simple as possible, despite the admittedly absurd length of this document. That being said, if you find the automated process is not working for you, we definitely do not wish to dissuade anyone from contributing, so just make your best effort. Regarding reviews, I take reviews seriously, not only from a quality control point of view, but more importantly for security - this technology can expose users to serious data risks if not handled with care, and I do not wish to promote any resource that undermines security, or perhaps even is malicious. The consequence is that approval of especially more advanced tools may take a little time.
+Welcome! We're excited that you want to contribute to Awesome Claude Code. This guide will walk you through our streamlined contribution process.
+
+**Important:** We take security seriously. All submissions are carefully reviewed to ensure they don't expose users to data risks or malicious code. Advanced tools may take additional time to review.
 
 ## Code of Conduct
 
 Please note that this project is released with a [Contributor Code of Conduct](code-of-conduct.md). By participating in this project you agree to abide by its terms. Follow the conventions of the repo and don't engage in self-promotion. Use descriptive language, not "marketing" style.
 
-## Contribution Process
+## How to Submit a Resource
 
-There are a few ways to contribute to this repository. Generally the goal is to isolate all new submissions to adding a single row to the main CSV file, [`THE_RESOURCES_TABLE.csv`](./THE_RESOURCES_TABLE.csv). The rest of the process is meant to be automated. If you can't get it to work for some reason, you may submit a PR manually with just the data in the CSV file. If you're interested in how this works, visit the [`scripts`](./scripts) directory.
+### 🚀 **[Click here to submit a new resource](https://github.com/hesreallyhim/awesome-claude-code/issues/new?template=submit-resource.yml)**
 
-#### Setup Instructions
+That's it! Just click the link above and fill out the form. No Git knowledge required.
 
-1. **Install GitHub CLI**
+### The Submission Process
 
-   ```bash
-   # macOS
-   brew install gh
+Here's what happens when you submit a resource:
 
-   # Ubuntu/Debian
-   sudo apt install gh
-
-   # Windows
-   scoop install gh
-   # or
-   choco install gh
-   ```
-
-2. **Authenticate with GitHub**
-
-   ```bash
-   gh auth login
-   ```
-
-   Follow the prompts to authenticate via browser or token.
-
-3. **Fork and Clone**
-
-   - Fork this repository on GitHub (click the Fork button)
-   - Clone your fork:
-     ```bash
-     git clone https://github.com/YOUR_USERNAME/awesome-claude-code.git
-     cd awesome-claude-code
-     ```
-   - Add upstream remote:
-     ```bash
-     git remote add upstream https://github.com/hesreallyhim/awesome-claude-code.git
-     ```
-
-4. **Configure Git** (if needed)
-   ```bash
-   git config --global user.name "Your Name"
-   git config --global user.email "your.email@example.com"
-   ```
-
-### How to Contribute
-
-#### Method 1: One-Command Workflow
-
-Our `make submit` command provides a completely streamlined submission process - due to its relative complexity, there are also more failure points; if you encounter any road bumps or jank, feel free to open an Issue. You may also find the other method simpler.
-
-```bash
-make submit
+```mermaid
+graph TD
+    A[📝 Fill out submission form] --> B[🤖 Automated validation]
+    B --> C{Valid?}
+    C -->|❌ No| D[Bot comments with issues]
+    D --> E[Edit your submission]
+    E --> B
+    C -->|✅ Yes| F[Awaits maintainer review]
+    F --> G{Decision}
+    G -->|👍 Approved| H[Bot creates PR automatically]
+    G -->|🔄 Changes requested| I[Maintainer requests changes]
+    G -->|👎 Rejected| J[Issue closed with reason]
+    I --> E
+    H --> K[PR merged]
+    K --> L[🎉 Resource goes live!]
+    L --> M[You receive notification]
 ```
 
-**What happens:**
+### What We Validate
 
-1. ✅ Checks all prerequisites (git, gh auth, fork setup - fork this repo, clone it, set it as "upstream" remote)
-2. 🔒 Installs pre-push validation hook automatically (checks that your entry is well-formed and link is working on push)
-3. 📝 Guides you through resource information entry
-4. 🔍 Validates your inputs
-5. 📄 Updates THE_RESOURCES_TABLE.csv
-6. 🔄 Regenerates README.md
-7. 👀 Shows you the changes for review
-8. 🌿 Creates a feature branch
-9. 💾 Commits your changes
-10. 🚀 Pushes to your fork (with validation)
-11. 🎯 Creates a pull request
-12. 🌐 Opens the PR in your browser
+When you submit a resource, our bot checks:
 
-**Important:** Submit one resource per PR. Multiple resources require separate pull requests.
+- ✅ All required fields are filled
+- ✅ URLs are valid and accessible
+- ✅ No duplicate resources exist
+- ✅ License information (when available)
+- ✅ Description length and quality
 
-### Method 2: Interactive Script Only
+### If Changes Are Needed
 
-If you prefer to handle git operations manually:
+Don't worry if validation fails! The bot will:
 
-```bash
-make add-resource
-# or
-python scripts/add_resource.py
-```
+1. Post a clear comment explaining what needs to be fixed
+2. Update the issue labels to reflect the status
+3. Re-validate automatically when you edit your submission
 
-This will:
+Simply edit your issue to fix any problems - no need to create a new submission.
 
-- Install pre-push validation hook automatically
-- Guide you through resource entry
-- Update the CSV file
-- Generate README.md
-- Create `.pr_template_content.md` with PR description
+### Approval Process
 
-You'll need to manually:
+Once validation passes:
 
-- Create a branch
-- Commit changes
-- Push to your fork
-- Create a PR (copying content from `.pr_template_content.md`)
+1. A maintainer will review your submission for quality and relevance
+2. They may:
+   - ✅ **Approve** - Type `/approve` and the bot creates a PR
+   - 🔄 **Request changes** - Type `/request-changes` with feedback
+   - ❌ **Reject** - Type `/reject` with reason
 
-For complete control over the process:
+### After Approval
 
-1. Edit `THE_RESOURCES_TABLE.csv` directly (you can generate an ID using the [`quick_id.py`](./scripts/quick_id.py) script)
-2. Run `make validate` to check your changes
-3. Run `make generate` to update `README.md`
-4. Create a branch, commit, push, and open PR manually
+The magic happens automatically:
 
-## Understanding the Repository
+1. Bot creates a fresh branch from latest main (no merge conflicts!)
+2. Adds your resource to the CSV
+3. Regenerates the README
+4. Creates a pull request
+5. Links everything back to your issue
+6. Closes your submission issue
 
-### CSV-Based Architecture
-
-All resources are stored in `THE_RESOURCES_TABLE.csv` with these fields:
-
-| Field          | Description                       | Required        |
-| -------------- | --------------------------------- | --------------- |
-| ID             | Auto-generated unique identifier  | Yes (automatic) |
-| Display Name   | Resource name shown in README     | Yes             |
-| Primary Link   | Main URL for the resource         | Yes             |
-| Secondary Link | Optional secondary URL            | No              |
-| Author Name    | Creator's name/username/alias     | Yes             |
-| Author Link    | Link to author's profile          | Yes             |
-| Category       | Main category (see below)         | Yes             |
-| Sub-Category   | Optional sub-category             | No              |
-| Active         | TRUE for active resources         | Yes             |
-| Last Modified  | Auto-updated by validation        | No              |
-| Last Checked   | Auto-updated by validation        | No              |
-| License        | License type (MIT, etc.)          | Recommended     |
-| Description    | Brief description (1-2 sentences) | Yes             |
-
-### Categories
-
-- **Workflows & Knowledge Guides** - Comprehensive workflow systems
-- **Tooling** - CLI applications and executables
-  - IDE Integrations
-- **Hooks** - Claude Code hook configurations
-- **Slash-Commands** - Individual command files
-  - Version Control & Git
-  - Code Analysis & Testing
-  - Context Loading & Priming
-  - Documentation & Changelogs
-  - CI / Deployment
-  - Project & Task Management
-  - Miscellaneous
-- **CLAUDE.md Files** - Project configuration files
-  - Language-Specific
-  - Domain-Specific
-  - Project Scaffolding & MCP
-- **Official Documentation** - Anthropic resources
+You'll be notified at every step, and if your resource is on GitHub, you'll receive a special notification issue in your repository! 🎉
 
 ## What Makes a Resource "Awesome"?
 
@@ -174,66 +98,46 @@ We especially welcome:
 - Tools that enhance Claude Code functionality
 - Non-traditional applications (CI/CD, testing, documentation)
 
-## Troubleshooting
+## Categories
 
-### Common Issues and Solutions
+Resources are organized into these categories:
 
-**"GitHub CLI is not authenticated"**
+- **Workflows & Knowledge Guides** - Comprehensive workflow systems
+- **Tooling** - CLI applications and executables
+  - IDE Integrations
+- **Hooks** - Claude Code hook configurations
+- **Slash-Commands** - Individual command files
+  - Version Control & Git
+  - Code Analysis & Testing
+  - Context Loading & Priming
+  - Documentation & Changelogs
+  - CI / Deployment
+  - Project & Task Management
+  - Miscellaneous
+- **CLAUDE.md Files** - Project configuration files
+  - Language-Specific
+  - Domain-Specific
+  - Project Scaffolding & MCP
+- **Official Documentation** - Anthropic resources
 
-```bash
-gh auth login
-```
+## Other Contributions
 
-**"No fork found"**
+### Suggesting Improvements
 
-- Ensure you've forked the repository on GitHub
-- Check your remotes: `git remote -v`
+For suggestions about the repository structure, new categories, or other enhancements:
 
-**"Branch already exists"**
+1. **[Open a general issue](https://github.com/hesreallyhim/awesome-claude-code/issues/new)**
+2. Describe your suggestion clearly
+3. Explain the benefit to the community
 
-```bash
-git branch -D old-branch-name
-# or let the script create a unique branch name
-```
+### Reporting Issues
 
-### Debug Mode
+If you find problems with existing resources or the submission process:
 
-For verbose output:
-
-```bash
-make submit ARGS="--debug"
-```
-
-## Advanced Usage
-
-### Environment Variables
-
-Optional configuration:
-
-```bash
-# Change remote names (defaults shown)
-export AWESOME_CC_FORK_REMOTE=origin
-export AWESOME_CC_UPSTREAM_REMOTE=upstream
-
-# Disable automatic PR browser opening
-export AWESOME_CC_AUTO_OPEN_PR=false
-```
-
-### Testing Your Changes
-
-Before submitting, you can test your changes:
-
-```bash
-# Make sure you are up to date with upstream/main
-git fetch upstream
-git merge upstream/main
-
-# Validate your CSV entry
-make validate_new_resource
-
-# Check if README generates correctly
-make generate
-```
+- 📖 Check existing issues for similar reports
+- 💬 Open a new issue with details
+- 🐛 Include error messages and steps to reproduce
+- 🔒 Report security issues immediately
 
 ## Badges
 
@@ -255,36 +159,12 @@ Or the flat version:
 
 ## GitHub Repository Notifications
 
-If your resource is on GitHub, then if it gets included, our automated system will create a friendly notification issue on your repository informing you of the inclusion and providing badge options.
+If your resource is on GitHub, our automated system will create a friendly notification issue on your repository informing you of the inclusion and providing badge options.
 
-## Getting Help
+## Technical Details
 
-- 📖 Check existing issues for similar questions
-- 💬 Open a new issue for persistent problems
-- 🐛 Include error messages and debug output
-- 🔒 Report security issues immediately
-
-## Quick Reference
-
-```bash
-# Complete workflow (recommended)
-make submit
-
-# Just add resource (no git operations)
-make add-resource
-
-# Validate CSV integrity
-make validate
-
-# Generate README from CSV
-make generate
-
-# Manually run pre-push validation
-make validate_new_resource
-```
+For more information about how the repository works, including the automated systems, validation processes, and technical architecture, see [HOW_IT_WORKS.md](HOW_IT_WORKS.md).
 
 ---
-
-For transparency - @hesreallyhim has no affiliation with Anthropic or with Claude (great guy, though).
 
 Thank you for helping make Awesome Claude Code even more awesome! 🚀
