@@ -4,10 +4,10 @@ The goal of this command is to verify the repo is in a working state and fix iss
 
 ## Goals
 
-Run CI checks and fix issues until repo is in a good state and then add files to staging. All commands are run from repo root.
-0. Make sure repo is up to date via running `pnpm i`
+Run CI checks and fix issues until repo is in a good state and then add files to staging. All commands are run from repo root. 0. Make sure repo is up to date via running `pnpm i`
+
 1. Check that the linter passes by running `pnpm lint`
-2. Check that types and build pass by running `pnpm nx run-many --targets=build:types,build:dist,build:app,generate:docs,dev:run,typecheck`. 
+2. Check that types and build pass by running `pnpm nx run-many --targets=build:types,build:dist,build:app,generate:docs,dev:run,typecheck`.
    If one of the specific commands fails, save tokens via only running that command while debugging
 3. Check that tests pass via running `pnpm nx run-many --target=test:coverage`
    Source the .env file first before running if it exists
@@ -26,9 +26,9 @@ Take the following steps if CI breaks
 ### 1. Explain why it's broke
 
 - Whenever a test is broken first give think very hard and a complete explanation of what broke. Cite source code and logs that support your thesis.
-- If you don't have source code or logs to support your thesis, think hard and look in codebase for proof. 
-- Add console logs if it will help you confirm your thesis or find out why it's broke
-- If you don't know why it's broken or there just isn't enough context ask for help
+- If you don't have source code or logs to support your thesis, think hard and look in codebase for proof.
+- Add console logs if it will help you confirm your thesis or find out why it's broken.
+- If you don't know why it's broken or there just isn't enough context ask for help.
 
 ### 2. Fix issue
 
@@ -59,7 +59,7 @@ This is using biome to lint the entire codebase
 ### pnpm nx-run-many --targets=build:types,typecheck
 
 These commands from step 2 check typescript types and when they are broken it's likely for typescript error reasons. It's generally a good idea to fix the issue if it's obvious.
-If the proof of why your typescript type isn't already in context or obvious it's best to look for the typescript type for confirmation before attempting to fix it. THis includes looking for it in node_modules. If it's a tevm package it's in this monorepo. 
+If the proof of why your typescript type isn't already in context or obvious it's best to look for the typescript type for confirmation before attempting to fix it. THis includes looking for it in node_modules. If it's a tevm package it's in this monorepo.
 If you fail more than a few times here we should look at documentation
 
 ### Run tests
