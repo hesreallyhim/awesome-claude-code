@@ -2,6 +2,17 @@ name: Claude Code Review
 
 on:
   pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  claude-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: anthropics/claude-code-action@beta
+        with:
+          # Use the existing secret from the repository
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
     types: [opened, synchronize]
     # Optional: Only run on specific file changes
     # paths:
@@ -48,11 +59,10 @@ jobs:
             - Performance considerations
             - Security concerns
             - Test coverage
-            
-            Be constructive and helpful in your feedback.
+#           allowed_bots: 'codegen-sh'  # Allow the codegen-sh bot specifically
 
           # Optional: Use sticky comments to make Claude reuse the same comment on subsequent pushes to the same PR
-          # use_sticky_comment: true
+          use_sticky_comment: true
           
           # Optional: Customize review based on file types
           # direct_prompt: |
