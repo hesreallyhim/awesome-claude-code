@@ -28,6 +28,8 @@
 
 # [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code) 🤝 [Awesome Claude Code Agents](https://github.com/hesreallyhim/awesome-claude-code-agents)
 
+*Read this in other languages: [English](README.md), [Русский](README.ru.md)*
+
 <!--lint enable remark-lint:awesome-badge-->
 
 <!--lint disable double-link-->
