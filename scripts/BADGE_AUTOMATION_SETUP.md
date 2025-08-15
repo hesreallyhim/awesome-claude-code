@@ -4,7 +4,7 @@
 This system creates friendly notification issues on GitHub repositories when they are **newly** featured in the Awesome Claude Code list. It only notifies for new additions, not existing entries.
 
 ## Prerequisites
-1. Python 3.11+
+1. Python 3.12+
 2. PyGithub library (installed automatically via pyproject.toml)
 
 ## Setup Steps
