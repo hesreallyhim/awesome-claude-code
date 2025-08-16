@@ -1,0 +1,73 @@
+name: Claude Code Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  claude-review:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: read
+      id-token: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Run Claude Code Review
+        id: claude-review
+        uses: anthropics/claude-code-action@beta
+        with:
+          # Authentication - use OAuth token from secrets
+          anthropic_api_key: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          
+          # Mode configuration for automated review
+          mode: "experimental-review"
+          
+          # Allow bots to trigger reviews
+          allowed_bots: "codegen-sh,dependabot,renovate"
+          
+          # Custom instructions for comprehensive review
+          custom_instructions: |
+            You are conducting an automated code review. Focus on:
+            - Code quality and adherence to best practices
+            - Potential bugs, security vulnerabilities, and performance issues
+            - Test coverage and maintainability
+            - Documentation completeness
+            
+            Provide specific, actionable feedback with code suggestions when possible.
+            Be constructive and educational in your review comments.
+          
+          # Optional: Specify model (defaults to Claude Sonnet 4)
+          # model: "claude-opus-4-1-20250805"
+          
+          # Base branch for comparison
+          base_branch: "main"
+          
+          # Branch prefix for any Claude-created branches
+          branch_prefix: "claude-review/"
+
+          # Maximum conversation turns
+          max_turns: 3
+          
+          # Timeout in minutes
+          timeout_minutes: 10
+          
+          # Trigger configuration
+          trigger_phrase: "@claude-review"
+          label_trigger: "needs-review"
+          
+          # Optional: Tools that Claude can use during review
+          # allowed_tools: "Bash(npm run test),Bash(npm run lint),Bash(npm run typecheck),Read,Grep"
+          
+          # Optional: Skip review for certain conditions
+          # if: |
+          #   !contains(github.event.pull_request.title, '[skip-review]') &&
+          #   !contains(github.event.pull_request.title, '[WIP]') &&
+          #   !contains(github.event.pull_request.title, '[draft]')

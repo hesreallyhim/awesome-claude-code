@@ -1,0 +1,103 @@
+# Awesome Claude Code Repository Rules
+
+## Project Context
+
+This is a curated collection of Claude Code resources, examples, and documentation. The repository serves as a comprehensive guide for developers using Claude Code.
+
+## Content Standards
+
+### Resource Quality
+
+- Only include high-quality, well-maintained resources
+- Verify all links are accessible and current
+- Ensure content is directly related to Claude Code
+- Avoid duplicate or very similar resources
+- Prefer recent resources (within last 2 years)
+
+### Documentation Requirements
+
+- Use consistent Markdown formatting
+- Follow logical heading hierarchy (H1 → H6)
+- Use descriptive link text, avoid "click here"
+- Add proper syntax highlighting for code blocks
+- Include alt text for images
+- Use tables for structured data comparison
+
+### File Organization
+
+- Group related resources logically by category
+- Use clear, descriptive file names
+- Add relevant tags for searchability
+- Include cross-references where helpful
+- Maintain consistent structure across files
+
+## Code Guidelines
+
+### Markdown Best Practices
+
+- Use consistent formatting throughout
+- Ensure proper heading hierarchy
+- Include table of contents for long documents
+- Use code fences with language specification
+- Keep line length reasonable (80-120 chars)
+
+### Link Management
+
+- Verify all external links work
+- Use HTTPS when available
+- Include brief descriptions for all links
+- Group related links together
+- Update broken links promptly
+
+### Content Structure
+
+```markdown
+### [Resource Name](url)
+**Category**: Tool | Tutorial | Example | Integration
+**Difficulty**: Beginner | Intermediate | Advanced
+**Tags**: `tag1` `tag2` `tag3`
+
+Brief description explaining what this resource provides and why it's valuable.
+
+**Key Features:**
+- Feature 1
+- Feature 2
+```
+
+## Commit Conventions
+
+- Use conventional commit format: `type(scope): description`
+- Types: feat, fix, docs, style, refactor, test, chore
+- Keep commit messages clear and descriptive
+- Reference issues/PRs when relevant
+
+## Pull Request Guidelines
+
+- Provide clear, detailed PR descriptions
+- Include screenshots for UI changes
+- Test all added links and code examples
+- Address all review feedback promptly
+- Ensure all automated checks pass
+
+## Quality Assurance
+
+- Run link checking before submitting PRs
+- Validate Markdown formatting
+- Ensure content fits project scope
+- Check for spelling and grammar
+- Verify resource categorization is correct
+
+## Automation Integration
+
+- Use `@claude` for AI assistance in PRs/issues
+- Apply appropriate labels for automation
+- Follow automated review suggestions
+- Leverage Claude Code Review for quality checks
+
+## Maintenance Tasks
+
+- Regular link validation (monthly)
+- Content freshness review (quarterly)
+- Category reorganization as needed
+- Remove outdated or broken resources
+- Update documentation based on feedback
