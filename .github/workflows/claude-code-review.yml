@@ -7,32 +7,9 @@ on:
 jobs:
   claude-review:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: anthropics/claude-code-action@beta
-        with:
-          # Use the existing secret from the repository
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-    types: [opened, synchronize]
-    # Optional: Only run on specific file changes
-    # paths:
-    #   - "src/**/*.ts"
-    #   - "src/**/*.tsx"
-    #   - "src/**/*.js"
-    #   - "src/**/*.jsx"
-
-jobs:
-  claude-review:
-    # Optional: Filter by PR author
-    # if: |
-    #   github.event.pull_request.user.login == 'external-contributor' ||
-    #   github.event.pull_request.user.login == 'new-developer' ||
-    #   github.event.pull_request.author_association == 'FIRST_TIME_CONTRIBUTOR'
-    
-    runs-on: ubuntu-latest
     permissions:
       contents: read
-      pull-requests: read
+      pull-requests: write
       issues: read
       id-token: write
     
@@ -46,42 +23,51 @@ jobs:
         id: claude-review
         uses: anthropics/claude-code-action@beta
         with:
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-
-          # Optional: Specify model (defaults to Claude Sonnet 4, uncomment for Claude Opus 4.1)
+          # Authentication - use OAuth token from secrets
+          anthropic_api_key: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          
+          # Mode configuration for automated review
+          mode: "experimental-review"
+          
+          # Allow bots to trigger reviews
+          allowed_bots: "codegen-sh,dependabot,renovate"
+          
+          # Custom instructions for comprehensive review
+          custom_instructions: |
+            You are conducting an automated code review. Focus on:
+            - Code quality and adherence to best practices
+            - Potential bugs, security vulnerabilities, and performance issues
+            - Test coverage and maintainability
+            - Documentation completeness
+            
+            Provide specific, actionable feedback with code suggestions when possible.
+            Be constructive and educational in your review comments.
+          
+          # Optional: Specify model (defaults to Claude Sonnet 4)
           # model: "claude-opus-4-1-20250805"
+          
+          # Base branch for comparison
+          base_branch: "main"
+          
+          # Branch prefix for any Claude-created branches
+          branch_prefix: "claude-review/"
 
-          # Direct prompt for automated review (no @claude mention needed)
-          direct_prompt: |
-            Please review this pull request and provide feedback on:
-            - Code quality and best practices
-            - Potential bugs or issues
-            - Performance considerations
-            - Security concerns
-            - Test coverage
-#           allowed_bots: 'codegen-sh'  # Allow the codegen-sh bot specifically
-
-          # Optional: Use sticky comments to make Claude reuse the same comment on subsequent pushes to the same PR
-          use_sticky_comment: true
+          # Maximum conversation turns
+          max_turns: 3
           
-          # Optional: Customize review based on file types
-          # direct_prompt: |
-          #   Review this PR focusing on:
-          #   - For TypeScript files: Type safety and proper interface usage
-          #   - For API endpoints: Security, input validation, and error handling
-          #   - For React components: Performance, accessibility, and best practices
-          #   - For tests: Coverage, edge cases, and test quality
+          # Timeout in minutes
+          timeout_minutes: 10
           
-          # Optional: Different prompts for different authors
-          # direct_prompt: |
-          #   ${{ github.event.pull_request.author_association == 'FIRST_TIME_CONTRIBUTOR' && 
-          #   'Welcome! Please review this PR from a first-time contributor. Be encouraging and provide detailed explanations for any suggestions.' ||
-          #   'Please provide a thorough code review focusing on our coding standards and best practices.' }}
+          # Trigger configuration
+          trigger_phrase: "@claude-review"
+          label_trigger: "needs-review"
           
-          # Optional: Add specific tools for running tests or linting
-          # allowed_tools: "Bash(npm run test),Bash(npm run lint),Bash(npm run typecheck)"
+          # Optional: Tools that Claude can use during review
+          # allowed_tools: "Bash(npm run test),Bash(npm run lint),Bash(npm run typecheck),Read,Grep"
           
           # Optional: Skip review for certain conditions
           # if: |
           #   !contains(github.event.pull_request.title, '[skip-review]') &&
-          #   !contains(github.event.pull_request.title, '[WIP]')
+          #   !contains(github.event.pull_request.title, '[WIP]') &&
+          #   !contains(github.event.pull_request.title, '[draft]')
