@@ -187,7 +187,7 @@ Command-line tool to customize your Claude Code styling.
 A community-driven leaderboard tool that enables developers to visualize, track, and compete based on their Claude Code usage statistics. It features robust data analytics, GitHub OAuth, data validation, and user-friendly CLI/web submission methods.
 
 [`Voice Mode`](https://github.com/mbailey/voicemode) &nbsp; by &nbsp; [mbailey](https://github.com/mbailey)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Code with Claude hands-free - walk, drive, or step away from your keyboard. Natural voice conversations transform Claude into a real pair programming partner.
+Code with Claude hands-free - walk, drive, or step away from your keyboard. Natural voice conversations transform Claude into a real pair programming partner. Batteries included: auto-installs local Whisper STT and Kokoro TTS for privacy and zero ongoing costs.
 
 
 ### IDE Integrations
