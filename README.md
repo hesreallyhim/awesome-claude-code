@@ -133,6 +133,9 @@ A pretty stunning list (88 at the time of this post!) of slash-commands ranging 
 
 > **Tooling** denotes applications that are built on top of Claude Code and consist of more components than slash-commands and `CLAUDE.md` files
 
+[`ccapi`](https://github.com/4xian/claude-auto-api) &nbsp; by &nbsp; [4xian](https://github.com/4xian)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Claude Code configuration management tool, fast switching between multiple addresses, multiple API_KEYs, multiple AUTH_TOKENs, and multiple models; with delay testing and automatic optimal line switching functions
+
 [`ccexp`](https://github.com/nyatinte/ccexp) &nbsp; by &nbsp; [nyatinte](https://github.com/nyatinte)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Interactive CLI tool for discovering and managing Claude Code configuration files and slash commands with a beautiful terminal UI.
 
