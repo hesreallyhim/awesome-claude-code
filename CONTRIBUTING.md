@@ -46,6 +46,8 @@ When you submit a resource, our bot checks:
 - ✅ License information (when available)
 - ✅ Description length and quality
 
+**NOTE:** By submitting a resource, you agree to allowing your codebase to be evaluated by a SoTA LLM for any security risks.
+
 ### If Changes Are Needed
 
 Don't worry if validation fails! The bot will:
@@ -120,6 +122,14 @@ Resources are organized into these categories:
   - Domain-Specific
   - Project Scaffolding & MCP
 - **Official Documentation** - Anthropic resources
+
+## Best Practices
+
+- "Quick Start" section -> put it at the top!
+- Include complete uninstall/cleanup instructions
+- Please mention if any core Claude Code system files are touched or managed by this resource.
+- The more decoupled/indepedent your resource is from other resources or core Claude Code functionality, the easier it is for me to test, and for others to try out and adopt, and integrate with their workflow.
+- Include an attribution to Anthropic, the company that built Claude Code and owns the license/trademark.
 
 ## Other Contributions
 
