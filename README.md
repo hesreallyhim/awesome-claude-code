@@ -227,6 +227,9 @@ Enhanced 4-line statusline for Claude Code with themes, cost tracking, and MCP s
 [`claude-powerline`](https://github.com/Owloops/claude-powerline) &nbsp; by &nbsp; [Owloops](https://github.com/Owloops)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A vim-style powerline statusline for Claude Code with real-time usage tracking, git integration, custom themes, and more
 
+[`AB Method`](https://github.com/ayoubben18/ab-method) &nbsp; by &nbsp; [ayoubben18](https://github.com/ayoubben18)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A spec driven approach that transforms problems into focused, incremental missions using Claude Code's specialized subagents.
+
 <br>
 
 ## Hooks 🪝
