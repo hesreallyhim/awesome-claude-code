@@ -41,11 +41,11 @@ def sort_resources(csv_path: Path) -> None:
     def subcategory_sort_key(subcat):
         """Sort General first, then alphabetical, empty last"""
         if not subcat:
-            return "zzz"  # Empty sorts last
+            return (2, "")  # Empty sorts last
         elif subcat == "General":
-            return "000"  # General sorts first
+            return (0, "")  # General sorts first
         else:
-            return subcat  # Others sort alphabetically
+            return (1, subcat.lower())  # Others sort alphabetically (case-insensitive)
 
     sorted_rows = sorted(
         rows,
