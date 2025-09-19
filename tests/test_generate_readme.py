@@ -17,6 +17,7 @@ try:
     from generate_readme import (  # type: ignore
         generate_section_content,
         generate_toc_from_categories,
+        generate_weekly_section,
         get_anchor_suffix_for_icon,
         load_announcements,
         parse_resource_date,
@@ -25,6 +26,7 @@ except ImportError:
     from scripts.generate_readme import (
         generate_section_content,
         generate_toc_from_categories,
+        generate_weekly_section,
         get_anchor_suffix_for_icon,
         load_announcements,
         parse_resource_date,
@@ -513,7 +515,9 @@ class TestGenerateSectionContent(unittest.TestCase):
         self.assertIn("</details>", result)
 
         # Check for summary with h2
-        self.assertIn("<summary><h2>Tools 🔧</h2></summary>", result)
+        self.assertIn(
+            '<summary><h2>Tools 🔧 <a href="#awesome-claude-code">🔝</a></h2></summary>', result
+        )
 
         # Check for resource content
         self.assertIn("[`Tool 1`](https://example.com/tool1)", result)
@@ -532,7 +536,9 @@ class TestGenerateSectionContent(unittest.TestCase):
 
         # Categories without subcategories should be wrapped in details
         self.assertIn("<details open>", result)
-        self.assertIn("<summary><h2>Resources 📚</h2></summary>", result)
+        self.assertIn(
+            '<summary><h2>Resources 📚 <a href="#awesome-claude-code">🔝</a></h2></summary>', result
+        )
         self.assertIn("Helpful resources for developers", result)
         self.assertIn("</details>", result)
 
@@ -572,13 +578,18 @@ class TestGenerateSectionContent(unittest.TestCase):
         result = generate_section_content(category, csv_data)
 
         # Categories WITH subcategories should NOT be wrapped in details at the main level
-        self.assertIn("## Documentation 📖", result)
-        self.assertNotIn("<summary><h2>Documentation 📖</h2></summary>", result)
+        self.assertIn("## Documentation 📖 [🔝](#awesome-claude-code)", result)
+        self.assertNotIn("<summary><h2>Documentation 📖", result)
 
         # Check for subcategory details wrappers
         self.assertEqual(result.count("<details open>"), 2)  # Only 2 subcategories
-        self.assertIn("<summary><h3>Tutorials</h3></summary>", result)
-        self.assertIn("<summary><h3>API Reference</h3></summary>", result)
+        self.assertIn(
+            '<summary><h3>Tutorials <a href="#awesome-claude-code">🔝</a></h3></summary>', result
+        )
+        self.assertIn(
+            '<summary><h3>API Reference <a href="#awesome-claude-code">🔝</a></h3></summary>',
+            result,
+        )
 
         # Check for resources in subcategories
         self.assertIn("[`Getting Started`](https://example.com/tutorial)", result)
@@ -637,7 +648,10 @@ class TestGenerateSectionContent(unittest.TestCase):
 
         # Categories without subcategories should be wrapped in details
         self.assertIn("<details open>", result)
-        self.assertIn("<summary><h2>Plain Category</h2></summary>", result)
+        self.assertIn(
+            '<summary><h2>Plain Category <a href="#awesome-claude-code">🔝</a></h2></summary>',
+            result,
+        )
         self.assertIn("</details>", result)
 
     def test_empty_subcategory_not_rendered(self) -> None:
@@ -674,6 +688,161 @@ class TestGenerateSectionContent(unittest.TestCase):
         self.assertIn("## Test", result)
         # Should only have 1 details block (the subcategory with resources)
         self.assertEqual(result.count("<details open>"), 1)
+
+
+class TestBackToTopButtons(unittest.TestCase):
+    """Test cases for back-to-top button functionality."""
+
+    def test_weekly_section_has_back_to_top(self) -> None:
+        """Test that the weekly section header has a back-to-top button."""
+        csv_data: list[dict[str, str]] = []
+        result = generate_weekly_section(csv_data)
+
+        # Check that the header contains the back-to-top link
+        self.assertIn("## This Week's Additions ✨ [🔝](#awesome-claude-code)", result)
+
+    def test_category_without_subcategories_has_html_anchor(self) -> None:
+        """Test categories without subcategories have HTML anchor in summary."""
+        category = {"name": "Test Category", "icon": "🧪", "description": "Test description"}
+        csv_data: list[dict[str, str]] = []
+
+        result = generate_section_content(category, csv_data)
+
+        # Should use HTML <a> tag inside summary
+        self.assertIn(
+            '<summary><h2>Test Category 🧪 <a href="#awesome-claude-code">🔝</a></h2></summary>',
+            result,
+        )
+        # Should NOT have markdown link
+        self.assertNotIn("[🔝](#awesome-claude-code)</h2></summary>", result)
+
+    def test_category_without_icon_has_back_to_top(self) -> None:
+        """Test categories without icons still get back-to-top buttons."""
+        category = {"name": "No Icon Category", "description": "Test description"}
+        csv_data: list[dict[str, str]] = []
+
+        result = generate_section_content(category, csv_data)
+
+        # Should have HTML anchor without icon
+        self.assertIn(
+            '<summary><h2>No Icon Category <a href="#awesome-claude-code">🔝</a></h2></summary>',
+            result,
+        )
+
+    def test_category_with_subcategories_has_markdown_link(self) -> None:
+        """Test categories with subcategories have markdown link (not in summary)."""
+        category = {
+            "name": "Main Category",
+            "icon": "📁",
+            "subcategories": [{"name": "Sub One"}, {"name": "Sub Two"}],
+        }
+        csv_data: list[dict[str, str]] = []
+
+        result = generate_section_content(category, csv_data)
+
+        # Main category should have markdown link (it's a regular header, not in summary)
+        self.assertIn("## Main Category 📁 [🔝](#awesome-claude-code)", result)
+        # Should NOT have HTML anchor for main category
+        self.assertNotIn("## Main Category 📁 <a href=", result)
+
+    def test_subcategory_has_html_anchor(self) -> None:
+        """Test subcategories have HTML anchor in their summary tags."""
+        category = {"name": "Main", "icon": "📁", "subcategories": [{"name": "Subcategory Test"}]}
+        csv_data = [
+            {
+                "Category": "Main",
+                "Sub-Category": "Subcategory Test",
+                "Display Name": "Test Resource",
+                "Primary Link": "https://example.com",
+                "Active": "TRUE",
+            }
+        ]
+
+        result = generate_section_content(category, csv_data)
+
+        # Subcategory should use HTML anchor inside summary
+        self.assertIn(
+            '<summary><h3>Subcategory Test <a href="#awesome-claude-code">🔝</a></h3></summary>',
+            result,
+        )
+        # Should NOT have markdown link in subcategory summary
+        self.assertNotIn("[🔝](#awesome-claude-code)</h3></summary>", result)
+
+    def test_multiple_subcategories_all_have_anchors(self) -> None:
+        """Test that all subcategories get back-to-top anchors."""
+        category = {
+            "name": "Parent",
+            "subcategories": [{"name": "First Sub"}, {"name": "Second Sub"}, {"name": "Third Sub"}],
+        }
+        csv_data = [
+            {
+                "Category": "Parent",
+                "Sub-Category": sub["name"],
+                "Display Name": f"Resource for {sub['name']}",
+                "Primary Link": "https://example.com",
+                "Active": "TRUE",
+            }
+            for sub in category["subcategories"]
+        ]
+
+        result = generate_section_content(category, csv_data)
+
+        # All subcategories should have HTML anchors
+        self.assertIn(
+            '<summary><h3>First Sub <a href="#awesome-claude-code">🔝</a></h3></summary>', result
+        )
+        self.assertIn(
+            '<summary><h3>Second Sub <a href="#awesome-claude-code">🔝</a></h3></summary>', result
+        )
+        self.assertIn(
+            '<summary><h3>Third Sub <a href="#awesome-claude-code">🔝</a></h3></summary>', result
+        )
+
+        # Count that we have exactly 3 back-to-top anchors in summaries
+        anchor_count = result.count('<a href="#awesome-claude-code">🔝</a></h3></summary>')
+        self.assertEqual(anchor_count, 3)
+
+    def test_back_to_top_preserves_existing_structure(self) -> None:
+        """Test that adding back-to-top doesn't break existing structure."""
+        category = {
+            "name": "Complete Test",
+            "icon": "✅",
+            "description": "A complete category",
+            "subcategories": [{"name": "Complete Sub"}],
+        }
+        csv_data = [
+            {
+                "Category": "Complete Test",
+                "Sub-Category": "",
+                "Display Name": "Main Resource",
+                "Primary Link": "https://example.com/main",
+                "Active": "TRUE",
+                "Description": "Main description",
+            },
+            {
+                "Category": "Complete Test",
+                "Sub-Category": "Complete Sub",
+                "Display Name": "Sub Resource",
+                "Primary Link": "https://example.com/sub",
+                "Active": "TRUE",
+                "Description": "Sub description",
+            },
+        ]
+
+        result = generate_section_content(category, csv_data)
+
+        # Check structure is preserved
+        self.assertIn("## Complete Test ✅ [🔝](#awesome-claude-code)", result)
+        self.assertIn("A complete category", result)
+        self.assertIn("[`Main Resource`](https://example.com/main)", result)
+        self.assertIn("Main description", result)
+        self.assertIn("<details open>", result)
+        self.assertIn(
+            '<summary><h3>Complete Sub <a href="#awesome-claude-code">🔝</a></h3></summary>', result
+        )
+        self.assertIn("[`Sub Resource`](https://example.com/sub)", result)
+        self.assertIn("Sub description", result)
+        self.assertIn("</details>", result)
 
 
 if __name__ == "__main__":

@@ -283,7 +283,7 @@ def generate_weekly_section(csv_data):
     """Generate the weekly resources section that appears above Contents."""
     lines = []
 
-    lines.append("## This Week's Additions ✨")
+    lines.append("## This Week's Additions ✨ [🔝](#awesome-claude-code)")
     lines.append("")
     lines.append("> Resources added in the past 7 days")
 
@@ -335,9 +335,13 @@ def generate_section_content(category, csv_data):
 
         # Add section title as summary
         if icon:
-            lines.append(f"<summary><h2>{title} {icon}</h2></summary>")
+            lines.append(
+                f'<summary><h2>{title} {icon} <a href="#awesome-claude-code">🔝</a></h2></summary>'
+            )
         else:
-            lines.append(f"<summary><h2>{title}</h2></summary>")
+            lines.append(
+                f'<summary><h2>{title} <a href="#awesome-claude-code">🔝</a></h2></summary>'
+            )
 
         # Add section description if present
         if description:
@@ -361,9 +365,9 @@ def generate_section_content(category, csv_data):
     else:
         # Has subcategories - use regular header (not collapsible at category level)
         if icon:
-            lines.append(f"## {title} {icon}")
+            lines.append(f"## {title} {icon} [🔝](#awesome-claude-code)")
         else:
-            lines.append(f"## {title}")
+            lines.append(f"## {title} [🔝](#awesome-claude-code)")
 
         # Add section description if present
         if description:
@@ -396,7 +400,9 @@ def generate_section_content(category, csv_data):
                 lines.append("")
                 # Start subcategory disclosure element (open by default)
                 lines.append("<details open>")
-                lines.append(f"<summary><h3>{sub_title}</h3></summary>")
+                lines.append(
+                    f'<summary><h3>{sub_title} <a href="#awesome-claude-code">🔝</a></h3></summary>'
+                )
                 lines.append("")
 
                 for resource in resources:
