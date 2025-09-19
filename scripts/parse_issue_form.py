@@ -56,8 +56,10 @@ def parse_issue_body(issue_body: str) -> dict[str, str]:
             data["category"] = value
             # If this is a slash command, we'll validate/fix the display name later
         elif "Sub-Category" in label:
-            # Only set if not "None / Not Applicable"
-            if value and "None" not in value and "Not Applicable" not in value:
+            # Set to "General" as default if empty or "None / Not Applicable"
+            if not value or "None" in value or "Not Applicable" in value:
+                data["subcategory"] = "General"
+            else:
                 # Strip the category prefix if present
                 # (e.g., "Slash-Commands: " from "Slash-Commands: Context Loading & Priming")
                 if ":" in value:

@@ -57,7 +57,7 @@ body:
       label: Sub-Category
       description: Select a sub-category if applicable (based on your category choice above)
       options:
-        - None / Not Applicable
+        - General
         - "Tooling: IDE Integrations"
         - "Tooling: Usage Monitors"
         - "Tooling: Orchestrators"

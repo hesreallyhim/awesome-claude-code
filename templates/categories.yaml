@@ -12,6 +12,9 @@ categories:
     description: |
       > A **workflow** is a tightly coupled set of Claude Code-native resources that facilitate specific projects
     order: 1
+    subcategories:
+      - id: general
+        name: "General"
     
   - id: tooling
     name: "Tooling"
@@ -21,6 +24,8 @@ categories:
       > **Tooling** denotes applications that are built on top of Claude Code and consist of more components than slash-commands and `CLAUDE.md` files
     order: 2
     subcategories:
+      - id: general
+        name: "General"
       - id: ide-integrations
         name: "IDE Integrations"
       - id: usage-monitors
@@ -35,6 +40,9 @@ categories:
     description: |
       > **Status lines** - Configurations and customizations for Claude Code's status bar functionality
     order: 3
+    subcategories:
+      - id: general
+        name: "General"
     
   - id: hooks
     name: "Hooks"
@@ -43,6 +51,9 @@ categories:
     description: |
       > **Hooks** are a powerful API for Claude Code that allows users to activate commands and run scripts at different points in Claude's agentic lifecycle.
     order: 4
+    subcategories:
+      - id: general
+        name: "General"
     
   - id: slash-commands
     name: "Slash-Commands"
@@ -51,6 +62,8 @@ categories:
     description: ""
     order: 5
     subcategories:
+      - id: general
+        name: "General"
       - id: version-control-git
         name: "Version Control & Git"
       - id: code-analysis-testing
@@ -74,6 +87,8 @@ categories:
       > **`CLAUDE.md` files** are files that contain important guidelines and context-specfic information or instructions that help Claude Code to better understand your project and your coding standards
     order: 6
     subcategories:
+      - id: general
+        name: "General"
       - id: language-specific
         name: "Language-Specific"
       - id: domain-specific
@@ -90,6 +105,9 @@ categories:
 
       <!--lint disable double-link-->
     order: 7
+    subcategories:
+      - id: general
+        name: "General"
 
 # Table of Contents formatting configuration
 toc:

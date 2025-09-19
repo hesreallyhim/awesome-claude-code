@@ -37,12 +37,21 @@ def sort_resources(csv_path: Path) -> None:
 
     # Sort the rows
     # First by Category (using custom order), then by Sub-Category
-    # (empty values last), then by Display Name
+    # ("General" first, then alphabetical, empty values last), then by Display Name
+    def subcategory_sort_key(subcat):
+        """Sort General first, then alphabetical, empty last"""
+        if not subcat:
+            return "zzz"  # Empty sorts last
+        elif subcat == "General":
+            return "000"  # General sorts first
+        else:
+            return subcat  # Others sort alphabetically
+
     sorted_rows = sorted(
         rows,
         key=lambda row: (
             category_sort_map.get(row.get("Category", ""), 999),  # Unknown categories sort last
-            row.get("Sub-Category", "") or "zzz",  # Empty sub-categories sort last
+            subcategory_sort_key(row.get("Sub-Category", "")),
             row.get("Display Name", "").lower(),
         ),
     )
@@ -74,7 +83,9 @@ def sort_resources(csv_path: Path) -> None:
     )
     for cat in sorted_categories:
         print(f"  {cat}:")
-        for subcat in sorted(category_counts[cat].keys()):
+        # Sort subcategories with General first
+        sorted_subcats = sorted(category_counts[cat].keys(), key=lambda s: subcategory_sort_key(s))
+        for subcat in sorted_subcats:
             count = category_counts[cat][subcat]
             if subcat == "None":
                 print(f"    (no sub-category): {count} items")

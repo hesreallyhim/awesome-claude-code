@@ -87,6 +87,7 @@ def get_subcategory(category):
     """Get subcategory if applicable"""
     subcategories = {
         "Slash-Commands": [
+            "General",
             "Version Control & Git",
             "Code Analysis & Testing",
             "Context Loading & Priming",
@@ -95,38 +96,39 @@ def get_subcategory(category):
             "Project & Task Management",
             "Miscellaneous",
         ],
-        "CLAUDE.md Files": ["Language-Specific", "Domain-Specific", "Project Scaffolding & MCP"],
+        "CLAUDE.md Files": [
+            "General",
+            "Language-Specific",
+            "Domain-Specific",
+            "Project Scaffolding & MCP",
+        ],
         "Tooling": [
+            "General",
             "IDE Integrations",
-            None,  # For general tooling
+            "Usage Monitors",
+            "Orchestrators",
         ],
     }
 
     if category not in subcategories:
-        return ""
+        return "General"
 
-    options = [opt for opt in subcategories[category] if opt is not None]
+    options = subcategories[category]
     if not options:
-        return ""
+        return "General"
 
     print()
     print(f"Select a subcategory for {category}:")
     print()
     for i, subcat in enumerate(options, 1):
         print(f"  {i}. {subcat}")
-    if category == "Tooling":
-        print(f"  {len(options) + 1}. General Tooling (no subcategory)")
     print()
 
     while True:
         try:
-            choice = input(
-                f"Enter your choice (1-{len(options) + (1 if category == 'Tooling' else 0)}): "
-            ).strip()
+            choice = input(f"Enter your choice (1-{len(options)}): ").strip()
             idx = int(choice) - 1
-            if idx == len(options) and category == "Tooling":
-                return ""
-            elif 0 <= idx < len(options):
+            if 0 <= idx < len(options):
                 return options[idx]
             else:
                 print("Invalid choice.")
@@ -327,7 +329,7 @@ def main():
     subcategory = (
         get_subcategory(category)
         if category in ["Slash-Commands", "CLAUDE.md Files", "Tooling"]
-        else ""
+        else "General"
     )
 
     print()
