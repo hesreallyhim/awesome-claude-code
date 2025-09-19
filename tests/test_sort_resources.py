@@ -11,10 +11,10 @@ Tests cover:
 """
 
 import csv
-from collections.abc import Generator
-from pathlib import Path
 import sys
 import tempfile
+from collections.abc import Generator
+from pathlib import Path
 from typing import Any
 from unittest.mock import patch
 
@@ -281,6 +281,64 @@ class TestSortResources:
             # Known category should come first
             assert sorted_data[0]["Category"] == "Known"
             assert sorted_data[1]["Category"] == "Unknown Category"
+
+    def test_case_insensitive_subcategory_sort(self, temp_csv: Path) -> None:
+        """Test that subcategory sorting is case-insensitive (except for 'General')."""
+        data = [
+            {
+                "ID": "1",
+                "Display Name": "A",
+                "Category": "Test",
+                "Sub-Category": "ZEBRA",
+                "Primary Link": "https://example.com/1",
+                "Author Name": "A",
+                "Author Link": "https://github.com/a",
+                "Description": "Z",
+            },
+            {
+                "ID": "2",
+                "Display Name": "B",
+                "Category": "Test",
+                "Sub-Category": "alpha",
+                "Primary Link": "https://example.com/2",
+                "Author Name": "A",
+                "Author Link": "https://github.com/a",
+                "Description": "A",
+            },
+            {
+                "ID": "3",
+                "Display Name": "C",
+                "Category": "Test",
+                "Sub-Category": "General",
+                "Primary Link": "https://example.com/3",
+                "Author Name": "A",
+                "Author Link": "https://github.com/a",
+                "Description": "G",
+            },
+            {
+                "ID": "4",
+                "Display Name": "D",
+                "Category": "Test",
+                "Sub-Category": "Beta",
+                "Primary Link": "https://example.com/4",
+                "Author Name": "A",
+                "Author Link": "https://github.com/a",
+                "Description": "B",
+            },
+        ]
+
+        with patch(
+            "scripts.category_utils.category_manager.get_categories_for_readme",
+            return_value=[{"name": "Test"}],
+        ):
+            write_csv(temp_csv, data)
+            sort_resources(temp_csv)
+
+            sorted_data = read_csv(temp_csv)
+            subcats = [row["Sub-Category"] for row in sorted_data]
+
+            # General should come first, then alphabetical (case-insensitive)
+            assert subcats == ["General", "alpha", "Beta", "ZEBRA"]
 
     def test_case_insensitive_display_name_sort(self, temp_csv: Path) -> None:
         """Test that display name sorting is case-insensitive."""
