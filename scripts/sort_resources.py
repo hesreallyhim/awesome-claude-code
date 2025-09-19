@@ -19,6 +19,7 @@ def sort_resources(csv_path: Path) -> None:
     from scripts.category_utils import category_manager
 
     category_order = []
+    categories = []
     try:
         categories = category_manager.get_categories_for_readme()
         category_order = [cat["name"] for cat in categories]
@@ -29,6 +30,15 @@ def sort_resources(csv_path: Path) -> None:
     # Create a mapping for sort order
     category_sort_map = {cat: idx for idx, cat in enumerate(category_order)}
 
+    # Create subcategory order mappings for each category
+    subcategory_sort_maps = {}
+    for cat in categories:
+        if "subcategories" in cat:
+            subcat_order = [sub["name"] for sub in cat["subcategories"]]
+            subcategory_sort_maps[cat["name"]] = {
+                name: idx for idx, name in enumerate(subcat_order)
+            }
+
     # Read the CSV data
     with open(csv_path, encoding="utf-8") as f:
         reader = csv.DictReader(f)
@@ -37,21 +47,25 @@ def sort_resources(csv_path: Path) -> None:
 
     # Sort the rows
     # First by Category (using custom order), then by Sub-Category
-    # ("General" first, then alphabetical, empty values last), then by Display Name
-    def subcategory_sort_key(subcat):
-        """Sort General first, then alphabetical, empty last"""
+    # (using defined order from YAML), then by Display Name
+    def subcategory_sort_key(category, subcat):
+        """Sort subcategories by their defined order in categories.yaml"""
         if not subcat:
-            return (2, "")  # Empty sorts last
-        elif subcat == "General":
-            return (0, "")  # General sorts first
-        else:
-            return (1, subcat.lower())  # Others sort alphabetically (case-insensitive)
+            return 999  # Empty sorts last
+
+        # Get the sort map for this category
+        if category in subcategory_sort_maps:
+            subcat_map = subcategory_sort_maps[category]
+            return subcat_map.get(subcat, 998)  # Unknown subcategories sort second-to-last
+
+        # If no sort map, fall back to alphabetical
+        return 997  # Categories without defined subcategory order
 
     sorted_rows = sorted(
         rows,
         key=lambda row: (
             category_sort_map.get(row.get("Category", ""), 999),  # Unknown categories sort last
-            subcategory_sort_key(row.get("Sub-Category", "")),
+            subcategory_sort_key(row.get("Category", ""), row.get("Sub-Category", "")),
             row.get("Display Name", "").lower(),
         ),
     )
@@ -83,8 +97,11 @@ def sort_resources(csv_path: Path) -> None:
     )
     for cat in sorted_categories:
         print(f"  {cat}:")
-        # Sort subcategories with General first
-        sorted_subcats = sorted(category_counts[cat].keys(), key=lambda s: subcategory_sort_key(s))
+        # Sort subcategories using the same order as in the CSV sorting
+        sorted_subcats = sorted(
+            category_counts[cat].keys(),
+            key=lambda s: subcategory_sort_key(cat, s if s != "None" else ""),
+        )
         for subcat in sorted_subcats:
             count = category_counts[cat][subcat]
             if subcat == "None":
