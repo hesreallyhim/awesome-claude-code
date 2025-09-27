@@ -292,7 +292,7 @@ def format_resource_entry(row):
             # Add collapsible GitHub stats section
             base_url = "https://github-readme-stats-plus-theta.vercel.app/api/pin/"
             stats_url = f"{base_url}?repo={repo}&username={owner}&all_stats=true&stats_only=true"
-            result += "\n\n<details>"
+            result += "\n\n<details open>"
             result += "\n<summary>📊 GitHub Stats</summary>"
             result += f"\n\n![GitHub Stats for {repo}]({stats_url})"
             result += "\n\n</details>"
