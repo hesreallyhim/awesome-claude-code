@@ -262,6 +262,7 @@ def format_resource_entry(row):
     author_link = row.get("Author Link", "").strip()
     description = row.get("Description", "").strip()
     license_info = row.get("License", "").strip()
+    removed_from_origin = row.get("Removed From Origin", "").strip().upper() == "TRUE"
 
     # Build the entry
     entry_parts = [f"[`{display_name}`]({primary_link})"]
@@ -279,13 +280,17 @@ def format_resource_entry(row):
     if license_info and license_info != "NOT_FOUND":
         entry_parts.append(f"&nbsp;&nbsp;⚖️&nbsp;&nbsp;{license_info}")
 
-    # Add description on new line if present
+    # Add description on new line if present, with asterisk if removed from origin
     result = "".join(entry_parts)
     if description:
-        result += f"  \n{description}"
+        result += f"  \n{description}" + ("*" if removed_from_origin else "")
 
-    # Add GitHub stats disclosure for GitHub resources
-    if primary_link:
+    # Add footnote if removed from origin (after description, before GitHub stats)
+    if removed_from_origin:
+        result += "\n<sub>* Removed from origin</sub>"
+
+    # Add GitHub stats disclosure for GitHub resources (but not if removed from origin)
+    if primary_link and not removed_from_origin:
         _, is_github, owner, repo = parse_github_url(primary_link)
 
         if is_github and owner and repo:
