@@ -84,7 +84,7 @@ Well-crafted, wide selection of Claude Code hooks, slash commands, subagent file
 </details>
 <br>
 
-[`ccoutputstyles`](https://github.com/viveknair/ccoutputstyles) &nbsp; by &nbsp; [Vivek Nair](https://github.com/viveknair)    
+[`ccoutputstyles`](https://github.com/viveknair/ccoutputstyles) &nbsp; by &nbsp; [Vivek Nair](https://github.com/viveknair)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 CLI tool and template gallery for customizing Claude Code output styles with pre-built templates. Features over 15 templates at the time of writing!
 
 <details>
@@ -806,7 +806,7 @@ Quality check hook for Node.js TypeScript projects with TypeScript compilation. 
 <details open>
 <summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
 
-[`ccoutputstyles`](https://github.com/viveknair/ccoutputstyles) &nbsp; by &nbsp; [Vivek Nair](https://github.com/viveknair)    
+[`ccoutputstyles`](https://github.com/viveknair/ccoutputstyles) &nbsp; by &nbsp; [Vivek Nair](https://github.com/viveknair)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 CLI tool and template gallery for customizing Claude Code output styles with pre-built templates. Features over 15 templates at the time of writing!
 
 <details>

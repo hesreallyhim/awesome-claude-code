@@ -28,6 +28,9 @@ overrides:
   claude-1279cf13:
     skip_validation: true
     notes: "Resource removed from origin"
+  output-2d98cb4f:
+    license: "MIT"
+    license_locked: true
 # Supported override fields:
 # - license: Override the detected license
 # - license_locked: Prevent license validation from updating
