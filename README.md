@@ -144,6 +144,9 @@ A seamless integration between Claude Code AI assistant and Neovim.
 [`crystal`](https://github.com/stravu/crystal) &nbsp; by &nbsp; [stravu](https://github.com/stravu)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A full-fledged desktop application for orchestrating, monitoring, and interacting with Claude Code agents.
 
+[`Schaltwerk`](https://github.com/2mawi2/schaltwerk) &nbsp; by &nbsp; [2mawi2](https://github.com/2mawi2)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+macOS Tauri desktop UI for Para: run parallel Claude Code sessions via isolated git worktrees with dual integrated terminals and MCP integration.
+
 <br>
 
 ## Hooks 🪝
