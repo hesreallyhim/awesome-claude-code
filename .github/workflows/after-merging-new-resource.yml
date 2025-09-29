@@ -1,0 +1,62 @@
+name: Process New Resources After Merge
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'THE_RESOURCES_TABLE.csv'
+  workflow_dispatch:  # Allow manual triggering
+    inputs:
+      create_issues:
+        description: 'Create notification issues for new resources'
+        required: false
+        default: 'true'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+
+jobs:
+  process-new-resources:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Full history for proper diff
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install PyGithub python-dotenv
+    
+    - name: Process new resources (update dates and send notifications)
+      env:
+        # Use the PAT for creating issues in external repos
+        AWESOME_CC_PAT_PUBLIC_REPO: ${{ secrets.AWESOME_CC_PAT_PUBLIC_REPO }}
+        # Set to false if you only want to update dates without creating issues
+        CREATE_ISSUES: ${{ github.event.inputs.create_issues || 'true' }}
+      run: |
+        cd scripts
+        python badge_issue_notification.py
+    
+    - name: Commit updated CSV and processed repos
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        
+        # Check if there are changes to commit
+        if git diff --quiet; then
+          echo "No changes to commit"
+        else
+          git add ./THE_RESOURCES_TABLE.csv ./.processed_repos.json
+          git commit -m "feat: auto-update Date Added for new resources [skip ci]"
+          git push
+        fi

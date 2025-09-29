@@ -1,0 +1,191 @@
+name: 🚀 Submit New Resource
+description: Submit a new resource to be featured in Awesome Claude Code
+title: "[Resource]: "
+labels: ["resource-submission", "pending-validation"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Welcome! 👋
+
+        Thank you for submitting a resource to Awesome Claude Code! This form will guide you through the submission process.
+
+        **Submission Guidelines:**
+        - Submit only ONE resource per issue
+        - Ensure your resource provides genuine value to Claude Code users
+        - All links must be publicly accessible
+        - Check that your resource hasn't already been submitted
+        - Avoid submitting resources that violate the Claude Code Usage Policy (to the best of your understanding)
+
+        **Other Important Guidelines:**
+        - Submissions will be closely scrutinized for security and potential risk.
+        - Please provide clear installation AND uninstallation instructions for any installable resources.
+        - Short examples or demos are tremendously helpful in the review process.
+        - If your resource requires "--dangerously-skip-permissions", please make sure the user is aware of this(!)
+
+        After submission, our automated system will validate your resource and post the results as a comment.
+
+  - type: input
+    id: display_name
+    attributes:
+      label: Display Name
+      description: The name of your resource as it will appear in the list
+      placeholder: "e.g., My Awesome Tool, /my-command, claude-helper"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Select the primary category for your resource
+      options:
+        - Workflows & Knowledge Guides
+        - Tooling
+        - Status Lines
+        - Hooks
+        - Output Styles
+        - Slash-Commands
+        - CLAUDE.md Files
+        - Official Documentation
+    validations:
+      required: true
+
+  - type: dropdown
+    id: subcategory
+    attributes:
+      label: Sub-Category
+      description: Select a sub-category if applicable (based on your category choice above)
+      options:
+        - General
+        - "Tooling: IDE Integrations"
+        - "Tooling: Usage Monitors"
+        - "Tooling: Orchestrators"
+        - "Slash-Commands: Version Control & Git"
+        - "Slash-Commands: Code Analysis & Testing"
+        - "Slash-Commands: Context Loading & Priming"
+        - "Slash-Commands: Documentation & Changelogs"
+        - "Slash-Commands: CI / Deployment"
+        - "Slash-Commands: Project & Task Management"
+        - "Slash-Commands: Miscellaneous"
+        - "CLAUDE.md Files: Language-Specific"
+        - "CLAUDE.md Files: Domain-Specific"
+        - "CLAUDE.md Files: Project Scaffolding & MCP"
+    validations:
+      required: false
+
+  - type: input
+    id: primary_link
+    attributes:
+      label: Primary Link
+      description: The main URL for your resource (must start with https://)
+      placeholder: "https://github.com/username/repository"
+    validations:
+      required: true
+
+  - type: input
+    id: secondary_link
+    attributes:
+      label: Secondary Link
+      description: Optional additional link (e.g., documentation, npm package, website)
+      placeholder: "https://example.com/docs"
+    validations:
+      required: false
+
+  - type: input
+    id: author_name
+    attributes:
+      label: Author Name
+      description: The author's name, alias, or GitHub username (You may submit public/open-source resources that you do not own.)
+      placeholder: "John Doe or johndoe"
+    validations:
+      required: true
+
+  - type: input
+    id: author_link
+    attributes:
+      label: Author Link
+      description: Link to author's GitHub profile or personal website
+      placeholder: "https://github.com/johndoe"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: license
+    attributes:
+      label: License
+      description: Select the license for your resource (or choose 'Other' to specify)
+      options:
+        - MIT
+        - Apache-2.0
+        - GPL-3.0
+        - BSD-3-Clause
+        - ISC
+        - MPL-2.0
+        - AGPL-3.0
+        - Unlicense
+        - CC0-1.0
+        - CC-BY-4.0
+        - CC-BY-SA-4.0
+        - "&copy;"
+        - Other (specify below)
+        - No License / Not Specified
+    validations:
+      required: true
+
+  - type: input
+    id: license_other
+    attributes:
+      label: Other License
+      description: If you selected "Other" above, please specify the license
+      placeholder: "e.g., BSD-2-Clause, Proprietary"
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "A brief description of your resource (1-2 sentences maximum) - follow the list's style - be descriptive, not promotional"
+      placeholder: "Describe what your resource does and its key features..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_comments
+    attributes:
+      label: Additional Comments
+      description: Optional - Any additional information you'd like to share about your resource (not processed during validation)
+      placeholder: "e.g., context about why you created this, special features, acknowledgments, etc."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Submission Checklist
+      description: Please confirm the following
+      options:
+        - label: I have checked that this resource hasn't already been submitted
+          required: true
+        - label: My resource provides genuine value to Claude Code users, and any risks are clearly stated
+          required: true
+        - label: All provided links are working and publicly accessible
+          required: true
+        - label: I am submitting only ONE resource in this issue
+          required: true
+        - label: I understand that low-quality or duplicate submissions may be rejected
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## What happens next?
+
+        1. **Automated Validation**: Our bot will validate your submission and comment with results
+        2. **Review**: If validation passes, a maintainer will review your submission
+        3. **Approval**: If approved, a PR will be automatically created with your resource
+        4. **Notification**: You'll be notified when your resource is added
+
+        Thank you for contributing to Awesome Claude Code! 🎉

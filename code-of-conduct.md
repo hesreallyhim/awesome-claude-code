@@ -35,6 +35,10 @@ Examples of unacceptable behavior include:
   without their explicit permission
 - Other conduct which could reasonably be considered inappropriate in a
   professional setting
+- Use of this community resource for the purposes of:
+  (i) spreading malware, spyware, and/or adware;
+  (ii) attempting to promote proprietary, commercial offerings under the guise of,
+  and at the expense of, the communal, informational purposes of this list.
 
 ## Enforcement Responsibilities
 

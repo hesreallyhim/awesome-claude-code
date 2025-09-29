@@ -7,15 +7,20 @@ else
 endif
 SCRIPTS_DIR := ./scripts
 
-.PHONY: help process validate validate-single update clean test generate download-resources add_resource sort
+.PHONY: help process validate validate-single validate_new_resource update clean test generate download-resources add_resource sort submit submit-resource format format-check
 
 help:
 	@echo "Available commands:"
 	@echo "  make add_resource      - Interactive tool to add a new resource"
+	@echo "  make submit            - One-command submission workflow (entry to PR)"
 	@echo "  make process           - Extract resources from README.md and create/update CSV"
 	@echo "  make validate          - Validate all links in the resource CSV"
 	@echo "  make validate-single URL=<url> - Validate a single resource URL"
+	@echo "  make validate_new_resource - Validate new resource (pre-push check)"
+	@echo "  make install-hooks    - Install git hooks (including pre-push validation)"
 	@echo "  make test              - Run validation tests on test CSV"
+	@echo "  make format            - Check and fix code formatting with ruff"
+	@echo "  make format-check      - Check code formatting without fixing"
 	@echo "  make generate          - Generate README.md from CSV data"
 	@echo "  make update            - Run both process and validate"
 	@echo "  make download-resources - Download active resources from GitHub"
@@ -61,11 +66,41 @@ validate-single:
 	fi
 	@$(PYTHON) $(SCRIPTS_DIR)/validate_single_resource.py "$(URL)" $(if $(SECONDARY),--secondary "$(SECONDARY)") $(if $(NAME),--name "$(NAME)")
 
-# Run validation tests on test CSV
+# Validate only the newest added resource (pre-push hook)
+validate_new_resource:
+	@echo "Validating new resource (pre-push check)..."
+	@$(PYTHON) $(SCRIPTS_DIR)/validate_new_resource.py
+
+# Install git hooks
+install-hooks:
+	@echo "Installing git hooks..."
+	@cp hooks/pre-push .git/hooks/pre-push
+	@chmod +x .git/hooks/pre-push
+	@echo "Pre-push hook installed successfully!"
+
+# Run all tests using pytest
 test:
-	@echo "Skipping v2 validation tests..."
-# 	@echo "Running validation tests..."
-# 	$(PYTHON) $(SCRIPTS_DIR)/test_validate_links.py
+	@echo "Running all tests..."
+	@$(PYTHON) -m pytest tests/ -v
+
+# Format code with ruff (check and fix)
+format:
+	@echo "Checking and fixing code formatting with ruff..."
+	@$(PYTHON) -m ruff check scripts/ tests/ --fix || true
+	@$(PYTHON) -m ruff format scripts/ tests/
+	@echo "✅ Code formatting complete!"
+
+# Check code formatting without fixing
+format-check:
+	@echo "Checking code formatting..."
+	@$(PYTHON) -m ruff check scripts/ tests/
+	@$(PYTHON) -m ruff format scripts/ tests/ --check
+	@if $(PYTHON) -m ruff check scripts/ tests/ --quiet && $(PYTHON) -m ruff format scripts/ tests/ --check --quiet; then \
+		echo "✅ Code formatting check passed!"; \
+	else \
+		echo "❌ Code formatting issues found. Run 'make format' to fix."; \
+		exit 1; \
+	fi
 
 # Sort resources by category, sub-category, and name
 sort:
@@ -110,3 +145,11 @@ install:
 add_resource:
 	@echo "Starting interactive resource submission..."
 	@$(PYTHON) $(SCRIPTS_DIR)/add_resource.py
+
+# One-command submission workflow
+submit:
+	@echo "Starting resource submission workflow..."
+	@$(PYTHON) $(SCRIPTS_DIR)/submit_resource.py $(ARGS)
+
+# Alias for submit
+submit-resource: submit

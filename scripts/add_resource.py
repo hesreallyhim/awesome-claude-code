@@ -3,13 +3,16 @@
 
 import csv
 import os
-import subprocess
 import sys
 from datetime import datetime
 
 # Import validation function
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from validate_single_resource import validate_resource_from_dict  # type: ignore[import]
+try:
+    from validate_single_resource import (
+        validate_resource_from_dict,  # type: ignore[import-not-found]
+    )
+except ImportError:
+    from .validate_single_resource import validate_resource_from_dict
 
 
 def clear_screen():
@@ -30,7 +33,13 @@ def print_header():
 
 def get_resource_type():
     """Display menu and get resource type selection"""
-    categories = ["Workflows & Knowledge Guides", "Tooling", "Hooks", "Slash-Commands", "CLAUDE.md Files"]
+    categories = [
+        "Workflows & Knowledge Guides",
+        "Tooling",
+        "Hooks",
+        "Slash-Commands",
+        "CLAUDE.md Files",
+    ]
 
     print("Select the type of resource:")
     print()
@@ -78,6 +87,7 @@ def get_subcategory(category):
     """Get subcategory if applicable"""
     subcategories = {
         "Slash-Commands": [
+            "General",
             "Version Control & Git",
             "Code Analysis & Testing",
             "Context Loading & Priming",
@@ -86,36 +96,39 @@ def get_subcategory(category):
             "Project & Task Management",
             "Miscellaneous",
         ],
-        "CLAUDE.md Files": ["Language-Specific", "Domain-Specific", "Project Scaffolding & MCP"],
+        "CLAUDE.md Files": [
+            "General",
+            "Language-Specific",
+            "Domain-Specific",
+            "Project Scaffolding & MCP",
+        ],
         "Tooling": [
+            "General",
             "IDE Integrations",
-            None,  # For general tooling
+            "Usage Monitors",
+            "Orchestrators",
         ],
     }
 
     if category not in subcategories:
-        return ""
+        return "General"
 
-    options = [opt for opt in subcategories[category] if opt is not None]
+    options = subcategories[category]
     if not options:
-        return ""
+        return "General"
 
     print()
     print(f"Select a subcategory for {category}:")
     print()
     for i, subcat in enumerate(options, 1):
         print(f"  {i}. {subcat}")
-    if category == "Tooling":
-        print(f"  {len(options) + 1}. General Tooling (no subcategory)")
     print()
 
     while True:
         try:
-            choice = input(f"Enter your choice (1-{len(options) + (1 if category == 'Tooling' else 0)}): ").strip()
+            choice = input(f"Enter your choice (1-{len(options)}): ").strip()
             idx = int(choice) - 1
-            if idx == len(options) and category == "Tooling":
-                return ""
-            elif 0 <= idx < len(options):
+            if 0 <= idx < len(options):
                 return options[idx]
             else:
                 print("Invalid choice.")
@@ -127,10 +140,10 @@ def get_url(prompt):
     """Get and validate URL input"""
     while True:
         url = input(prompt).strip()
-        if url.startswith(("http://", "https://")):
+        if url.startswith("https://"):
             return url
         else:
-            print("Please enter a valid URL starting with http:// or https://")
+            print("Please enter a valid URL starting with https://")
 
 
 def get_license():
@@ -154,19 +167,10 @@ def get_description():
 
 
 def generate_id(display_name, primary_link, category):
-    """Generate ID using quick_id.py"""
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    quick_id_path = os.path.join(script_dir, "quick_id.py")
+    """Generate ID using shared resource_id module"""
+    from resource_id import generate_resource_id
 
-    try:
-        result = subprocess.run(
-            ["python3", quick_id_path, display_name, primary_link, category], capture_output=True, text=True, check=True
-        )
-        return result.stdout.strip()
-    except subprocess.CalledProcessError as e:
-        print(f"Error generating ID: {e}")
-        print(f"Stderr: {e.stderr}")
-        sys.exit(1)
+    return generate_resource_id(display_name, primary_link, category)
 
 
 def confirm_submission(data):
@@ -216,10 +220,14 @@ def append_to_csv(data):
         data["author_name"],
         data["author_link"],
         data.get("active", "TRUE"),  # Active
+        data.get("date_added", datetime.now().strftime("%Y-%m-%d:%H-%M-%S")),  # Date Added
         data.get("last_modified", ""),  # Last Modified
         data.get("last_checked", datetime.now().strftime("%Y-%m-%d:%H-%M-%S")),  # Last Checked
         data["license"],
         data["description"],
+        data.get(
+            "removed_from_origin", "FALSE"
+        ),  # Removed From Origin - new resources default to FALSE
     ]
 
     try:
@@ -252,7 +260,8 @@ def generate_pr_content(data):
 
 ### Automated Notification
 
-- [{"x" if is_github else " "}] This is a GitHub-hosted resource and will receive an automatic notification issue when merged
+- [{"x" if is_github else " "}] This is a GitHub-hosted resource and will receive an automatic
+  notification issue when merged
 
 ### Checklist for New Resources
 
@@ -266,7 +275,9 @@ def generate_pr_content(data):
 
 def save_pr_content(content):
     """Save PR content to a file"""
-    pr_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".pr_template_content.md")
+    pr_file = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)), "..", ".pr_template_content.md"
+    )
     try:
         with open(pr_file, "w", encoding="utf-8") as f:
             f.write(content)
@@ -276,15 +287,53 @@ def save_pr_content(content):
         return None
 
 
+def install_git_hooks():
+    """Install git hooks for the repository."""
+    try:
+        # Check if we're in a git repository
+        if not os.path.exists(".git"):
+            return  # Not in a git repo, skip silently
+
+        hooks_dir = "hooks"
+        git_hooks_dir = ".git/hooks"
+
+        # Check if pre-push hook exists in the hooks directory
+        pre_push_source = os.path.join(hooks_dir, "pre-push")
+        if os.path.exists(pre_push_source):
+            pre_push_dest = os.path.join(git_hooks_dir, "pre-push")
+
+            # Copy the hook
+            import shutil
+
+            shutil.copy2(pre_push_source, pre_push_dest)
+
+            # Make it executable
+            os.chmod(pre_push_dest, 0o755)
+
+            print("✓ Pre-push validation hook installed")
+            print()
+
+    except Exception:
+        # Silently ignore any errors - this is not critical
+        pass
+
+
 def main():
     """Main function"""
     clear_screen()
     print_header()
 
+    # Install git hooks silently
+    # install_git_hooks()
+
     # Collect information
     category = get_resource_type()
     display_name = get_display_name(category)
-    subcategory = get_subcategory(category) if category in ["Slash-Commands", "CLAUDE.md Files", "Tooling"] else ""
+    subcategory = (
+        get_subcategory(category)
+        if category in ["Slash-Commands", "CLAUDE.md Files", "Tooling"]
+        else "General"
+    )
 
     print()
     primary_link = get_url("Enter the primary link to the resource: ")
@@ -370,7 +419,9 @@ def main():
             print()
 
             if "github.com" in data["primary_link"]:
-                print("Note: Once merged, an automated issue will be created on the GitHub repository")
+                print(
+                    "Note: Once merged, an automated issue will be created on the GitHub repository"
+                )
                 print("      to notify them of their inclusion in Awesome Claude Code.")
                 print()
         else:

@@ -1,0 +1,278 @@
+name: Validate Resource Submission
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  validate-submission:
+    # Only run on issues with the resource-submission label
+    if: contains(github.event.issue.labels.*.name, 'resource-submission')
+    runs-on: ubuntu-latest
+    
+    permissions:
+      issues: write
+      contents: read
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            scripts/
+            templates/
+            THE_RESOURCES_TABLE.csv
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install PyYAML requests python-dotenv
+      
+      - name: Parse and validate submission
+        id: validate
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Run validation and capture only the last line (JSON output)
+          # The script now outputs compact JSON on the last line
+          python scripts/parse_issue_form.py --validate 2>&1 | tail -n 1 > validation_result.json
+          
+          # Display validation status
+          if grep -q '"valid": true' validation_result.json; then
+            echo "Validation passed!"
+          else
+            echo "Validation failed!"
+          fi
+          
+          # Show the result for debugging (pretty print it)
+          echo "=== Validation Result ==="
+          python -m json.tool validation_result.json || cat validation_result.json
+      
+      - name: Remove old validation comments
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue_number = context.issue.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            
+            // Get all comments
+            const comments = await github.rest.issues.listComments({
+              owner,
+              repo,
+              issue_number,
+            });
+            
+            // Find and delete previous validation comments by this bot
+            for (const comment of comments.data) {
+              if (comment.user.type === 'Bot' && comment.body.includes('## 🤖 Validation Results')) {
+                await github.rest.issues.deleteComment({
+                  owner,
+                  repo,
+                  comment_id: comment.id,
+                });
+              }
+            }
+      
+      - name: Post validation results
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const validation_result = JSON.parse(fs.readFileSync('validation_result.json', 'utf8'));
+            
+            let comment_body = '## 🤖 Validation Results\n\n';
+            
+            if (validation_result.valid) {
+              comment_body += '✅ **All validation checks passed!**\n\n';
+              comment_body += 'Your submission is ready for review by a maintainer.\n\n';
+              comment_body += '### Validated Data:\n';
+              comment_body += '```json\n';
+              comment_body += JSON.stringify(validation_result.data, null, 2);
+              comment_body += '\n```\n';
+            } else {
+              comment_body += '❌ **Validation failed**\n\n';
+              comment_body += 'Please fix the following issues and edit your submission:\n\n';
+              
+              for (const error of validation_result.errors) {
+                comment_body += `- ❗ ${error}\n`;
+              }
+              
+              if (validation_result.warnings && validation_result.warnings.length > 0) {
+                comment_body += '\n### Warnings:\n';
+                for (const warning of validation_result.warnings) {
+                  comment_body += `- ⚠️ ${warning}\n`;
+                }
+              }
+              
+              comment_body += '\n**Note:** You can edit your issue to fix these problems, and validation will run again automatically.';
+            }
+            
+            comment_body += '\n\n---\n';
+            comment_body += '<sub>This comment is automatically updated when you edit the issue.</sub>';
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: comment_body
+            });
+      
+      - name: Update issue labels
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const issue_number = context.issue.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const validation_result = JSON.parse(fs.readFileSync('validation_result.json', 'utf8'));
+            const validation_passed = validation_result.valid;
+            
+            // Get current labels
+            const { data: issue } = await github.rest.issues.get({
+              owner,
+              repo,
+              issue_number,
+            });
+            
+            let labels = issue.labels.map(label => label.name);
+            
+            // Remove validation-related labels
+            labels = labels.filter(label => 
+              label !== 'validation-passed' && 
+              label !== 'validation-failed' && 
+              label !== 'pending-validation'
+            );
+            
+            // If validation passed and changes were previously requested, remove that label
+            if (validation_passed && labels.includes('changes-requested')) {
+              labels = labels.filter(label => label !== 'changes-requested');
+            }
+            
+            // Add appropriate label
+            if (validation_passed) {
+              labels.push('validation-passed');
+            } else {
+              labels.push('validation-failed');
+            }
+            
+            // Update labels
+            await github.rest.issues.setLabels({
+              owner,
+              repo,
+              issue_number,
+              labels,
+            });
+      
+      - name: Notify maintainer if changes were made
+        if: github.event.action == 'edited' && contains(github.event.issue.labels.*.name, 'changes-requested')
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const validation_result = JSON.parse(fs.readFileSync('validation_result.json', 'utf8'));
+            const issue_number = context.issue.number;
+            const current_validation_status = validation_result.valid;
+            
+            // Find all comments to check notification history and find maintainer
+            const comments = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue_number,
+              per_page: 100
+            });
+            
+            // Find the most recent "Changes Requested by @" comment to get maintainer
+            let maintainer = null;
+            let changesRequestedTime = null;
+            for (let i = comments.data.length - 1; i >= 0; i--) {
+              const comment = comments.data[i];
+              const match = comment.body.match(/## 🔄 Changes Requested by @(\w+)/);
+              if (match) {
+                maintainer = match[1];
+                changesRequestedTime = new Date(comment.created_at);
+                break;
+              }
+            }
+            
+            if (!maintainer) return;
+            
+            // Check for previous notifications and their metadata
+            let lastNotificationTime = null;
+            let lastNotifiedStatus = null;
+            let hasNotifiedAfterRequest = false;
+            
+            for (const comment of comments.data) {
+              // Look for our notification comments
+              if (comment.body.includes('## 📝 Issue Updated') && comment.user.type === 'Bot') {
+                // Check if this notification came after the changes were requested
+                const commentTime = new Date(comment.created_at);
+                if (commentTime > changesRequestedTime) {
+                  hasNotifiedAfterRequest = true;
+                  
+                  // Extract metadata from hidden comment
+                  const metaMatch = comment.body.match(/<!-- notification-meta: status=(\w+) -->/);
+                  if (metaMatch) {
+                    lastNotifiedStatus = metaMatch[1] === 'true';
+                  }
+                  
+                  if (!lastNotificationTime || commentTime > lastNotificationTime) {
+                    lastNotificationTime = commentTime;
+                  }
+                }
+              }
+            }
+            
+            // Determine if we should send a notification
+            let shouldNotify = false;
+            let notificationReason = '';
+            
+            if (!hasNotifiedAfterRequest) {
+              // First edit after changes requested - always notify
+              shouldNotify = true;
+              notificationReason = 'first edit after changes requested';
+            } else if (lastNotifiedStatus !== null && lastNotifiedStatus !== current_validation_status) {
+              // Validation status changed - notify
+              shouldNotify = true;
+              notificationReason = 'validation status changed';
+            }
+            
+            if (shouldNotify) {
+              let notification_body = `## 📝 Issue Updated\n\n`;
+              notification_body += `@${maintainer} - The submitter has edited their issue in response to your requested changes.\n\n`;
+              
+              if (current_validation_status) {
+                notification_body += `✅ **The updated submission now passes all validation checks!**\n\n`;
+                notification_body += `You may want to review the changes and consider approving the submission.`;
+              } else {
+                notification_body += `❌ **The submission still has validation errors.**\n\n`;
+                notification_body += `The submitter may need additional guidance to fix the remaining issues.`;
+              }
+              
+              // Add hidden metadata for tracking
+              notification_body += `\n\n<!-- notification-meta: status=${current_validation_status} -->`;
+              
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue_number,
+                body: notification_body
+              });
+              
+              console.log(`Notification sent (reason: ${notificationReason})`);
+            } else {
+              console.log('Skipping notification - no significant changes detected');
+            }
+      
+      - name: Cleanup
+        if: always()
+        run: |
+          rm -f validation_result.json

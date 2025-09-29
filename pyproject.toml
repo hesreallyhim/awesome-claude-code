@@ -22,9 +22,11 @@ classifiers = [
 
 [project.optional-dependencies]
 dev = [
+    "pytest>=8.0.0",
     "requests>=2.31.0",
     "python-dotenv>=1.0.0",
     "types-requests>=2.31.0",
+    "types-PyYAML>=6.0.0",
     "ruff>=0.1.0",
     "pre-commit>=3.5.0",
 ]
@@ -36,7 +38,7 @@ dev = [
 
 [tool.ruff]
 target-version = "py311"
-line-length = 120
+line-length = 100
 
 [tool.ruff.lint]
 select = [
@@ -50,9 +52,7 @@ select = [
     "C4",  # flake8-comprehensions
     "SIM", # flake8-simplify
 ]
-ignore = [
-    "E501", # line too long (handled by formatter)
-]
+
 
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ["F401"] # unused imports in __init__ files

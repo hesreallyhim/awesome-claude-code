@@ -1,0 +1,17 @@
+#!/bin/sh
+#
+# Pre-push hook for Awesome Claude Code
+# 
+# This hook validates that exactly one resource has been added to THE_RESOURCES_TABLE.csv
+# when comparing to upstream/main, and validates that resource before allowing the push.
+#
+# To install this hook:
+#   cp hooks/pre-push .git/hooks/pre-push
+#   chmod +x .git/hooks/pre-push
+#
+
+# Run the validation script
+python3 scripts/validate_new_resource.py
+
+# Exit with the same code as the validation script
+exit $?

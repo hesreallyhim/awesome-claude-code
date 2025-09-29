@@ -1,0 +1,65 @@
+name: 💡 Repository Enhancement
+description: Suggest an improvement to the repository structure, categories, or processes
+title: "[Enhancement]: "
+labels: ["enhancement"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Repository Enhancement Suggestion
+        
+        Use this form to suggest improvements to Awesome Claude Code itself (not for submitting resources).
+
+  - type: dropdown
+    id: enhancement_type
+    attributes:
+      label: Enhancement Type
+      description: What kind of improvement are you suggesting?
+      options:
+        - New category or subcategory
+        - Repository structure
+        - Submission process
+        - Documentation
+        - Automation/workflows
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe your enhancement suggestion in detail
+      placeholder: "Explain what you'd like to see improved and why..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Expected Benefit
+      description: How will this enhancement help the community?
+      placeholder: "This would help users by..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Possible Implementation
+      description: If you have ideas on how to implement this, please share
+      placeholder: "One way to implement this could be..."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I've checked that this enhancement hasn't already been suggested
+          required: true
+        - label: This enhancement would improve the repository for the community
+          required: true

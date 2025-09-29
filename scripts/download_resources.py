@@ -33,6 +33,7 @@ import re
 import time
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
 import requests
 import yaml  # type: ignore[import-untyped]
@@ -48,7 +49,11 @@ DEFAULT_OUTPUT_DIR = ".myob/downloads"
 HOSTED_OUTPUT_DIR = "resources"
 
 # Setup headers with optional GitHub token
-HEADERS = {"User-Agent": USER_AGENT, "Accept": "application/vnd.github.v3.raw", "X-GitHub-Api-Version": "2022-11-28"}
+HEADERS = {
+    "User-Agent": USER_AGENT,
+    "Accept": "application/vnd.github.v3.raw",
+    "X-GitHub-Api-Version": "2022-11-28",
+}
 github_token = os.environ.get("GITHUB_TOKEN")
 if github_token:
     # Use Bearer token format as per GitHub API documentation
@@ -85,7 +90,7 @@ OPEN_SOURCE_LICENSES = {
 _CATEGORY_MAPPING: dict[str, str] = {}
 
 
-def sanitize_filename(name):
+def sanitize_filename(name: str) -> str:
     """Sanitize a string to be safe for use as a filename."""
     # Replace spaces with hyphens and remove/replace problematic characters
     # Added commas and other special chars that could cause issues
@@ -95,7 +100,7 @@ def sanitize_filename(name):
     return name[:255]  # Max filename length
 
 
-def parse_github_url(url):
+def parse_github_url(url: str) -> dict[str, str] | None:
     """
     Parse GitHub URL and extract owner, repo, branch, and path.
     Returns a dict with keys: owner, repo, branch, path, type
@@ -138,21 +143,30 @@ def parse_github_url(url):
     return None
 
 
-def download_github_file(url_info, output_path, retry_count=0, max_retries=3):
+def download_github_file(
+    url_info: dict[str, str], output_path: str, retry_count: int = 0, max_retries: int = 3
+) -> bool:
     """
     Download a file from GitHub using the API.
     Returns True if successful, False otherwise.
     """
+    response: requests.Response | None = None
     try:
         if url_info["type"] == "file":
             # Download single file
-            api_url = f"https://api.github.com/repos/{url_info['owner']}/{url_info['repo']}/contents/{url_info['path']}?ref={url_info['branch']}"
+            api_url = (
+                f"https://api.github.com/repos/{url_info['owner']}/"
+                f"{url_info['repo']}/contents/{url_info['path']}?ref={url_info['branch']}"
+            )
             response = requests.get(api_url, headers=HEADERS, timeout=30)
 
             # Log response details
             if response.status_code != 200:
                 print(f"    API Response: {response.status_code}")
-                print(f"    Headers: X-RateLimit-Remaining={response.headers.get('X-RateLimit-Remaining', 'N/A')}")
+                print(
+                    "    Headers: X-RateLimit-Remaining"
+                    f"={response.headers.get('X-RateLimit-Remaining', 'N/A')}"
+                )
                 print(f"    Response: {response.text[:300]}...")
 
             if response.status_code == 200:
@@ -168,7 +182,10 @@ def download_github_file(url_info, output_path, retry_count=0, max_retries=3):
 
         elif url_info["type"] == "dir":
             # List directory contents
-            api_url = f"https://api.github.com/repos/{url_info['owner']}/{url_info['repo']}/contents/{url_info['path']}?ref={url_info['branch']}"
+            api_url = (
+                f"https://api.github.com/repos/{url_info['owner']}/{url_info['repo']}/contents/"
+                f"{url_info['path']}?ref={url_info['branch']}"
+            )
             # Update headers to use proper Accept header for directory listing
             dir_headers = HEADERS.copy()
             dir_headers["Accept"] = "application/vnd.github+json"
@@ -177,7 +194,10 @@ def download_github_file(url_info, output_path, retry_count=0, max_retries=3):
             # Log response details
             if response.status_code != 200:
                 print(f"    API Response: {response.status_code}")
-                print(f"    Headers: X-RateLimit-Remaining={response.headers.get('X-RateLimit-Remaining', 'N/A')}")
+                print(
+                    f"    Headers: X-RateLimit-Remaining="
+                    f"{response.headers.get('X-RateLimit-Remaining', 'N/A')}"
+                )
                 print(f"    Response: {response.text[:300]}...")
 
             if response.status_code == 200:
@@ -190,9 +210,14 @@ def download_github_file(url_info, output_path, retry_count=0, max_retries=3):
                     if item["type"] == "file":
                         file_path = os.path.join(output_path, item["name"])
                         # Download the file content
-                        file_response = requests.get(item["download_url"], headers=HEADERS, timeout=30)
+                        file_response = requests.get(
+                            item["download_url"], headers=HEADERS, timeout=30
+                        )
                         if file_response.status_code != 200:
-                            print(f"      File download failed: {item['name']} - Status: {file_response.status_code}")
+                            print(
+                                f"      File download failed: {item['name']} - "
+                                f"Status: {file_response.status_code}"
+                            )
                         if file_response.status_code == 200:
                             with open(file_path, "wb") as f:
                                 f.write(file_response.content)
@@ -209,7 +234,10 @@ def download_github_file(url_info, output_path, retry_count=0, max_retries=3):
             # Log response details
             if response.status_code != 200:
                 print(f"    API Response: {response.status_code}")
-                print(f"    Headers: X-RateLimit-Remaining={response.headers.get('X-RateLimit-Remaining', 'N/A')}")
+                print(
+                    f"    Headers: X-RateLimit-Remaining="
+                    f"{response.headers.get('X-RateLimit-Remaining', 'N/A')}"
+                )
                 print(f"    Response: {response.text[:300]}...")
 
             if response.status_code == 200:
@@ -225,11 +253,13 @@ def download_github_file(url_info, output_path, retry_count=0, max_retries=3):
                 return True
 
         # Handle rate limiting
-        if response.status_code == 429:
+        if response and response.status_code == 429:
             reset_time = response.headers.get("X-RateLimit-Reset")
             if reset_time:
                 reset_datetime = datetime.fromtimestamp(int(reset_time))
-                print(f"    Rate limit will reset at: {reset_datetime.strftime('%Y-%m-%d %H:%M:%S')}")
+                print(
+                    f"    Rate limit will reset at: {reset_datetime.strftime('%Y-%m-%d %H:%M:%S')}"
+                )
             raise requests.exceptions.HTTPError("Rate limited")
 
         return False
@@ -245,7 +275,7 @@ def download_github_file(url_info, output_path, retry_count=0, max_retries=3):
         return False
 
 
-def load_overrides():
+def load_overrides() -> dict[str, Any]:
     """Load resource overrides from template directory."""
     template_dir = os.path.join(os.path.dirname(__file__), "..", "templates")
     override_path = os.path.join(template_dir, "resource-overrides.yaml")
@@ -257,7 +287,7 @@ def load_overrides():
         return data.get("overrides", {})
 
 
-def apply_overrides(row, overrides):
+def apply_overrides(row: dict[str, str], overrides: dict[str, Any]) -> dict[str, str]:
     """Apply overrides to a resource row."""
     resource_id = row.get("ID", "")
     if not resource_id or resource_id not in overrides:
@@ -279,12 +309,12 @@ def apply_overrides(row, overrides):
 
 
 def process_resources(
-    category_filter=None,
-    license_filter=None,
-    max_downloads=None,
-    output_dir=DEFAULT_OUTPUT_DIR,
-    hosted_dir=HOSTED_OUTPUT_DIR,
-):
+    category_filter: str | None = None,
+    license_filter: str | None = None,
+    max_downloads: int | None = None,
+    output_dir: str = DEFAULT_OUTPUT_DIR,
+    hosted_dir: str = HOSTED_OUTPUT_DIR,
+) -> None:
     """
     Process and download resources from the CSV file.
     """
@@ -300,7 +330,10 @@ def process_resources(
             rate_data = rate_check.json()
             core_limit = rate_data.get("rate", {})
             print("\nGitHub API Rate Limit Status:")
-            print(f"  Remaining: {core_limit.get('remaining', 'N/A')}/{core_limit.get('limit', 'N/A')}")
+            print(
+                f"  Remaining: {core_limit.get('remaining', 'N/A')}/"
+                f"{core_limit.get('limit', 'N/A')}"
+            )
             if core_limit.get("reset"):
                 reset_time = datetime.fromtimestamp(core_limit["reset"])
                 print(f"  Resets at: {reset_time.strftime('%Y-%m-%d %H:%M:%S')}")
@@ -374,7 +407,9 @@ def process_resources(
             if url_info["type"] == "gist":
                 resource_path = os.path.join(output_dir, category, f"{safe_name}-gist")
                 hosted_path = (
-                    os.path.join(hosted_dir, category, safe_name) if resource_license in OPEN_SOURCE_LICENSES else None
+                    os.path.join(hosted_dir, category, safe_name)
+                    if resource_license in OPEN_SOURCE_LICENSES
+                    else None
                 )
             elif url_info["type"] == "repo":
                 resource_path = os.path.join(output_dir, category, safe_name)
@@ -384,7 +419,9 @@ def process_resources(
             elif url_info["type"] == "dir":
                 resource_path = os.path.join(output_dir, category, safe_name)
                 hosted_path = (
-                    os.path.join(hosted_dir, category, safe_name) if resource_license in OPEN_SOURCE_LICENSES else None
+                    os.path.join(hosted_dir, category, safe_name)
+                    if resource_license in OPEN_SOURCE_LICENSES
+                    else None
                 )
             else:  # file
                 # Extract filename from path
@@ -417,7 +454,10 @@ def process_resources(
                         os.makedirs(os.path.dirname(hosted_path), exist_ok=True)
 
                         if os.path.isdir(resource_path):
-                            print(f"     Source is directory with {len(os.listdir(resource_path))} items")
+                            print(
+                                f"     Source is directory with "
+                                f"{len(os.listdir(resource_path))} items"
+                            )
                             shutil.copytree(resource_path, hosted_path, dirs_exist_ok=True)
                         else:
                             print("     Source is file")
@@ -451,7 +491,7 @@ def process_resources(
     print(f"{'=' * 60}")
 
 
-def main():
+def main() -> None:
     """Main entry point."""
     parser = argparse.ArgumentParser(description="Download resources from awesome-claude-code CSV")
     parser.add_argument("--category", help="Filter by specific category")
@@ -459,7 +499,9 @@ def main():
     parser.add_argument("--max-downloads", type=int, help="Limit number of downloads")
     parser.add_argument("--output-dir", default=DEFAULT_OUTPUT_DIR, help="Archive output directory")
     parser.add_argument(
-        "--hosted-dir", default=HOSTED_OUTPUT_DIR, help="Hosted output directory for open-source resources"
+        "--hosted-dir",
+        default=HOSTED_OUTPUT_DIR,
+        help="Hosted output directory for open-source resources",
     )
 
     args = parser.parse_args()

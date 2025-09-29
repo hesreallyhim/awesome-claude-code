@@ -1,0 +1,77 @@
+name: Manual Badge Notification
+
+on:
+  workflow_dispatch:
+    inputs:
+      repository_url:
+        description: 'Target GitHub repository URL (e.g., https://github.com/owner/repo)'
+        required: true
+        type: string
+      resource_name:
+        description: 'Name of the resource being featured (defaults to repository name)'
+        required: false
+        type: string
+      description:
+        description: 'Description of the resource (defaults to generic message)'
+        required: false
+        type: string
+      skip_duplicate_check:
+        description: 'Skip checking for existing notification issues'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+      enable_tracking:
+        description: 'Enable tracking of manual notifications (creates .manual_notifications.json)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+
+jobs:
+  send-notification:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        pip install PyGithub python-dotenv
+    
+    - name: Send badge notification
+      env:
+        AWESOME_CC_PAT_PUBLIC_REPO: ${{ secrets.AWESOME_CC_PAT_PUBLIC_REPO }}
+        REPOSITORY_URL: ${{ github.event.inputs.repository_url }}
+        RESOURCE_NAME: ${{ github.event.inputs.resource_name }}
+        DESCRIPTION: ${{ github.event.inputs.description }}
+        SKIP_DUPLICATE_CHECK: ${{ github.event.inputs.skip_duplicate_check }}
+        ENABLE_TRACKING: ${{ github.event.inputs.enable_tracking }}
+      run: |
+        python scripts/manual_badge_notification.py
+    
+    - name: Commit tracking file (if enabled)
+      if: github.event.inputs.enable_tracking == 'true' && success()
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        if [ -f ".manual_notifications.json" ]; then
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .manual_notifications.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update manual notification tracking"
+          git push
+        fi

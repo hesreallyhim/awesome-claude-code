@@ -1,0 +1,129 @@
+# Unified Category Definitions
+# This is the single source of truth for all categories in awesome-claude-code
+# 
+# Adding a new category requires only updating this file.
+# All scripts and templates will automatically use these definitions.
+
+categories:
+  - id: workflows
+    name: "Workflows & Knowledge Guides"
+    prefix: wf
+    icon: "🧠"
+    description: |
+      > A **workflow** is a tightly coupled set of Claude Code-native resources that facilitate specific projects
+    order: 1
+    subcategories:
+      - id: general
+        name: "General"
+    
+  - id: tooling
+    name: "Tooling"
+    prefix: tool
+    icon: "🧰"
+    description: |
+      > **Tooling** denotes applications that are built on top of Claude Code and consist of more components than slash-commands and `CLAUDE.md` files
+    order: 2
+    subcategories:
+      - id: general
+        name: "General"
+      - id: ide-integrations
+        name: "IDE Integrations"
+      - id: usage-monitors
+        name: "Usage Monitors"
+      - id: orchestrators
+        name: "Orchestrators"
+        
+  - id: statusline
+    name: "Status Lines"
+    prefix: status
+    icon: "📊"
+    description: |
+      > **Status lines** - Configurations and customizations for Claude Code's status bar functionality
+    order: 3
+    subcategories:
+      - id: general
+        name: "General"
+    
+  - id: hooks
+    name: "Hooks"
+    prefix: hook
+    icon: "🪝"
+    description: |
+      > **Hooks** are a powerful API for Claude Code that allows users to activate commands and run scripts at different points in Claude's agentic lifecycle.
+    order: 4
+    subcategories:
+      - id: general
+        name: "General"
+
+  - id: output-styles
+    name: "Output Styles"
+    prefix: output
+    icon: "💬"
+    description: |
+      > **Output styles** allow you to use Claude Code as any type of agent while keeping its core capabilities, such as running local scripts, reading/writing files, and tracking TODOs.
+    order: 5
+    subcategories:
+      - id: general
+        name: "General"
+
+  - id: slash-commands
+    name: "Slash-Commands"
+    prefix: cmd
+    icon: "🔪"
+    description: ""
+    order: 6
+    subcategories:
+      - id: general
+        name: "General"
+      - id: version-control-git
+        name: "Version Control & Git"
+      - id: code-analysis-testing
+        name: "Code Analysis & Testing"
+      - id: context-loading-priming
+        name: "Context Loading & Priming"
+      - id: documentation-changelogs
+        name: "Documentation & Changelogs"
+      - id: ci-deployment
+        name: "CI / Deployment"
+      - id: project-task-management
+        name: "Project & Task Management"
+      - id: miscellaneous
+        name: "Miscellaneous"
+        
+  - id: claude-md-files
+    name: "CLAUDE.md Files"
+    prefix: claude
+    icon: "📂"
+    description: |
+      > **`CLAUDE.md` files** are files that contain important guidelines and context-specific information or instructions that help Claude Code to better understand your project and your coding standards
+    order: 7
+    subcategories:
+      - id: general
+        name: "General"
+      - id: language-specific
+        name: "Language-Specific"
+      - id: domain-specific
+        name: "Domain-Specific"
+      - id: project-scaffolding-mcp
+        name: "Project Scaffolding & MCP"
+        
+  - id: official-documentation
+    name: "Official Documentation"
+    prefix: doc
+    icon: "🏛️"
+    description: |
+      > Links to some of Anthropic's terrific documentation and resources regarding Claude Code
+
+      <!--lint disable double-link-->
+    order: 8
+    subcategories:
+      - id: general
+        name: "General"
+
+# Table of Contents formatting configuration
+toc:
+  style: custom
+  symbol: "▪"
+  subsymbol: "▫"
+  indent: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+  subindent: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"

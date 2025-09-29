@@ -16,22 +16,31 @@ from typing import Any
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 try:
-    from validate_links import validate_url  # type: ignore[import-not-found]
+    from validate_links import validate_url
 except ImportError:
     # Fallback for when running as a module
-    from .validate_links import validate_url  # type: ignore[import-not-found]
+    from .validate_links import validate_url
 
 
-def validate_single_resource(resource_data: dict[str, str]) -> tuple[bool, dict[str, Any], list[str]]:
+def validate_single_resource(
+    *,
+    primary_link: str,
+    secondary_link: str = "",
+    display_name: str = "",
+    category: str = "",
+    license: str = "NOT_FOUND",
+    **kwargs: Any,
+) -> tuple[bool, dict[str, Any], list[str]]:
     """
     Validate a single resource before adding to CSV.
 
     Args:
-        resource_data: Dictionary containing resource information with keys:
-            - primary_link: Required URL to validate
-            - secondary_link: Optional secondary URL
-            - display_name: Name of the resource
-            - category: Resource category
+        primary_link: Required URL to validate
+        secondary_link: Optional secondary URL
+        display_name: Name of the resource
+        category: Resource category
+        license: License information (defaults to "NOT_FOUND")
+        **kwargs: Additional fields that may be present in the resource
 
     Returns:
         Tuple of (is_valid, enriched_data, errors):
@@ -40,10 +49,17 @@ def validate_single_resource(resource_data: dict[str, str]) -> tuple[bool, dict[
             - errors: List of validation error messages
     """
     errors = []
-    enriched_data = resource_data.copy()
+    enriched_data = {
+        "primary_link": primary_link,
+        "secondary_link": secondary_link,
+        "display_name": display_name,
+        "category": category,
+        "license": license,
+        **kwargs,
+    }
 
     # Validate primary link
-    primary_url = resource_data.get("primary_link", "").strip()
+    primary_url = primary_link.strip()
     if not primary_url:
         errors.append("Primary link is required")
         return False, enriched_data, errors
@@ -66,7 +82,7 @@ def validate_single_resource(resource_data: dict[str, str]) -> tuple[bool, dict[
             print(f"✓ Found last modified date: {last_modified}")
 
     # Validate secondary link if present
-    secondary_url = resource_data.get("secondary_link", "").strip()
+    secondary_url = secondary_link.strip()
     if secondary_url:
         print(f"Validating secondary URL: {secondary_url}")
         secondary_valid, secondary_status, _, _ = validate_url(secondary_url)
@@ -84,21 +100,26 @@ def validate_single_resource(resource_data: dict[str, str]) -> tuple[bool, dict[
     return is_valid, enriched_data, errors
 
 
-def validate_resource_from_dict(resource_dict: dict[str, str]) -> tuple[bool, dict[str, Any], list[str]]:
+def validate_resource_from_dict(
+    resource_dict: dict[str, str],
+) -> tuple[bool, dict[str, Any], list[str]]:
     """
     Convenience function for validating a resource dictionary.
     Maps common field names to expected format.
     """
-    # Map field names to expected format
-    mapped_data = {
-        "primary_link": resource_dict.get("primary_link", ""),
-        "secondary_link": resource_dict.get("secondary_link", ""),
-        "display_name": resource_dict.get("display_name", ""),
-        "category": resource_dict.get("category", ""),
-        "license": resource_dict.get("license", "NOT_FOUND"),
-    }
-
-    is_valid, enriched_data, errors = validate_single_resource(mapped_data)
+    # Extract known fields and pass the rest as kwargs
+    is_valid, enriched_data, errors = validate_single_resource(
+        primary_link=resource_dict.get("primary_link", ""),
+        secondary_link=resource_dict.get("secondary_link", ""),
+        display_name=resource_dict.get("display_name", ""),
+        category=resource_dict.get("category", ""),
+        license=resource_dict.get("license", "NOT_FOUND"),
+        **{
+            k: v
+            for k, v in resource_dict.items()
+            if k not in ["primary_link", "secondary_link", "display_name", "category", "license"]
+        },
+    )
 
     # Map enriched data back to original field names
     if "license" in enriched_data and enriched_data["license"] != "NOT_FOUND":
@@ -123,17 +144,15 @@ def main():
     parser.add_argument("--name", default="Test Resource", help="Resource name")
     args = parser.parse_args()
 
-    resource_data = {
-        "primary_link": args.url,
-        "secondary_link": args.secondary or "",
-        "display_name": args.name,
-        "category": "Test",
-    }
-
     print(f"\nValidating resource: {args.name}")
     print("=" * 50)
 
-    is_valid, enriched_data, errors = validate_single_resource(resource_data)
+    is_valid, enriched_data, errors = validate_single_resource(
+        primary_link=args.url,
+        secondary_link=args.secondary or "",
+        display_name=args.name,
+        category="Test",
+    )
 
     print("\nValidation Results:")
     print("=" * 50)

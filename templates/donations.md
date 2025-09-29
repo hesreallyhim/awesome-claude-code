@@ -1,0 +1,3 @@
+I like drinking coffee, but I *really* like helping people get out of jail.
+
+If you want to support this repository, you can do so by donating to [The Bail Project](https://bailproject.org/), which helps pay for people's cash bail, so that people who are presumed innocent don't have to sit in a cage waiting for a court appearance. Although that doesn't directly compensate any of my work here, it would motivate me to continue to devote my time, energy, and resources, and any project that donates will receive recognition. Please check out the [DONATING](../DONATING.md) page for detailed information.

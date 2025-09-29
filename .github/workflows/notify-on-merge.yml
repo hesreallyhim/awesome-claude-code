@@ -1,0 +1,113 @@
+name: Send Badge Notification on Resource PR Merge
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+
+jobs:
+  notify-if-resource-pr:
+    # Only run when:
+    # 1. PR was merged (not just closed)
+    # 2. PR was created by github-actions bot (automated resource PR)
+    if: |
+      github.event.pull_request.merged == true &&
+      github.event.pull_request.user.login == 'github-actions[bot]'
+    
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: read
+      issues: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Checkout the merged commit
+          ref: ${{ github.event.pull_request.merge_commit_sha }}
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install PyGithub python-dotenv
+      
+      - name: Extract resource information from PR
+        id: extract_resource
+        uses: actions/github-script@v7
+        env:
+          PR_BODY: ${{ github.event.pull_request.body }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+        with:
+          script: |
+            const pr_body = process.env.PR_BODY || '';
+            const pr_title = process.env.PR_TITLE || '';
+            
+            // Look for GitHub URL in PR body
+            // PRs created by approve-resource-submission.yml typically have format:
+            // "Adds new resource: [Resource Name](URL)"
+            const urlMatch = pr_body.match(/\*\*Primary Link\*\*:\s*(https:\/\/github\.com\/[^\s\)]+)/i) || 
+                             pr_body.match(/Primary Link:\s*(https:\/\/github\.com\/[^\s\)]+)/i) ||
+                             pr_body.match(/\[.*?\]\((https:\/\/github\.com\/[^\)]+)\)/);
+            
+            // Extract resource name from PR title or body
+            const nameMatch = pr_title.match(/Add[s]?\s+(?:new\s+)?resource:\s*(.+)/i) ||
+                             pr_body.match(/\*\*Display Name\*\*:\s*(.+)/i) ||
+                             pr_body.match(/Display Name:\s*(.+)/i);
+            
+            if (urlMatch && urlMatch[1]) {
+              const github_url = urlMatch[1].trim();
+              const resource_name = nameMatch ? nameMatch[1].trim() : '';
+              
+              console.log(`Found GitHub repository: ${github_url}`);
+              console.log(`Resource name: ${resource_name || 'Not specified'}`);
+              
+              // Set outputs for next steps
+              core.setOutput('github_url', github_url);
+              core.setOutput('resource_name', resource_name);
+              core.setOutput('is_github_repo', 'true');
+            } else {
+              console.log('No GitHub repository URL found in PR - skipping notification');
+              core.setOutput('is_github_repo', 'false');
+            }
+      
+      - name: Send badge notification
+        if: steps.extract_resource.outputs.is_github_repo == 'true'
+        env:
+          AWESOME_CC_PAT_PUBLIC_REPO: ${{ secrets.AWESOME_CC_PAT_PUBLIC_REPO }}
+          REPOSITORY_URL: ${{ steps.extract_resource.outputs.github_url }}
+          RESOURCE_NAME: ${{ steps.extract_resource.outputs.resource_name }}
+          DESCRIPTION: ""  # Will use default description
+          SKIP_DUPLICATE_CHECK: "false"  # Check for duplicates
+          ENABLE_TRACKING: "false"  # Don't track these (one per merge is enough)
+        run: |
+          echo "Sending notification to: $REPOSITORY_URL"
+          python scripts/manual_badge_notification.py || {
+            echo "⚠️ Failed to send notification, but continuing workflow"
+            echo "This might happen if:"
+            echo "- The repository has issues disabled"
+            echo "- The repository is private"
+            echo "- We've already sent a notification"
+            exit 0
+          }
+      
+      - name: Log notification result
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const is_github_repo = '${{ steps.extract_resource.outputs.is_github_repo }}';
+            const github_url = '${{ steps.extract_resource.outputs.github_url }}';
+            const resource_name = '${{ steps.extract_resource.outputs.resource_name }}';
+            
+            if (is_github_repo === 'true') {
+              console.log('✅ Notification workflow completed for:');
+              console.log(`   Repository: ${github_url}`);
+              console.log(`   Resource: ${resource_name || 'Unknown'}`);
+            } else {
+              console.log('ℹ️ No notification sent - resource is not a GitHub repository');
+            }
