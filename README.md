@@ -642,13 +642,24 @@ A specialized tool to manage context isolation and focused task execution with C
 </details>
 <br>
 
-[`Happy Coder`](https://github.com/slopus/happy) &nbsp; by &nbsp; [GrocerPublishAgent](https://peoplesgrocers.com/en/projects)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`Happy Coder`](https://github.com/slopus/happy) &nbsp; by &nbsp; [GrocerPublishAgent](https://peoplesgrocers.com/en/projects)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT
 Spawn and control multiple Claude Codes in parallel from your phone or desktop. Happy Coder runs Claude Code on your hardware, sends push notifications when Claude needs more input or permission, and costs nothing.
 
 <details>
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for happy](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=happy&username=slopus&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Roundtable MCP Server`](https://github.com/askbudi/roundtable) &nbsp; by &nbsp; [askbudi](https://github.com/askbudi)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT
+Zero-configuration MCP server that unifies Claude Code with other AI assistants (Codex, Cursor, Gemini) through intelligent auto-discovery. Provides seamless switching between AI tools while maintaining Claude Code workflow integration and productivity gains.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for roundtable](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=roundtable&username=askbudi&all_stats=true&stats_only=true)
 
 </details>
 <br>
