@@ -33,3 +33,6 @@ spy -O 1 -g your_file.spy         # With optimization and debug symbols
 - Prefer specific imports: `from spy.errors import SPyError`
 - Tests inherit from `CompilerTest` base class
 - Use backend-specific decorators for test filtering (`@only_interp`, `@skip_backends`)
+
+## GH PR Guidelines
+- When creating a PR, describe what you did, but don't include the "test plan" section.

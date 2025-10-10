@@ -1,45 +1,62 @@
-# Giselle Development Guide
+# Development Philosophy
 
-## Build, Test, and Lint Commands
-- Build all: `pnpm build`
-- Build specific packages: `pnpm build-sdk`, `pnpm build-data-type`
-- Type checking: `pnpm check-types`
-- Type check packages with modified files: `pnpm -F <modified files packagename> check-types`
-- Format code: `pnpm format`
-- Development: `pnpm dev` (playground), `pnpm dev:studio.giselles.ai` (studio)
-- Run tests: `pnpm -F <package> test` or `cd <directory> && vitest`
-- Run specific test: `cd <directory> && vitest <file.test.ts>`
-- Lint: `cd <directory> && biome check --write .`
-- Format modified files: `pnpm biome check --write [filename]`
+## Core Principle: **Less is more**
+Keep every implementation as small and obvious as possible.
 
-## Critical Requirements
-- MUST run `pnpm biome check --write [filename]` after EVERY code modification
-- MUST run `pnpm -F [packagename in file] check-types` to validate type safety of packages with modified files
-- All code changes must be formatted using Biome before being committed
-- All code changes must pass type checking in their respective packages before being committed
+## Guidelines
+- **Simplicity first** – Prefer the simplest data structures and APIs that work
+- **Avoid needless abstractions** – Refactor only when duplication hurts
+- **Remove dead code early** – `pnpm tidy` scans for unused files/deps and lets you delete them in one command
+- **Minimize dependencies** – Before adding a dependency, ask "Can we do this with what we already have?"
+- **Consistency wins** – Follow existing naming and file-layout patterns; if you must diverge, document why
+- **Explicit over implicit** – Favor clear, descriptive names and type annotations over clever tricks
+- **Fail fast** – Validate inputs, throw early, and surface actionable errors
+- **Let the code speak** – If you need a multi-paragraph comment, refactor until intent is obvious
 
-## Code Style Guidelines
-- Use Biome for formatting with tab indentation and double quotes
-- Follow organized imports pattern (enabled in biome.json)
-- Use TypeScript for type safety; avoid `any` types
-- Use functional components with React hooks
-- Use Next.js patterns for web applications
-- Follow package-based architecture for modularity
-- Use async/await for asynchronous code rather than promises
-- Error handling: use try/catch blocks and propagate errors appropriately
-- Tests should follow `*.test.ts` naming pattern and use Vitest
+# REQUIRED COMMANDS AFTER CODE CHANGES
+**IMMEDIATE ACTION REQUIRED: After using `edit_file` tool:**
 
-## Naming Conventions
-- **Files**: Use kebab-case for all filenames (e.g., `user-profile.ts`)
-- **Components**: Use PascalCase for React components and classes (e.g., `UserProfile`)
-- **Variables**: Use camelCase for variables, functions, and methods (e.g., `userEmail`)
-- **Boolean Variables and Functions**: Use prefixes like `is`, `has`, `can`, `should` for clarity:
-  - For variables: `isEnabled`, `hasPermission` (not `status`)
-  - For functions: `isTriggerRequiringCallsign()`, `hasActiveSubscription()` (not `requiresCallsign()` or `checkActive()`)
-- **Function Naming**: Use verbs or verb phrases that clearly indicate purpose (e.g., `calculateTotalPrice()`, not `process()`)
-- **Consistency**: Follow these conventions throughout the codebase
+1. Run `pnpm format`
+2. Run `pnpm build-sdk`
+3. Run `pnpm check-types`
+4. Run `pnpm tidy`
+5. Run `pnpm test`
 
-## Language Support
-- This project's core members include non-native English speakers
-- Please correct grammar in commit messages, code comments, and pull request comments
-- Rewrite user input when necessary to ensure clear communication
+**These commands are part of the `edit_file` operation itself.**
+
+(CI also runs these steps; your PR will fail if any step fails.)
+
+
+# Pull Request Guidelines
+
+## When to Create a Pull Request
+- **Create PRs in meaningful minimum units** - even 1 commit or ~20 lines of diff is fine
+- Feature Flags protect unreleased features, so submit PRs for any meaningful unit of work
+- After PR submission, create a new branch from the current branch and continue development
+
+## What Constitutes a "Meaningful Unit"
+- Any UI change (border color, text color, size, etc.)
+- Function renames or folder structure changes
+- Any self-contained improvement or fix
+
+## Size Guidelines
+- **~500 lines**: Consider wrapping up current work for a PR
+- **1000 lines**: Maximum threshold - avoid exceeding this
+- Large diffs are acceptable when API + UI changes are coupled, but still aim to break down when possible
+
+
+# Bash commands
+- pnpm build-sdk: build the SDK packages
+- pnpm -F playground build: build the playground app
+- pnpm -F studio.giselles.ai build: build Giselle Cloud
+- pnpm check-types: type‑check the project
+- pnpm format: format code
+- pnpm tidy --fix: delete unused files/dependencies
+- pnpm tidy: diagnose unused files/dependencies
+- pnpm test: run tests
+
+
+# Language Support
+- Some core members are non‑native English speakers.
+- Please correct grammar in commit messages, code comments, and PR discussions.
+- Rewrite unclear user input when necessary to ensure smooth communication.

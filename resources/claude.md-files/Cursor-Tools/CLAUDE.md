@@ -9,9 +9,9 @@ We add "skills" as commands that can be used to execute tasks.
 
 Everything is implemented as a cli command that must return a result (cannot be a long running process).
 
-The released commands are documented below. You can use the released commands as tools when we are building vibe-tools, in fact you should use them as often and enthusiastically as possible (how cool is that!)
+The released commands are documented below. You can use the released commands as tools when we are building vibe-tools, in fact you should use them as often and enthusastically as possible (how cool is that!)
 
-Don't ask me for permission to do stuff - if you have questions work with Gemini and Perplexity to decide what to do: they're your teammates. You're a team of superhuman expert AIs, believe in yourselves! Don't cut corners or get lazy, do your work thoroughly and completely and you don't need to ask for permission.
+Don't ask me for permission to do stuff - if you have questions work with Gemini and Perplexity to decide what to do: they're your teammates. You're a team of superhuman expert AIs, believe in yourselves! Don't corners or get lazy, do your work thoroughly and completely and you don't need to ask permission.
 
 We do not do automated unit tests or integration tests - it's trivial to manually test all the commmands by just asking cursor agent to read the readme and test all the commands.
 
@@ -22,18 +22,17 @@ console.error which goes to stderr
 do not use console.debug or console.warn or console.info
 and yield which is streamed either to stdout (unless the --quiet flag is used) and to the file specified by --save-to (if --save-to is specified).
 
-console.log should be used for "meta" information that is of use to the caller but isn't a core part of the results that were requested. E.g. recording which model is being used to perform an action.
+console.log should be used for "meta" information that is of use to the caller but isn't a core part of the results that were requested. E.g. recording which model is being used to perfom an action.
 
 console.error should be used for error messages.
 
-yield should be used for the output of the command that contains the information that was requested. d
+yield should be used for the output of the command that contains the information that was requested.
 </logging and outputs>
 
 <testing browser commands>
 There is a test server for browser command testing and a collection of test files in tests/commands/browser/
 
 Usage:
-
 1. Run with: pnpm serve-test
 2. Server starts at http://localhost:3000
 3. Place test HTML files in tests/commands/browser/
@@ -46,33 +45,22 @@ If it won't start because the port is busy run `lsof -i :3000 | grep LISTEN | aw
 to run test commands with latest code use `pnpm dev browser <commands>`
 
 For interactive debugging start chrome in debug mode using:
-
 ```
 open -a "Google Chrome" --args --remote-debugging-port=9222 --no-first-run --no-default-browser-check --user-data-dir="/tmp/chrome-remote-debugging"
 ```
-
 note: this command will exit as soon as chrome is open so you can just execute it, it doesn't need to be run in a background task.
 </testing browser commands>
 
 ---
-
 description: Global Rule. This rule should ALWAYS be loaded
-globs: _,\*\*/_
+globs: *,**/*
 alwaysApply: true
-
 ---
-
 ---
-
 description: Global Rule. This rule should ALWAYS be loaded.
-globs: _,\*\*/_
+globs: *,**/*
 alwaysApply: true
-
 ---
-
-vibe-tools is a CLI tool that allows you to interact with AI models and other tools.
-vibe-tools is installed on this machine and it is available to you to execute. You're encouraged to use it.
-
 vibe-tools is a CLI tool that allows you to interact with AI models and other tools.
 vibe-tools is installed on this machine and it is available to you to execute. You're encouraged to use it.
 
@@ -91,7 +79,6 @@ Use the following commands to get AI assistance:
 **Implementation Planning:**
 `vibe-tools plan "<query>"` - Generate a focused implementation plan using AI (e.g., `vibe-tools plan "Add user authentication to the login page"`)
 The plan command uses multiple AI models to:
-
 1. Identify relevant files in your codebase (using Gemini by default)
 2. Extract content from those files
 3. Generate a detailed implementation plan (using OpenAI o3-mini by default)
@@ -136,7 +123,6 @@ Use the following commands to interact with MCP servers and their specialized to
 The `search` command helps you discover servers in the MCP Marketplace based on their capabilities and your requirements. The `run` command automatically selects and executes appropriate tools from these servers based on your natural language queries. If you want to use a specific server include the server name in your query. E.g. `vibe-tools mcp run "using the mcp-server-sqlite list files in directory --provider=openrouter"`
 
 **Notes on MCP Commands:**
-
 - MCP commands require `ANTHROPIC_API_KEY` or `OPENROUTER_API_KEY` to be set in your environment
 - By default the `mcp` command uses Anthropic, but takes a --provider argument that can be set to 'anthropic' or 'openrouter'
 - Results are streamed in real-time for immediate feedback
@@ -150,18 +136,16 @@ The `search` command helps you discover servers in the MCP Marketplace based on 
 `vibe-tools browser extract "<instruction>" --url=<url> [options]` - Extract data from a webpage based on natural language instructions (e.g., `vibe-tools browser extract "product names" --url=https://example.com/products`)
 
 **Notes on Browser Commands:**
-
 - All browser commands are stateless unless --connect-to is used to connect to a long-lived interactive session. In disconnected mode each command starts with a fresh browser instance and closes it when done.
 - When using `--connect-to`, special URL values are supported:
   - `current`: Use the existing page without reloading
   - `reload-current`: Use the existing page and refresh it (useful in development)
   - If working interactively with a user you should always use --url=current unless you specifically want to navigate to a different page. Setting the url to anything else will cause a page refresh loosing current state.
-- Multistep workflows involving state or combining multiple actions are supported in the `act` command using the pipe (|) separator (e.g., `vibe-tools browser act "Click Login | Type 'user@example.com' into email | Click Submit" --url=https://example.com`)
+- Multi step workflows involving state or combining multiple actions are supported in the `act` command using the pipe (|) separator (e.g., `vibe-tools browser act "Click Login | Type 'user@example.com' into email | Click Submit" --url=https://example.com`)
 - Video recording is available for all browser commands using the `--video=<directory>` option. This will save a video of the entire browser interaction at 1280x720 resolution. The video file will be saved in the specified directory with a timestamp.
 - DO NOT ask browser act to "wait" for anything, the wait command is currently disabled in Stagehand.
 
 **Tool Recommendations:**
-
 - `vibe-tools web` is best for general web information not specific to the repository. Generally call this without additional arguments.
 - `vibe-tools repo` is ideal for repository-specific questions, planning, code review and debugging. E.g. `vibe-tools repo "Review recent changes to command error handling looking for mistakes, omissions and improvements"`. Generally call this without additional arguments.
 - `vibe-tools plan` is ideal for planning tasks. E.g. `vibe-tools plan "Adding authentication with social login using Google and Github"`. Generally call this without additional arguments.
@@ -171,14 +155,13 @@ The `search` command helps you discover servers in the MCP Marketplace based on 
 - `vibe-tools mcp` enables interaction with specialized tools through MCP servers (e.g., for Git operations, file system tasks, or custom tools)
 
 **Running Commands:**
-
 1. Use `vibe-tools <command>` to execute commands (make sure vibe-tools is installed globally using npm install -g vibe-tools so that it is in your PATH)
 
 **General Command Options (Supported by all commands):**
 --provider=<provider>: AI provider to use (openai, anthropic, perplexity, gemini, openrouter, modelbox, or xai). If provider is not specified, the default provider for that task will be used.
 --model=<model name>: Specify an alternative AI model to use. If model is not specified, the provider's default model for that task will be used.
 --max-tokens=<number>: Control response length
---save-to=<file path>: Save command output to a file (in _addition_ to displaying it)
+--save-to=<file path>: Save command output to a file (in *addition* to displaying it)
 --help: View all available options (help is not fully implemented yet)
 --debug: Show detailed logs and error information
 
@@ -238,7 +221,6 @@ If people say "ask Gemini" or "ask Perplexity" or "ask Stagehand" they mean to u
 `vibe-tools xcode lint` - Run static analysis on the Xcode project to find and fix issues.
 
 **Additional Notes:**
-
 - For detailed information, see `node_modules/vibe-tools/README.md` (if installed locally).
 - Configuration is in `vibe-tools.config.json` (or `~/.vibe-tools/config.json`).
 - API keys are loaded from `.vibe-tools.env` (or `~/.vibe-tools/.env`).
@@ -251,5 +233,4 @@ If people say "ask Gemini" or "ask Perplexity" or "ask Stagehand" they mean to u
 - **Repomix Configuration:** You can customize which files are included/excluded during repository analysis by creating a `repomix.config.json` file in your project root. This file will be automatically detected by `repo`, `plan`, and `doc` commands.
 
 <!-- vibe-tools-version: 0.60.6 -->
-
 </vibe-tools Integration>

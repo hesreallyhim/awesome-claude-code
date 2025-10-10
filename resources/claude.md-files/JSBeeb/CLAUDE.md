@@ -48,6 +48,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Test philosophy**
   - Mock as little as possible: Try and rephrase code not to require it.
   - Try not to rely on internal state: don't manipulate objects' inner state in tests
+  - Use idiomatic vitest assertions (expect/toBe/toEqual) instead of node assert
 
 ## Project-Specific Knowledge
 
@@ -81,7 +82,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 - **Constants and Magic Numbers**:
 
-  - Local unexported properties should be used for shared constants
+  - Local un-exported properties should be used for shared constants
   - Local constants should be used for temporary values
   - Always use named constants instead of magic numbers in code
   - Use PascalCase for module-level constants (e.g., `const MaxHfeTrackPulses = 3132;`)

@@ -1,0 +1,63 @@
+name: Issue Deduplication
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  deduplicate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      issues: write
+      id-token: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Check for duplicate issues
+        uses: anthropics/claude-code-action@v1
+        with:
+          prompt: |
+            Analyze this new issue and check if it's a duplicate of existing issues in the repository.
+
+            Issue: #${{ github.event.issue.number }}
+            Repository: ${{ github.repository }}
+
+            Your task:
+            1. Use mcp__github__get_issue to get details of the current issue (#${{ github.event.issue.number }})
+            2. Search for similar existing issues using mcp__github__search_issues with relevant keywords from the issue title and body
+            3. Compare the new issue with existing ones to identify potential duplicates
+
+            Criteria for duplicates:
+            - Same bug or error being reported
+            - Same feature request (even if worded differently)
+            - Same question being asked
+            - Issues describing the same root problem
+
+            If you find duplicates:
+            - Add a comment on the new issue linking to the original issue(s)
+            - Apply a "duplicate" label to the new issue
+            - Be polite and explain why it's a duplicate
+            - Suggest the user follow the original issue for updates
+
+            If it's NOT a duplicate:
+            - Don't add any comments
+            - You may apply appropriate topic labels based on the issue content
+
+            Use these tools:
+            - mcp__github__get_issue: Get issue details
+            - mcp__github__search_issues: Search for similar issues
+            - mcp__github__list_issues: List recent issues if needed
+            - mcp__github__create_issue_comment: Add a comment if duplicate found
+            - mcp__github__update_issue: Add labels
+
+            Be thorough but efficient. Focus on finding true duplicates, not just similar issues.
+
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: |
+            --allowedTools "mcp__github__get_issue,mcp__github__search_issues,mcp__github__list_issues,mcp__github__create_issue_comment,mcp__github__update_issue,mcp__github__get_issue_comments"

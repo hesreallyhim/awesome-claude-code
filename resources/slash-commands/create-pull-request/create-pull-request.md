@@ -2,6 +2,8 @@
 
 This guide explains how to create pull requests using GitHub CLI in our project.
 
+**Important**: All PR titles and descriptions should be written in English.
+
 ## Prerequisites
 
 1. Install GitHub CLI if you haven't already:
@@ -24,25 +26,27 @@ This guide explains how to create pull requests using GitHub CLI in our project.
 
 ## Creating a New Pull Request
 
-1. First, prepare your PR description following the template in `.github/pull_request_template.md`
+1. First, prepare your PR description following the template in @.github/pull_request_template.md
 
-2. Use the `gh pr create` command to create a new pull request:
+2. Use the `gh pr create --draft` command to create a new pull request:
 
    ```bash
    # Basic command structure
-   gh pr create --title "✨(scope): Your descriptive title" --body "Your PR description" --base main --draft
+   gh pr create --draft --title "✨(scope): Your descriptive title" --body "Your PR description" --base main 
    ```
 
    For more complex PR descriptions with proper formatting, use the `--body-file` option with the exact PR template structure:
 
    ```bash
    # Create PR with proper template structure
-   gh pr create --title "✨(scope): Your descriptive title" --body-file <(echo -e "## Issue\n\n- resolve:\n\n## Why is this change needed?\nYour description here.\n\n## What would you like reviewers to focus on?\n- Point 1\n- Point 2\n\n## Testing Verification\nHow you tested these changes.\n\n## What was done\npr_agent:summary\n\n## Detailed Changes\npr_agent:walkthrough\n\n## Additional Notes\nAny additional notes.") --base main --draft
+   gh pr create --draft --title "✨(scope): Your descriptive title" --body-file .github/pull_request_template.md --base main
    ```
 
 ## Best Practices
 
-1. **PR Title Format**: Use conventional commit format with emojis
+1. **Language**: Always use English for PR titles and descriptions
+
+2. **PR Title Format**: Use conventional commit format with emojis
 
    - Always include an appropriate emoji at the beginning of the title
    - Use the actual emoji character (not the code representation like `:sparkles:`)
@@ -51,31 +55,24 @@ This guide explains how to create pull requests using GitHub CLI in our project.
      - `🐛(auth): Fix login redirect issue`
      - `📝(readme): Update installation instructions`
 
-2. **Description Template**: Always use our PR template structure from `.github/pull_request_template.md`:
+3. **Description Template**: Always use our PR template structure from @.github/pull_request_template.md:
 
-   - Issue reference
-   - Why the change is needed
-   - Review focus points
-   - Testing verification
-   - PR-Agent sections (keep `pr_agent:summary` and `pr_agent:walkthrough` tags intact)
-   - Additional notes
-
-3. **Template Accuracy**: Ensure your PR description precisely follows the template structure:
+4. **Template Accuracy**: Ensure your PR description precisely follows the template structure:
 
    - Don't modify or rename the PR-Agent sections (`pr_agent:summary` and `pr_agent:walkthrough`)
    - Keep all section headers exactly as they appear in the template
    - Don't add custom sections that aren't in the template
 
-4. **Draft PRs**: Start as draft when the work is in progress
+5. **Draft PRs**: Start as draft when the work is in progress
    - Use `--draft` flag in the command
    - Convert to ready for review when complete using `gh pr ready`
 
 ### Common Mistakes to Avoid
 
-1. **Incorrect Section Headers**: Always use the exact section headers from the template
-2. **Modifying PR-Agent Sections**: Don't remove or modify the `pr_agent:summary` and `pr_agent:walkthrough` placeholders
+1. **Using Non-English Text**: All PR content must be in English
+2. **Incorrect Section Headers**: Always use the exact section headers from the template
 3. **Adding Custom Sections**: Stick to the sections defined in the template
-4. **Using Outdated Templates**: Always refer to the current `.github/pull_request_template.md` file
+4. **Using Outdated Templates**: Always refer to the current @.github/pull_request_template.md file
 
 ### Missing Sections
 
@@ -116,7 +113,7 @@ To simplify PR creation with consistent descriptions, you can create a template 
 2. Use it when creating PRs:
 
 ```bash
-gh pr create --title "feat(scope): Your title" --body-file pr-template.md --base main --draft
+gh pr create --draft --title "feat(scope): Your title" --body-file pr-template.md --base main
 ```
 
 ## Related Documentation

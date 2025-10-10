@@ -352,7 +352,7 @@ def process_resources(
     failed = 0
 
     # Read CSV
-    with open(CSV_FILE, newline="", encoding="utf-8") as file:
+    with open("./THE_RESOURCES_TABLE.csv", newline="", encoding="utf-8") as file:
         reader = csv.DictReader(file)
 
         for row in reader:
