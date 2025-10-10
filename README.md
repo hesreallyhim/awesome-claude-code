@@ -69,24 +69,46 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
-[`/create-hook`](https://github.com/omril321/automated-notebooklm/blob/main/.claude/commands/create-hook.md) &nbsp; by &nbsp; [Omri Lavi](https://github.com/omril321)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
-Slash command for hook creation - intelligently prompts you through the creation process with smart suggestions based on your project setup (TS, Prettier, ESLint...).
+[`Vibe-Log`](https://github.com/vibe-log/vibe-log-cli) &nbsp; by &nbsp; [Vibe-Log](https://github.com/vibe-log)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Analyzes your Claude Code prompts locally (using CC), provides intelligent session analysis and actionable strategic guidance - works in the statusline and produces very pretty HTML reports as well. Easy to install and remove.
 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for automated-notebooklm](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=automated-notebooklm&username=omril321&all_stats=true&stats_only=true)
+![GitHub Stats for vibe-log-cli](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=vibe-log-cli&username=vibe-log&all_stats=true&stats_only=true)
 
 </details>
 <br>
 
-[`Claudio`](https://github.com/ctoth/claudio) &nbsp; by &nbsp; [Christopher Toth](https://github.com/ctoth)    
-A no-frills little library that adds delightful OS-native sounds to Claude Code via simple hooks. It really sparks joy.
+[`RIPER Workflow`](https://github.com/tony/claude-code-riper-5) &nbsp; by &nbsp; [Tony Narlock](https://tony.sh)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Structured development workflow enforcing separation between Research, Innovate, Plan, Execute, and Review phases. Features consolidated subagents for context-efficiency, branch-aware memory bank, and strict mode enforcement for guided development.
 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claudio](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claudio&username=ctoth&all_stats=true&stats_only=true)
+![GitHub Stats for claude-code-riper-5](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-riper-5&username=tony&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`ContextKit`](https://github.com/FlineDev/ContextKit) &nbsp; by &nbsp; [Cihat Gündüz](https://github.com/Jeehut)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A systematic development framework that transforms Claude Code into a proactive development partner. Features 4-phase planning methodology, specialized quality agents, and structured workflows that help AI produce production-ready code on first try.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for ContextKit](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ContextKit&username=FlineDev&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`claudia-statusline`](https://github.com/hagan/claudia-statusline) &nbsp; by &nbsp; [Hagan Franks](https://github.com/hagan)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+High-performance Rust-based statusline for Claude Code with persistent stats tracking, progress bars, and optional cloud sync. Features SQLite-first persistence, git integration, context progress bars, burn rate calculation, XDG-compliant with theme support (dark/light, NO_COLOR).
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claudia-statusline](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claudia-statusline&username=hagan&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -308,6 +330,17 @@ A set of commands that provide a comprehensive workflow system for managing proj
 </details>
 <br>
 
+[`RIPER Workflow`](https://github.com/tony/claude-code-riper-5) &nbsp; by &nbsp; [Tony Narlock](https://tony.sh)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Structured development workflow enforcing separation between Research, Innovate, Plan, Execute, and Review phases. Features consolidated subagents for context-efficiency, branch-aware memory bank, and strict mode enforcement for guided development.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-code-riper-5](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-riper-5&username=tony&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Shipping Real Code w/ Claude`](https://diwank.space/field-notes-from-shipping-real-code-with-claude) &nbsp; by &nbsp; [Diwank](https://github.com/creatorrr)    
 A detailed blog post explaining the author's process for shipping a product with Claude Code, including CLAUDE.md files and other interesting resources.
 
@@ -443,6 +476,17 @@ Development environments for coding agents. Enable multiple agents to work safel
 </details>
 <br>
 
+[`ContextKit`](https://github.com/FlineDev/ContextKit) &nbsp; by &nbsp; [Cihat Gündüz](https://github.com/Jeehut)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A systematic development framework that transforms Claude Code into a proactive development partner. Features 4-phase planning methodology, specialized quality agents, and structured workflows that help AI produce production-ready code on first try.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for ContextKit](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ContextKit&username=FlineDev&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`run-claude-docker`](https://github.com/icanhasjonas/run-claude-docker) &nbsp; by &nbsp; [Jonas](https://github.com/icanhasjonas/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A self-contained Docker runner that forwards your current workspace into a safe(r) isolated docker container, where you still have access to your Claude Code settings, authentication, ssh agent, pgp, optionally aws keys etc.
 
@@ -483,6 +527,17 @@ Command-line tool to customize your Claude Code styling.
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for tweakcc](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=tweakcc&username=Piebald-AI&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Vibe-Log`](https://github.com/vibe-log/vibe-log-cli) &nbsp; by &nbsp; [Vibe-Log](https://github.com/vibe-log)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Analyzes your Claude Code prompts locally (using CC), provides intelligent session analysis and actionable strategic guidance - works in the statusline and produces very pretty HTML reports as well. Easy to install and remove.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for vibe-log-cli](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=vibe-log-cli&username=vibe-log&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -721,6 +776,17 @@ A vim-style powerline statusline for Claude Code with real-time usage tracking, 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-powerline](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-powerline&username=Owloops&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`claudia-statusline`](https://github.com/hagan/claudia-statusline) &nbsp; by &nbsp; [Hagan Franks](https://github.com/hagan)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+High-performance Rust-based statusline for Claude Code with persistent stats tracking, progress bars, and optional cloud sync. Features SQLite-first persistence, git integration, context progress bars, burn rate calculation, XDG-compliant with theme support (dark/light, NO_COLOR).
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claudia-statusline](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claudia-statusline&username=hagan&all_stats=true&stats_only=true)
 
 </details>
 <br>
