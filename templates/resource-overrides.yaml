@@ -31,6 +31,9 @@ overrides:
   output-2d98cb4f:
     license: "MIT"
     license_locked: true
+  status-bb559460:
+    license: "MIT"
+    license_locke: true
 # Supported override fields:
 # - license: Override the detected license
 # - license_locked: Prevent license validation from updating
