@@ -399,7 +399,7 @@ Like the shell history command but for your Claude Code sessions. Easily list al
 </details>
 <br>
 
-[`cclogviewer`](https://github.com/Brads3290/cclogviewer) &nbsp; by &nbsp; [Brad S.](https://github.com/Brads3290)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`cclogviewer`](https://github.com/Brads3290/cclogviewer) &nbsp; by &nbsp; [Brad S.](https://github.com/Brads3290)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT
 A humble but handy utility for viewing Claude Code `.jsonl` conversation files in a pretty HTML UI.
 
 <details>
@@ -410,7 +410,18 @@ A humble but handy utility for viewing Claude Code `.jsonl` conversation files i
 </details>
 <br>
 
-[`Claude Code Templates`](https://github.com/davila7/claude-code-templates) &nbsp; by &nbsp; [Daniel Avila](https://github.com/davila7)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`Claude Control Terminal`](https://github.com/schlunsen/claude-control-terminal) &nbsp; by &nbsp; [schlunsen](https://github.com/schlunsen)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT
+High-performance CLI and TUI for managing Claude Code environments. Features interactive component browser (600+ agents), Docker support with multiple configurations, real-time analytics dashboard with WebSocket updates, and cross-platform deployment. Single binary with zero dependencies.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-control-terminal](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-control-terminal&username=schlunsen&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Claude Code Templates`](https://github.com/davila7/claude-code-templates) &nbsp; by &nbsp; [Daniel Avila](https://github.com/davila7)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT
 Incredibly awesome collection of resources from every category in this list, presented with a neatly polished UI, great features like usage dashboard, analytics, and everything from slash commands to hooks to agents. An awesome companion for this awesome list.
 
 <details>
