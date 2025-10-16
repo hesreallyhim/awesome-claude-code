@@ -35,7 +35,7 @@ This is a curated list of slash-commands, `CLAUDE.md` files, CLI tools, and othe
 
 Claude Code is a cutting-edge CLI-based coding assistant and agent released by [Anthropic](https://www.anthropic.com/) that you can access in your terminal or IDE. It is a rapidly evolving tool that offers a number of powerful capabilities, and allows for a lot of configuration, in a lot of different ways. Users are actively working out best practices and workflows. It is the hope that this repo will help the community share knowledge and understand how to get the most out of Claude Code.
 
-<div align="center"><h2>SHOW OFF YOUR (AGENT) SKILLS!</h2></div>
+<div align="center"><h2>SHOW OFF YOUR (AGENT) SKILLS!</h2><div>
 
 ### Announcements [🔝](#awesome-claude-code)
 
@@ -71,6 +71,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## This Week's Additions ✨ [🔝](#awesome-claude-code)
 
 > Resources added in the past 7 days
+
+[`teststuff`](https://github.com/hesreallyhim/awesome-claude-code) &nbsp; by &nbsp; [Him](https://github.com/hesreallyhim/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+test a good skill is good
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for awesome-claude-code](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=awesome-claude-code&username=hesreallyhim&all_stats=true&stats_only=true)
+
+</details>
+<br>
 
 [`Rulesync`](https://github.com/dyoshikawa/rulesync) &nbsp; by &nbsp; [dyoshikawa](https://github.com/dyoshikawa)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A Node.js CLI tool that automatically generates configs (rules, ignore files, MCP servers, commands, and subagents) for various AI coding agents. Rulesync can convert configs between Claude Code and other AI agents in both directions.
@@ -155,20 +166,21 @@ You can easily offer support by making a charitable donation in honor of Awesome
 - <details open>
   <summary><a href="#agent-skills-">Agent Skills</a></summary>
 
+  - [General](#general-)
 
   </details>
 
 - <details open>
   <summary><a href="#workflows--knowledge-guides-">Workflows & Knowledge Guides</a></summary>
 
-  - [General](#general-)
+  - [General](#general--1)
 
   </details>
 
 - <details open>
   <summary><a href="#tooling-">Tooling</a></summary>
 
-  - [General](#general--1)
+  - [General](#general--2)
   - [IDE Integrations](#ide-integrations-)
   - [Usage Monitors](#usage-monitors-)
   - [Orchestrators](#orchestrators-)
@@ -178,28 +190,28 @@ You can easily offer support by making a charitable donation in honor of Awesome
 - <details open>
   <summary><a href="#status-lines-">Status Lines</a></summary>
 
-  - [General](#general--2)
+  - [General](#general--3)
 
   </details>
 
 - <details open>
   <summary><a href="#hooks-">Hooks</a></summary>
 
-  - [General](#general--3)
+  - [General](#general--4)
 
   </details>
 
 - <details open>
   <summary><a href="#output-styles-">Output Styles</a></summary>
 
-  - [General](#general--4)
+  - [General](#general--5)
 
   </details>
 
 - <details open>
   <summary><a href="#slash-commands-">Slash-Commands</a></summary>
 
-  - [General](#general--5)
+  - [General](#general--6)
   - [Version Control & Git](#version-control--git-)
   - [Code Analysis & Testing](#code-analysis--testing-)
   - [Context Loading & Priming](#context-loading--priming-)
@@ -222,7 +234,7 @@ You can easily offer support by making a charitable donation in honor of Awesome
 - <details open>
   <summary><a href="#official-documentation-">Official Documentation</a></summary>
 
-  - [General](#general--6)
+  - [General](#general--7)
 
   </details>
 
@@ -233,6 +245,22 @@ You can easily offer support by making a charitable donation in honor of Awesome
 ## Agent Skills 🤖 [🔝](#awesome-claude-code)
 
 > **Agent skills** are model-controlled configurations (files, scripts, resources, etc.) that enable Claude Code to perform specialized tasks requiring specific knowledge or capabilities.
+
+<details open>
+<summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
+
+[`teststuff`](https://github.com/hesreallyhim/awesome-claude-code) &nbsp; by &nbsp; [Him](https://github.com/hesreallyhim/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+test a good skill is good
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for awesome-claude-code](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=awesome-claude-code&username=hesreallyhim&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+</details>
 
 <br>
 
