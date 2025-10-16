@@ -69,6 +69,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
+[`Rulesync`](https://github.com/dyoshikawa/rulesync) &nbsp; by &nbsp; [dyoshikawa](https://github.com/dyoshikawa)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A Node.js CLI tool that automatically generates configs (rules, ignore files, MCP servers, commands, and subagents) for various AI coding agents. Rulesync can convert configs between Claude Code and other AI agents in both directions.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for rulesync](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=rulesync&username=dyoshikawa&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`VoiceMode MCP`](https://github.com/mbailey/voicemode) &nbsp; by &nbsp; [Mike Bailey](https://github.com/mbailey)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 VoiceMode MCP brings natural conversations to Claude Code. It supports any OpenAI API compatible voice services and installs free and open source voice services (Whisper.cpp and Kokoro-FastAPI).
 
@@ -494,6 +505,17 @@ A systematic development framework that transforms Claude Code into a proactive 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for ContextKit](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ContextKit&username=FlineDev&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Rulesync`](https://github.com/dyoshikawa/rulesync) &nbsp; by &nbsp; [dyoshikawa](https://github.com/dyoshikawa)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A Node.js CLI tool that automatically generates configs (rules, ignore files, MCP servers, commands, and subagents) for various AI coding agents. Rulesync can convert configs between Claude Code and other AI agents in both directions.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for rulesync](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=rulesync&username=dyoshikawa&all_stats=true&stats_only=true)
 
 </details>
 <br>
