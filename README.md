@@ -447,13 +447,24 @@ A humble but handy utility for viewing Claude Code `.jsonl` conversation files i
 </details>
 <br>
 
-[`Claude Code Templates`](https://github.com/davila7/claude-code-templates) &nbsp; by &nbsp; [Daniel Avila](https://github.com/davila7)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`Claude Code Templates`](https://github.com/davila7/claude-code-templates) &nbsp; by &nbsp; [Daniel Avila](https://github.com/davila7)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT
 Incredibly awesome collection of resources from every category in this list, presented with a neatly polished UI, great features like usage dashboard, analytics, and everything from slash commands to hooks to agents. An awesome companion for this awesome list.
 
 <details>
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-code-templates](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-templates&username=davila7&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`CC Chat`](https://github.com/Optima-Chat/cc-chat) &nbsp; by &nbsp; [Optima Chat](https://github.com/Optima-Chat)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT
+Chinese community platform for Claude Code users. Features natural language CLI integration (just talk to Claude to post), Reddit content auto-sync with translation, full community features (voting, comments, bookmarks, notifications), and Web + CLI dual interface. 20+ commands with user-friendly prompts.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for cc-chat](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=cc-chat&username=Optima-Chat&all_stats=true&stats_only=true)
 
 </details>
 <br>
