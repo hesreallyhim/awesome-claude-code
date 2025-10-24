@@ -11,8 +11,6 @@
   
 </div>
 
-[![Agent Skills](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=3000&pause=10&color=F7080D&center=true&multiline=true&repeat=false&width=1000&height=700&lines=I+don't+know+who+you+are...;I+don't+know+what+you+want...;If+you+are+looking+for+money...;I+can+tell+you+I+have+loads+of+it.;I+also+have+a+very+particular+set+of+Skills.;Skills+I+have+acquired+over...;A+bunch+of+days.;Skills+that+make+agentic+coding+really+fun...;For+people+like+you.;If+you+share+your+Skills+here...;That+will+be+very+awesome.;I+will+not+look+for+you...;I+will+not+pursue+you.;...;But+if+you+don't...;I+will+look+for+you...;I+will+find+you...;...;And+I+will+vibe+with+you.;%F0%9F%9A%80%F0%9F%9A%80%F0%9F%9A%80%F0%9F%9A%80%F0%9F%9A%80%F0%9F%9A%80%F0%9F%9A%80%F0%9F%9A%80%F0%9F%9A%80%F0%9F%9A%80%F0%9F%9A%80%F0%9F%9A%80%F0%9F%9A%80%F0%9F%9A%80%F0%9F%9A%80%F0%9F%9A%80%F0%9F%9A%80%F0%9F%9A%80)](https://docs.claude.com/en/docs/claude-code/skills)
-
 
 <!-- Generated with https://github.com/denvercoder1/readme-typing-svg -->
 
