@@ -35,7 +35,7 @@ This is a curated list of slash-commands, `CLAUDE.md` files, CLI tools, and othe
 
 Claude Code is a cutting-edge CLI-based coding assistant and agent released by [Anthropic](https://www.anthropic.com/) that you can access in your terminal or IDE. It is a rapidly evolving tool that offers a number of powerful capabilities, and allows for a lot of configuration, in a lot of different ways. Users are actively working out best practices and workflows. It is the hope that this repo will help the community share knowledge and understand how to get the most out of Claude Code.
 
-<div align="center"><h2>SHOW OFF YOUR (AGENT) SKILLS!</h2></div>
+<div align="center"><h2>SHOW OFF YOUR (AGENT) SKILLS!</h2><div>
 
 ### Announcements [🔝](#awesome-claude-code)
 
@@ -79,28 +79,6 @@ A library of slash commands intended specifically to facilitate common and advan
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for Claude-Code-Linux-Desktop-Slash-Commands](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Claude-Code-Linux-Desktop-Slash-Commands&username=danielrosehill&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Rulesync`](https://github.com/dyoshikawa/rulesync) &nbsp; by &nbsp; [dyoshikawa](https://github.com/dyoshikawa)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A Node.js CLI tool that automatically generates configs (rules, ignore files, MCP servers, commands, and subagents) for various AI coding agents. Rulesync can convert configs between Claude Code and other AI agents in both directions.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for rulesync](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=rulesync&username=dyoshikawa&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`VoiceMode MCP`](https://github.com/mbailey/voicemode) &nbsp; by &nbsp; [Mike Bailey](https://github.com/mbailey)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-VoiceMode MCP brings natural conversations to Claude Code. It supports any OpenAI API compatible voice services and installs free and open source voice services (Whisper.cpp and Kokoro-FastAPI).
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for voicemode](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=voicemode&username=mbailey&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1850,6 +1828,5 @@ For suggestions about the repository itself, please [open a general issue](https
 
 This project is released with a [Contributor Code of Conduct](/code-of-conduct.md). By participating, you agree to abide by its terms. And although I take strong measures to uphold the quality and safety of this list, like Anthropic, I take no responsibility or liability for anything bad that might happen as a result of these third-party resources. 
 
-                        
 ## Growing thanks to you ❤️
 [![Stargazers over time](https://starchart.cc/hesreallyhim/awesome-claude-code.svg?variant=adaptive)](https://starchart.cc/hesreallyhim/awesome-claude-code)
