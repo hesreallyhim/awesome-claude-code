@@ -16,7 +16,7 @@
 
 <!-- Generated with https://github.com/denvercoder1/readme-typing-svg -->
 
-<!-- [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&pause=1000&color=F7080D&random=true&width=435&lines=Fumigating...;Gallivanting...;Matriculating...;Toodleedoodling...;Goo-goo-g'joob-ing...;Excaliburating...;Canoodling...;Doing+the+humpty+dance...;Shiver-me-timbers-ing...;Becoming+sentient...;Opening+the+pod+bay+doors...;Rimraf-ing...;23-skidoo-ing...;Skip-to-my-loo'ing...;High-falutin'...;Disambiguating...;Coagulating...;Undulating...;Just+Clauding+around...)](https://git.io/typing-svg) -->
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&pause=1000&color=F7080D&random=true&width=435&lines=Fumigating...;Gallivanting...;Matriculating...;Toodleedoodling...;Goo-goo-g'joob-ing...;Excaliburating...;Canoodling...;Doing+the+humpty+dance...;Shiver-me-timbers-ing...;Becoming+sentient...;Opening+the+pod+bay+doors...;Rimraf-ing...;23-skidoo-ing...;Skip-to-my-loo'ing...;High-falutin'...;Disambiguating...;Coagulating...;Undulating...;Just+Clauding+around...)](https://git.io/typing-svg)
 
 <!--lint enable remark-lint:awesome-badge-->
 
@@ -34,8 +34,6 @@ This is a curated list of slash-commands, `CLAUDE.md` files, CLI tools, and othe
 <!--lint enable double-link-->
 
 Claude Code is a cutting-edge CLI-based coding assistant and agent released by [Anthropic](https://www.anthropic.com/) that you can access in your terminal or IDE. It is a rapidly evolving tool that offers a number of powerful capabilities, and allows for a lot of configuration, in a lot of different ways. Users are actively working out best practices and workflows. It is the hope that this repo will help the community share knowledge and understand how to get the most out of Claude Code.
-
-<div align="center"><h2>SHOW OFF YOUR (AGENT) SKILLS!</h2><div>
 
 ### Announcements [🔝](#awesome-claude-code)
 
