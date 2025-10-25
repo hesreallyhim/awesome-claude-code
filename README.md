@@ -498,7 +498,18 @@ A systematic development framework that transforms Claude Code into a proactive 
 </details>
 <br>
 
-[`Rulesync`](https://github.com/dyoshikawa/rulesync) &nbsp; by &nbsp; [dyoshikawa](https://github.com/dyoshikawa)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`DevRag`](https://github.com/tomohiro-owada/devrag) &nbsp; by &nbsp; [towada](https://github.com/tomohiro-owada)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT
+Free local RAG for Claude Code. Save tokens & time with vector search - indexes markdown docs and finds relevant info without reading entire files (40x fewer tokens, 15x faster).
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for devrag](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=devrag&username=tomohiro-owada&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Rulesync`](https://github.com/dyoshikawa/rulesync) &nbsp; by &nbsp; [dyoshikawa](https://github.com/dyoshikawa)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT
 A Node.js CLI tool that automatically generates configs (rules, ignore files, MCP servers, commands, and subagents) for various AI coding agents. Rulesync can convert configs between Claude Code and other AI agents in both directions.
 
 <details>
