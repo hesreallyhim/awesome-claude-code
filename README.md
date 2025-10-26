@@ -214,6 +214,15 @@ You can easily offer support by making a charitable donation in honor of Awesome
 
 > **Agent skills** are model-controlled configurations (files, scripts, resources, etc.) that enable Claude Code to perform specialized tasks requiring specific knowledge or capabilities.
 
+[`Codex Integration`](https://github.com/skills-directory/skill-codex) &nbsp; by &nbsp; [Nico Duldhardt](https://github.com/klaudworks)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Enables users to prompt codex from claude code in a convenient manner. The skill infers parameters such as model and reasoning effort from your prompt or asks you to specify it.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for skill-codex](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=skill-codex&username=skills-directory&all_stats=true&stats_only=true)
+
+
 <br>
 
 ## Workflows & Knowledge Guides 🧠 [🔝](#awesome-claude-code)
