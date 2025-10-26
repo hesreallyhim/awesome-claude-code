@@ -221,7 +221,7 @@ Enables users to prompt codex from claude code in a convenient manner. The skill
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for skill-codex](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=skill-codex&username=skills-directory&all_stats=true&stats_only=true)
-
+</details>
 
 <br>
 
