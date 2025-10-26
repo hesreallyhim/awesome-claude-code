@@ -416,13 +416,24 @@ Interactive CLI tool for discovering and managing Claude Code configuration file
 </details>
 <br>
 
-[`cchistory`](https://github.com/eckardt/cchistory) &nbsp; by &nbsp; [eckardt](https://github.com/eckardt)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`cchistory`](https://github.com/eckardt/cchistory) &nbsp; by &nbsp; [eckardt](https://github.com/eckardt)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT
 Like the shell history command but for your Claude Code sessions. Easily list all Bash or "Bash-mode" (`!`) commands Claude Code ran in a session for reference.
 
 <details>
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for cchistory](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=cchistory&username=eckardt&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`EquilateralAgents`](https://github.com/Equilateral-AI/equilateral-agents-open-core) &nbsp; by &nbsp; [HappyHippo.ai](https://github.com/Equilateral-AI)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT
+Multi-agent orchestration framework with 22 self-learning agents, 5 production workflows, and community standards contribution system. Features agent memory (tracks last 100 executions), pattern recognition, and workflow optimization for security, quality, deployment, and compliance.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for equilateral-agents-open-core](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=equilateral-agents-open-core&username=Equilateral-AI&all_stats=true&stats_only=true)
 
 </details>
 <br>
