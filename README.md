@@ -68,6 +68,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
+[`Codex Skill`](https://github.com/skills-directory/skill-codex) &nbsp; by &nbsp; [klaudworks](https://github.com/klaudworks)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Enables users to prompt codex from claude code. Unlike the raw codex mcp server, this skill infers parameters such as model, reasoning effort, sandboxing from your prompt or asks you to specify them. It also simplifies continuing prior codex sessions so that codex can continue with the prior context.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for skill-codex](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=skill-codex&username=skills-directory&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`claude-mem`](https://github.com/thedotmack/claude-mem) &nbsp; by &nbsp; [Alex Newman](https://github.com/thedotmack)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
 Persistent memory compression system that captures tool usage, generates AI-powered session summaries, and injects relevant context into future Claude Code sessions through SQLite storage and full-text search across project history (and no extra-cost dependencies!). 🦾
 
@@ -129,20 +140,21 @@ You can easily offer support by making a charitable donation in honor of Awesome
 - <details open>
   <summary><a href="#agent-skills-">Agent Skills</a></summary>
 
+  - [General](#general-)
 
   </details>
 
 - <details open>
   <summary><a href="#workflows--knowledge-guides-">Workflows & Knowledge Guides</a></summary>
 
-  - [General](#general-)
+  - [General](#general--1)
 
   </details>
 
 - <details open>
   <summary><a href="#tooling-">Tooling</a></summary>
 
-  - [General](#general--1)
+  - [General](#general--2)
   - [IDE Integrations](#ide-integrations-)
   - [Usage Monitors](#usage-monitors-)
   - [Orchestrators](#orchestrators-)
@@ -152,28 +164,28 @@ You can easily offer support by making a charitable donation in honor of Awesome
 - <details open>
   <summary><a href="#status-lines-">Status Lines</a></summary>
 
-  - [General](#general--2)
+  - [General](#general--3)
 
   </details>
 
 - <details open>
   <summary><a href="#hooks-">Hooks</a></summary>
 
-  - [General](#general--3)
+  - [General](#general--4)
 
   </details>
 
 - <details open>
   <summary><a href="#output-styles-">Output Styles</a></summary>
 
-  - [General](#general--4)
+  - [General](#general--5)
 
   </details>
 
 - <details open>
   <summary><a href="#slash-commands-">Slash-Commands</a></summary>
 
-  - [General](#general--5)
+  - [General](#general--6)
   - [Version Control & Git](#version-control--git-)
   - [Code Analysis & Testing](#code-analysis--testing-)
   - [Context Loading & Priming](#context-loading--priming-)
@@ -202,7 +214,7 @@ You can easily offer support by making a charitable donation in honor of Awesome
 - <details open>
   <summary><a href="#official-documentation-">Official Documentation</a></summary>
 
-  - [General](#general--6)
+  - [General](#general--7)
 
   </details>
 
@@ -213,6 +225,22 @@ You can easily offer support by making a charitable donation in honor of Awesome
 ## Agent Skills 🤖 [🔝](#awesome-claude-code)
 
 > **Agent skills** are model-controlled configurations (files, scripts, resources, etc.) that enable Claude Code to perform specialized tasks requiring specific knowledge or capabilities.
+
+<details open>
+<summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
+
+[`Codex Skill`](https://github.com/skills-directory/skill-codex) &nbsp; by &nbsp; [klaudworks](https://github.com/klaudworks)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Enables users to prompt codex from claude code. Unlike the raw codex mcp server, this skill infers parameters such as model, reasoning effort, sandboxing from your prompt or asks you to specify them. It also simplifies continuing prior codex sessions so that codex can continue with the prior context.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for skill-codex](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=skill-codex&username=skills-directory&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+</details>
 
 <br>
 
