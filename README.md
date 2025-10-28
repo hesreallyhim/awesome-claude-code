@@ -14,7 +14,9 @@
 
 <!-- Generated with https://github.com/denvercoder1/readme-typing-svg -->
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&pause=1000&color=F7080D&random=true&width=435&lines=Fumigating...;Gallivanting...;Matriculating...;Toodleedoodling...;Goo-goo-g'joob-ing...;Excaliburating...;Canoodling...;Doing+the+humpty+dance...;Shiver-me-timbers-ing...;Becoming+sentient...;Opening+the+pod+bay+doors...;Rimraf-ing...;23-skidoo-ing...;Skip-to-my-loo'ing...;High-falutin'...;Disambiguating...;Coagulating...;Undulating...;Just+Clauding+around...)](https://git.io/typing-svg)
+<!-- Fitter Happier Typing SVG -->
+
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&duration=1500&pause=100&color=F7080D&width=680&lines=Fitter;Happier;More+productive;Comfortable;Not+drinking+too+much;Regular+exercise+at+the+gym;(3+days+a+week);Getting+on+better+with+your+associate;Employee+contemporaries;At+ease;Eating+well;(no+more+microwave+dinners);(and+saturated+fats);A+patient%2C+better+driver;A+safer+car+(baby+smiling+in+back+seat);Sleeping+well+(no+bad+dreams);No+paranoia;Careful+to+all+animals;(never+washing+spiders+down+the+plughole);Keep+in+contact+with+old+friends;(enjoy+a+drink+now+and+then);Will+frequently+check+credit;(moral+bank%3B+hole+in+the+wall);Favours+for+favours;Fond+but+not+in+love;Charity+standing+orders;On+Sundays+ring+road+supermarket;No+killing+moths+or+putting;Boiling+water+on+the+ants;Car+wash+(also+on+Sundays);No+longer+afraid+of+the+dark;Or+midday+shadows;Nothing+so+ridiculously+teenage;And+desperate;Nothing+so+childish;At+a+better+pace;Slower+and+more+calculated;No+chance+of+escape;Now+self-employed;Concerned;(but+powerless);An+empowered+and+informed;Member+of+society;(pragmatism+not+idealism);Will+not+cry+in+public;Less+chance+of+illness;Tyres+that+grip+in+the+wet;(shot+of+baby+strapped+in+back+seat);A+good+memory;Still+cries+at+a+good+film;Still+kisses+with+saliva;No+longer+empty+and+frantic;Like+a+cat;Tied+to+a+stick;That%27s+driven+into;Frozen+winter+****;(the+ability+to+laugh+at+weakness);Calm;Fitter%2C;Healthier+and+more+productive;A+pig;In+a+cage;On+antibiotics;...;...;...;)](https://git.io/typing-svg)
 
 <!--lint enable remark-lint:awesome-badge-->
 
@@ -39,24 +41,21 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 <summary>View Announcements</summary>
 
 - <details open>
-  <summary>2025-10-16 - **AGENT SKILLS**</summary>
+  <summary>2025-10-17</summary>
 
   - <details open>
-    <summary>Claude Got Skills</summary>
+    <summary>Time to Regroup</summary>
 
-    - In my previous announcement, I encouraged people to submit resources that explored features specific to _Claude Code_. So Claude read the post (he checks the list a lot), and was like "hold my martini" - and as of version 2.0.20 it looks like we've got a **new** set of toys for users to play with: [**Agent Skills**](https://docs.claude.com/en/docs/claude-code/skills). So for now I'm going to be focusing a lot on figuring out what you can do with this new feature set, and Skills submissions will be prioritized. Watch this space for updates.
+    - Thanks to you beautiful people, the list is getting so big it barely fits on my iPod anymore. And now a new challenge appears: **marketplaces**. I was having enough difficulty keeping up with reviewing individual resources... what shall I do with a submission that consists of 50-1000 resources all smushed together? Well... [you tell me!](https://github.com/hesreallyhim/awesome-claude-code/discussions/275) Head over to the Discussions tab and let me know what you'd like to see going forward. **Your input means a lot to my decision-making.**
 
     </details>
 
-  </details>
-
-- <details open>
-  <summary>2025-10-06 - Awesome Claude Code 2.0</summary>
-
   - <details open>
-    <summary>Fundraising update</summary>
+    <summary>Defend Your Rights</summary>
 
-    - I've managed at last to secure a dedicated, direct-link, one-click fundraising widget for my campaign to support [The Bail Project](https://bailproject.org/). See <a href="#support">Support</a> below for more details, and click [here](https://donor.bailproject.org/-/NPHKDQGP?member=SELFZPZN) to contribute.
+    - The one thing I really really don't like to see is visiting a Claude Code marketplace and finding a resource that I recognize from this list... but without any attribution or acknowledgement to the original author. When you publish a LICENSE file to your repo, you are asserting certain legal rights, for instance you might want everyone to have free access to what you produced, but so long as they give you some recognition. Well, marketplaces are popping up left and right, and not all of them are respecting these rights. Rather than focus on the negatives, I'd like to give special praise to user [khaliqgant](https://github.com/khaliqgant), who recently submitted his project `prpm` for inclusion in the list. `prpm` is something like a marketplace, but with ambitions to support interoperability between diferent providers as well. After I pointed out to him that I wasn't able to find any license information about the resources he was sharing, he very quickly took action and updated the UI so that in the same card where you view information about one of the resources on his platform, you can click directly to that author's LICENSE file - or even just view it in a dropdown! 
+      [![License File](../assets/images/license-file-button.png)](https://prpm.dev/search) 
+      As I mentioned - I have no idea what to do with marketplaces and this list - but in my opinion this is a pretty awesome thing to do for the community, and sets a great example for other people who are aiming to set up their own marketplaces. So thanks very much to khaliqgant for taking this whole "open source" thing seriously, and I hope you'll give his site a visit - and if you notice other sites that are failing to uphold this standard, I encourage you to kindly remind them of their legal obligations - frankly, I presume a lot of people probably just don't know what a specific LICENSE requires of them, so let's just assume that everybody is acting in good faith.
 
     </details>
 
