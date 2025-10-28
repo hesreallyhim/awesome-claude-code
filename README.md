@@ -82,6 +82,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
+[`Web Assets Generator Skill`](https://github.com/alonw0/web-asset-generator) &nbsp; by &nbsp; [Alon Wolenitz](https://github.com/alonw0)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Easily generate web assets from Claude Code including favicons, app icons (PWA), and social media meta images (Open Graph) for Facebook, Twitter, WhatsApp, and LinkedIn. Handles image resizing, text-to-image generation, emojis, and provides proper HTML meta tags.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for web-asset-generator](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=web-asset-generator&username=alonw0&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Codex Skill`](https://github.com/skills-directory/skill-codex) &nbsp; by &nbsp; [klaudworks](https://github.com/klaudworks)    
 Enables users to prompt codex from claude code. Unlike the raw codex mcp server, this skill infers parameters such as model, reasoning effort, sandboxing from your prompt or asks you to specify them. It also simplifies continuing prior codex sessions so that codex can continue with the prior context.
 
@@ -239,6 +250,17 @@ Enables users to prompt codex from claude code. Unlike the raw codex mcp server,
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for skill-codex](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=skill-codex&username=skills-directory&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Web Assets Generator Skill`](https://github.com/alonw0/web-asset-generator) &nbsp; by &nbsp; [Alon Wolenitz](https://github.com/alonw0)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Easily generate web assets from Claude Code including favicons, app icons (PWA), and social media meta images (Open Graph) for Facebook, Twitter, WhatsApp, and LinkedIn. Handles image resizing, text-to-image generation, emojis, and provides proper HTML meta tags.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for web-asset-generator](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=web-asset-generator&username=alonw0&all_stats=true&stats_only=true)
 
 </details>
 <br>
