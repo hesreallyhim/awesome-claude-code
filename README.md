@@ -41,21 +41,36 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 <summary>View Announcements</summary>
 
 - <details open>
-  <summary>2025-10-17</summary>
+  <summary>2025-10-27 - Just Ignore It</summary>
 
   - <details open>
-    <summary>Time to Regroup</summary>
+    <summary>Petulant User</summary>
 
-    - Thanks to you beautiful people, the list is getting so big it barely fits on my iPod anymore. And now a new challenge appears: **marketplaces**. I was having enough difficulty keeping up with reviewing individual resources... what shall I do with a submission that consists of 50-1000 resources all smushed together? Well... [you tell me!](https://github.com/hesreallyhim/awesome-claude-code/discussions/275) Head over to the Discussions tab and let me know what you'd like to see going forward. **Your input means a lot to my decision-making.**
+    - You may see some activity from a disgruntled visitor to the repo. Out of respect, and not wanting to be a bully, I think it's best to just ignore it. If people have problems with, or suggestions to improve, the repository, you are encouraged to open a SINGLE Discussion topic (per "grievance", let's say) to discuss it, and you have to follow the Community Guidelines, the same way I do, that's my only demand. I've always invited that, actually. On the other hand, if it becomes a matter of trolling or a real distraction, I'll have to have it moderated, which I really don't want to do, because I'm not a nanny (no offense to nannies).
 
     </details>
 
-  - <details open>
-    <summary>Defend Your Rights</summary>
+  </details>
 
-    - The one thing I really really don't like to see is visiting a Claude Code marketplace and finding a resource that I recognize from this list... but without any attribution or acknowledgement to the original author. When you publish a LICENSE file to your repo, you are asserting certain legal rights, for instance you might want everyone to have free access to what you produced, but so long as they give you some recognition. Well, marketplaces are popping up left and right, and not all of them are respecting these rights. Rather than focus on the negatives, I'd like to give special praise to user [khaliqgant](https://github.com/khaliqgant), who recently submitted his project `prpm` for inclusion in the list. `prpm` is something like a marketplace, but with ambitions to support interoperability between diferent providers as well. After I pointed out to him that I wasn't able to find any license information about the resources he was sharing, he very quickly took action and updated the UI so that in the same card where you view information about one of the resources on his platform, you can click directly to that author's LICENSE file - or even just view it in a dropdown! 
-      [![License File](../assets/images/license-file-button.png)](https://prpm.dev/search) 
-      As I mentioned - I have no idea what to do with marketplaces and this list - but in my opinion this is a pretty awesome thing to do for the community, and sets a great example for other people who are aiming to set up their own marketplaces. So thanks very much to khaliqgant for taking this whole "open source" thing seriously, and I hope you'll give his site a visit - and if you notice other sites that are failing to uphold this standard, I encourage you to kindly remind them of their legal obligations - frankly, I presume a lot of people probably just don't know what a specific LICENSE requires of them, so let's just assume that everybody is acting in good faith.
+- <details open>
+  <summary>2025-10-16 - **AGENT SKILLS**</summary>
+
+  - <details open>
+    <summary>Claude Got Skills</summary>
+
+    - In my previous announcement, I encouraged people to submit resources that explored features specific to _Claude Code_. So Claude read the post (he checks the list a lot), and was like "hold my martini" - and as of version 2.0.20 it looks like we've got a **new** set of toys for users to play with: [**Agent Skills**](https://docs.claude.com/en/docs/claude-code/skills). So for now I'm going to be focusing a lot on figuring out what you can do with this new feature set, and Skills submissions will be prioritized. Watch this space for updates.
+
+    </details>
+
+  </details>
+
+- <details open>
+  <summary>2025-10-06 - Awesome Claude Code 2.0</summary>
+
+  - <details open>
+    <summary>Fundraising update</summary>
+
+    - I've managed at last to secure a dedicated, direct-link, one-click fundraising widget for my campaign to support [The Bail Project](https://bailproject.org/). See <a href="#support">Support</a> below for more details, and click [here](https://donor.bailproject.org/-/NPHKDQGP?member=SELFZPZN) to contribute.
 
     </details>
 
@@ -67,7 +82,7 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
-[`Codex Skill`](https://github.com/skills-directory/skill-codex) &nbsp; by &nbsp; [klaudworks](https://github.com/klaudworks)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`Codex Skill`](https://github.com/skills-directory/skill-codex) &nbsp; by &nbsp; [klaudworks](https://github.com/klaudworks)    
 Enables users to prompt codex from claude code. Unlike the raw codex mcp server, this skill infers parameters such as model, reasoning effort, sandboxing from your prompt or asks you to specify them. It also simplifies continuing prior codex sessions so that codex can continue with the prior context.
 
 <details>
@@ -228,7 +243,7 @@ You can easily offer support by making a charitable donation in honor of Awesome
 <details open>
 <summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
 
-[`Codex Skill`](https://github.com/skills-directory/skill-codex) &nbsp; by &nbsp; [klaudworks](https://github.com/klaudworks)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`Codex Skill`](https://github.com/skills-directory/skill-codex) &nbsp; by &nbsp; [klaudworks](https://github.com/klaudworks)    
 Enables users to prompt codex from claude code. Unlike the raw codex mcp server, this skill infers parameters such as model, reasoning effort, sandboxing from your prompt or asks you to specify them. It also simplifies continuing prior codex sessions so that codex can continue with the prior context.
 
 <details>
@@ -1505,17 +1520,6 @@ A convenient command to quickly manage project todo items without leaving the Cl
 
 <details open>
 <summary><h3>Miscellaneous <a href="#awesome-claude-code">🔝</a></h3></summary>
-
-[`/five`](https://github.com/TuckerTucker/tkr-portfolio/blob/main/.claude/commands/five.md) &nbsp; by &nbsp; [TuckerTucker](https://github.com/TuckerTucker)    
-Applies the "five whys" methodology to perform root cause analysis, identify underlying issues, and create solution approaches for complex problems.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for tkr-portfolio](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=tkr-portfolio&username=TuckerTucker&all_stats=true&stats_only=true)
-
-</details>
-<br>
 
 [`/fixing_go_in_graph`](https://github.com/Mjvolk3/torchcell/blob/main/.claude/commands/fixing_go_in_graph.md) &nbsp; by &nbsp; [Mjvolk3](https://github.com/Mjvolk3)    
 Focuses on Gene Ontology annotation integration in graph databases, handling multiple data sources, addressing graph representation issues, and ensuring correct data incorporation.
