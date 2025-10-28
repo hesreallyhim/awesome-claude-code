@@ -14,7 +14,9 @@
 
 <!-- Generated with https://github.com/denvercoder1/readme-typing-svg -->
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&pause=1000&color=F7080D&random=true&width=435&lines=Fumigating...;Gallivanting...;Matriculating...;Toodleedoodling...;Goo-goo-g'joob-ing...;Excaliburating...;Canoodling...;Doing+the+humpty+dance...;Shiver-me-timbers-ing...;Becoming+sentient...;Opening+the+pod+bay+doors...;Rimraf-ing...;23-skidoo-ing...;Skip-to-my-loo'ing...;High-falutin'...;Disambiguating...;Coagulating...;Undulating...;Just+Clauding+around...)](https://git.io/typing-svg)
+<!-- Fitter Happier Typing SVG -->
+
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&duration=1500&pause=100&color=F7080D&width=680&lines=Fitter;Happier;More+productive;Comfortable;Not+drinking+too+much;Regular+exercise+at+the+gym;(3+days+a+week);Getting+on+better+with+your+associate;Employee+contemporaries;At+ease;Eating+well;(no+more+microwave+dinners);(and+saturated+fats);A+patient%2C+better+driver;A+safer+car+(baby+smiling+in+back+seat);Sleeping+well+(no+bad+dreams);No+paranoia;Careful+to+all+animals;(never+washing+spiders+down+the+plughole);Keep+in+contact+with+old+friends;(enjoy+a+drink+now+and+then);Will+frequently+check+credit;(moral+bank%3B+hole+in+the+wall);Favours+for+favours;Fond+but+not+in+love;Charity+standing+orders;On+Sundays+ring+road+supermarket;No+killing+moths+or+putting;Boiling+water+on+the+ants;Car+wash+(also+on+Sundays);No+longer+afraid+of+the+dark;Or+midday+shadows;Nothing+so+ridiculously+teenage;And+desperate;Nothing+so+childish;At+a+better+pace;Slower+and+more+calculated;No+chance+of+escape;Now+self-employed;Concerned;(but+powerless);An+empowered+and+informed;Member+of+society;(pragmatism+not+idealism);Will+not+cry+in+public;Less+chance+of+illness;Tyres+that+grip+in+the+wet;(shot+of+baby+strapped+in+back+seat);A+good+memory;Still+cries+at+a+good+film;Still+kisses+with+saliva;No+longer+empty+and+frantic;Like+a+cat;Tied+to+a+stick;That%27s+driven+into;Frozen+winter+****;(the+ability+to+laugh+at+weakness);Calm;Fitter%2C;Healthier+and+more+productive;A+pig;In+a+cage;On+antibiotics;...;...;...;)](https://git.io/typing-svg)
 
 <!--lint enable remark-lint:awesome-badge-->
 
@@ -37,6 +39,18 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 <details open>
 <summary>View Announcements</summary>
+
+- <details open>
+  <summary>2025-10-27 - Just Ignore It</summary>
+
+  - <details open>
+    <summary>Petulant User</summary>
+
+    - You may see some activity from a disgruntled visitor to the repo. Out of respect, and not wanting to be a bully, I think it's best to just ignore it. If people have problems with, or suggestions to improve, the repository, you are encouraged to open a SINGLE Discussion topic (per "grievance", let's say) to discuss it, and you have to follow the Community Guidelines, the same way I do, that's my only demand. I've always invited that, actually. On the other hand, if it becomes a matter of trolling or a real distraction, I'll have to have it moderated, which I really don't want to do, because I'm not a nanny (no offense to nannies).
+
+    </details>
+
+  </details>
 
 - <details open>
   <summary>2025-10-16 - **AGENT SKILLS**</summary>
@@ -68,7 +82,7 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
-[`Codex Skill`](https://github.com/skills-directory/skill-codex) &nbsp; by &nbsp; [klaudworks](https://github.com/klaudworks)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`Codex Skill`](https://github.com/skills-directory/skill-codex) &nbsp; by &nbsp; [klaudworks](https://github.com/klaudworks)    
 Enables users to prompt codex from claude code. Unlike the raw codex mcp server, this skill infers parameters such as model, reasoning effort, sandboxing from your prompt or asks you to specify them. It also simplifies continuing prior codex sessions so that codex can continue with the prior context.
 
 <details>
@@ -229,7 +243,7 @@ You can easily offer support by making a charitable donation in honor of Awesome
 <details open>
 <summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
 
-[`Codex Skill`](https://github.com/skills-directory/skill-codex) &nbsp; by &nbsp; [klaudworks](https://github.com/klaudworks)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`Codex Skill`](https://github.com/skills-directory/skill-codex) &nbsp; by &nbsp; [klaudworks](https://github.com/klaudworks)    
 Enables users to prompt codex from claude code. Unlike the raw codex mcp server, this skill infers parameters such as model, reasoning effort, sandboxing from your prompt or asks you to specify them. It also simplifies continuing prior codex sessions so that codex can continue with the prior context.
 
 <details>
@@ -1506,17 +1520,6 @@ A convenient command to quickly manage project todo items without leaving the Cl
 
 <details open>
 <summary><h3>Miscellaneous <a href="#awesome-claude-code">🔝</a></h3></summary>
-
-[`/five`](https://github.com/TuckerTucker/tkr-portfolio/blob/main/.claude/commands/five.md) &nbsp; by &nbsp; [TuckerTucker](https://github.com/TuckerTucker)    
-Applies the "five whys" methodology to perform root cause analysis, identify underlying issues, and create solution approaches for complex problems.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for tkr-portfolio](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=tkr-portfolio&username=TuckerTucker&all_stats=true&stats_only=true)
-
-</details>
-<br>
 
 [`/fixing_go_in_graph`](https://github.com/Mjvolk3/torchcell/blob/main/.claude/commands/fixing_go_in_graph.md) &nbsp; by &nbsp; [Mjvolk3](https://github.com/Mjvolk3)    
 Focuses on Gene Ontology annotation integration in graph databases, handling multiple data sources, addressing graph representation issues, and ensuring correct data incorporation.
