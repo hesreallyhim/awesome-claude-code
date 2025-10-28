@@ -37,6 +37,9 @@ overrides:
   tool-1e4657fd:
     license: "MIT"
     license_locked: true
+  cmd-hook-648caacf:  # Resource ID
+    skip_validation: true  # Skip this resource entirely during validation
+    notes: "LIFO"
 # Supported override fields:
 # - license: Override the detected license
 # - license_locked: Prevent license validation from updating
