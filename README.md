@@ -41,36 +41,25 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 <summary>View Announcements</summary>
 
 - <details open>
-  <summary>2025-10-27 - Just Ignore It</summary>
+  <summary>2025-10-27 - Defending Your Rights</summary>
 
   - <details open>
-    <summary>Petulant User</summary>
+    <summary>Shoutout to prpm</summary>
 
-    - You may see some activity from a disgruntled visitor to the repo. Out of respect, and not wanting to be a bully, I think it's best to just ignore it. If people have problems with, or suggestions to improve, the repository, you are encouraged to open a SINGLE Discussion topic (per "grievance", let's say) to discuss it, and you have to follow the Community Guidelines, the same way I do, that's my only demand. I've always invited that, actually. On the other hand, if it becomes a matter of trolling or a real distraction, I'll have to have it moderated, which I really don't want to do, because I'm not a nanny (no offense to nannies).
+    - The one thing I really really don't like to see is visiting a Claude Code marketplace and finding a resource that I recognize from this list... but without any attribution or acknowledgement to the original author. When you publish a LICENSE file to your repo, you are asserting certain legal rights, for instance you might want everyone to have free access to what you produced, but so long as they give you some recognition. Well, marketplaces are popping up left and right, and not all of them are respecting these rights. Rather than focus on the negatives, I'd like to give special praise to user [khaliqgant](https://github.com/khaliqgant), who recently submitted his project [prpm](https://prpm.dev) for inclusion in the list. `prpm` is something like a marketplace, but with ambitions to support interoperability between diferent providers as well. After I pointed out to him that I wasn't able to find any license information about the resources he was sharing, he very quickly took action and updated the UI so that in the same card where you view information about one of the resources on his platform, you can click directly to that author's LICENSE file - or even just view it in a dropdown! <br>
+      <div align="center"><a href="https://prpm.dev/search"><img src="/assets/prpm-license-ui.png" width="600" /></a><br></div>
+      As I mentioned - I have no idea what to do with marketplaces and this list - but in my opinion this is a pretty awesome thing to do for the community, and sets a great example for other people who are aiming to set up their own marketplaces. So thanks very much to khaliqgant for taking this whole "open source" thing seriously, and I hope you'll give his site a visit - and if you notice other sites that are failing to uphold this standard, I encourage you to kindly remind them of their legal obligations - frankly, I presume a lot of people probably just don't know what a specific LICENSE requires of them, so let's just assume that everybody is acting in good faith.
 
     </details>
 
-  </details>
-
-- <details open>
-  <summary>2025-10-16 - **AGENT SKILLS**</summary>
-
   - <details open>
-    <summary>Claude Got Skills</summary>
+    <summary>Review Policy - Reminder</summary>
 
-    - In my previous announcement, I encouraged people to submit resources that explored features specific to _Claude Code_. So Claude read the post (he checks the list a lot), and was like "hold my martini" - and as of version 2.0.20 it looks like we've got a **new** set of toys for users to play with: [**Agent Skills**](https://docs.claude.com/en/docs/claude-code/skills). So for now I'm going to be focusing a lot on figuring out what you can do with this new feature set, and Skills submissions will be prioritized. Watch this space for updates.
-
-    </details>
-
-  </details>
-
-- <details open>
-  <summary>2025-10-06 - Awesome Claude Code 2.0</summary>
-
-  - <details open>
-    <summary>Fundraising update</summary>
-
-    - I've managed at last to secure a dedicated, direct-link, one-click fundraising widget for my campaign to support [The Bail Project](https://bailproject.org/). See <a href="#support">Support</a> below for more details, and click [here](https://donor.bailproject.org/-/NPHKDQGP?member=SELFZPZN) to contribute.
+    - It occurs to me now that because I don't have a "living record" of these announcments, except in the git history, people are probably not aware of everything I've posted before. So, in order to clarify the current state of the repo, I'll just quote from a previous announcement, which still is "in effect":
+      
+      > In addition to this, due to personal factors and social ailments such as "rent", I must be mindful of the time I devote to this project, which is non-trivial ... For now, I am temporarily suspending any commitment to maintaining the Issue submissions as a FIFO _queue_ of items that must be evaluated in a timely fashion. You are absolutely encouraged to submit your projects, and I respect everybody's hard work and will make my best effort to review submissions as they come in.
+      
+      Some people seem to be unaware of this (well, because I don't leave these announcements up forever), but sadly I have not won the lottery since the date that I posted the announcement quoted above, and so I have to balance my own time that I spend working on this list with the time that I spend trying to secure income to prevent being homeless. Even despite that, I have managed to get through a number of reviews over the past week or two, even in the face of some difficulties and distractions about which I will not speak because I have my own duties to the GitHub community and to the developers who I spend a lot of time advocating for. Thanks! If you have any feelings or thoughts at all about this repo, I really encourage people to open discussion threads and participate in dialogue - I would love to know more about what this community is really like, and I do believe that the vast majority are probably very awesome and smart. For the others, you are welcome to participate as well, provided you abide by GitHub's guidelines and treat each other with respect. Besos!
 
     </details>
 
@@ -122,17 +111,6 @@ Very well-written set of hooks for code quality and tool usage regulation (e.g. 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-codex-settings](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-codex-settings&username=fcakyon&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`/linux-desktop-slash-commands`](https://github.com/danielrosehill/Claude-Code-Linux-Desktop-Slash-Commands) &nbsp; by &nbsp; [Daniel Rosehill](https://github.com/danielrosehill)    
-A library of slash commands intended specifically to facilitate common and advanced operations on Linux desktop environments (although many would also be useful on Linux servers). Command groups include hardware benchmarking, filesystem organisation, and security posture validation.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for Claude-Code-Linux-Desktop-Slash-Commands](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Claude-Code-Linux-Desktop-Slash-Commands&username=danielrosehill&all_stats=true&stats_only=true)
 
 </details>
 <br>
