@@ -35,6 +35,8 @@ This is a curated list of slash-commands, `CLAUDE.md` files, CLI tools, and othe
 
 Claude Code is a cutting-edge CLI-based coding assistant and agent released by [Anthropic](https://www.anthropic.com/) that you can access in your terminal or IDE. It is a rapidly evolving tool that offers a number of powerful capabilities, and allows for a lot of configuration, in a lot of different ways. Users are actively working out best practices and workflows. It is the hope that this repo will help the community share knowledge and understand how to get the most out of Claude Code.
 
+<div align="center"><h1>💰<a href="https://github.com/hesreallyhim/awesome-claude-code/discussions/287">Awesome Claude Code Feature Bounty</a>💰</h1></div>
+
 ### Announcements [🔝](#awesome-claude-code)
 
 <details open>
@@ -46,20 +48,16 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
   - <details open>
     <summary>Shoutout to prpm</summary>
 
-    - The one thing I really really don't like to see is visiting a Claude Code marketplace and finding a resource that I recognize from this list... but without any attribution or acknowledgement to the original author. When you publish a LICENSE file to your repo, you are asserting certain legal rights, for instance you might want everyone to have free access to what you produced, but so long as they give you some recognition. Well, marketplaces are popping up left and right, and not all of them are respecting these rights. Rather than focus on the negatives, I'd like to give special praise to user [khaliqgant](https://github.com/khaliqgant), who recently submitted his project [prpm](https://prpm.dev) for inclusion in the list. `prpm` is something like a marketplace, but with ambitions to support interoperability between diferent providers as well. After I pointed out to him that I wasn't able to find any license information about the resources he was sharing, he very quickly took action and updated the UI so that in the same card where you view information about one of the resources on his platform, you can click directly to that author's LICENSE file - or even just view it in a dropdown! <br>
+    - When you publish a LICENSE file to your repo, you are asserting certain legal rights. Well, marketplaces are popping up left and right, and not all of them are respecting these rights. Rather than focus on the negatives, I'd like to give special praise to user [khaliqgant](https://github.com/khaliqgant), who recently submitted his project [prpm](https://prpm.dev) for inclusion in the list. `prpm` is something like a marketplace, but with ambitions to support interoperability between diferent providers as well. After I pointed out to him that I wasn't able to find any license information about the resources he was sharing, he very quickly took action and updated the UI so that in the same card where you view information about one of the resources on his platform, you can click directly to that author's LICENSE file - or even just view it in a dropdown! <br>
       <div align="center"><a href="https://prpm.dev/search"><img src="/assets/prpm-license-ui.png" width="600" /></a><br></div>
-      As I mentioned - I have no idea what to do with marketplaces and this list - but in my opinion this is a pretty awesome thing to do for the community, and sets a great example for other people who are aiming to set up their own marketplaces. So thanks very much to khaliqgant for taking this whole "open source" thing seriously, and I hope you'll give his site a visit - and if you notice other sites that are failing to uphold this standard, I encourage you to kindly remind them of their legal obligations - frankly, I presume a lot of people probably just don't know what a specific LICENSE requires of them, so let's just assume that everybody is acting in good faith.
+      In my opinion this is a pretty awesome thing to do for the community, and sets a great example for other people who are aiming to set up their own marketplaces. So thanks very much to khaliqgant for taking this whole "open source" thing seriously, and I hope you'll give his site a visit - and if you notice other sites that are failing to uphold this standard, I encourage you to kindly remind them of their legal obligations - frankly, I presume a lot of people probably just don't know what a specific LICENSE requires of them, so let's just assume that everybody is acting in good faith.
 
     </details>
 
   - <details open>
     <summary>Review Policy - Reminder</summary>
 
-    - It occurs to me now that because I don't have a "living record" of these announcments, except in the git history, people are probably not aware of everything I've posted before. So, in order to clarify the current state of the repo, I'll just quote from a previous announcement, which still is "in effect":
-      
-      > In addition to this, due to personal factors and social ailments such as "rent", I must be mindful of the time I devote to this project, which is non-trivial ... For now, I am temporarily suspending any commitment to maintaining the Issue submissions as a FIFO _queue_ of items that must be evaluated in a timely fashion. You are absolutely encouraged to submit your projects, and I respect everybody's hard work and will make my best effort to review submissions as they come in.
-      
-      Some people seem to be unaware of this (well, because I don't leave these announcements up forever), but sadly I have not won the lottery since the date that I posted the announcement quoted above, and so I have to balance my own time that I spend working on this list with the time that I spend trying to secure income to prevent being homeless. Even despite that, I have managed to get through a number of reviews over the past week or two, even in the face of some difficulties and distractions about which I will not speak because I have my own duties to the GitHub community and to the developers who I spend a lot of time advocating for. Thanks! If you have any feelings or thoughts at all about this repo, I really encourage people to open discussion threads and participate in dialogue - I would love to know more about what this community is really like, and I do believe that the vast majority are probably very awesome and smart. For the others, you are welcome to participate as well, provided you abide by GitHub's guidelines and treat each other with respect. Besos!
+    - > ...due to personal factors and social ailments such as "rent", I must be mindful of the time I devote to this project, which is non-trivial ... For now, I am temporarily suspending any commitment to maintaining the Issue submissions as a FIFO _queue_ of items that must be evaluated in a timely fashion. You are absolutely encouraged to submit your projects, and I respect everybody's hard work and will make my best effort to review submissions as they come in.
 
     </details>
 
@@ -116,13 +114,13 @@ Very well-written set of hooks for code quality and tool usage regulation (e.g. 
 <br>
 
 
-# **Support**
+<!-- # **Support**
 
-You can easily offer support by making a charitable donation in honor of Awesome Claude Code by visiting the [fundraising page](https://donor.bailproject.org/-/NPHKDQGP?member=SELFZPZN) I've set up for [The Bail Project](https://bailproject.org/). One click will take you straight to the donation widget, and a few seconds later your contribution will be completed - even $1 will truly make an impact. (If you are on GitHub, and you want your donation to be recognized, you will have to take about two more minutes to complete a follow-up email which actually notifies me of the dedication. As a reward you can show one of our nice Freedom Funder badges.) Sadly, this repo cannot be actively maintained without some direct support to this fund. Luckily there are loads of other resources devoted to Claude and his amazing Code, and it's up to you whether you think this one is particularly valuable or not.
+You can easily offer support by making a charitable donation in honor of Awesome Claude Code by visiting the [fundraising page](https://donor.bailproject.org/-/NPHKDQGP?member=SELFZPZN) I've set up for [The Bail Project](https://bailproject.org/). One click will take you straight to the donation widget, and a few seconds later your contribution will be completed - even $1 will truly make an impact. (If you are on GitHub, and you want your donation to be recognized, you will have to take about two more minutes to complete a follow-up email which actually notifies me of the dedication. As a reward you can show one of our nice Freedom Funder badges.) Sadly, this repo cannot be actively maintained without some direct support to this fund. Luckily there are loads of other resources devoted to Claude and his amazing Code, and it's up to you whether you think this one is particularly valuable or not. -->
 
-<a href="https://donor.bailproject.org/-/NPHKDQGP?member=SELFZPZN" text-align="center">
+<!-- <a href="https://donor.bailproject.org/-/NPHKDQGP?member=SELFZPZN" text-align="center">
   <img src="./assets/fundraising-link-img.jpg" alt="Awesome Claude Code Freedom Funders" width="200" margin="auto" />
-</a>
+</a> -->
 
 ## Contents [🔝](#awesome-claude-code)
 
