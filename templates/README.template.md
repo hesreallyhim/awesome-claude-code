@@ -14,9 +14,9 @@
 
 <!-- Generated with https://github.com/denvercoder1/readme-typing-svg -->
 
-<!-- Fitter Happier Typing SVG -->
+<!-- Daft Punk Typing SVG -->
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&duration=1500&pause=100&color=F7080D&width=680&lines=Fitter;Happier;More+productive;Comfortable;Not+drinking+too+much;Regular+exercise+at+the+gym;(3+days+a+week);Getting+on+better+with+your+associate;Employee+contemporaries;At+ease;Eating+well;(no+more+microwave+dinners);(and+saturated+fats);A+patient%2C+better+driver;A+safer+car+(baby+smiling+in+back+seat);Sleeping+well+(no+bad+dreams);No+paranoia;Careful+to+all+animals;(never+washing+spiders+down+the+plughole);Keep+in+contact+with+old+friends;(enjoy+a+drink+now+and+then);Will+frequently+check+credit;(moral+bank%3B+hole+in+the+wall);Favours+for+favours;Fond+but+not+in+love;Charity+standing+orders;On+Sundays+ring+road+supermarket;No+killing+moths+or+putting;Boiling+water+on+the+ants;Car+wash+(also+on+Sundays);No+longer+afraid+of+the+dark;Or+midday+shadows;Nothing+so+ridiculously+teenage;And+desperate;Nothing+so+childish;At+a+better+pace;Slower+and+more+calculated;No+chance+of+escape;Now+self-employed;Concerned;(but+powerless);An+empowered+and+informed;Member+of+society;(pragmatism+not+idealism);Will+not+cry+in+public;Less+chance+of+illness;Tyres+that+grip+in+the+wet;(shot+of+baby+strapped+in+back+seat);A+good+memory;Still+cries+at+a+good+film;Still+kisses+with+saliva;No+longer+empty+and+frantic;Like+a+cat;Tied+to+a+stick;That%27s+driven+into;Frozen+winter+****;(the+ability+to+laugh+at+weakness);Calm;Fitter%2C;Healthier+and+more+productive;A+pig;In+a+cage;On+antibiotics;...;...;...;)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&duration=1500&pause=100&color=F7080D&width=680&lines=Work%20it;Make%20it;Do%20it;%20Makes%20us;...;...;...;...;Harder;Better;Faster;Stronger;...;...;...;...;)](https://git.io/typing-svg)
 
 <!--lint enable remark-lint:awesome-badge-->
 
