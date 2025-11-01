@@ -71,6 +71,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
+[`Claudex`](https://github.com/kunwar-shah/claudex) &nbsp; by &nbsp; [Kunwar Shah](https://github.com/kunwar-shah)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Claudex - A web-based browser for exploring your Claude Code conversation history across projects. Indexes your codebase for full-text search. Nice, easy-to-navigate UI. Simple dashboard interface for high-level analytics, and multiple export options as well. (And completely local w/ no telemetry!)
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claudex](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claudex&username=kunwar-shah&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Omnara`](https://github.com/omnara-ai/omnara) &nbsp; by &nbsp; [Ishaan Sehgal](https://github.com/ishaansehgal99)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
 A command center for AI agents that syncs Claude Code sessions across terminal, web, and mobile. Allows for remote monitoring, human-in-the-loop interaction, and team collaboration.
 
@@ -707,6 +718,17 @@ A real-time terminal-based tool for monitoring Claude Code token usage. It shows
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for Claude-Code-Usage-Monitor](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Claude-Code-Usage-Monitor&username=Maciek-roboblog&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Claudex`](https://github.com/kunwar-shah/claudex) &nbsp; by &nbsp; [Kunwar Shah](https://github.com/kunwar-shah)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Claudex - A web-based browser for exploring your Claude Code conversation history across projects. Indexes your codebase for full-text search. Nice, easy-to-navigate UI. Simple dashboard interface for high-level analytics, and multiple export options as well. (And completely local w/ no telemetry!)
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claudex](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claudex&username=kunwar-shah&all_stats=true&stats_only=true)
 
 </details>
 <br>
