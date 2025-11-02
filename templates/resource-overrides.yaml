@@ -38,14 +38,6 @@ overrides:
   tool-1e4657fd:
     license: "MIT"
 
-  # LIFO
-  cmd-hook-648caacf:
-    skip_validation: true
-
-  # Trash person
-  wf-935cc6ae:
-    skip_validation: true
-
 # Supported override fields:
 # - license: Override the detected license (automatically locked)
 # - active: Override the active status (automatically locked)
