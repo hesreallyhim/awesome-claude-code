@@ -302,7 +302,9 @@ def interactive_mode(adder: CategoryAdder) -> None:
 
     # Get order
     max_order = adder.get_max_order()
-    order_input = input(f"Enter order position (1-{max_order+1}, default: {max_order+1}): ").strip()
+    order_input = input(
+        f"Enter order position (1-{max_order + 1}, default: {max_order + 1}): "
+    ).strip()
     order = int(order_input) if order_input else max_order + 1
 
     # Get subcategories
