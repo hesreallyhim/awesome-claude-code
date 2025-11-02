@@ -14,9 +14,7 @@
 
 <!-- Generated with https://github.com/denvercoder1/readme-typing-svg -->
 
-<!-- Daft Punk Typing SVG -->
-
-[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&duration=1500&pause=100&color=F7080D&width=680&lines=Work%20it;Make%20it;Do%20it;%20Makes%20us;...;...;...;...;Harder;Better;Faster;Stronger;...;...;...;...;)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&duration=3000&pause=100&color=F7080D&width=680&lines=Lollygagging...;Skedaddling...;Bumbershooting...;Widdershinning...;Higgledy-piggledying...;Doodlebugging...;Fiddle-faddling...;Whimwhamming...;Dilly-dallying...;Flapdoodling...;Ballyhooing...;Galumphing...;Razzle-dazzling...;Tiddle-taddling...;Zigzagging...;Twinkletoeing...;Puddle-jumping...;Snicker-snacking...;Jibber-jabbering...;Frabjoussing...;Piffle-puffling...;Whirligigging...;Bibbity-bobbitying...;)](https://git.io/typing-svg)
 
 <!--lint enable remark-lint:awesome-badge-->
 
@@ -126,14 +124,6 @@ Enables users to prompt codex from claude code. Unlike the raw codex mcp server,
 </details>
 <br>
 
-
-<!-- # **Support**
-
-You can easily offer support by making a charitable donation in honor of Awesome Claude Code by visiting the [fundraising page](https://donor.bailproject.org/-/NPHKDQGP?member=SELFZPZN) I've set up for [The Bail Project](https://bailproject.org/). One click will take you straight to the donation widget, and a few seconds later your contribution will be completed - even $1 will truly make an impact. (If you are on GitHub, and you want your donation to be recognized, you will have to take about two more minutes to complete a follow-up email which actually notifies me of the dedication. As a reward you can show one of our nice Freedom Funder badges.) Sadly, this repo cannot be actively maintained without some direct support to this fund. Luckily there are loads of other resources devoted to Claude and his amazing Code, and it's up to you whether you think this one is particularly valuable or not. -->
-
-<!-- <a href="https://donor.bailproject.org/-/NPHKDQGP?member=SELFZPZN" text-align="center">
-  <img src="./assets/fundraising-link-img.jpg" alt="Awesome Claude Code Freedom Funders" width="200" margin="auto" />
-</a> -->
 
 ## Contents [🔝](#awesome-claude-code)
 
@@ -1948,15 +1938,15 @@ It's easy! Just click the link above and fill out the form. No Git knowledge req
 - First and foremost, best efforts are made to ensure that any resource on this list is free of malware, bloatware, or other unwanted risks.
 - Second, being a _curated_ list, every entry is manually evaluated and "tested out" to see if it actually delivers value to Claude Code users. If you want an _un-curated_ list, you can find many great resources [here](https://github.com/search?q=%22claude+code%22&type=repositories&s=stars&o=desc).
 
-**What we're looking for**
-
-- The Claude Code CLI/TUI has led the way in terms of its capabilities, range of features, and possibilites for configuration and optimization. As of late, many submissions have focused less on "what can you do with Claude Code?" and more on "how can I plug Claude Code in to 100 other cool things?" My goal is to focus on the former question, not because it's inherently more interesting, but because the internet is full of awesome things, and this particular repo is supposed to highlight awesome things you can do _with Claude Code_. That is to say, this is not a list for _general-purpose agent-configuration systems_ (however amazing those things are) - there are still plenty of people who sign up every day and go online and ask "What am I supposed to write in my `CLAUDE.md`"? Indie developers, such as those featured on this list, have often done much of the legwork to help those users get comfortable with the Claude Code ecosystem. So I encourage you to **keep exploring the possibilities that exist within Claude Code** - a small utility that is easy to install, easy to uninstall, and adds a dash of pleasure to the Claude Code experience, is more likely to be featured (or, more quickly, at least), than a full-fledged agent development framework that is more complex that Claude Code itself.
-
 See [CONTRIBUTING.md](/CONTRIBUTING.md) for the complete submission guide and review process.
 
 For suggestions about the repository itself, please [open a general issue](https://github.com/hesreallyhim/awesome-claude-code/issues/new).
 
-This project is released with a [Contributor Code of Conduct](/code-of-conduct.md). By participating, you agree to abide by its terms. And although I take strong measures to uphold the quality and safety of this list, like Anthropic, I take no responsibility or liability for anything bad that might happen as a result of these third-party resources. 
+This project is released with a [Contributor Code of Conduct](/code-of-conduct.md). By participating, you agree to abide by its terms. And although I take strong measures to uphold the quality and safety of this list, I take no responsibility or liability for anything bad that might happen as a result of these third-party resources. 
 
 ## Growing thanks to you ❤️
 [![Stargazers over time](https://starchart.cc/hesreallyhim/awesome-claude-code.svg?variant=adaptive)](https://starchart.cc/hesreallyhim/awesome-claude-code)
+
+## License
+
+Although the whole point of this list to help promote and grow the open-source community around Claude Code, this list is licensed under a slightly more restrictive license: [Creative Commons CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) - this means you are welcome to copy and redistribute the list, provided you include appropriate attribution; however you are not permitted to distribute any modified versions - and you are not permitted to use it for any commercial purposes. This is to prevent unlawful appropriation of the work of the authors whose resources are listed here. Please note that **all resources included in this list have their own license terms** - if you wish to incorporate those authors' works into your _own_ product, it would be really nice to do so according to the terms that _those authors_ have set out - refusal to do so is a violation of their rights - and while it is up to the author whether or not they wish to take action, please note - I am keeping close tabs on you. 🫶
