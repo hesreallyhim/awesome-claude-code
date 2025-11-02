@@ -43,6 +43,7 @@ overrides:
   wf-935cc6ae:  # Resource ID
     skip_validation: true  # Skip this resource entirely during validation
     notes: "Trash person"
+    
 # Supported override fields:
 # - license: Override the detected license
 # - license_locked: Prevent license validation from updating
