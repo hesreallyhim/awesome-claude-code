@@ -43,21 +43,19 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 <summary>View Announcements</summary>
 
 - <details open>
-  <summary>2025-10-27 - Defending Your Rights</summary>
+  <summary>2025-11-02 - A word on Plugins and a farewell to Output Styles</summary>
 
   - <details open>
-    <summary>Shoutout to prpm</summary>
+    <summary>Plugins and Marketplaces</summary>
 
-    - When you publish a LICENSE file to your repo, you are asserting certain legal rights. Well, marketplaces are popping up left and right, and not all of them are respecting these rights. Rather than focus on the negatives, I'd like to give special praise to user [khaliqgant](https://github.com/khaliqgant), who recently submitted his project [prpm](https://prpm.dev) for inclusion in the list. `prpm` is something like a marketplace, but with ambitions to support interoperability between diferent providers as well. After I pointed out to him that I wasn't able to find any license information about the resources he was sharing, he very quickly took action and updated the UI so that in the same card where you view information about one of the resources on his platform, you can click directly to that author's LICENSE file - or even just view it in a dropdown! <br>
-      <div align="center"><a href="https://prpm.dev/search"><img src="/assets/prpm-license-ui.png" width="600" /></a><br></div>
-      In my opinion this is a pretty awesome thing to do for the community, and sets a great example for other people who are aiming to set up their own marketplaces. So thanks very much to khaliqgant for taking this whole "open source" thing seriously, and I hope you'll give his site a visit - and if you notice other sites that are failing to uphold this standard, I encourage you to kindly remind them of their legal obligations - frankly, I presume a lot of people probably just don't know what a specific LICENSE requires of them, so let's just assume that everybody is acting in good faith.
+    - "Given my current available resources, I have so far declined to include plugins and/or marketplaces in Awesome Claude Code - but we are really hoping to secure some additional support to help us expand the scope of this repository while maintaining its standards of quality. I hope to have some good news on this forthcoming. 🤞
 
     </details>
 
   - <details open>
-    <summary>Review Policy - Reminder</summary>
+    <summary>Output Styles - Deprecated</summary>
 
-    - > ...due to personal factors and social ailments such as "rent", I must be mindful of the time I devote to this project, which is non-trivial ... For now, I am temporarily suspending any commitment to maintaining the Issue submissions as a FIFO _queue_ of items that must be evaluated in a timely fashion. You are absolutely encouraged to submit your projects, and I respect everybody's hard work and will make my best effort to review submissions as they come in.
+    - "Per the Claude Code documentation site, Output Styles are set to be deprecated, so I will have to remove that category very soon."
 
     </details>
 
@@ -123,6 +121,12 @@ Enables users to prompt codex from claude code. Unlike the raw codex mcp server,
 
 </details>
 <br>
+
+
+## Honorable Mentions
+
+[`prpm`](https://prpm.dev/) &nbsp; by &nbsp; [khaliqgant](https://github.com/khaliqgant)    
+`prpm` is something like a plugin marketplace, but with additional support for other providers and coding agents. Although (for the moment 🤞) we are unable to include plugins/marketplaces on the list, I wanted to give special recognition to khaliqgant - after I notified him that I was unable to find any license information for third-party resources that he was hosting on his website, he immediately took action and added a great enhancement to the website's UI, which provides a direct link to the original authors' LICENSE file, as well the ability to view it as a simple dropdown. In my opinion, this is a pretty awesome thing to do to show support for the open source community, and for the developers whose work is featured on this list. I see marketplaces springing up all over the internet now where basic attribution rights are not being respected (maybe for the simple reason that software licenses are complicated!), so I commend khaliqgant for setting a great example with [`prpm`](https://prpm.dev/), and I encourage others to promote and enforce these rights in the service of open source software. 
 
 
 ## Contents [🔝](#awesome-claude-code)
