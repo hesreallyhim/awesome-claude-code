@@ -28,6 +28,10 @@ overrides:
   # Resource removed from origin
   claude-1279cf13:
     skip_validation: true
+  
+  # 404
+  cmd-9944dc47:
+    skip_validation: true
 
   output-2d98cb4f:
     license: "MIT"

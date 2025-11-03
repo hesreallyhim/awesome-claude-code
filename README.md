@@ -1187,17 +1187,6 @@ Performs comprehensive code quality and security checks, featuring static analys
 </details>
 <br>
 
-[`/clean`](https://github.com/Graphlet-AI/eridu/blob/main/.claude/commands/clean.md) &nbsp; by &nbsp; [Graphlet-AI](https://github.com/Graphlet-AI)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
-Addresses code formatting and quality issues by fixing black formatting problems, organizing imports with isort, resolving flake8 linting issues, and correcting mypy type errors.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for eridu](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=eridu&username=Graphlet-AI&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
 [`/code_analysis`](https://github.com/kingler/n8n_agent/blob/main/.claude/commands/code_analysis.md) &nbsp; by &nbsp; [kingler](https://github.com/kingler)    
 Provides a menu of advanced code analysis commands for deep inspection, including knowledge graph generation, optimization suggestions, and quality evaluation.
 
