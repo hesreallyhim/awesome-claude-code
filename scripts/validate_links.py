@@ -67,7 +67,12 @@ def load_overrides():
 
 
 def apply_overrides(row, overrides):
-    """Apply overrides to a row if the resource ID has overrides configured."""
+    """Apply overrides to a row if the resource ID has overrides configured.
+
+    Any field set in the override configuration is automatically locked,
+    preventing validation scripts from updating it. The skip_validation flag
+    has highest precedence - if set, the entire resource is skipped.
+    """
     resource_id = row.get(ID_HEADER_NAME, "")
     if not resource_id or resource_id not in overrides:
         return row, set(), False
@@ -76,25 +81,32 @@ def apply_overrides(row, overrides):
     locked_fields = set()
     skip_validation = override_config.get("skip_validation", False)
 
-    # Apply each override
+    # Apply each override and auto-lock the field
     for field, value in override_config.items():
+        # Skip special control/metadata fields
+        if field in ["skip_validation", "notes"]:
+            continue
+
+        # Skip any legacy *_locked flags (no longer needed)
         if field.endswith("_locked"):
-            # Track locked fields
-            base_field = field.replace("_locked", "")
-            if override_config.get(field, False):
-                locked_fields.add(base_field)
-        elif field not in ["notes", "skip_validation"]:  # Skip notes and skip_validation fields
-            # Apply override value
-            if field == "license":
-                row[LICENSE_HEADER_NAME] = value
-            elif field == "active":
-                row[ACTIVE_HEADER_NAME] = value
-            elif field == "last_checked":
-                row[LAST_CHECKED_HEADER_NAME] = value
-            elif field == "last_modified":
-                row[LAST_MODIFIED_HEADER_NAME] = value
-            elif field == "description":
-                row["Description"] = value
+            continue
+
+        # Apply override value and automatically lock the field
+        if field == "license":
+            row[LICENSE_HEADER_NAME] = value
+            locked_fields.add("license")
+        elif field == "active":
+            row[ACTIVE_HEADER_NAME] = value
+            locked_fields.add("active")
+        elif field == "last_checked":
+            row[LAST_CHECKED_HEADER_NAME] = value
+            locked_fields.add("last_checked")
+        elif field == "last_modified":
+            row[LAST_MODIFIED_HEADER_NAME] = value
+            locked_fields.add("last_modified")
+        elif field == "description":
+            row["Description"] = value
+            locked_fields.add("description")
 
     return row, locked_fields, skip_validation
 

@@ -4,6 +4,9 @@ Welcome! We're excited that you want to contribute to Awesome Claude Code. This 
 
 **Important:** We take security seriously. All submissions are carefully reviewed to ensure they don't expose users to data risks or malicious code. Advanced tools may take additional time to review.
 
+> [!IMPORTANT] 
+> Due to resource limitations, you may experience some delays in getting a review from a maintainer. We appreciate your patience. 
+
 ## Code of Conduct
 
 Please note that this project is released with a [Contributor Code of Conduct](code-of-conduct.md). By participating in this project you agree to abide by its terms. Follow the conventions of the repo and don't engage in self-promotion. Use descriptive language, not "marketing" style.
@@ -46,7 +49,8 @@ When you submit a resource, our bot checks:
 - ✅ License information (when available)
 - ✅ Description length and quality
 
-**NOTE:** By submitting a resource, you agree to allowing your codebase to be evaluated by a SoTA LLM for any security risks.
+> [!NOTE]
+> The automated validation process is to ensure that the **format of your submission** conforms to the required format for the project's CI/CI - it is a preliminary check and does not indicate anything about the quality of the resource, or whether it will get added to the list.
 
 ### If Changes Are Needed
 
@@ -56,13 +60,13 @@ Don't worry if validation fails! The bot will:
 2. Update the issue labels to reflect the status
 3. Re-validate automatically when you edit your submission
 
-Simply edit your issue to fix any problems - no need to create a new submission.
+Simply edit your issue to fix any problems - no need to create a new submission. If you are getting "stuck" or the bot is not working correctly, feel free to ping @hesreallyhim.
 
 ### Approval Process
 
 Once validation passes:
 
-1. A maintainer will review your submission for quality and relevance
+1. A maintainer will review your submission for inclusion in the list (this is done _as time permits_).
 2. They may:
    - ✅ **Approve** - Type `/approve` and the bot creates a PR
    - 🔄 **Request changes** - Type `/request-changes` with feedback
@@ -89,7 +93,7 @@ Your submission should:
 - 🚀 Demonstrate innovative or exemplary usage patterns
 - 📚 Follow best practices for the resource type
 - 🔄 Work with the latest version of Claude Code
-- 📝 Include clear documentation (demo videos are a huge bonus!)
+- 📝 Include clear documentation (**demo videos are a huge bonus!**)
 - ❄️ Be unique and different from other existing awesome resources
 - ⚖️ Respect the Terms of Service that govern the usage of Claude Code
 
@@ -104,12 +108,15 @@ We especially welcome:
 
 Resources are organized into these categories:
 
+- **Agent Skills** - Individual skill files or folders that give Claude super-powers.
 - **Workflows & Knowledge Guides** - Comprehensive workflow systems
 - **Tooling** - CLI applications and executables
   - IDE Integrations
+  - Usage Monitors
+  - Orchestrators
 - **Status Lines** - Status bar configurations and customizations
 - **Hooks** - Claude Code hook configurations
-- **Output Styles** - Configurations for customizing Claude Code's output formatting
+- **Output Styles** - Configurations for customizing Claude Code's output formatting (**Soon to be deprecated**)
 - **Slash-Commands** - Individual command files
   - Version Control & Git
   - Code Analysis & Testing
@@ -122,49 +129,8 @@ Resources are organized into these categories:
   - Language-Specific
   - Domain-Specific
   - Project Scaffolding & MCP
+- **Alternative Clients** - Alternative front-ends and interfaces for using Claude Code (e.g. mobile apps).
 - **Official Documentation** - Anthropic resources
-- **Alternative Clients** - Alternative implementations and interfaces for Claude
-
-## Adding New Categories
-
-Repository maintainers can add new categories using the automated tool:
-
-### Interactive Mode
-```bash
-make add-category
-```
-
-This will prompt you for:
-- Category name
-- ID and prefix
-- Icon emoji
-- Description
-- Order position
-- Subcategories
-
-### Command Line Mode
-```bash
-make add-category ARGS='--name "My Category" --prefix "mycat" --icon "🎯"'
-```
-
-### What It Does
-The `add-category` command automatically:
-1. Updates `templates/categories.yaml` with the new category
-2. Updates the GitHub issue template dropdown
-3. Regenerates the README with the new section
-4. Optionally creates a commit with all changes
-
-### Examples
-```bash
-# Add a simple category with defaults
-make add-category ARGS='--name "Extensions" --prefix "ext" --icon "🧩"'
-
-# Add a category with multiple subcategories
-make add-category ARGS='--name "Integrations" --prefix "int" --icon "🔗" --subcategories "API,Webhooks,Plugins"'
-
-# Add a category at a specific position
-make add-category ARGS='--name "Templates" --prefix "tmpl" --icon "📋" --order 5'
-```
 
 ## Best Practices
 
@@ -184,12 +150,22 @@ For suggestions about the repository structure, new categories, or other enhance
 2. Describe your suggestion clearly
 3. Explain the benefit to the community
 
+Or, alternatively, start a thread in the [Discussions](https://github.com/hesreallyhim/awesome-claude-code/discussions) tab.
+
+## How Can I Get the Maintainer to Prioritize my Resource?
+
+Although we cannot make any guarantees at the moment, here are some tips:
+
+- Make it **as easy as possible** to understand, verify the security of, install, test-drive, and uninstall your resource. Naturally, if you submit a complicated framework (however awesome it may be) that takes continued usage to demonstrate its value, this will be more difficult to appraise and recommend.
+- **Participate in the Discussions** - Maintainers are much more likely to engage with users who are engaged with this repository as a community resource - participating in Discussions shows that you want to be help contribute to this _community_, rather than "only" a list.
+- Feel free to **comment on other submissions** (respectfully of course) - if we see that there is a lot of community interest in a particular resource, this is a strong signal that it should be added to the list.
+
 ### Reporting Issues
 
 If you find problems with existing resources or the submission process:
 
 - 📖 Check existing issues for similar reports
-- 💬 Open a new issue with details
+- 💬 Open a new General Issue with details
 - 🐛 Include error messages and steps to reproduce
 - 🔒 Report security issues immediately
 

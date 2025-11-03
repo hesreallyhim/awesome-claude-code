@@ -1,61 +1,58 @@
 # Resource Overrides Configuration
 # This file allows manual overrides of specific resource fields
 # Use resource IDs to target specific resources
-# Set field_locked: true to prevent validation scripts from changing the value
-
+#
+# IMPORTANT: Any field you set here is AUTOMATICALLY LOCKED from validation updates
+# You do NOT need to manually specify *_locked flags
+#
 # Example override structure:
 # overrides:
 #   cmd-a3f2b9c4:  # Resource ID
-#     license: "LicenseRef-MIT-Commons-Clause"  # Override value
-#     license_locked: true  # Lock this field from validation updates
-#     notes: "Has Commons Clause restriction"  # Optional notes
-#   cmd-xyz123:  # Resource ID
+#     license: "LicenseRef-MIT-Commons-Clause"  # Automatically locked
+#   cmd-xyz123:
 #     skip_validation: true  # Skip this resource entirely during validation
-#     notes: "Temporarily unavailable for validation"
 
 overrides:
-  # Example: Override license for Claude Task Manager (inactive resource)
-  wf-d0cfdd2b: # Claude Task Manager
-    license: "LicenseRef-MIT-Commons-Clause" # Override value
-    license_locked: true # Lock this field from validation updates
-    notes: "Has Commons Clause restriction" # Optional notes
+  # Claude Task Manager - has Commons Clause restriction
+  wf-d0cfdd2b:
+    license: "LicenseRef-MIT-Commons-Clause"
+
+  # Claude Code Chat - temporarily unavailable for validation
   tool-984936a7:
-    skip_validation: true # Skip this resource entirely during validation
-    notes: "Temporarily unavailable for validation" # Claude Code Chat
+    skip_validation: true
+
+  # Resources with manual license overrides
   status-4e8a47cf:
     license: "MIT"
-    license_locked: true
+
+  # Resource removed from origin
   claude-1279cf13:
     skip_validation: true
-    notes: "Resource removed from origin"
+  
+  # 404
+  cmd-9944dc47:
+    skip_validation: true
+
   output-2d98cb4f:
     license: "MIT"
-    license_locked: true
+
   status-bb559460:
     license: "MIT"
-    license_locked: true
+
   tool-1e4657fd:
     license: "MIT"
-    license_locked: true
-  cmd-hook-648caacf:  # Resource ID
-    skip_validation: true  # Skip this resource entirely during validation
-    notes: "LIFO"
-  wf-935cc6ae:  # Resource ID
-    skip_validation: true  # Skip this resource entirely during validation
-    notes: "Trash person"
+
 # Supported override fields:
-# - license: Override the detected license
-# - license_locked: Prevent license validation from updating
-# - active: Override the active status
-# - active_locked: Lock the active status
-# - description: Override the description
-# - description_locked: Lock the description
-# - last_checked: Override last checked timestamp
-# - last_checked_locked: Lock the timestamp field
-# - skip_validation: Skip entire resource during validation (true/false)
+# - license: Override the detected license (automatically locked)
+# - active: Override the active status (automatically locked)
+# - description: Override the description (automatically locked)
+# - last_checked: Override last checked timestamp (automatically locked)
+# - last_modified: Override last modified timestamp (automatically locked)
+# - skip_validation: Skip entire resource during validation (highest precedence)
 #
 # Notes:
 # - Use resource IDs (e.g., cmd-a3f2b9c4) not display names
-# - Locked fields will be skipped during validation
+# - Any field you set is automatically locked from validation updates
 # - Resources with skip_validation: true are completely skipped by validation scripts
+# - skip_validation has highest precedence - if set, no field validation occurs
 # - Overrides take precedence over CSV data during generation

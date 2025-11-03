@@ -14,9 +14,7 @@
 
 <!-- Generated with https://github.com/denvercoder1/readme-typing-svg -->
 
-<!-- Daft Punk Typing SVG -->
-
-[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&duration=1500&pause=100&color=F7080D&width=680&lines=Work%20it;Make%20it;Do%20it;%20Makes%20us;...;...;...;...;Harder;Better;Faster;Stronger;...;...;...;...;)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&duration=3000&pause=100&color=F7080D&width=680&lines=Lollygagging...;Skedaddling...;Bumbershooting...;Widdershinning...;Higgledy-piggledying...;Doodlebugging...;Fiddle-faddling...;Whimwhamming...;Dilly-dallying...;Flapdoodling...;Ballyhooing...;Galumphing...;Razzle-dazzling...;Tiddle-taddling...;Zigzagging...;Twinkletoeing...;Puddle-jumping...;Snicker-snacking...;Jibber-jabbering...;Frabjoussing...;Piffle-puffling...;Whirligigging...;Bibbity-bobbitying...;)](https://git.io/typing-svg)
 
 <!--lint enable remark-lint:awesome-badge-->
 
@@ -45,21 +43,19 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 <summary>View Announcements</summary>
 
 - <details open>
-  <summary>2025-10-27 - Defending Your Rights</summary>
+  <summary>2025-11-02 - A word on Plugins and a farewell to Output Styles</summary>
 
   - <details open>
-    <summary>Shoutout to prpm</summary>
+    <summary>Plugins and Marketplaces</summary>
 
-    - When you publish a LICENSE file to your repo, you are asserting certain legal rights. Well, marketplaces are popping up left and right, and not all of them are respecting these rights. Rather than focus on the negatives, I'd like to give special praise to user [khaliqgant](https://github.com/khaliqgant), who recently submitted his project [prpm](https://prpm.dev) for inclusion in the list. `prpm` is something like a marketplace, but with ambitions to support interoperability between diferent providers as well. After I pointed out to him that I wasn't able to find any license information about the resources he was sharing, he very quickly took action and updated the UI so that in the same card where you view information about one of the resources on his platform, you can click directly to that author's LICENSE file - or even just view it in a dropdown! <br>
-      <div align="center"><a href="https://prpm.dev/search"><img src="/assets/prpm-license-ui.png" width="600" /></a><br></div>
-      In my opinion this is a pretty awesome thing to do for the community, and sets a great example for other people who are aiming to set up their own marketplaces. So thanks very much to khaliqgant for taking this whole "open source" thing seriously, and I hope you'll give his site a visit - and if you notice other sites that are failing to uphold this standard, I encourage you to kindly remind them of their legal obligations - frankly, I presume a lot of people probably just don't know what a specific LICENSE requires of them, so let's just assume that everybody is acting in good faith.
+    - "Given my current available resources, I have so far declined to include plugins and/or marketplaces in Awesome Claude Code - but we are really hoping to secure some additional support to help us expand the scope of this repository while maintaining its standards of quality. I hope to have some good news on this forthcoming. 🤞
 
     </details>
 
   - <details open>
-    <summary>Review Policy - Reminder</summary>
+    <summary>Output Styles - Deprecated</summary>
 
-    - > ...due to personal factors and social ailments such as "rent", I must be mindful of the time I devote to this project, which is non-trivial ... For now, I am temporarily suspending any commitment to maintaining the Issue submissions as a FIFO _queue_ of items that must be evaluated in a timely fashion. You are absolutely encouraged to submit your projects, and I respect everybody's hard work and will make my best effort to review submissions as they come in.
+    - "Per the Claude Code documentation site, Output Styles are set to be deprecated, so I will have to remove that category very soon."
 
     </details>
 
@@ -127,13 +123,11 @@ Enables users to prompt codex from claude code. Unlike the raw codex mcp server,
 <br>
 
 
-<!-- # **Support**
+## Honorable Mentions
 
-You can easily offer support by making a charitable donation in honor of Awesome Claude Code by visiting the [fundraising page](https://donor.bailproject.org/-/NPHKDQGP?member=SELFZPZN) I've set up for [The Bail Project](https://bailproject.org/). One click will take you straight to the donation widget, and a few seconds later your contribution will be completed - even $1 will truly make an impact. (If you are on GitHub, and you want your donation to be recognized, you will have to take about two more minutes to complete a follow-up email which actually notifies me of the dedication. As a reward you can show one of our nice Freedom Funder badges.) Sadly, this repo cannot be actively maintained without some direct support to this fund. Luckily there are loads of other resources devoted to Claude and his amazing Code, and it's up to you whether you think this one is particularly valuable or not. -->
+[`prpm`](https://prpm.dev/) &nbsp; by &nbsp; [khaliqgant](https://github.com/khaliqgant)    
+`prpm` is something like a plugin marketplace, but with additional support for other providers and coding agents. Although (for the moment 🤞) we are unable to include plugins/marketplaces on the list, I wanted to give special recognition to khaliqgant - after I notified him that I was unable to find any license information for third-party resources that he was hosting on his website, he immediately took action and added a great enhancement to the website's UI, which provides a direct link to the original authors' LICENSE file, as well the ability to view it as a simple dropdown. In my opinion, this is a pretty awesome thing to do to show support for the open source community, and for the developers whose work is featured on this list. I see marketplaces springing up all over the internet now where basic attribution rights are not being respected (maybe for the simple reason that software licenses are complicated!), so I commend khaliqgant for setting a great example with [`prpm`](https://prpm.dev/), and I encourage others to promote and enforce these rights in the service of open source software. 
 
-<!-- <a href="https://donor.bailproject.org/-/NPHKDQGP?member=SELFZPZN" text-align="center">
-  <img src="./assets/fundraising-link-img.jpg" alt="Awesome Claude Code Freedom Funders" width="200" margin="auto" />
-</a> -->
 
 ## Contents [🔝](#awesome-claude-code)
 
@@ -1197,17 +1191,6 @@ Performs comprehensive code quality and security checks, featuring static analys
 </details>
 <br>
 
-[`/clean`](https://github.com/Graphlet-AI/eridu/blob/main/.claude/commands/clean.md) &nbsp; by &nbsp; [Graphlet-AI](https://github.com/Graphlet-AI)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
-Addresses code formatting and quality issues by fixing black formatting problems, organizing imports with isort, resolving flake8 linting issues, and correcting mypy type errors.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for eridu](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=eridu&username=Graphlet-AI&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
 [`/code_analysis`](https://github.com/kingler/n8n_agent/blob/main/.claude/commands/code_analysis.md) &nbsp; by &nbsp; [kingler](https://github.com/kingler)    
 Provides a menu of advanced code analysis commands for deep inspection, including knowledge graph generation, optimization suggestions, and quality evaluation.
 
@@ -1948,15 +1931,15 @@ It's easy! Just click the link above and fill out the form. No Git knowledge req
 - First and foremost, best efforts are made to ensure that any resource on this list is free of malware, bloatware, or other unwanted risks.
 - Second, being a _curated_ list, every entry is manually evaluated and "tested out" to see if it actually delivers value to Claude Code users. If you want an _un-curated_ list, you can find many great resources [here](https://github.com/search?q=%22claude+code%22&type=repositories&s=stars&o=desc).
 
-**What we're looking for**
-
-- The Claude Code CLI/TUI has led the way in terms of its capabilities, range of features, and possibilites for configuration and optimization. As of late, many submissions have focused less on "what can you do with Claude Code?" and more on "how can I plug Claude Code in to 100 other cool things?" My goal is to focus on the former question, not because it's inherently more interesting, but because the internet is full of awesome things, and this particular repo is supposed to highlight awesome things you can do _with Claude Code_. That is to say, this is not a list for _general-purpose agent-configuration systems_ (however amazing those things are) - there are still plenty of people who sign up every day and go online and ask "What am I supposed to write in my `CLAUDE.md`"? Indie developers, such as those featured on this list, have often done much of the legwork to help those users get comfortable with the Claude Code ecosystem. So I encourage you to **keep exploring the possibilities that exist within Claude Code** - a small utility that is easy to install, easy to uninstall, and adds a dash of pleasure to the Claude Code experience, is more likely to be featured (or, more quickly, at least), than a full-fledged agent development framework that is more complex that Claude Code itself.
-
 See [CONTRIBUTING.md](/CONTRIBUTING.md) for the complete submission guide and review process.
 
 For suggestions about the repository itself, please [open a general issue](https://github.com/hesreallyhim/awesome-claude-code/issues/new).
 
-This project is released with a [Contributor Code of Conduct](/code-of-conduct.md). By participating, you agree to abide by its terms. And although I take strong measures to uphold the quality and safety of this list, like Anthropic, I take no responsibility or liability for anything bad that might happen as a result of these third-party resources. 
+This project is released with a [Contributor Code of Conduct](/code-of-conduct.md). By participating, you agree to abide by its terms. And although I take strong measures to uphold the quality and safety of this list, I take no responsibility or liability for anything bad that might happen as a result of these third-party resources. 
 
 ## Growing thanks to you ❤️
 [![Stargazers over time](https://starchart.cc/hesreallyhim/awesome-claude-code.svg?variant=adaptive)](https://starchart.cc/hesreallyhim/awesome-claude-code)
+
+## License
+
+Although the whole point of this list to help promote and grow the open-source community around Claude Code, this list is licensed under a slightly more restrictive license: [Creative Commons CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) - this means you are welcome to copy and redistribute the list, provided you include appropriate attribution; however you are not permitted to distribute any modified versions - and you are not permitted to use it for any commercial purposes. This is to prevent unlawful appropriation of the work of the authors whose resources are listed here. Please note that **all resources included in this list have their own license terms** - if you wish to incorporate those authors' works into your _own_ product, it would be really nice to do so according to the terms that _those authors_ have set out - refusal to do so is a violation of their rights - and while it is up to the author whether or not they wish to take action, please note - I am keeping close tabs on you. 🫶

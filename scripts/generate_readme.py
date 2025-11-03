@@ -486,22 +486,34 @@ def load_overrides(template_dir):
 
 
 def apply_overrides(row, overrides):
-    """Apply overrides to a resource row."""
+    """Apply overrides to a resource row.
+
+    Override values are applied for README generation. Any field set in
+    the override configuration is automatically locked by validation scripts.
+    """
     resource_id = row.get("ID", "")
     if not resource_id or resource_id not in overrides:
         return row
 
     override_config = overrides[resource_id]
 
-    # Apply overrides (excluding locked flags and notes)
+    # Apply overrides (excluding control/metadata fields and legacy locked flags)
     for field, value in override_config.items():
-        if not field.endswith("_locked") and field != "notes":
-            if field == "license":
-                row["License"] = value
-            elif field == "active":
-                row["Active"] = value
-            elif field == "description":
-                row["Description"] = value
+        # Skip special control/metadata fields
+        if field in ["skip_validation", "notes"]:
+            continue
+
+        # Skip any legacy *_locked flags (no longer needed)
+        if field.endswith("_locked"):
+            continue
+
+        # Apply override values
+        if field == "license":
+            row["License"] = value
+        elif field == "active":
+            row["Active"] = value
+        elif field == "description":
+            row["Description"] = value
 
     return row
 
