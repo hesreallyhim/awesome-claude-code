@@ -141,11 +141,3 @@ categories:
     subcategories:
       - id: general
         name: "General"
-
-# Table of Contents formatting configuration
-toc:
-  style: custom
-  symbol: "▪"
-  subsymbol: "▫"
-  indent: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
-  subindent: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
