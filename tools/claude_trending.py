@@ -36,11 +36,16 @@ STAR_WEIGHT = float(os.environ.get("STAR_WEIGHT", "0.85"))
 FORK_WEIGHT = float(os.environ.get("FORK_WEIGHT", "0.15"))
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
 
+# API request configuration
+MAX_PAGES = 10
+REQUEST_DELAY_SECONDS = 0.2
+MIN_DIVISOR = 1
+
 HEADERS = {
     "Accept": "application/vnd.github.v3+json",
 }
 if GITHUB_TOKEN:
-    HEADERS["Authorization"] = f"token {GITHUB_TOKEN}"
+    HEADERS["Authorization"] = f"Bearer {GITHUB_TOKEN}"
 
 SEARCH_QUERIES = [
     "claude in:name,description,readme fork:false archived:false",
@@ -74,7 +79,7 @@ def search_repos() -> list[dict[str, Any]]:
     seen = set()
     results: list[dict[str, Any]] = []
     for q in SEARCH_QUERIES:
-        for page in range(1, 11):
+        for page in range(1, MAX_PAGES + 1):
             r = gh_get(
                 "https://api.github.com/search/repositories",
                 params={"q": q, "per_page": SEARCH_PER_PAGE, "page": page},
@@ -96,7 +101,7 @@ def search_repos() -> list[dict[str, Any]]:
                 results.append(it)
             if len(items) < SEARCH_PER_PAGE:
                 break
-            time.sleep(0.2)
+            time.sleep(REQUEST_DELAY_SECONDS)
     # ensure seed repo present
     if SEED_REPO not in {r["full_name"] for r in results}:
         try:
@@ -162,8 +167,8 @@ def main():
         stars_delta = max(0, stars_total - prev_stars)
         forks_delta = max(0, forks_total - prev_forks)
 
-        star_prop = (stars_delta / max(prev_stars, 1)) if stars_delta > 0 else 0.0
-        fork_prop = (forks_delta / max(prev_forks, 1)) if forks_delta > 0 else 0.0
+        star_prop = (stars_delta / max(prev_stars, MIN_DIVISOR)) if stars_delta > 0 else 0.0
+        fork_prop = (forks_delta / max(prev_forks, MIN_DIVISOR)) if forks_delta > 0 else 0.0
 
         score = STAR_WEIGHT * star_prop + FORK_WEIGHT * fork_prop
 
