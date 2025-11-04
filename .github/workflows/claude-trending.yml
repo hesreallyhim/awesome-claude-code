@@ -1,0 +1,78 @@
+name: Daily Claude Code Trending
+
+on:
+  schedule:
+    # Run daily at 09:00 UTC
+    - cron: '0 9 * * *'
+  workflow_dispatch: # Allow manual triggering
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-trending:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+
+    - name: Get current date
+      id: date
+      run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+    - name: Run trending script
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        TOP_N: 5
+        WINDOW_HOURS: 24
+      run: |
+        python scripts/claude_trending.py
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v6
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: 'chore(trending): update trending.csv for ${{ steps.date.outputs.date }}'
+        title: 'chore(trending): update trending.csv for ${{ steps.date.outputs.date }}'
+        body: |
+          ## 📈 Trending Claude Code Repositories
+
+          This PR updates `trending.csv` with the top 5 trending repositories related to Claude Code.
+
+          **Generated at:** ${{ steps.date.outputs.date }}
+          **Workflow run:** ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+          ### Metrics Used
+          - **Laplace-smoothed proportional growth** over the last 24 hours
+          - **Composite score:** `star_growth_adj + 0.5 * fork_growth_adj`
+          - Ranked by score (desc), with tiebreakers on new_stars_24h and total_stars
+
+          ### Search Strategy
+          Multi-query search targeting:
+          - Repositories with "Claude Code" in name/description/readme
+          - Topics: `claude-code`, `claude`
+          - VSCode + Claude integrations
+          - Excludes: forks, archived repos, stale projects (>365d since push)
+
+          ---
+          *This PR is automatically created by the [Daily Claude Code Trending workflow](https://github.com/${{ github.repository }}/blob/main/.github/workflows/claude-trending.yml).*
+        branch: automation/trending
+        delete-branch: true
+        labels: |
+          automated
+          trending
