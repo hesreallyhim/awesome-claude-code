@@ -31,6 +31,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import UTC, datetime, timedelta
 from typing import Any
+from urllib.parse import quote_plus
 
 import requests
 
@@ -54,10 +55,12 @@ def get_env_config() -> dict[str, Any]:
 
 def get_default_search_queries() -> list[str]:
     """Return default search queries for Claude Code repositories."""
+    # Use a dynamic cutoff date (1 year ago) instead of hardcoded date
+    one_year_ago = (datetime.now(UTC) - timedelta(days=365)).strftime("%Y-%m-%d")
     return [
         '"Claude Code" in:name,description,readme fork:false archived:false',
         "topic:claude-code fork:false archived:false",
-        "topic:claude fork:false archived:false pushed:>2024-01-01",
+        f"topic:claude fork:false archived:false pushed:>{one_year_ago}",
         '"claude" "vscode" in:readme fork:false archived:false',
         '"claude" "code" in:readme fork:false archived:false',
     ]
@@ -66,7 +69,7 @@ def get_default_search_queries() -> list[str]:
 def search_repositories(query: str, token: str) -> list[dict[str, Any]]:
     """Search GitHub repositories using the given query."""
     headers = {
-        "Authorization": f"token {token}",
+        "Authorization": f"Bearer {token}",
         "Accept": "application/vnd.github.v3+json",
     }
 
@@ -75,9 +78,9 @@ def search_repositories(query: str, token: str) -> list[dict[str, Any]]:
     per_page = 100
 
     while True:
-        url = (
-            f"https://api.github.com/search/repositories?q={query}&per_page={per_page}&page={page}"
-        )
+        # URL encode the query parameter to handle special characters
+        encoded_query = quote_plus(query)
+        url = f"https://api.github.com/search/repositories?q={encoded_query}&per_page={per_page}&page={page}"
         response = requests.get(url, headers=headers, timeout=30)
 
         if response.status_code == 403 and "rate limit" in response.text.lower():
@@ -156,7 +159,7 @@ def deduplicate_and_filter(
 def count_new_stars(repo_full_name: str, token: str, window_hours: int) -> int:
     """Count new stars (WatchEvent) within the time window using repo events API."""
     headers = {
-        "Authorization": f"token {token}",
+        "Authorization": f"Bearer {token}",
         "Accept": "application/vnd.github.v3+json",
     }
 
@@ -203,7 +206,7 @@ def count_new_stars(repo_full_name: str, token: str, window_hours: int) -> int:
 def count_new_forks(repo_full_name: str, token: str, window_hours: int) -> int:
     """Count new forks within the time window using forks API."""
     headers = {
-        "Authorization": f"token {token}",
+        "Authorization": f"Bearer {token}",
         "Accept": "application/vnd.github.v3+json",
     }
 
