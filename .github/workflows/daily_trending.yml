@@ -1,0 +1,54 @@
+name: Daily Claude Code Trending
+
+on:
+  schedule:
+    - cron: "0 9 * * *"   # 09:00 UTC daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  build-and-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run trending script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOP_N: "5"
+          MIN_STARS_TOTAL: "10"
+          STAR_WEIGHT: "0.85"
+          FORK_WEIGHT: "0.15"
+        run: |
+          python tools/claude_trending.py
+
+      - name: Create Pull Request with updates
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore(trending): update trending.csv (top 5)"
+          title: "Daily Claude Code trending (top 5)"
+          body: |
+            This automated PR updates `trending.csv` with the top 5 trending repositories related to "Claude Code" based on proportional growth over the last cycle.
+
+            Score = 0.85 * stars_delta/prev_stars + 0.15 * forks_delta/prev_forks (prev counts floored at 1).
+
+            Source queries: `claude` / `"claude code"` in name+description+readme and topics `claude` / `claude-code`, excluding forks and archived repos. Minimum total stars threshold = 10.
+          branch: bot/trending-${{ github.run_id }}
+          delete-branch: true
+          add-paths: |
+            trending.csv
+            .github/claude-trending-snapshot.json
