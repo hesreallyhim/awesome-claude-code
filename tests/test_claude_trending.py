@@ -102,7 +102,7 @@ class TestTrendingScript:
 
         # Verify order
         assert results[0]["full_name"] == "repo2"  # Highest score
-        assert results[1]["full_name"] == "repo3"  # Same score as 1, higher new_stars
+        assert results[1]["full_name"] == "repo3"  # Same score as repo1, higher new_stars
         assert results[2]["full_name"] == "repo4"  # Same score and new_stars, lower total
         assert results[3]["full_name"] == "repo1"  # Lowest new_stars
 

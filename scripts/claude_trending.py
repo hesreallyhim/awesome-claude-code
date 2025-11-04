@@ -77,6 +77,11 @@ def log(msg: str) -> None:
     print(f"[{datetime.now(UTC).isoformat()}] {msg}", file=sys.stderr)
 
 
+def parse_github_timestamp(timestamp: str) -> datetime:
+    """Parse GitHub API timestamp to datetime with timezone."""
+    return datetime.fromisoformat(timestamp.rstrip("Z")).replace(tzinfo=UTC)
+
+
 def make_request(url: str, params: dict[str, Any] | None = None) -> dict[str, Any] | None:
     """Make GitHub API request with retry logic."""
     for attempt in range(MAX_RETRIES):
@@ -145,7 +150,7 @@ def get_candidate_repos() -> list[dict[str, Any]]:
     filtered_repos = []
     for repo in all_repos.values():
         # Check pushed date
-        pushed_at = datetime.fromisoformat(repo["pushed_at"].replace("Z", "+00:00"))
+        pushed_at = parse_github_timestamp(repo["pushed_at"])
         if pushed_at < cutoff_date:
             continue
 
@@ -176,14 +181,14 @@ def count_new_stars(owner: str, repo: str, window_start: datetime) -> int:
         found_old = False
         for event in data:
             if event["type"] == "WatchEvent":
-                created_at = datetime.fromisoformat(event["created_at"].replace("Z", "+00:00"))
+                created_at = parse_github_timestamp(event["created_at"])
                 if created_at >= window_start:
                     count += 1
                 else:
                     found_old = True
                     break
             # Check if this event is too old
-            event_time = datetime.fromisoformat(event["created_at"].replace("Z", "+00:00"))
+            event_time = parse_github_timestamp(event["created_at"])
             if event_time < window_start:
                 found_old = True
                 break
@@ -210,7 +215,7 @@ def count_new_forks(owner: str, repo: str, window_start: datetime) -> int:
 
         found_old = False
         for fork in data:
-            created_at = datetime.fromisoformat(fork["created_at"].replace("Z", "+00:00"))
+            created_at = parse_github_timestamp(fork["created_at"])
             if created_at >= window_start:
                 count += 1
             else:

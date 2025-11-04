@@ -55,10 +55,10 @@ jobs:
           - Growth calculation: Laplace-smoothed proportional growth
           - Composite score: star_growth_adj + 0.5 * fork_growth_adj
           
-          See [trending.csv](../blob/automation/trending/trending.csv) for details.
+          See the updated `trending.csv` file in this PR for details.
           
           ---
-          *This PR was automatically created by the [claude-trending workflow](../actions/workflows/claude-trending.yml).*
+          *This PR was automatically created by the claude-trending workflow.*
         branch: automation/trending
         delete-branch: false
         labels: automated, trending
