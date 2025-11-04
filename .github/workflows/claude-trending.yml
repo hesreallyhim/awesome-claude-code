@@ -1,0 +1,64 @@
+name: Update Claude Trending Repositories
+
+on:
+  schedule:
+    # Run daily at 09:00 UTC
+    - cron: '0 9 * * *'
+  workflow_dispatch: # Allow manual triggering
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-trending:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install requests
+
+    - name: Run trending repositories script
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        TOP_N: 5
+      run: |
+        python scripts/claude_trending.py
+
+    - name: Get current date
+      id: date
+      run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v6
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: 'chore(trending): update trending.csv for ${{ steps.date.outputs.date }}'
+        title: 'chore(trending): update trending.csv for ${{ steps.date.outputs.date }}'
+        body: |
+          ## Automated Trending Repositories Update
+          
+          This PR updates `trending.csv` with the top 5 trending repositories related to Claude Code for ${{ steps.date.outputs.date }}.
+          
+          **Metrics:**
+          - Time window: 24 hours
+          - Growth calculation: Laplace-smoothed proportional growth
+          - Composite score: star_growth_adj + 0.5 * fork_growth_adj
+          
+          See [trending.csv](../blob/automation/trending/trending.csv) for details.
+          
+          ---
+          *This PR was automatically created by the [claude-trending workflow](../actions/workflows/claude-trending.yml).*
+        branch: automation/trending
+        delete-branch: false
+        labels: automated, trending
