@@ -483,6 +483,17 @@ Incredibly awesome collection of resources from every category in this list, pre
 </details>
 <br>
 
+[`ClaudeCode MacMenu`](https://github.com/PiXeL16/claudecode-macmenu) &nbsp; by &nbsp; [PiXeL16](https://github.com/PiXeL16)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT
+macOS menu bar app for Claude Code with real-time notifications, usage analytics, and cost tracking.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claudecode-macmenu](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claudecode-macmenu&username=PiXeL16&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Claude Composer`](https://github.com/possibilities/claude-composer) &nbsp; by &nbsp; [Mike Bannister](https://github.com/possibilities)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Unlicense  
 A tool that adds small enhancements to Claude Code.
 
