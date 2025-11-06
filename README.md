@@ -67,6 +67,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
+[`Claude Code Infrastructure Showcase`](https://github.com/diet103/claude-code-infrastructure-showcase) &nbsp; by &nbsp; [diet103](https://github.com/diet103)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A remarkably innovative approach to working with Skills, the centerpiece of which being a technique that leverages hooks to ensure that Claude intelligently selects and activates the appropriate Skill given the current context. Well-documented and adaptable to different projects and workflows.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-code-infrastructure-showcase](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-infrastructure-showcase&username=diet103&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Claudex`](https://github.com/kunwar-shah/claudex) &nbsp; by &nbsp; [Kunwar Shah](https://github.com/kunwar-shah)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Claudex - A web-based browser for exploring your Claude Code conversation history across projects. Indexes your codebase for full-text search. Nice, easy-to-navigate UI. Simple dashboard interface for high-level analytics, and multiple export options as well. (And completely local w/ no telemetry!)
 
@@ -96,28 +107,6 @@ Claudable is an open-source web builder that leverages local CLI agents, such as
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for Claudable](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Claudable&username=opactorai&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Web Assets Generator Skill`](https://github.com/alonw0/web-asset-generator) &nbsp; by &nbsp; [Alon Wolenitz](https://github.com/alonw0)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Easily generate web assets from Claude Code including favicons, app icons (PWA), and social media meta images (Open Graph) for Facebook, Twitter, WhatsApp, and LinkedIn. Handles image resizing, text-to-image generation, emojis, and provides proper HTML meta tags.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for web-asset-generator](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=web-asset-generator&username=alonw0&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Codex Skill`](https://github.com/skills-directory/skill-codex) &nbsp; by &nbsp; [klaudworks](https://github.com/klaudworks)    
-Enables users to prompt codex from claude code. Unlike the raw codex mcp server, this skill infers parameters such as model, reasoning effort, sandboxing from your prompt or asks you to specify them. It also simplifies continuing prior codex sessions so that codex can continue with the prior context.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for skill-codex](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=skill-codex&username=skills-directory&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -278,6 +267,17 @@ Provides a well-structured set of commands for publishing and maintaining a blog
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for cloudartisan.github.io](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=cloudartisan.github.io&username=cloudartisan&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Claude Code Infrastructure Showcase`](https://github.com/diet103/claude-code-infrastructure-showcase) &nbsp; by &nbsp; [diet103](https://github.com/diet103)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A remarkably innovative approach to working with Skills, the centerpiece of which being a technique that leverages hooks to ensure that Claude intelligently selects and activates the appropriate Skill given the current context. Well-documented and adaptable to different projects and workflows.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-code-infrastructure-showcase](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-infrastructure-showcase&username=diet103&all_stats=true&stats_only=true)
 
 </details>
 <br>
