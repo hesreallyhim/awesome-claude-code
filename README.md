@@ -1131,16 +1131,9 @@ Sets up and manages Husky Git hooks by configuring pre-commit hooks, establishin
 </details>
 <br>
 
-[`/pr-review`](https://github.com/arkavo-org/opentdf-rs/blob/main/.claude/commands/pr-review.md) &nbsp; by &nbsp; [arkavo-org](https://github.com/arkavo-org)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Reviews pull request changes to provide feedback, check for issues, and suggest improvements before merging into the main codebase.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for opentdf-rs](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=opentdf-rs&username=arkavo-org&all_stats=true&stats_only=true)
-
-</details>
-<br>
+[`/pr-review`](https://github.com/hesreallyhim/awesome-claude-code/blob/923ddf1c3dba0413ecae1c6c2921a1607dc5911d/resources/slash-commands/pr-review/pr-review.md) &nbsp; by &nbsp; [arkavo-org](https://github.com/arkavo-org)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Reviews pull request changes to provide feedback, check for issues, and suggest improvements before merging into the main codebase.*  
+<sub>* Removed from origin</sub>
 
 [`/update-branch-name`](https://github.com/giselles-ai/giselle/blob/main/.claude/commands/update-branch-name.md) &nbsp; by &nbsp; [giselles-ai](https://github.com/giselles-ai)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
 Updates branch names with proper prefixes and formats, enforcing naming conventions, supporting semantic prefixes, and managing remote branch updates.
