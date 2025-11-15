@@ -53,6 +53,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
+[`claude-code-docs`](https://github.com/costiash/claude-code-docs) &nbsp; by &nbsp; [Constantin Shafranski](https://github.com/costiash)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Mixed  
+A mirror of the Anthropic&copy; PBC documentation site for Claude/Code, but with bonus features like full-text search and query-time updates - a nice companion to `claude-code-docs` for up-to-the-minute, fully-indexed information so that Claude Code can read about itself.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-code-docs](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-docs&username=costiash&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Claude Code Documentation Mirror`](https://github.com/ericbuess/claude-code-docs) &nbsp; by &nbsp; [Eric Buess](https://github.com/ericbuess)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
 A mirror of the Anthropic &copy; PBC documentation pages for Claude Code, updated every few hours. Can come in handy when trying to stay on top of the ever-expanding feature-set of Dr. Claw D. Code, Ph.D.
 
@@ -253,6 +264,17 @@ Really comprehensive and feature-packed project-management workflow for Claude C
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for ccpm](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ccpm&username=automazeio&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`claude-code-docs`](https://github.com/costiash/claude-code-docs) &nbsp; by &nbsp; [Constantin Shafranski](https://github.com/costiash)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Mixed  
+A mirror of the Anthropic&copy; PBC documentation site for Claude/Code, but with bonus features like full-text search and query-time updates - a nice companion to `claude-code-docs` for up-to-the-minute, fully-indexed information so that Claude Code can read about itself.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-code-docs](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-docs&username=costiash&all_stats=true&stats_only=true)
 
 </details>
 <br>
