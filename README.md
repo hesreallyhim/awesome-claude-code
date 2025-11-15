@@ -33,31 +33,17 @@ This is a curated list of slash-commands, `CLAUDE.md` files, CLI tools, and othe
 
 Claude Code is a cutting-edge CLI-based coding assistant and agent released by [Anthropic](https://www.anthropic.com/) that you can access in your terminal or IDE. It is a rapidly evolving tool that offers a number of powerful capabilities, and allows for a lot of configuration, in a lot of different ways. Users are actively working out best practices and workflows. It is the hope that this repo will help the community share knowledge and understand how to get the most out of Claude Code.
 
-<div align="center"><a href="https://github.com/hesreallyhim/awesome-claude-code/discussions/287" align="center"><img src="assets/awesome-claude-code-feature-bounty.png" alt="Feature Bounty Banner" width="750px" align="center" /></a></div>
-
-<div align="center"><h2 align="center">I'm throwing the challenge down for a <strong>"FEATURE BOUNTY"</strong> with a <strong>cash prize</strong> to solve a problem that Claude Code users have been <a href="https://github.com/anthropics/claude-code/issues/2112">posting about on GitHub</a> for a while - want to join the fun? Check out the <a href="https://github.com/hesreallyhim/awesome-claude-code/discussions/287">announcement</a> and let me know you're in! Coding, Clauding, Collaborating, Cash... Let's get together and build something!</h2></div>
-
 ### Announcements [🔝](#awesome-claude-code)
 
 <details open>
 <summary>View Announcements</summary>
 
 - <details open>
-  <summary>2025-11-02 - A word on Plugins and a farewell to Output Styles</summary>
+  <summary>2025-11-15 - Output Styles - SAVED!</summary>
 
-  - <details open>
-    <summary>Plugins and Marketplaces</summary>
+  - Many thanks to user [fotgs](https://github.com/fotgs), who [brought to my attention](https://github.com/hesreallyhim/awesome-claude-code/discussions/318) that in a shocking last-minute turn of events, reminiscent of the "Miracle on Ice", it was announced on [GitHub](https://github.com/anthropics/claude-code/issues/10671#issuecomment-3478185783) that "the CC team has decided to **keep output styles working indefinitely**", or until they change their minds, so to celebrate, I would like to invite users to give Output Styles another shot; and seeing as we only have one awesome Output Style on this list, I'm going to guarantee that by one week from now, we will have a minimum of **5 Output Styles** in that category - which means that if you use Output Styles and would like to share some of the ones that you have found the most awesome, you have a _pretty decent chance_ of joining the ranks of comrade [viveknair](https://github.com/viveknair) - and, in drafting this announcement, I happened to visit viveknair's profile, and found a pretty neat little Claude Code [usage heatmap](https://github.com/viveknair/ccheatmap), so check it out!
 
-    - "Given my current available resources, I have so far declined to include plugins and/or marketplaces in Awesome Claude Code - but we are really hoping to secure some additional support to help us expand the scope of this repository while maintaining its standards of quality. I hope to have some good news on this forthcoming. 🤞
-
-    </details>
-
-  - <details open>
-    <summary>Output Styles - Deprecated</summary>
-
-    - "Per the Claude Code documentation site, Output Styles are set to be deprecated, so I will have to remove that category very soon."
-
-    </details>
+  - The bounty is off. Thank you to those who expressed interest.
 
   </details>
 
@@ -67,7 +53,7 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
-[`Claude Code Documentation Mirror`](https://github.com/ericbuess/claude-code-docs) &nbsp; by &nbsp; [Eric Buess](https://github.com/ericbuess)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Mixed  
+[`Claude Code Documentation Mirror`](https://github.com/ericbuess/claude-code-docs) &nbsp; by &nbsp; [Eric Buess](https://github.com/ericbuess)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
 A mirror of the Anthropic &copy; PBC documentation pages for Claude Code, updated every few hours. Can come in handy when trying to stay on top of the ever-expanding feature-set of Dr. Claw D. Code, Ph.D.
 
 <details>
@@ -238,7 +224,7 @@ Provides a well-structured set of commands for publishing and maintaining a blog
 </details>
 <br>
 
-[`Claude Code Documentation Mirror`](https://github.com/ericbuess/claude-code-docs) &nbsp; by &nbsp; [Eric Buess](https://github.com/ericbuess)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Mixed  
+[`Claude Code Documentation Mirror`](https://github.com/ericbuess/claude-code-docs) &nbsp; by &nbsp; [Eric Buess](https://github.com/ericbuess)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
 A mirror of the Anthropic &copy; PBC documentation pages for Claude Code, updated every few hours. Can come in handy when trying to stay on top of the ever-expanding feature-set of Dr. Claw D. Code, Ph.D.
 
 <details>
@@ -1127,17 +1113,6 @@ Sets up and manages Husky Git hooks by configuring pre-commit hooks, establishin
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for tevm-monorepo](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=tevm-monorepo&username=evmts&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`/pr-review`](https://github.com/arkavo-org/opentdf-rs/blob/main/.claude/commands/pr-review.md) &nbsp; by &nbsp; [arkavo-org](https://github.com/arkavo-org)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Reviews pull request changes to provide feedback, check for issues, and suggest improvements before merging into the main codebase.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for opentdf-rs](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=opentdf-rs&username=arkavo-org&all_stats=true&stats_only=true)
 
 </details>
 <br>
