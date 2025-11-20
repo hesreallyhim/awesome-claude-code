@@ -279,13 +279,24 @@ A mirror of the Anthropic&copy; PBC documentation site for Claude/Code, but with
 </details>
 <br>
 
-[`ClaudoPro Directory`](https://github.com/JSONbored/claudepro-directory) &nbsp; by &nbsp; [ghost](https://github.com/JSONbored)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`ClaudoPro Directory`](https://github.com/JSONbored/claudepro-directory) &nbsp; by &nbsp; [ghost](https://github.com/JSONbored)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT
 Well-crafted, wide selection of Claude Code hooks, slash commands, subagent files, and more, covering a range of specialized tasks and workflows. Better resources than your average "Claude-template-for-everything" site.
 
 <details>
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claudepro-directory](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claudepro-directory&username=JSONbored&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`claude-starter`](https://github.com/raintree-technology/claude-starter) &nbsp; by &nbsp; [zacharyr0th](https://github.com/zacharyr0th)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT
+Production-ready Claude Code configuration template with 40 auto-activating skills across 8 domains (AI, Payments, Banking, Blockchain, Backend, Mobile, Data), TOON format support for 30-60% token savings, 7 slash commands, and native Zig encoder/decoder. Drop-in `.claude/` directory with comprehensive documentation.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-starter](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-starter&username=raintree-technology&all_stats=true&stats_only=true)
 
 </details>
 <br>
