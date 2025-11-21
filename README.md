@@ -39,11 +39,11 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 <summary>View Announcements</summary>
 
 - <details open>
-  <summary>2025-11-15 - Output Styles - SAVED!</summary>
+  <summary>2025-11-21 - Claude Code for Web - Breaking the Internet</summary>
 
-  - Many thanks to user [fotgs](https://github.com/fotgs), who [brought to my attention](https://github.com/hesreallyhim/awesome-claude-code/discussions/318) that in a shocking last-minute turn of events, reminiscent of the "Miracle on Ice", it was announced on [GitHub](https://github.com/anthropics/claude-code/issues/10671#issuecomment-3478185783) that "the CC team has decided to **keep output styles working indefinitely**", or until they change their minds, so to celebrate, I would like to invite users to give Output Styles another shot; and seeing as we only have one awesome Output Style on this list, I'm going to guarantee that by one week from now, we will have a minimum of **5 Output Styles** in that category - which means that if you use Output Styles and would like to share some of the ones that you have found the most awesome, you have a _pretty decent chance_ of joining the ranks of comrade [viveknair](https://github.com/viveknair) - and, in drafting this announcement, I happened to visit viveknair's profile, and found a pretty neat little Claude Code [usage heatmap](https://github.com/viveknair/ccheatmap), so check it out!
+  - I don't know about you folks, but I've been having a romping good time playing around with Claude Code for Web. I'm thinking about adding a category for it, but I'm not sure how many people have access, or if people are interested in that. It's really pretty awesome (I hired it as a sub-contractor to see if it could spice up the repo a little bit, so it's been running for like 30 hours, I'm not sure what it's up to... 👀) Anyway, if you're working with Claude Code on the Web, or you'd like to see it included here, please sound off in the [Discussion thread](https://github.com/hesreallyhim/awesome-claude-code/discussions/308).
 
-  - The bounty is off. Thank you to those who expressed interest.
+  - This was me last week, talking about Output Styles: "I'm going to guarantee that by one week from now, we will have a minimum of **5 Output Styles** in that category." Well, since then, nobody submitted an Output Style - which makes me almost certain that nobody is reading these announcements, since it was kind of open invitation for anyone to get on the list. _Nevertheless_, I'm a Him of my words, so I went and put together a few of my own, which you can check out below. It's pretty exciting to be included here, because I've been rejected four or five times, which is _really_ embarrassing because it's my repo...
 
   </details>
 
@@ -75,11 +75,6 @@ A mirror of the Anthropic&copy; PBC documentation site for Claude/Code, but with
 </details>
 <br>
 
-
-## Honorable Mentions
-
-[`prpm`](https://prpm.dev/) &nbsp; by &nbsp; [khaliqgant](https://github.com/khaliqgant)    
-`prpm` is something like a plugin marketplace, but with additional support for other providers and coding agents. Although (for the moment 🤞) we are unable to include plugins/marketplaces on the list, I wanted to give special recognition to khaliqgant - after I notified him that I was unable to find any license information for third-party resources that he was hosting on his website, he immediately took action and added a great enhancement to the website's UI, which provides a direct link to the original authors' LICENSE file, as well the ability to view it as a simple dropdown. In my opinion, this is a pretty awesome thing to do to show support for the open source community, and for the developers whose work is featured on this list. I see marketplaces springing up all over the internet now where basic attribution rights are not being respected (maybe for the simple reason that software licenses are complicated!), so I commend khaliqgant for setting a great example with [`prpm`](https://prpm.dev/), and I encourage others to promote and enforce these rights in the service of open source software. 
 
 
 ## Contents [🔝](#awesome-claude-code)
@@ -1905,6 +1900,12 @@ Official GitHub Actions integration for Claude Code with examples and documentat
 
 </details>
 
+
+
+## Honorable Mentions
+
+[`prpm`](https://prpm.dev/) &nbsp; by &nbsp; [khaliqgant](https://github.com/khaliqgant)    
+`prpm` is something like a plugin marketplace, but with additional support for other providers and coding agents. Although (for the moment 🤞) we are unable to include plugins/marketplaces on the list, I wanted to give special recognition to khaliqgant - after I notified him that I was unable to find any license information for third-party resources that he was hosting on his website, he immediately took action and added a great enhancement to the website's UI, which provides a direct link to the original authors' LICENSE file, as well the ability to view it as a simple dropdown. In my opinion, this is a pretty awesome thing to do to show support for the open source community, and for the developers whose work is featured on this list. I see marketplaces springing up all over the internet now where basic attribution rights are not being respected (maybe for the simple reason that software licenses are complicated!), so I commend khaliqgant for setting a great example with [`prpm`](https://prpm.dev/), and I encourage others to promote and enforce these rights in the service of open source software. 
 
 ## Contributing 🌻 [🔝](#awesome-claude-code)
 
