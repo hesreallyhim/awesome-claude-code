@@ -53,6 +53,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
+[`Gen-Alpha Slang`](https://github.com/sjnims/gen-alpha-output-style) &nbsp; by &nbsp; [Steve Nims](https://github.com/sjnims)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+This is really... different. I don't know what to say about this one. It does what it says on the tin. You might find it funny, you might want throw up. I'll just say candidly this is included strictly for its potentially comedic awesomeness.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for gen-alpha-output-style](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=gen-alpha-output-style&username=sjnims&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Awesome Claude Code Output Styles (That I Really Like)`](https://github.com/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like) &nbsp; by &nbsp; [Really Him](https://github.com/hesreallyhim/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A fun and moderately amusing collection of experimental output styles.
 
@@ -60,17 +71,6 @@ A fun and moderately amusing collection of experimental output styles.
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for awesome-claude-code-output-styles-that-i-really-like](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=awesome-claude-code-output-styles-that-i-really-like&username=hesreallyhim&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`claude-code-docs`](https://github.com/costiash/claude-code-docs) &nbsp; by &nbsp; [Constantin Shafranski](https://github.com/costiash)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Mixed  
-A mirror of the Anthropic&copy; PBC documentation site for Claude/Code, but with bonus features like full-text search and query-time updates - a nice companion to `claude-code-docs` for up-to-the-minute, fully-indexed information so that Claude Code can read about itself.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claude-code-docs](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-docs&username=costiash&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -995,6 +995,17 @@ CLI tool and template gallery for customizing Claude Code output styles with pre
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for ccoutputstyles](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ccoutputstyles&username=viveknair&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Gen-Alpha Slang`](https://github.com/sjnims/gen-alpha-output-style) &nbsp; by &nbsp; [Steve Nims](https://github.com/sjnims)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+This is really... different. I don't know what to say about this one. It does what it says on the tin. You might find it funny, you might want throw up. I'll just say candidly this is included strictly for its potentially comedic awesomeness.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for gen-alpha-output-style](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=gen-alpha-output-style&username=sjnims&all_stats=true&stats_only=true)
 
 </details>
 <br>
