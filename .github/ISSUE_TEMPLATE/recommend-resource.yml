@@ -162,7 +162,7 @@ body:
     attributes:
       label: Validate Claims
       description: "If you are submitting a complicated resource that gives Claude Code super-powers, suggest a low-friction way for me, or anyone, to prove it to themselves that what you're claiming is true."
-      placeholder: "e.g., install this Skill and ask Claude how many times the letter 'r' appears in the word in your codebase"
+      placeholder: "e.g., install this Skill and ask Claude how many times the letter 'r' appears in your codebase"
     validations:
       required: false
 
