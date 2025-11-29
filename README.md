@@ -241,7 +241,18 @@ A comprehensive and well-documented collection of agentic patterns from Anthropi
 </details>
 <br>
 
-[`Blogging Platform Instructions`](https://github.com/cloudartisan/cloudartisan.github.io/tree/main/.claude/commands) &nbsp; by &nbsp; [cloudartisan](https://github.com/cloudartisan)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;CC-BY-SA-4.0  
+[`Agentic Sprint`](https://github.com/damienlaine/agentic-sprint) &nbsp; by &nbsp; [Damien Laine](https://github.com/damienlaine)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT
+A spec-driven, self-iterative multi-agent framework that turns Claude Code into an autonomous development team. Features a Project Architect that coordinates specialized agents (Python, Next.js, CI/CD, QA, UI Testing) through convergent sprints where specs shrink and errors get erased with each iteration.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for agentic-sprint](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=agentic-sprint&username=damienlaine&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Blogging Platform Instructions`](https://github.com/cloudartisan/cloudartisan.github.io/tree/main/.claude/commands) &nbsp; by &nbsp; [cloudartisan](https://github.com/cloudartisan)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;CC-BY-SA-4.0
 Provides a well-structured set of commands for publishing and maintaining a blogging platform, including commands for creating posts, managing categories, and handling media files.
 
 <details>
