@@ -53,6 +53,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
+[`recall`](https://github.com/zippoxer/recall) &nbsp; by &nbsp; [zippoxer](https://github.com/zippoxer)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Full-text search your Claude Code sessions. Run `recall` in terminal, type to search, Enter to resume. Alternative to `claude --resume`.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for recall](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=recall&username=zippoxer&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`learn-faster-kit`](https://github.com/cheukyin175/learn-faster-kit) &nbsp; by &nbsp; [Hugo Lau](https://github.com/cheukyin175)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A creative educational framework for Claude Code, inspired by the "FASTER" approach to self-teaching. Ships with a variety of agents, slash commands, and tools that enable Claude Code to help you progress at your own pace, employing well-established pedagogical techniques like active learning and spaced repetition.
 
@@ -548,6 +559,17 @@ A systematic development framework that transforms Claude Code into a proactive 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for ContextKit](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ContextKit&username=FlineDev&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`recall`](https://github.com/zippoxer/recall) &nbsp; by &nbsp; [zippoxer](https://github.com/zippoxer)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Full-text search your Claude Code sessions. Run `recall` in terminal, type to search, Enter to resume. Alternative to `claude --resume`.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for recall](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=recall&username=zippoxer&all_stats=true&stats_only=true)
 
 </details>
 <br>
