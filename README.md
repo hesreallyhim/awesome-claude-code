@@ -53,6 +53,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
+[`learn-faster-kit`](https://github.com/cheukyin175/learn-faster-kit) &nbsp; by &nbsp; [Hugo Lau](https://github.com/cheukyin175)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A creative educational framework for Claude Code, inspired by the "FASTER" approach to self-teaching. Ships with a variety of agents, slash commands, and tools that enable Claude Code to help you progress at your own pace, employing well-established pedagogical techniques like active learning and spaced repetition.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for learn-faster-kit](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=learn-faster-kit&username=cheukyin175&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Agentic Workflow Patterns`](https://github.com/ThibautMelen/agentic-workflow-patterns) &nbsp; by &nbsp; [ThibautMelen](https://github.com/ThibautMelen)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A comprehensive and well-documented collection of agentic patterns from Anthropic docs, with colorful Mermaid diagrams and code examples for each pattern. Covers Subagent Orchestration, Progressive Skills, Parallel Tool Calling, Master-Clone Architecture, Wizard Workflows, and more. Also compatible with other providers.
 
@@ -60,28 +71,6 @@ A comprehensive and well-documented collection of agentic patterns from Anthropi
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for agentic-workflow-patterns](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=agentic-workflow-patterns&username=ThibautMelen&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Gen-Alpha Slang`](https://github.com/sjnims/gen-alpha-output-style) &nbsp; by &nbsp; [Steve Nims](https://github.com/sjnims)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-This is really... different. I don't know what to say about this one. It does what it says on the tin. You might find it funny, you might want throw up. I'll just say candidly this is included strictly for its potentially comedic awesomeness.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for gen-alpha-output-style](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=gen-alpha-output-style&username=sjnims&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Awesome Claude Code Output Styles (That I Really Like)`](https://github.com/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like) &nbsp; by &nbsp; [Really Him](https://github.com/hesreallyhim/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A fun and moderately amusing collection of experimental output styles.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for awesome-claude-code-output-styles-that-i-really-like](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=awesome-claude-code-output-styles-that-i-really-like&username=hesreallyhim&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -336,6 +325,17 @@ Transform your Laravel TALL (Tailwind, AlpineJS, Laravel, Livewire) stack develo
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for laravel-tall-claude-ai-configs](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=laravel-tall-claude-ai-configs&username=tott&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`learn-faster-kit`](https://github.com/cheukyin175/learn-faster-kit) &nbsp; by &nbsp; [Hugo Lau](https://github.com/cheukyin175)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A creative educational framework for Claude Code, inspired by the "FASTER" approach to self-teaching. Ships with a variety of agents, slash commands, and tools that enable Claude Code to help you progress at your own pace, employing well-established pedagogical techniques like active learning and spaced repetition.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for learn-faster-kit](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=learn-faster-kit&username=cheukyin175&all_stats=true&stats_only=true)
 
 </details>
 <br>
