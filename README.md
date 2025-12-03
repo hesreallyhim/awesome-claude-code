@@ -53,6 +53,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
+[`Britfix`](https://github.com/Talieisin/britfix) &nbsp; by &nbsp; [Talieisin](https://github.com/Talieisin)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Claude outputs American spellings by default, which can have an impact on: professional credibility, compliance, documentation, and more. Britfix converts to British English, with a Claude Code hook for automatic conversion as files are written. Context-aware: handles code files intelligently by only converting comments and docstrings, never identifiers or string literals.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for britfix](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=britfix&username=Talieisin&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`recall`](https://github.com/zippoxer/recall) &nbsp; by &nbsp; [zippoxer](https://github.com/zippoxer)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Full-text search your Claude Code sessions. Run `recall` in terminal, type to search, Enter to resume. Alternative to `claude --resume`.
 
@@ -921,6 +932,17 @@ High-performance Rust-based statusline for Claude Code with persistent stats tra
 
 <details open>
 <summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
+
+[`Britfix`](https://github.com/Talieisin/britfix) &nbsp; by &nbsp; [Talieisin](https://github.com/Talieisin)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Claude outputs American spellings by default, which can have an impact on: professional credibility, compliance, documentation, and more. Britfix converts to British English, with a Claude Code hook for automatic conversion as files are written. Context-aware: handles code files intelligently by only converting comments and docstrings, never identifiers or string literals.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for britfix](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=britfix&username=Talieisin&all_stats=true&stats_only=true)
+
+</details>
+<br>
 
 [`CC Notify`](https://github.com/dazuiba/CCNotify) &nbsp; by &nbsp; [dazuiba](https://github.com/dazuiba)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 CCNotify provides desktop notifications for Claude Code, alerting you to input needs or task completion, with one-click jumps back to VS Code and task duration display.
