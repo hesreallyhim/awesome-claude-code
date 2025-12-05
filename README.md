@@ -53,6 +53,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
+[`ccflare -> **better-ccflare**`](https://github.com/tombii/better-ccflare/) &nbsp; by &nbsp; [tombii](https://github.com/tombii)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A well-maintained and feature-enhanced fork of the glorious `ccflare` usage dashboard by @snipeship (which at the time of writing has not had an update in a few months). `better-ccflare` builds on this foundation with some performance enhancements, extended provider support, bug fixes, Docker deployment, and more.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for better-ccflare](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=better-ccflare&username=tombii&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Britfix`](https://github.com/Talieisin/britfix) &nbsp; by &nbsp; [Talieisin](https://github.com/Talieisin)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Claude outputs American spellings by default, which can have an impact on: professional credibility, compliance, documentation, and more. Britfix converts to British English, with a Claude Code hook for automatic conversion as files are written. Context-aware: handles code files intelligently by only converting comments and docstrings, never identifiers or string literals.
 
@@ -82,17 +93,6 @@ A creative educational framework for Claude Code, inspired by the "FASTER" appro
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for learn-faster-kit](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=learn-faster-kit&username=cheukyin175&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Agentic Workflow Patterns`](https://github.com/ThibautMelen/agentic-workflow-patterns) &nbsp; by &nbsp; [ThibautMelen](https://github.com/ThibautMelen)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A comprehensive and well-documented collection of agentic patterns from Anthropic docs, with colorful Mermaid diagrams and code examples for each pattern. Covers Subagent Orchestration, Progressive Skills, Parallel Tool Calling, Master-Clone Architecture, Wizard Workflows, and more. Also compatible with other providers.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for agentic-workflow-patterns](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=agentic-workflow-patterns&username=ThibautMelen&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -737,6 +737,17 @@ Claude Code usage dashboard with a web-UI that would put Tableau to shame. Thoro
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for ccflare](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ccflare&username=snipeship&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`ccflare -> **better-ccflare**`](https://github.com/tombii/better-ccflare/) &nbsp; by &nbsp; [tombii](https://github.com/tombii)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A well-maintained and feature-enhanced fork of the glorious `ccflare` usage dashboard by @snipeship (which at the time of writing has not had an update in a few months). `better-ccflare` builds on this foundation with some performance enhancements, extended provider support, bug fixes, Docker deployment, and more.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for better-ccflare](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=better-ccflare&username=tombii&all_stats=true&stats_only=true)
 
 </details>
 <br>
