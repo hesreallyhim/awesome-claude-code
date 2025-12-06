@@ -53,6 +53,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
+[`Context Engineering Kit`](https://github.com/NeoLabHQ/context-engineering-kit) &nbsp; by &nbsp; [Vlad Goncharov](https://github.com/LeoVS09)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;GPL-3.0  
+Hand-crafted collection of advanced context engineering techniques and patterns with minimal token footprint focused on improving agent result quality.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for context-engineering-kit](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=context-engineering-kit&username=NeoLabHQ&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Claudix - Claude Code for VSCode`](https://github.com/Haleclipse/Claudix) &nbsp; by &nbsp; [Haleclipse](https://github.com/Haleclipse)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;AGPL-3.0  
 A VSCode extension that brings Claude Code directly into your editor with interactive chat interface, session management, intelligent file operations, terminal execution, and real-time streaming responses. Built with Vue 3, TypeScript.
 
@@ -237,6 +248,17 @@ Enables users to prompt codex from claude code. Unlike the raw codex mcp server,
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for skill-codex](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=skill-codex&username=skills-directory&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Context Engineering Kit`](https://github.com/NeoLabHQ/context-engineering-kit) &nbsp; by &nbsp; [Vlad Goncharov](https://github.com/LeoVS09)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;GPL-3.0  
+Hand-crafted collection of advanced context engineering techniques and patterns with minimal token footprint focused on improving agent result quality.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for context-engineering-kit](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=context-engineering-kit&username=NeoLabHQ&all_stats=true&stats_only=true)
 
 </details>
 <br>
