@@ -53,6 +53,19 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
+[`Claudix - Claude Code for VSCode`](https://github.com/Haleclipse/Claudix) &nbsp; by &nbsp; [Haleclipse](https://github.com/Haleclipse)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;AGPL-3.0  
+A VSCode extension that brings Claude Code directly into your editor with interactive chat interface, session
+   management, intelligent file operations, terminal execution, and real-time streaming responses. Built with Vue 3,
+   TypeScript.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for Claudix](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Claudix&username=Haleclipse&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`claude-starter-kit`](https://github.com/serpro69/claude-starter-kit) &nbsp; by &nbsp; [serpro69](https://github.com/serpro69)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 This is a starter template repository designed to provide a complete development environment for Claude-Code with pre-configured MCP servers and tools for AI-powered development workflows. The repository is intentionally minimal, containing only configuration templates for three primary systems: Claude Code, Serena, and Task Master.
 
@@ -743,6 +756,19 @@ A seamless integration between Claude Code AI assistant and Neovim.
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-code.nvim](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code.nvim&username=greggh&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Claudix - Claude Code for VSCode`](https://github.com/Haleclipse/Claudix) &nbsp; by &nbsp; [Haleclipse](https://github.com/Haleclipse)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;AGPL-3.0  
+A VSCode extension that brings Claude Code directly into your editor with interactive chat interface, session
+   management, intelligent file operations, terminal execution, and real-time streaming responses. Built with Vue 3,
+   TypeScript.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for Claudix](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Claudix&username=Haleclipse&all_stats=true&stats_only=true)
 
 </details>
 <br>
