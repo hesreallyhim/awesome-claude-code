@@ -53,6 +53,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
+[`viwo-cli`](https://github.com/OverseedAI/viwo) &nbsp; by &nbsp; [Hal Shin](https://github.com/hal-shin)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Run Claude Code in a Docker container with git worktrees as volume mounts to enable safer usage of `--dangerously-skip-permissions` for frictionless one-shotting prompts. Allows users to spin up multiple instances of Claude Code in the background easily with reduced permission fatigue.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for viwo](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=viwo&username=OverseedAI&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`ccflare -> **better-ccflare**`](https://github.com/tombii/better-ccflare/) &nbsp; by &nbsp; [tombii](https://github.com/tombii)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A well-maintained and feature-enhanced fork of the glorious `ccflare` usage dashboard by @snipeship (which at the time of writing has not had an update in a few months). `better-ccflare` builds on this foundation with some performance enhancements, extended provider support, bug fixes, Docker deployment, and more.
 
@@ -647,6 +658,17 @@ Analyzes your Claude Code prompts locally (using CC), provides intelligent sessi
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for vibe-log-cli](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=vibe-log-cli&username=vibe-log&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`viwo-cli`](https://github.com/OverseedAI/viwo) &nbsp; by &nbsp; [Hal Shin](https://github.com/hal-shin)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Run Claude Code in a Docker container with git worktrees as volume mounts to enable safer usage of `--dangerously-skip-permissions` for frictionless one-shotting prompts. Allows users to spin up multiple instances of Claude Code in the background easily with reduced permission fatigue.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for viwo](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=viwo&username=OverseedAI&all_stats=true&stats_only=true)
 
 </details>
 <br>
