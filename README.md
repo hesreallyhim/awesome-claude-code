@@ -53,6 +53,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
+[`claude-starter-kit`](https://github.com/serpro69/claude-starter-kit) &nbsp; by &nbsp; [serpro69](https://github.com/serpro69)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+This is a starter template repository designed to provide a complete development environment for Claude-Code with pre-configured MCP servers and tools for AI-powered development workflows. The repository is intentionally minimal, containing only configuration templates for three primary systems: Claude Code, Serena, and Task Master.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-starter-kit](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-starter-kit&username=serpro69&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`viwo-cli`](https://github.com/OverseedAI/viwo) &nbsp; by &nbsp; [Hal Shin](https://github.com/hal-shin)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Run Claude Code in a Docker container with git worktrees as volume mounts to enable safer usage of `--dangerously-skip-permissions` for frictionless one-shotting prompts. Allows users to spin up multiple instances of Claude Code in the background easily with reduced permission fatigue.
 
@@ -548,6 +559,17 @@ A collection of awesome tools, including tmux integrations, better session manag
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-code-tools](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-tools&username=pchalasani&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`claude-starter-kit`](https://github.com/serpro69/claude-starter-kit) &nbsp; by &nbsp; [serpro69](https://github.com/serpro69)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+This is a starter template repository designed to provide a complete development environment for Claude-Code with pre-configured MCP servers and tools for AI-powered development workflows. The repository is intentionally minimal, containing only configuration templates for three primary systems: Claude Code, Serena, and Task Master.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-starter-kit](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-starter-kit&username=serpro69&all_stats=true&stats_only=true)
 
 </details>
 <br>
