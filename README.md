@@ -53,6 +53,9 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 > Resources added in the past 7 days
 
+[`Claude Code Handbook`](https://nikiforovall.blog/claude-code-rules/) &nbsp; by &nbsp; [nikiforovall](https://github.com/nikiforovall)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Collection of best practices, tips, and techniques for Claude Code development workflows, enhanced with distributable plugins
+
 [`Context Engineering Kit`](https://github.com/NeoLabHQ/context-engineering-kit) &nbsp; by &nbsp; [Vlad Goncharov](https://github.com/LeoVS09)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;GPL-3.0  
 Hand-crafted collection of advanced context engineering techniques and patterns with minimal token footprint focused on improving agent result quality.
 
@@ -328,6 +331,9 @@ A mirror of the Anthropic &copy; PBC documentation pages for Claude Code, update
 
 </details>
 <br>
+
+[`Claude Code Handbook`](https://nikiforovall.blog/claude-code-rules/) &nbsp; by &nbsp; [nikiforovall](https://github.com/nikiforovall)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Collection of best practices, tips, and techniques for Claude Code development workflows, enhanced with distributable plugins
 
 [`Claude Code Infrastructure Showcase`](https://github.com/diet103/claude-code-infrastructure-showcase) &nbsp; by &nbsp; [diet103](https://github.com/diet103)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A remarkably innovative approach to working with Skills, the centerpiece of which being a technique that leverages hooks to ensure that Claude intelligently selects and activates the appropriate Skill given the current context. Well-documented and adaptable to different projects and workflows.
