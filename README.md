@@ -2042,7 +2042,18 @@ Provides detailed and emphatic instructions for Claude to follow as a coding age
 </details>
 <br>
 
-[`Perplexity MCP`](https://github.com/Family-IT-Guy/perplexity-mcp/blob/main/CLAUDE.md) &nbsp; by &nbsp; [Family-IT-Guy](https://github.com/Family-IT-Guy)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;ISC  
+[`Empathy Framework`](https://github.com/Smart-AI-Memory/empathy-framework) &nbsp; by &nbsp; [Smart AI Memory](https://github.com/Smart-AI-Memory)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Fair Source
+Five-level AI collaboration system with persistent memory and anticipatory capabilities. MCP-native integration for Claude with local-first architecture via MemDocs — your code never leaves your machine.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for empathy-framework](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=empathy-framework&username=Smart-AI-Memory&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Perplexity MCP`](https://github.com/Family-IT-Guy/perplexity-mcp/blob/main/CLAUDE.md) &nbsp; by &nbsp; [Family-IT-Guy](https://github.com/Family-IT-Guy)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;ISC
 Offers clear step-by-step installation instructions with multiple configuration options, detailed troubleshooting guidance, and concise architecture overview of the MCP protocol.
 
 <details>
