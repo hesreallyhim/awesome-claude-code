@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 120" width="700" height="120">
+  <style>
+    /* Sequential light flashing - 4 lights across the top */
+    @keyframes flash1 {
+      0%, 20% { opacity: 1; }
+      25%, 100% { opacity: 0.15; }
+    }
+    @keyframes flash2 {
+      0%, 20% { opacity: 0.15; }
+      25%, 45% { opacity: 1; }
+      50%, 100% { opacity: 0.15; }
+    }
+    @keyframes flash3 {
+      0%, 45% { opacity: 0.15; }
+      50%, 70% { opacity: 1; }
+      75%, 100% { opacity: 0.15; }
+    }
+    @keyframes flash4 {
+      0%, 70% { opacity: 0.15; }
+      75%, 95% { opacity: 1; }
+      100% { opacity: 0.15; }
+    }
+
+    /* Glow animation synced with lights */
+    @keyframes glow1 {
+      0%, 20% { opacity: 0.8; }
+      25%, 100% { opacity: 0; }
+    }
+    @keyframes glow2 {
+      0%, 20% { opacity: 0; }
+      25%, 45% { opacity: 0.8; }
+      50%, 100% { opacity: 0; }
+    }
+    @keyframes glow3 {
+      0%, 45% { opacity: 0; }
+      50%, 70% { opacity: 0.8; }
+      75%, 100% { opacity: 0; }
+    }
+    @keyframes glow4 {
+      0%, 70% { opacity: 0; }
+      75%, 95% { opacity: 0.8; }
+      100% { opacity: 0; }
+    }
+
+    /* CAUTION text flash */
+    @keyframes text-flash {
+      0%, 45% { opacity: 1; }
+      50%, 95% { opacity: 0.3; }
+      100% { opacity: 1; }
+    }
+
+    /* Left sign lights */
+    .L-light1 { animation: flash1 1.2s linear infinite; }
+    .L-light2 { animation: flash2 1.2s linear infinite; }
+    .L-light3 { animation: flash3 1.2s linear infinite; }
+    .L-light4 { animation: flash4 1.2s linear infinite; }
+    .L-glow1 { animation: glow1 1.2s linear infinite; }
+    .L-glow2 { animation: glow2 1.2s linear infinite; }
+    .L-glow3 { animation: glow3 1.2s linear infinite; }
+    .L-glow4 { animation: glow4 1.2s linear infinite; }
+    .L-text { animation: text-flash 1.2s ease-in-out infinite; }
+
+    /* Right sign lights - reversed direction */
+    .R-light1 { animation: flash4 1.2s linear infinite; }
+    .R-light2 { animation: flash3 1.2s linear infinite; }
+    .R-light3 { animation: flash2 1.2s linear infinite; }
+    .R-light4 { animation: flash1 1.2s linear infinite; }
+    .R-glow1 { animation: glow4 1.2s linear infinite; }
+    .R-glow2 { animation: glow3 1.2s linear infinite; }
+    .R-glow3 { animation: glow2 1.2s linear infinite; }
+    .R-glow4 { animation: glow1 1.2s linear infinite; }
+    .R-text { animation: text-flash 1.2s ease-in-out infinite; animation-delay: 0.6s; }
+  </style>
+
+  <defs>
+    <!-- Sign face gradient - highway yellow/orange -->
+    <linearGradient id="sign-face" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD000"/>
+      <stop offset="50%" stop-color="#FFAA00"/>
+      <stop offset="100%" stop-color="#FF9500"/>
+    </linearGradient>
+
+    <!-- Sign frame - dark metal -->
+    <linearGradient id="sign-frame" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#444"/>
+      <stop offset="50%" stop-color="#222"/>
+      <stop offset="100%" stop-color="#333"/>
+    </linearGradient>
+
+    <!-- Light bar gradient -->
+    <linearGradient id="light-bar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#333"/>
+      <stop offset="50%" stop-color="#111"/>
+      <stop offset="100%" stop-color="#222"/>
+    </linearGradient>
+
+    <!-- Amber light gradient (on) -->
+    <radialGradient id="light-on" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="20%" stop-color="#FFEE00"/>
+      <stop offset="60%" stop-color="#FFAA00"/>
+      <stop offset="100%" stop-color="#FF6600"/>
+    </radialGradient>
+
+    <!-- Light off state -->
+    <radialGradient id="light-off" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#AA6600"/>
+      <stop offset="100%" stop-color="#553300"/>
+    </radialGradient>
+
+    <!-- Light glow -->
+    <radialGradient id="light-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFCC00" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#FF8800" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FF6600" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Post gradient -->
+    <linearGradient id="post-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#666"/>
+      <stop offset="50%" stop-color="#888"/>
+      <stop offset="100%" stop-color="#555"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ===== LEFT SIGN ===== -->
+  <g transform="translate(20, 0)">
+    <!-- Post -->
+    <rect x="55" y="95" width="10" height="25" fill="url(#post-grad)"/>
+
+    <!-- Sign frame -->
+    <rect x="10" y="30" width="100" height="70" rx="4" fill="url(#sign-frame)"/>
+
+    <!-- Sign face -->
+    <rect x="14" y="34" width="92" height="62" rx="2" fill="url(#sign-face)"/>
+
+    <!-- Reflective border -->
+    <rect x="14" y="34" width="92" height="62" rx="2" fill="none" stroke="#FFE066" stroke-width="3"/>
+
+    <!-- CAUTION text -->
+    <text class="L-text" x="60" y="72"
+          font-family="Arial Black, Impact, sans-serif"
+          font-size="18"
+          font-weight="900"
+          fill="#000"
+          text-anchor="middle">
+      CAUTION
+    </text>
+
+    <!-- Light bar housing -->
+    <rect x="8" y="12" width="104" height="22" rx="4" fill="url(#light-bar)"/>
+    <rect x="8" y="12" width="104" height="22" rx="4" fill="none" stroke="#444" stroke-width="1"/>
+
+    <!-- Light glows (behind lights) -->
+    <ellipse class="L-glow1" cx="28" cy="23" rx="18" ry="16" fill="url(#light-glow)"/>
+    <ellipse class="L-glow2" cx="50" cy="23" rx="18" ry="16" fill="url(#light-glow)"/>
+    <ellipse class="L-glow3" cx="72" cy="23" rx="18" ry="16" fill="url(#light-glow)"/>
+    <ellipse class="L-glow4" cx="94" cy="23" rx="18" ry="16" fill="url(#light-glow)"/>
+
+    <!-- Light housings -->
+    <circle cx="28" cy="23" r="8" fill="url(#light-off)"/>
+    <circle cx="50" cy="23" r="8" fill="url(#light-off)"/>
+    <circle cx="72" cy="23" r="8" fill="url(#light-off)"/>
+    <circle cx="94" cy="23" r="8" fill="url(#light-off)"/>
+
+    <!-- Lights (animated) -->
+    <circle class="L-light1" cx="28" cy="23" r="7" fill="url(#light-on)"/>
+    <circle class="L-light2" cx="50" cy="23" r="7" fill="url(#light-on)"/>
+    <circle class="L-light3" cx="72" cy="23" r="7" fill="url(#light-on)"/>
+    <circle class="L-light4" cx="94" cy="23" r="7" fill="url(#light-on)"/>
+
+    <!-- Light lens highlights -->
+    <ellipse cx="25" cy="20" rx="3" ry="2" fill="#ffffff55"/>
+    <ellipse cx="47" cy="20" rx="3" ry="2" fill="#ffffff55"/>
+    <ellipse cx="69" cy="20" rx="3" ry="2" fill="#ffffff55"/>
+    <ellipse cx="91" cy="20" rx="3" ry="2" fill="#ffffff55"/>
+  </g>
+
+  <!-- ===== CENTER TEXT ===== -->
+  <text x="350" y="75"
+        font-family="Impact, Arial Black, Helvetica, sans-serif"
+        font-size="50"
+        font-weight="900"
+        fill="#FFB000"
+        text-anchor="middle"
+        letter-spacing="1"
+        stroke="#000"
+        stroke-width="2">
+    CLAUDES AT WORK
+  </text>
+
+  <!-- ===== RIGHT SIGN ===== -->
+  <g transform="translate(560, 0)">
+    <!-- Post -->
+    <rect x="55" y="95" width="10" height="25" fill="url(#post-grad)"/>
+
+    <!-- Sign frame -->
+    <rect x="10" y="30" width="100" height="70" rx="4" fill="url(#sign-frame)"/>
+
+    <!-- Sign face -->
+    <rect x="14" y="34" width="92" height="62" rx="2" fill="url(#sign-face)"/>
+
+    <!-- Reflective border -->
+    <rect x="14" y="34" width="92" height="62" rx="2" fill="none" stroke="#FFE066" stroke-width="3"/>
+
+    <!-- CAUTION text -->
+    <text class="R-text" x="60" y="72"
+          font-family="Arial Black, Impact, sans-serif"
+          font-size="18"
+          font-weight="900"
+          fill="#000"
+          text-anchor="middle">
+      CAUTION
+    </text>
+
+    <!-- Light bar housing -->
+    <rect x="8" y="12" width="104" height="22" rx="4" fill="url(#light-bar)"/>
+    <rect x="8" y="12" width="104" height="22" rx="4" fill="none" stroke="#444" stroke-width="1"/>
+
+    <!-- Light glows (behind lights) -->
+    <ellipse class="R-glow1" cx="28" cy="23" rx="18" ry="16" fill="url(#light-glow)"/>
+    <ellipse class="R-glow2" cx="50" cy="23" rx="18" ry="16" fill="url(#light-glow)"/>
+    <ellipse class="R-glow3" cx="72" cy="23" rx="18" ry="16" fill="url(#light-glow)"/>
+    <ellipse class="R-glow4" cx="94" cy="23" rx="18" ry="16" fill="url(#light-glow)"/>
+
+    <!-- Light housings -->
+    <circle cx="28" cy="23" r="8" fill="url(#light-off)"/>
+    <circle cx="50" cy="23" r="8" fill="url(#light-off)"/>
+    <circle cx="72" cy="23" r="8" fill="url(#light-off)"/>
+    <circle cx="94" cy="23" r="8" fill="url(#light-off)"/>
+
+    <!-- Lights (animated) -->
+    <circle class="R-light1" cx="28" cy="23" r="7" fill="url(#light-on)"/>
+    <circle class="R-light2" cx="50" cy="23" r="7" fill="url(#light-on)"/>
+    <circle class="R-light3" cx="72" cy="23" r="7" fill="url(#light-on)"/>
+    <circle class="R-light4" cx="94" cy="23" r="7" fill="url(#light-on)"/>
+
+    <!-- Light lens highlights -->
+    <ellipse cx="25" cy="20" rx="3" ry="2" fill="#ffffff55"/>
+    <ellipse cx="47" cy="20" rx="3" ry="2" fill="#ffffff55"/>
+    <ellipse cx="69" cy="20" rx="3" ry="2" fill="#ffffff55"/>
+    <ellipse cx="91" cy="20" rx="3" ry="2" fill="#ffffff55"/>
+  </g>
+</svg>

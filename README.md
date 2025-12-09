@@ -1231,6 +1231,8 @@ This is really... different. I don't know what to say about this one. It does wh
 
 ## Slash-Commands 🔪 [🔝](#awesome-claude-code)
 
+"Slash Commands are customized, carefully refined prompts that control Claude's behavior in order to perform a specific task"
+
 <details open>
 <summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
 
