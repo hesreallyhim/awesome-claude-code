@@ -81,7 +81,8 @@ categories:
     name: "Slash-Commands"
     prefix: cmd
     icon: "🔪"
-    description: ""
+    description: |
+      "Slash Commands are customized, carefully refined prompts that control Claude's behavior in order to perform a specific task"
     order: 7
     subcategories:
       - id: general
