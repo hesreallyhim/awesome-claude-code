@@ -1,0 +1,160 @@
+<svg width="900" height="180" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Vintage Manual Style - STAMP/PRESS ANIMATION
+    Elements "stamp" down onto paper with ink spread effect
+    Like a letterpress or rubber stamp
+  -->
+  <defs>
+    <linearGradient id="paperBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#faf8f3"/>
+      <stop offset="100%" style="stop-color:#f5f0e6"/>
+    </linearGradient>
+
+    <!-- Ink spread filter -->
+    <filter id="inkSpread">
+      <feMorphology operator="dilate" radius="0">
+        <animate attributeName="radius" values="0;0.5;0" dur="3s" repeatCount="indefinite"/>
+      </feMorphology>
+      <feGaussianBlur stdDeviation="0">
+        <animate attributeName="stdDeviation" values="0;0.3;0" dur="3s" repeatCount="indefinite"/>
+      </feGaussianBlur>
+    </filter>
+
+    <!-- Shadow for stamp press -->
+    <filter id="stampShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#3d3530" flood-opacity="0.2">
+        <animate attributeName="dy" values="4;0;0;0;0;0" dur="5s" repeatCount="indefinite"/>
+        <animate attributeName="stdDeviation" values="4;1;1;1;1;1" dur="5s" repeatCount="indefinite"/>
+        <animate attributeName="flood-opacity" values="0;0.3;0.15;0.15;0.15;0.15" dur="5s" repeatCount="indefinite"/>
+      </feDropShadow>
+    </filter>
+  </defs>
+
+  <!-- Paper background -->
+  <rect width="900" height="180" fill="url(#paperBg)"/>
+
+  <!-- Decorative border - stamps down first -->
+  <g stroke="#5c5247" fill="none" opacity="0">
+    <animate attributeName="opacity" values="0;0.3;0.3;0.3;0.3;0.3" dur="5s" repeatCount="indefinite"/>
+    <rect x="30" y="15" width="840" height="150" stroke-width="1">
+      <animate attributeName="y" values="10;15;15;15;15;15" dur="5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="35" y="20" width="830" height="140" stroke-width="0.5">
+      <animate attributeName="y" values="15;20;20;20;20;20" dur="5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Registration marks - appear with slight delay -->
+  <g stroke="#5c5247" stroke-width="0.75" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.4;0.4;0.4;0.4" dur="5s" repeatCount="indefinite"/>
+    <line x1="20" y1="25" x2="20" y2="40"/>
+    <line x1="15" y1="30" x2="30" y2="30"/>
+    <circle cx="20" cy="30" r="3" fill="none"/>
+    <line x1="880" y1="25" x2="880" y2="40"/>
+    <line x1="870" y1="30" x2="885" y2="30"/>
+    <circle cx="880" cy="30" r="3" fill="none"/>
+    <line x1="20" y1="140" x2="20" y2="155"/>
+    <line x1="15" y1="150" x2="30" y2="150"/>
+    <circle cx="20" cy="150" r="3" fill="none"/>
+    <line x1="880" y1="140" x2="880" y2="155"/>
+    <line x1="870" y1="150" x2="885" y2="150"/>
+    <circle cx="880" cy="150" r="3" fill="none"/>
+  </g>
+
+  <!-- Top decorative rule - stamps with main title -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0.5;0.5;0.5" dur="5s" repeatCount="indefinite"/>
+    <line x1="200" y1="45" x2="700" y2="45" stroke="#5c5247" stroke-width="1"/>
+    <circle cx="200" cy="45" r="2" fill="#5c5247" opacity="0.8"/>
+    <circle cx="450" cy="45" r="2.5" fill="#c96442"/>
+    <circle cx="700" cy="45" r="2" fill="#5c5247" opacity="0.8"/>
+  </g>
+
+  <!-- MAIN TITLE - Big stamp animation -->
+  <g filter="url(#stampShadow)">
+    <text x="450" y="85"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="38"
+          font-weight="600"
+          fill="#2d251f"
+          text-anchor="middle"
+          letter-spacing="6"
+          opacity="0">
+      AWESOME CLAUDE CODE
+      <!-- Stamp down animation -->
+      <animate attributeName="opacity" values="0;0;0;1;1;1" dur="5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate"
+                        values="0,-15;0,-15;0,-15;0,3;0,0;0,0" dur="5s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Ink spread effect on stamp -->
+  <text x="450" y="85"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="38"
+        font-weight="600"
+        fill="#2d251f"
+        text-anchor="middle"
+        letter-spacing="6"
+        opacity="0"
+        filter="url(#inkSpread)">
+    AWESOME CLAUDE CODE
+    <animate attributeName="opacity" values="0;0;0;0.3;0;0" dur="5s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate"
+                      values="0,-15;0,-15;0,-15;0,3;0,0;0,0" dur="5s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Subtitle - stamps after main title -->
+  <text x="450" y="112"
+        font-family="'Courier New', Courier, monospace"
+        font-size="12"
+        fill="#6b5b4f"
+        text-anchor="middle"
+        letter-spacing="3"
+        opacity="0">
+    COMMUNITY REFERENCE GUIDE
+    <animate attributeName="opacity" values="0;0;0;0;1;1" dur="5s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate"
+                      values="0,-8;0,-8;0,-8;0,-8;0,2;0,0" dur="5s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Bottom rule -->
+  <line x1="280" y1="130" x2="620" y2="130" stroke="#5c5247" stroke-width="0.75" opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0;0;0.4" dur="5s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Tagline - last to appear -->
+  <text x="450" y="150"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="13"
+        font-style="italic"
+        fill="#7a6b5f"
+        text-anchor="middle"
+        opacity="0">
+    It's not just a coding agent — it's a lifestyle
+    <animate attributeName="opacity" values="0;0;0;0;0;0.85" dur="5s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate"
+                      values="0,-5;0,-5;0,-5;0,-5;0,-5;0,0" dur="5s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Edition indicator -->
+  <text x="820" y="160"
+        font-family="'Courier New', Courier, monospace"
+        font-size="9"
+        fill="#8a7b6f"
+        text-anchor="end"
+        opacity="0">
+    REV. 2025
+    <animate attributeName="opacity" values="0;0;0;0;0;0.6" dur="5s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Decorative dots at bottom -->
+  <g fill="#5c5247" opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0;0;0.2" dur="5s" repeatCount="indefinite"/>
+    <circle cx="350" cy="165" r="1"/>
+    <circle cx="400" cy="165" r="1"/>
+    <circle cx="450" cy="165" r="1"/>
+    <circle cx="500" cy="165" r="1"/>
+    <circle cx="550" cy="165" r="1"/>
+  </g>
+</svg>

@@ -1,0 +1,48 @@
+<svg width="380" height="56" xmlns="http://www.w3.org/2000/svg">
+  <!-- Variation 3: Technical/Blueprint - dashed lines, grid dots, technical drawing aesthetic -->
+  <style>
+    @media (prefers-color-scheme: light) {
+      .v3-line { stroke: #7a8b9a; }
+      .v3-box { stroke: #5c5247; }
+      .v3-initials { fill: #c96442; }
+      .v3-name { fill: #2d3748; }
+      .v3-author { fill: #718096; }
+      .v3-dot { fill: #a0aec0; }
+      .v3-bracket { stroke: #c96442; }
+    }
+    @media (prefers-color-scheme: dark) {
+      .v3-line { stroke: #4a5568; }
+      .v3-box { stroke: #718096; }
+      .v3-initials { fill: #ff6b4a; }
+      .v3-name { fill: #e2e8f0; }
+      .v3-author { fill: #a0aec0; }
+      .v3-dot { fill: #4a5568; }
+      .v3-bracket { stroke: #ff6b4a; }
+    }
+  </style>
+
+  <!-- Grid dots pattern -->
+  <g class="v3-dot">
+    <circle cx="8" cy="8" r="1"/>
+    <circle cx="24" cy="8" r="1"/>
+    <circle cx="40" cy="8" r="1"/>
+    <circle cx="8" cy="48" r="1"/>
+    <circle cx="24" cy="48" r="1"/>
+    <circle cx="40" cy="48" r="1"/>
+  </g>
+
+  <!-- Dashed box for initials -->
+  <rect class="v3-box" x="56" y="12" width="32" height="32" fill="none" stroke-width="1.75" stroke-dasharray="4,2"/>
+  <text class="v3-initials" x="72" y="34" font-family="'Courier New', Courier, monospace" font-size="12" font-weight="600" text-anchor="middle">CS</text>
+
+  <!-- Technical brackets around name -->
+  <path class="v3-bracket" d="M100 16 L96 16 L96 40 L100 40" fill="none" stroke-width="2.25"/>
+  <text class="v3-name" x="108" y="33" font-family="'Courier New', Courier, monospace" font-size="16" font-weight="500">Claude Squad</text>
+  <path class="v3-bracket" d="M235 16 L239 16 L239 40 L235 40" fill="none" stroke-width="2.25"/>
+
+  <!-- Dashed line to author -->
+  <line class="v3-line" x1="248" y1="28" x2="280" y2="28" stroke-width="1.75" stroke-dasharray="3,3"/>
+
+  <!-- Author in monospace -->
+  <text class="v3-author" x="288" y="33" font-family="'Courier New', Courier, monospace" font-size="11">@anthropics</text>
+</svg>

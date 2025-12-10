@@ -1,0 +1,94 @@
+<svg width="200" height="12" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /* Each ring has a narrower visibility window - outer rings visible for shorter time */
+    @keyframes ring1 {
+      0%, 10%, 90%, 100% { opacity: 0; }
+      20%, 80% { opacity: 0.7; }
+    }
+    @keyframes ring2 {
+      0%, 15%, 85%, 100% { opacity: 0; }
+      25%, 75% { opacity: 0.65; }
+    }
+    @keyframes ring3 {
+      0%, 20%, 80%, 100% { opacity: 0; }
+      30%, 70% { opacity: 0.6; }
+    }
+    @keyframes ring4 {
+      0%, 25%, 75%, 100% { opacity: 0; }
+      35%, 65% { opacity: 0.55; }
+    }
+    @keyframes ring5 {
+      0%, 30%, 70%, 100% { opacity: 0; }
+      40%, 60% { opacity: 0.5; }
+    }
+    @keyframes ring6 {
+      0%, 35%, 65%, 100% { opacity: 0; }
+      42%, 58% { opacity: 0.45; }
+    }
+    @keyframes ring7 {
+      0%, 38%, 62%, 100% { opacity: 0; }
+      45%, 55% { opacity: 0.4; }
+    }
+    @keyframes ring8 {
+      0%, 42%, 58%, 100% { opacity: 0; }
+      47%, 53% { opacity: 0.35; }
+    }
+    @keyframes ring9 {
+      0%, 45%, 55%, 100% { opacity: 0; }
+      48%, 52% { opacity: 0.3; }
+    }
+    .core { opacity: 0.6; }
+    .ring1 { animation: ring1 2.5s ease-in-out infinite; }
+    .ring2 { animation: ring2 2.5s ease-in-out infinite; }
+    .ring3 { animation: ring3 2.5s ease-in-out infinite; }
+    .ring4 { animation: ring4 2.5s ease-in-out infinite; }
+    .ring5 { animation: ring5 2.5s ease-in-out infinite; }
+    .ring6 { animation: ring6 2.5s ease-in-out infinite; }
+    .ring7 { animation: ring7 2.5s ease-in-out infinite; }
+    .ring8 { animation: ring8 2.5s ease-in-out infinite; }
+    .ring9 { animation: ring9 2.5s ease-in-out infinite; }
+  </style>
+
+  <g opacity="0.55">
+    <!-- Core 3 dots - always visible -->
+    <circle class="core" cx="88" cy="6" r="2.5" fill="#c4baa8"/>
+    <circle class="core" cx="100" cy="6" r="3" fill="#c96442"/>
+    <circle class="core" cx="112" cy="6" r="2.5" fill="#c4baa8"/>
+
+    <!-- Ring 1: closest to core -->
+    <circle class="ring1" cx="82" cy="6" r="2" fill="#c4baa8"/>
+    <circle class="ring1" cx="118" cy="6" r="2" fill="#c4baa8"/>
+
+    <!-- Ring 2 -->
+    <circle class="ring2" cx="76" cy="6" r="1.8" fill="#c4baa8"/>
+    <circle class="ring2" cx="124" cy="6" r="1.8" fill="#c4baa8"/>
+
+    <!-- Ring 3 -->
+    <circle class="ring3" cx="70" cy="6" r="1.6" fill="#c4baa8"/>
+    <circle class="ring3" cx="130" cy="6" r="1.6" fill="#c4baa8"/>
+
+    <!-- Ring 4 -->
+    <circle class="ring4" cx="64" cy="6" r="1.4" fill="#c4baa8"/>
+    <circle class="ring4" cx="136" cy="6" r="1.4" fill="#c4baa8"/>
+
+    <!-- Ring 5 -->
+    <circle class="ring5" cx="58" cy="6" r="1.2" fill="#c4baa8"/>
+    <circle class="ring5" cx="142" cy="6" r="1.2" fill="#c4baa8"/>
+
+    <!-- Ring 6 -->
+    <circle class="ring6" cx="52" cy="6" r="1.0" fill="#c4baa8"/>
+    <circle class="ring6" cx="148" cy="6" r="1.0" fill="#c4baa8"/>
+
+    <!-- Ring 7 -->
+    <circle class="ring7" cx="46" cy="6" r="0.9" fill="#c4baa8"/>
+    <circle class="ring7" cx="154" cy="6" r="0.9" fill="#c4baa8"/>
+
+    <!-- Ring 8 -->
+    <circle class="ring8" cx="40" cy="6" r="0.8" fill="#c4baa8"/>
+    <circle class="ring8" cx="160" cy="6" r="0.8" fill="#c4baa8"/>
+
+    <!-- Ring 9: outermost -->
+    <circle class="ring9" cx="34" cy="6" r="0.7" fill="#c4baa8"/>
+    <circle class="ring9" cx="166" cy="6" r="0.7" fill="#c4baa8"/>
+  </g>
+</svg>

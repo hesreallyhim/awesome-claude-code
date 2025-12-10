@@ -1,0 +1,52 @@
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Vintage Manual Style - Card with LINE PRINTER ANIMATION
+    Cycle: 12s | Start offset: -4s
+  -->
+  <defs>
+    <linearGradient id="cardPaper" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#faf8f3"/>
+      <stop offset="100%" style="stop-color:#f2ede4"/>
+    </linearGradient>
+    <clipPath id="lineReveal">
+      <rect x="0" y="0" width="200" height="0">
+        <animate attributeName="height" values="0;100;100;0;0" keyTimes="0;0.05;0.925;0.97;1" dur="12s" begin="-4s" repeatCount="indefinite" calcMode="linear"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <rect x="2" y="2" width="196" height="96" rx="2" fill="url(#cardPaper)"/>
+
+  <g clip-path="url(#lineReveal)">
+    <rect x="2" y="2" width="196" height="96" rx="2" fill="none" stroke="#c4baa8" stroke-width="1" opacity="0.8"/>
+    <g>
+      <rect x="8" y="8" width="28" height="22" fill="none" stroke="#5c5247" stroke-width="1" opacity="0.6"/>
+      <text x="22" y="24" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="700" fill="#c96442" text-anchor="middle">04</text>
+    </g>
+    <text x="100" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="600" fill="#3d3530" text-anchor="middle">Status Lines</text>
+    <line x1="45" y1="52" x2="155" y2="52" stroke="#5c5247" stroke-width="0.5" opacity="0.3"/>
+    <text x="100" y="68" font-family="'Courier New', Courier, monospace" font-size="9" fill="#6b5b4f" text-anchor="middle" opacity="0.8">Statusline configs</text>
+    <text x="100" y="80" font-family="'Courier New', Courier, monospace" font-size="9" fill="#6b5b4f" text-anchor="middle" opacity="0.8">&amp; customizations</text>
+    <text x="175" y="92" font-family="'Courier New', Courier, monospace" font-size="8" fill="#5c5247" text-anchor="end" opacity="0.4">§4</text>
+    <path d="M 186 2 L 198 2 L 198 14 Z" fill="#e8e3d9" opacity="0.6"/>
+    <path d="M 186 2 L 198 14" stroke="#c4baa8" stroke-width="0.5" fill="none" opacity="0.5"/>
+  </g>
+
+  <line x1="5" y1="0" x2="195" y2="0" stroke="#c96442" stroke-width="1" opacity="0.5">
+    <animate attributeName="y1" values="0;100;100;0;0" keyTimes="0;0.05;0.925;0.97;1" dur="12s" begin="-4s" repeatCount="indefinite" calcMode="linear"/>
+    <animate attributeName="y2" values="0;100;100;0;0" keyTimes="0;0.05;0.925;0.97;1" dur="12s" begin="-4s" repeatCount="indefinite" calcMode="linear"/>
+    <animate attributeName="opacity" values="0.6;0.6;0.1;0.6;0.6" keyTimes="0;0.05;0.5;0.925;1" dur="12s" begin="-4s" repeatCount="indefinite"/>
+  </line>
+
+  <g opacity="0.15">
+    <rect x="-15" y="10" width="1.5" height="80" fill="#5c5247" rx="0.5">
+      <animate attributeName="x" values="-15;-15;215;215;-15" keyTimes="0;0.05;0.09;0.97;1" dur="12s" begin="-4s" repeatCount="indefinite" calcMode="linear"/>
+    </rect>
+    <rect x="-10" y="20" width="0.8" height="60" fill="#c96442" rx="0.4">
+      <animate attributeName="x" values="-10;-10;220;220;-10" keyTimes="0;0.05;0.09;0.97;1" dur="12s" begin="-4s" repeatCount="indefinite" calcMode="linear"/>
+    </rect>
+    <rect x="-6" y="15" width="0.6" height="70" fill="#8a7b6f" rx="0.3">
+      <animate attributeName="x" values="-6;-6;224;224;-6" keyTimes="0;0.05;0.09;0.97;1" dur="12s" begin="-4s" repeatCount="indefinite" calcMode="linear"/>
+    </rect>
+  </g>
+</svg>

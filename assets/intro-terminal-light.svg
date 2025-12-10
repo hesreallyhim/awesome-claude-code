@@ -1,0 +1,99 @@
+<svg width="900" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Soft shadow -->
+    <filter id="softShadow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Warm cream background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FFF5EE;stop-opacity:1"/>
+    </linearGradient>
+
+    <!-- Radial gradient for floating orbs (warm Anthropic tones) -->
+    <radialGradient id="orbOrange">
+      <stop offset="0%" style="stop-color:#FF8C5A;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#FF8C5A;stop-opacity:0"/>
+    </radialGradient>
+
+    <radialGradient id="orbPeach">
+      <stop offset="0%" style="stop-color:#FFB088;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#FFB088;stop-opacity:0"/>
+    </radialGradient>
+
+    <!-- Anthropic orange border -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFD4B3;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FF8C5A;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="100" rx="5" fill="url(#bgGrad)"/>
+
+  <!-- Floating gradient orbs -->
+  <circle cx="100" cy="50" r="35" fill="url(#orbOrange)">
+    <animate attributeName="cx" values="100;280;150;100" dur="24s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="50;30;80;50" dur="22s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="800" cy="50" r="40" fill="url(#orbPeach)">
+    <animate attributeName="cx" values="800;620;750;800" dur="26s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="50;80;35;50" dur="24s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Floating particles (warm palette) -->
+  <g opacity="0.5">
+    <circle cx="350" cy="25" r="1.5" fill="#FFB088">
+      <animate attributeName="cy" values="25;20;25" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="550" cy="75" r="1.5" fill="#FF6B35">
+      <animate attributeName="cy" values="75;70;75" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Color-shifting border -->
+  <rect width="900" height="100" rx="5" fill="none" stroke="url(#borderGrad)" stroke-width="2" opacity="0.6"/>
+
+  <!-- Corner brackets (warm Anthropic tones) -->
+  <g opacity="0.5" stroke-width="2" fill="none">
+    <path d="M 25,20 L 50,20 M 25,20 L 25,45" stroke="#FF6B35"/>
+    <path d="M 875,20 L 850,20 M 875,20 L 875,45" stroke="#FF8C5A"/>
+    <path d="M 25,80 L 50,80 M 25,80 L 25,55" stroke="#FFB088"/>
+    <path d="M 875,80 L 850,80 M 875,80 L 875,55" stroke="#FF9B70"/>
+  </g>
+
+  <!-- Content text -->
+  <g filter="url(#softShadow)">
+    <!-- Line 1 -->
+    <text x="450" y="35" font-family="monospace" font-size="14" fill="#8B5A3C" text-anchor="middle">
+      Claude Code is a cutting-edge CLI-based coding assistant
+      <animate attributeName="opacity" values="1;0.95;1" dur="2s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Line 2 -->
+    <text x="450" y="55" font-family="monospace" font-size="14" fill="#8B5A3C" text-anchor="middle">
+      released by Anthropic. This collection helps the community
+      <animate attributeName="opacity" values="1;0.95;1" dur="2.3s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Line 3 -->
+    <text x="450" y="75" font-family="monospace" font-size="14" fill="#8B5A3C" text-anchor="middle">
+      share knowledge and discover the best tools and practices.
+      <animate attributeName="opacity" values="1;0.95;1" dur="2.6s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Decorative prompt indicator -->
+  <g filter="url(#softShadow)">
+    <text x="75" y="35" font-family="monospace" font-size="14" fill="#FF6B35" font-weight="bold">
+      &gt;
+      <animate attributeName="opacity" values="0.8;0.4;0.8" dur="1.5s" repeatCount="indefinite"/>
+    </text>
+  </g>
+</svg>

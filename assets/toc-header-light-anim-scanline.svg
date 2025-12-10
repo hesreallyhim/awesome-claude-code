@@ -1,0 +1,76 @@
+<svg width="850" height="60" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Vintage Technical Manual Style - TOC Header with SCAN LINE animation
+    Cycle: 8s | Visible horizontal streak sweep
+  -->
+  <defs>
+    <linearGradient id="paperBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#faf8f3"/>
+      <stop offset="100%" style="stop-color:#f5f0e6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Paper background -->
+  <rect width="850" height="60" fill="url(#paperBg)"/>
+
+  <!-- Simple border -->
+  <rect x="2" y="2" width="846" height="56" fill="none" stroke="#c4baa8" stroke-width="1" rx="2"/>
+
+  <!-- Header title -->
+  <text x="425" y="28"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="18"
+        font-weight="400"
+        fill="#3d3530"
+        text-anchor="middle"
+        letter-spacing="6">
+    CONTENTS
+  </text>
+
+  <!-- Decorative lines flanking title -->
+  <line x1="120" y1="25" x2="300" y2="25" stroke="#5c5247" stroke-width="0.75" opacity="0.4"/>
+  <line x1="550" y1="25" x2="730" y2="25" stroke="#5c5247" stroke-width="0.75" opacity="0.4"/>
+
+  <!-- Small diamond ornaments -->
+  <g fill="#5c5247" opacity="0.5">
+    <path d="M 310 25 L 315 20 L 320 25 L 315 30 Z"/>
+    <path d="M 530 25 L 535 20 L 540 25 L 535 30 Z"/>
+  </g>
+
+  <!-- Column headers -->
+  <text x="60" y="50"
+        font-family="'Courier New', Courier, monospace"
+        font-size="9"
+        fill="#7a6b5f"
+        letter-spacing="1">
+    SECTION
+  </text>
+  <text x="140" y="50"
+        font-family="'Courier New', Courier, monospace"
+        font-size="9"
+        fill="#7a6b5f"
+        letter-spacing="1">
+    TITLE
+  </text>
+  <text x="760" y="50"
+        font-family="'Courier New', Courier, monospace"
+        font-size="9"
+        fill="#7a6b5f"
+        text-anchor="end"
+        letter-spacing="1">
+    REF
+  </text>
+
+  <!-- Scan line streaks - horizontal sweep left to right -->
+  <g opacity="0.2">
+    <rect x="-30" y="8" width="3" height="44" fill="#5c5247" rx="1.5">
+      <animate attributeName="x" values="-30;880;-30;-30" keyTimes="0;0.05;0.10;1" dur="16s" begin="0s" repeatCount="indefinite" calcMode="linear"/>
+    </rect>
+    <rect x="-22" y="12" width="1.5" height="36" fill="#c96442" rx="0.75">
+      <animate attributeName="x" values="-22;888;-22;-22" keyTimes="0;0.05;0.10;1" dur="16s" begin="0s" repeatCount="indefinite" calcMode="linear"/>
+    </rect>
+    <rect x="-16" y="10" width="1.2" height="40" fill="#8a7b6f" rx="0.6">
+      <animate attributeName="x" values="-16;894;-16;-16" keyTimes="0;0.05;0.10;1" dur="16s" begin="0s" repeatCount="indefinite" calcMode="linear"/>
+    </rect>
+  </g>
+</svg>

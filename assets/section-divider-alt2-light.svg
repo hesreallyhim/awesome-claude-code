@@ -1,0 +1,118 @@
+<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Watercolor wash gradient - warm tones -->
+    <linearGradient id="washGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF9A8B;stop-opacity:0"/>
+      <stop offset="15%" style="stop-color:#FF9A8B;stop-opacity:0.4"/>
+      <stop offset="30%" style="stop-color:#FF6B8A;stop-opacity:0.6"/>
+      <stop offset="50%" style="stop-color:#A18CD1;stop-opacity:0.5"/>
+      <stop offset="70%" style="stop-color:#FBC2EB;stop-opacity:0.6"/>
+      <stop offset="85%" style="stop-color:#F6D365;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#F6D365;stop-opacity:0"/>
+    </linearGradient>
+
+    <!-- Secondary wash - cooler tones -->
+    <linearGradient id="washGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#89CFF0;stop-opacity:0"/>
+      <stop offset="20%" style="stop-color:#89CFF0;stop-opacity:0.3"/>
+      <stop offset="40%" style="stop-color:#A7C7E7;stop-opacity:0.5"/>
+      <stop offset="60%" style="stop-color:#C3B1E1;stop-opacity:0.4"/>
+      <stop offset="80%" style="stop-color:#FFDAB9;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#FFDAB9;stop-opacity:0"/>
+    </linearGradient>
+
+    <!-- Watercolor bleed filter -->
+    <filter id="watercolorBleed">
+      <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+      <feGaussianBlur stdDeviation="1"/>
+    </filter>
+
+    <!-- Soft edge filter -->
+    <filter id="softEdge">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Paper texture pattern -->
+    <pattern id="paperGrain" patternUnits="userSpaceOnUse" width="60" height="60">
+      <rect width="60" height="60" fill="transparent"/>
+      <circle cx="10" cy="10" r="0.3" fill="#999" opacity="0.1"/>
+      <circle cx="30" cy="15" r="0.25" fill="#888" opacity="0.08"/>
+      <circle cx="50" cy="8" r="0.3" fill="#999" opacity="0.1"/>
+      <circle cx="20" cy="35" r="0.25" fill="#888" opacity="0.09"/>
+      <circle cx="45" cy="40" r="0.3" fill="#999" opacity="0.1"/>
+      <circle cx="5" cy="50" r="0.25" fill="#888" opacity="0.08"/>
+      <circle cx="35" cy="55" r="0.3" fill="#999" opacity="0.1"/>
+    </pattern>
+  </defs>
+
+  <!-- Main watercolor wash layer - organic blob shape -->
+  <path d="M 50 20
+           Q 100 8, 180 18
+           Q 260 28, 350 15
+           Q 440 5, 530 22
+           Q 620 35, 710 18
+           Q 800 5, 850 20
+           Q 870 28, 850 25
+           Q 800 35, 710 22
+           Q 620 10, 530 25
+           Q 440 38, 350 22
+           Q 260 8, 180 25
+           Q 100 38, 50 25
+           Z"
+        fill="url(#washGrad1)" filter="url(#watercolorBleed)" opacity="0.7"/>
+
+  <!-- Secondary wash layer - offset for depth -->
+  <path d="M 80 22
+           Q 150 32, 250 18
+           Q 350 8, 450 25
+           Q 550 38, 650 20
+           Q 750 8, 820 22
+           Q 840 28, 820 26
+           Q 750 35, 650 22
+           Q 550 12, 450 28
+           Q 350 40, 250 22
+           Q 150 8, 80 25
+           Z"
+        fill="url(#washGrad2)" filter="url(#watercolorBleed)" opacity="0.5"/>
+
+  <!-- Watercolor drip effects -->
+  <g filter="url(#softEdge)" opacity="0.4">
+    <ellipse cx="180" cy="28" rx="8" ry="4" fill="#FF9A8B"/>
+    <ellipse cx="450" cy="32" rx="12" ry="5" fill="#A18CD1"/>
+    <ellipse cx="650" cy="30" rx="10" ry="4" fill="#89CFF0"/>
+  </g>
+
+  <!-- Paint splatter dots -->
+  <g opacity="0.35">
+    <circle cx="120" cy="15" r="2" fill="#FF6B8A" filter="url(#softEdge)"/>
+    <circle cx="125" cy="18" r="1" fill="#FF6B8A"/>
+    <circle cx="118" cy="20" r="0.8" fill="#FF6B8A"/>
+
+    <circle cx="380" cy="25" r="2.5" fill="#A18CD1" filter="url(#softEdge)"/>
+    <circle cx="385" cy="22" r="1.2" fill="#A18CD1"/>
+    <circle cx="377" cy="28" r="0.9" fill="#A18CD1"/>
+
+    <circle cx="580" cy="12" r="2" fill="#89CFF0" filter="url(#softEdge)"/>
+    <circle cx="584" cy="15" r="1" fill="#89CFF0"/>
+    <circle cx="577" cy="10" r="0.7" fill="#89CFF0"/>
+
+    <circle cx="780" cy="22" r="2" fill="#F6D365" filter="url(#softEdge)"/>
+    <circle cx="785" cy="25" r="1.1" fill="#F6D365"/>
+    <circle cx="777" cy="19" r="0.8" fill="#F6D365"/>
+  </g>
+
+  <!-- Subtle brush stroke texture lines -->
+  <g stroke="#8B7355" stroke-width="0.3" fill="none" opacity="0.15">
+    <path d="M 100 18 Q 200 15, 300 20"/>
+    <path d="M 400 22 Q 500 18, 600 23"/>
+    <path d="M 650 17 Q 750 22, 850 19"/>
+  </g>
+
+  <!-- Paper grain overlay -->
+  <rect x="0" y="0" width="900" height="40" fill="url(#paperGrain)"/>
+</svg>

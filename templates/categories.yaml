@@ -10,7 +10,7 @@ categories:
     prefix: skill
     icon: "🤖"
     description: |
-      > **Agent skills** are model-controlled configurations (files, scripts, resources, etc.) that enable Claude Code to perform specialized tasks requiring specific knowledge or capabilities.
+      Agent skills are model-controlled configurations (files, scripts, resources, etc.) that enable Claude Code to perform specialized tasks requiring specific knowledge or capabilities.
     order: 1
     subcategories:
       - id: general
@@ -21,7 +21,7 @@ categories:
     prefix: wf
     icon: "🧠"
     description: |
-      > A **workflow** is a tightly coupled set of Claude Code-native resources that facilitate specific projects
+      A workflow is a tightly coupled set of Claude Code-native resources that facilitate specific projects
     order: 2
     subcategories:
       - id: general
@@ -32,7 +32,7 @@ categories:
     prefix: tool
     icon: "🧰"
     description: |
-      > **Tooling** denotes applications that are built on top of Claude Code and consist of more components than slash-commands and `CLAUDE.md` files
+      Tooling denotes applications that are built on top of Claude Code and consist of more components than slash-commands and `CLAUDE.md` files
     order: 3
     subcategories:
       - id: general
@@ -49,7 +49,7 @@ categories:
     prefix: status
     icon: "📊"
     description: |
-      > **Status lines** - Configurations and customizations for Claude Code's status bar functionality
+      Status lines - Configurations and customizations for Claude Code's status bar functionality
     order: 4
     subcategories:
       - id: general
@@ -60,19 +60,8 @@ categories:
     prefix: hook
     icon: "🪝"
     description: |
-      > **Hooks** are a powerful API for Claude Code that allows users to activate commands and run scripts at different points in Claude's agentic lifecycle.
+      Hooks are a powerful API for Claude Code that allows users to activate commands and run scripts at different points in Claude's agentic lifecycle.
     order: 5
-    subcategories:
-      - id: general
-        name: "General"
-
-  - id: output-styles
-    name: "Output Styles"
-    prefix: output
-    icon: "💬"
-    description: |
-      > **Output styles** allow you to use Claude Code as any type of agent while keeping its core capabilities, such as running local scripts, reading/writing files, and tracking TODOs.
-    order: 6
     subcategories:
       - id: general
         name: "General"
@@ -83,7 +72,7 @@ categories:
     icon: "🔪"
     description: |
       "Slash Commands are customized, carefully refined prompts that control Claude's behavior in order to perform a specific task"
-    order: 7
+    order: 6
     subcategories:
       - id: general
         name: "General"
@@ -107,8 +96,8 @@ categories:
     prefix: claude
     icon: "📂"
     description: |
-      > **`CLAUDE.md` files** are files that contain important guidelines and context-specific information or instructions that help Claude Code to better understand your project and your coding standards
-    order: 8
+      `CLAUDE.md` files are files that contain important guidelines and context-specific information or instructions that help Claude Code to better understand your project and your coding standards
+    order: 7
     subcategories:
       - id: general
         name: "General"
@@ -124,8 +113,8 @@ categories:
     prefix: client
     icon: "📱"
     description: |
-      > **Alternative Clients** are alternative UIs and front-ends for interacting with Claude Code, either on mobile or on the desktop.
-    order: 9
+      Alternative Clients are alternative UIs and front-ends for interacting with Claude Code, either on mobile or on the desktop.
+    order: 8
     subcategories:
       - id: general
         name: "General"
@@ -135,10 +124,10 @@ categories:
     prefix: doc
     icon: "🏛️"
     description: |
-      > Links to some of Anthropic's terrific documentation and resources regarding Claude Code
+      Links to some of Anthropic's terrific documentation and resources regarding Claude Code
 
       <!--lint disable double-link-->
-    order: 10
+    order: 9
     subcategories:
       - id: general
         name: "General"

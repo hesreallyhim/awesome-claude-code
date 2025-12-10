@@ -1,0 +1,407 @@
+<svg width="900" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- High-tech gradient background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:0.08"/>
+      <stop offset="50%" style="stop-color:#9C4EFF;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:0.08"/>
+    </linearGradient>
+
+    <!-- Animated text gradient with sharper transitions -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B35">
+        <animate attributeName="offset" values="0;0.25;0" dur="2.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="33%" style="stop-color:#9C4EFF">
+        <animate attributeName="offset" values="0.33;0.58;0.33" dur="2.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="66%" style="stop-color:#FFD700">
+        <animate attributeName="offset" values="0.66;0.91;0.66" dur="2.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#FF6B35">
+        <animate attributeName="offset" values="1;0.75;1" dur="2.5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Sharp glow filter -->
+    <filter id="techGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Hexagon pattern -->
+    <pattern id="hexPattern" patternUnits="userSpaceOnUse" width="40" height="35">
+      <path d="M 20,0 L 30,8.75 L 30,26.25 L 20,35 L 10,26.25 L 10,8.75 Z"
+            fill="none" stroke="#9C4EFF" stroke-width="0.5" opacity="0.15"/>
+    </pattern>
+
+    <!-- Grid lines -->
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#FF6B35" stroke-width="0.5" opacity="0.1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background with patterns -->
+  <rect width="900" height="200" fill="url(#bgGrad)"/>
+  <rect width="900" height="200" fill="url(#grid)"/>
+  <rect width="900" height="200" fill="url(#hexPattern)"/>
+
+  <!-- Scan lines effect -->
+  <g opacity="0.15">
+    <rect y="0" width="900" height="1" fill="#9C4EFF">
+      <animate attributeName="y" values="0;200" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect y="0" width="900" height="1" fill="#FF6B35">
+      <animate attributeName="y" values="0;200" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <rect y="0" width="900" height="1" fill="#FFD700">
+      <animate attributeName="y" values="0;200" dur="4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- LEFT FIREWORK 1 - burst at 150,60 -->
+  <g>
+    <!-- Initial flash - very brief -->
+    <circle cx="150" cy="60" r="0" fill="#FF6B35" filter="url(#strongGlow)" opacity="0">
+      <animate attributeName="r" values="0;0;18;0" dur="3s" repeatCount="indefinite" begin="0s"/>
+      <animate attributeName="opacity" values="0;0;1;0" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.03;0.08;1" keySplines="0 0 1 1; 0 0 1 1; 0 0 1 1"/>
+    </circle>
+
+    <!-- Main particles - explosive burst with gravity -->
+    <!-- Particle 1 - up -->
+    <circle r="2" fill="#FF6B35" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="150;150;150" dur="3s" repeatCount="indefinite" begin="0s"/>
+      <animate attributeName="cy" values="60;20;35" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.15;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.6;0" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.05;0.3;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="0s"/>
+    </circle>
+
+    <!-- Particle 2 - up-right -->
+    <circle r="2" fill="#FFD700" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="150;200;210" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.2;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="60;25;50" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.15;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.7;0" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.05;0.35;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="0s"/>
+    </circle>
+
+    <!-- Particle 3 - right -->
+    <circle r="2" fill="#9C4EFF" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="150;215;225" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.25;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="60;55;75" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.2;1" keySplines="0 0 1 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.5;0" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.05;0.4;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="0s"/>
+    </circle>
+
+    <!-- Particle 4 - down-right -->
+    <circle r="2" fill="#FFD700" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="150;195;200" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.2;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="60;85;110" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.2;1" keySplines="0.2 0 0.5 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.6;0" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.05;0.3;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="0s"/>
+    </circle>
+
+    <!-- Particle 5 - down -->
+    <circle r="2" fill="#FF6B35" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="150;155;158" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.15;1"/>
+      <animate attributeName="cy" values="60;110;140" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.25;1" keySplines="0.2 0 0.5 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.7;0" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.05;0.35;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="0s"/>
+    </circle>
+
+    <!-- Particle 6 - down-left -->
+    <circle r="2" fill="#9C4EFF" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="150;105;95" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.2;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="60;85;110" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.2;1" keySplines="0.2 0 0.5 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.6;0" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.05;0.3;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="0s"/>
+    </circle>
+
+    <!-- Particle 7 - left -->
+    <circle r="2" fill="#FFD700" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="150;85;75" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.25;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="60;55;75" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.2;1" keySplines="0 0 1 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.5;0" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.05;0.4;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="0s"/>
+    </circle>
+
+    <!-- Particle 8 - up-left -->
+    <circle r="2" fill="#FF6B35" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="150;100;90" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.2;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="60;25;50" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.15;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.7;0" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.05;0.35;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="0s"/>
+    </circle>
+
+    <!-- Particle 9 - diagonal up-right (offset) -->
+    <circle r="1.5" fill="#9C4EFF" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="150;185;195" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.18;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="60;35;60" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.15;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;0.8;0.4;0" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.07;0.25;1"/>
+    </circle>
+
+    <!-- Particle 10 - diagonal down-left (offset) -->
+    <circle r="1.5" fill="#FFD700" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="150;115;105" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.18;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="60;75;95" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.18;1" keySplines="0.2 0 0.5 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;0.8;0.4;0" dur="3s" repeatCount="indefinite" begin="0s" keyTimes="0;0.07;0.25;1"/>
+    </circle>
+  </g>
+
+  <!-- LEFT FIREWORK 2 - burst at 120,140 (delayed 1.5s) -->
+  <g>
+    <circle cx="120" cy="140" r="0" fill="#9C4EFF" filter="url(#strongGlow)" opacity="0">
+      <animate attributeName="r" values="0;0;18;0" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+      <animate attributeName="opacity" values="0;0;1;0" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.03;0.08;1"/>
+    </circle>
+
+    <circle r="2" fill="#9C4EFF" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="120;120;120" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+      <animate attributeName="cy" values="140;100;115" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.15;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.6;0" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.05;0.3;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+
+    <circle r="2" fill="#00ff99" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="120;170;180" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.2;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="140;125;145" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.15;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.7;0" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.05;0.35;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+
+    <circle r="2" fill="#FFD700" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="120;175;185" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.25;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="140;145;165" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.2;1" keySplines="0 0 1 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.5;0" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.05;0.4;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+
+    <circle r="2" fill="#9C4EFF" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="120;130;135" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.2;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="140;180;200" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.2;1" keySplines="0.2 0 0.5 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.6;0" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.05;0.3;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+
+    <circle r="2" fill="#FF6B35" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="120;70;60" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.2;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="140;150;170" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.2;1" keySplines="0.2 0 0.5 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.6;0" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.05;0.3;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+
+    <circle r="2" fill="#FFD700" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="120;65;55" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.25;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="140;135;150" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.2;1" keySplines="0 0 1 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.5;0" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.05;0.4;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+
+    <circle r="2" fill="#9C4EFF" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="120;75;65" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.2;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="140;120;135" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.15;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.7;0" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.05;0.35;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+
+    <circle r="1.5" fill="#FF6B35" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="120;155;165" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.18;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="140;135;155" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.15;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;0.8;0.4;0" dur="3s" repeatCount="indefinite" begin="1.5s" keyTimes="0;0.07;0.25;1"/>
+    </circle>
+  </g>
+
+  <!-- RIGHT FIREWORK 1 - burst at 750,70 (delayed 0.75s) -->
+  <g>
+    <circle cx="750" cy="70" r="0" fill="#FFD700" filter="url(#strongGlow)" opacity="0">
+      <animate attributeName="r" values="0;0;18;0" dur="3s" repeatCount="indefinite" begin="0.75s"/>
+      <animate attributeName="opacity" values="0;0;1;0" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.03;0.08;1"/>
+    </circle>
+
+    <circle r="2" fill="#FFD700" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="750;750;750" dur="3s" repeatCount="indefinite" begin="0.75s"/>
+      <animate attributeName="cy" values="70;30;45" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.15;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.6;0" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.05;0.3;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="0.75s"/>
+    </circle>
+
+    <circle r="2" fill="#FF6B35" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="750;805;815" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.2;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="70;40;65" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.15;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.7;0" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.05;0.35;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="0.75s"/>
+    </circle>
+
+    <circle r="2" fill="#9C4EFF" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="750;820;830" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.25;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="70;70;90" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.2;1" keySplines="0 0 1 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.5;0" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.05;0.4;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="0.75s"/>
+    </circle>
+
+    <circle r="2" fill="#FFD700" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="750;765;770" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.2;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="70;110;135" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.2;1" keySplines="0.2 0 0.5 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.6;0" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.05;0.3;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="0.75s"/>
+    </circle>
+
+    <circle r="2" fill="#FF6B35" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="750;695;685" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.2;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="70;90;115" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.2;1" keySplines="0.2 0 0.5 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.6;0" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.05;0.3;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="0.75s"/>
+    </circle>
+
+    <circle r="2" fill="#9C4EFF" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="750;680;670" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.25;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="70;65;85" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.2;1" keySplines="0 0 1 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.5;0" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.05;0.4;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="0.75s"/>
+    </circle>
+
+    <circle r="2" fill="#FFD700" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="750;695;685" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.2;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="70;40;65" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.15;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.7;0" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.05;0.35;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="0.75s"/>
+    </circle>
+
+    <circle r="1.5" fill="#FF6B35" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="750;790;800" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.18;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="70;55;75" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.15;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;0.8;0.4;0" dur="3s" repeatCount="indefinite" begin="0.75s" keyTimes="0;0.07;0.25;1"/>
+    </circle>
+  </g>
+
+  <!-- RIGHT FIREWORK 2 - burst at 780,150 (delayed 2.25s) -->
+  <g>
+    <circle cx="780" cy="150" r="0" fill="#FF6B35" filter="url(#strongGlow)" opacity="0">
+      <animate attributeName="r" values="0;0;18;0" dur="3s" repeatCount="indefinite" begin="2.25s"/>
+      <animate attributeName="opacity" values="0;0;1;0" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.03;0.08;1"/>
+    </circle>
+
+    <circle r="2" fill="#FF6B35" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="780;780;780" dur="3s" repeatCount="indefinite" begin="2.25s"/>
+      <animate attributeName="cy" values="150;110;125" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.15;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.6;0" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.05;0.3;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="2.25s"/>
+    </circle>
+
+    <circle r="2" fill="#9C4EFF" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="780;835;845" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.2;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="150;140;160" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.15;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.7;0" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.05;0.35;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="2.25s"/>
+    </circle>
+
+    <circle r="2" fill="#FFD700" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="780;850;860" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.25;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="150;155;175" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.2;1" keySplines="0 0 1 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.5;0" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.05;0.4;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="2.25s"/>
+    </circle>
+
+    <circle r="2" fill="#FF6B35" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="780;795;800" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.2;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="150;190;210" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.2;1" keySplines="0.2 0 0.5 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.6;0" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.05;0.3;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="2.25s"/>
+    </circle>
+
+    <circle r="2" fill="#9C4EFF" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="780;730;720" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.2;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="150;165;185" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.2;1" keySplines="0.2 0 0.5 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.6;0" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.05;0.3;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="2.25s"/>
+    </circle>
+
+    <circle r="2" fill="#FFD700" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="780;715;705" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.25;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="150;145;165" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.2;1" keySplines="0 0 1 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.5;0" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.05;0.4;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="2.25s"/>
+    </circle>
+
+    <circle r="2" fill="#FF6B35" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="780;730;720" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.2;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="150;130;145" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.15;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;1;0.7;0" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.05;0.35;1"/>
+      <animate attributeName="r" values="2;3;2;1" dur="3s" repeatCount="indefinite" begin="2.25s"/>
+    </circle>
+
+    <circle r="1.5" fill="#9C4EFF" filter="url(#techGlow)" opacity="0">
+      <animate attributeName="cx" values="780;820;830" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.18;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="cy" values="150;145;165" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.15;1" keySplines="0.2 0 0.8 1; 0.5 0 1 1"/>
+      <animate attributeName="opacity" values="0;0.8;0.4;0" dur="3s" repeatCount="indefinite" begin="2.25s" keyTimes="0;0.07;0.25;1"/>
+    </circle>
+  </g>
+
+  <!-- Corner brackets - technical style -->
+  <g stroke-width="2" fill="none" opacity="0.5">
+    <path d="M 20,20 L 20,10 L 30,10" stroke="#FF6B35">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 880,20 L 880,10 L 870,10" stroke="#9C4EFF">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2.2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 20,180 L 20,190 L 30,190" stroke="#FFD700">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 880,180 L 880,190 L 870,190" stroke="#FF6B35">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2.6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- MAIN TEXT - sharp, tech style -->
+  <g filter="url(#strongGlow)">
+    <text x="450" y="85" font-family="Arial Black, sans-serif" font-size="48" font-weight="900" text-anchor="middle" fill="url(#textGrad)" stroke="#000000" stroke-width="0.5" opacity="0.95">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="1.5s" repeatCount="indefinite"/>
+      EXTREME REPO
+    </text>
+  </g>
+
+  <g filter="url(#strongGlow)">
+    <text x="450" y="130" font-family="Arial Black, sans-serif" font-size="48" font-weight="900" text-anchor="middle" fill="url(#textGrad)" stroke="#000000" stroke-width="0.5" opacity="0.95">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="1.7s" repeatCount="indefinite"/>
+      MAKEOVER BY
+    </text>
+  </g>
+
+  <g filter="url(#techGlow)">
+    <text x="450" y="170" font-family="Arial Black, sans-serif" font-size="38" font-weight="900" text-anchor="middle" fill="url(#textGrad)" stroke="#000000" stroke-width="0.5" opacity="0.95">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="1.3s" repeatCount="indefinite"/>
+      CLAUDE CODE WEB!
+    </text>
+  </g>
+
+  <!-- Digital noise particles -->
+  <g opacity="0.4">
+    <rect x="0" y="0" width="2" height="2" fill="#FF6B35">
+      <animate attributeName="x" values="100;800" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="30;170" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.8;0" dur="5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0" y="0" width="2" height="2" fill="#9C4EFF">
+      <animate attributeName="x" values="800;100" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="50;150" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.8;0" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0" y="0" width="2" height="2" fill="#FFD700">
+      <animate attributeName="x" values="200;700" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="170;30" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.8;0" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>

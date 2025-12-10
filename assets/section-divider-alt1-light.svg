@@ -1,0 +1,129 @@
+<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Paper texture pattern -->
+    <pattern id="paperTexture" patternUnits="userSpaceOnUse" width="100" height="40">
+      <rect width="100" height="40" fill="#f5f0e6"/>
+      <!-- Tiny dots for paper grain -->
+      <circle cx="10" cy="8" r="0.3" fill="#d4cfc5" opacity="0.5"/>
+      <circle cx="25" cy="15" r="0.4" fill="#ccc7bd" opacity="0.4"/>
+      <circle cx="45" cy="5" r="0.3" fill="#d4cfc5" opacity="0.6"/>
+      <circle cx="60" cy="22" r="0.35" fill="#ccc7bd" opacity="0.5"/>
+      <circle cx="80" cy="12" r="0.4" fill="#d4cfc5" opacity="0.4"/>
+      <circle cx="15" cy="30" r="0.3" fill="#ccc7bd" opacity="0.5"/>
+      <circle cx="55" cy="35" r="0.4" fill="#d4cfc5" opacity="0.4"/>
+      <circle cx="90" cy="28" r="0.3" fill="#ccc7bd" opacity="0.6"/>
+    </pattern>
+
+    <!-- Torn edge colors -->
+    <linearGradient id="tornEdgeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e3d9;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#f5f0e6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ddd8ce;stop-opacity:1"/>
+    </linearGradient>
+
+    <!-- Soft shadow for depth -->
+    <filter id="paperShadow">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#8b8680" flood-opacity="0.25"/>
+    </filter>
+
+    <!-- Rough edge filter -->
+    <filter id="roughEdge">
+      <feTurbulence type="turbulence" baseFrequency="0.04" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+
+  <!-- Top torn paper edge -->
+  <path d="M 0 12
+           Q 15 10, 30 13
+           Q 50 9, 75 12
+           Q 100 15, 130 11
+           Q 160 8, 195 13
+           Q 230 16, 270 10
+           Q 310 7, 350 12
+           Q 390 15, 430 9
+           Q 470 6, 510 11
+           Q 550 14, 590 10
+           Q 630 7, 670 12
+           Q 710 15, 750 11
+           Q 790 8, 830 13
+           Q 865 16, 900 12
+           L 900 0 L 0 0 Z"
+        fill="url(#tornEdgeGrad)" filter="url(#paperShadow)"/>
+
+  <!-- Paper texture overlay on top section -->
+  <path d="M 0 12
+           Q 15 10, 30 13
+           Q 50 9, 75 12
+           Q 100 15, 130 11
+           Q 160 8, 195 13
+           Q 230 16, 270 10
+           Q 310 7, 350 12
+           Q 390 15, 430 9
+           Q 470 6, 510 11
+           Q 550 14, 590 10
+           Q 630 7, 670 12
+           Q 710 15, 750 11
+           Q 790 8, 830 13
+           Q 865 16, 900 12
+           L 900 0 L 0 0 Z"
+        fill="url(#paperTexture)" opacity="0.3"/>
+
+  <!-- Torn fiber strands hanging down -->
+  <g opacity="0.6">
+    <path d="M 75 12 Q 76 15, 74 17" stroke="#c4bfb5" stroke-width="0.5" fill="none"/>
+    <path d="M 195 13 Q 194 16, 196 18" stroke="#c4bfb5" stroke-width="0.4" fill="none"/>
+    <path d="M 350 12 Q 351 15, 349 17" stroke="#c4bfb5" stroke-width="0.5" fill="none"/>
+    <path d="M 510 11 Q 509 14, 511 16" stroke="#c4bfb5" stroke-width="0.4" fill="none"/>
+    <path d="M 670 12 Q 671 15, 669 17" stroke="#c4bfb5" stroke-width="0.5" fill="none"/>
+    <path d="M 830 13 Q 829 16, 831 18" stroke="#c4bfb5" stroke-width="0.4" fill="none"/>
+  </g>
+
+  <!-- Bottom torn paper edge -->
+  <path d="M 0 28
+           Q 20 31, 45 27
+           Q 75 24, 110 29
+           Q 145 32, 185 26
+           Q 225 23, 265 28
+           Q 305 31, 345 27
+           Q 385 24, 425 30
+           Q 465 33, 505 27
+           Q 545 24, 585 29
+           Q 625 32, 665 26
+           Q 705 23, 745 28
+           Q 785 31, 825 27
+           Q 860 24, 900 28
+           L 900 40 L 0 40 Z"
+        fill="url(#tornEdgeGrad)" filter="url(#paperShadow)"/>
+
+  <!-- Paper texture overlay on bottom section -->
+  <path d="M 0 28
+           Q 20 31, 45 27
+           Q 75 24, 110 29
+           Q 145 32, 185 26
+           Q 225 23, 265 28
+           Q 305 31, 345 27
+           Q 385 24, 425 30
+           Q 465 33, 505 27
+           Q 545 24, 585 29
+           Q 625 32, 665 26
+           Q 705 23, 745 28
+           Q 785 31, 825 27
+           Q 860 24, 900 28
+           L 900 40 L 0 40 Z"
+        fill="url(#paperTexture)" opacity="0.3"/>
+
+  <!-- Torn fiber strands going up -->
+  <g opacity="0.6">
+    <path d="M 45 27 Q 44 24, 46 22" stroke="#c4bfb5" stroke-width="0.5" fill="none"/>
+    <path d="M 185 26 Q 186 23, 184 21" stroke="#c4bfb5" stroke-width="0.4" fill="none"/>
+    <path d="M 345 27 Q 344 24, 346 22" stroke="#c4bfb5" stroke-width="0.5" fill="none"/>
+    <path d="M 505 27 Q 506 24, 504 22" stroke="#c4bfb5" stroke-width="0.4" fill="none"/>
+    <path d="M 665 26 Q 664 23, 666 21" stroke="#c4bfb5" stroke-width="0.5" fill="none"/>
+    <path d="M 825 27 Q 826 24, 824 22" stroke="#c4bfb5" stroke-width="0.4" fill="none"/>
+  </g>
+
+  <!-- Decorative coffee ring stain (subtle, playful) -->
+  <ellipse cx="450" cy="20" rx="25" ry="8" fill="none" stroke="#d4a574" stroke-width="0.8" opacity="0.15"/>
+  <ellipse cx="450" cy="20" rx="22" ry="6" fill="none" stroke="#d4a574" stroke-width="0.4" opacity="0.1"/>
+</svg>

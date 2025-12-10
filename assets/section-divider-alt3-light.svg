@@ -1,0 +1,107 @@
+<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Vintage ink color -->
+    <linearGradient id="inkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a3728;stop-opacity:0"/>
+      <stop offset="10%" style="stop-color:#4a3728;stop-opacity:0.7"/>
+      <stop offset="50%" style="stop-color:#2d1f14;stop-opacity:0.9"/>
+      <stop offset="90%" style="stop-color:#4a3728;stop-opacity:0.7"/>
+      <stop offset="100%" style="stop-color:#4a3728;stop-opacity:0"/>
+    </linearGradient>
+
+    <!-- Subtle ink bleed -->
+    <filter id="inkBleed">
+      <feTurbulence type="turbulence" baseFrequency="0.05" numOctaves="2" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+
+  <!-- Main decorative flourish - central ornament -->
+  <g fill="none" stroke="#4a3728" filter="url(#inkBleed)">
+
+    <!-- Left horizontal line -->
+    <line x1="50" y1="20" x2="350" y2="20" stroke-width="1" opacity="0.6"/>
+
+    <!-- Right horizontal line -->
+    <line x1="550" y1="20" x2="850" y2="20" stroke-width="1" opacity="0.6"/>
+
+    <!-- Left decorative curl -->
+    <path d="M 350 20 Q 360 10, 380 12 Q 395 14, 400 20 Q 395 26, 380 28 Q 360 30, 350 20"
+          stroke-width="1.2" opacity="0.8"/>
+
+    <!-- Left inner curl detail -->
+    <path d="M 370 17 Q 380 15, 388 18"
+          stroke-width="0.8" opacity="0.6"/>
+    <path d="M 370 23 Q 380 25, 388 22"
+          stroke-width="0.8" opacity="0.6"/>
+
+    <!-- Right decorative curl (mirrored) -->
+    <path d="M 550 20 Q 540 10, 520 12 Q 505 14, 500 20 Q 505 26, 520 28 Q 540 30, 550 20"
+          stroke-width="1.2" opacity="0.8"/>
+
+    <!-- Right inner curl detail -->
+    <path d="M 530 17 Q 520 15, 512 18"
+          stroke-width="0.8" opacity="0.6"/>
+    <path d="M 530 23 Q 520 25, 512 22"
+          stroke-width="0.8" opacity="0.6"/>
+
+    <!-- Center diamond ornament -->
+    <path d="M 450 10 L 465 20 L 450 30 L 435 20 Z"
+          stroke-width="1.5" opacity="0.85"/>
+
+    <!-- Inner diamond -->
+    <path d="M 450 14 L 459 20 L 450 26 L 441 20 Z"
+          stroke-width="0.8" opacity="0.5"/>
+
+    <!-- Center dot -->
+    <circle cx="450" cy="20" r="2" fill="#4a3728" stroke="none" opacity="0.7"/>
+
+    <!-- Left end flourish -->
+    <path d="M 50 20 Q 40 15, 35 20 Q 40 25, 50 20"
+          stroke-width="1" opacity="0.5"/>
+    <circle cx="30" cy="20" r="1.5" fill="#4a3728" stroke="none" opacity="0.5"/>
+
+    <!-- Right end flourish -->
+    <path d="M 850 20 Q 860 15, 865 20 Q 860 25, 850 20"
+          stroke-width="1" opacity="0.5"/>
+    <circle cx="870" cy="20" r="1.5" fill="#4a3728" stroke="none" opacity="0.5"/>
+
+    <!-- Decorative dots along lines -->
+    <circle cx="100" cy="20" r="1" fill="#4a3728" stroke="none" opacity="0.4"/>
+    <circle cx="150" cy="20" r="1" fill="#4a3728" stroke="none" opacity="0.4"/>
+    <circle cx="200" cy="20" r="1" fill="#4a3728" stroke="none" opacity="0.4"/>
+    <circle cx="250" cy="20" r="1" fill="#4a3728" stroke="none" opacity="0.4"/>
+    <circle cx="300" cy="20" r="1" fill="#4a3728" stroke="none" opacity="0.4"/>
+
+    <circle cx="600" cy="20" r="1" fill="#4a3728" stroke="none" opacity="0.4"/>
+    <circle cx="650" cy="20" r="1" fill="#4a3728" stroke="none" opacity="0.4"/>
+    <circle cx="700" cy="20" r="1" fill="#4a3728" stroke="none" opacity="0.4"/>
+    <circle cx="750" cy="20" r="1" fill="#4a3728" stroke="none" opacity="0.4"/>
+    <circle cx="800" cy="20" r="1" fill="#4a3728" stroke="none" opacity="0.4"/>
+
+    <!-- Tiny accent flourishes -->
+    <path d="M 400 20 Q 410 15, 420 18" stroke-width="0.6" opacity="0.4"/>
+    <path d="M 400 20 Q 410 25, 420 22" stroke-width="0.6" opacity="0.4"/>
+
+    <path d="M 500 20 Q 490 15, 480 18" stroke-width="0.6" opacity="0.4"/>
+    <path d="M 500 20 Q 490 25, 480 22" stroke-width="0.6" opacity="0.4"/>
+
+    <!-- Top and bottom accent lines -->
+    <line x1="420" y1="10" x2="480" y2="10" stroke-width="0.5" opacity="0.3"/>
+    <line x1="420" y1="30" x2="480" y2="30" stroke-width="0.5" opacity="0.3"/>
+
+    <!-- Corner accents on center diamond -->
+    <path d="M 435 20 L 430 15 M 435 20 L 430 25" stroke-width="0.5" opacity="0.4"/>
+    <path d="M 465 20 L 470 15 M 465 20 L 470 25" stroke-width="0.5" opacity="0.4"/>
+  </g>
+
+  <!-- Typewriter-style asterisks as section markers -->
+  <g font-family="serif" font-size="14" fill="#4a3728" opacity="0.35">
+    <text x="420" y="8">*</text>
+    <text x="450" y="8" text-anchor="middle">*</text>
+    <text x="480" y="8" text-anchor="end">*</text>
+    <text x="420" y="38">*</text>
+    <text x="450" y="38" text-anchor="middle">*</text>
+    <text x="480" y="38" text-anchor="end">*</text>
+  </g>
+</svg>

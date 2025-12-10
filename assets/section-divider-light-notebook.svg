@@ -1,0 +1,80 @@
+<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Pencil/graphite texture -->
+    <filter id="pencilTexture">
+      <feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+
+    <!-- Soft pencil look -->
+    <filter id="pencilSoft">
+      <feGaussianBlur stdDeviation="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Faint graph paper grid (background suggestion) -->
+  <g stroke="#a8d4e6" stroke-width="0.3" opacity="0.3">
+    <line x1="100" y1="0" x2="100" y2="40"/>
+    <line x1="200" y1="0" x2="200" y2="40"/>
+    <line x1="300" y1="0" x2="300" y2="40"/>
+    <line x1="400" y1="0" x2="400" y2="40"/>
+    <line x1="500" y1="0" x2="500" y2="40"/>
+    <line x1="600" y1="0" x2="600" y2="40"/>
+    <line x1="700" y1="0" x2="700" y2="40"/>
+    <line x1="800" y1="0" x2="800" y2="40"/>
+  </g>
+
+  <!-- Main hand-drawn pencil line - wobbly and organic -->
+  <g filter="url(#pencilTexture)">
+    <path d="M 40 20
+             Q 60 18, 100 21
+             Q 140 23, 180 19
+             Q 220 17, 260 20
+             Q 300 22, 340 19
+             Q 380 17, 420 20
+             Q 460 22, 500 20
+             Q 540 18, 580 21
+             Q 620 23, 660 19
+             Q 700 17, 740 20
+             Q 780 22, 820 19
+             Q 850 18, 860 20"
+          stroke="#4a4a4a" stroke-width="1.5" fill="none" opacity="0.7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Sketchy arrow doodle on left -->
+  <g stroke="#4a4a4a" stroke-width="1" fill="none" opacity="0.5" filter="url(#pencilSoft)">
+    <path d="M 55 20 L 70 20" stroke-linecap="round"/>
+    <path d="M 65 16 L 70 20 L 65 24"/>
+  </g>
+
+  <!-- Sketchy arrow doodle on right -->
+  <g stroke="#4a4a4a" stroke-width="1" fill="none" opacity="0.5" filter="url(#pencilSoft)">
+    <path d="M 845 20 L 830 20" stroke-linecap="round"/>
+    <path d="M 835 16 L 830 20 L 835 24"/>
+  </g>
+
+  <!-- Little star doodles -->
+  <g stroke="#4a4a4a" stroke-width="0.8" fill="none" opacity="0.4" filter="url(#pencilSoft)">
+    <!-- Star 1 -->
+    <path d="M 200 12 L 200 8 M 197 10 L 203 10 M 198 8 L 202 12 M 202 8 L 198 12"/>
+    <!-- Star 2 -->
+    <path d="M 450 10 L 450 6 M 447 8 L 453 8 M 448 6 L 452 10 M 452 6 L 448 10"/>
+    <!-- Star 3 -->
+    <path d="M 700 12 L 700 8 M 697 10 L 703 10 M 698 8 L 702 12 M 702 8 L 698 12"/>
+  </g>
+
+  <!-- Underline emphasis marks -->
+  <g stroke="#4a4a4a" stroke-width="0.8" fill="none" opacity="0.35" filter="url(#pencilTexture)">
+    <path d="M 420 28 Q 435 30, 450 28 Q 465 26, 480 28"/>
+  </g>
+
+  <!-- Small circular scribble/doodle in center -->
+  <circle cx="450" cy="20" r="3" stroke="#4a4a4a" stroke-width="0.8" fill="none" opacity="0.3" filter="url(#pencilSoft)"/>
+  <circle cx="450" cy="20" r="1" fill="#4a4a4a" opacity="0.25"/>
+
+  <!-- Margin dots like notebook holes (decorative) -->
+  <circle cx="25" cy="10" r="3" fill="none" stroke="#ccc" stroke-width="1" opacity="0.4"/>
+  <circle cx="25" cy="30" r="3" fill="none" stroke="#ccc" stroke-width="1" opacity="0.4"/>
+  <circle cx="875" cy="10" r="3" fill="none" stroke="#ccc" stroke-width="1" opacity="0.4"/>
+  <circle cx="875" cy="30" r="3" fill="none" stroke="#ccc" stroke-width="1" opacity="0.4"/>
+</svg>

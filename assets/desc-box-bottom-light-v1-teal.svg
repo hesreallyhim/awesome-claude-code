@@ -1,0 +1,50 @@
+<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+  <!-- VARIATION 1: Soft Teal/Blue - Clean, professional, calming -->
+  <defs>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0EA5E9;stop-opacity:0.8">
+        <animate attributeName="stop-opacity" values="0.7;0.9;0.7" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#14B8A6;stop-opacity:0.85">
+        <animate attributeName="stop-opacity" values="0.8;0.95;0.8" dur="3.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:0.8">
+        <animate attributeName="stop-opacity" values="0.7;0.9;0.7" dur="3s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Bottom border line -->
+  <line x1="40" y1="25" x2="860" y2="25" stroke="url(#borderGrad)" stroke-width="2.5" filter="url(#softGlow)"/>
+
+  <!-- Corner brackets -->
+  <g opacity="0.85">
+    <!-- Bottom left corner -->
+    <polyline points="8,5 8,25 40,25" stroke="#0EA5E9" stroke-width="2.5" fill="none" filter="url(#softGlow)">
+      <animate attributeName="opacity" values="0.6;0.9;0.6" dur="3s" repeatCount="indefinite"/>
+    </polyline>
+
+    <!-- Bottom right corner -->
+    <polyline points="892,5 892,25 860,25" stroke="#06B6D4" stroke-width="2.5" fill="none" filter="url(#softGlow)">
+      <animate attributeName="opacity" values="0.6;0.9;0.6" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    </polyline>
+  </g>
+
+  <!-- Corner dots -->
+  <circle cx="8" cy="25" r="4" fill="#0EA5E9" opacity="0.7" filter="url(#softGlow)">
+    <animate attributeName="r" values="4;6;4" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.85;0.5" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="892" cy="25" r="4" fill="#06B6D4" opacity="0.7" filter="url(#softGlow)">
+    <animate attributeName="r" values="4;6;4" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.85;0.5" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

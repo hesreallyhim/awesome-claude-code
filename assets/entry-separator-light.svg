@@ -1,0 +1,11 @@
+<svg width="200" height="12" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.55">
+    <circle cx="88" cy="6" r="2.5" fill="#c4baa8"/>
+    <circle cx="100" cy="6" r="3.5" fill="#c96442"/>
+    <circle cx="112" cy="6" r="2.5" fill="#c4baa8"/>
+    <!-- Ghost circles for layered effect -->
+    <circle cx="90" cy="7" r="1.5" fill="#c4baa8" opacity="0.4"/>
+    <circle cx="102" cy="7" r="2" fill="#c96442" opacity="0.3"/>
+    <circle cx="110" cy="7" r="1.5" fill="#c4baa8" opacity="0.4"/>
+  </g>
+</svg>

@@ -1,0 +1,147 @@
+<svg width="900" height="180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Soft shadow for depth -->
+    <filter id="softShadow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Simplified Anthropic orange border gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#FF8C5A;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FF6B35;stop-opacity:1"/>
+    </linearGradient>
+
+    <!-- Warm cream background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FFF5EE;stop-opacity:1"/>
+    </linearGradient>
+
+    <!-- Radial gradient for floating orbs (warm Anthropic tones) -->
+    <radialGradient id="orb1">
+      <stop offset="0%" style="stop-color:#FF8C5A;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#FF8C5A;stop-opacity:0"/>
+    </radialGradient>
+
+    <radialGradient id="orb2">
+      <stop offset="0%" style="stop-color:#FFB088;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#FFB088;stop-opacity:0"/>
+    </radialGradient>
+
+    <radialGradient id="orb3">
+      <stop offset="0%" style="stop-color:#FFCBA4;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#FFCBA4;stop-opacity:0"/>
+    </radialGradient>
+
+    <!-- Accent gradient for separator line -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#FF9B70;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FF6B35;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Clean white background with subtle gradient -->
+  <rect width="900" height="180" rx="8" fill="url(#bgGrad)"/>
+
+  <!-- Floating gradient orbs in background -->
+  <circle cx="100" cy="50" r="60" fill="url(#orb1)">
+    <animate attributeName="cx" values="100;280;180;100" dur="28s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="50;100;140;50" dur="26s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="800" cy="130" r="80" fill="url(#orb2)">
+    <animate attributeName="cx" values="800;620;720;800" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="130;50;90;130" dur="28s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="450" cy="160" r="50" fill="url(#orb3)">
+    <animate attributeName="cx" values="450;150;700;450" dur="32s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="160;70;100;160" dur="30s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Radial pulse waves from corners -->
+  <circle cx="20" cy="20" r="5" fill="none" stroke="#FF6B35" stroke-width="1" opacity="0">
+    <animate attributeName="r" values="5;50" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="880" cy="160" r="5" fill="none" stroke="#FF8C5A" stroke-width="1" opacity="0">
+    <animate attributeName="r" values="5;50" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Color-shifting border -->
+  <rect width="900" height="180" rx="8" fill="none" stroke="url(#borderGrad)" stroke-width="3" opacity="0.5"/>
+
+  <!-- Floating particles (warm Anthropic palette) -->
+  <g opacity="0.6">
+    <circle cx="100" cy="40" r="2" fill="#FFB088">
+      <animate attributeName="cy" values="40;30;40" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="50" r="2" fill="#FF6B35">
+      <animate attributeName="cy" values="50;40;50" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="140" r="2" fill="#FFCBA4">
+      <animate attributeName="cy" values="140;130;140" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="30" r="2" fill="#FF8C5A">
+      <animate attributeName="cy" values="30;20;30" dur="5.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="5.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Content -->
+  <g filter="url(#softShadow)">
+    <!-- Title with Anthropic orange -->
+    <text x="450" y="70" font-family="monospace" font-size="42" font-weight="bold" fill="#FF6B35" text-anchor="middle" letter-spacing="2">
+      AWESOME CLAUDE CODE
+      <animate attributeName="opacity" values="1;0.95;1" dur="2s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Animated cursor with bounce -->
+    <rect x="730" y="45" width="12" height="30" fill="#FF8C42">
+      <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="height" values="30;28;30" dur="0.8s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Colorful separator line with shimmer -->
+    <line x1="200" y1="95" x2="700" y2="95" stroke="url(#accentGrad)" stroke-width="2" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.9;0.6" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;2.5;2" dur="2s" repeatCount="indefinite"/>
+    </line>
+
+    <!-- Tagline with warm brown accent -->
+    <text x="450" y="125" font-family="monospace" font-size="16" fill="#8B5A3C" text-anchor="middle" opacity="0.9" letter-spacing="1">
+      It's not just a coding agent - it's a lifestyle
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Bottom info line with orange -->
+    <text x="450" y="155" font-family="monospace" font-size="11" fill="#FF8C42" text-anchor="middle" opacity="0.8">
+      [ SYSTEM READY ] [ PRESS ANY KEY TO CONTINUE ]
+    </text>
+  </g>
+
+  <!-- Decorative corner accents (consistent warm Anthropic tones) -->
+  <g opacity="0.5">
+    <path d="M 20,20 L 50,20 M 20,20 L 20,50" stroke="#FF6B35" stroke-width="2" fill="none"/>
+    <path d="M 880,20 L 850,20 M 880,20 L 880,50" stroke="#FF8C5A" stroke-width="2" fill="none"/>
+    <path d="M 20,160 L 50,160 M 20,160 L 20,130" stroke="#FFB088" stroke-width="2" fill="none"/>
+    <path d="M 880,160 L 850,160 M 880,160 L 880,130" stroke="#FF9B70" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Enhanced shine effect with movement -->
+  <ellipse cx="250" cy="70" rx="180" ry="60" fill="#FFFFFF" opacity="0.15">
+    <animate attributeName="opacity" values="0.15;0.3;0.15" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="250;280;250" dur="6s" repeatCount="indefinite"/>
+  </ellipse>
+</svg>

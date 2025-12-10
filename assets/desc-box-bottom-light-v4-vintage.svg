@@ -1,0 +1,42 @@
+<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Vintage Technical Manual Style - Enhanced
+    Bolder lines, double-line detail, small tick marks for texture
+  -->
+
+  <!-- Secondary thinner line for depth (on top) -->
+  <line x1="28" y1="22" x2="872" y2="22" stroke="#5c5247" stroke-width="0.5" opacity="0.25"/>
+
+  <!-- Main horizontal line -->
+  <line x1="28" y1="25" x2="872" y2="25" stroke="#5c5247" stroke-width="1" opacity="0.45"/>
+
+  <!-- Small tick marks along the line for texture -->
+  <g stroke="#5c5247" stroke-width="0.75" opacity="0.3">
+    <line x1="150" y1="20" x2="150" y2="27"/>
+    <line x1="300" y1="20" x2="300" y2="27"/>
+    <line x1="450" y1="20" x2="450" y2="27"/>
+    <line x1="600" y1="20" x2="600" y2="27"/>
+    <line x1="750" y1="20" x2="750" y2="27"/>
+  </g>
+
+  <!-- Corner dots - slightly larger -->
+  <g fill="#5c5247" opacity="0.5">
+    <circle cx="20" cy="25" r="3"/>
+    <circle cx="880" cy="25" r="3"/>
+  </g>
+
+  <!-- Corner brackets (L-shaped) - bolder -->
+  <g fill="none" stroke="#5c5247" stroke-width="1.5" opacity="0.55">
+    <!-- Bottom left corner bracket -->
+    <path d="M 8,25 L 8,2 M 8,25 L 28,25"/>
+
+    <!-- Bottom right corner bracket -->
+    <path d="M 892,25 L 892,2 M 892,25 L 872,25"/>
+  </g>
+
+  <!-- Small corner accents -->
+  <g fill="#5c5247" opacity="0.35">
+    <rect x="8" y="21" width="4" height="4"/>
+    <rect x="888" y="21" width="4" height="4"/>
+  </g>
+</svg>

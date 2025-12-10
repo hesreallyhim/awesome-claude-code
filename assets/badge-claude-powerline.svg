@@ -1,0 +1,32 @@
+<svg width="314" height="44" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @media (prefers-color-scheme: light) {
+      .line { stroke: #5c5247; }
+      .box { stroke: #5c5247; }
+      .initials { fill: #c96442; }
+      .name { fill: #3d3530; }
+      .author { fill: #5c5247; opacity: 0.7; }
+    }
+    @media (prefers-color-scheme: dark) {
+      .line { stroke: #888; }
+      .box { stroke: #888; }
+      .initials { fill: #ff6b4a; }
+      .name { fill: #e8e8e8; }
+      .author { fill: #aaa; opacity: 0.8; }
+    }
+  </style>
+
+  <!-- Thin top line -->
+  <line class="line" x1="4" y1="6" x2="310" y2="6" stroke-width="1.25" opacity="0.4"/>
+
+  <!-- Initials box -->
+  <rect class="box" x="4" y="12" width="32" height="26" fill="none" stroke-width="2.25" opacity="0.6"/>
+  <text class="initials" x="20" y="30" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="700" text-anchor="middle">CL</text>
+
+  <!-- Resource name -->
+  <text class="name" x="48" y="30" font-family="system-ui, -apple-system, 'Helvetica Neue', sans-serif" font-size="17" font-weight="600">claude-powerline</text>
+  <text class="author" x="218" y="30" font-family="system-ui, -apple-system, 'Helvetica Neue', sans-serif" font-size="14" font-weight="400">by Owloops</text>
+
+  <!-- Bottom rule -->
+  <line class="line" x1="48" y1="37" x2="310" y2="37" stroke-width="1.25" opacity="0.5"/>
+</svg>

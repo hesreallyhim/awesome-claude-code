@@ -1,0 +1,55 @@
+<svg width="850" height="60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Modern subtle glow -->
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="0.8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Subtle gradient background -->
+    <linearGradient id="modernBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#fafafa;stop-opacity:1"/>
+    </linearGradient>
+
+    <!-- Border gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:0.8"/>
+      <stop offset="50%" style="stop-color:#9C4EFF;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:0.8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Modern terminal border -->
+  <rect width="850" height="60" fill="#f5f5f5" stroke="url(#borderGrad)" stroke-width="2" rx="6"/>
+
+  <!-- Inner screen -->
+  <rect x="7" y="7" width="836" height="46" fill="url(#modernBg)" rx="4"/>
+
+  <!-- Content -->
+  <g filter="url(#textGlow)">
+    <!-- Prompt in purple -->
+    <text x="20" y="28" font-family="monospace" font-size="14" fill="#9C4EFF" font-weight="600">
+      user@awesome-claude-code:~$
+    </text>
+
+    <!-- Command in orange with subtle shimmer -->
+    <text x="260" y="28" font-family="monospace" font-size="14" fill="#FF6B35" font-weight="600">
+      ls -la /resources/
+      <animate attributeName="opacity" values="1;0.92;1" dur="0.15s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Blinking cursor in orange -->
+    <rect x="465" y="16" width="8" height="16" fill="#FF6B35" rx="1">
+      <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Status indicator (orange power LED) -->
+  <circle cx="830" cy="13" r="3" fill="#FF6B35">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

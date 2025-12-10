@@ -1,0 +1,35 @@
+<svg width="380" height="48" xmlns="http://www.w3.org/2000/svg">
+  <!-- Variation 5: Modern/Geometric - rounded corners, pill shapes, contemporary feel -->
+  <style>
+    @media (prefers-color-scheme: light) {
+      .v5-pill { fill: #f7f5f3; stroke: #e8e4df; }
+      .v5-avatar { fill: #c96442; }
+      .v5-initials { fill: #ffffff; }
+      .v5-name { fill: #2d2a26; }
+      .v5-author-pill { fill: #e8e4df; }
+      .v5-author { fill: #5c5247; }
+    }
+    @media (prefers-color-scheme: dark) {
+      .v5-pill { fill: #2a2a2a; stroke: #3a3a3a; }
+      .v5-avatar { fill: #ff6b4a; }
+      .v5-initials { fill: #1a1a1a; }
+      .v5-name { fill: #f0f0f0; }
+      .v5-author-pill { fill: #3a3a3a; }
+      .v5-author { fill: #aaa; }
+    }
+  </style>
+
+  <!-- Main pill container -->
+  <rect class="v5-pill" x="4" y="6" width="372" height="36" rx="18" stroke-width="1.75"/>
+
+  <!-- Circular avatar with initials -->
+  <circle class="v5-avatar" cx="24" cy="24" r="14"/>
+  <text class="v5-initials" x="24" y="29" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="middle">CS</text>
+
+  <!-- Name -->
+  <text class="v5-name" x="48" y="29" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600">Claude Squad</text>
+
+  <!-- Author in small pill -->
+  <rect class="v5-author-pill" x="180" y="14" width="80" height="20" rx="10"/>
+  <text class="v5-author" x="220" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="500" text-anchor="middle">anthropics</text>
+</svg>

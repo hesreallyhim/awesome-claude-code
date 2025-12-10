@@ -1,0 +1,73 @@
+<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Vintage Technical Manual Style - Schematic/Blueprint Variant (BOLD)
+  -->
+
+  <!-- Ghost line for layered effect -->
+  <line x1="102" y1="18" x2="798" y2="18" stroke="#5c5247" stroke-width="1.25" opacity="0.15"/>
+
+  <!-- Main dimension line with end caps -->
+  <g stroke="#5c5247" fill="none">
+    <!-- Main horizontal line - bolder -->
+    <line x1="100" y1="20" x2="800" y2="20" stroke-width="1.5" opacity="0.55"/>
+
+    <!-- Dimension end caps (T-shaped terminators) - bolder -->
+    <line x1="100" y1="10" x2="100" y2="30" stroke-width="1.75" opacity="0.65"/>
+    <line x1="102" y1="12" x2="102" y2="28" stroke-width="1" opacity="0.25"/>
+    <line x1="800" y1="10" x2="800" y2="30" stroke-width="1.75" opacity="0.65"/>
+    <line x1="798" y1="12" x2="798" y2="28" stroke-width="1" opacity="0.25"/>
+  </g>
+
+  <!-- Center marker - crosshair style registration mark (larger) -->
+  <g stroke="#5c5247" fill="none">
+    <circle cx="450" cy="20" r="9" stroke-width="1.25" opacity="0.6"/>
+    <circle cx="452" cy="22" r="7" stroke-width="0.75" opacity="0.2"/>
+    <line x1="450" y1="9" x2="450" y2="31" stroke-width="1.25" opacity="0.6"/>
+    <line x1="439" y1="20" x2="461" y2="20" stroke-width="1.25" opacity="0.6"/>
+    <!-- Accent circle - larger -->
+    <circle cx="450" cy="20" r="3.5" fill="#c96442" stroke="none" opacity="0.75"/>
+    <circle cx="452" cy="22" r="2" fill="#c96442" stroke="none" opacity="0.3"/>
+  </g>
+
+  <!-- Secondary division marks - bolder -->
+  <g stroke="#5c5247" opacity="0.45">
+    <!-- Quarter marks with small crossbars -->
+    <line x1="275" y1="13" x2="275" y2="27" stroke-width="1"/>
+    <line x1="267" y1="20" x2="283" y2="20" stroke-width="1"/>
+    <line x1="277" y1="14" x2="277" y2="26" stroke-width="0.75" opacity="0.4"/>
+
+    <line x1="625" y1="13" x2="625" y2="27" stroke-width="1"/>
+    <line x1="617" y1="20" x2="633" y2="20" stroke-width="1"/>
+    <line x1="627" y1="14" x2="627" y2="26" stroke-width="0.75" opacity="0.4"/>
+  </g>
+
+  <!-- Tick marks - bolder, some doubled -->
+  <g stroke="#5c5247" opacity="0.3">
+    <line x1="150" y1="16" x2="150" y2="24" stroke-width="1"/>
+    <line x1="200" y1="16" x2="200" y2="24" stroke-width="1"/>
+    <line x1="202" y1="17" x2="202" y2="23" stroke-width="0.75" opacity="0.5"/>
+    <line x1="250" y1="16" x2="250" y2="24" stroke-width="1"/>
+    <line x1="300" y1="16" x2="300" y2="24" stroke-width="1"/>
+    <line x1="350" y1="16" x2="350" y2="24" stroke-width="1"/>
+    <line x1="352" y1="17" x2="352" y2="23" stroke-width="0.75" opacity="0.5"/>
+    <line x1="400" y1="16" x2="400" y2="24" stroke-width="1"/>
+    <line x1="500" y1="16" x2="500" y2="24" stroke-width="1"/>
+    <line x1="550" y1="16" x2="550" y2="24" stroke-width="1"/>
+    <line x1="552" y1="17" x2="552" y2="23" stroke-width="0.75" opacity="0.5"/>
+    <line x1="600" y1="16" x2="600" y2="24" stroke-width="1"/>
+    <line x1="650" y1="16" x2="650" y2="24" stroke-width="1"/>
+    <line x1="700" y1="16" x2="700" y2="24" stroke-width="1"/>
+    <line x1="702" y1="17" x2="702" y2="23" stroke-width="0.75" opacity="0.5"/>
+    <line x1="750" y1="16" x2="750" y2="24" stroke-width="1"/>
+  </g>
+
+  <!-- Construction guide marks at edges - bolder -->
+  <g stroke="#c96442" opacity="0.4">
+    <line x1="55" y1="20" x2="80" y2="20" stroke-width="1"/>
+    <line x1="67" y1="13" x2="67" y2="27" stroke-width="1"/>
+    <line x1="69" y1="15" x2="69" y2="25" stroke-width="0.75" opacity="0.5"/>
+    <line x1="820" y1="20" x2="845" y2="20" stroke-width="1"/>
+    <line x1="833" y1="13" x2="833" y2="27" stroke-width="1"/>
+    <line x1="831" y1="15" x2="831" y2="25" stroke-width="0.75" opacity="0.5"/>
+  </g>
+</svg>

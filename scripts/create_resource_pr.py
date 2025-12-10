@@ -14,7 +14,7 @@ from datetime import datetime
 # Import existing functions
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from add_resource import append_to_csv, generate_pr_content
-from generate_readme import generate_readme_from_templates
+from scripts.generate_readme import generate_readme_from_templates
 from resource_id import generate_resource_id
 
 

@@ -1,0 +1,121 @@
+<svg width="750" height="140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Soft glow -->
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Warm cream background -->
+    <linearGradient id="bgLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FFF5EE;stop-opacity:1"/>
+    </linearGradient>
+
+    <!-- Anthropic orange accent -->
+    <linearGradient id="orangeAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FF8C5A;stop-opacity:1"/>
+    </linearGradient>
+
+    <!-- Radial gradient for floating orbs (warm tones) -->
+    <radialGradient id="orbOrange">
+      <stop offset="0%" style="stop-color:#FF8C5A;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#FF8C5A;stop-opacity:0"/>
+    </radialGradient>
+
+    <radialGradient id="orbPeach">
+      <stop offset="0%" style="stop-color:#FFB088;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#FFB088;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Card background -->
+  <rect width="750" height="140" rx="6" fill="url(#bgLight)"/>
+
+  <!-- Floating gradient orbs -->
+  <circle cx="100" cy="70" r="40" fill="url(#orbOrange)">
+    <animate attributeName="cx" values="100;450;300;100" dur="18s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="70;50;110;70" dur="16s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="650" cy="50" r="50" fill="url(#orbPeach)">
+    <animate attributeName="cx" values="650;300;450;650" dur="20s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="50;100;80;50" dur="17s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Floating particles (warm Anthropic palette) -->
+  <g opacity="0.5">
+    <circle cx="200" cy="30" r="1.5" fill="#FF6B35">
+      <animate attributeName="cy" values="30;25;30" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="550" cy="110" r="1.5" fill="#FFB088">
+      <animate attributeName="cy" values="110;105;110" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="20" r="1.5" fill="#FF8C5A">
+      <animate attributeName="cy" values="20;15;20" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Radial pulse from corner -->
+  <circle cx="730" cy="20" r="3" fill="none" stroke="#FF6B35" stroke-width="0.5" opacity="0">
+    <animate attributeName="r" values="3;30" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Color-shifting border -->
+  <rect width="750" height="140" rx="6" fill="none" stroke="url(#orangeAccent)" stroke-width="2" opacity="0.6"/>
+
+  <!-- Content -->
+  <g filter="url(#softGlow)">
+    <!-- System status lines in Anthropic orange -->
+    <text x="30" y="35" font-family="monospace" font-size="14" fill="#FF6B35" font-weight="bold">
+      &gt; SYSTEM ONLINE
+      <animate attributeName="opacity" values="1;0.9;1" dur="1.5s" repeatCount="indefinite"/>
+    </text>
+
+    <text x="30" y="55" font-family="monospace" font-size="14" fill="#FF8C42" font-weight="bold">
+      &gt; LOADING RESOURCES...
+      <animate attributeName="opacity" values="1;0.9;1" dur="1.8s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Blinking cursor -->
+    <rect x="230" y="42" width="8" height="16" fill="#FF6B35">
+      <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Description text with highlighted "curated collection" -->
+    <text x="50" y="85" font-family="monospace" font-size="12">
+      <tspan fill="#8B5A3C">A </tspan>
+      <tspan fill="#FF6B35" font-weight="bold">curated collection</tspan>
+      <tspan fill="#8B5A3C"> of tools, workflows, and configurations</tspan>
+    </text>
+    <text x="50" y="105" font-family="monospace" font-size="12" fill="#8B5A3C">
+      to supercharge your Claude Code experience.
+    </text>
+  </g>
+
+  <!-- Decorative accents (Anthropic warm tones) -->
+  <g opacity="0.5">
+    <circle cx="720" cy="20" r="3" fill="#FF6B35">
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="710" cy="20" r="3" fill="#FF8C5A">
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="20" r="3" fill="#FFB088">
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Subtle corner brackets (warm Anthropic tones) -->
+  <g opacity="0.4" stroke-width="1.5" fill="none">
+    <path d="M 15,15 L 35,15 M 15,15 L 15,35" stroke="#FF6B35"/>
+    <path d="M 735,15 L 715,15 M 735,15 L 735,35" stroke="#FF8C5A"/>
+    <path d="M 15,125 L 35,125 M 15,125 L 15,105" stroke="#FFB088"/>
+    <path d="M 735,125 L 715,125 M 735,125 L 735,105" stroke="#FF9B70"/>
+  </g>
+</svg>

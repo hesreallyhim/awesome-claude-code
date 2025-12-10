@@ -1,0 +1,35 @@
+<svg width="380" height="48" xmlns="http://www.w3.org/2000/svg">
+  <!-- Variation 1: Minimal/Clean - thin lines, lots of whitespace -->
+  <style>
+    @media (prefers-color-scheme: light) {
+      .v1-box { stroke: #c96442; }
+      .v1-initials { fill: #c96442; }
+      .v1-name { fill: #2d2a26; }
+      .v1-author { fill: #7a7267; }
+      .v1-line { stroke: #d4cfc7; }
+    }
+    @media (prefers-color-scheme: dark) {
+      .v1-box { stroke: #ff6b4a; }
+      .v1-initials { fill: #ff6b4a; }
+      .v1-name { fill: #f0f0f0; }
+      .v1-author { fill: #999; }
+      .v1-line { stroke: #444; }
+    }
+  </style>
+
+  <!-- Thin top accent line -->
+  <line class="v1-line" x1="0" y1="1" x2="380" y2="1" stroke-width="1.75"/>
+
+  <!-- Initials in minimal square -->
+  <rect class="v1-box" x="12" y="12" width="28" height="28" fill="none" stroke-width="1.75"/>
+  <text class="v1-initials" x="26" y="32" font-family="'SF Mono', 'Fira Code', monospace" font-size="12" font-weight="500" text-anchor="middle">CS</text>
+
+  <!-- Name with generous tracking -->
+  <text class="v1-name" x="52" y="28" font-family="'Inter', system-ui, sans-serif" font-size="16" font-weight="500" letter-spacing="0.5">Claude Squad</text>
+
+  <!-- Author subtle -->
+  <text class="v1-author" x="180" y="28" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="400">by anthropics</text>
+
+  <!-- Thin bottom line -->
+  <line class="v1-line" x1="52" y1="42" x2="360" y2="42" stroke-width="1.25"/>
+</svg>

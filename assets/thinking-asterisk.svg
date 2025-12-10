@@ -1,0 +1,90 @@
+<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Glow filter for twinkle effect -->
+    <filter id="pixelGlow">
+      <feGaussianBlur stdDeviation="0.8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Pixelated asterisk centered at 20,20 -->
+  <g transform="translate(20, 20)" filter="url(#pixelGlow)">
+    <!-- Rotating pixelated star -->
+    <g>
+      <!-- Center pixel -->
+      <rect x="-1.5" y="-1.5" width="3" height="3" fill="#FF6B35"/>
+
+      <!-- Vertical ray (top) -->
+      <rect x="-1.5" y="-4.5" width="3" height="3" fill="#FF6B35"/>
+      <rect x="-1.5" y="-7.5" width="3" height="3" fill="#FF8C42"/>
+      <rect x="-1.5" y="-10.5" width="3" height="3" fill="#F7931E"/>
+      <rect x="-1" y="-13" width="2" height="2" fill="#F7931E" opacity="0.7"/>
+
+      <!-- Vertical ray (bottom) -->
+      <rect x="-1.5" y="1.5" width="3" height="3" fill="#FF6B35"/>
+      <rect x="-1.5" y="4.5" width="3" height="3" fill="#FF8C42"/>
+      <rect x="-1.5" y="7.5" width="3" height="3" fill="#F7931E"/>
+      <rect x="-1" y="10" width="2" height="2" fill="#F7931E" opacity="0.7"/>
+
+      <!-- Horizontal ray (left) -->
+      <rect x="-4.5" y="-1.5" width="3" height="3" fill="#FF6B35"/>
+      <rect x="-7.5" y="-1.5" width="3" height="3" fill="#FF8C42"/>
+      <rect x="-10.5" y="-1.5" width="3" height="3" fill="#F7931E"/>
+      <rect x="-13" y="-1" width="2" height="2" fill="#F7931E" opacity="0.7"/>
+
+      <!-- Horizontal ray (right) -->
+      <rect x="1.5" y="-1.5" width="3" height="3" fill="#FF6B35"/>
+      <rect x="4.5" y="-1.5" width="3" height="3" fill="#FF8C42"/>
+      <rect x="7.5" y="-1.5" width="3" height="3" fill="#F7931E"/>
+      <rect x="10" y="-1" width="2" height="2" fill="#F7931E" opacity="0.7"/>
+
+      <!-- Diagonal ray (top-left) -->
+      <rect x="-4.5" y="-4.5" width="3" height="3" fill="#FF6B35"/>
+      <rect x="-7.5" y="-7.5" width="3" height="3" fill="#FF8C42"/>
+      <rect x="-9.5" y="-9.5" width="2" height="2" fill="#F7931E" opacity="0.7"/>
+
+      <!-- Diagonal ray (top-right) -->
+      <rect x="1.5" y="-4.5" width="3" height="3" fill="#FF6B35"/>
+      <rect x="4.5" y="-7.5" width="3" height="3" fill="#FF8C42"/>
+      <rect x="7.5" y="-9.5" width="2" height="2" fill="#F7931E" opacity="0.7"/>
+
+      <!-- Diagonal ray (bottom-left) -->
+      <rect x="-4.5" y="1.5" width="3" height="3" fill="#FF6B35"/>
+      <rect x="-7.5" y="4.5" width="3" height="3" fill="#FF8C42"/>
+      <rect x="-9.5" y="7.5" width="2" height="2" fill="#F7931E" opacity="0.7"/>
+
+      <!-- Diagonal ray (bottom-right) -->
+      <rect x="1.5" y="1.5" width="3" height="3" fill="#FF6B35"/>
+      <rect x="4.5" y="4.5" width="3" height="3" fill="#FF8C42"/>
+      <rect x="7.5" y="7.5" width="2" height="2" fill="#F7931E" opacity="0.7"/>
+
+      <!-- Continuous smooth rotation -->
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0"
+        to="360"
+        dur="2s"
+        repeatCount="indefinite"/>
+
+      <!-- Dramatic scale twinkle -->
+      <animateTransform
+        attributeName="transform"
+        type="scale"
+        values="1;0.15;1"
+        dur="1.2s"
+        additive="sum"
+        repeatCount="indefinite"/>
+
+      <!-- Opacity twinkle for extra drama -->
+      <animate
+        attributeName="opacity"
+        values="1;0.2;1"
+        dur="1.2s"
+        repeatCount="indefinite"/>
+    </g>
+  </g>
+</svg>

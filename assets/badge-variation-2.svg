@@ -1,0 +1,35 @@
+<svg width="380" height="52" xmlns="http://www.w3.org/2000/svg">
+  <!-- Variation 2: Bold/Brutalist - thick lines, heavy weights, stark contrast -->
+  <style>
+    @media (prefers-color-scheme: light) {
+      .v2-bg { fill: #f5f3f0; }
+      .v2-box { fill: #2d2a26; }
+      .v2-initials { fill: #f5f3f0; }
+      .v2-name { fill: #2d2a26; }
+      .v2-author { fill: #5c5247; }
+      .v2-accent { fill: #c96442; }
+    }
+    @media (prefers-color-scheme: dark) {
+      .v2-bg { fill: #1a1a1a; }
+      .v2-box { fill: #f0f0f0; }
+      .v2-initials { fill: #1a1a1a; }
+      .v2-name { fill: #f0f0f0; }
+      .v2-author { fill: #888; }
+      .v2-accent { fill: #ff6b4a; }
+    }
+  </style>
+
+  <!-- Solid filled initials box -->
+  <rect class="v2-box" x="8" y="8" width="36" height="36"/>
+  <text class="v2-initials" x="26" y="33" font-family="'SF Mono', 'Fira Code', monospace" font-size="14" font-weight="700" text-anchor="middle">CS</text>
+
+  <!-- Bold name -->
+  <text class="v2-name" x="56" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">Claude Squad</text>
+
+  <!-- Author with accent bar -->
+  <rect class="v2-accent" x="200" y="20" width="3" height="16"/>
+  <text class="v2-author" x="212" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500">anthropics</text>
+
+  <!-- Heavy bottom bar -->
+  <rect class="v2-accent" x="8" y="48" width="364" height="3"/>
+</svg>

@@ -1,0 +1,53 @@
+<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+  <!-- VARIATION 2: Warm Coral/Peach - Soft, inviting, elegant -->
+  <defs>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F97316;stop-opacity:0.75">
+        <animate attributeName="stop-opacity" values="0.65;0.85;0.65" dur="2.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="35%" style="stop-color:#FB923C;stop-opacity:0.7">
+        <animate attributeName="stop-opacity" values="0.6;0.8;0.6" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="65%" style="stop-color:#F472B6;stop-opacity:0.7">
+        <animate attributeName="stop-opacity" values="0.6;0.8;0.6" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#E879F9;stop-opacity:0.75">
+        <animate attributeName="stop-opacity" values="0.65;0.85;0.65" dur="2.5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <filter id="warmGlow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Bottom border line -->
+  <line x1="40" y1="25" x2="860" y2="25" stroke="url(#borderGrad)" stroke-width="2.5" filter="url(#warmGlow)"/>
+
+  <!-- Corner brackets -->
+  <g opacity="0.8">
+    <!-- Bottom left corner -->
+    <polyline points="8,5 8,25 40,25" stroke="#F97316" stroke-width="2.5" fill="none" filter="url(#warmGlow)">
+      <animate attributeName="opacity" values="0.6;0.85;0.6" dur="2.5s" repeatCount="indefinite"/>
+    </polyline>
+
+    <!-- Bottom right corner -->
+    <polyline points="892,5 892,25 860,25" stroke="#E879F9" stroke-width="2.5" fill="none" filter="url(#warmGlow)">
+      <animate attributeName="opacity" values="0.6;0.85;0.6" dur="2.5s" begin="1.25s" repeatCount="indefinite"/>
+    </polyline>
+  </g>
+
+  <!-- Corner dots -->
+  <circle cx="8" cy="25" r="4" fill="#F97316" opacity="0.7" filter="url(#warmGlow)">
+    <animate attributeName="r" values="4;6;4" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.8;0.5" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="892" cy="25" r="4" fill="#E879F9" opacity="0.7" filter="url(#warmGlow)">
+    <animate attributeName="r" values="4;6;4" dur="2.5s" begin="1.25s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.8;0.5" dur="2.5s" begin="1.25s" repeatCount="indefinite"/>
+  </circle>
+</svg>

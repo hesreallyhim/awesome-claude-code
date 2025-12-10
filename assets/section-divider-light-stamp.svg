@@ -1,0 +1,96 @@
+<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Ink bleed/press texture -->
+    <filter id="inkPress">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.5" xChannelSelector="R" yChannelSelector="G"/>
+      <feGaussianBlur stdDeviation="0.2"/>
+    </filter>
+
+    <!-- Worn stamp effect -->
+    <filter id="wornStamp">
+      <feTurbulence type="fractalNoise" baseFrequency="0.08" numOctaves="3" result="noise"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.7 0"/>
+      <feComposite in="SourceGraphic" operator="in"/>
+    </filter>
+
+    <!-- Ink color - deep burgundy/sepia -->
+    <linearGradient id="inkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6b3a3a;stop-opacity:0"/>
+      <stop offset="10%" style="stop-color:#6b3a3a;stop-opacity:0.8"/>
+      <stop offset="50%" style="stop-color:#4a2828;stop-opacity:0.9"/>
+      <stop offset="90%" style="stop-color:#6b3a3a;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#6b3a3a;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main decorative rule with ornaments -->
+  <g filter="url(#inkPress)">
+    <!-- Left decorative end piece -->
+    <g fill="#4a2828" opacity="0.85">
+      <!-- Fleuron/printer's ornament left -->
+      <path d="M 80 20
+               Q 90 15, 100 20 Q 90 25, 80 20
+               M 85 20 L 75 20
+               M 100 20 L 110 20"/>
+      <circle cx="70" cy="20" r="2"/>
+    </g>
+
+    <!-- Main horizontal rule - slightly uneven like letterpress -->
+    <line x1="110" y1="20" x2="410" y2="20" stroke="url(#inkGrad)" stroke-width="1.5"/>
+    <line x1="490" y1="20" x2="790" y2="20" stroke="url(#inkGrad)" stroke-width="1.5"/>
+
+    <!-- Right decorative end piece -->
+    <g fill="#4a2828" opacity="0.85">
+      <!-- Fleuron/printer's ornament right -->
+      <path d="M 820 20
+               Q 810 15, 800 20 Q 810 25, 820 20
+               M 815 20 L 825 20
+               M 800 20 L 790 20"/>
+      <circle cx="830" cy="20" r="2"/>
+    </g>
+  </g>
+
+  <!-- Central ornament - vintage printer's dingbat style -->
+  <g filter="url(#wornStamp)" fill="#4a2828">
+    <!-- Diamond shape -->
+    <path d="M 450 10 L 465 20 L 450 30 L 435 20 Z" opacity="0.8"/>
+
+    <!-- Inner diamond -->
+    <path d="M 450 14 L 459 20 L 450 26 L 441 20 Z" fill="#f5f0e6"/>
+
+    <!-- Decorative dots around diamond -->
+    <circle cx="425" cy="20" r="1.5" opacity="0.7"/>
+    <circle cx="475" cy="20" r="1.5" opacity="0.7"/>
+    <circle cx="450" cy="5" r="1" opacity="0.5"/>
+    <circle cx="450" cy="35" r="1" opacity="0.5"/>
+
+    <!-- Small flourishes -->
+    <path d="M 415 20 Q 420 17, 425 20 Q 420 23, 415 20" opacity="0.6"/>
+    <path d="M 485 20 Q 480 17, 475 20 Q 480 23, 485 20" opacity="0.6"/>
+  </g>
+
+  <!-- Aged ink spots/imperfections -->
+  <g fill="#4a2828" opacity="0.15">
+    <circle cx="150" cy="18" r="0.8"/>
+    <circle cx="280" cy="22" r="0.6"/>
+    <circle cx="380" cy="19" r="0.7"/>
+    <circle cx="520" cy="21" r="0.6"/>
+    <circle cx="650" cy="18" r="0.8"/>
+    <circle cx="720" cy="22" r="0.5"/>
+  </g>
+
+  <!-- Subtle decorative brackets -->
+  <g stroke="#4a2828" stroke-width="1" fill="none" opacity="0.4" filter="url(#inkPress)">
+    <path d="M 130 15 Q 125 20, 130 25"/>
+    <path d="M 770 15 Q 775 20, 770 25"/>
+  </g>
+
+  <!-- Small asterisk markers like old documents -->
+  <g fill="#4a2828" opacity="0.35" font-family="serif" font-size="10">
+    <text x="200" y="24">✦</text>
+    <text x="350" y="24">✦</text>
+    <text x="550" y="24">✦</text>
+    <text x="700" y="24">✦</text>
+  </g>
+</svg>

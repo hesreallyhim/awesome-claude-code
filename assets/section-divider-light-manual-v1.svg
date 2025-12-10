@@ -1,0 +1,56 @@
+<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Vintage Technical Manual Style - Diagram Variant (BOLD)
+  -->
+
+  <!-- Ghost line for layered effect -->
+  <line x1="82" y1="18" x2="818" y2="18" stroke="#5c5247" stroke-width="1.5" opacity="0.2"/>
+
+  <!-- Main horizontal rule - bolder -->
+  <line x1="80" y1="20" x2="820" y2="20" stroke="#5c5247" stroke-width="1.75" opacity="0.65"/>
+
+  <!-- Technical node markers along the line -->
+  <g fill="none" stroke="#5c5247">
+    <!-- Left terminal node - bolder -->
+    <circle cx="80" cy="20" r="5" stroke-width="1.5" opacity="0.7"/>
+    <circle cx="80" cy="20" r="2.5" fill="#5c5247" opacity="0.55"/>
+    <circle cx="82" cy="22" r="1.5" fill="#5c5247" opacity="0.25"/>
+
+    <!-- Intermediate nodes - larger -->
+    <circle cx="200" cy="20" r="3.5" stroke-width="1.25" opacity="0.55"/>
+    <circle cx="350" cy="20" r="3.5" stroke-width="1.25" opacity="0.55"/>
+
+    <!-- Center node - emphasized -->
+    <circle cx="450" cy="20" r="6" stroke-width="1.5" opacity="0.65"/>
+    <circle cx="450" cy="20" r="3.5" fill="#c96442" opacity="0.75"/>
+    <circle cx="452" cy="22" r="2" fill="#c96442" opacity="0.35"/>
+
+    <!-- Intermediate nodes -->
+    <circle cx="550" cy="20" r="3.5" stroke-width="1.25" opacity="0.55"/>
+    <circle cx="700" cy="20" r="3.5" stroke-width="1.25" opacity="0.55"/>
+
+    <!-- Right terminal node - bolder -->
+    <circle cx="820" cy="20" r="5" stroke-width="1.5" opacity="0.7"/>
+    <circle cx="820" cy="20" r="2.5" fill="#5c5247" opacity="0.55"/>
+    <circle cx="818" cy="22" r="1.5" fill="#5c5247" opacity="0.25"/>
+  </g>
+
+  <!-- Measurement ticks - bolder, doubled -->
+  <g stroke="#5c5247" opacity="0.4">
+    <line x1="140" y1="15" x2="140" y2="25" stroke-width="1"/>
+    <line x1="142" y1="16" x2="142" y2="24" stroke-width="0.75" opacity="0.5"/>
+    <line x1="260" y1="15" x2="260" y2="25" stroke-width="1"/>
+    <line x1="380" y1="15" x2="380" y2="25" stroke-width="1"/>
+    <line x1="382" y1="16" x2="382" y2="24" stroke-width="0.75" opacity="0.5"/>
+    <line x1="520" y1="15" x2="520" y2="25" stroke-width="1"/>
+    <line x1="640" y1="15" x2="640" y2="25" stroke-width="1"/>
+    <line x1="642" y1="16" x2="642" y2="24" stroke-width="0.75" opacity="0.5"/>
+    <line x1="760" y1="15" x2="760" y2="25" stroke-width="1"/>
+  </g>
+
+  <!-- Directional arrows at ends - bolder -->
+  <g stroke="#5c5247" stroke-width="1.5" fill="none" opacity="0.5">
+    <path d="M 52 20 L 65 20 M 58 15 L 65 20 L 58 25"/>
+    <path d="M 848 20 L 835 20 M 842 15 L 835 20 L 842 25"/>
+  </g>
+</svg>

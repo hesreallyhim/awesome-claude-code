@@ -1,0 +1,45 @@
+<svg width="800" height="80" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Vintage Technical Manual Style - Header V3
+    Minimal technical specification style
+    Clean, authoritative, reference manual aesthetic
+  -->
+
+  <!-- Section number box -->
+  <g>
+    <rect x="160" y="22" width="36" height="36" fill="none" stroke="#5c5247" stroke-width="2" opacity="0.6"/>
+    <text x="178" y="48"
+          font-family="'Courier New', Courier, monospace"
+          font-size="20"
+          font-weight="700"
+          fill="#c96442"
+          text-anchor="middle">
+      04
+    </text>
+  </g>
+
+  <!-- Main title -->
+  <text x="220" y="47"
+        font-family="system-ui, -apple-system, 'Helvetica Neue', sans-serif"
+        font-size="28"
+        font-weight="600"
+        fill="#3d3530"
+        letter-spacing="0.5">
+    Status Lines
+  </text>
+
+  <!-- Horizontal rule extending from title -->
+  <line x1="220" y1="58" x2="640" y2="58" stroke="#5c5247" stroke-width="1.75" opacity="0.45"/>
+
+  <!-- Reference dots pattern (like page markers) -->
+  <g fill="#5c5247" opacity="0.3">
+    <circle cx="580" cy="35" r="1"/>
+    <circle cx="595" cy="35" r="1"/>
+    <circle cx="610" cy="35" r="1"/>
+    <circle cx="625" cy="35" r="1"/>
+    <circle cx="640" cy="35" r="1"/>
+  </g>
+
+  <!-- Thin top line -->
+  <line x1="160" y1="15" x2="640" y2="15" stroke="#5c5247" stroke-width="1.75" opacity="0.45"/>
+</svg>

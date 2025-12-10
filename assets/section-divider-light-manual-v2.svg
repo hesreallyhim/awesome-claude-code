@@ -1,0 +1,49 @@
+<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Vintage Technical Manual Style - Section Break Variant (BOLD)
+  -->
+
+  <!-- Ghost lines for layered effect -->
+  <line x1="102" y1="18" x2="378" y2="18" stroke="#5c5247" stroke-width="1.25" opacity="0.18"/>
+  <line x1="522" y1="18" x2="798" y2="18" stroke="#5c5247" stroke-width="1.25" opacity="0.18"/>
+
+  <!-- Left rule - bolder -->
+  <line x1="100" y1="20" x2="380" y2="20" stroke="#5c5247" stroke-width="1.75" opacity="0.55"/>
+
+  <!-- Right rule - bolder -->
+  <line x1="520" y1="20" x2="800" y2="20" stroke="#5c5247" stroke-width="1.75" opacity="0.55"/>
+
+  <!-- Center geometric ornament - three diamonds (larger) -->
+  <g fill="#5c5247" opacity="0.75">
+    <!-- Left diamond -->
+    <path d="M 406 20 L 416 12 L 426 20 L 416 28 Z"/>
+    <path d="M 408 20 L 416 14 L 424 20 L 416 26 Z" opacity="0.3"/>
+
+    <!-- Center diamond - larger, with accent -->
+    <path d="M 434 20 L 450 8 L 466 20 L 450 32 Z"/>
+    <path d="M 442 20 L 450 12 L 458 20 L 450 28 Z" fill="#c96442" opacity="0.85"/>
+    <path d="M 444 20 L 450 14 L 456 20 L 450 26 Z" fill="#c96442" opacity="0.4"/>
+
+    <!-- Right diamond -->
+    <path d="M 474 20 L 484 12 L 494 20 L 484 28 Z"/>
+    <path d="M 476 20 L 484 14 L 492 20 L 484 26 Z" opacity="0.3"/>
+  </g>
+
+  <!-- Terminal squares at line ends - larger, doubled -->
+  <g fill="#5c5247">
+    <rect x="94" y="15" width="10" height="10" opacity="0.45"/>
+    <rect x="96" y="17" width="6" height="6" opacity="0.25"/>
+    <rect x="796" y="15" width="10" height="10" opacity="0.45"/>
+    <rect x="794" y="17" width="6" height="6" opacity="0.25"/>
+  </g>
+
+  <!-- Dots as secondary rhythm - larger -->
+  <g fill="#5c5247" opacity="0.35">
+    <circle cx="200" cy="20" r="3"/>
+    <circle cx="202" cy="22" r="1.5" opacity="0.5"/>
+    <circle cx="290" cy="20" r="3"/>
+    <circle cx="610" cy="20" r="3"/>
+    <circle cx="612" cy="22" r="1.5" opacity="0.5"/>
+    <circle cx="700" cy="20" r="3"/>
+  </g>
+</svg>

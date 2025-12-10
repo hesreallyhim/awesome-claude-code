@@ -1,0 +1,152 @@
+<svg width="900" height="100" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Vintage Technical Manual Style - Intro Terminal
+    Registration shift animation - offset printing aesthetic
+    Cycle: 8s | Ultra-fast snap into alignment with horizontal jitter
+  -->
+  <defs>
+    <linearGradient id="paperBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#faf8f3"/>
+      <stop offset="100%" style="stop-color:#f5f0e6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Paper background -->
+  <rect width="900" height="100" fill="url(#paperBg)"/>
+
+  <!-- Decorative border -->
+  <rect x="10" y="10" width="880" height="80" fill="none" stroke="#c4baa8" stroke-width="1" rx="2"/>
+
+  <!-- Top decorative element -->
+  <g opacity="0.4">
+    <line x1="50" y1="18" x2="850" y2="18" stroke="#5c5247" stroke-width="0.5"/>
+    <circle cx="50" cy="18" r="1.5" fill="#5c5247"/>
+    <circle cx="850" cy="18" r="1.5" fill="#5c5247"/>
+  </g>
+
+  <!-- Line 1: Claude Code is a cutting-edge CLI-based coding assistant -->
+  <!-- Cyan offset layer - with horizontal jitter -->
+  <text x="450" y="38"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="13"
+        fill="#6b8a8a"
+        text-anchor="middle"
+        opacity="0.15">
+    Claude Code is a cutting-edge CLI-based coding assistant
+    <animate attributeName="x" values="446;450;450;449;451;448;450;446" keyTimes="0;0.01;0.5;0.97;0.98;0.99;0.995;1" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
+    <animate attributeName="opacity" values="0.3;0.08;0.08;0.15;0.22;0.28;0.3;0.3" keyTimes="0;0.01;0.5;0.97;0.98;0.99;0.995;1" dur="8s" repeatCount="indefinite"/>
+  </text>
+  <!-- Magenta offset layer - with horizontal jitter -->
+  <text x="450" y="38"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="13"
+        fill="#8a6b6b"
+        text-anchor="middle"
+        opacity="0.15">
+    Claude Code is a cutting-edge CLI-based coding assistant
+    <animate attributeName="x" values="454;450;450;451;449;452;450;454" keyTimes="0;0.01;0.5;0.97;0.98;0.99;0.995;1" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
+    <animate attributeName="opacity" values="0.3;0.08;0.08;0.15;0.22;0.28;0.3;0.3" keyTimes="0;0.01;0.5;0.97;0.98;0.99;0.995;1" dur="8s" repeatCount="indefinite"/>
+  </text>
+  <!-- Main layer - with vertical snap -->
+  <text x="450" y="38"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="13"
+        fill="#3d3530"
+        text-anchor="middle">
+    Claude Code is a cutting-edge CLI-based coding assistant
+    <animate attributeName="y" values="36;38;38;37;36;37;38;36" keyTimes="0;0.01;0.5;0.97;0.98;0.99;0.995;1" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
+  </text>
+
+  <!-- Line 2: released by Anthropic -->
+  <!-- Cyan offset layer -->
+  <text x="450" y="55"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="13"
+        fill="#6b8a8a"
+        text-anchor="middle"
+        opacity="0.15">
+    released by <tspan font-weight="600">Anthropic</tspan>. This collection helps the community
+    <animate attributeName="x" values="446;450;450;448;451;449;450;446" keyTimes="0;0.012;0.5;0.965;0.975;0.985;0.995;1" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
+    <animate attributeName="opacity" values="0.3;0.08;0.08;0.15;0.22;0.28;0.3;0.3" keyTimes="0;0.012;0.5;0.965;0.975;0.985;0.995;1" dur="8s" repeatCount="indefinite"/>
+  </text>
+  <!-- Magenta offset layer -->
+  <text x="450" y="55"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="13"
+        fill="#8a6b6b"
+        text-anchor="middle"
+        opacity="0.15">
+    released by <tspan font-weight="600">Anthropic</tspan>. This collection helps the community
+    <animate attributeName="x" values="454;450;450;452;449;451;450;454" keyTimes="0;0.012;0.5;0.965;0.975;0.985;0.995;1" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
+    <animate attributeName="opacity" values="0.3;0.08;0.08;0.15;0.22;0.28;0.3;0.3" keyTimes="0;0.012;0.5;0.965;0.975;0.985;0.995;1" dur="8s" repeatCount="indefinite"/>
+  </text>
+  <!-- Main layer -->
+  <text x="450" y="55"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="13"
+        fill="#3d3530"
+        text-anchor="middle">
+    released by <tspan fill="#c96442" font-weight="600">Anthropic</tspan>. This collection helps the community
+    <animate attributeName="y" values="53;55;55;54;53;54;55;53" keyTimes="0;0.012;0.5;0.965;0.975;0.985;0.995;1" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
+  </text>
+
+  <!-- Line 3: share knowledge -->
+  <!-- Cyan offset layer -->
+  <text x="450" y="72"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="13"
+        font-style="italic"
+        fill="#6b8a8a"
+        text-anchor="middle"
+        opacity="0.15">
+    share knowledge and discover the best tools and practices.
+    <animate attributeName="x" values="446;450;450;449;447;451;450;446" keyTimes="0;0.015;0.5;0.96;0.97;0.98;0.99;1" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
+    <animate attributeName="opacity" values="0.3;0.08;0.08;0.12;0.20;0.28;0.3;0.3" keyTimes="0;0.015;0.5;0.96;0.97;0.98;0.99;1" dur="8s" repeatCount="indefinite"/>
+  </text>
+  <!-- Magenta offset layer -->
+  <text x="450" y="72"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="13"
+        font-style="italic"
+        fill="#8a6b6b"
+        text-anchor="middle"
+        opacity="0.15">
+    share knowledge and discover the best tools and practices.
+    <animate attributeName="x" values="454;450;450;451;453;449;450;454" keyTimes="0;0.015;0.5;0.96;0.97;0.98;0.99;1" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
+    <animate attributeName="opacity" values="0.3;0.08;0.08;0.12;0.20;0.28;0.3;0.3" keyTimes="0;0.015;0.5;0.96;0.97;0.98;0.99;1" dur="8s" repeatCount="indefinite"/>
+  </text>
+  <!-- Main layer -->
+  <text x="450" y="72"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="13"
+        font-style="italic"
+        fill="#5c5247"
+        text-anchor="middle">
+    share knowledge and discover the best tools and practices.
+    <animate attributeName="y" values="70;72;72;71;70;71;72;70" keyTimes="0;0.015;0.5;0.96;0.97;0.98;0.99;1" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
+  </text>
+
+  <!-- Bottom decorative element -->
+  <g opacity="0.4">
+    <line x1="50" y1="82" x2="850" y2="82" stroke="#5c5247" stroke-width="0.5"/>
+  </g>
+
+  <!-- Decorative prompt indicator -->
+  <text x="35" y="38"
+        font-family="'Courier New', Courier, monospace"
+        font-size="14"
+        fill="#c96442"
+        font-weight="700"
+        opacity="0.6">
+    &gt;
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="2s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Corner ornaments -->
+  <g fill="none" stroke="#5c5247" stroke-width="1" opacity="0.35">
+    <path d="M 20,20 L 20,32 M 20,20 L 32,20"/>
+    <path d="M 880,20 L 880,32 M 880,20 L 868,20"/>
+    <path d="M 20,80 L 20,68 M 20,80 L 32,80"/>
+    <path d="M 880,80 L 880,68 M 880,80 L 868,80"/>
+  </g>
+</svg>

@@ -1,0 +1,69 @@
+<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+  <!-- VARIATION 3: Indigo/Violet - Sophisticated, modern, Claude-esque -->
+  <defs>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366F1;stop-opacity:0.8">
+        <animate attributeName="stop-opacity" values="0.7;0.9;0.7" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="30%" style="stop-color:#8B5CF6;stop-opacity:0.75">
+        <animate attributeName="stop-opacity" values="0.65;0.85;0.65" dur="3.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="70%" style="stop-color:#A78BFA;stop-opacity:0.75">
+        <animate attributeName="stop-opacity" values="0.65;0.85;0.65" dur="3.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#C084FC;stop-opacity:0.8">
+        <animate attributeName="stop-opacity" values="0.7;0.9;0.7" dur="3s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <filter id="violetGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Subtle shimmer effect -->
+    <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fff;stop-opacity:0">
+        <animate attributeName="offset" values="-0.5;1.5" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="10%" style="stop-color:#fff;stop-opacity:0.3">
+        <animate attributeName="offset" values="-0.4;1.6" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="20%" style="stop-color:#fff;stop-opacity:0">
+        <animate attributeName="offset" values="-0.3;1.7" dur="4s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Top border line -->
+  <line x1="40" y1="15" x2="860" y2="15" stroke="url(#borderGrad)" stroke-width="2.5" filter="url(#violetGlow)"/>
+
+  <!-- Shimmer overlay -->
+  <line x1="40" y1="15" x2="860" y2="15" stroke="url(#shimmer)" stroke-width="3" opacity="0.5"/>
+
+  <!-- Corner brackets -->
+  <g opacity="0.85">
+    <!-- Top left corner -->
+    <polyline points="40,15 8,15 8,35" stroke="#6366F1" stroke-width="2.5" fill="none" filter="url(#violetGlow)">
+      <animate attributeName="opacity" values="0.6;0.9;0.6" dur="3s" repeatCount="indefinite"/>
+    </polyline>
+
+    <!-- Top right corner -->
+    <polyline points="860,15 892,15 892,35" stroke="#C084FC" stroke-width="2.5" fill="none" filter="url(#violetGlow)">
+      <animate attributeName="opacity" values="0.6;0.9;0.6" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    </polyline>
+  </g>
+
+  <!-- Corner dots -->
+  <circle cx="8" cy="15" r="4" fill="#6366F1" opacity="0.75" filter="url(#violetGlow)">
+    <animate attributeName="r" values="4;5.5;4" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.55;0.85;0.55" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="892" cy="15" r="4" fill="#C084FC" opacity="0.75" filter="url(#violetGlow)">
+    <animate attributeName="r" values="4;5.5;4" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.55;0.85;0.55" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

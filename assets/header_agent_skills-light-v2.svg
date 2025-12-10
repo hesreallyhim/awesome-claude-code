@@ -1,0 +1,40 @@
+<svg width="800" height="80" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Vintage Technical Manual Style - Header V2
+    Classic documentation chapter heading
+    Geometric ornaments, warm typography
+  -->
+
+  <!-- Decorative top rule with diamond ornaments -->
+  <g stroke="#5c5247" fill="#5c5247" opacity="0.5">
+    <line x1="150" y1="16" x2="340" y2="16" stroke-width="1"/>
+    <line x1="460" y1="16" x2="650" y2="16" stroke-width="1"/>
+    <!-- Center diamond -->
+    <path d="M 400 10 L 408 16 L 400 22 L 392 16 Z" opacity="0.6"/>
+  </g>
+
+  <!-- Main title - serif style for that manual feel -->
+  <text x="400" y="48"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="32"
+        font-weight="600"
+        fill="#3d3530"
+        text-anchor="middle"
+        letter-spacing="2">
+    Agent Skills
+  </text>
+
+  <!-- Bottom rule with end squares -->
+  <g stroke="#5c5247" fill="#5c5247">
+    <line x1="200" y1="62" x2="600" y2="62" stroke-width="1" opacity="0.4"/>
+    <!-- End squares -->
+    <rect x="194" y="59" width="6" height="6" opacity="0.35"/>
+    <rect x="600" y="59" width="6" height="6" opacity="0.35"/>
+  </g>
+
+  <!-- Subtle decorative flourish dots -->
+  <g fill="#c96442" opacity="0.45">
+    <circle cx="360" cy="16" r="2"/>
+    <circle cx="440" cy="16" r="2"/>
+  </g>
+</svg>

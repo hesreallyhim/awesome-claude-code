@@ -1,0 +1,54 @@
+<svg width="800" height="80" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Vintage Technical Manual Style - Header V1
+    Clean, warm, technical documentation aesthetic
+    Like a chapter heading from a 70s-80s computer manual
+  -->
+
+  <!-- Main title text - clean, no glow -->
+  <text x="400" y="45"
+        font-family="'Courier New', Courier, monospace"
+        font-size="28"
+        font-weight="700"
+        fill="#3d3530"
+        text-anchor="middle"
+        letter-spacing="3">
+    AGENT SKILLS
+  </text>
+
+  <!-- Subtitle/section indicator -->
+  <text x="400" y="62"
+        font-family="'Courier New', Courier, monospace"
+        font-size="11"
+        fill="#6b5b4f"
+        text-anchor="middle"
+        letter-spacing="1">
+    SECTION 01
+  </text>
+
+  <!-- Technical underline with end caps -->
+  <g stroke="#5c5247" fill="none">
+    <line x1="180" y1="70" x2="620" y2="70" stroke-width="1" opacity="0.5"/>
+    <!-- T-terminators -->
+    <line x1="180" y1="66" x2="180" y2="74" stroke-width="1" opacity="0.6"/>
+    <line x1="620" y1="66" x2="620" y2="74" stroke-width="1" opacity="0.6"/>
+  </g>
+
+  <!-- Top decorative rule -->
+  <line x1="280" y1="18" x2="520" y2="18" stroke="#5c5247" stroke-width="0.75" opacity="0.4"/>
+
+  <!-- Corner registration marks -->
+  <g stroke="#c96442" stroke-width="0.75" opacity="0.4">
+    <!-- Top left -->
+    <path d="M 170 14 L 170 22 M 166 18 L 174 18"/>
+    <!-- Top right -->
+    <path d="M 630 14 L 630 22 M 626 18 L 634 18"/>
+  </g>
+
+  <!-- Small technical dots -->
+  <g fill="#5c5247" opacity="0.3">
+    <circle cx="250" cy="18" r="1.5"/>
+    <circle cx="400" cy="18" r="1.5"/>
+    <circle cx="550" cy="18" r="1.5"/>
+  </g>
+</svg>

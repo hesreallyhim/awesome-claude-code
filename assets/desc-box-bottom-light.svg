@@ -1,0 +1,125 @@
+<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Vintage Technical Manual - BOLD layered drafts
+    Mirrored/complementary to top
+  -->
+
+  <!-- === LAYER 1: Ghost/draft lines === -->
+  <line x1="30" y1="27" x2="870" y2="27" stroke="#5c5247" stroke-width="1.5" opacity="0.15"/>
+  <line x1="26" y1="23" x2="875" y2="23" stroke="#5c5247" stroke-width="1" opacity="0.12"/>
+
+  <!-- === LAYER 2: Main horizontal line === -->
+  <line x1="28" y1="25" x2="872" y2="25" stroke="#5c5247" stroke-width="2" opacity="0.5"/>
+
+  <!-- === LAYER 3: Secondary lines - mirrored from top === -->
+  <line x1="280" y1="19" x2="855" y2="19" stroke="#5c5247" stroke-width="1" opacity="0.25"/>
+  <line x1="320" y1="17" x2="852" y2="17" stroke="#5c5247" stroke-width="0.75" opacity="0.15"/>
+
+  <!-- Short accent lines on left - doubled -->
+  <line x1="50" y1="30" x2="180" y2="30" stroke="#5c5247" stroke-width="1" opacity="0.22"/>
+  <line x1="70" y1="32" x2="160" y2="32" stroke="#5c5247" stroke-width="0.75" opacity="0.12"/>
+
+  <!-- === BOLD TICK MARKS - different positions from top === -->
+  <g stroke="#5c5247" opacity="0.4">
+    <!-- Tick 1 - doubled -->
+    <line x1="80" y1="14" x2="80" y2="32" stroke-width="1.5"/>
+    <line x1="82" y1="16" x2="82" y2="30" stroke-width="1" opacity="0.5"/>
+
+    <!-- Tick 2 -->
+    <line x1="200" y1="18" x2="200" y2="30" stroke-width="1.5"/>
+
+    <!-- Tick 3 - doubled -->
+    <line x1="310" y1="13" x2="310" y2="33" stroke-width="1.5"/>
+    <line x1="312" y1="15" x2="312" y2="31" stroke-width="1" opacity="0.5"/>
+
+    <!-- Tick 4 -->
+    <line x1="340" y1="16" x2="340" y2="29" stroke-width="1"/>
+
+    <!-- Tick 5 -->
+    <line x1="460" y1="14" x2="460" y2="32" stroke-width="1.5"/>
+    <line x1="463" y1="17" x2="463" y2="29" stroke-width="0.75" opacity="0.4"/>
+
+    <!-- Tick 6 -->
+    <line x1="570" y1="17" x2="570" y2="30" stroke-width="1.5"/>
+
+    <!-- Tick 7 - doubled -->
+    <line x1="650" y1="13" x2="650" y2="33" stroke-width="1.5"/>
+    <line x1="653" y1="16" x2="653" y2="30" stroke-width="1" opacity="0.5"/>
+
+    <!-- Tick 8 -->
+    <line x1="760" y1="16" x2="760" y2="30" stroke-width="1.5"/>
+
+    <!-- Tick 9 - bold -->
+    <line x1="840" y1="13" x2="840" y2="33" stroke-width="1.5"/>
+    <line x1="843" y1="16" x2="843" y2="30" stroke-width="1" opacity="0.4"/>
+
+    <!-- Tick 10 - small -->
+    <line x1="860" y1="19" x2="860" y2="28" stroke-width="1"/>
+  </g>
+
+  <!-- === BOLD CIRCLES - different positions === -->
+  <g fill="#5c5247">
+    <!-- Circle 1 -->
+    <circle cx="140" cy="25" r="2.5" opacity="0.3"/>
+
+    <!-- Circle cluster 2 -->
+    <circle cx="260" cy="24" r="3" opacity="0.35"/>
+    <circle cx="263" cy="27" r="2" opacity="0.2"/>
+
+    <!-- Circle 3 -->
+    <circle cx="400" cy="26" r="2" opacity="0.28"/>
+
+    <!-- Circle cluster 4 -->
+    <circle cx="520" cy="25" r="3.5" opacity="0.35"/>
+    <circle cx="524" cy="28" r="2" opacity="0.18"/>
+
+    <!-- Circle 5 -->
+    <circle cx="710" cy="24" r="3" opacity="0.32"/>
+    <circle cx="713" cy="27" r="1.5" opacity="0.18"/>
+
+    <!-- Circle 6 -->
+    <circle cx="800" cy="26" r="2.5" opacity="0.3"/>
+  </g>
+
+  <!-- === CORNER DOTS - bolder === -->
+  <g fill="#5c5247">
+    <circle cx="20" cy="25" r="5" opacity="0.5"/>
+    <circle cx="22" cy="23" r="3" opacity="0.25"/>
+    <circle cx="880" cy="25" r="5" opacity="0.5"/>
+    <circle cx="878" cy="23" r="3" opacity="0.25"/>
+  </g>
+
+  <!-- Secondary dots near corners - mirrored -->
+  <g fill="#5c5247" opacity="0.35">
+    <circle cx="37" cy="31" r="2"/>
+    <circle cx="40" cy="29" r="1"/>
+    <circle cx="48" cy="25" r="2"/>
+    <circle cx="855" cy="25" r="2.5"/>
+    <circle cx="858" cy="28" r="1.5"/>
+  </g>
+
+  <!-- === CORNER BRACKETS - bold, doubled === -->
+  <g fill="none" stroke="#5c5247">
+    <!-- Left bracket - main -->
+    <path d="M 6,25 L 6,2 M 6,25 L 28,25" stroke-width="2.5" opacity="0.55"/>
+    <!-- Left bracket - ghost -->
+    <path d="M 9,27 L 9,4 M 9,27 L 30,27" stroke-width="1.5" opacity="0.2"/>
+
+    <!-- Right bracket - main -->
+    <path d="M 894,25 L 894,2 M 894,25 L 872,25" stroke-width="2.5" opacity="0.55"/>
+    <!-- Right bracket - ghost -->
+    <path d="M 891,27 L 891,4 M 891,27 L 870,27" stroke-width="1.5" opacity="0.2"/>
+  </g>
+
+  <!-- Corner accent squares - doubled -->
+  <g fill="#5c5247">
+    <rect x="6" y="19" width="6" height="6" opacity="0.4"/>
+    <rect x="9" y="16" width="4" height="4" opacity="0.2"/>
+    <rect x="888" y="19" width="6" height="6" opacity="0.4"/>
+    <rect x="885" y="16" width="4" height="4" opacity="0.2"/>
+  </g>
+
+  <!-- Extra bracket details -->
+  <line x1="882" y1="10" x2="894" y2="10" stroke="#5c5247" stroke-width="1.5" opacity="0.3"/>
+  <line x1="886" y1="7" x2="892" y2="7" stroke="#5c5247" stroke-width="1" opacity="0.15"/>
+</svg>

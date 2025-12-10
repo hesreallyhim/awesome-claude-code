@@ -1,0 +1,33 @@
+<svg width="850" height="35" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="0.8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#fafafa;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="850" height="35" fill="#f5f5f5"/>
+  <rect x="7" y="0" width="836" height="35" fill="url(#bgGrad)"/>
+
+  <rect x="7" y="0" width="836" height="35" fill="#FF8C42" opacity="0">
+    <animate attributeName="opacity" values="0;0.02;0" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <g filter="url(#textGlow)">
+    <text x="60" y="22" font-family="monospace" font-size="13" fill="#999999" opacity="0.7">
+      ├──
+    </text>
+    <text x="115" y="22" font-family="monospace" font-size="12" fill="#FF8C42">
+      misc/
+      <animate attributeName="opacity" values="1;0.9;1" dur="0.16s" repeatCount="indefinite"/>
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,86 @@
+<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Tape base gradient - slightly translucent look -->
+    <linearGradient id="tapeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffeaa7;stop-opacity:0.9"/>
+      <stop offset="50%" style="stop-color:#fdcb6e;stop-opacity:0.85"/>
+      <stop offset="100%" style="stop-color:#ffeaa7;stop-opacity:0.9"/>
+    </linearGradient>
+
+    <!-- Subtle paper texture under tape -->
+    <pattern id="tapeTexture" patternUnits="userSpaceOnUse" width="20" height="20">
+      <rect width="20" height="20" fill="transparent"/>
+      <circle cx="5" cy="5" r="0.3" fill="#000" opacity="0.03"/>
+      <circle cx="15" cy="12" r="0.25" fill="#000" opacity="0.02"/>
+      <circle cx="8" cy="18" r="0.3" fill="#000" opacity="0.03"/>
+    </pattern>
+
+    <!-- Torn edge filter -->
+    <filter id="tornTape">
+      <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+
+    <!-- Dot pattern for washi tape -->
+    <pattern id="washiDots" patternUnits="userSpaceOnUse" width="24" height="20">
+      <circle cx="6" cy="10" r="2.5" fill="#e17055" opacity="0.7"/>
+      <circle cx="18" cy="10" r="2.5" fill="#00b894" opacity="0.7"/>
+    </pattern>
+
+    <!-- Stripe pattern alternative -->
+    <pattern id="washiStripes" patternUnits="userSpaceOnUse" width="12" height="20">
+      <rect x="0" y="0" width="4" height="20" fill="#fd79a8" opacity="0.5"/>
+      <rect x="8" y="0" width="4" height="20" fill="#a29bfe" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Main washi tape strip with torn edges -->
+  <g filter="url(#tornTape)">
+    <!-- Tape base -->
+    <rect x="60" y="10" width="780" height="20" fill="url(#tapeGrad)" rx="1"/>
+
+    <!-- Texture overlay -->
+    <rect x="60" y="10" width="780" height="20" fill="url(#tapeTexture)" rx="1"/>
+  </g>
+
+  <!-- Decorative pattern on tape - alternating dots -->
+  <g opacity="0.8">
+    <circle cx="100" cy="20" r="3" fill="#e17055"/>
+    <circle cx="130" cy="20" r="3" fill="#00b894"/>
+    <circle cx="160" cy="20" r="3" fill="#0984e3"/>
+    <circle cx="190" cy="20" r="3" fill="#e17055"/>
+    <circle cx="220" cy="20" r="3" fill="#00b894"/>
+    <circle cx="250" cy="20" r="3" fill="#0984e3"/>
+    <circle cx="280" cy="20" r="3" fill="#e17055"/>
+    <circle cx="310" cy="20" r="3" fill="#00b894"/>
+    <circle cx="340" cy="20" r="3" fill="#0984e3"/>
+    <circle cx="370" cy="20" r="3" fill="#e17055"/>
+    <circle cx="400" cy="20" r="3" fill="#00b894"/>
+    <circle cx="430" cy="20" r="3" fill="#0984e3"/>
+    <circle cx="460" cy="20" r="3" fill="#e17055"/>
+    <circle cx="490" cy="20" r="3" fill="#00b894"/>
+    <circle cx="520" cy="20" r="3" fill="#0984e3"/>
+    <circle cx="550" cy="20" r="3" fill="#e17055"/>
+    <circle cx="580" cy="20" r="3" fill="#00b894"/>
+    <circle cx="610" cy="20" r="3" fill="#0984e3"/>
+    <circle cx="640" cy="20" r="3" fill="#e17055"/>
+    <circle cx="670" cy="20" r="3" fill="#00b894"/>
+    <circle cx="700" cy="20" r="3" fill="#0984e3"/>
+    <circle cx="730" cy="20" r="3" fill="#e17055"/>
+    <circle cx="760" cy="20" r="3" fill="#00b894"/>
+    <circle cx="790" cy="20" r="3" fill="#0984e3"/>
+    <circle cx="820" cy="20" r="3" fill="#e17055"/>
+  </g>
+
+  <!-- Torn edge shadows/highlights -->
+  <g opacity="0.15">
+    <path d="M 60 10 Q 65 8, 75 11 Q 90 9, 110 10" stroke="#000" stroke-width="1" fill="none"/>
+    <path d="M 60 30 Q 70 32, 85 29 Q 100 31, 120 30" stroke="#000" stroke-width="1" fill="none"/>
+    <path d="M 780 10 Q 800 8, 820 11 Q 830 9, 840 10" stroke="#000" stroke-width="1" fill="none"/>
+    <path d="M 780 30 Q 795 32, 810 29 Q 825 31, 840 30" stroke="#000" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- Tiny heart accent -->
+  <path d="M 448 15 Q 448 13, 450 13 Q 452 13, 452 15 Q 452 13, 454 13 Q 456 13, 456 15 Q 456 18, 452 21 Q 448 18, 448 15"
+        fill="#fd79a8" opacity="0.6"/>
+</svg>

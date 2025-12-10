@@ -1,56 +1,137 @@
 <!--lint disable remark-lint:awesome-badge-->
 
-<!-- Responsive Logo with Theme Support -->
-<div align="center">
-  
-  <!-- Same ASCII art for all screen sizes, just scales down on mobile -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg">
-    <img src="assets/logo-light.svg" alt="Awesome Claude Code" width="100%" style="max-width: 900px;">
-  </picture>
-  
+<div align="center" id="awesome-claude-code">
+
+[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
+
 </div>
 
+<!-- Terminal Header - Theme Adaptive -->
+<img src="assets/terminal-header-light-anim-lineprint.svg" alt="Awesome Claude Code Terminal">
 
 <!-- Generated with https://github.com/denvercoder1/readme-typing-svg -->
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&duration=3000&pause=100&color=F7080D&width=680&lines=Lollygagging...;Skedaddling...;Bumbershooting...;Widdershinning...;Higgledy-piggledying...;Doodlebugging...;Fiddle-faddling...;Whimwhamming...;Dilly-dallying...;Flapdoodling...;Ballyhooing...;Galumphing...;Razzle-dazzling...;Tiddle-taddling...;Zigzagging...;Twinkletoeing...;Puddle-jumping...;Snicker-snacking...;Jibber-jabbering...;Frabjoussing...;Piffle-puffling...;Whirligigging...;Bibbity-bobbitying...;)](https://git.io/typing-svg)
+<div align="center">
+
+<br />
+
+<!-- Feature placeholder - full feature coming soon! -->
+<img src="assets/placeholder-light.svg" alt="New Feature - Coming Soon">
+
+</div>
 
 <!--lint enable remark-lint:awesome-badge-->
 
-[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) [![FREEDOM FUNDER](/assets/freedom-funder-badge.svg)](https://bailproject.org)
+<br>
 
-
-# Awesome Claude Code
+<!-- Info Terminal - Theme Adaptive -->
+<img src="assets/info-terminal-light-vintage.svg" alt="System Info Terminal">
 
 <!--lint enable remark-lint:awesome-badge-->
 
-<!--lint disable double-link-->
+<br>
 
-This is a curated list of slash-commands, `CLAUDE.md` files, CLI tools, and other resources and guides for enhancing your [Claude Code](https://docs.anthropic.com/en/docs/claude-code) workflow, productivity, and vibes.
+<!-- Intro Terminal - Theme Adaptive -->
+<div align="center">
+<img src="assets/intro-terminal-light-vintage.svg" alt="About Claude Code">
+</div>
 
-<!--lint enable double-link-->
+<!-- Design Credit & Disclaimer - Theme Adaptive -->
+<div align="center">
+  <img src="assets/designed-by-badge-light.svg" alt="Designed by Claude Code Web">
+  <br>
+  <img src="assets/disclaimer-light.svg" alt="Disclaimer: Not affiliated or endorsed by Anthropic PBC. Claude Code is a product of Anthropic.">
+</div>
 
-Claude Code is a cutting-edge CLI-based coding assistant and agent released by [Anthropic](https://www.anthropic.com/) that you can access in your terminal or IDE. It is a rapidly evolving tool that offers a number of powerful capabilities, and allows for a lot of configuration, in a lot of different ways. Users are actively working out best practices and workflows. It is the hope that this repo will help the community share knowledge and understand how to get the most out of Claude Code.
+<!-- {{ANNOUNCEMENTS}} -->
 
-{{ANNOUNCEMENTS}}
+<div align="center">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/thinking-asterisk.svg" alt="*" width="18" /> <a href="https://git.io/typing-svg"><img align="center" src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&duration=3000&pause=100&color=F7080D&width=320&lines=Lollygagging...;Skedaddling...;Bumbershooting...;Widdershinning...;Higgledy-piggledying...;Doodlebugging...;Fiddle-faddling...;Whimwhamming...;Dilly-dallying...;Flapdoodling...;Ballyhooing...;Galumphing...;Razzle-dazzling...;Tiddle-taddling...;Zigzagging...;Twinkletoeing...;Puddle-jumping...;Snicker-snacking...;Jibber-jabbering...;Frabjoussing...;Piffle-puffling...;Whirligigging...;Bibbity-bobbitying...;" /></a>
+</div>
+
+<div align="center">
+
+### ⚡ TERMINAL NAVIGATION ⚡
+
+<table>
+<tr>
+<td align="center">
+<a href="#agent-skills-">
+<img src="assets/card-skills-light-anim-lineprint.svg" alt="Agent Skills">
+</a>
+</td>
+<td align="center">
+<a href="#workflows--knowledge-guides-">
+<img src="assets/card-workflows-light-anim-lineprint.svg" alt="Workflows">
+</a>
+</td>
+<td align="center">
+<a href="#tooling--">
+<img src="assets/card-tooling-light-anim-lineprint.svg" alt="Tooling">
+</a>
+</td>
+</tr>
+<tr>
+<td align="center">
+<a href="#status-lines-">
+<img src="assets/card-statusline-light-anim-lineprint.svg" alt="Status Lines">
+</a>
+</td>
+<td align="center">
+<a href="#hooks-">
+<img src="assets/card-custom-light-anim-lineprint.svg" alt="Hooks">
+</a>
+</td>
+<td align="center">
+<a href="#slash-commands-">
+<img src="assets/card-commands-light-anim-lineprint.svg" alt="Slash Commands">
+</a>
+</td>
+</tr>
+<tr>
+<td align="center">
+<a href="#claudemd-files-">
+<img src="assets/card-config-light-anim-lineprint.svg" alt="CLAUDE.md Files">
+</a>
+</td>
+<td align="center">
+<a href="#alternative-clients-">
+<img src="assets/card-clients-light-anim-lineprint.svg" alt="Alternative Clients">
+</a>
+</td>
+<td align="center">
+<a href="#official-documentation--">
+<img src="assets/card-docs-light-anim-lineprint.svg" alt="Documentation">
+</a>
+</td>
+</tr>
+</table>
+
+</div>
+
+<br>
 
 {{WEEKLY_SECTION}}
 
+<br>
 
-## Contents [🔝](#awesome-claude-code)
+<div align="center">
 
 {{TABLE_OF_CONTENTS}}
+
+</div>
 
 <br>
 
 {{BODY_SECTIONS}}
 
+<div align="center">
+<img src="/assets/honorable-mentions-header-light.svg" alt="Directory Listing">
+</div>
 
-## Honorable Mentions
+[`prpm`](https://prpm.dev/) &nbsp; by &nbsp; [khaliqgant](https://github.com/khaliqgant) 
 
-[`prpm`](https://prpm.dev/) &nbsp; by &nbsp; [khaliqgant](https://github.com/khaliqgant)    
-`prpm` is something like a plugin marketplace, but with additional support for other providers and coding agents. Although (for the moment 🤞) we are unable to include plugins/marketplaces on the list, I wanted to give special recognition to khaliqgant - after I notified him that I was unable to find any license information for third-party resources that he was hosting on his website, he immediately took action and added a great enhancement to the website's UI, which provides a direct link to the original authors' LICENSE file, as well the ability to view it as a simple dropdown. In my opinion, this is a pretty awesome thing to do to show support for the open source community, and for the developers whose work is featured on this list. I see marketplaces springing up all over the internet now where basic attribution rights are not being respected (maybe for the simple reason that software licenses are complicated!), so I commend khaliqgant for setting a great example with [`prpm`](https://prpm.dev/), and I encourage others to promote and enforce these rights in the service of open source software. 
+`prpm` is like a plugin marketplace, but with additional support for other providers and coding agents. After I notified khaliqgant that I was unable to find any license information for third-party resources that he was hosting on his website, he immediately took action and added a great enhancement to the website's UI, with direct links to original authors' LICENSE files. In my opinion, this is a pretty awesome thing to do to show support for the open source community, and for the developers featured on this list. I see some marketplaces on the internet where basic attribution rights are not being respected, so I commend khaliqgant for setting a great example with [`prpm`](https://prpm.dev/), and I encourage others to promote and enforce these rights in the service of open source software.
 
 ## Contributing 🌻 [🔝](#awesome-claude-code)
 
@@ -74,4 +155,4 @@ This project is released with a [Contributor Code of Conduct](/code-of-conduct.m
 
 ## License
 
-Although the whole point of this list to help promote and grow the open-source community around Claude Code, this list is licensed under a slightly more restrictive license: [Creative Commons CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) - this means you are welcome to copy and redistribute the list, provided you include appropriate attribution; however you are not permitted to distribute any modified versions - and you are not permitted to use it for any commercial purposes. This is to prevent unlawful appropriation of the work of the authors whose resources are listed here. Please note that **all resources included in this list have their own license terms** - if you wish to incorporate those authors' works into your _own_ product, it would be really nice to do so according to the terms that _those authors_ have set out - refusal to do so is a violation of their rights - and while it is up to the author whether or not they wish to take action, please note - I am keeping close tabs on you. 🫶
+This list is licensed under a somewhat restrictive license: [Creative Commons CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) - this means you are welcome to fork, clone, copy and redistribute the list, provided you include appropriate attribution; however you are not permitted to distribute any modified versions - and you are not permitted to use it for any commercial purposes. This is to prevent unlawful appropriation of the work of the authors whose resources are listed here, an issue which has arisen in the past. Please note that **all resources included in this list have their own license terms** - if you wish to incorporate those authors' works into your _own_ product, it would be really nice to do so according to the terms that _those authors_ have set out.

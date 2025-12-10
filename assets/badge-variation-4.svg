@@ -1,0 +1,38 @@
+<svg width="380" height="54" xmlns="http://www.w3.org/2000/svg">
+  <!-- Variation 4: Elegant/Serif - refined typography, decorative flourishes -->
+  <style>
+    @media (prefers-color-scheme: light) {
+      .v4-circle { stroke: #c96442; fill: none; }
+      .v4-initials { fill: #c96442; }
+      .v4-name { fill: #2d2a26; }
+      .v4-author { fill: #8b7355; }
+      .v4-flourish { stroke: #d4c4b0; }
+      .v4-dot { fill: #c96442; }
+    }
+    @media (prefers-color-scheme: dark) {
+      .v4-circle { stroke: #ff6b4a; fill: none; }
+      .v4-initials { fill: #ff6b4a; }
+      .v4-name { fill: #f5f5f5; }
+      .v4-author { fill: #b0a090; }
+      .v4-flourish { stroke: #4a4540; }
+      .v4-dot { fill: #ff6b4a; }
+    }
+  </style>
+
+  <!-- Circular initials frame -->
+  <circle class="v4-circle" cx="30" cy="27" r="18" stroke-width="2.25"/>
+  <text class="v4-initials" x="30" y="33" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-style="italic" font-weight="400" text-anchor="middle">CS</text>
+
+  <!-- Elegant name in serif -->
+  <text class="v4-name" x="60" y="32" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="400" letter-spacing="1">Claude Squad</text>
+
+  <!-- Decorative dot separator -->
+  <circle class="v4-dot" cx="218" cy="27" r="2"/>
+
+  <!-- Author in small caps style -->
+  <text class="v4-author" x="230" y="31" font-family="Georgia, 'Times New Roman', serif" font-size="11" font-weight="400" letter-spacing="2">ANTHROPICS</text>
+
+  <!-- Decorative flourish lines -->
+  <path class="v4-flourish" d="M60 44 Q120 44 180 44 Q200 44 200 38" fill="none" stroke-width="1.75"/>
+  <path class="v4-flourish" d="M320 44 Q280 44 240 44 Q220 44 220 38" fill="none" stroke-width="1.75"/>
+</svg>

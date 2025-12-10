@@ -1,0 +1,259 @@
+<svg width="900" height="180" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Vintage Manual Style - LINE PRINTER ANIMATION (Mechanical)
+
+    Animation Cycle (7 seconds total):
+    ┌─────────────────────────────────────────────────────────────────┐
+    │ 0.00-0.29 (2.0s): Linear downward reveal - paper feeds through  │
+    │ 0.29-0.40 (0.8s): Horizontal streak sweep - print head passes   │
+    │ 0.40-0.86 (3.2s): Hold/pause - content fully visible            │
+    │ 0.86-0.94 (0.6s): Rapid linear upward wipe - paper rewinds      │
+    │ 0.94-1.0 (0.4s): Brief blank before next cycle                  │
+    └─────────────────────────────────────────────────────────────────┘
+    Motion: Linear (mechanical) - no easing for authentic printer feel
+  -->
+  <defs>
+    <linearGradient id="paperBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#faf8f3"/>
+      <stop offset="100%" style="stop-color:#f5f0e6"/>
+    </linearGradient>
+
+    <!-- Clip path with mechanical timing: down - hold - rapid up - short pause -->
+    <clipPath id="lineReveal">
+      <rect x="0" y="0" width="900" height="0">
+        <animate
+          attributeName="height"
+          values="0;180;180;0;0"
+          keyTimes="0;0.286;0.857;0.943;1"
+          dur="7s"
+          repeatCount="indefinite"
+          calcMode="linear"/>
+      </rect>
+    </clipPath>
+
+    <!-- Perforated edge pattern -->
+    <pattern id="perfEdge" x="0" y="0" width="10" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="10" r="2.5" fill="none" stroke="#c4baa8" stroke-width="0.5"/>
+    </pattern>
+
+    <!-- Green bar pattern -->
+    <pattern id="greenBar" x="0" y="0" width="100" height="60" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="100" height="30" fill="#4a7c4a" opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <!-- Paper background -->
+  <rect width="900" height="180" fill="url(#paperBg)"/>
+
+  <!-- Green bar paper effect -->
+  <rect x="25" y="0" width="850" height="180" fill="url(#greenBar)"/>
+
+  <!-- Perforated edges - tractor feed strips -->
+  <g opacity="0.6">
+    <!-- Left strip -->
+    <rect x="0" y="0" width="20" height="180" fill="#f0ebe0"/>
+    <rect x="0" y="0" width="20" height="180" fill="url(#perfEdge)"/>
+
+    <!-- Right strip -->
+    <rect x="880" y="0" width="20" height="180" fill="#f0ebe0"/>
+    <rect x="880" y="0" width="20" height="180" fill="url(#perfEdge)"/>
+  </g>
+
+  <!-- Feed holes - punched circles -->
+  <g fill="#e8e3d9" stroke="#c4baa8" stroke-width="0.5">
+    <!-- Left column -->
+    <circle cx="10" cy="15" r="4"/>
+    <circle cx="10" cy="45" r="4"/>
+    <circle cx="10" cy="75" r="4"/>
+    <circle cx="10" cy="105" r="4"/>
+    <circle cx="10" cy="135" r="4"/>
+    <circle cx="10" cy="165" r="4"/>
+    <!-- Right column -->
+    <circle cx="890" cy="15" r="4"/>
+    <circle cx="890" cy="45" r="4"/>
+    <circle cx="890" cy="75" r="4"/>
+    <circle cx="890" cy="105" r="4"/>
+    <circle cx="890" cy="135" r="4"/>
+    <circle cx="890" cy="165" r="4"/>
+  </g>
+
+  <!-- Content that reveals with clip path -->
+  <g clip-path="url(#lineReveal)">
+    <!-- Top margin line -->
+    <line x1="30" y1="18" x2="870" y2="18" stroke="#c4baa8" stroke-width="0.5" stroke-dasharray="2,4" opacity="0.5"/>
+
+    <!-- Page header -->
+    <text x="50" y="35"
+          font-family="'Courier New', Courier, monospace"
+          font-size="9"
+          fill="#8a7b6f"
+          opacity="0.6">
+      ══════════════════════════════════════════════════════════════════════════════════════════════════════
+    </text>
+
+    <!-- Top decorative rule -->
+    <g opacity="0.5">
+      <line x1="200" y1="52" x2="700" y2="52" stroke="#5c5247" stroke-width="1"/>
+      <circle cx="200" cy="52" r="2" fill="#5c5247"/>
+      <circle cx="450" cy="52" r="3" fill="#c96442"/>
+      <circle cx="700" cy="52" r="2" fill="#5c5247"/>
+    </g>
+
+    <!-- Main title -->
+    <text x="450" y="88"
+          font-family="'Courier New', Courier, monospace"
+          font-size="28"
+          font-weight="700"
+          fill="#2d251f"
+          text-anchor="middle"
+          letter-spacing="4">
+      AWESOME CLAUDE CODE
+    </text>
+
+    <!-- Subtitle -->
+    <text x="450" y="110"
+          font-family="'Courier New', Courier, monospace"
+          font-size="11"
+          fill="#5c5247"
+          text-anchor="middle"
+          letter-spacing="2">
+      COMMUNITY REFERENCE GUIDE
+    </text>
+
+    <!-- Decorative separator -->
+    <text x="450" y="128"
+          font-family="'Courier New', Courier, monospace"
+          font-size="10"
+          fill="#8a7b6f"
+          text-anchor="middle"
+          opacity="0.5">
+      ─────────────────────────────────────────
+    </text>
+
+    <!-- Tagline -->
+    <text x="450" y="148"
+          font-family="'Courier New', Courier, monospace"
+          font-size="10"
+          fill="#5c5247"
+          text-anchor="middle">
+      "It's not just a coding agent - it's a lifestyle"
+    </text>
+
+    <!-- Footer line -->
+    <text x="450" y="168"
+          font-family="'Courier New', Courier, monospace"
+          font-size="8"
+          fill="#8a7b6f"
+          text-anchor="middle"
+          opacity="0.5">
+      REV.2025  │  PRINTED: ████-██-██  │  PAGE 001 OF 001
+    </text>
+  </g>
+
+  <!-- Print head / scan line - moves with content (mechanical linear motion) -->
+  <g>
+    <!-- Main print head bar -->
+    <line x1="25" y1="0" x2="875" y2="0" stroke="#c96442" stroke-width="2" opacity="0.7">
+      <animate
+        attributeName="y1"
+        values="0;180;180;0;0"
+        keyTimes="0;0.286;0.857;0.943;1"
+        dur="7s"
+        repeatCount="indefinite"
+        calcMode="linear"/>
+      <animate
+        attributeName="y2"
+        values="0;180;180;0;0"
+        keyTimes="0;0.286;0.857;0.943;1"
+        dur="7s"
+        repeatCount="indefinite"
+        calcMode="linear"/>
+      <!-- Fade out during hold, fade in during movement -->
+      <animate
+        attributeName="opacity"
+        values="0.8;0.8;0.2;0.8;0.8"
+        keyTimes="0;0.286;0.5;0.857;1"
+        dur="7s"
+        repeatCount="indefinite"/>
+    </line>
+
+    <!-- Print head glow/highlight -->
+    <rect x="25" y="-3" width="850" height="6" fill="#c96442" opacity="0.15">
+      <animate
+        attributeName="y"
+        values="-3;177;177;-3;-3"
+        keyTimes="0;0.286;0.857;0.943;1"
+        dur="7s"
+        repeatCount="indefinite"
+        calcMode="linear"/>
+      <animate
+        attributeName="opacity"
+        values="0.2;0.2;0;0.2;0.2"
+        keyTimes="0;0.286;0.5;0.857;1"
+        dur="7s"
+        repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Horizontal streak sweep - old printer ribbon/carriage effect -->
+  <!-- Multiple vertical streaks that sweep left-to-right after content reveals -->
+  <g opacity="0.25">
+    <!-- Main streak cluster - varying heights for organic "ribbon" feel -->
+    <!-- Streak 1 - tall -->
+    <rect x="-60" y="20" width="3" height="140" fill="#5c5247" rx="1">
+      <animate
+        attributeName="x"
+        values="-60;-60;920;920;-60"
+        keyTimes="0;0.286;0.4;0.943;1"
+        dur="7s"
+        repeatCount="indefinite"
+        calcMode="linear"/>
+    </rect>
+    <!-- Streak 2 - medium, slightly offset -->
+    <rect x="-50" y="35" width="2" height="110" fill="#6b5b4f" rx="1">
+      <animate
+        attributeName="x"
+        values="-50;-50;930;930;-50"
+        keyTimes="0;0.286;0.4;0.943;1"
+        dur="7s"
+        repeatCount="indefinite"
+        calcMode="linear"/>
+    </rect>
+    <!-- Streak 3 - short accent -->
+    <rect x="-42" y="50" width="1.5" height="80" fill="#c96442" rx="0.5">
+      <animate
+        attributeName="x"
+        values="-42;-42;938;938;-42"
+        keyTimes="0;0.286;0.4;0.943;1"
+        dur="7s"
+        repeatCount="indefinite"
+        calcMode="linear"/>
+    </rect>
+    <!-- Streak 4 - thin wispy -->
+    <rect x="-36" y="40" width="1" height="100" fill="#8a7b6f" rx="0.5">
+      <animate
+        attributeName="x"
+        values="-36;-36;944;944;-36"
+        keyTimes="0;0.286;0.4;0.943;1"
+        dur="7s"
+        repeatCount="indefinite"
+        calcMode="linear"/>
+    </rect>
+    <!-- Streak 5 - trailing whisp -->
+    <rect x="-28" y="55" width="0.8" height="70" fill="#5c5247" rx="0.4">
+      <animate
+        attributeName="x"
+        values="-28;-28;952;952;-28"
+        keyTimes="0;0.286;0.4;0.943;1"
+        dur="7s"
+        repeatCount="indefinite"
+        calcMode="linear"/>
+    </rect>
+  </g>
+
+  <!-- Paper edge shadows for depth -->
+  <g opacity="0.1">
+    <line x1="20" y1="0" x2="20" y2="180" stroke="#3d3530" stroke-width="1"/>
+    <line x1="880" y1="0" x2="880" y2="180" stroke="#3d3530" stroke-width="1"/>
+  </g>
+</svg>

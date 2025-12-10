@@ -1,0 +1,55 @@
+<svg width="850" height="28" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Vintage Manual Style - TOC Sub Entry with SCAN LINE animation
+    Cycle: 30s | Start delay: 6.8s | Horizontal streak sweep only
+  -->
+  <defs>
+    <linearGradient id="paperBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#faf8f3"/>
+      <stop offset="100%" style="stop-color:#f5f0e6"/>
+    </linearGradient>
+    <pattern id="leaderDotsSub" x="0" y="0" width="12" height="4" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.6" fill="#a09080" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="850" height="28" fill="url(#paperBg)"/>
+
+  <!-- Left/right border continuation -->
+  <line x1="2" y1="0" x2="2" y2="28" stroke="#c4baa8" stroke-width="1"/>
+  <line x1="848" y1="0" x2="848" y2="28" stroke="#c4baa8" stroke-width="1"/>
+
+  <!-- Indent marker -->
+  <text x="80" y="18"
+        font-family="'Courier New', Courier, monospace"
+        font-size="10"
+        fill="#8a7b6f"
+        opacity="0.6">
+    └─
+  </text>
+
+  <!-- Sub-section title -->
+  <text x="120" y="18"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="12"
+        font-style="italic"
+        fill="#5c5247"
+        opacity="0.85">
+    Project Scaffolding &amp; MCP
+  </text>
+
+  <!-- Leader dots -->
+  <rect x="305" y="15" width="415" height="4" fill="url(#leaderDotsSub)"/>
+
+  <!-- Reference -->
+  <text x="760" y="18"
+        font-family="'Courier New', Courier, monospace"
+        font-size="10"
+        fill="#7a6b5f"
+        text-anchor="end"
+        opacity="0.6">
+    §7.3
+  </text>
+
+</svg>

@@ -1,0 +1,113 @@
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FFF8F0;stop-opacity:1">
+        <animate attributeName="stop-color" values="#FFF8F0;#FFF0F8;#F0F8FF;#FFF8F0" dur="12s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+
+  <rect width="200" height="100" rx="6" fill="url(#bgGrad)"/>
+
+  <g stroke="#9C4EFF" stroke-width="1" fill="none" opacity="0.3">
+    <line x1="40" y1="5" x2="160" y2="5"/>
+    <line x1="195" y1="30" x2="195" y2="70"/>
+    <line x1="40" y1="95" x2="160" y2="95"/>
+    <line x1="5" y1="30" x2="5" y2="70"/>
+  </g>
+
+  <g filter="url(#softGlow)">
+    <circle r="2" fill="#9C4EFF">
+      <animate attributeName="cx" values="40;160;40" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="5;5;5" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0.8;1;0" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2" fill="#FF6B35">
+      <animate attributeName="cx" values="195;195;195" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="30;70;30" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0.8;1;0" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2" fill="#FFD700">
+      <animate attributeName="cx" values="160;40;160" dur="11s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="95;95;95" dur="11s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0.8;1;0" dur="11s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2" fill="#FF8C42">
+      <animate attributeName="cx" values="5;5;5" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="70;30;70" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0.8;1;0" dur="12s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g stroke-width="2" fill="none" filter="url(#softGlow)">
+    <path d="M 15,15 L 25,15 M 15,15 L 15,25" stroke="#9C4EFF" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.9;0.6" dur="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;2.5;2" dur="3.2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 185,15 L 175,15 M 185,15 L 185,25" stroke="#FF6B35" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.9;0.6" dur="3.4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;2.5;2" dur="3.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 15,85 L 25,85 M 15,85 L 15,75" stroke="#FFD700" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.9;0.6" dur="3.6s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;2.5;2" dur="3.6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 185,85 L 175,85 M 185,85 L 185,75" stroke="#FF8C42" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.9;0.6" dur="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="2;2.5;2" dur="3.8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <rect width="200" height="100" rx="6" fill="none" stroke="#FFB380" stroke-width="2" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.7;0.5" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <g filter="url(#softGlow)">
+    <text x="100" y="38" font-family="monospace" font-size="16" font-weight="bold" fill="#9C4EFF" text-anchor="middle">
+      🧰 TOOLING
+      <animate attributeName="opacity" values="1;0.95;1" dur="2s" repeatCount="indefinite"/>
+    </text>
+    <text x="100" y="58" font-family="monospace" font-size="9" fill="#5A3E9E" text-anchor="middle" opacity="0.9">
+      Apps &amp; utilities
+    </text>
+    <text x="100" y="71" font-family="monospace" font-size="9" fill="#5A3E9E" text-anchor="middle" opacity="0.9">
+      built on Claude Code
+    </text>
+  </g>
+
+  <ellipse cx="50" cy="30" rx="30" ry="20" fill="#FFFFFF" opacity="0.15">
+    <animate attributeName="opacity" values="0.15;0.25;0.15" dur="4s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <g opacity="0.4">
+    <circle cx="30" cy="20" r="1" fill="#9C4EFF">
+      <animate attributeName="cy" values="20;15;20" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="170" cy="80" r="1" fill="#FFD700">
+      <animate attributeName="cy" values="80;75;80" dur="6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- VHS-style vertical glitch effect -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0.7;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0" dur="17s" begin="7s" repeatCount="indefinite"/>
+    <rect x="0" y="-10" width="200" height="3" fill="#9C4EFF" opacity="0.4">
+      <animate attributeName="y" values="-10;-10;-10;110;-10;-10;-10;-10;-10;-10;-10;-10;-10;-10;-10;-10;-10;-10;-10;-10" dur="17s" begin="7s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0" y="-8" width="200" height="2" fill="#FFFFFF" opacity="0.6">
+      <animate attributeName="y" values="-8;-8;-8;112;-8;-8;-8;-8;-8;-8;-8;-8;-8;-8;-8;-8;-8;-8;-8;-8" dur="17s" begin="7s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0" y="-15" width="200" height="1" fill="#FF6B35" opacity="0.3">
+      <animate attributeName="y" values="-15;-15;-15;105;-15;-15;-15;-15;-15;-15;-15;-15;-15;-15;-15;-15;-15;-15;-15;-15" dur="17s" begin="7s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
