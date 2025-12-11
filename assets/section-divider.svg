@@ -1,0 +1,171 @@
+<svg width="900" height="38" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Multi-color animated gradient for dark mode -->
+    <linearGradient id="dividerGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#33ff33;stop-opacity:0.85">
+        <animate attributeName="stop-opacity" values="0.85;1;0.85" dur="1.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="25%" style="stop-color:#00ffff;stop-opacity:0.9">
+        <animate attributeName="stop-opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#66ff66;stop-opacity:0.95">
+        <animate attributeName="stop-opacity" values="0.95;1;0.95" dur="1.8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="75%" style="stop-color:#00ff99;stop-opacity:0.9">
+        <animate attributeName="stop-opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#33ff33;stop-opacity:0.85">
+        <animate attributeName="stop-opacity" values="0.85;1;0.85" dur="1.5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Glow effect -->
+    <filter id="dividerGlow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Strong glow for electricity -->
+    <filter id="electricGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Top divider line -->
+  <rect x="0" y="2" width="900" height="3" fill="url(#dividerGrad1)" filter="url(#dividerGlow)" rx="1.5"/>
+
+  <!-- Bottom divider line (32px below top line) -->
+  <rect x="0" y="34" width="900" height="3" fill="url(#dividerGrad1)" filter="url(#dividerGlow)" rx="1.5"/>
+
+  <!-- Top line: orb moving RIGHT to LEFT -->
+  <g>
+    <circle r="4" fill="#ffffff" opacity="0.95" filter="url(#dividerGlow)">
+      <animateMotion dur="3.5s" repeatCount="indefinite">
+        <mpath href="#topPath"/>
+      </animateMotion>
+      <animate attributeName="r" values="4;9;4" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Electrical arcs from top orb -->
+    <g opacity="1.0">
+      <animateMotion dur="3.5s" repeatCount="indefinite">
+        <mpath href="#topPath"/>
+      </animateMotion>
+
+      <!-- Arc 1 -->
+      <path d="M 0 0 Q 5 -8, 12 -5" stroke="#33ff33" stroke-width="1.5" fill="none" filter="url(#electricGlow)">
+        <animate attributeName="opacity" values="0.6;1;0.7;1;0.6" dur="0.3s" repeatCount="indefinite"/>
+        <animate attributeName="d" values="M 0 0 Q 5 -8, 12 -5; M 0 0 Q 6 -6, 12 -7; M 0 0 Q 4 -9, 12 -4" dur="0.2s" repeatCount="indefinite"/>
+      </path>
+
+      <!-- Arc 2 -->
+      <path d="M 0 0 Q -4 -7, -10 -6" stroke="#00ffff" stroke-width="1.5" fill="none" filter="url(#electricGlow)">
+        <animate attributeName="opacity" values="0.8;0.5;1;0.6;0.7" dur="0.25s" repeatCount="indefinite"/>
+        <animate attributeName="d" values="M 0 0 Q -4 -7, -10 -6; M 0 0 Q -5 -5, -10 -8; M 0 0 Q -3 -8, -10 -5" dur="0.18s" repeatCount="indefinite"/>
+      </path>
+
+      <!-- Arc 3 -->
+      <path d="M 0 0 Q 3 -10, 8 -12" stroke="#66ff66" stroke-width="1.2" fill="none" filter="url(#electricGlow)">
+        <animate attributeName="opacity" values="0.6;0.9;0.5;0.8;0.6" dur="0.28s" repeatCount="indefinite"/>
+        <animate attributeName="d" values="M 0 0 Q 3 -10, 8 -12; M 0 0 Q 4 -9, 8 -14; M 0 0 Q 2 -11, 8 -11" dur="0.22s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <!-- Bottom line: orb moving LEFT to RIGHT -->
+  <g>
+    <circle r="4" fill="#ffffff" opacity="0.95" filter="url(#dividerGlow)">
+      <animateMotion dur="3.5s" repeatCount="indefinite">
+        <mpath href="#bottomPath"/>
+      </animateMotion>
+      <animate attributeName="r" values="4;9;4" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Electrical arcs from bottom orb -->
+    <g opacity="1.0">
+      <animateMotion dur="3.5s" repeatCount="indefinite">
+        <mpath href="#bottomPath"/>
+      </animateMotion>
+
+      <!-- Arc 1 -->
+      <path d="M 0 0 Q -5 8, -12 5" stroke="#33ff33" stroke-width="1.5" fill="none" filter="url(#electricGlow)">
+        <animate attributeName="opacity" values="0.7;0.5;1;0.6;0.8" dur="0.32s" repeatCount="indefinite"/>
+        <animate attributeName="d" values="M 0 0 Q -5 8, -12 5; M 0 0 Q -6 6, -12 7; M 0 0 Q -4 9, -12 4" dur="0.19s" repeatCount="indefinite"/>
+      </path>
+
+      <!-- Arc 2 -->
+      <path d="M 0 0 Q 4 7, 10 6" stroke="#00ffff" stroke-width="1.5" fill="none" filter="url(#electricGlow)">
+        <animate attributeName="opacity" values="0.5;0.9;0.6;0.7;1" dur="0.27s" repeatCount="indefinite"/>
+        <animate attributeName="d" values="M 0 0 Q 4 7, 10 6; M 0 0 Q 5 5, 10 8; M 0 0 Q 3 8, 10 5" dur="0.21s" repeatCount="indefinite"/>
+      </path>
+
+      <!-- Arc 3 -->
+      <path d="M 0 0 Q -3 10, -8 12" stroke="#66ff66" stroke-width="1.2" fill="none" filter="url(#electricGlow)">
+        <animate attributeName="opacity" values="0.9;0.5;0.7;1;0.6" dur="0.3s" repeatCount="indefinite"/>
+        <animate attributeName="d" values="M 0 0 Q -3 10, -8 12; M 0 0 Q -4 9, -8 14; M 0 0 Q -2 11, -8 11" dur="0.24s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <!-- ELECTRICAL CONNECTION when orbs meet in middle -->
+  <g opacity="0">
+    <!-- Fade in when orbs approach center -->
+    <animate attributeName="opacity"
+             values="0;0;0;0;1;1;1;0;0;0;0;0;0;0"
+             keyTimes="0;0.35;0.38;0.4;0.44;0.5;0.56;0.6;0.62;0.65;0.7;0.8;0.9;1"
+             dur="3.5s" repeatCount="indefinite"/>
+
+    <!-- Central connection arc 1 - main bridge -->
+    <path d="M 450 3.5 Q 445 18, 450 35.5" stroke="#FFFFFF" stroke-width="2" fill="none" filter="url(#electricGlow)">
+      <animate attributeName="d"
+               values="M 450 3.5 Q 445 18, 450 35.5;
+                       M 450 3.5 Q 455 18, 450 35.5;
+                       M 450 3.5 Q 442 18, 450 35.5;
+                       M 450 3.5 Q 453 18, 450 35.5"
+               dur="0.15s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.9;1;0.8" dur="0.12s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Connection arc 2 - side branch -->
+    <path d="M 445 3.5 Q 438 18, 445 35.5" stroke="#33ff33" stroke-width="1.5" fill="none" filter="url(#electricGlow)">
+      <animate attributeName="d"
+               values="M 445 3.5 Q 438 18, 445 35.5;
+                       M 445 3.5 Q 442 18, 445 35.5;
+                       M 445 3.5 Q 436 18, 445 35.5"
+               dur="0.13s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;1;0.6;0.9" dur="0.11s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Connection arc 3 - other side -->
+    <path d="M 455 3.5 Q 462 18, 455 35.5" stroke="#00ffff" stroke-width="1.5" fill="none" filter="url(#electricGlow)">
+      <animate attributeName="d"
+               values="M 455 3.5 Q 462 18, 455 35.5;
+                       M 455 3.5 Q 458 18, 455 35.5;
+                       M 455 3.5 Q 464 18, 455 35.5"
+               dur="0.14s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.8;1" dur="0.13s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Small arcs around connection point -->
+    <path d="M 448 18 Q 445 20, 443 22" stroke="#66ff66" stroke-width="1" fill="none" filter="url(#electricGlow)">
+      <animate attributeName="opacity" values="0;1;0;0.9;0" dur="0.1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 452 18 Q 455 20, 457 22" stroke="#66ff66" stroke-width="1" fill="none" filter="url(#electricGlow)">
+      <animate attributeName="opacity" values="0.9;0;1;0;0.8" dur="0.12s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Hidden paths for animation -->
+  <path id="topPath" d="M 900 3.5 L 0 3.5" fill="none" stroke="none"/>
+  <path id="bottomPath" d="M 0 35.5 L 900 35.5" fill="none" stroke="none"/>
+</svg>

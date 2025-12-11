@@ -1,0 +1,99 @@
+<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Retro phosphor green gradient -->
+    <linearGradient id="scanlineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ff41;stop-opacity:0"/>
+      <stop offset="15%" style="stop-color:#00ff41;stop-opacity:0.8"/>
+      <stop offset="50%" style="stop-color:#39ff14;stop-opacity:1"/>
+      <stop offset="85%" style="stop-color:#00ff41;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#00ff41;stop-opacity:0"/>
+    </linearGradient>
+
+    <!-- CRT glow effect -->
+    <filter id="crtGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Flicker filter -->
+    <filter id="flicker">
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feComponentTransfer result="flickered">
+        <feFuncA type="discrete" tableValues="0.8 1 0.9 1 0.85">
+          <animate attributeName="tableValues"
+                   values="0.8 1 0.9 1 0.85; 1 0.85 1 0.9 0.95; 0.9 1 0.85 1 0.8"
+                   dur="0.1s" repeatCount="indefinite"/>
+        </feFuncA>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="flickered"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Main scanlines - multiple thin lines with staggered opacity -->
+  <g filter="url(#crtGlow)">
+    <!-- Scanline 1 -->
+    <rect x="50" y="8" width="800" height="1.5" fill="url(#scanlineGrad)" rx="0.75">
+      <animate attributeName="opacity" values="0.6;1;0.7;0.9;0.6" dur="0.15s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Scanline 2 -->
+    <rect x="100" y="12" width="700" height="1" fill="url(#scanlineGrad)" rx="0.5">
+      <animate attributeName="opacity" values="0.4;0.8;0.5;0.7;0.4" dur="0.12s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Main center scanline -->
+    <rect x="0" y="18" width="900" height="2.5" fill="url(#scanlineGrad)" rx="1.25">
+      <animate attributeName="opacity" values="0.9;1;0.85;1;0.9" dur="0.08s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Scanline 4 -->
+    <rect x="100" y="24" width="700" height="1" fill="url(#scanlineGrad)" rx="0.5">
+      <animate attributeName="opacity" values="0.5;0.7;0.4;0.8;0.5" dur="0.13s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Scanline 5 -->
+    <rect x="50" y="28" width="800" height="1.5" fill="url(#scanlineGrad)" rx="0.75">
+      <animate attributeName="opacity" values="0.7;0.9;0.6;1;0.7" dur="0.14s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Scan sweep effect - bright line that moves across -->
+  <rect x="0" y="16" width="30" height="6" fill="#00ff41" opacity="0.3" filter="url(#crtGlow)">
+    <animate attributeName="x" values="-30;930" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.4;0.3;0.4;0" dur="2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Static noise dots that flicker -->
+  <g opacity="0.4">
+    <circle cx="150" cy="19" r="1" fill="#00ff41">
+      <animate attributeName="opacity" values="0;1;0" dur="0.05s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="320" cy="17" r="0.8" fill="#39ff14">
+      <animate attributeName="opacity" values="1;0;1" dur="0.07s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="480" cy="20" r="1.2" fill="#00ff41">
+      <animate attributeName="opacity" values="0;1;0;1;0" dur="0.04s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="620" cy="18" r="0.7" fill="#39ff14">
+      <animate attributeName="opacity" values="1;0;0;1" dur="0.06s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="750" cy="21" r="1" fill="#00ff41">
+      <animate attributeName="opacity" values="0;1;1;0" dur="0.08s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Retro terminal cursor blinking at edges -->
+  <rect x="20" y="16" width="8" height="6" fill="#00ff41" opacity="0" filter="url(#crtGlow)">
+    <animate attributeName="opacity" values="0;0.8;0.8;0" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="872" y="16" width="8" height="6" fill="#00ff41" opacity="0" filter="url(#crtGlow)">
+    <animate attributeName="opacity" values="0;0;0.8;0.8;0" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>

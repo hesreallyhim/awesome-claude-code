@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="36" viewBox="0 0 320 36" role="img" aria-label="Disclaimer: Not affiliated or endorsed by Anthropic PBC. Claude Code is a trademark of Anthropic.">
+  <text x="50%" y="14" fill="#e5e7eb" font-family="Inter, 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="0.15px" text-anchor="middle">
+    <tspan x="50%" dy="0">Not affiliated or endorsed by Anthropic PBC.</tspan>
+    <tspan x="50%" dy="14">Claude Code is a product of Anthropic.</tspan>
+  </text>
+</svg>

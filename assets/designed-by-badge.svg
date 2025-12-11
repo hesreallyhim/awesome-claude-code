@@ -1,0 +1,83 @@
+<svg width="280" height="32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient for badge background -->
+    <linearGradient id="badgeBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a2f0a;stop-opacity:0.9"/>
+      <stop offset="50%" style="stop-color:#0f380f;stop-opacity:0.95">
+        <animate attributeName="stop-opacity" values="0.95;1;0.95" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#0a2f0a;stop-opacity:0.9"/>
+    </linearGradient>
+
+    <!-- Shimmer effect -->
+    <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#33ff33;stop-opacity:0">
+        <animate attributeName="offset" values="-0.5;1.5" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#66ff66;stop-opacity:0.8">
+        <animate attributeName="offset" values="-0.25;1.75" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#33ff33;stop-opacity:0">
+        <animate attributeName="offset" values="0;2" dur="3s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Badge background -->
+  <rect x="1" y="1" width="278" height="30" rx="4" fill="url(#badgeBg)" stroke="#33ff33" stroke-width="1" opacity="0.8"/>
+
+  <!-- Shimmer overlay -->
+  <rect x="1" y="1" width="278" height="30" rx="4" fill="url(#shimmer)" opacity="0.3"/>
+
+  <!-- Main text -->
+  <g filter="url(#glow)">
+    <!-- Paint palette emoji -->
+    <text x="12" y="21" font-family="monospace" font-size="16" fill="#ffaa00">
+      🎨
+      <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- "Designed by" text -->
+    <text x="50" y="21" font-family="monospace" font-size="11" fill="#66ff66" font-weight="normal">
+      Designed by
+      <animate attributeName="opacity" values="1;0.95;1" dur="0.1s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- "Claude Code Web" text -->
+    <text x="130" y="21" font-family="monospace" font-size="11" fill="#33ff33" font-weight="bold">
+      Claude Code Web
+      <animate attributeName="opacity" values="1;0.97;1" dur="0.12s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Sparkle emoji (right side for balance) -->
+    <text x="252" y="21" font-family="monospace" font-size="16" fill="#ffaa00">
+      ✨
+      <animate attributeName="opacity" values="1;0.7;1" dur="2.2s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Sparkle stars that appear periodically -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0;1;0.8;0;0;0;0" dur="6s" repeatCount="indefinite"/>
+    <text x="30" y="10" font-family="monospace" font-size="10" fill="#ffaa00">✨</text>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;0;1;0.8;0;0;0;0;0" dur="6s" repeatCount="indefinite"/>
+    <text x="250" y="27" font-family="monospace" font-size="10" fill="#66ff66">✨</text>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;0.8;0;0;0;0;0;0" dur="6s" repeatCount="indefinite"/>
+    <text x="140" y="9" font-family="monospace" font-size="8" fill="#33ff33">✦</text>
+  </g>
+</svg>

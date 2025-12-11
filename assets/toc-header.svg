@@ -1,0 +1,48 @@
+<svg width="850" height="60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="crtGlow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="scanlines" x="0" y="0" width="100%" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="100%" height="2" fill="#000000" opacity="0.25"/>
+    </pattern>
+
+    <linearGradient id="phosphor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f380f;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0a2f0a;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Monitor bezel top -->
+  <rect width="850" height="60" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="3"/>
+
+  <!-- Screen -->
+  <rect x="7" y="7" width="836" height="46" fill="url(#phosphor)"/>
+  <rect x="7" y="7" width="836" height="46" fill="url(#scanlines)"/>
+
+  <!-- Content -->
+  <g filter="url(#crtGlow)">
+    <text x="20" y="28" font-family="monospace" font-size="14" fill="#66ff66" opacity="0.9">
+      user@awesome-claude-code:~$
+    </text>
+    <text x="260" y="28" font-family="monospace" font-size="14" fill="#33ff33">
+      ls -la /resources/
+      <animate attributeName="opacity" values="1;0.95;1" dur="0.12s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Blinking cursor -->
+    <rect x="465" y="16" width="8" height="16" fill="#33ff33">
+      <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Power LED -->
+  <circle cx="830" cy="13" r="3" fill="#33ff33" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

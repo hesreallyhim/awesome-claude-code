@@ -1,0 +1,58 @@
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="crtGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="scanlines" x="0" y="0" width="100%" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="100%" height="2" fill="#000000" opacity="0.3"/>
+    </pattern>
+
+    <filter id="static">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7">
+        <animate attributeName="seed" values="7;11;9;13;8;14;10;12" dur="0.48s" repeatCount="indefinite"/>
+      </feTurbulence>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+
+    <!-- Cyan phosphor -->
+    <linearGradient id="phosphorCyan2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#003838;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#002828;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="200" height="100" rx="4" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="3"/>
+  <rect x="6" y="6" width="188" height="88" rx="2" fill="url(#phosphorCyan2)"/>
+  <rect x="6" y="6" width="188" height="88" rx="2" fill="url(#scanlines)"/>
+
+  <g filter="url(#crtGlow)">
+    <text x="100" y="35" font-family="monospace" font-size="16" font-weight="bold" fill="#00ffff" text-anchor="middle">
+      🏛️ DOCS
+      <animate attributeName="opacity" values="1;0.95;1" dur="0.105s" repeatCount="indefinite"/>
+    </text>
+    <text x="100" y="55" font-family="monospace" font-size="9" fill="#66ffff" text-anchor="middle" opacity="0.9">
+      Official guides
+    </text>
+    <text x="100" y="68" font-family="monospace" font-size="9" fill="#66ffff" text-anchor="middle" opacity="0.9">
+      &amp; resources
+    </text>
+  </g>
+
+  <ellipse cx="50" cy="30" rx="30" ry="20" fill="#ffffff" opacity="0.03"/>
+
+  <rect x="6" y="6" width="188" height="88" rx="2" fill="url(#static)" opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0;0.15;0;0;0;0;0" dur="4.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;0;0;0;0;0;0;0" dur="6.2s" repeatCount="indefinite"/>
+    <rect x="32" y="45" width="48" height="2" fill="#00ffff"/>
+    <rect x="128" y="65" width="42" height="2" fill="#00ffff"/>
+  </g>
+</svg>

@@ -1,0 +1,54 @@
+<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#33ff33;stop-opacity:0.85">
+        <animate attributeName="stop-opacity" values="0.85;1;0.85" dur="2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="33%" style="stop-color:#00ffff;stop-opacity:0.9">
+        <animate attributeName="stop-opacity" values="0.9;1;0.9" dur="2.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="66%" style="stop-color:#66ff66;stop-opacity:0.9">
+        <animate attributeName="stop-opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#00ff99;stop-opacity:0.85">
+        <animate attributeName="stop-opacity" values="0.85;1;0.85" dur="2s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <filter id="glowFilter">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Top border line (almost full width) -->
+  <line x1="40" y1="15" x2="860" y2="15" stroke="url(#borderGrad)" stroke-width="3" filter="url(#glowFilter)"/>
+
+  <!-- Animated corner brackets - LARGER and more dramatic -->
+  <g opacity="0.9">
+    <!-- Top left corner - extended -->
+    <polyline points="40,15 5,15 5,35" stroke="#33ff33" stroke-width="3" fill="none" filter="url(#glowFilter)">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="3;4;3" dur="2s" repeatCount="indefinite"/>
+    </polyline>
+
+    <!-- Top right corner - extended -->
+    <polyline points="860,15 895,15 895,35" stroke="#66ff66" stroke-width="3" fill="none" filter="url(#glowFilter)">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="3;4;3" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </polyline>
+  </g>
+
+  <!-- Animated dots at corners - LARGER -->
+  <circle cx="5" cy="15" r="4" fill="#33ff33" opacity="0.8" filter="url(#glowFilter)">
+    <animate attributeName="r" values="4;7;4" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="895" cy="15" r="4" fill="#66ff66" opacity="0.8" filter="url(#glowFilter)">
+    <animate attributeName="r" values="4;7;4" dur="2s" begin="1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+</svg>

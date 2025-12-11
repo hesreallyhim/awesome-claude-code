@@ -1,0 +1,96 @@
+<svg width="800" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Strong glow for hero text -->
+    <filter id="heroGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Hero gradient -->
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6B35" stop-opacity="1">
+        <animate attributeName="stop-color" values="#FF6B35;#FF8C5A;#FF6B35" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#FF8C5A" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FF6B35" stop-opacity="1">
+        <animate attributeName="stop-color" values="#FF6B35;#FFB088;#FF6B35" dur="5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Accent line gradient -->
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFB088" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FF6B35" stop-opacity="1">
+        <animate attributeName="stop-opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#FFB088" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Radial glow background -->
+    <radialGradient id="bgGlow">
+      <stop offset="0%" stop-color="#FF8C5A" stop-opacity="0.15">
+        <animate attributeName="stop-opacity" values="0.1;0.2;0.1" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#FF8C5A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background glow -->
+  <ellipse cx="400" cy="50" rx="300" ry="40" fill="url(#bgGlow)"/>
+
+  <!-- Top accent line -->
+  <line x1="200" y1="20" x2="600" y2="20" stroke="url(#accentLine)" stroke-width="2" stroke-linecap="round">
+    <animate attributeName="stroke-width" values="2;2.5;2" dur="3s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Main hero text -->
+  <text x="400" y="58" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="800" fill="url(#heroGrad)" text-anchor="middle" filter="url(#heroGlow)" letter-spacing="1">
+    Status Lines 📊
+    <animate attributeName="opacity" values="0.95;1;0.95" dur="4s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Bottom accent line -->
+  <line x1="200" y1="80" x2="600" y2="80" stroke="url(#accentLine)" stroke-width="2" stroke-linecap="round">
+    <animate attributeName="stroke-width" values="2;2.5;2" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Decorative corner elements -->
+  <g opacity="0.6">
+    <!-- Top left -->
+    <path d="M 195,16 L 195,24 M 195,20 L 187,20" stroke="#FF6B35" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <!-- Top right -->
+    <path d="M 605,16 L 605,24 M 605,20 L 613,20" stroke="#FF6B35" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </path>
+    <!-- Bottom left -->
+    <path d="M 195,76 L 195,84 M 195,80 L 187,80" stroke="#FF8C5A" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </path>
+    <!-- Bottom right -->
+    <path d="M 605,76 L 605,84 M 605,80 L 613,80" stroke="#FF8C5A" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Floating accent particles -->
+  <g opacity="0.5">
+    <circle cx="250" cy="35" r="2" fill="#FFCBA4">
+      <animate attributeName="cy" values="35;30;35" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.7;0" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="550" cy="45" r="2.5" fill="#FFB088">
+      <animate attributeName="cy" values="45;40;45" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.8;0" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="320" cy="68" r="1.5" fill="#FF9B70">
+      <animate attributeName="cy" values="68;63;68" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

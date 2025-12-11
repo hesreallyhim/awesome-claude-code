@@ -1,0 +1,77 @@
+<svg width="900" height="80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Green phosphor gradient for terminal background -->
+    <linearGradient id="phosphorBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f380f;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0a2f0a;stop-opacity:1"/>
+    </linearGradient>
+
+    <!-- Scanlines pattern -->
+    <pattern id="scanlines" x="0" y="0" width="100%" height="4" patternUnits="userSpaceOnUse">
+      <rect width="100%" height="2" fill="#000000" opacity="0.15"/>
+    </pattern>
+
+    <!-- CRT glow effect -->
+    <filter id="crtGlow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Flicker animation for stars -->
+    <animate id="flicker" attributeName="opacity" values="1;0.85;1;0.9;1" dur="0.15s" repeatCount="indefinite"/>
+  </defs>
+
+  <!-- Dark base background -->
+  <rect width="900" height="80" fill="#1a1a1a"/>
+
+  <!-- Monitor bezel effect -->
+  <rect x="10" y="5" width="880" height="70" fill="url(#phosphorBg)" rx="3"/>
+  <rect x="10" y="5" width="880" height="70" fill="url(#scanlines)"/>
+
+  <!-- Top border decoration -->
+  <line x1="10" y1="5" x2="890" y2="5" stroke="#66ff66" stroke-width="1" opacity="0.3"/>
+  <line x1="10" y1="75" x2="890" y2="75" stroke="#66ff66" stroke-width="1" opacity="0.3"/>
+
+  <!-- Corner brackets -->
+  <g filter="url(#crtGlow)">
+    <text x="30" y="30" font-family="monospace" font-size="24" fill="#66ff66" opacity="0.7">╭─</text>
+    <text x="860" y="30" font-family="monospace" font-size="24" fill="#66ff66" opacity="0.7">─╮</text>
+    <text x="30" y="65" font-family="monospace" font-size="24" fill="#66ff66" opacity="0.7">╰─</text>
+    <text x="860" y="65" font-family="monospace" font-size="24" fill="#66ff66" opacity="0.7">─╯</text>
+  </g>
+
+  <!-- Main title with glow -->
+  <g filter="url(#crtGlow)">
+    <!-- Stars with flicker -->
+    <text x="300" y="50" font-family="monospace" font-size="20" fill="#ffaa00" font-weight="bold">
+      ⭐
+      <animate attributeName="opacity" values="1;0.8;1;0.85;1" dur="0.12s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Main text -->
+    <text x="390" y="50" font-family="monospace" font-size="20" fill="#33ff33" font-weight="bold" text-anchor="middle">
+      HONORABLE
+      <animate attributeName="opacity" values="1;0.98;1" dur="0.09s" repeatCount="indefinite"/>
+    </text>
+
+    <text x="510" y="50" font-family="monospace" font-size="20" fill="#33ff33" font-weight="bold" text-anchor="middle">
+      MENTIONS
+      <animate attributeName="opacity" values="1;0.97;1" dur="0.11s" repeatCount="indefinite"/>
+    </text>
+
+    <text x="600" y="50" font-family="monospace" font-size="20" fill="#ffaa00" font-weight="bold">
+      ⭐
+      <animate attributeName="opacity" values="1;0.85;1;0.9;1" dur="0.13s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Underline decoration -->
+  <g filter="url(#crtGlow)">
+    <line x1="280" y1="57" x2="620" y2="57" stroke="#449944" stroke-width="1" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.4;0.6" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+  </g>
+</svg>

@@ -1,0 +1,208 @@
+<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Matrix green glow -->
+    <filter id="matrixGlow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Strong glow for lead characters -->
+    <filter id="leadGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Fade gradient for falling effect -->
+    <linearGradient id="fadeDown" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff41;stop-opacity:1"/>
+      <stop offset="60%" style="stop-color:#00ff41;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#00ff41;stop-opacity:0.1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Horizontal divider lines (subtle) -->
+  <line x1="0" y1="5" x2="900" y2="5" stroke="#00ff41" stroke-width="0.5" opacity="0.2"/>
+  <line x1="0" y1="35" x2="900" y2="35" stroke="#00ff41" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Matrix rain columns - each column has falling characters -->
+  <g font-family="monospace" font-size="10" filter="url(#matrixGlow)">
+
+    <!-- Column 1 -->
+    <g>
+      <text x="30" y="8" fill="#00ff41" opacity="0.3">7</text>
+      <text x="30" y="18" fill="#00ff41" opacity="0.5">F</text>
+      <text x="30" y="28" fill="#00ff41" opacity="0.8">9</text>
+      <text x="30" y="38" fill="#ffffff" filter="url(#leadGlow)">1</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,10;0,0" dur="1.2s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 2 -->
+    <g>
+      <text x="75" y="5" fill="#00ff41" opacity="0.2">A</text>
+      <text x="75" y="15" fill="#00ff41" opacity="0.4">3</text>
+      <text x="75" y="25" fill="#00ff41" opacity="0.7">K</text>
+      <text x="75" y="35" fill="#ffffff" filter="url(#leadGlow)">0</text>
+      <animateTransform attributeName="transform" type="translate" values="0,5;0,15;0,5" dur="1.5s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 3 -->
+    <g>
+      <text x="120" y="10" fill="#00ff41" opacity="0.3">E</text>
+      <text x="120" y="20" fill="#00ff41" opacity="0.6">2</text>
+      <text x="120" y="30" fill="#ffffff" filter="url(#leadGlow)">B</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,8;0,0" dur="0.9s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 4 -->
+    <g>
+      <text x="165" y="8" fill="#00ff41" opacity="0.4">8</text>
+      <text x="165" y="18" fill="#00ff41" opacity="0.6">D</text>
+      <text x="165" y="28" fill="#00ff41" opacity="0.8">4</text>
+      <text x="165" y="38" fill="#ffffff" filter="url(#leadGlow)">C</text>
+      <animateTransform attributeName="transform" type="translate" values="0,2;0,12;0,2" dur="1.3s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 5 -->
+    <g>
+      <text x="210" y="12" fill="#00ff41" opacity="0.3">1</text>
+      <text x="210" y="22" fill="#00ff41" opacity="0.7">5</text>
+      <text x="210" y="32" fill="#ffffff" filter="url(#leadGlow)">F</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,6;0,0" dur="1.1s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 6 -->
+    <g>
+      <text x="255" y="5" fill="#00ff41" opacity="0.2">C</text>
+      <text x="255" y="15" fill="#00ff41" opacity="0.5">9</text>
+      <text x="255" y="25" fill="#00ff41" opacity="0.8">A</text>
+      <text x="255" y="35" fill="#ffffff" filter="url(#leadGlow)">7</text>
+      <animateTransform attributeName="transform" type="translate" values="0,5;0,13;0,5" dur="1.4s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 7 -->
+    <g>
+      <text x="300" y="10" fill="#00ff41" opacity="0.4">3</text>
+      <text x="300" y="20" fill="#00ff41" opacity="0.7">E</text>
+      <text x="300" y="30" fill="#ffffff" filter="url(#leadGlow)">2</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,9;0,0" dur="1.0s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 8 -->
+    <g>
+      <text x="345" y="8" fill="#00ff41" opacity="0.3">B</text>
+      <text x="345" y="18" fill="#00ff41" opacity="0.5">6</text>
+      <text x="345" y="28" fill="#00ff41" opacity="0.8">D</text>
+      <text x="345" y="38" fill="#ffffff" filter="url(#leadGlow)">4</text>
+      <animateTransform attributeName="transform" type="translate" values="0,2;0,10;0,2" dur="1.25s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 9 -->
+    <g>
+      <text x="390" y="15" fill="#00ff41" opacity="0.5">0</text>
+      <text x="390" y="25" fill="#00ff41" opacity="0.8">8</text>
+      <text x="390" y="35" fill="#ffffff" filter="url(#leadGlow)">F</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,5;0,0" dur="0.85s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 10 - Center -->
+    <g>
+      <text x="435" y="5" fill="#00ff41" opacity="0.2">1</text>
+      <text x="435" y="15" fill="#00ff41" opacity="0.4">A</text>
+      <text x="435" y="25" fill="#00ff41" opacity="0.7">3</text>
+      <text x="435" y="35" fill="#ffffff" filter="url(#leadGlow)">C</text>
+      <animateTransform attributeName="transform" type="translate" values="0,5;0,15;0,5" dur="1.35s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 11 -->
+    <g>
+      <text x="480" y="10" fill="#00ff41" opacity="0.3">7</text>
+      <text x="480" y="20" fill="#00ff41" opacity="0.6">E</text>
+      <text x="480" y="30" fill="#ffffff" filter="url(#leadGlow)">9</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,8;0,0" dur="1.05s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 12 -->
+    <g>
+      <text x="525" y="8" fill="#00ff41" opacity="0.4">5</text>
+      <text x="525" y="18" fill="#00ff41" opacity="0.6">B</text>
+      <text x="525" y="28" fill="#00ff41" opacity="0.8">2</text>
+      <text x="525" y="38" fill="#ffffff" filter="url(#leadGlow)">D</text>
+      <animateTransform attributeName="transform" type="translate" values="0,2;0,11;0,2" dur="1.15s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 13 -->
+    <g>
+      <text x="570" y="12" fill="#00ff41" opacity="0.3">6</text>
+      <text x="570" y="22" fill="#00ff41" opacity="0.7">4</text>
+      <text x="570" y="32" fill="#ffffff" filter="url(#leadGlow)">0</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,7;0,0" dur="0.95s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 14 -->
+    <g>
+      <text x="615" y="5" fill="#00ff41" opacity="0.2">F</text>
+      <text x="615" y="15" fill="#00ff41" opacity="0.5">8</text>
+      <text x="615" y="25" fill="#00ff41" opacity="0.8">A</text>
+      <text x="615" y="35" fill="#ffffff" filter="url(#leadGlow)">1</text>
+      <animateTransform attributeName="transform" type="translate" values="0,5;0,14;0,5" dur="1.45s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 15 -->
+    <g>
+      <text x="660" y="10" fill="#00ff41" opacity="0.4">C</text>
+      <text x="660" y="20" fill="#00ff41" opacity="0.7">3</text>
+      <text x="660" y="30" fill="#ffffff" filter="url(#leadGlow)">E</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,9;0,0" dur="1.08s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 16 -->
+    <g>
+      <text x="705" y="8" fill="#00ff41" opacity="0.3">9</text>
+      <text x="705" y="18" fill="#00ff41" opacity="0.5">7</text>
+      <text x="705" y="28" fill="#00ff41" opacity="0.8">B</text>
+      <text x="705" y="38" fill="#ffffff" filter="url(#leadGlow)">5</text>
+      <animateTransform attributeName="transform" type="translate" values="0,2;0,12;0,2" dur="1.28s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 17 -->
+    <g>
+      <text x="750" y="15" fill="#00ff41" opacity="0.5">D</text>
+      <text x="750" y="25" fill="#00ff41" opacity="0.8">2</text>
+      <text x="750" y="35" fill="#ffffff" filter="url(#leadGlow)">4</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,5;0,0" dur="0.88s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 18 -->
+    <g>
+      <text x="795" y="5" fill="#00ff41" opacity="0.2">6</text>
+      <text x="795" y="15" fill="#00ff41" opacity="0.4">0</text>
+      <text x="795" y="25" fill="#00ff41" opacity="0.7">8</text>
+      <text x="795" y="35" fill="#ffffff" filter="url(#leadGlow)">A</text>
+      <animateTransform attributeName="transform" type="translate" values="0,5;0,13;0,5" dur="1.38s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 19 -->
+    <g>
+      <text x="840" y="10" fill="#00ff41" opacity="0.3">F</text>
+      <text x="840" y="20" fill="#00ff41" opacity="0.6">1</text>
+      <text x="840" y="30" fill="#ffffff" filter="url(#leadGlow)">C</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,8;0,0" dur="1.02s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 20 -->
+    <g>
+      <text x="870" y="8" fill="#00ff41" opacity="0.4">3</text>
+      <text x="870" y="18" fill="#00ff41" opacity="0.6">E</text>
+      <text x="870" y="28" fill="#00ff41" opacity="0.8">7</text>
+      <text x="870" y="38" fill="#ffffff" filter="url(#leadGlow)">9</text>
+      <animateTransform attributeName="transform" type="translate" values="0,2;0,10;0,2" dur="1.18s" repeatCount="indefinite"/>
+    </g>
+  </g>
+</svg>

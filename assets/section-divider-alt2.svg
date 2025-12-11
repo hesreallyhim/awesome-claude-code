@@ -1,0 +1,172 @@
+<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Neon cyan glow -->
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Subtle glow for traces -->
+    <filter id="traceGlow">
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Data pulse gradient -->
+    <linearGradient id="pulseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:0">
+        <animate attributeName="offset" values="0;1" dur="2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="10%" style="stop-color:#00ffff;stop-opacity:1">
+        <animate attributeName="offset" values="0.1;1.1" dur="2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="20%" style="stop-color:#00ffff;stop-opacity:0">
+        <animate attributeName="offset" values="0.2;1.2" dur="2s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Reverse pulse gradient -->
+    <linearGradient id="pulseGradReverse" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff00ff;stop-opacity:0">
+        <animate attributeName="offset" values="0;1" dur="2.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="10%" style="stop-color:#ff00ff;stop-opacity:1">
+        <animate attributeName="offset" values="0.1;1.1" dur="2.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="20%" style="stop-color:#ff00ff;stop-opacity:0">
+        <animate attributeName="offset" values="0.2;1.2" dur="2.5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Main horizontal circuit traces -->
+  <g filter="url(#traceGlow)">
+    <!-- Top main trace -->
+    <path d="M 0 8 L 150 8 L 160 12 L 280 12 L 290 8 L 450 8"
+          stroke="#0a4a4a" stroke-width="2" fill="none"/>
+    <path d="M 450 8 L 610 8 L 620 12 L 740 12 L 750 8 L 900 8"
+          stroke="#0a4a4a" stroke-width="2" fill="none"/>
+
+    <!-- Bottom main trace -->
+    <path d="M 0 32 L 100 32 L 110 28 L 200 28 L 210 32 L 350 32"
+          stroke="#0a4a4a" stroke-width="2" fill="none"/>
+    <path d="M 350 32 L 550 32 L 560 28 L 690 28 L 700 32 L 900 32"
+          stroke="#0a4a4a" stroke-width="2" fill="none"/>
+
+    <!-- Cross traces -->
+    <path d="M 450 8 L 450 20 L 350 20 L 350 32" stroke="#0a4a4a" stroke-width="1.5" fill="none"/>
+    <path d="M 200 12 L 200 20 L 100 20 L 100 28" stroke="#0a4a4a" stroke-width="1.5" fill="none"/>
+    <path d="M 700 12 L 700 20 L 800 20 L 800 28" stroke="#0a4a4a" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Animated data pulses on traces -->
+  <g opacity="0.9">
+    <!-- Top trace pulse -->
+    <path d="M 0 8 L 150 8 L 160 12 L 280 12 L 290 8 L 450 8 L 610 8 L 620 12 L 740 12 L 750 8 L 900 8"
+          stroke="url(#pulseGrad)" stroke-width="2" fill="none" filter="url(#neonGlow)"/>
+
+    <!-- Bottom trace pulse (reverse direction) -->
+    <path d="M 0 32 L 100 32 L 110 28 L 200 28 L 210 32 L 350 32 L 550 32 L 560 28 L 690 28 L 700 32 L 900 32"
+          stroke="url(#pulseGradReverse)" stroke-width="2" fill="none" filter="url(#neonGlow)"/>
+  </g>
+
+  <!-- Circuit nodes (connection points) -->
+  <g filter="url(#neonGlow)">
+    <!-- Node at 150 -->
+    <circle cx="150" cy="8" r="3" fill="#001a1a" stroke="#00ffff" stroke-width="1">
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="8" r="1.5" fill="#00ffff">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Node at 290 -->
+    <circle cx="290" cy="8" r="3" fill="#001a1a" stroke="#00ffff" stroke-width="1">
+      <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="290" cy="8" r="1.5" fill="#00ffff">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Central node at 450 - larger, more prominent -->
+    <circle cx="450" cy="8" r="4" fill="#001a1a" stroke="#00ffff" stroke-width="1.5">
+      <animate attributeName="stroke-opacity" values="0.7;1;0.7" dur="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="450" cy="8" r="2" fill="#00ffff">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="1s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Node at 610 -->
+    <circle cx="610" cy="8" r="3" fill="#001a1a" stroke="#00ffff" stroke-width="1">
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="610" cy="8" r="1.5" fill="#00ffff">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Node at 750 -->
+    <circle cx="750" cy="8" r="3" fill="#001a1a" stroke="#00ffff" stroke-width="1">
+      <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="1.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="750" cy="8" r="1.5" fill="#00ffff">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="1.4s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Bottom nodes - magenta -->
+    <circle cx="100" cy="32" r="3" fill="#1a001a" stroke="#ff00ff" stroke-width="1">
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="1.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="32" r="1.5" fill="#ff00ff">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.7s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="210" cy="32" r="3" fill="#1a001a" stroke="#ff00ff" stroke-width="1">
+      <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="1.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="210" cy="32" r="1.5" fill="#ff00ff">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="1.3s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Central bottom node -->
+    <circle cx="350" cy="32" r="4" fill="#1a001a" stroke="#ff00ff" stroke-width="1.5">
+      <animate attributeName="stroke-opacity" values="0.7;1;0.7" dur="1.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="32" r="2" fill="#ff00ff">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="1.1s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="550" cy="32" r="3" fill="#1a001a" stroke="#ff00ff" stroke-width="1">
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="550" cy="32" r="1.5" fill="#ff00ff">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="700" cy="32" r="3" fill="#1a001a" stroke="#ff00ff" stroke-width="1">
+      <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="1.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="32" r="1.5" fill="#ff00ff">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="1.9s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Vertical connection nodes -->
+  <g filter="url(#traceGlow)">
+    <circle cx="450" cy="20" r="2.5" fill="#002020" stroke="#00cccc" stroke-width="1">
+      <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200" cy="20" r="2" fill="#002020" stroke="#00cccc" stroke-width="1">
+      <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="20" r="2" fill="#002020" stroke="#00cccc" stroke-width="1">
+      <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
