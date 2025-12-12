@@ -13,7 +13,7 @@ Please note that this project is released with a [Contributor Code of Conduct](c
 
 ## How to Submit a Resource
 
-### 🚀 **[Click here to submit a new resource](https://github.com/hesreallyhim/awesome-claude-code/issues/new?template=submit-resource.yml)**
+### 🚀 **[Click here to submit a new resource](https://github.com/hesreallyhim/awesome-claude-code/issues/new?template=recommend-resource.yml)**
 
 That's it! Just click the link above and fill out the form. No Git knowledge required.
 

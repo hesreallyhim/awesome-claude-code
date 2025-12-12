@@ -1982,7 +1982,7 @@ _Official GitHub Actions integration for Claude Code with examples and documenta
 
 ## Contributing 🌻 [🔝](#awesome-claude-code)
 
-### 🚀 **[Submit a new resource here!](https://github.com/hesreallyhim/awesome-claude-code/issues/new?template=submit-resource.yml)**
+### 🚀 **[Submit a new resource here!](https://github.com/hesreallyhim/awesome-claude-code/issues/new?template=recommend-resource.yml)**
 
 It's easy! Just click the link above and fill out the form. No Git knowledge required - our automated system handles everything for you.
 
