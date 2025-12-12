@@ -1,0 +1,53 @@
+name: Update Repo Ticker Data
+
+on:
+  schedule:
+    # Run daily at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allow manual trigger for testing
+
+permissions:
+  contents: write
+
+jobs:
+  update-ticker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Backup previous day's data
+        run: |
+          if [ -f data/repo-ticker.csv ]; then
+            cp data/repo-ticker.csv data/repo-ticker-previous.csv
+            echo "✓ Backed up previous data"
+          else
+            echo "⚠ No previous data to backup (first run)"
+          fi
+
+      - name: Fetch GitHub repo data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/fetch_repo_ticker_data.py
+
+      - name: Generate ticker SVGs
+        run: |
+          python scripts/generate_ticker_svg.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/repo-ticker.csv data/repo-ticker-previous.csv assets/repo-ticker.svg assets/repo-ticker-light.svg
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update repo ticker data and SVGs [skip ci]" && git push)

@@ -15,8 +15,12 @@
 
 <br />
 
-<!-- Feature placeholder - full feature coming soon! -->
-<img src="assets/placeholder-light.svg" alt="New Feature - Coming Soon">
+<!-- Repo Ticker -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/repo-ticker.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/repo-ticker-light.svg">
+  <img src="assets/repo-ticker-light.svg" alt="Awesome Claude Code Repo Ticker" width="100%">
+</picture>
 
 </div>
 
