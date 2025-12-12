@@ -125,8 +125,6 @@ categories:
     icon: "🏛️"
     description: |
       Links to some of Anthropic's terrific documentation and resources regarding Claude Code
-
-      <!--lint disable double-link-->
     order: 9
     subcategories:
       - id: general
