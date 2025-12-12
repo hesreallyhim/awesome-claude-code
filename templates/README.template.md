@@ -7,7 +7,11 @@
 </div>
 
 <!-- Terminal Header - Theme Adaptive -->
-<img src="assets/terminal-header-light-anim-lineprint.svg" alt="Awesome Claude Code Terminal">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/terminal-header.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/terminal-header-light-anim-lineprint.svg">
+  <img src="assets/terminal-header-light-anim-lineprint.svg" alt="Awesome Claude Code Terminal" width="100%">
+</picture>
 
 <!-- Generated with https://github.com/denvercoder1/readme-typing-svg -->
 
@@ -15,7 +19,6 @@
 
 <br />
 
-<!-- Repo Ticker -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/repo-ticker.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/repo-ticker-light.svg">
@@ -29,7 +32,11 @@
 <br>
 
 <!-- Info Terminal - Theme Adaptive -->
-<img src="assets/info-terminal-light-vintage.svg" alt="System Info Terminal">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/info-terminal.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/info-terminal-light-vintage.svg">
+  <img src="assets/info-terminal-light-vintage.svg" alt="System Info Terminal" width="100%">
+</picture>
 
 <!--lint enable remark-lint:awesome-badge-->
 
@@ -37,14 +44,26 @@
 
 <!-- Intro Terminal - Theme Adaptive -->
 <div align="center">
-<img src="assets/intro-terminal-light-vintage.svg" alt="About Claude Code">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/intro-terminal.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/intro-terminal-light-vintage.svg">
+  <img src="assets/intro-terminal-light-vintage.svg" alt="About Claude Code" width="100%" style="max-width: 900px;">
+</picture>
 </div>
 
 <!-- Design Credit & Disclaimer - Theme Adaptive -->
 <div align="center">
-  <img src="assets/designed-by-badge-light.svg" alt="Designed by Claude Code Web">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/designed-by-badge.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/designed-by-badge-light.svg">
+    <img src="assets/designed-by-badge-light.svg" alt="Designed by Claude Code Web" width="280">
+  </picture>
   <br>
-  <img src="assets/disclaimer-light.svg" alt="Disclaimer: Not affiliated or endorsed by Anthropic PBC. Claude Code is a product of Anthropic.">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/disclaimer.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/disclaimer-light.svg">
+    <img src="assets/disclaimer-light.svg" alt="Disclaimer: Not affiliated or endorsed by Anthropic PBC. Claude Code is a product of Anthropic." width="320">
+  </picture>
 </div>
 
 <!-- {{ANNOUNCEMENTS}} -->
@@ -61,51 +80,87 @@
 <tr>
 <td align="center">
 <a href="#agent-skills-">
-<img src="assets/card-skills-light-anim-lineprint.svg" alt="Agent Skills">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-skills.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-skills-light-anim-lineprint.svg">
+  <img src="assets/card-skills-light-anim-lineprint.svg" alt="Agent Skills" width="200"/>
+</picture>
 </a>
 </td>
 <td align="center">
 <a href="#workflows--knowledge-guides-">
-<img src="assets/card-workflows-light-anim-lineprint.svg" alt="Workflows">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-workflows.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-workflows-light-anim-lineprint.svg">
+  <img src="assets/card-workflows-light-anim-lineprint.svg" alt="Workflows" width="200"/>
+</picture>
 </a>
 </td>
 <td align="center">
 <a href="#tooling--">
-<img src="assets/card-tooling-light-anim-lineprint.svg" alt="Tooling">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-tooling.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-tooling-light-anim-lineprint.svg">
+  <img src="assets/card-tooling-light-anim-lineprint.svg" alt="Tooling" width="200"/>
+</picture>
 </a>
 </td>
 </tr>
 <tr>
 <td align="center">
 <a href="#status-lines-">
-<img src="assets/card-statusline-light-anim-lineprint.svg" alt="Status Lines">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-statusline.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-statusline-light-anim-lineprint.svg">
+  <img src="assets/card-statusline-light-anim-lineprint.svg" alt="Status Lines" width="200"/>
+</picture>
 </a>
 </td>
 <td align="center">
 <a href="#hooks-">
-<img src="assets/card-custom-light-anim-lineprint.svg" alt="Hooks">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-custom.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-custom-light-anim-lineprint.svg">
+  <img src="assets/card-custom-light-anim-lineprint.svg" alt="Hooks" width="200"/>
+</picture>
 </a>
 </td>
 <td align="center">
 <a href="#slash-commands-">
-<img src="assets/card-commands-light-anim-lineprint.svg" alt="Slash Commands">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-commands.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-commands-light-anim-lineprint.svg">
+  <img src="assets/card-commands-light-anim-lineprint.svg" alt="Slash Commands" width="200"/>
+</picture>
 </a>
 </td>
 </tr>
 <tr>
 <td align="center">
 <a href="#claudemd-files-">
-<img src="assets/card-config-light-anim-lineprint.svg" alt="CLAUDE.md Files">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-config.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-config-light-anim-lineprint.svg">
+  <img src="assets/card-config-light-anim-lineprint.svg" alt="CLAUDE.md Files" width="200"/>
+</picture>
 </a>
 </td>
 <td align="center">
 <a href="#alternative-clients-">
-<img src="assets/card-clients-light-anim-lineprint.svg" alt="Alternative Clients">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-clients.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-clients-light-anim-lineprint.svg">
+  <img src="assets/card-clients-light-anim-lineprint.svg" alt="Alternative Clients" width="200"/>
+</picture>
 </a>
 </td>
 <td align="center">
 <a href="#official-documentation--">
-<img src="assets/card-docs-light-anim-lineprint.svg" alt="Documentation">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-docs.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-docs-light-anim-lineprint.svg">
+  <img src="assets/card-docs-light-anim-lineprint.svg" alt="Documentation" width="200"/>
+</picture>
 </a>
 </td>
 </tr>
@@ -130,7 +185,11 @@
 {{BODY_SECTIONS}}
 
 <div align="center">
-<img src="/assets/honorable-mentions-header-light.svg" alt="Directory Listing">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="/assets/honorable-mentions-header.svg">
+  <source media="(prefers-color-scheme: light)" srcset="/assets/honorable-mentions-header-light.svg">
+  <img src="/assets/honorable-mentions-header-light.svg" alt="Directory Listing">
+</picture>
 </div>
 
 [`prpm`](https://prpm.dev/) &nbsp; by &nbsp; [khaliqgant](https://github.com/khaliqgant) 
