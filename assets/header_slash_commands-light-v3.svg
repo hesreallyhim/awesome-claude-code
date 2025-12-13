@@ -1,7 +1,6 @@
 <svg width="800" height="80" xmlns="http://www.w3.org/2000/svg">
   <!--
-    Vintage Technical Manual Style - Header V3
-    Minimal technical specification style
+    Vintage Technical Manual Style - Header (Auto-generated)
     Clean, authoritative, reference manual aesthetic
   -->
 
@@ -25,7 +24,7 @@
         font-weight="600"
         fill="#3d3530"
         letter-spacing="0.5">
-    Slash Commands
+    Slash-Commands
   </text>
 
   <!-- Horizontal rule extending from title -->

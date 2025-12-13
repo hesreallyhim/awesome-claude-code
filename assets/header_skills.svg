@@ -48,7 +48,7 @@
 
   <!-- Main hero text - larger, bolder, with subtle dark outline for contrast -->
   <text x="400" y="58" font-family="system-ui, -apple-system, sans-serif" font-size="38" font-weight="900" fill="url(#heroGrad)" text-anchor="middle" filter="url(#heroGlow)" letter-spacing="0.5" stroke="#221111" stroke-width="0.5" paint-order="stroke fill">
-    Official Documentation 🏛️
+    Agent Skills 🤖
   </text>
 
   <!-- Bottom accent line -->

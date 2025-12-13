@@ -1,7 +1,7 @@
 <svg width="800" height="80" xmlns="http://www.w3.org/2000/svg">
   <!--
-    Vintage Technical Manual Style - Header V3
-    Minimal technical specification style
+    Vintage Technical Manual Style - Header (Auto-generated)
+    Clean, authoritative, reference manual aesthetic
   -->
 
   <!-- Section number box -->
@@ -30,7 +30,7 @@
   <!-- Horizontal rule extending from title -->
   <line x1="220" y1="58" x2="640" y2="58" stroke="#5c5247" stroke-width="1.75" opacity="0.45"/>
 
-  <!-- Reference dots pattern -->
+  <!-- Reference dots pattern (like page markers) -->
   <g fill="#5c5247" opacity="0.3">
     <circle cx="580" cy="35" r="1"/>
     <circle cx="595" cy="35" r="1"/>

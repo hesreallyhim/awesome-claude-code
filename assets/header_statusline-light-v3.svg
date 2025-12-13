@@ -13,7 +13,7 @@
           font-weight="700"
           fill="#c96442"
           text-anchor="middle">
-      05
+      04
     </text>
   </g>
 
@@ -24,7 +24,7 @@
         font-weight="600"
         fill="#3d3530"
         letter-spacing="0.5">
-    Hooks
+    Status Lines
   </text>
 
   <!-- Horizontal rule extending from title -->

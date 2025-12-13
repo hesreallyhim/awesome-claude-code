@@ -21,53 +21,65 @@ def load_template(template_path):
         return f.read()
 
 
-def create_h2_svg_file(text, filename, assets_dir):
-    """Create an animated hero-centered H2 header SVG file."""
+def create_h2_svg_file(text: str, filename: str, assets_dir: str, icon: str = "") -> str:
+    """Create an animated hero-centered H2 header SVG file.
+
+    Args:
+        text: The header text (e.g., "Agent Skills")
+        filename: The output filename
+        assets_dir: Directory to save the SVG
+        icon: Optional emoji icon to append (e.g., "🤖")
+
+    Returns:
+        The filename of the created SVG
+    """
+    # Build display text with optional icon
+    display_text = f"{text} {icon}" if icon else text
+
     # Escape XML special characters
-    text_escaped = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    text_escaped = display_text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
     svg_content = f"""<svg width="800" height="100" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Strong glow for hero text -->
-    <filter id="heroGlow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+    <!-- Subtle glow for hero text - reduced blur for better readability -->
+    <filter id="heroGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
       <feMerge>
-        <feMergeNode in="coloredBlur"/>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
-    <!-- Hero gradient -->
+    <!-- Hero gradient - brighter, more saturated colors for contrast -->
     <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FF6B35" stop-opacity="1">
-        <animate attributeName="stop-color" values="#FF6B35;#FF8C5A;#FF6B35" dur="5s" repeatCount="indefinite"/>
+      <stop offset="0%" stop-color="#FF8855" stop-opacity="1">
+        <animate attributeName="stop-color" values="#FF8855;#FFAA77;#FF8855" dur="5s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="50%" stop-color="#FF8C5A" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#FF6B35" stop-opacity="1">
-        <animate attributeName="stop-color" values="#FF6B35;#FFB088;#FF6B35" dur="5s" repeatCount="indefinite"/>
+      <stop offset="50%" stop-color="#FFAA77" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FF8855" stop-opacity="1">
+        <animate attributeName="stop-color" values="#FF8855;#FFCC99;#FF8855" dur="5s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
 
     <!-- Accent line gradient -->
     <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#FFB088" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#FF6B35" stop-opacity="1">
+      <stop offset="50%" stop-color="#FF8855" stop-opacity="1">
         <animate attributeName="stop-opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
       </stop>
       <stop offset="100%" stop-color="#FFB088" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Radial glow background -->
+    <!-- Radial glow background - more subtle -->
     <radialGradient id="bgGlow">
-      <stop offset="0%" stop-color="#FF8C5A" stop-opacity="0.15">
-        <animate attributeName="stop-opacity" values="0.1;0.2;0.1" dur="4s" repeatCount="indefinite"/>
+      <stop offset="0%" stop-color="#FF8C5A" stop-opacity="0.08">
+        <animate attributeName="stop-opacity" values="0.05;0.12;0.05" dur="4s" repeatCount="indefinite"/>
       </stop>
       <stop offset="100%" stop-color="#FF8C5A" stop-opacity="0"/>
     </radialGradient>
   </defs>
 
-  <!-- Background glow -->
+  <!-- Background glow - more subtle -->
   <ellipse cx="400" cy="50" rx="300" ry="40" fill="url(#bgGlow)"/>
 
   <!-- Top accent line -->
@@ -75,10 +87,9 @@ def create_h2_svg_file(text, filename, assets_dir):
     <animate attributeName="stroke-width" values="2;2.5;2" dur="3s" repeatCount="indefinite"/>
   </line>
 
-  <!-- Main hero text -->
-  <text x="400" y="58" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="800" fill="url(#heroGrad)" text-anchor="middle" filter="url(#heroGlow)" letter-spacing="1">
+  <!-- Main hero text - larger, bolder, with subtle dark outline for contrast -->
+  <text x="400" y="58" font-family="system-ui, -apple-system, sans-serif" font-size="38" font-weight="900" fill="url(#heroGrad)" text-anchor="middle" filter="url(#heroGlow)" letter-spacing="0.5" stroke="#221111" stroke-width="0.5" paint-order="stroke fill">
     {text_escaped}
-    <animate attributeName="opacity" values="0.95;1;0.95" dur="4s" repeatCount="indefinite"/>
   </text>
 
   <!-- Bottom accent line -->
@@ -89,36 +100,36 @@ def create_h2_svg_file(text, filename, assets_dir):
   <!-- Decorative corner elements -->
   <g opacity="0.6">
     <!-- Top left -->
-    <path d="M 195,16 L 195,24 M 195,20 L 187,20" stroke="#FF6B35" stroke-width="2" stroke-linecap="round">
+    <path d="M 195,16 L 195,24 M 195,20 L 187,20" stroke="#FF8855" stroke-width="2" stroke-linecap="round">
       <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite"/>
     </path>
     <!-- Top right -->
-    <path d="M 605,16 L 605,24 M 605,20 L 613,20" stroke="#FF6B35" stroke-width="2" stroke-linecap="round">
+    <path d="M 605,16 L 605,24 M 605,20 L 613,20" stroke="#FF8855" stroke-width="2" stroke-linecap="round">
       <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" begin="0.5s" repeatCount="indefinite"/>
     </path>
     <!-- Bottom left -->
-    <path d="M 195,76 L 195,84 M 195,80 L 187,80" stroke="#FF8C5A" stroke-width="2" stroke-linecap="round">
+    <path d="M 195,76 L 195,84 M 195,80 L 187,80" stroke="#FFAA77" stroke-width="2" stroke-linecap="round">
       <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" begin="1s" repeatCount="indefinite"/>
     </path>
     <!-- Bottom right -->
-    <path d="M 605,76 L 605,84 M 605,80 L 613,80" stroke="#FF8C5A" stroke-width="2" stroke-linecap="round">
+    <path d="M 605,76 L 605,84 M 605,80 L 613,80" stroke="#FFAA77" stroke-width="2" stroke-linecap="round">
       <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" begin="1.5s" repeatCount="indefinite"/>
     </path>
   </g>
 
-  <!-- Floating accent particles -->
-  <g opacity="0.5">
+  <!-- Floating accent particles - reduced opacity -->
+  <g opacity="0.35">
     <circle cx="250" cy="35" r="2" fill="#FFCBA4">
       <animate attributeName="cy" values="35;30;35" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.7;0" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.5;0" dur="4s" repeatCount="indefinite"/>
     </circle>
     <circle cx="550" cy="45" r="2.5" fill="#FFB088">
       <animate attributeName="cy" values="45;40;45" dur="4.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.8;0" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0" dur="4.5s" repeatCount="indefinite"/>
     </circle>
     <circle cx="320" cy="68" r="1.5" fill="#FF9B70">
       <animate attributeName="cy" values="68;63;68" dur="3.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.6;0" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.4;0" dur="3.5s" repeatCount="indefinite"/>
     </circle>
   </g>
 </svg>"""
@@ -766,19 +777,40 @@ def generate_toc_sub_svg(directory_name, description):
 # =============================================================================
 
 
-def ensure_category_header_exists(category_id, title, section_number, assets_dir):
+def ensure_category_header_exists(
+    category_id: str,
+    title: str,
+    section_number: str,
+    assets_dir: str,
+    icon: str = "",
+    always_regenerate: bool = True,
+) -> tuple[str, str]:
     """Ensure category header SVGs exist, generating them if needed.
 
-    Returns tuple of (dark_filename, light_filename).
+    Args:
+        category_id: The category identifier (e.g., "skills", "tooling")
+        title: The display title (e.g., "Agent Skills")
+        section_number: Two-digit section number (e.g., "01")
+        assets_dir: Directory to save SVGs
+        icon: Optional emoji icon for dark mode header
+        always_regenerate: If True, regenerate even if file exists (default True)
+
+    Returns:
+        Tuple of (dark_filename, light_filename)
     """
     # Define filenames
     safe_name = category_id.replace("-", "_")
     dark_filename = f"header_{safe_name}.svg"
     light_filename = f"header_{safe_name}-light-v3.svg"
 
-    # Check and generate light version
+    # Generate dark version
+    dark_path = os.path.join(assets_dir, dark_filename)
+    if always_regenerate or not os.path.exists(dark_path):
+        create_h2_svg_file(title, dark_filename, assets_dir, icon=icon)
+
+    # Generate light version
     light_path = os.path.join(assets_dir, light_filename)
-    if not os.path.exists(light_path):
+    if always_regenerate or not os.path.exists(light_path):
         svg_content = generate_category_header_light_svg(title, section_number)
         with open(light_path, "w", encoding="utf-8") as f:
             f.write(svg_content)
@@ -1332,14 +1364,28 @@ def generate_weekly_section(csv_data):
     return "\n".join(lines).rstrip() + "\n"
 
 
-def generate_section_content(category, csv_data, general_map=None, assets_dir=None):
-    """Generate content for a category based on CSV data."""
+def generate_section_content(
+    category: dict,
+    csv_data: list,
+    general_map: dict | None = None,
+    assets_dir: str | None = None,
+    section_index: int = 0,
+) -> str:
+    """Generate content for a category based on CSV data.
+
+    Args:
+        category: Category dictionary with name, id, icon, description, subcategories
+        csv_data: List of resource dictionaries from CSV
+        general_map: Map for handling multiple "General" subcategory anchors
+        assets_dir: Directory to save generated SVG assets
+        section_index: Zero-based index of this section (for section numbering)
+    """
     lines = []
 
     # Get category details
-    # id = category.get("id", "")
+    category_id = category.get("id", "")
     title = category.get("name", "")
-    # icon = category.get("icon", "")
+    icon = category.get("icon", "")
     description = category.get("description", "").strip()
     category_name = category.get("name", "")
     subcategories = category.get("subcategories", [])
@@ -1368,9 +1414,11 @@ def generate_section_content(category, csv_data, general_map=None, assets_dir=No
     anchor = title.lower().replace(" ", "-").replace("&", "").replace("/", "").replace(".", "")
     anchor_id = f"{anchor}-"  # Category headers have "-" suffix
 
-    # Get pre-made header SVG files for this category
-    category_id = category.get("id", "")
-    dark_header, light_header = get_category_header_svg(category_id)
+    # Generate header SVG files for this category (dark and light versions)
+    section_number = str(section_index + 1).zfill(2)  # "01", "02", etc.
+    dark_header, light_header = ensure_category_header_exists(
+        category_id, title, section_number, assets_dir, icon=icon, always_regenerate=True
+    )
 
     # Add header with proper ID and theme-adaptive picture element
     lines.append(f'<h2 id="{anchor_id}">')
@@ -1592,9 +1640,9 @@ def generate_readme_from_templates(csv_path, template_dir, output_path):
 
     # Generate body sections
     body_sections = []
-    for category in categories:
+    for section_index, category in enumerate(categories):
         section_content = generate_section_content(
-            category, csv_data, general_anchor_map, assets_dir=assets_dir
+            category, csv_data, general_anchor_map, assets_dir=assets_dir, section_index=section_index
         )
         body_sections.append(section_content)
 
