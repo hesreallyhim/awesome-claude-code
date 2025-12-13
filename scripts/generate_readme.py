@@ -1473,7 +1473,7 @@ def generate_section_content(category, csv_data, general_map=None, assets_dir=No
                 create_h3_svg_file(sub_title, svg_filename, assets_dir)
 
                 # Start subcategory disclosure element with the SVG inside the summary
-                lines.append(f'<details id="{sub_anchor_id}">')
+                lines.append(f'<details open id="{sub_anchor_id}">')
                 lines.append(
                     f'<summary><span><picture><img src="assets/{svg_filename}" alt="{sub_title}" align="absmiddle"></picture></span></summary>'
                 )
