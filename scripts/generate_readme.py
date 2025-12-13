@@ -39,7 +39,7 @@ def create_h2_svg_file(text: str, filename: str, assets_dir: str, icon: str = ""
     # Escape XML special characters
     text_escaped = display_text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
-    svg_content = f"""<svg width="800" height="100" xmlns="http://www.w3.org/2000/svg">
+    svg_content = f"""<svg width="100%" height="100" viewBox="0 0 800 100" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Subtle glow for hero text - reduced blur for better readability -->
     <filter id="heroGlow" x="-10%" y="-10%" width="120%" height="120%">
@@ -151,7 +151,7 @@ def create_h3_svg_file(text, filename, assets_dir):
     text_width = len(text) * 10
     total_width = text_width + 50  # Add padding for decorative elements
 
-    svg_content = f"""<svg width="{total_width}" height="36" xmlns="http://www.w3.org/2000/svg">
+    svg_content = f"""<svg width="100%" height="36" viewBox="0 0 {total_width} 36" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Very subtle glow -->
     <filter id="minimalGlow">
@@ -348,7 +348,7 @@ def generate_category_header_light_svg(title, section_number="01"):
     title_width = len(title) * 14  # Approximate width per character
     line_end_x = max(640, 220 + title_width + 50)
 
-    return f"""<svg width="800" height="80" xmlns="http://www.w3.org/2000/svg">
+    return f"""<svg width="100%" height="80" viewBox="0 0 800 80" xmlns="http://www.w3.org/2000/svg">
   <!--
     Vintage Technical Manual Style - Header (Auto-generated)
     Clean, authoritative, reference manual aesthetic
