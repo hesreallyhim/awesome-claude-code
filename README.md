@@ -459,9 +459,9 @@
 <h2 id="agent-skills-">
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/header_agent_skills.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/header_agent_skills-light-v3.svg">
-    <img src="assets/header_agent_skills-light-v3.svg" alt="Agent Skills" style="max-width: 600px;">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/header_skills.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/header_skills-light-v3.svg">
+    <img src="assets/header_skills-light-v3.svg" alt="Agent Skills" style="max-width: 600px;">
   </picture>
 </div>
 </h2>
@@ -523,9 +523,9 @@ _Easily generate web assets from Claude Code including favicons, app icons (PWA)
 <h2 id="workflows--knowledge-guides-">
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/header_workflows_knowledge_guides.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/header_workflows_knowledge_guides-light-v3.svg">
-    <img src="assets/header_workflows_knowledge_guides-light-v3.svg" alt="Workflows & Knowledge Guides" style="max-width: 600px;">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/header_workflows.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/header_workflows-light-v3.svg">
+    <img src="assets/header_workflows-light-v3.svg" alt="Workflows & Knowledge Guides" style="max-width: 600px;">
   </picture>
 </div>
 </h2>
@@ -1055,9 +1055,9 @@ _A Rust CLI tool that lets you delegate development tasks to AI agents running i
 <h2 id="status-lines-">
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/header_status_lines.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/header_status_lines-light-v3.svg">
-    <img src="assets/header_status_lines-light-v3.svg" alt="Status Lines" style="max-width: 600px;">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/header_statusline.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/header_statusline-light-v3.svg">
+    <img src="assets/header_statusline-light-v3.svg" alt="Status Lines" style="max-width: 600px;">
   </picture>
 </div>
 </h2>
@@ -1625,9 +1625,9 @@ _Reformats documentation to use React Stepper component, transforming heading fo
 <h2 id="claudemd-files-">
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/header_claudemd_files.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/header_claudemd_files-light-v3.svg">
-    <img src="assets/header_claudemd_files-light-v3.svg" alt="CLAUDE.md Files" style="max-width: 600px;">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/header_claude_md_files.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/header_claude_md_files-light-v3.svg">
+    <img src="assets/header_claude_md_files-light-v3.svg" alt="CLAUDE.md Files" style="max-width: 600px;">
   </picture>
 </div>
 </h2>

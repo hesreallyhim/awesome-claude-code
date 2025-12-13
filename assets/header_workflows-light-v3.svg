@@ -13,7 +13,7 @@
           font-weight="700"
           fill="#c96442"
           text-anchor="middle">
-      09
+      02
     </text>
   </g>
 
@@ -24,21 +24,21 @@
         font-weight="600"
         fill="#3d3530"
         letter-spacing="0.5">
-    Official Documentation
+    Workflows &amp; Knowledge Guides
   </text>
 
   <!-- Horizontal rule extending from title -->
-  <line x1="220" y1="58" x2="640" y2="58" stroke="#5c5247" stroke-width="1.75" opacity="0.45"/>
+  <line x1="220" y1="58" x2="662" y2="58" stroke="#5c5247" stroke-width="1.75" opacity="0.45"/>
 
   <!-- Reference dots pattern (like page markers) -->
   <g fill="#5c5247" opacity="0.3">
-    <circle cx="580" cy="35" r="1"/>
-    <circle cx="595" cy="35" r="1"/>
-    <circle cx="610" cy="35" r="1"/>
-    <circle cx="625" cy="35" r="1"/>
-    <circle cx="640" cy="35" r="1"/>
+    <circle cx="602" cy="35" r="1"/>
+    <circle cx="617" cy="35" r="1"/>
+    <circle cx="632" cy="35" r="1"/>
+    <circle cx="647" cy="35" r="1"/>
+    <circle cx="662" cy="35" r="1"/>
   </g>
 
   <!-- Thin top line -->
-  <line x1="160" y1="15" x2="640" y2="15" stroke="#5c5247" stroke-width="1.75" opacity="0.45"/>
+  <line x1="160" y1="15" x2="662" y2="15" stroke="#5c5247" stroke-width="1.75" opacity="0.45"/>
 </svg>
