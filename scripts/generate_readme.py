@@ -39,7 +39,16 @@ def create_h2_svg_file(text: str, filename: str, assets_dir: str, icon: str = ""
     # Escape XML special characters
     text_escaped = display_text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
-    svg_content = f"""<svg width="100%" height="100" viewBox="0 0 800 100" xmlns="http://www.w3.org/2000/svg">
+    # Calculate viewBox bounds based on text length
+    # Text is centered at x=400, font-size 38px ≈ 22px per char, emoji ≈ 50px
+    text_width = len(text) * 22 + (50 if icon else 0)
+    half_text = text_width / 2
+    # Ensure we include decorations (x=187 to x=613) plus text bounds with generous padding
+    left_bound = int(min(180, 400 - half_text - 30))
+    right_bound = int(max(620, 400 + half_text + 30))
+    viewbox_width = right_bound - left_bound
+
+    svg_content = f"""<svg width="100%" height="100" viewBox="{left_bound} 0 {viewbox_width} 100" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Subtle glow for hero text - reduced blur for better readability -->
     <filter id="heroGlow" x="-10%" y="-10%" width="120%" height="120%">
@@ -344,11 +353,14 @@ def generate_category_header_light_svg(title, section_number="01"):
         title: The category title (e.g., "Agent Skills", "Tooling")
         section_number: Two-digit section number (e.g., "01", "02")
     """
+    # Escape XML special characters
+    title_escaped = title.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
     # Calculate text width for positioning
     title_width = len(title) * 14  # Approximate width per character
     line_end_x = max(640, 220 + title_width + 50)
 
-    return f"""<svg width="100%" height="80" viewBox="0 0 800 80" xmlns="http://www.w3.org/2000/svg">
+    return f"""<svg width="100%" height="80" viewBox="150 0 500 80" xmlns="http://www.w3.org/2000/svg">
   <!--
     Vintage Technical Manual Style - Header (Auto-generated)
     Clean, authoritative, reference manual aesthetic
@@ -374,7 +386,7 @@ def generate_category_header_light_svg(title, section_number="01"):
         font-weight="600"
         fill="#3d3530"
         letter-spacing="0.5">
-    {title}
+    {title_escaped}
   </text>
 
   <!-- Horizontal rule extending from title -->
