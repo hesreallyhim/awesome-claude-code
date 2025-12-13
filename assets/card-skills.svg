@@ -1,10 +1,9 @@
 <svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- CRT screen glow -->
+    <!-- CRT screen glow - reduced blur for clarity -->
     <filter id="crtGlow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
       <feMerge>
-        <feMergeNode in="coloredBlur"/>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
@@ -41,14 +40,14 @@
 
   <!-- Content with CRT glow -->
   <g filter="url(#crtGlow)">
-    <text x="100" y="35" font-family="monospace" font-size="16" font-weight="bold" fill="#33ff33" text-anchor="middle">
-      🤖 SKILLS
-      <animate attributeName="opacity" values="1;0.95;1" dur="0.1s" repeatCount="indefinite"/>
+    <text x="100" y="37" font-family="monospace" font-size="26" font-weight="bold" fill="#33ff33" text-anchor="middle" stroke="#003300" stroke-width="0.3" paint-order="stroke fill">
+      SKILLS
+      <animate attributeName="opacity" values="1;1;0.95;1" dur="0.5s" repeatCount="indefinite"/>
     </text>
-    <text x="100" y="55" font-family="monospace" font-size="9" fill="#66ff66" text-anchor="middle" opacity="0.9">
+    <text x="100" y="60" font-family="monospace" font-size="14" fill="#66ff66" text-anchor="middle" opacity="0.9">
       Agent capabilities
     </text>
-    <text x="100" y="68" font-family="monospace" font-size="9" fill="#66ff66" text-anchor="middle" opacity="0.9">
+    <text x="100" y="75" font-family="monospace" font-size="14" fill="#66ff66" text-anchor="middle" opacity="0.9">
       &amp; specialized tasks
     </text>
   </g>
