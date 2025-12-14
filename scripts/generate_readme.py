@@ -1167,10 +1167,8 @@ def _normalize_svg_root(tag: str, target_width: int, target_height: int) -> str:
     # Ensure preserveAspectRatio anchors left and keeps aspect
     svg_tag = ensure_attr(svg_tag, "preserveAspectRatio", "xMinYMid meet")
 
-    # Ensure viewBox exists; reuse original width/height if available
-    viewbox_match = re.search(r'viewBox="([^"]+)"', svg_tag)
-    if not viewbox_match:
-        svg_tag = ensure_attr(svg_tag, "viewBox", f"0 0 {target_width} {target_height}")
+    # Enforce viewBox to match target dimensions
+    svg_tag = ensure_attr(svg_tag, "viewBox", f"0 0 {target_width} {target_height}")
 
     return svg_tag
 
