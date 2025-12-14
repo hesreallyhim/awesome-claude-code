@@ -86,13 +86,13 @@
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/thinking-asterisk.svg" alt="*" width="18" /> <a href="https://git.io/typing-svg"><img align="center" src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&duration=3000&pause=100&color=F7080D&width=300&lines=Lollygagging...;Skedaddling...;Bumbershooting...;Widdershinning...;Higgledy-piggledying...;Doodlebugging...;Fiddle-faddling...;Whimwhamming...;Dilly-dallying...;Flapdoodling...;Ballyhooing...;Galumphing...;Razzle-dazzling...;Tiddle-taddling...;Zigzagging...;Twinkletoeing...;Puddle-jumping...;Snicker-snacking...;Jibber-jabbering...;Frabjoussing...;Piffle-puffling...;Whirligigging...;Bibbity-bobbitying...;" /></a>
 </div>
 
-<div align="center">
+<div align="left">
 
 ### ⚡ TERMINAL NAVIGATION ⚡
 
 <table>
 <tr>
-<td align="center">
+<td align="left">
 <a href="#agent-skills-">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-skills.svg">
@@ -101,7 +101,7 @@
 </picture>
 </a>
 </td>
-<td align="center">
+<td align="left">
 <a href="#workflows--knowledge-guides-">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-workflows.svg">
@@ -110,7 +110,7 @@
 </picture>
 </a>
 </td>
-<td align="center">
+<td align="left">
 <a href="#tooling--">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-tooling.svg">
@@ -121,7 +121,7 @@
 </td>
 </tr>
 <tr>
-<td align="center">
+<td align="left">
 <a href="#status-lines-">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-statusline.svg">
@@ -130,7 +130,7 @@
 </picture>
 </a>
 </td>
-<td align="center">
+<td align="left">
 <a href="#hooks-">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-custom.svg">
@@ -139,7 +139,7 @@
 </picture>
 </a>
 </td>
-<td align="center">
+<td align="left">
 <a href="#slash-commands-">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-commands.svg">
@@ -150,7 +150,7 @@
 </td>
 </tr>
 <tr>
-<td align="center">
+<td align="left">
 <a href="#claudemd-files-">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-config.svg">
@@ -159,7 +159,7 @@
 </picture>
 </a>
 </td>
-<td align="center">
+<td align="left">
 <a href="#alternative-clients-">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-clients.svg">
@@ -168,7 +168,7 @@
 </picture>
 </a>
 </td>
-<td align="center">
+<td align="left">
 <a href="#official-documentation--">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-docs.svg">
