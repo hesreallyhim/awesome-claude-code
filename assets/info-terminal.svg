@@ -2,10 +2,8 @@
   <defs>
     <!-- CRT screen glow -->
     <filter id="crtGlow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="0.2" result="coloredBlur"/>
       <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
@@ -23,7 +21,7 @@
 
     <!-- Vignette -->
     <radialGradient id="vignette">
-      <stop offset="60%" style="stop-color:#000000;stop-opacity:0"/>
+      <stop offset="75%" style="stop-color:#000000;stop-opacity:0"/>
       <stop offset="100%" style="stop-color:#000000;stop-opacity:0.4"/>
     </radialGradient>
   </defs>
@@ -40,28 +38,28 @@
   <!-- Content with CRT glow -->
   <g filter="url(#crtGlow)">
     <!-- System status lines -->
-    <text x="30" y="35" font-family="monospace" font-size="14" fill="#ffaa00" opacity="0.9">
+    <text x="30" y="35" font-family="monospace" font-size="22" fill="#ffaa00" opacity="0.9">
       &gt; SYSTEM ONLINE
       <animate attributeName="opacity" values="0.9;0.85;0.9" dur="0.12s" repeatCount="indefinite"/>
     </text>
 
-    <text x="30" y="55" font-family="monospace" font-size="14" fill="#ffaa00" opacity="0.9">
+    <text x="30" y="60" font-family="monospace" font-size="22" fill="#ffaa00" opacity="0.9">
       &gt; LOADING RESOURCES...
       <animate attributeName="opacity" values="0.9;0.85;0.9" dur="0.15s" repeatCount="indefinite"/>
     </text>
 
     <!-- Blinking cursor after RESOURCES -->
-    <rect x="230" y="42" width="8" height="16" fill="#ffaa00">
+    <rect x="325" y="42" width="8" height="20" fill="#ffaa00">
       <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
     </rect>
 
     <!-- Description text -->
-    <text x="50" y="85" font-family="monospace" font-size="12" opacity="0.85">
+    <text x="50" y="85" font-family="monospace" font-size="18" opacity="0.85">
       <tspan fill="#ffbb33">A </tspan>
-      <tspan fill="#ffee00" opacity="1" font-weight="bold">curated collection</tspan>
+      <tspan fill="#ffee00" opacity="1" font-weight="boldq00">curated collection</tspan>
       <tspan fill="#ffbb33"> of tools, workflows, and configurations</tspan>
     </text>
-    <text x="50" y="105" font-family="monospace" font-size="12" fill="#ffbb33" opacity="0.85">
+    <text x="50" y="115" font-family="monospace" font-size="20" fill="#ffbb33" opacity="0.85">
       to supercharge your Claude Code experience.
     </text>
   </g>

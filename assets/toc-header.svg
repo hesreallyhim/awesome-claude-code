@@ -1,7 +1,7 @@
-<svg width="850" height="60" xmlns="http://www.w3.org/2000/svg">
+<svg width="400" height="48" viewBox="0 0 400 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet">
   <defs>
     <filter id="crtGlow">
-      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="0.2" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -19,30 +19,29 @@
   </defs>
 
   <!-- Monitor bezel top -->
-  <rect width="850" height="60" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="3"/>
+  <rect width="400" height="40" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="3"/>
 
   <!-- Screen -->
-  <rect x="7" y="7" width="836" height="46" fill="url(#phosphor)"/>
-  <rect x="7" y="7" width="836" height="46" fill="url(#scanlines)"/>
-
+  <rect x="7" y="7" width="386" height="30" fill="url(#phosphor)"/>
+  <rect x="7" y="7" width="386" height="30" fill="url(#scanlines)"/>
   <!-- Content -->
   <g filter="url(#crtGlow)">
-    <text x="20" y="28" font-family="monospace" font-size="14" fill="#66ff66" opacity="0.9">
-      user@awesome-claude-code:~$
+    <text x="20" y="28" font-family="monospace" font-size="16" fill="#66ff66" opacity="0.9">
+      awesome-claude-code:~$
     </text>
-    <text x="260" y="28" font-family="monospace" font-size="14" fill="#33ff33">
-      ls -la /resources/
+    <text x="240" y="28" font-family="monospace" font-size="16" fill="#33ff33">
+      ls -la
       <animate attributeName="opacity" values="1;0.95;1" dur="0.12s" repeatCount="indefinite"/>
     </text>
 
     <!-- Blinking cursor -->
-    <rect x="465" y="16" width="8" height="16" fill="#33ff33">
+    <rect x="310" y="14" width="8" height="16" fill="#33ff33">
       <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
     </rect>
   </g>
 
   <!-- Power LED -->
-  <circle cx="830" cy="13" r="3" fill="#33ff33" opacity="0.8">
+  <circle cx="380" cy="13" r="3" fill="#33ff33" opacity="0.8">
     <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
   </circle>
 </svg>

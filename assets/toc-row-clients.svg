@@ -1,7 +1,7 @@
-<svg width="850" height="40" xmlns="http://www.w3.org/2000/svg">
+<svg width="400" height="40" viewBox="0 0 400 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet">
   <defs>
     <filter id="crtGlow">
-      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="0.2" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -18,34 +18,30 @@
     </linearGradient>
   </defs>
 
-  <!-- Seamless middle section -->
-  <rect width="850" height="40" fill="#1a1a1a"/>
-  <rect x="7" y="0" width="836" height="40" fill="url(#phosphor)"/>
-  <rect x="7" y="0" width="836" height="40" fill="url(#scanlines)"/>
+  <!-- Background -->
+  <rect width="400" height="40" fill="#1a1a1a"/>
+  <rect x="7" y="0" width="393" height="40" fill="url(#phosphor)"/>
+  <rect x="7" y="0" width="393" height="40" fill="url(#scanlines)"/>
 
   <!-- Hover highlight -->
-  <rect x="7" y="0" width="836" height="40" fill="#33ff33" opacity="0">
-    <animate attributeName="opacity" values="0;0.05;0" dur="2.3s" repeatCount="indefinite"/>
+  <rect x="7" y="0" width="393" height="40" fill="#33ff33" opacity="0">
+    <animate attributeName="opacity" values="0;0.05;0" dur="2s" repeatCount="indefinite"/>
   </rect>
 
   <!-- Content -->
   <g filter="url(#crtGlow)">
-    <text x="20" y="25" font-family="monospace" font-size="13" fill="#66ff66">
+    <text x="20" y="25" font-family="monospace" font-size="16" fill="#66ff66">
       drwxr-xr-x
     </text>
-    <text x="140" y="25" font-family="monospace" font-size="13" fill="#33ff33" font-weight="bold">
-      alternative-clients/
-      <animate attributeName="opacity" values="1;0.95;1" dur="0.13s" repeatCount="indefinite"/>
+    <text x="140" y="25" font-family="monospace" font-size="16" fill="#33ff33" font-weight="bold">
+      ALTERNATIVE_CLIENTS/
+      <animate attributeName="opacity" values="1;0.95;1" dur="0.1s" repeatCount="indefinite"/>
     </text>
-    <text x="400" y="25" font-family="monospace" font-size="12" fill="#449944" opacity="0.8">
-      # Alternative UIs &amp; front-ends
-    </text>
-  </g>
+    <!--
+    <text x="400" y="25" font-family="monospace" font-size="14" fill="#449944" opacity="1">
+      # Alternative Clients are alternative UIs and front-ends for interacting with Claude Code, either on mobile or on the desktop.
 
-  <!-- Glitch effect -->
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;0;0;0;0;0;1;0;0;0" dur="5.2s" repeatCount="indefinite"/>
-    <rect x="150" y="18" width="100" height="2" fill="#33ff33"/>
-    <rect x="420" y="18" width="70" height="2" fill="#449944" opacity="0.6"/>
+    </text>
+    -->
   </g>
 </svg>

@@ -50,7 +50,7 @@
   <!-- Main layer - with vertical snap -->
   <text x="450" y="38"
         font-family="Georgia, 'Times New Roman', serif"
-        font-size="13"
+        font-size="17"
         fill="#3d3530"
         text-anchor="middle">
     Claude Code is a cutting-edge CLI-based coding assistant
@@ -61,7 +61,7 @@
   <!-- Cyan offset layer -->
   <text x="450" y="55"
         font-family="Georgia, 'Times New Roman', serif"
-        font-size="13"
+        font-size="17"
         fill="#6b8a8a"
         text-anchor="middle"
         opacity="0.15">
@@ -72,7 +72,7 @@
   <!-- Magenta offset layer -->
   <text x="450" y="55"
         font-family="Georgia, 'Times New Roman', serif"
-        font-size="13"
+        font-size="17"
         fill="#8a6b6b"
         text-anchor="middle"
         opacity="0.15">
@@ -83,18 +83,18 @@
   <!-- Main layer -->
   <text x="450" y="55"
         font-family="Georgia, 'Times New Roman', serif"
-        font-size="13"
+        font-size="17"
         fill="#3d3530"
         text-anchor="middle">
     released by <tspan fill="#c96442" font-weight="600">Anthropic</tspan>. This collection helps the community
-    <animate attributeName="y" values="53;55;55;54;53;54;55;53" keyTimes="0;0.012;0.5;0.965;0.975;0.985;0.995;1" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
+    <animate attributeName="y" values="58;60;60;54;53;54;60;53" keyTimes="0;0.012;0.5;0.965;0.975;0.985;0.995;1" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
   </text>
 
   <!-- Line 3: share knowledge -->
   <!-- Cyan offset layer -->
-  <text x="450" y="72"
+  <text x="450" y="78"
         font-family="Georgia, 'Times New Roman', serif"
-        font-size="13"
+        font-size="15"
         font-style="italic"
         fill="#6b8a8a"
         text-anchor="middle"
@@ -106,7 +106,7 @@
   <!-- Magenta offset layer -->
   <text x="450" y="72"
         font-family="Georgia, 'Times New Roman', serif"
-        font-size="13"
+        font-size="15"
         font-style="italic"
         fill="#8a6b6b"
         text-anchor="middle"
@@ -116,14 +116,14 @@
     <animate attributeName="opacity" values="0.3;0.08;0.08;0.12;0.20;0.28;0.3;0.3" keyTimes="0;0.015;0.5;0.96;0.97;0.98;0.99;1" dur="8s" repeatCount="indefinite"/>
   </text>
   <!-- Main layer -->
-  <text x="450" y="72"
+  <text x="450" y="76"
         font-family="Georgia, 'Times New Roman', serif"
-        font-size="13"
+        font-size="18"
         font-style="italic"
         fill="#5c5247"
         text-anchor="middle">
     share knowledge and discover the best tools and practices.
-    <animate attributeName="y" values="70;72;72;71;70;71;72;70" keyTimes="0;0.015;0.5;0.96;0.97;0.98;0.99;1" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
+    <animate attributeName="y" values="78;82;82;81;78;81;82;78" keyTimes="0;0.015;0.5;0.96;0.97;0.98;0.99;1" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
   </text>
 
   <!-- Bottom decorative element -->

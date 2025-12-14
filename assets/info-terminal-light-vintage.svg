@@ -79,7 +79,7 @@
       <animate attributeName="opacity" values="0;0;1;1;1;1;1;1;1;1;1;1" keyTimes="0;0.20;0.22;0.24;0.27;0.3;0.4;0.5;0.6;0.7;0.8;1" dur="12s" repeatCount="indefinite"/>
     </text>
     <!-- I -->
-    <text x="180" y="55" opacity="0">
+    <text x="178" y="55" opacity="0">
       I
       <animate attributeName="opacity" values="0;0;1;1;1;1;1;1;1;1;1;1" keyTimes="0;0.22;0.24;0.26;0.28;0.3;0.4;0.5;0.6;0.7;0.8;1" dur="12s" repeatCount="indefinite"/>
     </text>
@@ -103,7 +103,7 @@
   <!-- LOADING RESOURCES... - appears after delay -->
   <text x="40" y="78"
         font-family="'Courier New', Courier, monospace"
-        font-size="14"
+        font-size="18"
         fill="#5c5247"
         opacity="0">
     &gt; LOADING RESOURCES...
@@ -111,10 +111,10 @@
   </text>
 
   <!-- Description text - fades in after typing -->
-  <g font-family="Georgia, 'Times New Roman', serif" font-size="13" opacity="0">
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="16" opacity="0">
     <animate attributeName="opacity" values="0;0;0;0;0;0;1;1;1;1;1;0" keyTimes="0;0.35;0.38;0.40;0.42;0.45;0.50;0.6;0.7;0.8;0.9;1" dur="12s" repeatCount="indefinite"/>
-    <text x="60" y="102" fill="#3d3530">
-      A <tspan fill="#c96442" font-weight="600">curated collection</tspan> of tools, workflows, and configurations
+    <text x="60" y="100" fill="#3d3530">
+      A <tspan fill="#c96442" font-weight="800">curated collection</tspan> of tools, workflows, and configurations
     </text>
     <text x="60" y="120" fill="#5c5247" font-style="italic">
       to supercharge your Claude Code experience.
