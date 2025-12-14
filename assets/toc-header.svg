@@ -1,4 +1,4 @@
-<svg width="850" height="60" xmlns="http://www.w3.org/2000/svg">
+<svg height="60" viewBox="0 0 850 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid slice">
   <defs>
     <filter id="crtGlow">
       <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>

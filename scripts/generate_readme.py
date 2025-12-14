@@ -688,10 +688,10 @@ def generate_toc_row_svg(directory_name, description):
     desc_escaped = description.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
     dir_escaped = directory_name.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
-    return f"""<svg width="850" height="40" xmlns="http://www.w3.org/2000/svg">
+    return f"""<svg width="400" height="40" viewBox="0 0 400 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet">
   <defs>
     <filter id="crtGlow">
-      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="1.0" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -709,12 +709,12 @@ def generate_toc_row_svg(directory_name, description):
   </defs>
 
   <!-- Background -->
-  <rect width="850" height="40" fill="#1a1a1a"/>
-  <rect x="7" y="0" width="836" height="40" fill="url(#phosphor)"/>
-  <rect x="7" y="0" width="836" height="40" fill="url(#scanlines)"/>
+  <rect width="400" height="40" fill="#1a1a1a"/>
+  <rect x="7" y="0" width="393" height="40" fill="url(#phosphor)"/>
+  <rect x="7" y="0" width="393" height="40" fill="url(#scanlines)"/>
 
   <!-- Hover highlight -->
-  <rect x="7" y="0" width="836" height="40" fill="#33ff33" opacity="0">
+  <rect x="7" y="0" width="393" height="40" fill="#33ff33" opacity="0">
     <animate attributeName="opacity" values="0;0.05;0" dur="2s" repeatCount="indefinite"/>
   </rect>
 
@@ -727,9 +727,11 @@ def generate_toc_row_svg(directory_name, description):
       {dir_escaped}
       <animate attributeName="opacity" values="1;0.95;1" dur="0.1s" repeatCount="indefinite"/>
     </text>
-    <text x="400" y="25" font-family="monospace" font-size="12" fill="#449944" opacity="0.8">
+    <!--
+    <text x="400" y="25" font-family="monospace" font-size="14" fill="#449944" opacity="1">
       # {desc_escaped}
     </text>
+    -->
   </g>
 </svg>"""
 
@@ -744,10 +746,10 @@ def generate_toc_sub_svg(directory_name, description):
     desc_escaped = description.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
     dir_escaped = directory_name.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
-    return f"""<svg width="850" height="35" xmlns="http://www.w3.org/2000/svg">
+    return f"""<svg height="40" width="400" viewBox="0 0 400 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet">
   <defs>
     <filter id="crtGlow">
-      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="1.0" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -765,21 +767,21 @@ def generate_toc_sub_svg(directory_name, description):
   </defs>
 
   <!-- Background -->
-  <rect width="850" height="35" fill="#1a1a1a"/>
-  <rect x="7" y="0" width="836" height="35" fill="url(#phosphor)"/>
-  <rect x="7" y="0" width="836" height="35" fill="url(#scanlines)"/>
+  <rect width="400" height="40" fill="#1a1a1a"/>
+  <rect x="7" y="0" width="393" height="40" fill="url(#phosphor)"/>
+  <rect x="7" y="0" width="393" height="40" fill="url(#scanlines)"/>
 
   <!-- Content -->
   <g filter="url(#crtGlow)">
-    <text x="40" y="22" font-family="monospace" font-size="12" fill="#66ff66" opacity="0.7">
+    <text x="40" y="25" font-family="monospace" font-size="13" fill="#66ff66" opacity="0.7">
       drwxr-xr-x
     </text>
-    <text x="160" y="22" font-family="monospace" font-size="12" fill="#33ff33">
+    <text x="160" y="25" font-family="monospace" font-size="13" fill="#33ff33">
       {dir_escaped}
     </text>
-    <text x="400" y="22" font-family="monospace" font-size="11" fill="#449944" opacity="0.7">
+   <!-- <text x="400" y="25" font-family="monospace" font-size="14" fill="#449944" opacity="1">
       # {desc_escaped}
-    </text>
+    </text> -->
   </g>
 </svg>"""
 
@@ -864,12 +866,12 @@ def ensure_desc_box_exists(position, assets_dir):
     return filename
 
 
-def ensure_toc_row_exists(category_id, directory_name, description, assets_dir):
+def ensure_toc_row_exists(category_id, directory_name, description, assets_dir, always_regenerate=True):
     """Ensure TOC row SVG exists, generating if needed."""
     filename = f"toc-row-{category_id}.svg"
     filepath = os.path.join(assets_dir, filename)
 
-    if not os.path.exists(filepath):
+    if always_regenerate or not os.path.exists(filepath):
         svg_content = generate_toc_row_svg(directory_name, description)
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(svg_content)
@@ -877,12 +879,12 @@ def ensure_toc_row_exists(category_id, directory_name, description, assets_dir):
     return filename
 
 
-def ensure_toc_sub_exists(subcat_id, directory_name, description, assets_dir):
+def ensure_toc_sub_exists(subcat_id, directory_name, description, assets_dir, always_regenerate=True):
     """Ensure TOC subcategory SVG exists, generating if needed."""
     filename = f"toc-sub-{subcat_id}.svg"
     filepath = os.path.join(assets_dir, filename)
 
-    if not os.path.exists(filepath):
+    if always_regenerate or not os.path.exists(filepath):
         svg_content = generate_toc_sub_svg(directory_name, description)
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(svg_content)
@@ -1032,7 +1034,7 @@ def generate_toc_from_categories(csv_data=None, general_map=None):
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/toc-header.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/toc-header-light-anim-scanline.svg">
-  <img src="assets/toc-header-light-anim-scanline.svg" alt="Directory Listing">
+  <img src="assets/toc-header-light-anim-scanline.svg" alt="Directory Listing" height="40">
 </picture>"""
 
     toc_lines = [toc_header]
@@ -1070,10 +1072,10 @@ def generate_toc_from_categories(csv_data=None, general_map=None):
         toc_lines.append(
             f'    <source media="(prefers-color-scheme: light)" srcset="assets/{light_svg}">'
         )
-        toc_lines.append(f'    <img src="assets/{light_svg}" alt="{section_title}">')
+        toc_lines.append(f'    <img src="assets/{light_svg}" alt="{section_title}" height="40">')
         toc_lines.append("  </picture>")
         toc_lines.append("</a>")
-        toc_lines.append('<br clear="all">')
+        toc_lines.append("<br>")
 
         # Check if this category has subcategories
         subcategories = category.get("subcategories", [])
@@ -1132,10 +1134,10 @@ def generate_toc_from_categories(csv_data=None, general_map=None):
                     toc_lines.append(
                         f'    <source media="(prefers-color-scheme: light)" srcset="assets/{light_svg}">'
                     )
-                    toc_lines.append(f'    <img src="assets/{light_svg}" alt="{sub_title}">')
+                    toc_lines.append(f'    <img src="assets/{light_svg}" alt="{sub_title}" height="40">')
                     toc_lines.append("  </picture>")
                     toc_lines.append("</a>")
-                    toc_lines.append('<br clear="all">')
+                    toc_lines.append("<br>")
 
     return "\n".join(toc_lines).strip()
 
@@ -1413,7 +1415,7 @@ def generate_section_content(
         f'    <source media="(prefers-color-scheme: light)" srcset="assets/{light_divider}">'
     )
     lines.append(
-        f'    <img src="assets/{light_divider}" alt="" width="100%" style="max-width: 900px;">'
+        f'    <img src="assets/{light_divider}" alt="" width="100%" style="max-width: 800px;">'
     )
     lines.append("  </picture>")
     lines.append("</div>")
