@@ -30,10 +30,10 @@
 
   <!-- Content -->
   <g filter="url(#crtGlow)">
-    <text x="20" y="25" font-family="monospace" font-size="16" fill="#66ff66">
+    <text x="20" y="25" font-family="monospace" font-size="14" fill="#66ff66">
       drwxr-xr-x
     </text>
-    <text x="140" y="25" font-family="monospace" font-size="16" fill="#33ff33" font-weight="bold">
+    <text x="140" y="25" font-family="monospace" font-size="14" fill="#33ff33" font-weight="bold">
       CLAUDE_MD_FILES/
       <animate attributeName="opacity" values="1;0.95;1" dur="0.1s" repeatCount="indefinite"/>
     </text>

@@ -197,252 +197,284 @@
 
 <div align="center">
 
-<!-- Directory Tree Terminal - Theme Adaptive -->
+<div style="overflow-x:auto;white-space:nowrap;text-align:left;">
+<div style="height:48px;width:400px;overflow:hidden;display:block;"><!-- Directory Tree Terminal - Theme Adaptive -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/toc-header.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/toc-header-light-anim-scanline.svg">
-  <img src="assets/toc-header-light-anim-scanline.svg" alt="Directory Listing" height="40">
-</picture>
+  <img src="assets/toc-header-light-anim-scanline.svg" alt="Directory Listing" height="48" style="height:48px;max-width:none;">
+</picture></div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#agent-skills-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-row-skills.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-row-skills-light-anim-scanline.svg">
-    <img src="assets/toc-row-skills-light-anim-scanline.svg" alt="Agent Skills" height="40">
+    <img src="assets/toc-row-skills-light-anim-scanline.svg" alt="Agent Skills" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#general-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-general.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-general-light-anim-scanline.svg">
-    <img src="assets/toc-sub-general-light-anim-scanline.svg" alt="General" height="40">
+    <img src="assets/toc-sub-general-light-anim-scanline.svg" alt="General" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#workflows--knowledge-guides-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-row-workflows.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-row-workflows-light-anim-scanline.svg">
-    <img src="assets/toc-row-workflows-light-anim-scanline.svg" alt="Workflows & Knowledge Guides" height="40">
+    <img src="assets/toc-row-workflows-light-anim-scanline.svg" alt="Workflows & Knowledge Guides" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#general--1">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-general.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-general-light-anim-scanline.svg">
-    <img src="assets/toc-sub-general-light-anim-scanline.svg" alt="General" height="40">
+    <img src="assets/toc-sub-general-light-anim-scanline.svg" alt="General" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#tooling-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-row-tooling.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-row-tooling-light-anim-scanline.svg">
-    <img src="assets/toc-row-tooling-light-anim-scanline.svg" alt="Tooling" height="40">
+    <img src="assets/toc-row-tooling-light-anim-scanline.svg" alt="Tooling" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#general--2">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-general.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-general-light-anim-scanline.svg">
-    <img src="assets/toc-sub-general-light-anim-scanline.svg" alt="General" height="40">
+    <img src="assets/toc-sub-general-light-anim-scanline.svg" alt="General" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#ide-integrations-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-ide.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-ide-light-anim-scanline.svg">
-    <img src="assets/toc-sub-ide-light-anim-scanline.svg" alt="IDE Integrations" height="40">
+    <img src="assets/toc-sub-ide-light-anim-scanline.svg" alt="IDE Integrations" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#usage-monitors-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-monitors.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-monitors-light-anim-scanline.svg">
-    <img src="assets/toc-sub-monitors-light-anim-scanline.svg" alt="Usage Monitors" height="40">
+    <img src="assets/toc-sub-monitors-light-anim-scanline.svg" alt="Usage Monitors" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#orchestrators-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-orchestrators.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-orchestrators-light-anim-scanline.svg">
-    <img src="assets/toc-sub-orchestrators-light-anim-scanline.svg" alt="Orchestrators" height="40">
+    <img src="assets/toc-sub-orchestrators-light-anim-scanline.svg" alt="Orchestrators" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#status-lines-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-row-statusline.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-row-statusline-light-anim-scanline.svg">
-    <img src="assets/toc-row-statusline-light-anim-scanline.svg" alt="Status Lines" height="40">
+    <img src="assets/toc-row-statusline-light-anim-scanline.svg" alt="Status Lines" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#general--3">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-general.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-general-light-anim-scanline.svg">
-    <img src="assets/toc-sub-general-light-anim-scanline.svg" alt="General" height="40">
+    <img src="assets/toc-sub-general-light-anim-scanline.svg" alt="General" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#hooks-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-row-custom.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-row-custom-light-anim-scanline.svg">
-    <img src="assets/toc-row-custom-light-anim-scanline.svg" alt="Hooks" height="40">
+    <img src="assets/toc-row-custom-light-anim-scanline.svg" alt="Hooks" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#general--4">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-general.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-general-light-anim-scanline.svg">
-    <img src="assets/toc-sub-general-light-anim-scanline.svg" alt="General" height="40">
+    <img src="assets/toc-sub-general-light-anim-scanline.svg" alt="General" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#slash-commands-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-row-commands.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-row-commands-light-anim-scanline.svg">
-    <img src="assets/toc-row-commands-light-anim-scanline.svg" alt="Slash-Commands" height="40">
+    <img src="assets/toc-row-commands-light-anim-scanline.svg" alt="Slash-Commands" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#general--5">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-general.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-general-light-anim-scanline.svg">
-    <img src="assets/toc-sub-general-light-anim-scanline.svg" alt="General" height="40">
+    <img src="assets/toc-sub-general-light-anim-scanline.svg" alt="General" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#version-control--git-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-git.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-git-light-anim-scanline.svg">
-    <img src="assets/toc-sub-git-light-anim-scanline.svg" alt="Version Control & Git" height="40">
+    <img src="assets/toc-sub-git-light-anim-scanline.svg" alt="Version Control & Git" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#code-analysis--testing-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-code-analysis.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-code-analysis-light-anim-scanline.svg">
-    <img src="assets/toc-sub-code-analysis-light-anim-scanline.svg" alt="Code Analysis & Testing" height="40">
+    <img src="assets/toc-sub-code-analysis-light-anim-scanline.svg" alt="Code Analysis & Testing" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#context-loading--priming-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-context.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-context-light-anim-scanline.svg">
-    <img src="assets/toc-sub-context-light-anim-scanline.svg" alt="Context Loading & Priming" height="40">
+    <img src="assets/toc-sub-context-light-anim-scanline.svg" alt="Context Loading & Priming" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#documentation--changelogs-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-documentation.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-documentation-light-anim-scanline.svg">
-    <img src="assets/toc-sub-documentation-light-anim-scanline.svg" alt="Documentation & Changelogs" height="40">
+    <img src="assets/toc-sub-documentation-light-anim-scanline.svg" alt="Documentation & Changelogs" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#ci--deployment-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-ci.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-ci-light-anim-scanline.svg">
-    <img src="assets/toc-sub-ci-light-anim-scanline.svg" alt="CI / Deployment" height="40">
+    <img src="assets/toc-sub-ci-light-anim-scanline.svg" alt="CI / Deployment" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#project--task-management-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-project-mgmt.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-project-mgmt-light-anim-scanline.svg">
-    <img src="assets/toc-sub-project-mgmt-light-anim-scanline.svg" alt="Project & Task Management" height="40">
+    <img src="assets/toc-sub-project-mgmt-light-anim-scanline.svg" alt="Project & Task Management" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#miscellaneous-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-misc.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-misc-light-anim-scanline.svg">
-    <img src="assets/toc-sub-misc-light-anim-scanline.svg" alt="Miscellaneous" height="40">
+    <img src="assets/toc-sub-misc-light-anim-scanline.svg" alt="Miscellaneous" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#claudemd-files-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-row-config.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-row-config-light-anim-scanline.svg">
-    <img src="assets/toc-row-config-light-anim-scanline.svg" alt="CLAUDE.md Files" height="40">
+    <img src="assets/toc-row-config-light-anim-scanline.svg" alt="CLAUDE.md Files" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#language-specific-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-language.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-language-light-anim-scanline.svg">
-    <img src="assets/toc-sub-language-light-anim-scanline.svg" alt="Language-Specific" height="40">
+    <img src="assets/toc-sub-language-light-anim-scanline.svg" alt="Language-Specific" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#domain-specific-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-domain.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-domain-light-anim-scanline.svg">
-    <img src="assets/toc-sub-domain-light-anim-scanline.svg" alt="Domain-Specific" height="40">
+    <img src="assets/toc-sub-domain-light-anim-scanline.svg" alt="Domain-Specific" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#project-scaffolding--mcp-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-scaffolding.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-scaffolding-light-anim-scanline.svg">
-    <img src="assets/toc-sub-scaffolding-light-anim-scanline.svg" alt="Project Scaffolding & MCP" height="40">
+    <img src="assets/toc-sub-scaffolding-light-anim-scanline.svg" alt="Project Scaffolding & MCP" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#alternative-clients-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-row-clients.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-row-clients-light-anim-scanline.svg">
-    <img src="assets/toc-row-clients-light-anim-scanline.svg" alt="Alternative Clients" height="40">
+    <img src="assets/toc-row-clients-light-anim-scanline.svg" alt="Alternative Clients" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#general--6">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-general.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-general-light-anim-scanline.svg">
-    <img src="assets/toc-sub-general-light-anim-scanline.svg" alt="General" height="40">
+    <img src="assets/toc-sub-general-light-anim-scanline.svg" alt="General" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#official-documentation-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-row-docs.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-row-docs-light-anim-scanline.svg">
-    <img src="assets/toc-row-docs-light-anim-scanline.svg" alt="Official Documentation" height="40">
+    <img src="assets/toc-row-docs-light-anim-scanline.svg" alt="Official Documentation" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#general--7">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-general.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-general-light-anim-scanline.svg">
-    <img src="assets/toc-sub-general-light-anim-scanline.svg" alt="General" height="40">
+    <img src="assets/toc-sub-general-light-anim-scanline.svg" alt="General" height="40" style="height:40px;max-width:none;">
   </picture>
 </a>
-<br>
+</div>
+</div>
 
 </div>
 

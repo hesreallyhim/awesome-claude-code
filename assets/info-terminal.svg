@@ -2,9 +2,8 @@
   <defs>
     <!-- CRT screen glow -->
     <filter id="crtGlow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="0.2" result="coloredBlur"/>
       <feMerge>
-        <feMergeNode in="coloredBlur"/>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
@@ -23,7 +22,7 @@
 
     <!-- Vignette -->
     <radialGradient id="vignette">
-      <stop offset="60%" style="stop-color:#000000;stop-opacity:0"/>
+      <stop offset="75%" style="stop-color:#000000;stop-opacity:0"/>
       <stop offset="100%" style="stop-color:#000000;stop-opacity:0.4"/>
     </radialGradient>
   </defs>

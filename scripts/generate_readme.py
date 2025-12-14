@@ -5,6 +5,7 @@ Reads resource metadata from CSV and generates README using templates.
 """
 
 import csv
+import glob
 import os
 import re
 import shutil
@@ -691,7 +692,7 @@ def generate_toc_row_svg(directory_name, description):
     return f"""<svg width="400" height="40" viewBox="0 0 400 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet">
   <defs>
     <filter id="crtGlow">
-      <feGaussianBlur stdDeviation="1.0" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="0.2" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -720,10 +721,10 @@ def generate_toc_row_svg(directory_name, description):
 
   <!-- Content -->
   <g filter="url(#crtGlow)">
-    <text x="20" y="25" font-family="monospace" font-size="13" fill="#66ff66">
+    <text x="20" y="25" font-family="monospace" font-size="16" fill="#66ff66">
       drwxr-xr-x
     </text>
-    <text x="140" y="25" font-family="monospace" font-size="13" fill="#33ff33" font-weight="bold">
+    <text x="140" y="25" font-family="monospace" font-size="16" fill="#33ff33" font-weight="bold">
       {dir_escaped}
       <animate attributeName="opacity" values="1;0.95;1" dur="0.1s" repeatCount="indefinite"/>
     </text>
@@ -749,7 +750,7 @@ def generate_toc_sub_svg(directory_name, description):
     return f"""<svg height="40" width="400" viewBox="0 0 400 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet">
   <defs>
     <filter id="crtGlow">
-      <feGaussianBlur stdDeviation="1.0" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="0.5" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -773,15 +774,12 @@ def generate_toc_sub_svg(directory_name, description):
 
   <!-- Content -->
   <g filter="url(#crtGlow)">
-    <text x="40" y="25" font-family="monospace" font-size="13" fill="#66ff66" opacity="0.7">
-      drwxr-xr-x
+    <text x="18" y="25" font-family="monospace" font-size="12" fill="#66ff66" opacity="0.8">
+      |-
     </text>
-    <text x="160" y="25" font-family="monospace" font-size="13" fill="#33ff33">
+    <text x="56" y="25" font-family="monospace" font-size="13" fill="#33ff33">
       {dir_escaped}
     </text>
-   <!-- <text x="400" y="25" font-family="monospace" font-size="14" fill="#449944" opacity="1">
-      # {desc_escaped}
-    </text> -->
   </g>
 </svg>"""
 
@@ -1034,10 +1032,13 @@ def generate_toc_from_categories(csv_data=None, general_map=None):
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/toc-header.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/toc-header-light-anim-scanline.svg">
-  <img src="assets/toc-header-light-anim-scanline.svg" alt="Directory Listing" height="40">
+  <img src="assets/toc-header-light-anim-scanline.svg" alt="Directory Listing" height="48" style="height:48px;max-width:none;">
 </picture>"""
 
-    toc_lines = [toc_header]
+    toc_lines = [
+        '<div style="overflow-x:auto;white-space:nowrap;text-align:left;">',
+        f'<div style="height:48px;width:400px;overflow:hidden;display:block;">{toc_header}</div>',
+    ]
 
     # Track "General" occurrences across all categories that actually have them
     general_counter = 0
@@ -1064,18 +1065,21 @@ def generate_toc_from_categories(csv_data=None, general_map=None):
         # Add main category row with theme-adaptive picture element
         dark_svg = svg_filename
         light_svg = svg_filename.replace(".svg", "-light-anim-scanline.svg")
+        toc_lines.append('<div style="height:40px;width:400px;overflow:hidden;display:block;">')
         toc_lines.append(f'<a href="#{anchor}{anchor_suffix}">')
         toc_lines.append("  <picture>")
         toc_lines.append(
-            f'    <source media="(prefers-color-scheme: dark)" srcset="assets/{dark_svg}">'
+            f'    <source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/{dark_svg}\">'
         )
         toc_lines.append(
-            f'    <source media="(prefers-color-scheme: light)" srcset="assets/{light_svg}">'
+            f'    <source media=\"(prefers-color-scheme: light)\" srcset=\"assets/{light_svg}\">'
         )
-        toc_lines.append(f'    <img src="assets/{light_svg}" alt="{section_title}" height="40">')
+        toc_lines.append(
+            f'    <img src=\"assets/{light_svg}\" alt=\"{section_title}\" height=\"40\" style=\"height:40px;max-width:none;\">'
+        )
         toc_lines.append("  </picture>")
         toc_lines.append("</a>")
-        toc_lines.append("<br>")
+        toc_lines.append("</div>")
 
         # Check if this category has subcategories
         subcategories = category.get("subcategories", [])
@@ -1126,20 +1130,124 @@ def generate_toc_from_categories(csv_data=None, general_map=None):
                     # Add subcategory row with theme-adaptive picture element
                     dark_svg = svg_filename
                     light_svg = svg_filename.replace(".svg", "-light-anim-scanline.svg")
+                    toc_lines.append('<div style="height:40px;width:400px;overflow:hidden;display:block;">')
                     toc_lines.append(f'<a href="#{sub_anchor}">')
                     toc_lines.append("  <picture>")
                     toc_lines.append(
-                        f'    <source media="(prefers-color-scheme: dark)" srcset="assets/{dark_svg}">'
+                        f'    <source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/{dark_svg}\">'
                     )
                     toc_lines.append(
-                        f'    <source media="(prefers-color-scheme: light)" srcset="assets/{light_svg}">'
+                        f'    <source media=\"(prefers-color-scheme: light)\" srcset=\"assets/{light_svg}\">'
                     )
-                    toc_lines.append(f'    <img src="assets/{light_svg}" alt="{sub_title}" height="40">')
+                    toc_lines.append(
+                        f'    <img src=\"assets/{light_svg}\" alt=\"{sub_title}\" height=\"40\" style=\"height:40px;max-width:none;\">'
+                    )
                     toc_lines.append("  </picture>")
                     toc_lines.append("</a>")
-                    toc_lines.append("<br>")
+                    toc_lines.append("</div>")
+
+    toc_lines.append("</div>")
 
     return "\n".join(toc_lines).strip()
+
+
+def _normalize_svg_root(tag: str, target_width: int, target_height: int) -> str:
+    """Ensure root SVG tag enforces target width/height, viewBox, and left anchoring."""
+
+    def ensure_attr(svg_tag: str, name: str, value: str) -> str:
+        if re.search(rf'{name}="[^"]*"', svg_tag):
+            return re.sub(rf'{name}="[^"]*"', f'{name}="{value}"', svg_tag)
+        # Insert before closing ">"
+        return svg_tag.rstrip(">") + f' {name}="{value}">'
+
+    # Force consistent width/height
+    svg_tag = ensure_attr(tag, "width", str(target_width))
+    svg_tag = ensure_attr(svg_tag, "height", str(target_height))
+
+    # Ensure preserveAspectRatio anchors left and keeps aspect
+    svg_tag = ensure_attr(svg_tag, "preserveAspectRatio", "xMinYMid meet")
+
+    # Ensure viewBox exists; reuse original width/height if available
+    viewbox_match = re.search(r'viewBox="([^"]+)"', svg_tag)
+    if not viewbox_match:
+        svg_tag = ensure_attr(svg_tag, "viewBox", f"0 0 {target_width} {target_height}")
+
+    return svg_tag
+
+
+def normalize_toc_svgs(assets_dir: str) -> None:
+    """Normalize TOC row/sub SVGs to enforce consistent display height/anchoring."""
+    patterns = ["toc-row-*.svg", "toc-sub-*.svg", "toc-header*.svg"]
+    for pattern in patterns:
+        for path in glob.glob(os.path.join(assets_dir, pattern)):
+            with open(path, encoding="utf-8") as f:
+                content = f.read()
+
+            # Grab the root tag
+            match = re.search(r"<svg[^>]*>", content)
+            if not match:
+                continue
+
+            root_tag = match.group(0)
+            is_header = "toc-header" in os.path.basename(path)
+            target_width = 400
+            target_height = 40 if is_header else 40
+
+            normalized_tag = _normalize_svg_root(root_tag, target_width, target_height)
+            if normalized_tag != root_tag:
+                content = content.replace(root_tag, normalized_tag, 1)
+                with open(path, "w", encoding="utf-8") as f:
+                    f.write(content)
+
+
+def format_category_dir_name(name: str) -> str:
+    """Convert category name to UPPER_SNAKE/ style for directory display."""
+    # Replace non-alphanumeric with underscores, compress repeats, uppercase, then add trailing slash
+    slug = re.sub(r"[^A-Za-z0-9]+", "_", name).strip("_").upper()
+    return slug + "/"
+
+
+def regenerate_main_toc_svgs(categories, assets_dir: str) -> None:
+    """Regenerate main category TOC row SVGs with standardized styling."""
+    for category in categories:
+        display_dir = format_category_dir_name(category.get("name", ""))
+        description = category.get("description", "")
+
+        # Regenerate the dark SVG used in README
+        dark_filename = get_category_svg_filename(category.get("id", ""))
+        dark_path = os.path.join(assets_dir, dark_filename)
+        svg_content = generate_toc_row_svg(display_dir, description)
+        with open(dark_path, "w", encoding="utf-8") as f:
+            f.write(svg_content)
+
+        # Try to update the matching light SVG title to keep naming in sync
+        light_path = dark_path.replace(".svg", "-light-anim-scanline.svg")
+        if os.path.exists(light_path):
+            with open(light_path, encoding="utf-8") as f:
+                light_content = f.read()
+            new_content, replaced = re.subn(
+                r'(<text[^>]*fill="#3d3530"[^>]*>\s*)([^<]+)(\s*</text>)',
+                rf"\1{display_dir}\3",
+                light_content,
+                count=1,
+            )
+            if replaced:
+                with open(light_path, "w", encoding="utf-8") as f:
+                    f.write(new_content)
+
+
+def regenerate_sub_toc_svgs(categories, assets_dir: str) -> None:
+    """Regenerate subcategory TOC SVGs to keep sizing consistent."""
+    for category in categories:
+        subcats = category.get("subcategories", [])
+        for subcat in subcats:
+            display_dir = subcat.get("name", "")
+            description = subcat.get("description", "")
+            dark_filename = get_subcategory_svg_filename(subcat.get("id", ""))
+            dark_path = os.path.join(assets_dir, dark_filename)
+            svg_content = generate_toc_sub_svg(display_dir, description)
+            with open(dark_path, "w", encoding="utf-8") as f:
+                f.write(svg_content)
 
 
 def generate_resource_badge_svg(display_name, author_name=""):
@@ -1630,6 +1738,13 @@ def generate_readme_from_templates(csv_path, template_dir, output_path):
     template = load_template(template_path)
     overrides = load_overrides(template_dir)
     announcements = load_announcements(template_dir)
+    categories = category_manager.get_categories_for_readme()
+
+    # Optional: regenerate/normalize TOC row assets when explicitly requested
+    if os.getenv("REGEN_TOC_ASSETS"):
+        regenerate_main_toc_svgs(categories, assets_dir)
+        regenerate_sub_toc_svgs(categories, assets_dir)
+        normalize_toc_svgs(assets_dir)
 
     # Load CSV data
     csv_data = []
@@ -1640,8 +1755,6 @@ def generate_readme_from_templates(csv_path, template_dir, output_path):
             row = apply_overrides(row, overrides)
             if row["Active"].upper() == "TRUE":
                 csv_data.append(row)
-
-    categories = category_manager.get_categories_for_readme()
 
     # Precompute consistent anchors for repeated "General" subcategories
     general_anchor_map = build_general_anchor_map(categories, csv_data)

@@ -30,16 +30,16 @@
 
   <!-- Content -->
   <g filter="url(#crtGlow)">
-    <text x="20" y="25" font-family="monospace" font-size="16" fill="#66ff66">
+    <text x="20" y="25" font-family="monospace" font-size="14" fill="#66ff66">
       drwxr-xr-x
     </text>
-    <text x="140" y="25" font-family="monospace" font-size="16" fill="#33ff33" font-weight="bold">
-      CLAUDE_MD_FILES/
+    <text x="140" y="25" font-family="monospace" font-size="14" fill="#33ff33" font-weight="bold">
+      SLASH_COMMANDS/
       <animate attributeName="opacity" values="1;0.95;1" dur="0.1s" repeatCount="indefinite"/>
     </text>
     <!--
     <text x="400" y="25" font-family="monospace" font-size="14" fill="#449944" opacity="1">
-      # `CLAUDE.md` files are files that contain important guidelines and context-specific information or instructions that help Claude Code to better understand your project and your coding standards
+      # "Slash Commands are customized, carefully refined prompts that control Claude's behavior in order to perform a specific task"
 
     </text>
     -->
