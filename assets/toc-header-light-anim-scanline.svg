@@ -1,4 +1,4 @@
-<svg width="400" height="40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet" viewBox="0 0 400 40">
+<svg width="400" height="40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet" viewBox="40 0 400 40">
   <!--
     Vintage Technical Manual Style - TOC Header with SCAN LINE animation
     Cycle: 8s | Visible horizontal streak sweep
@@ -11,13 +11,13 @@
   </defs>
 
   <!-- Paper background -->
-  <rect width="850" height="60" fill="url(#paperBg)"/>
+  <rect width="400" height="40" fill="url(#paperBg)"/>
 
   <!-- Simple border -->
-  <rect x="2" y="2" width="846" height="56" fill="none" stroke="#c4baa8" stroke-width="1" rx="2"/>
+  <rect x="2" y="2" width="400" height="36" fill="none" stroke="#c4baa8" stroke-width="1" rx="2"/>
 
   <!-- Header title -->
-  <text x="425" y="28"
+  <text x="203" y="25"
         font-family="Georgia, 'Times New Roman', serif"
         font-size="18"
         font-weight="400"
@@ -28,13 +28,13 @@
   </text>
 
   <!-- Decorative lines flanking title -->
-  <line x1="120" y1="25" x2="300" y2="25" stroke="#5c5247" stroke-width="0.75" opacity="0.4"/>
-  <line x1="550" y1="25" x2="730" y2="25" stroke="#5c5247" stroke-width="0.75" opacity="0.4"/>
+  <!-- <line x1="20" y1="25" x2="180" y2="25" stroke="#5c5247" stroke-width="0.75" opacity="0.4"/>
+  <line x1="220" y1="25" x2="380" y2="25" stroke="#5c5247" stroke-width="0.75" opacity="0.4"/> -->
 
   <!-- Small diamond ornaments -->
   <g fill="#5c5247" opacity="0.5">
-    <path d="M 310 25 L 315 20 L 320 25 L 315 30 Z"/>
-    <path d="M 530 25 L 535 20 L 540 25 L 535 30 Z"/>
+    <path d="M 100 20 L 105 15 L 110 20 L 105 25 Z"/>
+    <path d="M 290 20 L 295 15 L 300 20 L 295 25 Z"/>
   </g>
 
   <!-- Column headers -->

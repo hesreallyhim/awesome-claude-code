@@ -737,6 +737,63 @@ def generate_toc_row_svg(directory_name, description):
 </svg>"""
 
 
+def generate_toc_row_light_svg(directory_name, description):
+    """Generate a light-mode TOC row SVG in vintage manual style."""
+    dir_escaped = directory_name.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    desc_escaped = description.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+    return f"""<svg width="400" height="40" viewBox="0 0 400 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet">
+  <defs>
+    <linearGradient id="paperBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#faf8f3"/>
+      <stop offset="100%" style="stop-color:#f5f0e6"/>
+    </linearGradient>
+    <pattern id="leaderDots" x="0" y="0" width="10" height="4" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.8" fill="#8a7b6f" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="36" fill="url(#paperBg)"/>
+  <line x1="2" y1="0" x2="2" y2="36" stroke="#c4baa8" stroke-width="1"/>
+  <line x1="398" y1="0" x2="398" y2="36" stroke="#c4baa8" stroke-width="1"/>
+
+  <!-- Section number -->
+  <text x="32" y="24"
+        font-family="'Courier New', Courier, monospace"
+        font-size="14"
+        font-weight="700"
+        fill="#c96442"
+        text-anchor="middle">
+    01
+  </text>
+
+  <!-- Section title -->
+  <text x="120" y="24"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="14"
+        fill="#3d3530">
+    {dir_escaped}
+  </text>
+
+  <!-- Leader dots -->
+  <rect x="210" y="20" width="140" height="4" fill="url(#leaderDots)"/>
+
+  <!-- Page/section reference -->
+  <text x="370" y="24"
+        font-family="'Courier New', Courier, monospace"
+        font-size="12"
+        fill="#5c5247"
+        text-anchor="end"
+        opacity="0.7">
+    §1
+  </text>
+
+  <!-- Bottom rule -->
+  <line x1="20" y1="34" x2="380" y2="34" stroke="#c4baa8" stroke-width="0.5" opacity="0.3"/>
+</svg>"""
+
+
 def generate_toc_sub_svg(directory_name, description):
     """Generate a dark-mode TOC subcategory row SVG.
 
@@ -781,6 +838,41 @@ def generate_toc_sub_svg(directory_name, description):
       {dir_escaped}
     </text>
   </g>
+</svg>"""
+
+
+def generate_toc_sub_light_svg(directory_name, description):
+    """Generate a light-mode TOC subcategory row SVG."""
+    dir_escaped = directory_name.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    desc_escaped = description.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+    return f"""<svg width="400" height="40" viewBox="0 0 400 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet">
+  <defs>
+    <linearGradient id="paperBgSub" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbfaf6"/>
+      <stop offset="100%" style="stop-color:#f4efe5"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="36" fill="url(#paperBgSub)"/>
+  <line x1="2" y1="0" x2="2" y2="36" stroke="#c4baa8" stroke-width="1"/>
+  <line x1="398" y1="0" x2="398" y2="36" stroke="#c4baa8" stroke-width="1"/>
+
+  <text x="22" y="24"
+        font-family="'Courier New', Courier, monospace"
+        font-size="12"
+        fill="#c96442"
+        opacity="0.8">
+    |-
+  </text>
+  <text x="60" y="24"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="13"
+        fill="#3d3530">
+    {dir_escaped}
+  </text>
+
+  <line x1="20" y1="33" x2="380" y2="33" stroke="#c4baa8" stroke-width="0.5" opacity="0.3"/>
 </svg>"""
 
 
@@ -1198,9 +1290,15 @@ def normalize_toc_svgs(assets_dir: str) -> None:
                     f.write(content)
 
 
-def format_category_dir_name(name: str) -> str:
-    """Convert category name to UPPER_SNAKE/ style for directory display."""
-    # Replace non-alphanumeric with underscores, compress repeats, uppercase, then add trailing slash
+def format_category_dir_name(name: str, category_id: str | None = None) -> str:
+    """Convert category name to display text for TOC rows."""
+    overrides = {
+        "workflows": "WORKFLOWS & GUIDES/",
+    }
+    if category_id and category_id in overrides:
+        return overrides[category_id]
+
+    # Default: UPPER_SNAKE_CASE with trailing slash
     slug = re.sub(r"[^A-Za-z0-9]+", "_", name).strip("_").upper()
     return slug + "/"
 
@@ -1208,7 +1306,7 @@ def format_category_dir_name(name: str) -> str:
 def regenerate_main_toc_svgs(categories, assets_dir: str) -> None:
     """Regenerate main category TOC row SVGs with standardized styling."""
     for category in categories:
-        display_dir = format_category_dir_name(category.get("name", ""))
+        display_dir = format_category_dir_name(category.get("name", ""), category.get("id", ""))
         description = category.get("description", "")
 
         # Regenerate the dark SVG used in README
@@ -1218,20 +1316,11 @@ def regenerate_main_toc_svgs(categories, assets_dir: str) -> None:
         with open(dark_path, "w", encoding="utf-8") as f:
             f.write(svg_content)
 
-        # Try to update the matching light SVG title to keep naming in sync
+        # Regenerate light-mode version
         light_path = dark_path.replace(".svg", "-light-anim-scanline.svg")
-        if os.path.exists(light_path):
-            with open(light_path, encoding="utf-8") as f:
-                light_content = f.read()
-            new_content, replaced = re.subn(
-                r'(<text[^>]*fill="#3d3530"[^>]*>\s*)([^<]+)(\s*</text>)',
-                rf"\1{display_dir}\3",
-                light_content,
-                count=1,
-            )
-            if replaced:
-                with open(light_path, "w", encoding="utf-8") as f:
-                    f.write(new_content)
+        light_svg = generate_toc_row_light_svg(display_dir, description)
+        with open(light_path, "w", encoding="utf-8") as f:
+            f.write(light_svg)
 
 
 def regenerate_sub_toc_svgs(categories, assets_dir: str) -> None:
@@ -1246,6 +1335,11 @@ def regenerate_sub_toc_svgs(categories, assets_dir: str) -> None:
             svg_content = generate_toc_sub_svg(display_dir, description)
             with open(dark_path, "w", encoding="utf-8") as f:
                 f.write(svg_content)
+
+            light_path = dark_path.replace(".svg", "-light-anim-scanline.svg")
+            light_svg = generate_toc_sub_light_svg(display_dir, description)
+            with open(light_path, "w", encoding="utf-8") as f:
+                f.write(light_svg)
 
 
 def generate_resource_badge_svg(display_name, author_name=""):
@@ -1536,8 +1630,11 @@ def generate_section_content(
 
     # Generate header SVG files for this category (dark and light versions)
     section_number = str(section_index + 1).zfill(2)  # "01", "02", etc.
+    display_title = title
+    if category_id == "workflows":
+        display_title = "Workflows & Guides"
     dark_header, light_header = ensure_category_header_exists(
-        category_id, title, section_number, assets_dir, icon=icon, always_regenerate=True
+        category_id, display_title, section_number, assets_dir, icon=icon, always_regenerate=True
     )
 
     # Add header with proper ID and theme-adaptive picture element
