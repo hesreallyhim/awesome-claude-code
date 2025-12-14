@@ -13,9 +13,8 @@
 
     <!-- CRT glow effect -->
     <filter id="crtGlow">
-      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="0.5" result="coloredBlur"/>
       <feMerge>
-        <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
@@ -43,19 +42,19 @@
   <!-- Content text with glow -->
   <g filter="url(#crtGlow)">
     <!-- Line 1 -->
-    <text x="450" y="35" font-family="monospace" font-size="14" fill="#FF8C5A" text-anchor="middle">
+    <text x="450" y="31" font-family="monospace" font-size="16" fill="#FF8C5A" text-anchor="middle">
       Claude Code is a cutting-edge CLI-based coding assistant
       <animate attributeName="opacity" values="1;0.98;1" dur="0.09s" repeatCount="indefinite"/>
     </text>
 
     <!-- Line 2 -->
-    <text x="450" y="55" font-family="monospace" font-size="14" fill="#FF8C5A" text-anchor="middle">
+    <text x="450" y="53" font-family="monospace" font-size="16" fill="#FF8C5A" text-anchor="middle">
       released by Anthropic. This collection helps the community
       <animate attributeName="opacity" values="1;0.97;1" dur="0.11s" repeatCount="indefinite"/>
     </text>
 
     <!-- Line 3 -->
-    <text x="450" y="75" font-family="monospace" font-size="14" fill="#FF8C5A" text-anchor="middle">
+    <text x="450" y="77" font-family="monospace" font-size="16" fill="#FF8C5A" text-anchor="middle">
       share knowledge and discover the best tools and practices.
       <animate attributeName="opacity" values="1;0.99;1" dur="0.08s" repeatCount="indefinite"/>
     </text>

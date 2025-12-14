@@ -1114,10 +1114,10 @@ def sanitize_filename_from_anchor(anchor: str) -> str:
 def build_general_anchor_map(categories, csv_data=None):
     """Build a map of (category, 'General') -> anchor string shared by TOC and body."""
     general_map = {}
-    general_counter = 0
 
     for category in categories:
         category_name = category.get("name", "")
+        category_id = category.get("id", "")
         subcategories = category.get("subcategories", [])
 
         for subcat in subcategories:
@@ -1138,9 +1138,8 @@ def build_general_anchor_map(categories, csv_data=None):
             if not include_subcategory:
                 continue
 
-            anchor = "general-" if general_counter == 0 else f"general--{general_counter}"
-            general_map[(category_name, sub_title)] = anchor
-            general_counter += 1
+            anchor = f"{category_id}-general"
+            general_map[(category_id, sub_title)] = anchor
 
     return general_map
 
@@ -1239,15 +1238,9 @@ def generate_toc_from_categories(csv_data=None, general_map=None):
                     # Special handling for "General" subcategories
                     if sub_title == "General":
                         if general_map is not None:
-                            sub_anchor = general_map.get((category_name, sub_title), "general-")
+                            sub_anchor = general_map.get((category_id, sub_title), "general-")
                         else:
-                            if general_counter == 0:
-                                # First occurrence: just #general-
-                                sub_anchor = "general-"
-                            else:
-                                # Subsequent occurrences: #general--1, #general--2, etc.
-                                sub_anchor = f"general--{general_counter}"
-                            general_counter += 1
+                            sub_anchor = f"{category_id}-general"
                     else:
                         # Non-General subcategories need "-" suffix due to back-to-top links (🔝 emoji)
                         sub_anchor = sub_anchor + "-"
@@ -1742,7 +1735,6 @@ def generate_section_content(
         #         lines.append("")
 
         # Then render each subsection as a collapsible element
-        general_counter = 0
         for subcat in subcategories:
             sub_title = subcat["name"]
 
@@ -1761,17 +1753,17 @@ def generate_section_content(
                 # Special handling for "General" to keep anchors in sync with TOC
                 if sub_title == "General":
                     if general_map is not None:
-                        sub_anchor = general_map.get((category_name, sub_title), "general-")
+                        sub_anchor = general_map.get((category_id, sub_title), "general-")
                     else:
-                        if general_counter == 0:
-                            sub_anchor = "general-"
-                        else:
-                            sub_anchor = f"general--{general_counter}"
-                        general_counter += 1
+                        sub_anchor = f"{category_id}-general"
                 else:
                     sub_anchor = f"{sub_anchor}-"
 
-                sub_anchor_id = sub_anchor if sub_anchor.endswith("-") else f"{sub_anchor}-"
+                # For "General" we keep the anchor as-is (no trailing dash)
+                if sub_title == "General":
+                    sub_anchor_id = sub_anchor
+                else:
+                    sub_anchor_id = sub_anchor if sub_anchor.endswith("-") else f"{sub_anchor}-"
 
                 # Create SVG file for this subsection
                 safe_filename = sanitize_filename_from_anchor(sub_anchor)

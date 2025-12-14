@@ -20,7 +20,8 @@ help:
 	@echo "  make test              - Run validation tests on test CSV"
 	@echo "  make format            - Check and fix code formatting with ruff"
 	@echo "  make format-check      - Check code formatting without fixing"
-	@echo "  make generate          - Generate README.md from CSV data"
+	@echo "  make generate          - Generate README.md from CSV data, and create SVG badges"
+	@echo "  make generate-w-toc    - Generate README.md from CSV data and create SVGs, incl. ToC"
 	@echo "  make update            - Run both process and validate"
 	@echo "  make download-resources - Download active resources from GitHub"
 	@echo "  make sort              - Sort resources by category, sub-category, and name"
@@ -100,6 +101,10 @@ sort:
 generate: sort
 	@echo "Generating README.md from CSV data using template system..."
 	$(PYTHON) $(SCRIPTS_DIR)/generate_readme.py
+
+generate-w-toc: sort
+	@echo "Generating README.md with Table of Contents from CSV data..."
+	REGEN_TOC_ASSETS=1 $(PYTHON) $(SCRIPTS_DIR)/generate_readme.py
 
 # Update: process resources then validate links
 update: process validate

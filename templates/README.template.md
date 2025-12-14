@@ -88,7 +88,7 @@
 </a>
 </td>
 <td align="center">
-<a href="#workflows--knowledge-guides-">
+<a href="#workflows-knowledge-guides-">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-workflows.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/card-workflows-light-anim-lineprint.svg">
@@ -97,7 +97,7 @@
 </a>
 </td>
 <td align="center">
-<a href="#tooling--">
+<a href="#tooling-">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-tooling.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/card-tooling-light-anim-lineprint.svg">
@@ -155,7 +155,7 @@
 </a>
 </td>
 <td align="center">
-<a href="#official-documentation--">
+<a href="#official-documentation-">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-docs.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/card-docs-light-anim-lineprint.svg">

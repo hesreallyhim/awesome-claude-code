@@ -102,7 +102,7 @@
 </a>
 </td>
 <td align="center">
-<a href="#workflows--knowledge-guides-">
+<a href="#workflows-knowledge-guides-">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-workflows.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/card-workflows-light-anim-lineprint.svg">
@@ -111,7 +111,7 @@
 </a>
 </td>
 <td align="center">
-<a href="#tooling--">
+<a href="#tooling-">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-tooling.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/card-tooling-light-anim-lineprint.svg">
@@ -169,7 +169,7 @@
 </a>
 </td>
 <td align="center">
-<a href="#official-documentation--">
+<a href="#official-documentation-">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-docs.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/card-docs-light-anim-lineprint.svg">
@@ -214,7 +214,7 @@
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
-<a href="#general-">
+<a href="#skills-general">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-general.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-general-light-anim-scanline.svg">
@@ -232,7 +232,7 @@
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
-<a href="#general--1">
+<a href="#workflows-general">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-general.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-general-light-anim-scanline.svg">
@@ -250,7 +250,7 @@
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
-<a href="#general--2">
+<a href="#tooling-general">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-general.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-general-light-anim-scanline.svg">
@@ -295,7 +295,7 @@
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
-<a href="#general--3">
+<a href="#statusline-general">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-general.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-general-light-anim-scanline.svg">
@@ -313,7 +313,7 @@
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
-<a href="#general--4">
+<a href="#hooks-general">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-general.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-general-light-anim-scanline.svg">
@@ -331,7 +331,7 @@
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
-<a href="#general--5">
+<a href="#slash-commands-general">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-general.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-general-light-anim-scanline.svg">
@@ -448,7 +448,7 @@
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
-<a href="#general--6">
+<a href="#alternative-clients-general">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-general.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-general-light-anim-scanline.svg">
@@ -466,7 +466,7 @@
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
-<a href="#general--7">
+<a href="#official-documentation-general">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/toc-sub-general.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/toc-sub-general-light-anim-scanline.svg">
@@ -516,8 +516,8 @@
   </picture>
 </div>
 
-<details open id="general-">
-<summary><span><picture><img src="assets/subheader_general.svg" alt="General" align="absmiddle"></picture></span></summary>
+<details open id="skills-general">
+<summary><span><picture><img src="assets/subheader_skills_general.svg" alt="General" align="absmiddle"></picture></span></summary>
 
 <a href="https://github.com/skills-directory/skill-codex"><img src="assets/badge-codex-skill.svg" alt="Codex Skill"></a>  
 _Enables users to prompt codex from claude code. Unlike the raw codex mcp server, this skill infers parameters such as model, reasoning effort, sandboxing from your prompt or asks you to specify them. It also simplifies continuing prior codex sessions so that codex can continue with the prior context._  
@@ -580,8 +580,8 @@ _Easily generate web assets from Claude Code including favicons, app icons (PWA)
   </picture>
 </div>
 
-<details open id="general--1-">
-<summary><span><picture><img src="assets/subheader_general_1.svg" alt="General" align="absmiddle"></picture></span></summary>
+<details open id="workflows-general">
+<summary><span><picture><img src="assets/subheader_workflows_general.svg" alt="General" align="absmiddle"></picture></span></summary>
 
 <a href="https://github.com/ayoubben18/ab-method"><img src="assets/badge-ab-method.svg" alt="AB Method"></a>  
 _A principled, spec-driven workflow that transforms large problems into focused, incremental missions using Claude Code's specialized sub agents. Includes slash-commands, sub agents, and specialized workflows designed for specific parts of the SDLC._  
@@ -761,8 +761,8 @@ _A broader project management workflow for Claude Code that encompasses not just
   </picture>
 </div>
 
-<details open id="general--2-">
-<summary><span><picture><img src="assets/subheader_general_2.svg" alt="General" align="absmiddle"></picture></span></summary>
+<details open id="tooling-general">
+<summary><span><picture><img src="assets/subheader_tooling_general.svg" alt="General" align="absmiddle"></picture></span></summary>
 
 <a href="https://github.com/GWUDCAP/cc-sessions"><img src="assets/badge-cc-sessions.svg" alt="cc-sessions"></a>  
 _An opinionated approach to productive development with Claude Code_  
@@ -1112,8 +1112,8 @@ _A Rust CLI tool that lets you delegate development tasks to AI agents running i
   </picture>
 </div>
 
-<details open id="general--3-">
-<summary><span><picture><img src="assets/subheader_general_3.svg" alt="General" align="absmiddle"></picture></span></summary>
+<details open id="statusline-general">
+<summary><span><picture><img src="assets/subheader_statusline_general.svg" alt="General" align="absmiddle"></picture></span></summary>
 
 <a href="https://github.com/Haleclipse/CCometixLine"><img src="assets/badge-ccometixline-claude-code-statusline.svg" alt="CCometixLine - Claude Code Statusline"></a>  
 _A high-performance Claude Code statusline tool written in Rust with Git integration, usage tracking, interactive TUI configuration, and Claude Code enhancement utilities._  
@@ -1190,8 +1190,8 @@ _High-performance Rust-based statusline for Claude Code with persistent stats tr
   </picture>
 </div>
 
-<details open id="general--4-">
-<summary><span><picture><img src="assets/subheader_general_4.svg" alt="General" align="absmiddle"></picture></span></summary>
+<details open id="hooks-general">
+<summary><span><picture><img src="assets/subheader_hooks_general.svg" alt="General" align="absmiddle"></picture></span></summary>
 
 <a href="https://github.com/Talieisin/britfix"><img src="assets/badge-britfix.svg" alt="Britfix"></a>  
 _Claude outputs American spellings by default, which can have an impact on: professional credibility, compliance, documentation, and more. Britfix converts to British English, with a Claude Code hook for automatic conversion as files are written. Context-aware: handles code files intelligently by only converting comments and docstrings, never identifiers or string literals._  
@@ -1296,8 +1296,8 @@ _Quality check hook for Node.js TypeScript projects with TypeScript compilation.
   </picture>
 </div>
 
-<details open id="general--5-">
-<summary><span><picture><img src="assets/subheader_general_5.svg" alt="General" align="absmiddle"></picture></span></summary>
+<details open id="slash-commands-general">
+<summary><span><picture><img src="assets/subheader_slash_commands_general.svg" alt="General" align="absmiddle"></picture></span></summary>
 
 <a href="https://github.com/omril321/automated-notebooklm/blob/main/.claude/commands/create-hook.md"><img src="assets/badge-create-hook.svg" alt="/create-hook"></a>  
 _Slash command for hook creation - intelligently prompts you through the creation process with smart suggestions based on your project setup (TS, Prettier, ESLint...)._  
@@ -1917,8 +1917,8 @@ _Offers clear step-by-step installation instructions with multiple configuration
   </picture>
 </div>
 
-<details open id="general--6-">
-<summary><span><picture><img src="assets/subheader_general_6.svg" alt="General" align="absmiddle"></picture></span></summary>
+<details open id="alternative-clients-general">
+<summary><span><picture><img src="assets/subheader_alternative_clients_general.svg" alt="General" align="absmiddle"></picture></span></summary>
 
 <a href="https://github.com/opactorai/Claudable"><img src="assets/badge-claudable.svg" alt="Claudable"></a>  
 _Claudable is an open-source web builder that leverages local CLI agents, such as Claude Code and Cursor Agent, to build and deploy products effortlessly._  
@@ -1974,8 +1974,8 @@ _A command center for AI agents that syncs Claude Code sessions across terminal,
   </picture>
 </div>
 
-<details open id="general--7-">
-<summary><span><picture><img src="assets/subheader_general_7.svg" alt="General" align="absmiddle"></picture></span></summary>
+<details open id="official-documentation-general">
+<summary><span><picture><img src="assets/subheader_official_documentation_general.svg" alt="General" align="absmiddle"></picture></span></summary>
 
 <a href="https://docs.claude.com/en/home"><img src="assets/badge-anthropic-documentation.svg" alt="Anthropic Documentation"></a>  
 _The official documentation for Claude Code, including installation instructions, usage guidelines, API references, tutorials, examples, loads of information that I won't list individually. Like Claude Code, the documentation is frequently updated._
