@@ -34,7 +34,7 @@
       drwxr-xr-x
     </text>
     <text x="140" y="25" font-family="monospace" font-size="16" fill="#33ff33" font-weight="bold">
-      WORKFLOWS &amp; GUIDES/
+      WORKFLOWS_&amp;_GUIDES/
       <animate attributeName="opacity" values="1;0.95;1" dur="0.1s" repeatCount="indefinite"/>
     </text>
     <!--

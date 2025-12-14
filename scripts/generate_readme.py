@@ -794,6 +794,42 @@ def generate_toc_row_light_svg(directory_name, description):
 </svg>"""
 
 
+def generate_toc_header_light_svg():
+    """Generate a compact light-mode TOC header with fixed width and centered title."""
+    return """<svg width="400" height="48" viewBox="0 0 400 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet">
+  <defs>
+    <linearGradient id="tocHeaderBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#faf8f3"/>
+      <stop offset="100%" style="stop-color:#f3eee4"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="399" height="47" rx="3" ry="3" fill="url(#tocHeaderBg)" stroke="#c4baa8" stroke-width="1"/>
+
+  <!-- Center title -->
+  <text x="200" y="28"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="17"
+        font-weight="600"
+        fill="#3d3530"
+        text-anchor="middle"
+        letter-spacing="2">
+    CONTENTS
+  </text>
+
+  <!-- Decorative diamonds -->
+  <g fill="#5c5247" opacity="0.65">
+    <path d="M 118 24 L 124 18 L 130 24 L 124 30 Z"/>
+    <path d="M 282 24 L 288 18 L 294 24 L 288 30 Z"/>
+  </g>
+
+  <!-- Light scan indicator -->
+  <rect x="-40" y="2" width="3" height="44" fill="#d2c5b4" opacity="0.16">
+    <animate attributeName="x" values="-40;420;420;-40" keyTimes="0;0.28;0.98;1" dur="7s" repeatCount="indefinite" />
+  </rect>
+</svg>"""
+
+
 def generate_toc_sub_svg(directory_name, description):
     """Generate a dark-mode TOC subcategory row SVG.
 
@@ -1281,7 +1317,7 @@ def normalize_toc_svgs(assets_dir: str) -> None:
             root_tag = match.group(0)
             is_header = "toc-header" in os.path.basename(path)
             target_width = 400
-            target_height = 40 if is_header else 40
+            target_height = 48 if is_header else 40
 
             normalized_tag = _normalize_svg_root(root_tag, target_width, target_height)
             if normalized_tag != root_tag:
@@ -1293,7 +1329,7 @@ def normalize_toc_svgs(assets_dir: str) -> None:
 def format_category_dir_name(name: str, category_id: str | None = None) -> str:
     """Convert category name to display text for TOC rows."""
     overrides = {
-        "workflows": "WORKFLOWS & GUIDES/",
+        "workflows": "WORKFLOWS_&_GUIDES/",
     }
     if category_id and category_id in overrides:
         return overrides[category_id]
@@ -1340,6 +1376,14 @@ def regenerate_sub_toc_svgs(categories, assets_dir: str) -> None:
             light_svg = generate_toc_sub_light_svg(display_dir, description)
             with open(light_path, "w", encoding="utf-8") as f:
                 f.write(light_svg)
+
+
+def regenerate_toc_header(assets_dir: str) -> None:
+    """Regenerate the light-mode TOC header for consistent sizing."""
+    light_header_path = os.path.join(assets_dir, "toc-header-light-anim-scanline.svg")
+    light_header_svg = generate_toc_header_light_svg()
+    with open(light_header_path, "w", encoding="utf-8") as f:
+        f.write(light_header_svg)
 
 
 def generate_resource_badge_svg(display_name, author_name=""):
@@ -1839,6 +1883,7 @@ def generate_readme_from_templates(csv_path, template_dir, output_path):
     if os.getenv("REGEN_TOC_ASSETS"):
         regenerate_main_toc_svgs(categories, assets_dir)
         regenerate_sub_toc_svgs(categories, assets_dir)
+        regenerate_toc_header(assets_dir)
         normalize_toc_svgs(assets_dir)
 
     # Load CSV data
