@@ -112,7 +112,7 @@ def load_repos(csv_path: Path) -> list[dict[str, Any]]:
     return repos
 
 
-def generate_repo_group(repo: dict[str, Any], x_offset: int, colors: dict[str, str]) -> str:
+def generate_repo_group(repo: dict[str, Any], x_offset: int, colors: dict[str, str], flip: bool) -> str:
     """
     Generate SVG group element for a single repository.
 
@@ -139,41 +139,46 @@ def generate_repo_group(repo: dict[str, Any], x_offset: int, colors: dict[str, s
     owner = parts[0] if len(parts) > 0 else ""
     repo_name = parts[1] if len(parts) > 1 else ""
 
-    # Truncate repo name to avoid overlap with long names
-    truncated_repo_name = truncate_repo_name(repo_name)
+    # Truncate repo name to avoid overlap with long names (slightly longer cutoff for mobile)
+    truncated_repo_name = truncate_repo_name(repo_name, max_length=24)
 
-    return f"""      <!-- Repo: {repo['full_name']} -->
+    # Stars snippet placed after owner
+    delta_text = format_delta(repo["stars_delta"])
+    show_delta = delta_text != "0"
+    approx_char_width = 12  # rough monospace estimate for 24px owner font
+    owner_start_x = 140
+    owner_font_size = 24
+
+    def star_snippet(y_pos: int) -> str:
+        star_str = f"{format_number(repo['stars'])} ⭐"
+        delta_str = f" {delta_text}" if show_delta else ""
+        metrics = f" | {star_str}{delta_str}"
+        star_x = owner_start_x + (len(owner) * approx_char_width) + 22
+        return f"""
+        <text x="{star_x}" y="{y_pos}" font-family="'Courier New', monospace" font-size="16" font-weight="normal"
+              fill="{colors['stars']}" opacity="0.95">{metrics}</text>"""
+
+    if not flip:
+        # Names on top, owner just below
+        return f"""      <!-- Repo: {repo['full_name']} -->
+      <g transform="translate({x_offset}, 0)">
+        <!-- Repo name -->
+        <text x="140" y="32" font-family="'Courier New', monospace" font-size="34" font-weight="bold"
+              fill="{colors['text']}" filter="url(#textGlow)">{truncated_repo_name}</text>
+        <!-- Owner name -->
+        <text x="{owner_start_x}" y="64" font-family="'Courier New', monospace" font-size="{owner_font_size}" font-weight="normal"
+              fill="{colors['text']}" opacity="0.9" filter="url(#textGlow)">{owner}</text>{star_snippet(64)}
+      </g>"""
+    else:
+        # Owner on top, name just below (in lower half)
+        return f"""      <!-- Repo: {repo['full_name']} -->
       <g transform="translate({x_offset}, 0)">
         <!-- Owner name -->
-        <text x="140" y="22" font-family="'Courier New', monospace" font-size="12" font-weight="normal"
-              fill="{colors['text']}" opacity="0.7" filter="url(#textGlow)">{owner}</text>
+        <text x="{owner_start_x}" y="102" font-family="'Courier New', monospace" font-size="{owner_font_size}" font-weight="normal"
+              fill="{colors['text']}" opacity="0.9" filter="url(#textGlow)">{owner}</text>{star_snippet(102)}
         <!-- Repo name -->
-        <text x="140" y="38" font-family="'Courier New', monospace" font-size="16" font-weight="bold"
+        <text x="140" y="132" font-family="'Courier New', monospace" font-size="34" font-weight="bold"
               fill="{colors['text']}" filter="url(#textGlow)">{truncated_repo_name}</text>
-
-        <!-- Stars -->
-        <text x="140" y="60" font-family="'Courier New', monospace" font-size="11" fill="{colors['stars']}">
-          ⭐ {format_number(repo['stars'])}
-        </text>
-        <text x="140" y="72" font-family="'Courier New', monospace" font-size="9" fill="{stars_delta_color}">
-          {stars_delta}
-        </text>
-
-        <!-- Watchers -->
-        <text x="220" y="60" font-family="'Courier New', monospace" font-size="11" fill="{colors['watchers']}">
-          👁 {format_number(repo['watchers'])}
-        </text>
-        <text x="220" y="72" font-family="'Courier New', monospace" font-size="9" fill="{watchers_delta_color}">
-          {watchers_delta}
-        </text>
-
-        <!-- Forks -->
-        <text x="290" y="60" font-family="'Courier New', monospace" font-size="11" fill="{colors['forks']}">
-          🔱 {format_number(repo['forks'])}
-        </text>
-        <text x="290" y="72" font-family="'Courier New', monospace" font-size="9" fill="{forks_delta_color}">
-          {forks_delta}
-        </text>
       </g>"""
 
 
@@ -214,7 +219,7 @@ def generate_ticker_svg(repos: list[dict[str, Any]], theme: str = "dark") -> str
             "delta_positive": "#33ff33",
             "delta_negative": "#ff3333",
             "delta_neutral": "#888888",
-            "glow_blur": "0.8",
+            "glow_blur": "0.2",
         }
     else:  # light
         colors = {
@@ -238,7 +243,7 @@ def generate_ticker_svg(repos: list[dict[str, Any]], theme: str = "dark") -> str
             "delta_positive": "#00aa00",
             "delta_negative": "#cc0000",
             "delta_neutral": "#888888",
-            "glow_blur": "0.6",
+            "glow_blur": "0.15",
         }
 
     # Generate repo groups
@@ -246,8 +251,8 @@ def generate_ticker_svg(repos: list[dict[str, Any]], theme: str = "dark") -> str
     repo_groups_2 = []
     x_pos = 0
 
-    for repo in sampled:
-        group_svg = generate_repo_group(repo, x_pos, colors)
+    for idx, repo in enumerate(sampled):
+        group_svg = generate_repo_group(repo, x_pos, colors, flip=bool(idx % 2))
         repo_groups_1.append(group_svg)
         repo_groups_2.append(group_svg)
         x_pos += 300  # Space between repos (compact stock ticker style)
@@ -257,9 +262,9 @@ def generate_ticker_svg(repos: list[dict[str, Any]], theme: str = "dark") -> str
 
     # Calculate animation duration based on content width
     content_width = x_pos
-    duration = max(30, content_width // 60)  # ~60px per second for snappier scrolling
+    duration = max(28, content_width // 55)  # slightly slower to aid legibility on mobile
 
-    return f"""<svg width="900" height="100" xmlns="http://www.w3.org/2000/svg">
+    return f"""<svg width="900" height="150" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Gradient for ticker background -->
     <linearGradient id="tickerBg" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -295,61 +300,63 @@ def generate_ticker_svg(repos: list[dict[str, Any]], theme: str = "dark") -> str
 
     <!-- Strong glow for metrics -->
     <filter id="metricGlow">
-      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="0.2" result="coloredBlur"/>
       <feMerge>
-        <feMergeNode in="coloredBlur"/>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
-    <!-- Edge fade effects -->
-    <linearGradient id="leftFade" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:{colors['fade_color']};stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:{colors['fade_color']};stop-opacity:0"/>
-    </linearGradient>
-    <linearGradient id="rightFade" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:{colors['fade_color']};stop-opacity:0"/>
-      <stop offset="100%" style="stop-color:{colors['fade_color']};stop-opacity:1"/>
-    </linearGradient>
+  <!-- Edge fade effects -->
+  <linearGradient id="leftFade" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" style="stop-color:{colors['fade_color']};stop-opacity:1"/>
+    <stop offset="100%" style="stop-color:{colors['fade_color']};stop-opacity:0"/>
+  </linearGradient>
+  <linearGradient id="rightFade" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" style="stop-color:{colors['fade_color']};stop-opacity:0"/>
+    <stop offset="100%" style="stop-color:{colors['fade_color']};stop-opacity:1"/>
+  </linearGradient>
   </defs>
 
   <!-- Background panel -->
-  <rect width="900" height="100" fill="url(#tickerBg)" rx="4"/>
+  <rect width="900" height="150" fill="url(#tickerBg)" rx="8"/>
 
   <!-- Top border -->
   <rect x="0" y="2" width="900" height="2" fill="url(#borderGrad)" rx="1"/>
 
   <!-- Bottom border -->
-  <rect x="0" y="96" width="900" height="2" fill="url(#borderGrad)" rx="1"/>
+  <rect x="0" y="146" width="900" height="2" fill="url(#borderGrad)" rx="1"/>
+
+  <!-- Midline for grouping reference -->
+  <line x1="0" y1="75" x2="900" y2="75" stroke="{colors['border_2']}" stroke-width="2" stroke-dasharray="8 6" opacity="0.6"/>
 
   <!-- Ticker label on left -->
-  <rect x="0" y="0" width="120" height="100" fill="{colors['label_bg']}" opacity="0.95" rx="4"/>
-  <text x="60" y="32" font-family="'Courier New', monospace" font-size="15" font-weight="bold"
+  <rect x="0" y="0" width="120" height="150" fill="{colors['label_bg']}" opacity="0.95" rx="8"/>
+  <text x="60" y="46" font-family="'Courier New', monospace" font-size="18" font-weight="bold"
         fill="{colors['label_title']}" text-anchor="middle" filter="url(#textGlow)">
     CLAUDE CODE
   </text>
-  <text x="60" y="50" font-family="'Courier New', monospace" font-size="13"
+  <text x="60" y="68" font-family="'Courier New', monospace" font-size="18" font-weight="bold"
         fill="{colors['label_subtitle']}" text-anchor="middle" filter="url(#textGlow)">
     REPOS LIVE
   </text>
-  <text x="60" y="66" font-family="'Courier New', monospace" font-size="9"
+  <text x="60" y="92" font-family="'Courier New', monospace" font-size="14" font-weight="bold"
         fill="{colors['delta_positive']}" text-anchor="middle">
     DAILY Δ
   </text>
 
   <!-- Animated pulse indicator -->
-  <circle cx="60" cy="82" r="4" fill="{colors['pulse']}" filter="url(#metricGlow)">
+  <circle cx="60" cy="118" r="5" fill="{colors['pulse']}" filter="url(#metricGlow)">
     <animate attributeName="r" values="4;6;4" dur="1.5s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
   </circle>
 
   <!-- Divider line after label -->
-  <rect x="122" y="12" width="2" height="76" fill="url(#borderGrad)" rx="1"/>
+  <rect x="122" y="18" width="2" height="114" fill="url(#borderGrad)" rx="1"/>
 
   <!-- Scrolling ticker content area -->
   <clipPath id="tickerClip">
-    <rect x="130" y="0" width="770" height="100"/>
+    <rect x="130" y="0" width="770" height="150"/>
   </clipPath>
 
   <g clip-path="url(#tickerClip)">
