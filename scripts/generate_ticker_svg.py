@@ -157,8 +157,8 @@ def generate_repo_group(
         metrics = f" | {star_str}{delta_str}"
         star_x = owner_start_x + (len(owner) * approx_char_width) + 22
         return f"""
-        <text x="{star_x}" y="{y_pos}" font-family="'Courier New', monospace" font-size="16" font-weight="normal"
-              fill="{colors['stars']}" opacity="0.95">{metrics}</text>"""
+        <text x="{star_x}" y="{y_pos}" font-family="'Courier New', monospace" font-size="16" font-weight="bold"
+              fill="{colors['stars']}">{metrics}</text>"""
 
     if not flip:
         # Names on top, owner just below
@@ -166,10 +166,10 @@ def generate_repo_group(
       <g transform="translate({x_offset}, 0)">
         <!-- Repo name -->
         <text x="140" y="32" font-family="'Courier New', monospace" font-size="34" font-weight="bold"
-              fill="{colors['text']}" filter="url(#textGlow)">{truncated_repo_name}</text>
+              fill="{colors['text']}">{truncated_repo_name}</text>
         <!-- Owner name -->
         <text x="{owner_start_x}" y="64" font-family="'Courier New', monospace" font-size="{owner_font_size}" font-weight="normal"
-              fill="{colors['text']}" opacity="0.9" filter="url(#textGlow)">{owner}</text>{star_snippet(64)}
+              fill="{colors['text']}" opacity="1.0">{owner}</text>{star_snippet(64)}
       </g>"""
     else:
         # Owner on top, name just below (in lower half)
@@ -177,10 +177,10 @@ def generate_repo_group(
       <g transform="translate({x_offset}, 0)">
         <!-- Owner name -->
         <text x="{owner_start_x}" y="102" font-family="'Courier New', monospace" font-size="{owner_font_size}" font-weight="normal"
-              fill="{colors['text']}" opacity="0.9" filter="url(#textGlow)">{owner}</text>{star_snippet(102)}
+              fill="{colors['text']}" opacity="1.0">{owner}</text>{star_snippet(102)}
         <!-- Repo name -->
         <text x="140" y="132" font-family="'Courier New', monospace" font-size="34" font-weight="bold"
-              fill="{colors['text']}" filter="url(#textGlow)">{truncated_repo_name}</text>
+              fill="{colors['text']}">{truncated_repo_name}</text>
       </g>"""
 
 
@@ -224,7 +224,7 @@ def generate_ticker_svg(repos: list[dict[str, Any]], theme: str = "dark") -> str
             "delta_positive": "#33ff33",
             "delta_negative": "#ff3333",
             "delta_neutral": "#888888",
-            "glow_blur": "0.2",
+            "glow_blur": "0.1",
         }
     else:  # light
         colors = {
