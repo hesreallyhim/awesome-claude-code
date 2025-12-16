@@ -251,23 +251,29 @@ def generate_ticker_svg(repos: list[dict[str, Any]], theme: str = "dark") -> str
             "glow_blur": "0.15",
         }
 
-    # Generate repo groups
-    repo_groups_1 = []
-    repo_groups_2 = []
+    # Generate repo groups: all 10 + first 4 repeated for seamless loop
+    repo_groups = []
     x_pos = 0
 
+    # All sampled repos
     for idx, repo in enumerate(sampled):
         group_svg = generate_repo_group(repo, x_pos, colors, flip=bool(idx % 2))
-        repo_groups_1.append(group_svg)
-        repo_groups_2.append(group_svg)
+        repo_groups.append(group_svg)
         x_pos += 300  # Space between repos (compact stock ticker style)
 
-    repos_svg_1 = "\n".join(repo_groups_1)
-    repos_svg_2 = "\n".join(repo_groups_2)
+    # Primary content width (what we scroll through before looping)
+    primary_width = x_pos
 
-    # Calculate animation duration based on content width
-    content_width = x_pos
-    duration = max(28, content_width // 55)  # slightly slower to aid legibility on mobile
+    # Append first 4 repos to fill the visible gap during loop reset
+    for idx, repo in enumerate(sampled[:4]):
+        group_svg = generate_repo_group(repo, x_pos, colors, flip=bool(idx % 2))
+        repo_groups.append(group_svg)
+        x_pos += 300
+
+    repos_svg = "\n".join(repo_groups)
+
+    # Calculate animation duration based on primary content (10 repos)
+    duration = max(28, primary_width // 55)  # slightly slower to aid legibility on mobile
 
     return f"""<svg width="900" height="150" xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -365,32 +371,18 @@ def generate_ticker_svg(repos: list[dict[str, Any]], theme: str = "dark") -> str
   </clipPath>
 
   <g clip-path="url(#tickerClip)">
-    <!-- First set of ticker items -->
-    <g id="tickerItems1">
+    <!-- Single ticker strip with seamless loop (10 repos + first 4 repeated) -->
+    <g id="tickerItems">
       <animateTransform
         attributeName="transform"
         attributeType="XML"
         type="translate"
         from="0 0"
-        to="-{content_width} 0"
+        to="-{primary_width} 0"
         dur="{duration}s"
         repeatCount="indefinite"/>
 
-{repos_svg_1}
-    </g>
-
-    <!-- Second set (duplicate for seamless loop) -->
-    <g id="tickerItems2">
-      <animateTransform
-        attributeName="transform"
-        attributeType="XML"
-        type="translate"
-        from="{content_width} 0"
-        to="0 0"
-        dur="{duration}s"
-        repeatCount="indefinite"/>
-
-{repos_svg_2}
+{repos_svg}
     </g>
   </g>
 
