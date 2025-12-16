@@ -1235,13 +1235,6 @@ _A no-frills little library that adds delightful OS-native sounds to Claude Code
 <div align="center"><img src="assets/entry-separator-light-animated.svg" alt=""></div>
 
 
-<a href="https://github.com/fcakyon/claude-codex-settings/tree/main/.claude/hooks"><img src="assets/badge-fcakyon-collection-code-quality-and-tool-usage.svg" alt="fcakyon Collection (Code Quality and Tool Usage)"></a>  
-_Very well-written set of hooks for code quality and tool usage regulation (e.g. force Tavily over WebFetch tool)._  
-![GitHub Stats for claude-codex-settings](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-codex-settings&username=fcakyon&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<div align="center"><img src="assets/entry-separator-light-animated.svg" alt=""></div>
-
-
 <a href="https://github.com/nizos/tdd-guard"><img src="assets/badge-tdd-guard.svg" alt="TDD Guard"></a>  
 _A hooks-driven system that monitors file operations in real-time and blocks changes that violate TDD principles._  
 ![GitHub Stats for tdd-guard](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=tdd-guard&username=nizos&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -1826,13 +1819,6 @@ _Serves as development guide for Guitar Git GUI Client with build commands for v
 <a href="https://github.com/Fimeg/NetworkChronicles/blob/legacy-v1/CLAUDE.md"><img src="assets/badge-network-chronicles.svg" alt="Network Chronicles"></a>  
 _Presents detailed implementation plan for AI-driven game characters with technical specifications for LLM integration, character guidelines, and service discovery mechanics._  
 ![GitHub Stats for NetworkChronicles](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=NetworkChronicles&username=Fimeg&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<div align="center"><img src="assets/entry-separator-light-animated.svg" alt=""></div>
-
-
-<a href="https://github.com/different-ai/note-companion/blob/master/CLAUDE.md"><img src="assets/badge-note-companion.svg" alt="Note Companion"></a>  
-_Provides detailed styling isolation techniques for Obsidian plugins using Tailwind with custom prefix to prevent style conflicts and practical troubleshooting steps._  
-![GitHub Stats for note-companion](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=note-companion&username=different-ai&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="assets/entry-separator-light-animated.svg" alt=""></div>
 
