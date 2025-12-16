@@ -112,7 +112,9 @@ def load_repos(csv_path: Path) -> list[dict[str, Any]]:
     return repos
 
 
-def generate_repo_group(repo: dict[str, Any], x_offset: int, colors: dict[str, str], flip: bool) -> str:
+def generate_repo_group(
+    repo: dict[str, Any], x_offset: int, colors: dict[str, str], flip: bool
+) -> str:
     """
     Generate SVG group element for a single repository.
 
@@ -124,15 +126,15 @@ def generate_repo_group(repo: dict[str, Any], x_offset: int, colors: dict[str, s
     Returns:
         SVG group element as string
     """
-    # Format deltas
-    stars_delta = format_delta(repo["stars_delta"])
-    watchers_delta = format_delta(repo["watchers_delta"])
-    forks_delta = format_delta(repo["forks_delta"])
+    # Format deltas (commented out - unused but may be needed later)
+    # stars_delta = format_delta(repo["stars_delta"])
+    # watchers_delta = format_delta(repo["watchers_delta"])
+    # forks_delta = format_delta(repo["forks_delta"])
 
-    # Get delta colors
-    stars_delta_color = get_delta_color(repo["stars_delta"], colors)
-    watchers_delta_color = get_delta_color(repo["watchers_delta"], colors)
-    forks_delta_color = get_delta_color(repo["forks_delta"], colors)
+    # Get delta colors (commented out - unused but may be needed later)
+    # stars_delta_color = get_delta_color(repo["stars_delta"], colors)
+    # watchers_delta_color = get_delta_color(repo["watchers_delta"], colors)
+    # forks_delta_color = get_delta_color(repo["forks_delta"], colors)
 
     # Split full_name into owner and repo
     parts = repo["full_name"].split("/", 1)
@@ -193,8 +195,11 @@ def generate_ticker_svg(repos: list[dict[str, Any]], theme: str = "dark") -> str
     Returns:
         Complete SVG as string
     """
+    # Filter out repos owned by hesreallyhim
+    filtered_repos = [r for r in repos if not r["full_name"].startswith("hesreallyhim/")]
+
     # Sample 10 random repos and duplicate for seamless scrolling
-    sampled = random.sample(repos, min(10, len(repos)))
+    sampled = random.sample(filtered_repos, min(10, len(filtered_repos)))
 
     # Color schemes
     if theme == "dark":
