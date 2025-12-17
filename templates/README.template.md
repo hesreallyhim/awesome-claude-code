@@ -4,6 +4,8 @@
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 
+<a href="README_CLASSIC.md"><img src="assets/classic-banner.svg" alt="View README_CLASSIC.md" width="400"></a>
+
 </div>
 
 <!-- Terminal Header - Theme Adaptive -->
@@ -184,38 +186,6 @@
 
 {{BODY_SECTIONS}}
 
-<!-- <div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="/assets/honorable-mentions-header.svg">
-  <source media="(prefers-color-scheme: light)" srcset="/assets/honorable-mentions-header-light.svg">
-  <img src="/assets/honorable-mentions-header-light.svg" alt="Directory Listing">
-</picture>
-</div>
+{{FOOTER}}
 
-[`prpm`](https://prpm.dev/) &nbsp; by &nbsp; [khaliqgant](https://github.com/khaliqgant) 
-
-`prpm` is like a plugin marketplace, but with additional support for other providers and coding agents. After I notified khaliqgant that I was unable to find any license information for third-party resources that he was hosting on his website, he immediately took action and added a great enhancement to the website's UI, with direct links to original authors' LICENSE files. In my opinion, this is a pretty awesome thing to do to show support for the open source community, and for the developers featured on this list. I see some marketplaces on the internet where basic attribution rights are not being respected, so I commend khaliqgant for setting a great example with [`prpm`](https://prpm.dev/), and I encourage others to promote and enforce these rights in the service of open source software. -->
-
-## Contributing 🌻 [🔝](#awesome-claude-code)
-
-### 🚀 **[Submit a new resource here!](https://github.com/hesreallyhim/awesome-claude-code/issues/new?template=recommend-resource.yml)**
-
-It's easy! Just click the link above and fill out the form. No Git knowledge required - our automated system handles everything for you.
-
-**How we evaluate submissions**
-
-- First and foremost, best efforts are made to ensure that any resource on this list is free of malware, bloatware, or other unwanted risks.
-- Second, being a _curated_ list, every entry is manually evaluated and "tested out" to see if it actually delivers value to Claude Code users. If you want an _un-curated_ list, you can find many great resources [here](https://github.com/search?q=%22claude+code%22&type=repositories&s=stars&o=desc).
-
-See [CONTRIBUTING.md](/CONTRIBUTING.md) for the complete submission guide and review process.
-
-For suggestions about the repository itself, please [open a general issue](https://github.com/hesreallyhim/awesome-claude-code/issues/new).
-
-This project is released with a [Contributor Code of Conduct](/code-of-conduct.md). By participating, you agree to abide by its terms. And although I take strong measures to uphold the quality and safety of this list, I take no responsibility or liability for anything bad that might happen as a result of these third-party resources. 
-
-## Growing thanks to you ❤️
-[![Stargazers over time](https://starchart.cc/hesreallyhim/awesome-claude-code.svg?variant=adaptive)](https://starchart.cc/hesreallyhim/awesome-claude-code)
-
-## License
-
-This list is licensed under a somewhat restrictive license: [Creative Commons CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) - this means you are welcome to fork, clone, copy and redistribute the list, provided you include appropriate attribution; however you are not permitted to distribute any modified versions - and you are not permitted to use it for any commercial purposes. This is to prevent unlawful appropriation of the work of the authors whose resources are listed here, an issue which has arisen in the past. Please note that **all resources included in this list have their own license terms** - if you wish to incorporate those authors' works into your _own_ product, it would be really nice to do so according to the terms that _those authors_ have set out.
+<!-- OBLIGATORY GUARD AGAINST SILLY END-OF-FILE PROBLEM -->

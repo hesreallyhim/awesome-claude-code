@@ -14,7 +14,7 @@ from datetime import datetime
 # Import existing functions
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from add_resource import append_to_csv, generate_pr_content
-from scripts.generate_readme import generate_readme_from_templates
+from generate_readme import main as generate_readmes
 from resource_id import generate_resource_id
 
 
@@ -99,14 +99,10 @@ def main():
         else:
             print("CSV sorted successfully", file=sys.stderr)
 
-        # Generate README
-        csv_path = os.path.join(script_dir, "..", "THE_RESOURCES_TABLE.csv")
-        template_dir = os.path.join(script_dir, "..", "templates")
-        output_path = os.path.join(script_dir, "..", "README.md")
-
-        print(f"Generating README from {csv_path} to {output_path}", file=sys.stderr)
+        # Generate README files (both README.md and README_CLASSIC.md)
+        print("Generating README files...", file=sys.stderr)
         try:
-            generate_readme_from_templates(csv_path, template_dir, output_path)
+            generate_readmes()
             print("README generation completed successfully", file=sys.stderr)
         except Exception as e:
             print(f"ERROR generating README: {e}", file=sys.stderr)
@@ -116,8 +112,8 @@ def main():
         status_result = run_command(["git", "status", "--porcelain"])
         print(f"Git status after README generation:\n{status_result.stdout}", file=sys.stderr)
 
-        # Stage changes
-        run_command(["git", "add", "THE_RESOURCES_TABLE.csv", "README.md"])
+        # Stage changes (includes both README.md and README_CLASSIC.md)
+        run_command(["git", "add", "THE_RESOURCES_TABLE.csv", "README.md", "README_CLASSIC.md"])
 
         # Commit
         commit_message = f"Add resource: {resource_data['display_name']}\n\n"

@@ -4,6 +4,8 @@
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 
+<a href="README_CLASSIC.md"><img src="assets/classic-banner.svg" alt="View README_CLASSIC.md" width="400"></a>
+
 </div>
 
 <!-- Terminal Header - Theme Adaptive -->
@@ -66,21 +68,7 @@
   </picture>
 </div>
 
-<!-- ### Announcements [🔝](#awesome-claude-code)
-
-<details open>
-<summary>View Announcements</summary>
-
-- <details open>
-  <summary>2025-11-21 - Claude Code for Web - Breaking the Internet</summary>
-
-  - I don't know about you folks, but I've been having a romping good time playing around with Claude Code for Web. I'm thinking about adding a category for it, but I'm not sure how many people have access, or if people are interested in that. It's really pretty awesome (I hired it as a sub-contractor to see if it could spice up the repo a little bit, so it's been running for like 30 hours, I'm not sure what it's up to... 👀) Anyway, if you're working with Claude Code on the Web, or you'd like to see it included here, please sound off in the [Discussion thread](https://github.com/hesreallyhim/awesome-claude-code/discussions/308).
-
-  - This was me last week, talking about Output Styles: "I'm going to guarantee that by one week from now, we will have a minimum of **5 Output Styles** in that category." Well, since then, nobody submitted an Output Style - which makes me almost certain that nobody is reading these announcements, since it was kind of open invitation for anyone to get on the list. _Nevertheless_, I'm a Him of my words, so I went and put together a few of my own, which you can check out below. It's pretty exciting to be included here, because I've been rejected four or five times, which is _really_ embarrassing because it's my repo...
-
-  </details>
-
-</details> -->
+<!--  -->
 
 <div align="center">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/thinking-asterisk.svg" alt="*" width="18" /> <a href="https://git.io/typing-svg"><img align="center" src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&duration=3000&pause=100&color=F7080D&width=300&lines=Lollygagging...;Skedaddling...;Bumbershooting...;Widdershinning...;Higgledy-piggledying...;Doodlebugging...;Fiddle-faddling...;Whimwhamming...;Dilly-dallying...;Flapdoodling...;Ballyhooing...;Galumphing...;Razzle-dazzling...;Tiddle-taddling...;Zigzagging...;Twinkletoeing...;Puddle-jumping...;Snicker-snacking...;Jibber-jabbering...;Frabjoussing...;Piffle-puffling...;Whirligigging...;Bibbity-bobbitying...;" /></a>
@@ -1986,18 +1974,6 @@ _Official GitHub Actions integration for Claude Code with examples and documenta
 </details>
 
 
-<!-- <div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="/assets/honorable-mentions-header.svg">
-  <source media="(prefers-color-scheme: light)" srcset="/assets/honorable-mentions-header-light.svg">
-  <img src="/assets/honorable-mentions-header-light.svg" alt="Directory Listing">
-</picture>
-</div>
-
-[`prpm`](https://prpm.dev/) &nbsp; by &nbsp; [khaliqgant](https://github.com/khaliqgant) 
-
-`prpm` is like a plugin marketplace, but with additional support for other providers and coding agents. After I notified khaliqgant that I was unable to find any license information for third-party resources that he was hosting on his website, he immediately took action and added a great enhancement to the website's UI, with direct links to original authors' LICENSE files. In my opinion, this is a pretty awesome thing to do to show support for the open source community, and for the developers featured on this list. I see some marketplaces on the internet where basic attribution rights are not being respected, so I commend khaliqgant for setting a great example with [`prpm`](https://prpm.dev/), and I encourage others to promote and enforce these rights in the service of open source software. -->
-
 ## Contributing 🌻 [🔝](#awesome-claude-code)
 
 ### 🚀 **[Submit a new resource here!](https://github.com/hesreallyhim/awesome-claude-code/issues/new?template=recommend-resource.yml)**
@@ -2013,7 +1989,7 @@ See [CONTRIBUTING.md](/CONTRIBUTING.md) for the complete submission guide and re
 
 For suggestions about the repository itself, please [open a general issue](https://github.com/hesreallyhim/awesome-claude-code/issues/new).
 
-This project is released with a [Contributor Code of Conduct](/code-of-conduct.md). By participating, you agree to abide by its terms. And although I take strong measures to uphold the quality and safety of this list, I take no responsibility or liability for anything bad that might happen as a result of these third-party resources. 
+This project is released with a [Contributor Code of Conduct](/code-of-conduct.md). By participating, you agree to abide by its terms. And although I take strong measures to uphold the quality and safety of this list, I take no responsibility or liability for anything bad that might happen as a result of these third-party resources.
 
 ## Growing thanks to you ❤️
 [![Stargazers over time](https://starchart.cc/hesreallyhim/awesome-claude-code.svg?variant=adaptive)](https://starchart.cc/hesreallyhim/awesome-claude-code)
@@ -2021,3 +1997,6 @@ This project is released with a [Contributor Code of Conduct](/code-of-conduct.m
 ## License
 
 This list is licensed under a somewhat restrictive license: [Creative Commons CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) - this means you are welcome to fork, clone, copy and redistribute the list, provided you include appropriate attribution; however you are not permitted to distribute any modified versions - and you are not permitted to use it for any commercial purposes. This is to prevent unlawful appropriation of the work of the authors whose resources are listed here, an issue which has arisen in the past. Please note that **all resources included in this list have their own license terms** - if you wish to incorporate those authors' works into your _own_ product, it would be really nice to do so according to the terms that _those authors_ have set out.
+
+
+<!-- OBLIGATORY GUARD AGAINST SILLY END-OF-FILE PROBLEM -->

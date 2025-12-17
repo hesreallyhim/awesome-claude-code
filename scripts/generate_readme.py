@@ -10,7 +10,9 @@ import os
 import re
 import shutil
 import sys
-from datetime import datetime
+from abc import ABC, abstractmethod
+from datetime import datetime, timedelta
+from pathlib import Path
 
 import yaml  # type: ignore[import-untyped]
 from validate_links import parse_github_url  # type: ignore[import-not-found]
@@ -739,8 +741,8 @@ def generate_toc_row_svg(directory_name, description):
 
 def generate_toc_row_light_svg(directory_name, description):
     """Generate a light-mode TOC row SVG in vintage manual style."""
+    _ = description  # Reserved for future use
     dir_escaped = directory_name.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-    desc_escaped = description.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
     return f"""<svg width="400" height="40" viewBox="0 0 400 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet">
   <defs>
@@ -837,7 +839,7 @@ def generate_toc_sub_svg(directory_name, description):
         directory_name: The subdirectory name (e.g., "general/")
         description: Short description for the comment
     """
-    desc_escaped = description.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    _ = description  # Reserved for future use
     dir_escaped = directory_name.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
     return f"""<svg height="40" width="400" viewBox="0 0 400 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet">
@@ -879,8 +881,8 @@ def generate_toc_sub_svg(directory_name, description):
 
 def generate_toc_sub_light_svg(directory_name, description):
     """Generate a light-mode TOC subcategory row SVG."""
+    _ = description  # Reserved for future use
     dir_escaped = directory_name.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-    desc_escaped = description.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
     return f"""<svg width="400" height="40" viewBox="0 0 400 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet">
   <defs>
@@ -992,7 +994,9 @@ def ensure_desc_box_exists(position, assets_dir):
     return filename
 
 
-def ensure_toc_row_exists(category_id, directory_name, description, assets_dir, always_regenerate=True):
+def ensure_toc_row_exists(
+    category_id, directory_name, description, assets_dir, always_regenerate=True
+):
     """Ensure TOC row SVG exists, generating if needed."""
     filename = f"toc-row-{category_id}.svg"
     filepath = os.path.join(assets_dir, filename)
@@ -1005,7 +1009,9 @@ def ensure_toc_row_exists(category_id, directory_name, description, assets_dir, 
     return filename
 
 
-def ensure_toc_sub_exists(subcat_id, directory_name, description, assets_dir, always_regenerate=True):
+def ensure_toc_sub_exists(
+    subcat_id, directory_name, description, assets_dir, always_regenerate=True
+):
     """Ensure TOC subcategory SVG exists, generating if needed."""
     filename = f"toc-sub-{subcat_id}.svg"
     filepath = os.path.join(assets_dir, filename)
@@ -1167,9 +1173,6 @@ def generate_toc_from_categories(csv_data=None, general_map=None):
         f'<div style="height:48px;width:400px;overflow:hidden;display:block;">{toc_header}</div>',
     ]
 
-    # Track "General" occurrences across all categories that actually have them
-    general_counter = 0
-
     for category in categories:
         # Main section link
         section_title = category["name"]
@@ -1196,13 +1199,13 @@ def generate_toc_from_categories(csv_data=None, general_map=None):
         toc_lines.append(f'<a href="#{anchor}{anchor_suffix}">')
         toc_lines.append("  <picture>")
         toc_lines.append(
-            f'    <source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/{dark_svg}\">'
+            f'    <source media="(prefers-color-scheme: dark)" srcset="assets/{dark_svg}">'
         )
         toc_lines.append(
-            f'    <source media=\"(prefers-color-scheme: light)\" srcset=\"assets/{light_svg}\">'
+            f'    <source media="(prefers-color-scheme: light)" srcset="assets/{light_svg}">'
         )
         toc_lines.append(
-            f'    <img src=\"assets/{light_svg}\" alt=\"{section_title}\" height=\"40\" style=\"height:40px;max-width:none;\">'
+            f'    <img src="assets/{light_svg}" alt="{section_title}" height="40" style="height:40px;max-width:none;">'
         )
         toc_lines.append("  </picture>")
         toc_lines.append("</a>")
@@ -1251,17 +1254,19 @@ def generate_toc_from_categories(csv_data=None, general_map=None):
                     # Add subcategory row with theme-adaptive picture element
                     dark_svg = svg_filename
                     light_svg = svg_filename.replace(".svg", "-light-anim-scanline.svg")
-                    toc_lines.append('<div style="height:40px;width:400px;overflow:hidden;display:block;">')
+                    toc_lines.append(
+                        '<div style="height:40px;width:400px;overflow:hidden;display:block;">'
+                    )
                     toc_lines.append(f'<a href="#{sub_anchor}">')
                     toc_lines.append("  <picture>")
                     toc_lines.append(
-                        f'    <source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/{dark_svg}\">'
+                        f'    <source media="(prefers-color-scheme: dark)" srcset="assets/{dark_svg}">'
                     )
                     toc_lines.append(
-                        f'    <source media=\"(prefers-color-scheme: light)\" srcset=\"assets/{light_svg}\">'
+                        f'    <source media="(prefers-color-scheme: light)" srcset="assets/{light_svg}">'
                     )
                     toc_lines.append(
-                        f'    <img src=\"assets/{light_svg}\" alt=\"{sub_title}\" height=\"40\" style=\"height:40px;max-width:none;\">'
+                        f'    <img src="assets/{light_svg}" alt="{sub_title}" height="40" style="height:40px;max-width:none;">'
                     )
                     toc_lines.append("  </picture>")
                     toc_lines.append("</a>")
@@ -1854,7 +1859,12 @@ def create_backup(file_path):
 
 
 def generate_readme_from_templates(csv_path, template_dir, output_path):
-    """Generate README using template system."""
+    """Generate README using template system.
+
+    DEPRECATED: This function is deprecated and will be removed in a future version.
+    Use the class-based generators (VisualReadmeGenerator, MinimalReadmeGenerator)
+    or call main() instead, which generates both README.md and README_CLASSIC.md.
+    """
     from category_utils import category_manager  # type: ignore[import-not-found]
 
     # Create backup of existing README
@@ -1901,7 +1911,11 @@ def generate_readme_from_templates(csv_path, template_dir, output_path):
     body_sections = []
     for section_index, category in enumerate(categories):
         section_content = generate_section_content(
-            category, csv_data, general_anchor_map, assets_dir=assets_dir, section_index=section_index
+            category,
+            csv_data,
+            general_anchor_map,
+            assets_dir=assets_dir,
+            section_index=section_index,
         )
         body_sections.append(section_content)
 
@@ -1925,27 +1939,428 @@ def generate_readme_from_templates(csv_path, template_dir, output_path):
     return len(csv_data), backup_path
 
 
-def main():
-    """Main entry point."""
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    csv_path = os.path.join(script_dir, "..", "THE_RESOURCES_TABLE.csv")
-    template_dir = os.path.join(script_dir, "..", "templates")
-    output_path = os.path.join(script_dir, "..", "README.md")
+# =============================================================================
+# CLASS-BASED README GENERATORS
+# =============================================================================
 
-    print("=== Template-based README Generation ===")
-    print("Generating README from templates and CSV...")
 
-    try:
-        resource_count, backup_path = generate_readme_from_templates(
-            csv_path, template_dir, output_path
+class ReadmeGenerator(ABC):
+    """Base class for README generation with shared logic."""
+
+    def __init__(self, csv_path: str, template_dir: str, assets_dir: str, repo_root: str) -> None:
+        self.csv_path = csv_path
+        self.template_dir = template_dir
+        self.assets_dir = assets_dir
+        self.repo_root = repo_root
+        self.csv_data: list[dict] = []
+        self.categories: list[dict] = []
+        self.overrides: dict = {}
+        self.announcements: str = ""
+        self.footer: str = ""
+        self.general_anchor_map: dict = {}
+
+    @property
+    @abstractmethod
+    def template_filename(self) -> str:
+        """Return the template filename to use."""
+        ...
+
+    @property
+    @abstractmethod
+    def output_filename(self) -> str:
+        """Return the output filename to generate."""
+        ...
+
+    @abstractmethod
+    def format_resource_entry(self, row: dict, include_separator: bool = True) -> str:
+        """Format a single resource entry."""
+        ...
+
+    @abstractmethod
+    def generate_toc(self) -> str:
+        """Generate the table of contents."""
+        ...
+
+    @abstractmethod
+    def generate_weekly_section(self) -> str:
+        """Generate the weekly additions section."""
+        ...
+
+    @abstractmethod
+    def generate_section_content(self, category: dict, section_index: int) -> str:
+        """Generate content for a category section."""
+        ...
+
+    def load_csv_data(self) -> list[dict]:
+        """Load and filter active resources from CSV."""
+        csv_data = []
+        with open(self.csv_path, newline="", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                row = apply_overrides(row, self.overrides)
+                if row["Active"].upper() == "TRUE":
+                    csv_data.append(row)
+        return csv_data
+
+    def load_categories(self) -> list[dict]:
+        """Load categories from the category manager."""
+        from category_utils import category_manager  # type: ignore[import-not-found]
+
+        return category_manager.get_categories_for_readme()
+
+    def load_overrides(self) -> dict:
+        """Load resource overrides from YAML."""
+        return load_overrides(self.template_dir)
+
+    def load_announcements(self) -> str:
+        """Load announcements from YAML."""
+        return load_announcements(self.template_dir)
+
+    def load_footer(self) -> str:
+        """Load footer template from file."""
+        footer_path = os.path.join(self.template_dir, "footer.template.md")
+        try:
+            with open(footer_path, encoding="utf-8") as f:
+                return f.read()
+        except FileNotFoundError:
+            print(f"⚠️  Warning: Footer template not found at {footer_path}")
+            return ""
+
+    def build_general_anchor_map(self) -> dict:
+        """Build anchor map for General subcategories."""
+        return build_general_anchor_map(self.categories, self.csv_data)
+
+    def create_backup(self, output_path: str) -> str | None:
+        """Create backup of existing file."""
+        return create_backup(output_path)
+
+    def generate(self) -> tuple[int, str | None]:
+        """Generate the README (template method pattern)."""
+        # Load all data
+        self.overrides = self.load_overrides()
+        self.csv_data = self.load_csv_data()
+        self.categories = self.load_categories()
+        self.announcements = self.load_announcements()
+        self.footer = self.load_footer()
+        self.general_anchor_map = self.build_general_anchor_map()
+
+        # Load template
+        template_path = os.path.join(self.template_dir, self.template_filename)
+        template = load_template(template_path)
+
+        # Generate sections
+        toc_content = self.generate_toc()
+        weekly_section = self.generate_weekly_section()
+
+        body_sections = []
+        for section_index, category in enumerate(self.categories):
+            section_content = self.generate_section_content(category, section_index)
+            body_sections.append(section_content)
+
+        # Replace placeholders
+        readme_content = template
+        readme_content = readme_content.replace("{{ANNOUNCEMENTS}}", self.announcements)
+        readme_content = readme_content.replace("{{WEEKLY_SECTION}}", weekly_section)
+        readme_content = readme_content.replace("{{TABLE_OF_CONTENTS}}", toc_content)
+        readme_content = readme_content.replace(
+            "{{BODY_SECTIONS}}", "\n<br>\n\n".join(body_sections)
         )
-        print(f"✅ README.md generated successfully at {os.path.abspath(output_path)}")
-        print(f"📊 Generated README with {resource_count} active resources")
-        if backup_path:
-            print(f"📁 Backup saved at: {backup_path}")
-    except Exception as e:
-        print(f"❌ Error generating README: {e}")
-        sys.exit(1)
+        readme_content = readme_content.replace("{{FOOTER}}", self.footer)
+
+        # Write output
+        output_path = os.path.join(self.repo_root, self.output_filename)
+        backup_path = self.create_backup(output_path)
+
+        try:
+            with open(output_path, "w", encoding="utf-8") as f:
+                f.write(readme_content)
+        except Exception as e:
+            if backup_path:
+                print(f"❌ Error writing {self.output_filename}: {e}")
+                print(f"   Backup preserved at: {backup_path}")
+            raise
+
+        return len(self.csv_data), backup_path
+
+
+class VisualReadmeGenerator(ReadmeGenerator):
+    """Generator for visual/themed README.md with SVG assets."""
+
+    @property
+    def template_filename(self) -> str:
+        return "README.template.md"
+
+    @property
+    def output_filename(self) -> str:
+        return "README.md"
+
+    def format_resource_entry(self, row: dict, include_separator: bool = True) -> str:
+        """Format resource with SVG badges and visible GitHub stats."""
+        return format_resource_entry(
+            row, assets_dir=self.assets_dir, include_separator=include_separator
+        )
+
+    def generate_toc(self) -> str:
+        """Generate terminal-style SVG TOC."""
+        return generate_toc_from_categories(self.csv_data, self.general_anchor_map)
+
+    def generate_weekly_section(self) -> str:
+        """Generate weekly section with banner SVG."""
+        return generate_weekly_section(self.csv_data)
+
+    def generate_section_content(self, category: dict, section_index: int) -> str:
+        """Generate section with SVG headers and desc boxes."""
+        return generate_section_content(
+            category,
+            self.csv_data,
+            self.general_anchor_map,
+            assets_dir=self.assets_dir,
+            section_index=section_index,
+        )
+
+
+class MinimalReadmeGenerator(ReadmeGenerator):
+    """Generator for plain markdown README_CLASSIC.md."""
+
+    @property
+    def template_filename(self) -> str:
+        return "README_CLASSIC.template.md"
+
+    @property
+    def output_filename(self) -> str:
+        return "README_CLASSIC.md"
+
+    def format_resource_entry(self, row: dict, include_separator: bool = True) -> str:
+        """Format resource as plain markdown with collapsible GitHub stats."""
+        _ = include_separator  # Not used in minimal version (no separators)
+        display_name = row["Display Name"]
+        primary_link = row["Primary Link"]
+        author_name = row.get("Author Name", "").strip()
+        author_link = row.get("Author Link", "").strip()
+        description = row.get("Description", "").strip()
+        license_info = row.get("License", "").strip()
+        removed_from_origin = row.get("Removed From Origin", "").strip().upper() == "TRUE"
+
+        # Build entry
+        entry_parts = [f"[`{display_name}`]({primary_link})"]
+
+        # Add author
+        if author_name:
+            if author_link:
+                entry_parts.append(f" &nbsp; by &nbsp; [{author_name}]({author_link})")
+            else:
+                entry_parts.append(f" &nbsp; by &nbsp; {author_name}")
+
+        entry_parts.append("  ")
+
+        # Add license
+        if license_info and license_info != "NOT_FOUND":
+            entry_parts.append(f"&nbsp;&nbsp;⚖️&nbsp;&nbsp;{license_info}")
+
+        result = "".join(entry_parts)
+
+        # Add description
+        if description:
+            result += f"  \n{description}" + ("*  " if removed_from_origin else "")
+
+        if removed_from_origin:
+            result += "\n<sub>* Removed from origin</sub>"
+
+        # Add GitHub stats in collapsible
+        if primary_link and not removed_from_origin:
+            _, is_github, owner, repo = parse_github_url(primary_link)
+            if is_github and owner and repo:
+                base_url = "https://github-readme-stats-plus-theta.vercel.app/api/pin/"
+                stats_url = (
+                    f"{base_url}?repo={repo}&username={owner}&all_stats=true&stats_only=true"
+                )
+                result += "\n\n<details>"
+                result += "\n<summary>📊 GitHub Stats</summary>"
+                result += f"\n\n![GitHub Stats for {repo}]({stats_url})"
+                result += "\n\n</details>"
+                result += "\n<br>"
+
+        return result
+
+    def generate_toc(self) -> str:
+        """Generate plain markdown nested details TOC."""
+        toc_lines = []
+        toc_lines.append("## Contents [🔝](#awesome-claude-code)")
+        toc_lines.append("")
+        toc_lines.append("<details open>")
+        toc_lines.append("<summary>Table of Contents</summary>")
+        toc_lines.append("")
+
+        general_counter = 0
+
+        for category in self.categories:
+            section_title = category.get("name", "")
+            icon = category.get("icon", "")
+            subcategories = category.get("subcategories", [])
+            anchor_suffix = get_anchor_suffix_for_icon(icon)
+
+            anchor = (
+                section_title.lower()
+                .replace(" ", "-")
+                .replace("&", "")
+                .replace("/", "")
+                .replace(".", "")
+            )
+
+            if subcategories:
+                toc_lines.append("- <details open>")
+                toc_lines.append(
+                    f'  <summary><a href="#{anchor}-{anchor_suffix}">{section_title}</a></summary>'
+                )
+                toc_lines.append("")
+
+                for subcat in subcategories:
+                    sub_title = subcat["name"]
+
+                    # Check if subcategory has resources
+                    category_name = category.get("name", "")
+                    resources = [
+                        r
+                        for r in self.csv_data
+                        if r["Category"] == category_name
+                        and r.get("Sub-Category", "").strip() == sub_title
+                    ]
+
+                    if resources:
+                        sub_anchor = (
+                            sub_title.lower().replace(" ", "-").replace("&", "").replace("/", "")
+                        )
+
+                        if sub_title == "General":
+                            if general_counter == 0:
+                                sub_anchor = "general-"
+                            else:
+                                sub_anchor = f"general--{general_counter}"
+                            general_counter += 1
+                        else:
+                            sub_anchor = sub_anchor + "-"
+
+                        toc_lines.append(f"  - [{sub_title}](#{sub_anchor})")
+
+                toc_lines.append("")
+                toc_lines.append("  </details>")
+            else:
+                toc_lines.append(f"- [{section_title}](#{anchor}{anchor_suffix})")
+
+            toc_lines.append("")
+
+        toc_lines.append("</details>")
+        return "\n".join(toc_lines).strip()
+
+    def generate_weekly_section(self) -> str:
+        """Generate weekly section with plain markdown."""
+        lines = []
+        lines.append("## This Week's Additions ✨ [🔝](#awesome-claude-code)")
+        lines.append("")
+        lines.append("> Resources added in the past 7 days")
+
+        # Get recent resources
+        cutoff_date = datetime.now() - timedelta(days=7)
+        recent_resources = []
+
+        for row in self.csv_data:
+            date_added = row.get("Date Added", "").strip()
+            if date_added:
+                parsed_date = parse_resource_date(date_added)
+                if parsed_date and parsed_date >= cutoff_date:
+                    recent_resources.append((parsed_date, row))
+
+        # Sort by date (newest first)
+        recent_resources.sort(key=lambda x: x[0], reverse=True)
+
+        if recent_resources:
+            lines.append("")
+            for _, resource in recent_resources:
+                lines.append(self.format_resource_entry(resource, include_separator=False))
+                lines.append("")
+        else:
+            lines.append("")
+            lines.append("*No new resources added this week.*")
+
+        return "\n".join(lines).rstrip() + "\n"
+
+    def generate_section_content(self, category: dict, section_index: int) -> str:
+        """Generate section with plain markdown headers."""
+        _ = section_index  # Not used in minimal version but required by interface
+        lines = []
+
+        title = category.get("name", "")
+        icon = category.get("icon", "")
+        description = category.get("description", "").strip()
+        category_name = category.get("name", "")
+        subcategories = category.get("subcategories", [])
+
+        # Header
+        header_text = f"{title} {icon}" if icon else title
+        lines.append(f"## {header_text} [🔝](#awesome-claude-code)")
+        lines.append("")
+
+        # Description as blockquote
+        if description:
+            lines.append(f"> {description}")
+            lines.append("")
+
+        # Subcategories
+        for subcat in subcategories:
+            sub_title = subcat["name"]
+            resources = [
+                r
+                for r in self.csv_data
+                if r["Category"] == category_name and r.get("Sub-Category", "").strip() == sub_title
+            ]
+
+            if resources:
+                lines.append("<details open>")
+                lines.append(
+                    f'<summary><h3>{sub_title} <a href="#awesome-claude-code">🔝</a></h3></summary>'
+                )
+                lines.append("")
+
+                for resource in resources:
+                    lines.append(self.format_resource_entry(resource, include_separator=False))
+                    lines.append("")
+
+                lines.append("</details>")
+                lines.append("")
+
+        lines.append("<br>")
+        return "\n".join(lines).rstrip() + "\n"
+
+
+def main():
+    """Main entry point - generates both README versions."""
+    script_dir = Path(__file__).parent
+    repo_root = script_dir.parent
+
+    csv_path = str(repo_root / "THE_RESOURCES_TABLE.csv")
+    template_dir = str(repo_root / "templates")
+    assets_dir = str(repo_root / "assets")
+
+    print("=== Dual README Generation ===")
+
+    generators = [
+        VisualReadmeGenerator(csv_path, template_dir, assets_dir, str(repo_root)),
+        MinimalReadmeGenerator(csv_path, template_dir, assets_dir, str(repo_root)),
+    ]
+
+    for generator in generators:
+        print(f"\n--- Generating {generator.output_filename} ---")
+        try:
+            resource_count, backup_path = generator.generate()
+            print(f"✅ {generator.output_filename} generated successfully")
+            print(f"📊 Generated with {resource_count} active resources")
+            if backup_path:
+                print(f"📁 Backup saved at: {backup_path}")
+        except Exception as e:
+            print(f"❌ Error generating {generator.output_filename}: {e}")
+            sys.exit(1)
+
+    print("\n=== Generation Complete ===")
 
 
 if __name__ == "__main__":

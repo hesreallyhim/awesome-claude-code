@@ -1,0 +1,23 @@
+<svg width="250" height="42" viewBox="0 0 250 42" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text-main { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; fill: red; font-weight: 600; }
+    .text-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 9px; fill: red; }
+  </style>
+
+  <!-- Simple bracket decorations -->
+  <!-- <text x="30" y="22" class="text-main" opacity="0.4">⌈</text>
+  <text x="370" y="22" class="text-main" opacity="0.4">⌉</text>
+  <text x="30" y="42" class="text-main" opacity="0.4">⌊</text>
+  <text x="370" y="42" class="text-main" opacity="0.4">⌋</text> -->
+
+  <!-- <rect x="0" y="0" width="250" height="50" opacity="0.5" fill="#fff"/> -->
+
+  <!-- Main text -->
+  <g width="100%" height="100%" text-anchor="middle">
+  <text x="125" y="10" text-anchor="middle" class="text-main">
+    Prefer the plain markdown look?
+  </text>
+  <text x="125" y="22" text-anchor="middle" class="text-main">Visit Awesome Claude Code <tspan font-style="italic">CLASSIC</tspan></text>
+  <text x="125" y="34" text-anchor="middle" class="text-sub">Both styles are maintained</text>
+  </g>
+</svg>

@@ -2,13 +2,13 @@
 
 <!-- Responsive Logo with Theme Support -->
 <div align="center">
-  
+
   <!-- Same ASCII art for all screen sizes, just scales down on mobile -->
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg">
     <img src="assets/logo-light.svg" alt="Awesome Claude Code" width="100%" style="max-width: 900px;">
   </picture>
-  
+
 </div>
 
 
@@ -33,139 +33,13 @@ This is a curated list of slash-commands, `CLAUDE.md` files, CLI tools, and othe
 
 Claude Code is a cutting-edge CLI-based coding assistant and agent released by [Anthropic](https://www.anthropic.com/) that you can access in your terminal or IDE. It is a rapidly evolving tool that offers a number of powerful capabilities, and allows for a lot of configuration, in a lot of different ways. Users are actively working out best practices and workflows. It is the hope that this repo will help the community share knowledge and understand how to get the most out of Claude Code.
 
-### Announcements [🔝](#awesome-claude-code)
 
-<details open>
-<summary>View Announcements</summary>
-
-- <details open>
-  <summary>2025-11-21 - Claude Code for Web - Breaking the Internet</summary>
-
-  - I don't know about you folks, but I've been having a romping good time playing around with Claude Code for Web. I'm thinking about adding a category for it, but I'm not sure how many people have access, or if people are interested in that. It's really pretty awesome (I hired it as a sub-contractor to see if it could spice up the repo a little bit, so it's been running for like 30 hours, I'm not sure what it's up to... 👀) Anyway, if you're working with Claude Code on the Web, or you'd like to see it included here, please sound off in the [Discussion thread](https://github.com/hesreallyhim/awesome-claude-code/discussions/308).
-
-  - This was me last week, talking about Output Styles: "I'm going to guarantee that by one week from now, we will have a minimum of **5 Output Styles** in that category." Well, since then, nobody submitted an Output Style - which makes me almost certain that nobody is reading these announcements, since it was kind of open invitation for anyone to get on the list. _Nevertheless_, I'm a Him of my words, so I went and put together a few of my own, which you can check out below. It's pretty exciting to be included here, because I've been rejected four or five times, which is _really_ embarrassing because it's my repo...
-
-  </details>
-
-</details>
 
 ## This Week's Additions ✨ [🔝](#awesome-claude-code)
 
 > Resources added in the past 7 days
 
-[`Claude Code Output Styles - Debugging`](https://github.com/JamieM0/claude-output-styles) &nbsp; by &nbsp; [Jamie Matthews](https://github.com/JamieM0)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A small set of well-written output styles, specifically focused on debugging - root cause analysis, systematic, methodical debugging, encouraging a more careful approach to bug-squashing from Claude Code.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claude-output-styles](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-output-styles&username=JamieM0&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`CCometixLine - Claude Code Statusline`](https://github.com/Haleclipse/CCometixLine) &nbsp; by &nbsp; [Haleclipse](https://github.com/Haleclipse)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A high-performance Claude Code statusline tool written in Rust with Git integration, usage tracking, interactive TUI configuration, and Claude Code enhancement utilities.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for CCometixLine](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=CCometixLine&username=Haleclipse&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Claude Code Handbook`](https://nikiforovall.blog/claude-code-rules/) &nbsp; by &nbsp; [nikiforovall](https://github.com/nikiforovall)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Collection of best practices, tips, and techniques for Claude Code development workflows, enhanced with distributable plugins
-
-[`Context Engineering Kit`](https://github.com/NeoLabHQ/context-engineering-kit) &nbsp; by &nbsp; [Vlad Goncharov](https://github.com/LeoVS09)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;GPL-3.0  
-Hand-crafted collection of advanced context engineering techniques and patterns with minimal token footprint focused on improving agent result quality.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for context-engineering-kit](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=context-engineering-kit&username=NeoLabHQ&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Claudix - Claude Code for VSCode`](https://github.com/Haleclipse/Claudix) &nbsp; by &nbsp; [Haleclipse](https://github.com/Haleclipse)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;AGPL-3.0  
-A VSCode extension that brings Claude Code directly into your editor with interactive chat interface, session management, intelligent file operations, terminal execution, and real-time streaming responses. Built with Vue 3, TypeScript.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for Claudix](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Claudix&username=Haleclipse&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`claude-starter-kit`](https://github.com/serpro69/claude-starter-kit) &nbsp; by &nbsp; [serpro69](https://github.com/serpro69)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-This is a starter template repository designed to provide a complete development environment for Claude-Code with pre-configured MCP servers and tools for AI-powered development workflows. The repository is intentionally minimal, containing only configuration templates for three primary systems: Claude Code, Serena, and Task Master.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claude-starter-kit](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-starter-kit&username=serpro69&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`viwo-cli`](https://github.com/OverseedAI/viwo) &nbsp; by &nbsp; [Hal Shin](https://github.com/hal-shin)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Run Claude Code in a Docker container with git worktrees as volume mounts to enable safer usage of `--dangerously-skip-permissions` for frictionless one-shotting prompts. Allows users to spin up multiple instances of Claude Code in the background easily with reduced permission fatigue.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for viwo](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=viwo&username=OverseedAI&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`ccflare -> **better-ccflare**`](https://github.com/tombii/better-ccflare/) &nbsp; by &nbsp; [tombii](https://github.com/tombii)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A well-maintained and feature-enhanced fork of the glorious `ccflare` usage dashboard by @snipeship (which at the time of writing has not had an update in a few months). `better-ccflare` builds on this foundation with some performance enhancements, extended provider support, bug fixes, Docker deployment, and more.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for better-ccflare](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=better-ccflare&username=tombii&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Britfix`](https://github.com/Talieisin/britfix) &nbsp; by &nbsp; [Talieisin](https://github.com/Talieisin)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Claude outputs American spellings by default, which can have an impact on: professional credibility, compliance, documentation, and more. Britfix converts to British English, with a Claude Code hook for automatic conversion as files are written. Context-aware: handles code files intelligently by only converting comments and docstrings, never identifiers or string literals.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for britfix](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=britfix&username=Talieisin&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`recall`](https://github.com/zippoxer/recall) &nbsp; by &nbsp; [zippoxer](https://github.com/zippoxer)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Full-text search your Claude Code sessions. Run `recall` in terminal, type to search, Enter to resume. Alternative to `claude --resume`.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for recall](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=recall&username=zippoxer&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`learn-faster-kit`](https://github.com/cheukyin175/learn-faster-kit) &nbsp; by &nbsp; [Hugo Lau](https://github.com/cheukyin175)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A creative educational framework for Claude Code, inspired by the "FASTER" approach to self-teaching. Ships with a variety of agents, slash commands, and tools that enable Claude Code to help you progress at your own pace, employing well-established pedagogical techniques like active learning and spaced repetition.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for learn-faster-kit](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=learn-faster-kit&username=cheukyin175&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
+*No new resources added this week.*
 
 
 ## Contents [🔝](#awesome-claude-code)
@@ -174,21 +48,21 @@ A creative educational framework for Claude Code, inspired by the "FASTER" appro
 <summary>Table of Contents</summary>
 
 - <details open>
-  <summary><a href="#agent-skills-">Agent Skills</a></summary>
+  <summary><a href="#agent-skills--">Agent Skills</a></summary>
 
   - [General](#general-)
 
   </details>
 
 - <details open>
-  <summary><a href="#workflows--knowledge-guides-">Workflows & Knowledge Guides</a></summary>
+  <summary><a href="#workflows--knowledge-guides--">Workflows & Knowledge Guides</a></summary>
 
   - [General](#general--1)
 
   </details>
 
 - <details open>
-  <summary><a href="#tooling-">Tooling</a></summary>
+  <summary><a href="#tooling--">Tooling</a></summary>
 
   - [General](#general--2)
   - [IDE Integrations](#ide-integrations-)
@@ -198,30 +72,23 @@ A creative educational framework for Claude Code, inspired by the "FASTER" appro
   </details>
 
 - <details open>
-  <summary><a href="#status-lines-">Status Lines</a></summary>
+  <summary><a href="#status-lines--">Status Lines</a></summary>
 
   - [General](#general--3)
 
   </details>
 
 - <details open>
-  <summary><a href="#hooks-">Hooks</a></summary>
+  <summary><a href="#hooks--">Hooks</a></summary>
 
   - [General](#general--4)
 
   </details>
 
 - <details open>
-  <summary><a href="#output-styles-">Output Styles</a></summary>
+  <summary><a href="#slash-commands--">Slash-Commands</a></summary>
 
   - [General](#general--5)
-
-  </details>
-
-- <details open>
-  <summary><a href="#slash-commands-">Slash-Commands</a></summary>
-
-  - [General](#general--6)
   - [Version Control & Git](#version-control--git-)
   - [Code Analysis & Testing](#code-analysis--testing-)
   - [Context Loading & Priming](#context-loading--priming-)
@@ -233,7 +100,7 @@ A creative educational framework for Claude Code, inspired by the "FASTER" appro
   </details>
 
 - <details open>
-  <summary><a href="#claudemd-files-">CLAUDE.md Files</a></summary>
+  <summary><a href="#claudemd-files--">CLAUDE.md Files</a></summary>
 
   - [Language-Specific](#language-specific-)
   - [Domain-Specific](#domain-specific-)
@@ -242,26 +109,24 @@ A creative educational framework for Claude Code, inspired by the "FASTER" appro
   </details>
 
 - <details open>
-  <summary><a href="#alternative-clients-">Alternative Clients</a></summary>
+  <summary><a href="#alternative-clients--">Alternative Clients</a></summary>
+
+  - [General](#general--6)
+
+  </details>
+
+- <details open>
+  <summary><a href="#official-documentation--%EF%B8%8F">Official Documentation</a></summary>
 
   - [General](#general--7)
 
   </details>
 
-- <details open>
-  <summary><a href="#official-documentation-">Official Documentation</a></summary>
-
-  - [General](#general--8)
-
-  </details>
-
 </details>
-
-<br>
 
 ## Agent Skills 🤖 [🔝](#awesome-claude-code)
 
-> **Agent skills** are model-controlled configurations (files, scripts, resources, etc.) that enable Claude Code to perform specialized tasks requiring specific knowledge or capabilities.
+> Agent skills are model-controlled configurations (files, scripts, resources, etc.) that enable Claude Code to perform specialized tasks requiring specific knowledge or capabilities.
 
 <details open>
 <summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
@@ -303,9 +168,11 @@ Easily generate web assets from Claude Code including favicons, app icons (PWA),
 
 <br>
 
+<br>
+
 ## Workflows & Knowledge Guides 🧠 [🔝](#awesome-claude-code)
 
-> A **workflow** is a tightly coupled set of Claude Code-native resources that facilitate specific projects
+> A workflow is a tightly coupled set of Claude Code-native resources that facilitate specific projects
 
 <details open>
 <summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
@@ -321,7 +188,7 @@ A principled, spec-driven workflow that transforms large problems into focused, 
 </details>
 <br>
 
-[`Agentic Workflow Patterns`](https://github.com/ThibautMelen/agentic-workflow-patterns) &nbsp; by &nbsp; [ThibautMelen](https://github.com/ThibautMelen)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`Agentic Workflow Patterns`](https://github.com/ThibautMelen/agentic-workflow-patterns) &nbsp; by &nbsp; [ThibautMelen](https://github.com/ThibautMelen)    
 A comprehensive and well-documented collection of agentic patterns from Anthropic docs, with colorful Mermaid diagrams and code examples for each pattern. Covers Subagent Orchestration, Progressive Skills, Parallel Tool Calling, Master-Clone Architecture, Wizard Workflows, and more. Also compatible with other providers.
 
 <details>
@@ -379,7 +246,7 @@ Really comprehensive and feature-packed project-management workflow for Claude C
 </details>
 <br>
 
-[`claude-code-docs`](https://github.com/costiash/claude-code-docs) &nbsp; by &nbsp; [Constantin Shafranski](https://github.com/costiash)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Mixed  
+[`claude-code-docs`](https://github.com/costiash/claude-code-docs) &nbsp; by &nbsp; [Constantin Shafranski](https://github.com/costiash)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
 A mirror of the Anthropic&copy; PBC documentation site for Claude/Code, but with bonus features like full-text search and query-time updates - a nice companion to `claude-code-docs` for up-to-the-minute, fully-indexed information so that Claude Code can read about itself.
 
 <details>
@@ -518,9 +385,11 @@ A broader project management workflow for Claude Code that encompasses not just 
 
 <br>
 
+<br>
+
 ## Tooling 🧰 [🔝](#awesome-claude-code)
 
-> **Tooling** denotes applications that are built on top of Claude Code and consist of more components than slash-commands and `CLAUDE.md` files
+> Tooling denotes applications that are built on top of Claude Code and consist of more components than slash-commands and `CLAUDE.md` files
 
 <details open>
 <summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
@@ -998,14 +867,16 @@ A Rust CLI tool that lets you delegate development tasks to AI agents running in
 
 <br>
 
+<br>
+
 ## Status Lines 📊 [🔝](#awesome-claude-code)
 
-> **Status lines** - Configurations and customizations for Claude Code's status bar functionality
+> Status lines - Configurations and customizations for Claude Code's status bar functionality
 
 <details open>
 <summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
 
-[`CCometixLine - Claude Code Statusline`](https://github.com/Haleclipse/CCometixLine) &nbsp; by &nbsp; [Haleclipse](https://github.com/Haleclipse)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`CCometixLine - Claude Code Statusline`](https://github.com/Haleclipse/CCometixLine) &nbsp; by &nbsp; [Haleclipse](https://github.com/Haleclipse)    
 A high-performance Claude Code statusline tool written in Rust with Git integration, usage tracking, interactive TUI configuration, and Claude Code enhancement utilities.
 
 <details>
@@ -1064,9 +935,11 @@ High-performance Rust-based statusline for Claude Code with persistent stats tra
 
 <br>
 
+<br>
+
 ## Hooks 🪝 [🔝](#awesome-claude-code)
 
-> **Hooks** are a powerful API for Claude Code that allows users to activate commands and run scripts at different points in Claude's agentic lifecycle.
+> Hooks are a powerful API for Claude Code that allows users to activate commands and run scripts at different points in Claude's agentic lifecycle.
 
 <details open>
 <summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
@@ -1137,17 +1010,6 @@ A no-frills little library that adds delightful OS-native sounds to Claude Code 
 </details>
 <br>
 
-[`fcakyon Collection (Code Quality and Tool Usage)`](https://github.com/fcakyon/claude-codex-settings/tree/main/.claude/hooks) &nbsp; by &nbsp; [Fatih Akyon](https://github.com/fcakyon)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
-Very well-written set of hooks for code quality and tool usage regulation (e.g. force Tavily over WebFetch tool).
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claude-codex-settings](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-codex-settings&username=fcakyon&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
 [`TDD Guard`](https://github.com/nizos/tdd-guard) &nbsp; by &nbsp; [Nizar Selander](https://github.com/nizos)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A hooks-driven system that monitors file operations in real-time and blocks changes that violate TDD principles.
 
@@ -1160,7 +1022,7 @@ A hooks-driven system that monitors file operations in real-time and blocks chan
 <br>
 
 [`TypeScript Quality Hooks`](https://github.com/bartolli/claude-code-typescript-hooks) &nbsp; by &nbsp; [bartolli](https://github.com/bartolli)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Quality check hook for Node.js TypeScript projects with TypeScript compilation. ESLint auto-fixing, and Prettier formatting. Uses SHA256 config caching for <5ms validation performance during real-time editing.
+Quality check hook for Node.js TypeScript projects with TypeScript compilation. ESLint auto-fixing, and Prettier formatting. Uses SHA256 config caching for < 5ms validation performance during real-time editing.
 
 <details>
 <summary>📊 GitHub Stats</summary>
@@ -1174,62 +1036,11 @@ Quality check hook for Node.js TypeScript projects with TypeScript compilation. 
 
 <br>
 
-## Output Styles 💬 [🔝](#awesome-claude-code)
-
-> **Output styles** allow you to use Claude Code as any type of agent while keeping its core capabilities, such as running local scripts, reading/writing files, and tracking TODOs.
-
-<details open>
-<summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
-
-[`Awesome Claude Code Output Styles (That I Really Like)`](https://github.com/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like) &nbsp; by &nbsp; [Really Him](https://github.com/hesreallyhim/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A fun and moderately amusing collection of experimental output styles.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for awesome-claude-code-output-styles-that-i-really-like](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=awesome-claude-code-output-styles-that-i-really-like&username=hesreallyhim&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`ccoutputstyles`](https://github.com/viveknair/ccoutputstyles) &nbsp; by &nbsp; [Vivek Nair](https://github.com/viveknair)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-CLI tool and template gallery for customizing Claude Code output styles with pre-built templates. Features over 15 templates at the time of writing!
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for ccoutputstyles](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ccoutputstyles&username=viveknair&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Claude Code Output Styles - Debugging`](https://github.com/JamieM0/claude-output-styles) &nbsp; by &nbsp; [Jamie Matthews](https://github.com/JamieM0)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A small set of well-written output styles, specifically focused on debugging - root cause analysis, systematic, methodical debugging, encouraging a more careful approach to bug-squashing from Claude Code.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claude-output-styles](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-output-styles&username=JamieM0&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Gen-Alpha Slang`](https://github.com/sjnims/gen-alpha-output-style) &nbsp; by &nbsp; [Steve Nims](https://github.com/sjnims)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-This is really... different. I don't know what to say about this one. It does what it says on the tin. You might find it funny, you might want throw up. I'll just say candidly this is included strictly for its potentially comedic awesomeness.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for gen-alpha-output-style](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=gen-alpha-output-style&username=sjnims&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-</details>
-
 <br>
 
 ## Slash-Commands 🔪 [🔝](#awesome-claude-code)
+
+> "Slash Commands are customized, carefully refined prompts that control Claude's behavior in order to perform a specific task"
 
 <details open>
 <summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
@@ -1757,9 +1568,11 @@ Reformats documentation to use React Stepper component, transforming heading for
 
 <br>
 
+<br>
+
 ## CLAUDE.md Files 📂 [🔝](#awesome-claude-code)
 
-> **`CLAUDE.md` files** are files that contain important guidelines and context-specific information or instructions that help Claude Code to better understand your project and your coding standards
+> `CLAUDE.md` files are files that contain important guidelines and context-specific information or instructions that help Claude Code to better understand your project and your coding standards
 
 <details open>
 <summary><h3>Language-Specific <a href="#awesome-claude-code">🔝</a></h3></summary>
@@ -1982,17 +1795,6 @@ Presents detailed implementation plan for AI-driven game characters with technic
 </details>
 <br>
 
-[`Note Companion`](https://github.com/different-ai/note-companion/blob/master/CLAUDE.md) &nbsp; by &nbsp; [different-ai](https://github.com/different-ai)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Provides detailed styling isolation techniques for Obsidian plugins using Tailwind with custom prefix to prevent style conflicts and practical troubleshooting steps.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for note-companion](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=note-companion&username=different-ai&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
 [`Pareto Mac`](https://github.com/ParetoSecurity/pareto-mac/blob/main/CLAUDE.md) &nbsp; by &nbsp; [ParetoSecurity](https://github.com/ParetoSecurity)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;GPL-3.0  
 Serves as development guide for Mac security audit tool with build instructions, contribution guidelines, testing procedures, and workflow documentation.
 
@@ -2057,9 +1859,11 @@ Offers clear step-by-step installation instructions with multiple configuration 
 
 <br>
 
+<br>
+
 ## Alternative Clients 📱 [🔝](#awesome-claude-code)
 
-> **Alternative Clients** are alternative UIs and front-ends for interacting with Claude Code, either on mobile or on the desktop.
+> Alternative Clients are alternative UIs and front-ends for interacting with Claude Code, either on mobile or on the desktop.
 
 <details open>
 <summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
@@ -2090,11 +1894,11 @@ A command center for AI agents that syncs Claude Code sessions across terminal, 
 
 <br>
 
+<br>
+
 ## Official Documentation 🏛️ [🔝](#awesome-claude-code)
 
 > Links to some of Anthropic's terrific documentation and resources regarding Claude Code
-
-<!--lint disable double-link-->
 
 <details open>
 <summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
@@ -2126,16 +1930,12 @@ Official GitHub Actions integration for Claude Code with examples and documentat
 
 </details>
 
+<br>
 
-
-## Honorable Mentions
-
-[`prpm`](https://prpm.dev/) &nbsp; by &nbsp; [khaliqgant](https://github.com/khaliqgant)    
-`prpm` is something like a plugin marketplace, but with additional support for other providers and coding agents. Although (for the moment 🤞) we are unable to include plugins/marketplaces on the list, I wanted to give special recognition to khaliqgant - after I notified him that I was unable to find any license information for third-party resources that he was hosting on his website, he immediately took action and added a great enhancement to the website's UI, which provides a direct link to the original authors' LICENSE file, as well the ability to view it as a simple dropdown. In my opinion, this is a pretty awesome thing to do to show support for the open source community, and for the developers whose work is featured on this list. I see marketplaces springing up all over the internet now where basic attribution rights are not being respected (maybe for the simple reason that software licenses are complicated!), so I commend khaliqgant for setting a great example with [`prpm`](https://prpm.dev/), and I encourage others to promote and enforce these rights in the service of open source software. 
 
 ## Contributing 🌻 [🔝](#awesome-claude-code)
 
-### 🚀 **[Submit a new resource here!](https://github.com/hesreallyhim/awesome-claude-code/issues/new?template=submit-resource.yml)**
+### 🚀 **[Submit a new resource here!](https://github.com/hesreallyhim/awesome-claude-code/issues/new?template=recommend-resource.yml)**
 
 It's easy! Just click the link above and fill out the form. No Git knowledge required - our automated system handles everything for you.
 
@@ -2148,11 +1948,14 @@ See [CONTRIBUTING.md](/CONTRIBUTING.md) for the complete submission guide and re
 
 For suggestions about the repository itself, please [open a general issue](https://github.com/hesreallyhim/awesome-claude-code/issues/new).
 
-This project is released with a [Contributor Code of Conduct](/code-of-conduct.md). By participating, you agree to abide by its terms. And although I take strong measures to uphold the quality and safety of this list, I take no responsibility or liability for anything bad that might happen as a result of these third-party resources. 
+This project is released with a [Contributor Code of Conduct](/code-of-conduct.md). By participating, you agree to abide by its terms. And although I take strong measures to uphold the quality and safety of this list, I take no responsibility or liability for anything bad that might happen as a result of these third-party resources.
 
 ## Growing thanks to you ❤️
 [![Stargazers over time](https://starchart.cc/hesreallyhim/awesome-claude-code.svg?variant=adaptive)](https://starchart.cc/hesreallyhim/awesome-claude-code)
 
 ## License
 
-Although the whole point of this list to help promote and grow the open-source community around Claude Code, this list is licensed under a slightly more restrictive license: [Creative Commons CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) - this means you are welcome to copy and redistribute the list, provided you include appropriate attribution; however you are not permitted to distribute any modified versions - and you are not permitted to use it for any commercial purposes. This is to prevent unlawful appropriation of the work of the authors whose resources are listed here. Please note that **all resources included in this list have their own license terms** - if you wish to incorporate those authors' works into your _own_ product, it would be really nice to do so according to the terms that _those authors_ have set out - refusal to do so is a violation of their rights - and while it is up to the author whether or not they wish to take action, please note - I am keeping close tabs on you. 🫶
+This list is licensed under a somewhat restrictive license: [Creative Commons CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) - this means you are welcome to fork, clone, copy and redistribute the list, provided you include appropriate attribution; however you are not permitted to distribute any modified versions - and you are not permitted to use it for any commercial purposes. This is to prevent unlawful appropriation of the work of the authors whose resources are listed here, an issue which has arisen in the past. Please note that **all resources included in this list have their own license terms** - if you wish to incorporate those authors' works into your _own_ product, it would be really nice to do so according to the terms that _those authors_ have set out.
+
+
+<!-- OBLIGATORY GUARD AGAINST SILLY END-OF-FILE PROBLEM -->
