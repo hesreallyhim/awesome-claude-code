@@ -507,6 +507,13 @@
 <details open id="skills-general">
 <summary><span><picture><img src="assets/subheader_skills_general.svg" alt="General" align="absmiddle"></picture></span></summary>
 
+<a href="https://github.com/fcakyon/claude-codex-settings"><img src="assets/badge-claude-codex-settings.svg" alt="Claude Codex Settings"></a>  
+_A well-organized, well-written set of plugins covering core developer activities, such as working with common cloud platforms like GitHub, Azure, MongoDB, and popular services such as Tavily, Playwright, and more. Clear, not overly-opinionated, and compatible with a few other providers._  
+![GitHub Stats for claude-codex-settings](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-codex-settings&username=fcakyon&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="assets/entry-separator-light-animated.svg" alt=""></div>
+
+
 <a href="https://github.com/skills-directory/skill-codex"><img src="assets/badge-codex-skill.svg" alt="Codex Skill"></a>  
 _Enables users to prompt codex from claude code. Unlike the raw codex mcp server, this skill infers parameters such as model, reasoning effort, sandboxing from your prompt or asks you to specify them. It also simplifies continuing prior codex sessions so that codex can continue with the prior context._  
 ![GitHub Stats for skill-codex](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=skill-codex&username=skills-directory&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
