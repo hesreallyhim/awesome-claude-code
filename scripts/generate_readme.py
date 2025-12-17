@@ -1597,25 +1597,59 @@ def parse_resource_date(date_string):
     return None
 
 
-def generate_weekly_section(csv_data):
-    """Generate the weekly resources section that appears above Contents."""
+def generate_weekly_section(csv_data, assets_dir=None):
+    """Generate the latest additions section that appears above Contents."""
     lines = []
 
-    # EXTREME MAKEOVER BANNER!
+    # Latest Additions header with light/dark mode support
     lines.append('<div align="center">')
     lines.append("  <picture>")
     lines.append(
-        '    <source media="(prefers-color-scheme: dark)" srcset="assets/makeover-banner.svg">'
+        '    <source media="(prefers-color-scheme: dark)" srcset="assets/latest-additions-header.svg">'
     )
     lines.append(
-        '    <source media="(prefers-color-scheme: light)" srcset="assets/makeover-banner-light.svg">'
+        '    <source media="(prefers-color-scheme: light)" srcset="assets/latest-additions-header-light.svg">'
     )
     lines.append(
-        '    <img src="assets/makeover-banner-light.svg" alt="EXTREME REPO MAKEOVER BY CLAUDE CODE WEB!" width="100%" style="max-width: 900px;">'
+        '    <img src="assets/latest-additions-header-light.svg" alt="LATEST ADDITIONS" width="100%" style="max-width: 900px;">'
     )
     lines.append("  </picture>")
     lines.append("</div>")
     lines.append("")
+
+    # Get recent resources (last 7 days)
+    cutoff_date = datetime.now() - timedelta(days=7)
+    recent_resources = []
+
+    for row in csv_data:
+        date_added = row.get("Date Added", "").strip()
+        if date_added:
+            parsed_date = parse_resource_date(date_added)
+            if parsed_date and parsed_date >= cutoff_date:
+                recent_resources.append((parsed_date, row))
+
+    # Sort by date (newest first)
+    recent_resources.sort(key=lambda x: x[0], reverse=True)
+
+    if recent_resources:
+        lines.append("<blockquote>")
+        lines.append("")
+        lines.append("Resources added in the past 7 days")
+        lines.append("")
+        lines.append("</blockquote>")
+        lines.append("")
+        for _, resource in recent_resources:
+            lines.append(
+                format_resource_entry(resource, assets_dir=assets_dir, include_separator=False)
+            )
+            lines.append("")
+    else:
+        lines.append("<blockquote>")
+        lines.append("")
+        lines.append("*No new resources added this week.*")
+        lines.append("")
+        lines.append("</blockquote>")
+        lines.append("")
 
     return "\n".join(lines).rstrip() + "\n"
 
@@ -1905,7 +1939,7 @@ def generate_readme_from_templates(csv_path, template_dir, output_path):
     toc_content = generate_toc_from_categories(csv_data, general_anchor_map)
 
     # Generate weekly section
-    weekly_section = generate_weekly_section(csv_data)
+    weekly_section = generate_weekly_section(csv_data, assets_dir=assets_dir)
 
     # Generate body sections
     body_sections = []
@@ -2105,8 +2139,8 @@ class VisualReadmeGenerator(ReadmeGenerator):
         return generate_toc_from_categories(self.csv_data, self.general_anchor_map)
 
     def generate_weekly_section(self) -> str:
-        """Generate weekly section with banner SVG."""
-        return generate_weekly_section(self.csv_data)
+        """Generate latest additions section with header SVG."""
+        return generate_weekly_section(self.csv_data, assets_dir=self.assets_dir)
 
     def generate_section_content(self, category: dict, section_index: int) -> str:
         """Generate section with SVG headers and desc boxes."""
