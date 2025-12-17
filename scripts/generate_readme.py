@@ -1617,24 +1617,39 @@ def generate_weekly_section(csv_data, assets_dir=None):
     lines.append("</div>")
     lines.append("")
 
-    # Get recent resources (last 7 days)
+    # Get all resources with dates, sorted newest first
     cutoff_date = datetime.now() - timedelta(days=7)
-    recent_resources = []
+    all_dated_resources = []
 
     for row in csv_data:
         date_added = row.get("Date Added", "").strip()
         if date_added:
             parsed_date = parse_resource_date(date_added)
-            if parsed_date and parsed_date >= cutoff_date:
-                recent_resources.append((parsed_date, row))
+            if parsed_date:
+                all_dated_resources.append((parsed_date, row))
 
     # Sort by date (newest first)
-    recent_resources.sort(key=lambda x: x[0], reverse=True)
+    all_dated_resources.sort(key=lambda x: x[0], reverse=True)
+
+    # Get resources from past 7 days
+    recent_resources = [(d, r) for d, r in all_dated_resources if d >= cutoff_date]
+
+    # Ensure at least 3 entries (fill with most recent if needed)
+    min_entries = 3
+    if len(recent_resources) < min_entries:
+        # Add more recent entries to reach minimum
+        for dated_resource in all_dated_resources:
+            if dated_resource not in recent_resources:
+                recent_resources.append(dated_resource)
+            if len(recent_resources) >= min_entries:
+                break
+        # Re-sort after adding extras
+        recent_resources.sort(key=lambda x: x[0], reverse=True)
 
     if recent_resources:
         lines.append("<blockquote>")
         lines.append("")
-        lines.append("Resources added in the past 7 days")
+        lines.append("The latest resources added to the list")
         lines.append("")
         lines.append("</blockquote>")
         lines.append("")
@@ -1646,7 +1661,7 @@ def generate_weekly_section(csv_data, assets_dir=None):
     else:
         lines.append("<blockquote>")
         lines.append("")
-        lines.append("*No new resources added this week.*")
+        lines.append("*No resources with dates found.*")
         lines.append("")
         lines.append("</blockquote>")
         lines.append("")
