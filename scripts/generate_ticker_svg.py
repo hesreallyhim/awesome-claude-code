@@ -158,29 +158,29 @@ def generate_repo_group(
         star_x = owner_start_x + (len(owner) * approx_char_width) + 22
         return f"""
         <text x="{star_x}" y="{y_pos}" font-family="'Courier New', monospace" font-size="16" font-weight="bold"
-              fill="{colors['stars']}">{metrics}</text>"""
+              fill="{colors["stars"]}">{metrics}</text>"""
 
     if not flip:
         # Names on top, owner just below
-        return f"""      <!-- Repo: {repo['full_name']} -->
+        return f"""      <!-- Repo: {repo["full_name"]} -->
       <g transform="translate({x_offset}, 0)">
         <!-- Repo name -->
         <text x="140" y="32" font-family="'Courier New', monospace" font-size="34" font-weight="bold"
-              fill="{colors['text']}">{truncated_repo_name}</text>
+              fill="{colors["text"]}">{truncated_repo_name}</text>
         <!-- Owner name -->
         <text x="{owner_start_x}" y="64" font-family="'Courier New', monospace" font-size="{owner_font_size}" font-weight="normal"
-              fill="{colors['text']}" opacity="1.0">{owner}</text>{star_snippet(64)}
+              fill="{colors["text"]}" opacity="1.0">{owner}</text>{star_snippet(64)}
       </g>"""
     else:
         # Owner on top, name just below (in lower half)
-        return f"""      <!-- Repo: {repo['full_name']} -->
+        return f"""      <!-- Repo: {repo["full_name"]} -->
       <g transform="translate({x_offset}, 0)">
         <!-- Owner name -->
         <text x="{owner_start_x}" y="102" font-family="'Courier New', monospace" font-size="{owner_font_size}" font-weight="normal"
-              fill="{colors['text']}" opacity="1.0">{owner}</text>{star_snippet(102)}
+              fill="{colors["text"]}" opacity="1.0">{owner}</text>{star_snippet(102)}
         <!-- Repo name -->
         <text x="140" y="132" font-family="'Courier New', monospace" font-size="34" font-weight="bold"
-              fill="{colors['text']}">{truncated_repo_name}</text>
+              fill="{colors["text"]}">{truncated_repo_name}</text>
       </g>"""
 
 
@@ -279,30 +279,30 @@ def generate_ticker_svg(repos: list[dict[str, Any]], theme: str = "dark") -> str
   <defs>
     <!-- Gradient for ticker background -->
     <linearGradient id="tickerBg" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:{colors['bg_start']};stop-opacity:{colors['bg_opacity_start']}"/>
-      <stop offset="50%" style="stop-color:{colors['bg_mid']};stop-opacity:{colors['bg_opacity_mid']}"/>
-      <stop offset="100%" style="stop-color:{colors['bg_start']};stop-opacity:{colors['bg_opacity_start']}"/>
+      <stop offset="0%" style="stop-color:{colors["bg_start"]};stop-opacity:{colors["bg_opacity_start"]}"/>
+      <stop offset="50%" style="stop-color:{colors["bg_mid"]};stop-opacity:{colors["bg_opacity_mid"]}"/>
+      <stop offset="100%" style="stop-color:{colors["bg_start"]};stop-opacity:{colors["bg_opacity_start"]}"/>
     </linearGradient>
 
     <!-- Gradient for border lines -->
     <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:{colors['border_1']};stop-opacity:0.85">
+      <stop offset="0%" style="stop-color:{colors["border_1"]};stop-opacity:0.85">
         <animate attributeName="stop-opacity" values="0.85;1;0.85" dur="2s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="33%" style="stop-color:{colors['border_2']};stop-opacity:0.9">
+      <stop offset="33%" style="stop-color:{colors["border_2"]};stop-opacity:0.9">
         <animate attributeName="stop-opacity" values="0.9;1;0.9" dur="2.2s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="66%" style="stop-color:{colors['border_3']};stop-opacity:0.85">
+      <stop offset="66%" style="stop-color:{colors["border_3"]};stop-opacity:0.85">
         <animate attributeName="stop-opacity" values="0.85;1;0.85" dur="1.8s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="100%" style="stop-color:{colors['border_4']};stop-opacity:0.85">
+      <stop offset="100%" style="stop-color:{colors["border_4"]};stop-opacity:0.85">
         <animate attributeName="stop-opacity" values="0.85;1;0.85" dur="2s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
 
     <!-- Text glow effect -->
     <filter id="textGlow">
-      <feGaussianBlur stdDeviation="{colors['glow_blur']}" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="{colors["glow_blur"]}" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -320,12 +320,12 @@ def generate_ticker_svg(repos: list[dict[str, Any]], theme: str = "dark") -> str
 
   <!-- Edge fade effects -->
   <linearGradient id="leftFade" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%" style="stop-color:{colors['fade_color']};stop-opacity:1"/>
-    <stop offset="100%" style="stop-color:{colors['fade_color']};stop-opacity:0"/>
+    <stop offset="0%" style="stop-color:{colors["fade_color"]};stop-opacity:1"/>
+    <stop offset="100%" style="stop-color:{colors["fade_color"]};stop-opacity:0"/>
   </linearGradient>
   <linearGradient id="rightFade" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%" style="stop-color:{colors['fade_color']};stop-opacity:0"/>
-    <stop offset="100%" style="stop-color:{colors['fade_color']};stop-opacity:1"/>
+    <stop offset="0%" style="stop-color:{colors["fade_color"]};stop-opacity:0"/>
+    <stop offset="100%" style="stop-color:{colors["fade_color"]};stop-opacity:1"/>
   </linearGradient>
   </defs>
 
@@ -339,25 +339,25 @@ def generate_ticker_svg(repos: list[dict[str, Any]], theme: str = "dark") -> str
   <rect x="0" y="146" width="900" height="2" fill="url(#borderGrad)" rx="1"/>
 
   <!-- Midline for grouping reference -->
-  <line x1="0" y1="75" x2="900" y2="75" stroke="{colors['border_2']}" stroke-width="2" stroke-dasharray="8 6" opacity="0.6"/>
+  <line x1="0" y1="75" x2="900" y2="75" stroke="{colors["border_2"]}" stroke-width="2" stroke-dasharray="8 6" opacity="0.6"/>
 
   <!-- Ticker label on left -->
-  <rect x="0" y="0" width="120" height="150" fill="{colors['label_bg']}" opacity="0.95" rx="8"/>
+  <rect x="0" y="0" width="120" height="150" fill="{colors["label_bg"]}" opacity="0.95" rx="8"/>
   <text x="60" y="46" font-family="'Courier New', monospace" font-size="18" font-weight="bold"
-        fill="{colors['label_title']}" text-anchor="middle" filter="url(#textGlow)">
+        fill="{colors["label_title"]}" text-anchor="middle" filter="url(#textGlow)">
     CLAUDE CODE
   </text>
   <text x="60" y="68" font-family="'Courier New', monospace" font-size="18" font-weight="bold"
-        fill="{colors['label_subtitle']}" text-anchor="middle" filter="url(#textGlow)">
+        fill="{colors["label_subtitle"]}" text-anchor="middle" filter="url(#textGlow)">
     REPOS LIVE
   </text>
   <text x="60" y="92" font-family="'Courier New', monospace" font-size="14" font-weight="bold"
-        fill="{colors['delta_positive']}" text-anchor="middle">
+        fill="{colors["delta_positive"]}" text-anchor="middle">
     DAILY Δ
   </text>
 
   <!-- Animated pulse indicator -->
-  <circle cx="60" cy="118" r="5" fill="{colors['pulse']}" filter="url(#metricGlow)">
+  <circle cx="60" cy="118" r="5" fill="{colors["pulse"]}" filter="url(#metricGlow)">
     <animate attributeName="r" values="4;6;4" dur="1.5s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
   </circle>
