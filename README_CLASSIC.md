@@ -38,6 +38,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Claude Codex Settings`](https://github.com/fcakyon/claude-codex-settings) &nbsp; by &nbsp; [fatih akyon](https://github.com/fcakyon)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
+A well-organized, well-written set of plugins covering core developer activities, such as working with common cloud platforms like GitHub, Azure, MongoDB, and popular services such as Tavily, Playwright, and more. Clear, not overly-opinionated, and compatible with a few other providers.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-codex-settings](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-codex-settings&username=fcakyon&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Claude Code Output Styles - Debugging`](https://github.com/JamieM0/claude-output-styles) &nbsp; by &nbsp; [Jamie Matthews](https://github.com/JamieM0)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A small set of well-written output styles, specifically focused on debugging - root cause analysis, systematic, methodical debugging, encouraging a more careful approach to bug-squashing from Claude Code.
 
@@ -59,9 +70,6 @@ A high-performance Claude Code statusline tool written in Rust with Git integrat
 
 </details>
 <br>
-
-[`Claude Code Handbook`](https://nikiforovall.blog/claude-code-rules/) &nbsp; by &nbsp; [nikiforovall](https://github.com/nikiforovall)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Collection of best practices, tips, and techniques for Claude Code development workflows, enhanced with distributable plugins
 
 
 ## Contents [🔝](#awesome-claude-code)
@@ -152,6 +160,17 @@ Collection of best practices, tips, and techniques for Claude Code development w
 
 <details open>
 <summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
+
+[`Claude Codex Settings`](https://github.com/fcakyon/claude-codex-settings) &nbsp; by &nbsp; [fatih akyon](https://github.com/fcakyon)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
+A well-organized, well-written set of plugins covering core developer activities, such as working with common cloud platforms like GitHub, Azure, MongoDB, and popular services such as Tavily, Playwright, and more. Clear, not overly-opinionated, and compatible with a few other providers.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-codex-settings](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-codex-settings&username=fcakyon&all_stats=true&stats_only=true)
+
+</details>
+<br>
 
 [`Codex Skill`](https://github.com/skills-directory/skill-codex) &nbsp; by &nbsp; [klaudworks](https://github.com/klaudworks)    
 Enables users to prompt codex from claude code. Unlike the raw codex mcp server, this skill infers parameters such as model, reasoning effort, sandboxing from your prompt or asks you to specify them. It also simplifies continuing prior codex sessions so that codex can continue with the prior context.
