@@ -180,6 +180,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/Piebald-AI/claude-code-system-prompts"><img src="assets/badge-claude-code-system-prompts.svg" alt="Claude Code System Prompts"></a>  
+_All parts of Claude Code's system prompt, including builtin tool descriptions, sub agent prompts (Plan/Explore/Task), utility prompts (CLAUDE.md, compact, Bash cmd, security review, agent creation, etc.). Updated for each Claude Code version._  
+![GitHub Stats for claude-code-system-prompts](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-system-prompts&username=Piebald-AI&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/fcakyon/claude-codex-settings"><img src="assets/badge-claude-codex-settings.svg" alt="Claude Codex Settings"></a>  
 _A well-organized, well-written set of plugins covering core developer activities, such as working with common cloud platforms like GitHub, Azure, MongoDB, and popular services such as Tavily, Playwright, and more. Clear, not overly-opinionated, and compatible with a few other providers._  
 ![GitHub Stats for claude-codex-settings](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-codex-settings&username=fcakyon&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -187,10 +191,6 @@ _A well-organized, well-written set of plugins covering core developer activitie
 <a href="https://github.com/JamieM0/claude-output-styles"><img src="assets/badge-claude-code-output-styles-debugging.svg" alt="Claude Code Output Styles - Debugging"></a>  
 _A small set of well-written output styles, specifically focused on debugging - root cause analysis, systematic, methodical debugging, encouraging a more careful approach to bug-squashing from Claude Code._  
 ![GitHub Stats for claude-output-styles](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-output-styles&username=JamieM0&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/Haleclipse/CCometixLine"><img src="assets/badge-ccometixline-claude-code-statusline.svg" alt="CCometixLine - Claude Code Statusline"></a>  
-_A high-performance Claude Code statusline tool written in Rust with Git integration, usage tracking, interactive TUI configuration, and Claude Code enhancement utilities._  
-![GitHub Stats for CCometixLine](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=CCometixLine&username=Haleclipse&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 
 <br>
@@ -634,6 +634,13 @@ _A remarkably innovative approach to working with Skills, the centerpiece of whi
 <a href="https://github.com/automazeio/ccpm"><img src="assets/badge-claude-code-pm.svg" alt="Claude Code PM"></a>  
 _Really comprehensive and feature-packed project-management workflow for Claude Code. Numerous specialized agents, slash-commands, and strong documentation._  
 ![GitHub Stats for ccpm](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ccpm&username=automazeio&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/Piebald-AI/claude-code-system-prompts"><img src="assets/badge-claude-code-system-prompts.svg" alt="Claude Code System Prompts"></a>  
+_All parts of Claude Code's system prompt, including builtin tool descriptions, sub agent prompts (Plan/Explore/Task), utility prompts (CLAUDE.md, compact, Bash cmd, security review, agent creation, etc.). Updated for each Claude Code version._  
+![GitHub Stats for claude-code-system-prompts](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-system-prompts&username=Piebald-AI&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="assets/entry-separator-light-animated.svg" alt=""></div>
 

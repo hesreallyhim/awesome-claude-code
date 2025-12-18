@@ -38,6 +38,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Claude Code System Prompts`](https://github.com/Piebald-AI/claude-code-system-prompts) &nbsp; by &nbsp; [Piebald AI](https://github.com/Piebald-AI)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+All parts of Claude Code's system prompt, including builtin tool descriptions, sub agent prompts (Plan/Explore/Task), utility prompts (CLAUDE.md, compact, Bash cmd, security review, agent creation, etc.). Updated for each Claude Code version.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-code-system-prompts](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-system-prompts&username=Piebald-AI&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Claude Codex Settings`](https://github.com/fcakyon/claude-codex-settings) &nbsp; by &nbsp; [fatih akyon](https://github.com/fcakyon)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
 A well-organized, well-written set of plugins covering core developer activities, such as working with common cloud platforms like GitHub, Azure, MongoDB, and popular services such as Tavily, Playwright, and more. Clear, not overly-opinionated, and compatible with a few other providers.
 
@@ -56,17 +67,6 @@ A small set of well-written output styles, specifically focused on debugging - r
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-output-styles](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-output-styles&username=JamieM0&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`CCometixLine - Claude Code Statusline`](https://github.com/Haleclipse/CCometixLine) &nbsp; by &nbsp; [Haleclipse](https://github.com/Haleclipse)    
-A high-performance Claude Code statusline tool written in Rust with Git integration, usage tracking, interactive TUI configuration, and Claude Code enhancement utilities.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for CCometixLine](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=CCometixLine&username=Haleclipse&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -283,6 +283,17 @@ Really comprehensive and feature-packed project-management workflow for Claude C
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for ccpm](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ccpm&username=automazeio&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Claude Code System Prompts`](https://github.com/Piebald-AI/claude-code-system-prompts) &nbsp; by &nbsp; [Piebald AI](https://github.com/Piebald-AI)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+All parts of Claude Code's system prompt, including builtin tool descriptions, sub agent prompts (Plan/Explore/Task), utility prompts (CLAUDE.md, compact, Bash cmd, security review, agent creation, etc.). Updated for each Claude Code version.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-code-system-prompts](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-system-prompts&username=Piebald-AI&all_stats=true&stats_only=true)
 
 </details>
 <br>
