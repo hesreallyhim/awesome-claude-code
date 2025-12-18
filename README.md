@@ -183,8 +183,8 @@
 <a href="https://github.com/maxritter/claude-codepro"><img src="assets/badge-claude-codepro.svg" alt="Claude CodePro"></a>  
 _Professional development environment for Claude Code with spec-driven workflow, TDD enforcement, cross-session memory, semantic search, quality hooks, and modular rules integration. A bit "heavyweight" but feature-packed and has wide coverage._  
 ![GitHub Stats for claude-codepro](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-codepro&username=maxritter&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-<a href="https://github.com/aannoo/claude-hook-comms"><img src="assets/badge-claude-code-hook-comms-hcom.svg" alt="Claude Code Hook Comms (HCOM)"></a>  
 
+<a href="https://github.com/aannoo/claude-hook-comms"><img src="assets/badge-claude-code-hook-comms-hcom.svg" alt="Claude Code Hook Comms (HCOM)"></a>  
 _Lightweight CLI tool for real-time communication between Claude Code sub agents using hooks. Enables multi-agent collaboration with @-mention targeting, live dashboard monitoring, and zero-dependency implementation. [NOTE: At the time of posting, this resource is a little unstable - I'm sharing it anyway, because I think it's incredibly promising and creative. I hope by the time you read this, it is production-ready.]_  
 ![GitHub Stats for claude-hook-comms](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-hook-comms&username=aannoo&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 

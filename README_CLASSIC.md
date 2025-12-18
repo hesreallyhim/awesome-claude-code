@@ -38,13 +38,16 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
-[`Claude CodePro`](https://github.com/maxritter/claude-codepro) &nbsp; by &nbsp; [Max Ritter](https://www.maxritter.net)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`Claude CodePro`](https://github.com/maxritter/claude-codepro) &nbsp; by &nbsp; [Max Ritter](https://www.maxritter.net)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
 Professional development environment for Claude Code with spec-driven workflow, TDD enforcement, cross-session memory, semantic search, quality hooks, and modular rules integration. A bit "heavyweight" but feature-packed and has wide coverage.
 
 <details>
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-codepro](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-codepro&username=maxritter&all_stats=true&stats_only=true)
+
+</details>
+<br>
 
 [`Claude Code Hook Comms (HCOM)`](https://github.com/aannoo/claude-hook-comms) &nbsp; by &nbsp; [aannoo](https://github.com/aannoo)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Lightweight CLI tool for real-time communication between Claude Code sub agents using hooks. Enables multi-agent collaboration with @-mention targeting, live dashboard monitoring, and zero-dependency implementation. [NOTE: At the time of posting, this resource is a little unstable - I'm sharing it anyway, because I think it's incredibly promising and creative. I hope by the time you read this, it is production-ready.]
@@ -328,7 +331,7 @@ All parts of Claude Code's system prompt, including builtin tool descriptions, s
 </details>
 <br>
 
-[`Claude CodePro`](https://github.com/maxritter/claude-codepro) &nbsp; by &nbsp; [Max Ritter](https://www.maxritter.net)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`Claude CodePro`](https://github.com/maxritter/claude-codepro) &nbsp; by &nbsp; [Max Ritter](https://www.maxritter.net)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
 Professional development environment for Claude Code with spec-driven workflow, TDD enforcement, cross-session memory, semantic search, quality hooks, and modular rules integration. A bit "heavyweight" but feature-packed and has wide coverage.
 
 <details>
