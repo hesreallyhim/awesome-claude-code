@@ -1,4 +1,4 @@
-<svg width="900" height="80" viewBox="0 0 900 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet">
+<svg width="400" height="80" viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet">
   <defs>
     <linearGradient id="latestHeaderBg" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" style="stop-color:#faf8f3"/>
@@ -7,29 +7,29 @@
   </defs>
 
   <!-- Main container with vintage paper look -->
-  <rect x="0.5" y="0.5" width="899" height="79" rx="4" ry="4" fill="url(#latestHeaderBg)" stroke="#c4baa8" stroke-width="1"/>
+  <rect x="0.5" y="0.5" width="399" height="79" rx="4" ry="4" fill="url(#latestHeaderBg)" stroke="#c4baa8" stroke-width="1"/>
 
   <!-- Inner decorative border -->
-  <rect x="8" y="8" width="884" height="64" rx="2" ry="2" fill="none" stroke="#d2c5b4" stroke-width="0.5" stroke-dasharray="4 2"/>
+  <rect x="8" y="8" width="384" height="64" rx="2" ry="2" fill="none" stroke="#d2c5b4" stroke-width="0.5" stroke-dasharray="4 2"/>
 
   <!-- Corner flourishes -->
   <g fill="none" stroke="#c4baa8" stroke-width="1" opacity="0.6">
     <path d="M 20,20 L 20,30 M 20,20 L 30,20"/>
-    <path d="M 880,20 L 880,30 M 880,20 L 870,20"/>
+    <path d="M 380,20 L 380,30 M 380,20 L 370,20"/>
     <path d="M 20,60 L 20,50 M 20,60 L 30,60"/>
-    <path d="M 880,60 L 880,50 M 880,60 L 870,60"/>
+    <path d="M 380,60 L 380,50 M 380,60 L 370,60"/>
   </g>
 
   <!-- Decorative diamonds -->
-  <g fill="#5c5247" opacity="0.65">
-    <path d="M 280 40 L 288 32 L 296 40 L 288 48 Z"/>
-    <path d="M 604 40 L 612 32 L 620 40 L 612 48 Z"/>
-  </g>
+  <!-- <g fill="#5c5247" opacity="0.65">
+    <path d="M 30 40 L 38 32 L 46 40 L 38 48 Z"/>
+    <path d="M 354 40 L 362 32 L 370 40 L 362 48 Z"/>
+  </g> -->
 
   <!-- Main title -->
-  <text x="450" y="46"
+  <text x="200" y="50"
         font-family="Georgia, 'Times New Roman', serif"
-        font-size="22"
+        font-size="28"
         font-weight="600"
         fill="#3d3530"
         text-anchor="middle"
@@ -38,10 +38,10 @@
   </text>
 
   <!-- Subtle underline decoration -->
-  <line x1="320" y1="56" x2="580" y2="56" stroke="#c4baa8" stroke-width="1" opacity="0.5"/>
+  <!-- <line x1="40" y1="56" x2="360" y2="56" stroke="#c4baa8" stroke-width="1" opacity="0.5"/> -->
 
   <!-- Light scan indicator -->
-  <rect x="-40" y="4" width="3" height="72" fill="#d2c5b4" opacity="0.16">
+  <!-- <rect x="-40" y="4" width="3" height="72" fill="#d2c5b4" opacity="0.16">
     <animate attributeName="x" values="-40;920;920;-40" keyTimes="0;0.28;0.98;1" dur="7s" repeatCount="indefinite"/>
-  </rect>
+  </rect> -->
 </svg>

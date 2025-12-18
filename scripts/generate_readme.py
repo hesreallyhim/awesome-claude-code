@@ -2304,32 +2304,32 @@ class MinimalReadmeGenerator(ReadmeGenerator):
     def generate_weekly_section(self) -> str:
         """Generate weekly section with plain markdown."""
         lines = []
-        lines.append("## This Week's Additions ✨ [🔝](#awesome-claude-code)")
+        lines.append("## Latest Additions ✨ [🔝](#awesome-claude-code)")
         lines.append("")
-        lines.append("> Resources added in the past 7 days")
 
-        # Get recent resources
-        cutoff_date = datetime.now() - timedelta(days=7)
-        recent_resources = []
-
+        # Get rows sorted by date added (newest first)
+        resources_sorted_by_date = []
         for row in self.csv_data:
             date_added = row.get("Date Added", "").strip()
             if date_added:
                 parsed_date = parse_resource_date(date_added)
-                if parsed_date and parsed_date >= cutoff_date:
-                    recent_resources.append((parsed_date, row))
+                if parsed_date:
+                    resources_sorted_by_date.append((parsed_date, row))
+        resources_sorted_by_date.sort(key=lambda x: x[0], reverse=True)
 
-        # Sort by date (newest first)
-        recent_resources.sort(key=lambda x: x[0], reverse=True)
+        # Add all resources added in the past 7 days
+        latest_additions: list[dict[str, str]] = []
+        cutoff_date = datetime.now() - timedelta(days=7)
+        for dated_resource in resources_sorted_by_date:
+            if dated_resource[0] >= cutoff_date or len(latest_additions) < 3:
+                latest_additions.append(dated_resource[1])
+            else:
+                break
 
-        if recent_resources:
+        lines.append("")
+        for resource in latest_additions:
+            lines.append(self.format_resource_entry(resource, include_separator=False))
             lines.append("")
-            for _, resource in recent_resources:
-                lines.append(self.format_resource_entry(resource, include_separator=False))
-                lines.append("")
-        else:
-            lines.append("")
-            lines.append("*No new resources added this week.*")
 
         return "\n".join(lines).rstrip() + "\n"
 
