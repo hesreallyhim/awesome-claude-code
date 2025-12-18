@@ -38,6 +38,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Claude Code Hook Comms (HCOM)`](https://github.com/aannoo/claude-hook-comms) &nbsp; by &nbsp; [aannoo](https://github.com/aannoo)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Lightweight CLI tool for real-time communication between Claude Code sub agents using hooks. Enables multi-agent collaboration with @-mention targeting, live dashboard monitoring, and zero-dependency implementation.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-hook-comms](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-hook-comms&username=aannoo&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Claude Mountaineering Skills`](https://github.com/dreamiurg/claude-mountaineering-skills) &nbsp; by &nbsp; [Dmytro Gaivoronsky](https://github.com/dreamiurg)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Claude Code skill that automates mountain route research for North American peaks. Aggregates data from 10+ mountaineering sources like Mountaineers.org, PeakBagger.com and SummitPost.com to generate detailed route beta reports with weather, avalanche conditions, and trip reports.
 
@@ -1036,6 +1047,17 @@ A lightweight Python SDK with a clean API and good documentation; simplifies the
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for cchooks](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=cchooks&username=GowayLee&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Claude Code Hook Comms (HCOM)`](https://github.com/aannoo/claude-hook-comms) &nbsp; by &nbsp; [aannoo](https://github.com/aannoo)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Lightweight CLI tool for real-time communication between Claude Code sub agents using hooks. Enables multi-agent collaboration with @-mention targeting, live dashboard monitoring, and zero-dependency implementation.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-hook-comms](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-hook-comms&username=aannoo&all_stats=true&stats_only=true)
 
 </details>
 <br>
