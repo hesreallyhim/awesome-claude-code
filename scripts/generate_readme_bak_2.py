@@ -140,7 +140,7 @@ def create_h3_svg_file(text, filename, assets_dir):
     text_width = len(text) * 10
     total_width = text_width + 50  # Add padding for decorative elements
 
-    svg_content = f'''<svg width="{total_width}" height="36" xmlns="http://www.w3.org/2000/svg">
+    svg_content = f"""<svg width="{total_width}" height="36" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Very subtle glow -->
     <filter id="minimalGlow">
@@ -175,7 +175,7 @@ def create_h3_svg_file(text, filename, assets_dir):
     {text_escaped}
     <animate attributeName="opacity" values="0.93;1;0.93" dur="4s" repeatCount="indefinite"/>
   </text>
-</svg>'''
+</svg>"""
 
     # Write SVG file
     filepath = os.path.join(assets_dir, filename)
@@ -337,7 +337,7 @@ def generate_category_header_light_svg(title, section_number="01"):
     title_width = len(title) * 14  # Approximate width per character
     line_end_x = max(640, 220 + title_width + 50)
 
-    return f'''<svg width="800" height="80" xmlns="http://www.w3.org/2000/svg">
+    return f"""<svg width="800" height="80" xmlns="http://www.w3.org/2000/svg">
   <!--
     Vintage Technical Manual Style - Header (Auto-generated)
     Clean, authoritative, reference manual aesthetic
@@ -380,7 +380,7 @@ def generate_category_header_light_svg(title, section_number="01"):
 
   <!-- Thin top line -->
   <line x1="160" y1="15" x2="{line_end_x}" y2="15" stroke="#5c5247" stroke-width="1.75" opacity="0.45"/>
-</svg>'''
+</svg>"""
 
 
 def generate_section_divider_light_svg(variant=1):
@@ -1138,10 +1138,10 @@ def generate_resource_badge_svg(display_name, author_name=""):
     # Build author text element if author provided
     author_element = ""
     if author_name:
-        author_element = f'''
-  <text class="author" x="{name_end_x + 10}" y="30" font-family="system-ui, -apple-system, 'Helvetica Neue', sans-serif" font-size="14" font-weight="400">by {author_escaped}</text>'''
+        author_element = f"""
+  <text class="author" x="{name_end_x + 10}" y="30" font-family="system-ui, -apple-system, 'Helvetica Neue', sans-serif" font-size="14" font-weight="400">by {author_escaped}</text>"""
 
-    svg = f'''<svg width="{svg_width}" height="44" xmlns="http://www.w3.org/2000/svg">
+    svg = f"""<svg width="{svg_width}" height="44" xmlns="http://www.w3.org/2000/svg">
   <style>
     @media (prefers-color-scheme: light) {{
       .line {{ stroke: #5c5247; }}
@@ -1171,7 +1171,7 @@ def generate_resource_badge_svg(display_name, author_name=""):
 
   <!-- Bottom rule -->
   <line class="line" x1="48" y1="37" x2="{svg_width - 4}" y2="37" stroke-width="1.25" opacity="0.5"/>
-</svg>'''
+</svg>"""
     return svg
 
 
@@ -1337,9 +1337,9 @@ def generate_section_content(category, csv_data, general_map=None, assets_dir=No
     lines = []
 
     # Get category details
-    id = category.get("id", "")
+    # id = category.get("id", "")
     title = category.get("name", "")
-    icon = category.get("icon", "")
+    # icon = category.get("icon", "")
     description = category.get("description", "").strip()
     category_name = category.get("name", "")
     subcategories = category.get("subcategories", [])
@@ -1362,7 +1362,7 @@ def generate_section_content(category, csv_data, general_map=None, assets_dir=No
     lines.append("")
 
     # Has subcategories - use regular header (not collapsible at category level)
-    header_text = f"{title} {icon}" if icon else title
+    # header_text = f"{title} {icon}" if icon else title
 
     # Generate anchor ID matching TOC format
     anchor = title.lower().replace(" ", "-").replace("&", "").replace("/", "").replace(".", "")

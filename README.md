@@ -12,7 +12,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/terminal-header.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/terminal-header-light-anim-lineprint.svg">
-  <img src="assets/terminal-header-light-anim-lineprint.svg" alt="Awesome Claude Code Terminal" width="100%">
+  <img src="assets/terminal-header-light-anim-lineprint.svg" alt="Awesome Claude Code Terminal">
 </picture>
 
 <!-- Generated with https://github.com/denvercoder1/readme-typing-svg -->
@@ -176,15 +176,9 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/latest-additions-header.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/latest-additions-header-light.svg">
-    <img src="assets/latest-additions-header-light.svg" alt="LATEST ADDITIONS" width="100%" style="max-width: 900px;">
+    <img src="assets/latest-additions-header-light.svg" alt="LATEST ADDITIONS">
   </picture>
 </div>
-
-<blockquote>
-
-The latest resources added to the list
-
-</blockquote>
 
 <a href="https://github.com/JamieM0/claude-output-styles"><img src="assets/badge-claude-code-output-styles-debugging.svg" alt="Claude Code Output Styles - Debugging"></a>  
 _A small set of well-written output styles, specifically focused on debugging - root cause analysis, systematic, methodical debugging, encouraging a more careful approach to bug-squashing from Claude Code._  
