@@ -1,0 +1,67 @@
+<svg width="400" height="80" viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Green phosphor gradient for terminal background -->
+    <linearGradient id="phosphorBg" x1="0" y1="0" x2="100%" y2="400">
+      <stop offset="0%" style="stop-color:#0f380f;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0a2f0a;stop-opacity:1"/>
+    </linearGradient>
+
+    <!-- Scanlines pattern -->
+    <pattern id="scanlines" x="0" y="0" width="100%" height="4" patternUnits="userSpaceOnUse">
+      <rect width="100%" height="2" fill="#000000" opacity="0.15"/>
+    </pattern>
+
+    <!-- CRT glow effect -->
+    <filter id="crtGlow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark base background -->
+  <rect width="400" height="80" fill="#1a1a1a"/>
+
+  <!-- Monitor bezel effect -->
+  <rect x="10" y="5" width="380" height="70" fill="url(#phosphorBg)" rx="3"/>
+  <rect x="10" y="5" width="380" height="70" fill="url(#scanlines)"/>
+  <!-- Top and bottom border decoration -->
+  <line x1="10" y1="5" x2="390" y2="5" stroke="#66ff66" stroke-width="1" opacity="0.3"/>
+  <line x1="10" y1="75" x2="390" y2="75" stroke="#66ff66" stroke-width="1" opacity="0.3"/>
+
+  <!-- Corner brackets -->
+  <g filter="url(#crtGlow)" text-anchor="middle" width="400">
+    <text x="30" y="25" font-family="monospace" font-size="24" fill="#66ff66" opacity="0.7">╭─</text>
+    <text x="370" y="25" font-family="monospace" font-size="24" fill="#66ff66" opacity="0.7">─╮</text>
+    <text x="30" y="65" font-family="monospace" font-size="24" fill="#66ff66" opacity="0.7">╰─</text>
+    <text x="370" y="65" font-family="monospace" font-size="24" fill="#66ff66" opacity="0.7">─╯</text>
+  </g>
+
+  <!-- Main title with glow -->
+  <g>
+    <!-- Sparkle icon -->
+    <!-- <text x="75" y="50" font-family="monospace" font-size="20" fill="#ffaa00" font-weight="bold">
+      ✨
+      <animate attributeName="opacity" values="1;0.5;1;0.85;1" dur="1s" repeatCount="indefinite"/>
+    </text> -->
+
+    <!-- Main text -->
+    <text x="200" y="50" font-family="monospace" font-size="32" fill="#33ff33" font-weight="bold" text-anchor="middle">
+      LATEST ADDITIONS
+    </text>
+
+    <!-- <text x="305" y="50" font-family="monospace" font-size="20" fill="#ffaa00" font-weight="bold">
+      ✨
+      <animate attributeName="opacity" values="1;0.4;1;0.9;1" dur="1.5s" repeatCount="indefinite"/>
+    </text> -->
+  </g>
+
+  <!-- Underline decoration -->
+  <!-- <g filter="url(#crtGlow)">
+    <line x1="20" y1="54" x2="380" y2="54" stroke="#449944" stroke-width="16" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.4;0.6" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+  </g> -->
+</svg>

@@ -9,7 +9,7 @@ import os
 import re
 import shutil
 import sys
-from datetime import datetime, timedelta
+from datetime import datetime
 
 import yaml  # type: ignore[import-untyped]
 from validate_links import parse_github_url  # type: ignore[import-not-found]
@@ -24,9 +24,9 @@ def load_template(template_path):
 def create_h2_svg_file(text, filename, assets_dir):
     """Create an animated hero-centered H2 header SVG file."""
     # Escape XML special characters
-    text_escaped = text.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+    text_escaped = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
-    svg_content = f'''<svg width="800" height="100" xmlns="http://www.w3.org/2000/svg">
+    svg_content = f"""<svg width="800" height="100" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Strong glow for hero text -->
     <filter id="heroGlow">
@@ -121,11 +121,11 @@ def create_h2_svg_file(text, filename, assets_dir):
       <animate attributeName="opacity" values="0;0.6;0" dur="3.5s" repeatCount="indefinite"/>
     </circle>
   </g>
-</svg>'''
+</svg>"""
 
     # Write SVG file
     filepath = os.path.join(assets_dir, filename)
-    with open(filepath, 'w', encoding='utf-8') as f:
+    with open(filepath, "w", encoding="utf-8") as f:
         f.write(svg_content)
 
     return filename
@@ -134,7 +134,7 @@ def create_h2_svg_file(text, filename, assets_dir):
 def create_h3_svg_file(text, filename, assets_dir):
     """Create an animated minimal-inline H3 header SVG file."""
     # Escape XML special characters
-    text_escaped = text.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+    text_escaped = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
     # Calculate approximate text width (rough estimate: 10px per character for 18px font)
     text_width = len(text) * 10
@@ -179,7 +179,7 @@ def create_h3_svg_file(text, filename, assets_dir):
 
     # Write SVG file
     filepath = os.path.join(assets_dir, filename)
-    with open(filepath, 'w', encoding='utf-8') as f:
+    with open(filepath, "w", encoding="utf-8") as f:
         f.write(svg_content)
 
     return filename
@@ -325,6 +325,7 @@ def get_anchor_suffix_for_icon(icon):
 # SVG GENERATORS - Auto-generate assets for new categories/subcategories
 # =============================================================================
 
+
 def generate_category_header_light_svg(title, section_number="01"):
     """Generate a light-mode category header SVG in vintage technical manual style.
 
@@ -390,7 +391,7 @@ def generate_section_divider_light_svg(variant=1):
     """
     if variant == 1:
         # Diagram/schematic style with nodes
-        return '''<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+        return """<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
   <!-- Vintage Technical Manual Style - Diagram Variant (BOLD) -->
 
   <!-- Ghost line for layered effect -->
@@ -443,11 +444,11 @@ def generate_section_divider_light_svg(variant=1):
     <path d="M 52 20 L 65 20 M 58 15 L 65 20 L 58 25"/>
     <path d="M 848 20 L 835 20 M 842 15 L 835 20 L 842 25"/>
   </g>
-</svg>'''
+</svg>"""
 
     elif variant == 2:
         # Wave/organic style
-        return '''<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+        return """<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
   <!-- Vintage Technical Manual Style - Wave Variant -->
 
   <!-- Ghost wave -->
@@ -477,11 +478,11 @@ def generate_section_divider_light_svg(variant=1):
     <line x1="550" y1="14" x2="550" y2="24" stroke-width="1.25"/>
     <line x1="750" y1="12" x2="750" y2="22" stroke-width="1.25"/>
   </g>
-</svg>'''
+</svg>"""
 
     else:  # variant == 3
         # Bracket style with layered drafts
-        return '''<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+        return """<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
   <!-- Vintage Technical Manual Style - Bracket Variant -->
 
   <!-- Ghost lines -->
@@ -523,7 +524,7 @@ def generate_section_divider_light_svg(variant=1):
     <line x1="720" y1="14" x2="720" y2="26" stroke-width="1.25"/>
     <line x1="722" y1="15" x2="722" y2="25" stroke-width="0.75" opacity="0.5"/>
   </g>
-</svg>'''
+</svg>"""
 
 
 def generate_desc_box_light_svg(position="top"):
@@ -533,7 +534,7 @@ def generate_desc_box_light_svg(position="top"):
         position: "top" or "bottom"
     """
     if position == "top":
-        return '''<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+        return """<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
   <!-- Vintage Technical Manual - BOLD layered drafts (top) -->
 
   <!-- Ghost/draft lines -->
@@ -591,9 +592,9 @@ def generate_desc_box_light_svg(position="top"):
     <path d="M 894,15 L 894,38 M 894,15 L 872,15" stroke-width="2.5" opacity="0.55"/>
     <path d="M 891,13 L 891,36 M 891,13 L 870,13" stroke-width="1.5" opacity="0.2"/>
   </g>
-</svg>'''
+</svg>"""
     else:  # bottom
-        return '''<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
+        return """<svg width="900" height="40" xmlns="http://www.w3.org/2000/svg">
   <!-- Vintage Technical Manual - BOLD layered drafts (bottom) -->
 
   <!-- Ghost/draft lines -->
@@ -650,7 +651,7 @@ def generate_desc_box_light_svg(position="top"):
     <path d="M 894,25 L 894,2 M 894,25 L 872,25" stroke-width="2.5" opacity="0.55"/>
     <path d="M 891,27 L 891,4 M 891,27 L 870,27" stroke-width="1.5" opacity="0.2"/>
   </g>
-</svg>'''
+</svg>"""
 
 
 def generate_toc_row_svg(directory_name, description):
@@ -661,10 +662,10 @@ def generate_toc_row_svg(directory_name, description):
         description: Short description for the comment
     """
     # Escape XML entities
-    desc_escaped = description.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-    dir_escaped = directory_name.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+    desc_escaped = description.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    dir_escaped = directory_name.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
-    return f'''<svg width="850" height="40" xmlns="http://www.w3.org/2000/svg">
+    return f"""<svg width="850" height="40" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <filter id="crtGlow">
       <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
@@ -707,7 +708,7 @@ def generate_toc_row_svg(directory_name, description):
       # {desc_escaped}
     </text>
   </g>
-</svg>'''
+</svg>"""
 
 
 def generate_toc_sub_svg(directory_name, description):
@@ -717,10 +718,10 @@ def generate_toc_sub_svg(directory_name, description):
         directory_name: The subdirectory name (e.g., "general/")
         description: Short description for the comment
     """
-    desc_escaped = description.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-    dir_escaped = directory_name.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+    desc_escaped = description.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    dir_escaped = directory_name.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
-    return f'''<svg width="850" height="35" xmlns="http://www.w3.org/2000/svg">
+    return f"""<svg width="850" height="35" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <filter id="crtGlow">
       <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
@@ -757,12 +758,13 @@ def generate_toc_sub_svg(directory_name, description):
       # {desc_escaped}
     </text>
   </g>
-</svg>'''
+</svg>"""
 
 
 # =============================================================================
 # ASSET SAVING HELPERS - Save generated assets to disk
 # =============================================================================
+
 
 def ensure_category_header_exists(category_id, title, section_number, assets_dir):
     """Ensure category header SVGs exist, generating them if needed.
@@ -770,7 +772,7 @@ def ensure_category_header_exists(category_id, title, section_number, assets_dir
     Returns tuple of (dark_filename, light_filename).
     """
     # Define filenames
-    safe_name = category_id.replace('-', '_')
+    safe_name = category_id.replace("-", "_")
     dark_filename = f"header_{safe_name}.svg"
     light_filename = f"header_{safe_name}-light-v3.svg"
 
@@ -778,7 +780,7 @@ def ensure_category_header_exists(category_id, title, section_number, assets_dir
     light_path = os.path.join(assets_dir, light_filename)
     if not os.path.exists(light_path):
         svg_content = generate_category_header_light_svg(title, section_number)
-        with open(light_path, 'w', encoding='utf-8') as f:
+        with open(light_path, "w", encoding="utf-8") as f:
             f.write(svg_content)
 
     return (dark_filename, light_filename)
@@ -795,7 +797,7 @@ def ensure_section_divider_exists(variant, assets_dir):
     light_path = os.path.join(assets_dir, light_filename)
     if not os.path.exists(light_path):
         svg_content = generate_section_divider_light_svg(variant)
-        with open(light_path, 'w', encoding='utf-8') as f:
+        with open(light_path, "w", encoding="utf-8") as f:
             f.write(svg_content)
 
     return (dark_filename, light_filename)
@@ -812,7 +814,7 @@ def ensure_desc_box_exists(position, assets_dir):
 
     if not os.path.exists(filepath):
         svg_content = generate_desc_box_light_svg(position)
-        with open(filepath, 'w', encoding='utf-8') as f:
+        with open(filepath, "w", encoding="utf-8") as f:
             f.write(svg_content)
 
     return filename
@@ -825,7 +827,7 @@ def ensure_toc_row_exists(category_id, directory_name, description, assets_dir):
 
     if not os.path.exists(filepath):
         svg_content = generate_toc_row_svg(directory_name, description)
-        with open(filepath, 'w', encoding='utf-8') as f:
+        with open(filepath, "w", encoding="utf-8") as f:
             f.write(svg_content)
 
     return filename
@@ -838,7 +840,7 @@ def ensure_toc_sub_exists(subcat_id, directory_name, description, assets_dir):
 
     if not os.path.exists(filepath):
         svg_content = generate_toc_sub_svg(directory_name, description)
-        with open(filepath, 'w', encoding='utf-8') as f:
+        with open(filepath, "w", encoding="utf-8") as f:
             f.write(svg_content)
 
     return filename
@@ -848,57 +850,69 @@ def ensure_toc_sub_exists(subcat_id, directory_name, description, assets_dir):
 # MAPPING FUNCTIONS - Map IDs to filenames
 # =============================================================================
 
+
 def get_category_svg_filename(category_id):
     """Map category ID to SVG filename."""
     svg_map = {
-        'skills': 'toc-row-skills.svg',
-        'workflows': 'toc-row-workflows.svg',
-        'tooling': 'toc-row-tooling.svg',
-        'statusline': 'toc-row-statusline.svg',
-        'hooks': 'toc-row-custom.svg',
-        'slash-commands': 'toc-row-commands.svg',
-        'claude-md-files': 'toc-row-config.svg',
-        'alternative-clients': 'toc-row-clients.svg',
-        'official-documentation': 'toc-row-docs.svg',
+        "skills": "toc-row-skills.svg",
+        "workflows": "toc-row-workflows.svg",
+        "tooling": "toc-row-tooling.svg",
+        "statusline": "toc-row-statusline.svg",
+        "hooks": "toc-row-custom.svg",
+        "slash-commands": "toc-row-commands.svg",
+        "claude-md-files": "toc-row-config.svg",
+        "alternative-clients": "toc-row-clients.svg",
+        "official-documentation": "toc-row-docs.svg",
     }
-    return svg_map.get(category_id, f'toc-row-{category_id}.svg')
+    return svg_map.get(category_id, f"toc-row-{category_id}.svg")
 
 
 def get_subcategory_svg_filename(subcat_id):
     """Map subcategory ID to SVG filename."""
     svg_map = {
-        'general': 'toc-sub-general.svg',
-        'ide-integrations': 'toc-sub-ide.svg',
-        'usage-monitors': 'toc-sub-monitors.svg',
-        'orchestrators': 'toc-sub-orchestrators.svg',
-        'version-control-git': 'toc-sub-git.svg',
-        'code-analysis-testing': 'toc-sub-code-analysis.svg',
-        'context-loading-priming': 'toc-sub-context.svg',
-        'documentation-changelogs': 'toc-sub-documentation.svg',
-        'ci-deployment': 'toc-sub-ci.svg',
-        'project-task-management': 'toc-sub-project-mgmt.svg',
-        'miscellaneous': 'toc-sub-misc.svg',
-        'language-specific': 'toc-sub-language.svg',
-        'domain-specific': 'toc-sub-domain.svg',
-        'project-scaffolding-mcp': 'toc-sub-scaffolding.svg',
+        "general": "toc-sub-general.svg",
+        "ide-integrations": "toc-sub-ide.svg",
+        "usage-monitors": "toc-sub-monitors.svg",
+        "orchestrators": "toc-sub-orchestrators.svg",
+        "version-control-git": "toc-sub-git.svg",
+        "code-analysis-testing": "toc-sub-code-analysis.svg",
+        "context-loading-priming": "toc-sub-context.svg",
+        "documentation-changelogs": "toc-sub-documentation.svg",
+        "ci-deployment": "toc-sub-ci.svg",
+        "project-task-management": "toc-sub-project-mgmt.svg",
+        "miscellaneous": "toc-sub-misc.svg",
+        "language-specific": "toc-sub-language.svg",
+        "domain-specific": "toc-sub-domain.svg",
+        "project-scaffolding-mcp": "toc-sub-scaffolding.svg",
     }
-    return svg_map.get(subcat_id, f'toc-sub-{subcat_id}.svg')
+    return svg_map.get(subcat_id, f"toc-sub-{subcat_id}.svg")
 
 
 def get_category_header_svg(category_id):
     """Map category ID to pre-made header SVG filenames (dark and light variants)."""
     header_map = {
-        'skills': ('header_agent_skills.svg', 'header_agent_skills-light-v3.svg'),
-        'workflows': ('header_workflows_knowledge_guides.svg', 'header_workflows_knowledge_guides-light-v3.svg'),
-        'tooling': ('header_tooling.svg', 'header_tooling-light-v3.svg'),
-        'statusline': ('header_status_lines.svg', 'header_status_lines-light-v3.svg'),
-        'hooks': ('header_hooks.svg', 'header_hooks-light-v3.svg'),
-        'slash-commands': ('header_slash_commands.svg', 'header_slash_commands-light-v3.svg'),
-        'claude-md-files': ('header_claudemd_files.svg', 'header_claudemd_files-light-v3.svg'),
-        'alternative-clients': ('header_alternative_clients.svg', 'header_alternative_clients-light-v3.svg'),
-        'official-documentation': ('header_official_documentation.svg', 'header_official_documentation-light-v3.svg'),
+        "skills": ("header_agent_skills.svg", "header_agent_skills-light-v3.svg"),
+        "workflows": (
+            "header_workflows_knowledge_guides.svg",
+            "header_workflows_knowledge_guides-light-v3.svg",
+        ),
+        "tooling": ("header_tooling.svg", "header_tooling-light-v3.svg"),
+        "statusline": ("header_status_lines.svg", "header_status_lines-light-v3.svg"),
+        "hooks": ("header_hooks.svg", "header_hooks-light-v3.svg"),
+        "slash-commands": ("header_slash_commands.svg", "header_slash_commands-light-v3.svg"),
+        "claude-md-files": ("header_claudemd_files.svg", "header_claudemd_files-light-v3.svg"),
+        "alternative-clients": (
+            "header_alternative_clients.svg",
+            "header_alternative_clients-light-v3.svg",
+        ),
+        "official-documentation": (
+            "header_official_documentation.svg",
+            "header_official_documentation-light-v3.svg",
+        ),
     }
-    return header_map.get(category_id, (f'header_{category_id}.svg', f'header_{category_id}-light-v3.svg'))
+    return header_map.get(
+        category_id, (f"header_{category_id}.svg", f"header_{category_id}-light-v3.svg")
+    )
 
 
 # Global counter for cycling section dividers (light mode only)
@@ -914,7 +928,7 @@ def get_section_divider_svg():
     global _section_divider_counter
     variant = (_section_divider_counter % 3) + 1  # 1, 2, 3
     _section_divider_counter += 1
-    return ('section-divider-alt2.svg', f'section-divider-light-manual-v{variant}.svg')
+    return ("section-divider-alt2.svg", f"section-divider-light-manual-v{variant}.svg")
 
 
 def sanitize_filename_from_anchor(anchor: str) -> str:
@@ -1003,14 +1017,18 @@ def generate_toc_from_categories(csv_data=None, general_map=None):
 
         # Add main category row with theme-adaptive picture element
         dark_svg = svg_filename
-        light_svg = svg_filename.replace('.svg', '-light-anim-scanline.svg')
+        light_svg = svg_filename.replace(".svg", "-light-anim-scanline.svg")
         toc_lines.append(f'<a href="#{anchor}{anchor_suffix}">')
-        toc_lines.append(f'  <picture>')
-        toc_lines.append(f'    <source media="(prefers-color-scheme: dark)" srcset="assets/{dark_svg}">')
-        toc_lines.append(f'    <source media="(prefers-color-scheme: light)" srcset="assets/{light_svg}">')
+        toc_lines.append("  <picture>")
+        toc_lines.append(
+            f'    <source media="(prefers-color-scheme: dark)" srcset="assets/{dark_svg}">'
+        )
+        toc_lines.append(
+            f'    <source media="(prefers-color-scheme: light)" srcset="assets/{light_svg}">'
+        )
         toc_lines.append(f'    <img src="assets/{light_svg}" alt="{section_title}">')
-        toc_lines.append(f'  </picture>')
-        toc_lines.append(f'</a>')
+        toc_lines.append("  </picture>")
+        toc_lines.append("</a>")
         toc_lines.append('<br clear="all">')
 
         # Check if this category has subcategories
@@ -1061,14 +1079,18 @@ def generate_toc_from_categories(csv_data=None, general_map=None):
 
                     # Add subcategory row with theme-adaptive picture element
                     dark_svg = svg_filename
-                    light_svg = svg_filename.replace('.svg', '-light-anim-scanline.svg')
+                    light_svg = svg_filename.replace(".svg", "-light-anim-scanline.svg")
                     toc_lines.append(f'<a href="#{sub_anchor}">')
-                    toc_lines.append(f'  <picture>')
-                    toc_lines.append(f'    <source media="(prefers-color-scheme: dark)" srcset="assets/{dark_svg}">')
-                    toc_lines.append(f'    <source media="(prefers-color-scheme: light)" srcset="assets/{light_svg}">')
+                    toc_lines.append("  <picture>")
+                    toc_lines.append(
+                        f'    <source media="(prefers-color-scheme: dark)" srcset="assets/{dark_svg}">'
+                    )
+                    toc_lines.append(
+                        f'    <source media="(prefers-color-scheme: light)" srcset="assets/{light_svg}">'
+                    )
                     toc_lines.append(f'    <img src="assets/{light_svg}" alt="{sub_title}">')
-                    toc_lines.append(f'  </picture>')
-                    toc_lines.append(f'</a>')
+                    toc_lines.append("  </picture>")
+                    toc_lines.append("</a>")
                     toc_lines.append('<br clear="all">')
 
     return "\n".join(toc_lines).strip()
@@ -1089,8 +1111,20 @@ def generate_resource_badge_svg(display_name, author_name=""):
         initials = display_name[:2].upper()
 
     # Escape XML special characters
-    name_escaped = display_name.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;')
-    author_escaped = author_name.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;') if author_name else ""
+    name_escaped = (
+        display_name.replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace('"', "&quot;")
+    )
+    author_escaped = (
+        author_name.replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace('"', "&quot;")
+        if author_name
+        else ""
+    )
 
     # Calculate width based on text length (approximate) - larger fonts need more space
     name_width = len(display_name) * 10
@@ -1144,8 +1178,8 @@ def generate_resource_badge_svg(display_name, author_name=""):
 def save_resource_badge_svg(display_name, author_name, assets_dir):
     """Save a resource name SVG badge to the assets directory and return the filename."""
     # Create a safe filename from the display name (no -light suffix, badge is theme-adaptive)
-    safe_name = re.sub(r'[^a-zA-Z0-9]', '-', display_name.lower())
-    safe_name = re.sub(r'-+', '-', safe_name).strip('-')
+    safe_name = re.sub(r"[^a-zA-Z0-9]", "-", display_name.lower())
+    safe_name = re.sub(r"-+", "-", safe_name).strip("-")
     filename = f"badge-{safe_name}.svg"
 
     # Generate the SVG content (theme-adaptive via CSS media queries)
@@ -1153,7 +1187,7 @@ def save_resource_badge_svg(display_name, author_name, assets_dir):
 
     # Save to file
     filepath = os.path.join(assets_dir, filename)
-    with open(filepath, 'w', encoding='utf-8') as f:
+    with open(filepath, "w", encoding="utf-8") as f:
         f.write(svg_content)
 
     return filename
@@ -1164,7 +1198,7 @@ def generate_entry_separator_svg():
 
     Uses bolder 'layered drafts' aesthetic with ghost circles for depth.
     """
-    return '''<svg width="200" height="12" xmlns="http://www.w3.org/2000/svg">
+    return """<svg width="200" height="12" xmlns="http://www.w3.org/2000/svg">
   <g opacity="0.55">
     <circle cx="88" cy="6" r="2.5" fill="#c4baa8"/>
     <circle cx="100" cy="6" r="3.5" fill="#c96442"/>
@@ -1174,7 +1208,7 @@ def generate_entry_separator_svg():
     <circle cx="102" cy="7" r="2" fill="#c96442" opacity="0.3"/>
     <circle cx="110" cy="7" r="1.5" fill="#c4baa8" opacity="0.4"/>
   </g>
-</svg>'''
+</svg>"""
 
 
 def ensure_separator_svg_exists(assets_dir):
@@ -1207,7 +1241,7 @@ def format_resource_entry(row, assets_dir=None, include_separator=True):
         # Link with SVG badge image
         parts.append(f'<a href="{primary_link}">')
         parts.append(f'<img src="assets/{badge_filename}" alt="{display_name}">')
-        parts.append('</a>')
+        parts.append("</a>")
     else:
         # Fallback to text link
         parts.append(f"[`{display_name}`]({primary_link})")
@@ -1240,7 +1274,7 @@ def format_resource_entry(row, assets_dir=None, include_separator=True):
         parts.append("\n\n")
         parts.append('<div align="center">')
         parts.append(f'<img src="assets/{separator_filename}" alt="">')
-        parts.append('</div>')
+        parts.append("</div>")
         parts.append("\n")
 
     return "".join(parts)
@@ -1281,12 +1315,18 @@ def generate_weekly_section(csv_data):
 
     # EXTREME MAKEOVER BANNER!
     lines.append('<div align="center">')
-    lines.append('  <picture>')
-    lines.append('    <source media="(prefers-color-scheme: dark)" srcset="assets/makeover-banner.svg">')
-    lines.append('    <source media="(prefers-color-scheme: light)" srcset="assets/makeover-banner-light.svg">')
-    lines.append('    <img src="assets/makeover-banner-light.svg" alt="EXTREME REPO MAKEOVER BY CLAUDE CODE WEB!" width="100%" style="max-width: 900px;">')
-    lines.append('  </picture>')
-    lines.append('</div>')
+    lines.append("  <picture>")
+    lines.append(
+        '    <source media="(prefers-color-scheme: dark)" srcset="assets/makeover-banner.svg">'
+    )
+    lines.append(
+        '    <source media="(prefers-color-scheme: light)" srcset="assets/makeover-banner-light.svg">'
+    )
+    lines.append(
+        '    <img src="assets/makeover-banner-light.svg" alt="EXTREME REPO MAKEOVER BY CLAUDE CODE WEB!" width="100%" style="max-width: 900px;">'
+    )
+    lines.append("  </picture>")
+    lines.append("</div>")
     lines.append("")
 
     return "\n".join(lines).rstrip() + "\n"
@@ -1307,25 +1347,25 @@ def generate_section_content(category, csv_data, general_map=None, assets_dir=No
     # Add decorative section divider before each major category (cycles through v1, v2, v3)
     dark_divider, light_divider = get_section_divider_svg()
     lines.append('<div align="center">')
-    lines.append('  <picture>')
-    lines.append(f'    <source media="(prefers-color-scheme: dark)" srcset="assets/{dark_divider}">')
-    lines.append(f'    <source media="(prefers-color-scheme: light)" srcset="assets/{light_divider}">')
-    lines.append(f'    <img src="assets/{light_divider}" alt="" width="100%" style="max-width: 900px;">')
-    lines.append('  </picture>')
-    lines.append('</div>')
-    lines.append('')
-    
+    lines.append("  <picture>")
+    lines.append(
+        f'    <source media="(prefers-color-scheme: dark)" srcset="assets/{dark_divider}">'
+    )
+    lines.append(
+        f'    <source media="(prefers-color-scheme: light)" srcset="assets/{light_divider}">'
+    )
+    lines.append(
+        f'    <img src="assets/{light_divider}" alt="" width="100%" style="max-width: 900px;">'
+    )
+    lines.append("  </picture>")
+    lines.append("</div>")
+    lines.append("")
+
     # Has subcategories - use regular header (not collapsible at category level)
     header_text = f"{title} {icon}" if icon else title
 
     # Generate anchor ID matching TOC format
-    anchor = (
-        title.lower()
-        .replace(" ", "-")
-        .replace("&", "")
-        .replace("/", "")
-        .replace(".", "")
-    )
+    anchor = title.lower().replace(" ", "-").replace("&", "").replace("/", "").replace(".", "")
     anchor_id = f"{anchor}-"  # Category headers have "-" suffix
 
     # Get pre-made header SVG files for this category
@@ -1335,36 +1375,50 @@ def generate_section_content(category, csv_data, general_map=None, assets_dir=No
     # Add header with proper ID and theme-adaptive picture element
     lines.append(f'<h2 id="{anchor_id}">')
     lines.append('<div align="center">')
-    lines.append('  <picture>')
+    lines.append("  <picture>")
     lines.append(f'    <source media="(prefers-color-scheme: dark)" srcset="assets/{dark_header}">')
-    lines.append(f'    <source media="(prefers-color-scheme: light)" srcset="assets/{light_header}">')
+    lines.append(
+        f'    <source media="(prefers-color-scheme: light)" srcset="assets/{light_header}">'
+    )
     lines.append(f'    <img src="assets/{light_header}" alt="{title}" style="max-width: 600px;">')
-    lines.append('  </picture>')
-    lines.append('</div>')
-    lines.append('</h2>')
-    lines.append(f'<div align="right"><a href="#awesome-claude-code">🔝 Back to top</a></div>')
+    lines.append("  </picture>")
+    lines.append("</div>")
+    lines.append("</h2>")
+    lines.append('<div align="right"><a href="#awesome-claude-code">🔝 Back to top</a></div>')
     lines.append("")
 
     # Add section description if present, wrapped in decorative box
     if description:
         lines.append("")
         lines.append('<div align="center">')
-        lines.append('  <picture>')
-        lines.append('    <source media="(prefers-color-scheme: dark)" srcset="assets/desc-box-top.svg">')
-        lines.append('    <source media="(prefers-color-scheme: light)" srcset="assets/desc-box-top-light.svg">')
-        lines.append('    <img src="assets/desc-box-top-light.svg" alt="" width="100%" style="max-width: 900px;">')
-        lines.append('  </picture>')
-        lines.append('</div>')
+        lines.append("  <picture>")
+        lines.append(
+            '    <source media="(prefers-color-scheme: dark)" srcset="assets/desc-box-top.svg">'
+        )
+        lines.append(
+            '    <source media="(prefers-color-scheme: light)" srcset="assets/desc-box-top-light.svg">'
+        )
+        lines.append(
+            '    <img src="assets/desc-box-top-light.svg" alt="" width="100%" style="max-width: 900px;">'
+        )
+        lines.append("  </picture>")
+        lines.append("</div>")
         # lines.append('')
         lines.append(f"<h3 id='{anchor_id}' align='center'>{description}</h3>")
         # lines.append('')
         lines.append('<div align="center">')
-        lines.append('  <picture>')
-        lines.append('    <source media="(prefers-color-scheme: dark)" srcset="assets/desc-box-bottom.svg">')
-        lines.append('    <source media="(prefers-color-scheme: light)" srcset="assets/desc-box-bottom-light.svg">')
-        lines.append('    <img src="assets/desc-box-bottom-light.svg" alt="" width="100%" style="max-width: 900px;">')
-        lines.append('  </picture>')
-        lines.append('</div>')
+        lines.append("  <picture>")
+        lines.append(
+            '    <source media="(prefers-color-scheme: dark)" srcset="assets/desc-box-bottom.svg">'
+        )
+        lines.append(
+            '    <source media="(prefers-color-scheme: light)" srcset="assets/desc-box-bottom-light.svg">'
+        )
+        lines.append(
+            '    <img src="assets/desc-box-bottom-light.svg" alt="" width="100%" style="max-width: 900px;">'
+        )
+        lines.append("  </picture>")
+        lines.append("</div>")
 
         # First render main category resources without subcategory
         # main_resources = [
@@ -1393,9 +1447,7 @@ def generate_section_content(category, csv_data, general_map=None, assets_dir=No
                 lines.append("")
 
                 # Generate anchor ID for subcategory (matching TOC format)
-                sub_anchor = (
-                    sub_title.lower().replace(" ", "-").replace("&", "").replace("/", "")
-                )
+                sub_anchor = sub_title.lower().replace(" ", "-").replace("&", "").replace("/", "")
 
                 # Special handling for "General" to keep anchors in sync with TOC
                 if sub_title == "General":
@@ -1415,12 +1467,16 @@ def generate_section_content(category, csv_data, general_map=None, assets_dir=No
                 # Create SVG file for this subsection
                 safe_filename = sanitize_filename_from_anchor(sub_anchor)
                 svg_filename = f"subheader_{safe_filename}.svg"
-                assets_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "assets")
+                assets_dir = os.path.join(
+                    os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "assets"
+                )
                 create_h3_svg_file(sub_title, svg_filename, assets_dir)
 
                 # Start subcategory disclosure element with the SVG inside the summary
                 lines.append(f'<details id="{sub_anchor_id}">')
-                lines.append(f'<summary><span><picture><img src="assets/{svg_filename}" alt="{sub_title}" align="absmiddle"></picture></span></summary>')
+                lines.append(
+                    f'<summary><span><picture><img src="assets/{svg_filename}" alt="{sub_title}" align="absmiddle"></picture></span></summary>'
+                )
                 lines.append("")
 
                 for resource in resources:
@@ -1537,7 +1593,9 @@ def generate_readme_from_templates(csv_path, template_dir, output_path):
     # Generate body sections
     body_sections = []
     for category in categories:
-        section_content = generate_section_content(category, csv_data, general_anchor_map, assets_dir=assets_dir)
+        section_content = generate_section_content(
+            category, csv_data, general_anchor_map, assets_dir=assets_dir
+        )
         body_sections.append(section_content)
 
     # Replace placeholders in template
