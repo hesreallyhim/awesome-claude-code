@@ -23,7 +23,7 @@ import random
 import re
 import sys
 import time
-from datetime import datetime
+from datetime import UTC, datetime, timedelta
 
 import requests
 import yaml  # type: ignore[import-untyped]
@@ -46,6 +46,9 @@ LAST_CHECKED_HEADER_NAME = "Last Checked"
 LAST_MODIFIED_HEADER_NAME = "Last Modified"
 LICENSE_HEADER_NAME = "License"
 ID_HEADER_NAME = "ID"
+STALE_HEADER_NAME = "Stale"
+STALE_DAYS = 90
+VERBOSE = False
 HEADERS = {"User-Agent": USER_AGENT, "Accept": "application/vnd.github+json"}
 if GITHUB_TOKEN:
     HEADERS["Authorization"] = f"Bearer {GITHUB_TOKEN}"
@@ -109,6 +112,55 @@ def apply_overrides(row, overrides):
             locked_fields.add("description")
 
     return row, locked_fields, skip_validation
+
+
+def parse_last_modified_date(value):
+    """Parse date strings into timezone-aware datetimes (UTC)."""
+    if not value:
+        return None
+
+    value = str(value).strip()
+    if not value:
+        return None
+
+    try:
+        normalized_value = value.replace("Z", "+00:00")
+        parsed = datetime.fromisoformat(normalized_value)
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=UTC)
+        return parsed.astimezone(UTC)
+    except ValueError:
+        pass
+
+    try:
+        parsed = datetime.strptime(value, "%Y-%m-%d:%H-%M-%S")
+        return parsed.replace(tzinfo=UTC)
+    except ValueError:
+        return None
+
+
+def is_stale(last_modified, stale_days=STALE_DAYS):
+    """Return True if the resource is stale or last_modified is missing."""
+    if last_modified is None:
+        return True
+
+    if last_modified.tzinfo is None:
+        last_modified = last_modified.replace(tzinfo=UTC)
+
+    now = datetime.now(UTC)
+    return now - last_modified > timedelta(days=stale_days)
+
+
+def ensure_stale_column(fieldnames, rows):
+    """Ensure the Stale column exists and rows have default values."""
+    fieldnames_list = list(fieldnames or [])
+    if STALE_HEADER_NAME not in fieldnames_list:
+        fieldnames_list.append(STALE_HEADER_NAME)
+
+    for row in rows:
+        row.setdefault(STALE_HEADER_NAME, "")
+
+    return fieldnames_list, rows
 
 
 def parse_github_url(url) -> tuple[str, bool, str | None, str | None]:
@@ -196,7 +248,12 @@ def get_committer_date_from_response(
     if isinstance(data, list) and len(data) > 0:
         # Get the committer date from the latest commit
         commit = data[0]
-        commit_date = commit.get("committer", {}).get("date")
+        commit_date = (
+            commit.get("commit", {}).get("committer", {}).get("date")
+            or commit.get("commit", {}).get("author", {}).get("date")
+            or commit.get("committer", {}).get("date")
+            or commit.get("author", {}).get("date")
+        )
         return commit_date
     return None
 
@@ -215,6 +272,15 @@ def get_github_last_modified(owner, repo, path=None):
         api_url = f"https://api.github.com/repos/{owner}/{repo}/commits"
         params = {"per_page": 1, "path": path} if path else {"per_page": 1}
         response = requests.get(api_url, headers=HEADERS, params=params, timeout=10)
+        if VERBOSE:
+            print(
+                f"[github-commits] owner={owner} repo={repo} path={path or ''} "
+                f"status={response.status_code} reason={response.reason}"
+            )
+            try:
+                print(f"[github-commits-body] {response.json()}")
+            except Exception:
+                print(f"[github-commits-body-raw] {response.text}")
         if response.status_code == 200:
             commit_date = get_committer_date_from_response(response)
             if commit_date:
@@ -241,6 +307,16 @@ def validate_url(url, max_retries=5):
                 response = requests.get(api_url, headers=HEADERS, timeout=10)
             else:
                 response = requests.head(url, headers=HEADERS, timeout=10, allow_redirects=True)
+
+            if is_github and VERBOSE:
+                print(
+                    f"[github] url={url} api={api_url} status={response.status_code} "
+                    f"reason={response.reason}"
+                )
+                try:
+                    print(f"[github-body] {response.json()}")
+                except Exception:
+                    print(f"[github-body-raw] {response.text}")
 
             # Check if we hit GitHub rate limit
             if response.status_code == 403 and "X-RateLimit-Remaining" in response.headers:
@@ -289,6 +365,7 @@ def validate_url(url, max_retries=5):
             return False, response.status_code, None, None
 
         except requests.exceptions.RequestException as e:
+            print(f"[error] request failed for {url}: {e}")
             if attempt < max_retries - 1:
                 wait_time = (2**attempt) + random.uniform(0, 1)
                 time.sleep(wait_time)
@@ -298,18 +375,25 @@ def validate_url(url, max_retries=5):
     return False, "Max retries exceeded", None, None
 
 
-def validate_links(csv_file, max_links=None, ignore_overrides=False):
+def validate_links(csv_file, max_links=None, ignore_overrides=False, verbose=False):
     """
     Validate links in the CSV file and update the Active status and timestamp.
     """
+    global VERBOSE
+    VERBOSE = verbose
+
     # Load overrides
     overrides = {} if ignore_overrides else load_overrides()
+
+    print(f"GITHUB_TOKEN available: {'yes' if GITHUB_TOKEN else 'no'}")
 
     # Read the CSV file
     with open(csv_file, encoding="utf-8") as f:
         reader = csv.DictReader(f)
         rows = list(reader)
         fieldnames = reader.fieldnames
+
+    fieldnames, rows = ensure_stale_column(fieldnames, rows)
 
     total_resources = len(rows)
     processed = 0
@@ -320,6 +404,8 @@ def validate_links(csv_file, max_links=None, ignore_overrides=False):
     override_count = 0
     locked_field_count = 0
     last_modified_updates = 0
+    stale_resources = []
+    newly_stale_resources = []
 
     print(f"Starting validation of {total_resources} resources...")
     if overrides and not ignore_overrides:
@@ -350,11 +436,14 @@ def validate_links(csv_file, max_links=None, ignore_overrides=False):
         # secondary_url = row.get(SECONDARY_LINK_HEADER_NAME, "").strip()  # Ignoring secondary URLs
 
         # Track GitHub links
-        if "github.com" in primary_url:
+        is_github_link = "github.com" in primary_url.lower()
+        if is_github_link:
             github_links += 1
 
         # Validate primary URL
         primary_valid, primary_status, license_info, last_modified = validate_url(primary_url)
+
+        previous_stale = row.get(STALE_HEADER_NAME, "").upper() == "TRUE"
 
         # Update license if found and not locked
         if license_info and "license" not in locked_fields:
@@ -408,6 +497,40 @@ def validate_links(csv_file, max_links=None, ignore_overrides=False):
         else:
             print(f"✓ {row.get('Display Name', 'Unknown')}")
 
+        last_modified_value = last_modified or row.get(LAST_MODIFIED_HEADER_NAME, "")
+        parsed_last_modified = parse_last_modified_date(last_modified_value)
+        days_since = (
+            (datetime.now(UTC) - parsed_last_modified).days if parsed_last_modified else "unknown"
+        )
+        print(
+            f"    Last Modified: {last_modified_value if last_modified_value else 'n/a'}"
+            f" - {days_since} days"
+        )
+        if is_github_link and not last_modified_value:
+            print("    (debug) missing last_modified from GitHub response")
+
+        if is_github_link and is_active:
+            if is_stale(parsed_last_modified):
+                row[STALE_HEADER_NAME] = "TRUE"
+            else:
+                row[STALE_HEADER_NAME] = "FALSE"
+
+        current_stale = row.get(STALE_HEADER_NAME, "").upper() == "TRUE"
+        if current_stale:
+            stale_resources.append(
+                {
+                    "name": row.get("Display Name", "Unknown"),
+                    "days_since": days_since,
+                }
+            )
+        if current_stale and not previous_stale:
+            newly_stale_resources.append(
+                {
+                    "name": row.get("Display Name", "Unknown"),
+                    "days_since": days_since,
+                }
+            )
+
         processed += 1
 
     # Write updated CSV
@@ -430,6 +553,7 @@ def validate_links(csv_file, max_links=None, ignore_overrides=False):
         print(f"Total locked fields: {locked_field_count}")
     print(f"Total broken links: {len(broken_links)}")
     print(f"Newly broken links: {len(newly_broken_links)}")
+    print(f"Total stale resources: {len(stale_resources)}")
 
     # Print broken links
     if newly_broken_links:
@@ -443,6 +567,20 @@ def validate_links(csv_file, max_links=None, ignore_overrides=False):
             print(f"  - {link['name']}: {link['primary_url']} ({link['primary_status']})")
             # if link.get("secondary_url"):  # No longer reporting secondary URLs
             #     print(f"    Secondary: {link['secondary_url']}")
+
+    if stale_resources:
+        print("\nStale resources:")
+        for res in stale_resources:
+            print(f"  - {res['name']}: {res['days_since']} days")
+    else:
+        print("\nStale resources: none")
+
+    if newly_stale_resources:
+        print("\nNewly stale resources:")
+        for res in newly_stale_resources:
+            print(f"  - {res['name']}: {res['days_since']} days")
+    else:
+        print("\nNewly stale resources: none")
 
     return {
         "total": total_resources,
@@ -466,6 +604,11 @@ def main():
     parser.add_argument(
         "--ignore-overrides", action="store_true", help="Ignore override configuration"
     )
+    parser.add_argument(
+        "--verbose",
+        action="store_true",
+        help="Print verbose GitHub API responses (for debugging)",
+    )
     args = parser.parse_args()
 
     csv_file = INPUT_FILE
@@ -474,7 +617,7 @@ def main():
         sys.exit(1)
 
     try:
-        results = validate_links(csv_file, args.max_links, args.ignore_overrides)
+        results = validate_links(csv_file, args.max_links, args.ignore_overrides, args.verbose)
 
         if args.github_action:
             # Output JSON for GitHub Action

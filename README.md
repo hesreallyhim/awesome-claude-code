@@ -183,8 +183,8 @@
 <a href="https://github.com/maxritter/claude-codepro"><img src="assets/badge-claude-codepro.svg" alt="Claude CodePro"></a>  
 _Professional development environment for Claude Code with spec-driven workflow, TDD enforcement, cross-session memory, semantic search, quality hooks, and modular rules integration. A bit "heavyweight" but feature-packed and has wide coverage._  
 ![GitHub Stats for claude-codepro](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-codepro&username=maxritter&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-<a href="https://github.com/aannoo/claude-hook-comms"><img src="assets/badge-claude-code-hook-comms-hcom.svg" alt="Claude Code Hook Comms (HCOM)"></a>  
 
+<a href="https://github.com/aannoo/claude-hook-comms"><img src="assets/badge-claude-code-hook-comms-hcom.svg" alt="Claude Code Hook Comms (HCOM)"></a>  
 _Lightweight CLI tool for real-time communication between Claude Code sub agents using hooks. Enables multi-agent collaboration with @-mention targeting, live dashboard monitoring, and zero-dependency implementation. [NOTE: At the time of posting, this resource is a little unstable - I'm sharing it anyway, because I think it's incredibly promising and creative. I hope by the time you read this, it is production-ready.]_  
 ![GitHub Stats for claude-hook-comms](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-hook-comms&username=aannoo&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
@@ -1161,13 +1161,6 @@ _A high-performance Claude Code statusline tool written in Rust with Git integra
 <a href="https://github.com/sirmalloc/ccstatusline"><img src="assets/badge-ccstatusline.svg" alt="ccstatusline"></a>  
 _A highly customizable status line formatter for Claude Code CLI that displays model info, git branch, token usage, and other metrics in your terminal._  
 ![GitHub Stats for ccstatusline](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ccstatusline&username=sirmalloc&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<div align="center"><img src="assets/entry-separator-light-animated.svg" alt=""></div>
-
-
-<a href="https://github.com/rz1989s/claude-code-statusline"><img src="assets/badge-claude-code-statusline.svg" alt="claude-code-statusline"></a>  
-_Enhanced 4-line statusline for Claude Code with themes, cost tracking, and MCP server monitoring_  
-![GitHub Stats for claude-code-statusline](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-statusline&username=rz1989s&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="assets/entry-separator-light-animated.svg" alt=""></div>
 
