@@ -38,6 +38,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Claude Mountaineering Skills`](https://github.com/dreamiurg/claude-mountaineering-skills) &nbsp; by &nbsp; [Dmytro Gaivoronsky](https://github.com/dreamiurg)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Claude Code skill that automates mountain route research for North American peaks. Aggregates data from 10+ mountaineering sources like Mountaineers.org, PeakBagger.com and SummitPost.com to generate detailed route beta reports with weather, avalanche conditions, and trip reports.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-mountaineering-skills](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-mountaineering-skills&username=dreamiurg&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Claude Code System Prompts`](https://github.com/Piebald-AI/claude-code-system-prompts) &nbsp; by &nbsp; [Piebald AI](https://github.com/Piebald-AI)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 All parts of Claude Code's system prompt, including builtin tool descriptions, sub agent prompts (Plan/Explore/Task), utility prompts (CLAUDE.md, compact, Bash cmd, security review, agent creation, etc.). Updated for each Claude Code version.
 
@@ -56,17 +67,6 @@ A well-organized, well-written set of plugins covering core developer activities
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-codex-settings](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-codex-settings&username=fcakyon&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Claude Code Output Styles - Debugging`](https://github.com/JamieM0/claude-output-styles) &nbsp; by &nbsp; [Jamie Matthews](https://github.com/JamieM0)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A small set of well-written output styles, specifically focused on debugging - root cause analysis, systematic, methodical debugging, encouraging a more careful approach to bug-squashing from Claude Code.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claude-output-styles](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-output-styles&username=JamieM0&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -168,6 +168,17 @@ A well-organized, well-written set of plugins covering core developer activities
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-codex-settings](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-codex-settings&username=fcakyon&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Claude Mountaineering Skills`](https://github.com/dreamiurg/claude-mountaineering-skills) &nbsp; by &nbsp; [Dmytro Gaivoronsky](https://github.com/dreamiurg)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Claude Code skill that automates mountain route research for North American peaks. Aggregates data from 10+ mountaineering sources like Mountaineers.org, PeakBagger.com and SummitPost.com to generate detailed route beta reports with weather, avalanche conditions, and trip reports.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-mountaineering-skills](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-mountaineering-skills&username=dreamiurg&all_stats=true&stats_only=true)
 
 </details>
 <br>
