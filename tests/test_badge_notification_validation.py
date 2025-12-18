@@ -156,9 +156,9 @@ def test_notification_creation_flow() -> None:
     )
 
     assert not result["success"], "Should have failed with dangerous input"
-    assert (
-        "Security validation failed" in result["message"]
-    ), f"Wrong error message: {result['message']}"
+    assert "Security validation failed" in result["message"], (
+        f"Wrong error message: {result['message']}"
+    )
     print("  ✓ Notification creation blocked for dangerous input")
 
 

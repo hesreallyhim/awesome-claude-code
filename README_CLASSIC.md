@@ -35,11 +35,33 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 
 
-## This Week's Additions ✨ [🔝](#awesome-claude-code)
+## Latest Additions ✨ [🔝](#awesome-claude-code)
 
-> Resources added in the past 7 days
 
-*No new resources added this week.*
+[`Claude Code Output Styles - Debugging`](https://github.com/JamieM0/claude-output-styles) &nbsp; by &nbsp; [Jamie Matthews](https://github.com/JamieM0)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A small set of well-written output styles, specifically focused on debugging - root cause analysis, systematic, methodical debugging, encouraging a more careful approach to bug-squashing from Claude Code.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-output-styles](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-output-styles&username=JamieM0&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`CCometixLine - Claude Code Statusline`](https://github.com/Haleclipse/CCometixLine) &nbsp; by &nbsp; [Haleclipse](https://github.com/Haleclipse)    
+A high-performance Claude Code statusline tool written in Rust with Git integration, usage tracking, interactive TUI configuration, and Claude Code enhancement utilities.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for CCometixLine](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=CCometixLine&username=Haleclipse&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Claude Code Handbook`](https://nikiforovall.blog/claude-code-rules/) &nbsp; by &nbsp; [nikiforovall](https://github.com/nikiforovall)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Collection of best practices, tips, and techniques for Claude Code development workflows, enhanced with distributable plugins
 
 
 ## Contents [🔝](#awesome-claude-code)

@@ -12,7 +12,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/terminal-header.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/terminal-header-light-anim-lineprint.svg">
-  <img src="assets/terminal-header-light-anim-lineprint.svg" alt="Awesome Claude Code Terminal" width="100%">
+  <img src="assets/terminal-header-light-anim-lineprint.svg" alt="Awesome Claude Code Terminal">
 </picture>
 
 <!-- Generated with https://github.com/denvercoder1/readme-typing-svg -->

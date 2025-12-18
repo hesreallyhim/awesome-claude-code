@@ -12,7 +12,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/terminal-header.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/terminal-header-light-anim-lineprint.svg">
-  <img src="assets/terminal-header-light-anim-lineprint.svg" alt="Awesome Claude Code Terminal" width="100%">
+  <img src="assets/terminal-header-light-anim-lineprint.svg" alt="Awesome Claude Code Terminal">
 </picture>
 
 <!-- Generated with https://github.com/denvercoder1/readme-typing-svg -->
@@ -174,11 +174,22 @@
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/makeover-banner.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/makeover-banner-light.svg">
-    <img src="assets/makeover-banner-light.svg" alt="EXTREME REPO MAKEOVER BY CLAUDE CODE WEB!" width="100%" style="max-width: 900px;">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/latest-additions-header.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/latest-additions-header-light.svg">
+    <img src="assets/latest-additions-header-light.svg" alt="LATEST ADDITIONS">
   </picture>
 </div>
+
+<a href="https://github.com/JamieM0/claude-output-styles"><img src="assets/badge-claude-code-output-styles-debugging.svg" alt="Claude Code Output Styles - Debugging"></a>  
+_A small set of well-written output styles, specifically focused on debugging - root cause analysis, systematic, methodical debugging, encouraging a more careful approach to bug-squashing from Claude Code._  
+![GitHub Stats for claude-output-styles](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-output-styles&username=JamieM0&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<a href="https://github.com/Haleclipse/CCometixLine"><img src="assets/badge-ccometixline-claude-code-statusline.svg" alt="CCometixLine - Claude Code Statusline"></a>  
+_A high-performance Claude Code statusline tool written in Rust with Git integration, usage tracking, interactive TUI configuration, and Claude Code enhancement utilities._  
+![GitHub Stats for CCometixLine](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=CCometixLine&username=Haleclipse&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<a href="https://nikiforovall.blog/claude-code-rules/"><img src="assets/badge-claude-code-handbook.svg" alt="Claude Code Handbook"></a>  
+_Collection of best practices, tips, and techniques for Claude Code development workflows, enhanced with distributable plugins_
 
 
 <br>

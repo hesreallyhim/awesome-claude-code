@@ -7,6 +7,7 @@ This script is called by the GitHub Action after approval.
 import argparse
 import json
 import os
+import re
 import subprocess
 import sys
 from datetime import datetime
@@ -27,6 +28,16 @@ def create_unique_branch_name(base_name: str) -> str:
     """Create a unique branch name with timestamp."""
     timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
     return f"{base_name}-{timestamp}"
+
+
+def get_badge_filename(display_name: str) -> str:
+    """Compute the badge filename for a resource.
+
+    Uses the same logic as save_resource_badge_svg in generate_readme.py.
+    """
+    safe_name = re.sub(r"[^a-zA-Z0-9]", "-", display_name.lower())
+    safe_name = re.sub(r"-+", "-", safe_name).strip("-")
+    return f"badge-{safe_name}.svg"
 
 
 def main():
@@ -112,8 +123,28 @@ def main():
         status_result = run_command(["git", "status", "--porcelain"])
         print(f"Git status after README generation:\n{status_result.stdout}", file=sys.stderr)
 
+        # Compute badge path and check if it was generated
+        script_dir_abs = os.path.dirname(os.path.abspath(__file__))
+        repo_root = os.path.dirname(script_dir_abs)
+        badge_filename = get_badge_filename(resource_data["display_name"])
+        badge_path = os.path.join(repo_root, "assets", badge_filename)
+        badge_warning = ""
+
         # Stage changes (includes both README.md and README_CLASSIC.md)
-        run_command(["git", "add", "THE_RESOURCES_TABLE.csv", "README.md", "README_CLASSIC.md"])
+        files_to_stage = ["THE_RESOURCES_TABLE.csv", "README.md", "README_CLASSIC.md"]
+
+        if os.path.exists(badge_path):
+            # Stage the badge file relative to repo root
+            files_to_stage.append(f"assets/{badge_filename}")
+            print(f"Badge file found and will be staged: {badge_filename}", file=sys.stderr)
+        else:
+            print(f"Warning: Badge file not generated: {badge_path}", file=sys.stderr)
+            badge_warning = (
+                f"\n\n> **Warning**: Badge SVG (`assets/{badge_filename}`) was not generated. "
+                "Manual attention may be required."
+            )
+
+        run_command(["git", "add", *files_to_stage])
 
         # Commit
         commit_message = f"Add resource: {resource_data['display_name']}\n\n"
@@ -131,6 +162,7 @@ def main():
         # Create PR
         pr_title = f"Add resource: {resource_data['display_name']}"
         pr_body = generate_pr_content(resource)
+        pr_body += badge_warning  # Empty string if badge was generated successfully
         pr_body += f"\n\n---\n\nResolves #{args.issue_number}"
 
         # Use gh CLI to create PR
