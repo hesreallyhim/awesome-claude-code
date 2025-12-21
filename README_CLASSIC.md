@@ -18,7 +18,8 @@
 
 <!--lint enable remark-lint:awesome-badge-->
 
-[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
+[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) [![FREEDOM FUNDER](/assets/freedom-funder-badge.svg)](https://bailproject.org)
+
 
 # Awesome Claude Code
 
@@ -36,6 +37,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
+
+[`TÂCHES Claude Code Resources`](https://github.com/glittercowboy/taches-cc-resources) &nbsp; by &nbsp; [TÂCHES](https://github.com/glittercowboy)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A well-balanced, "down-to-Earth" set of sub agents, skills, and commands,  that are well-organized, easy to read, and a healthy focus on "meta"-skills/agents, like "skill-auditor", hook creation, etc. - the kind of things you can adapt to your workflow, and not the other way around.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for taches-cc-resources](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=taches-cc-resources&username=glittercowboy&all_stats=true&stats_only=true)
+
+</details>
+<br>
 
 [`Claude CodePro`](https://github.com/maxritter/claude-codepro) &nbsp; by &nbsp; [Max Ritter](https://www.maxritter.net)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
 Professional development environment for Claude Code with spec-driven workflow, TDD enforcement, cross-session memory, semantic search, quality hooks, and modular rules integration. A bit "heavyweight" but feature-packed and has wide coverage.
@@ -222,6 +234,17 @@ Hand-crafted collection of advanced context engineering techniques and patterns 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for context-engineering-kit](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=context-engineering-kit&username=NeoLabHQ&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`TÂCHES Claude Code Resources`](https://github.com/glittercowboy/taches-cc-resources) &nbsp; by &nbsp; [TÂCHES](https://github.com/glittercowboy)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A well-balanced, "down-to-Earth" set of sub agents, skills, and commands,  that are well-organized, easy to read, and a healthy focus on "meta"-skills/agents, like "skill-auditor", hook creation, etc. - the kind of things you can adapt to your workflow, and not the other way around.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for taches-cc-resources](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=taches-cc-resources&username=glittercowboy&all_stats=true&stats_only=true)
 
 </details>
 <br>
