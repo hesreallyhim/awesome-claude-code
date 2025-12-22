@@ -38,6 +38,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Superpowers`](https://github.com/obra/superpowers) &nbsp; by &nbsp; [Jesse Vincent](https://github.com/obra)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A strong bundle of core competencies for software engineering, with good coverage of a large portion of the SDLC - from planning, reviewing, testing, debugging... Well written, well organized, and adaptable. The author refers to them as "superpowers", but many of them are just consolidating engineering best practices - which sometimes does feel like a superpower when working with Claude Code.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for superpowers](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=superpowers&username=obra&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`TÂCHES Claude Code Resources`](https://github.com/glittercowboy/taches-cc-resources) &nbsp; by &nbsp; [TÂCHES](https://github.com/glittercowboy)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A well-balanced, "down-to-Earth" set of sub agents, skills, and commands,  that are well-organized, easy to read, and a healthy focus on "meta"-skills/agents, like "skill-auditor", hook creation, etc. - the kind of things you can adapt to your workflow, and not the other way around.
 
@@ -234,6 +245,17 @@ Hand-crafted collection of advanced context engineering techniques and patterns 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for context-engineering-kit](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=context-engineering-kit&username=NeoLabHQ&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Superpowers`](https://github.com/obra/superpowers) &nbsp; by &nbsp; [Jesse Vincent](https://github.com/obra)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A strong bundle of core competencies for software engineering, with good coverage of a large portion of the SDLC - from planning, reviewing, testing, debugging... Well written, well organized, and adaptable. The author refers to them as "superpowers", but many of them are just consolidating engineering best practices - which sometimes does feel like a superpower when working with Claude Code.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for superpowers](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=superpowers&username=obra&all_stats=true&stats_only=true)
 
 </details>
 <br>

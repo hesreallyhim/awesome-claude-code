@@ -180,6 +180,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/obra/superpowers"><img src="assets/badge-superpowers.svg" alt="Superpowers"></a>  
+_A strong bundle of core competencies for software engineering, with good coverage of a large portion of the SDLC - from planning, reviewing, testing, debugging... Well written, well organized, and adaptable. The author refers to them as "superpowers", but many of them are just consolidating engineering best practices - which sometimes does feel like a superpower when working with Claude Code._  
+![GitHub Stats for superpowers](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=superpowers&username=obra&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/glittercowboy/taches-cc-resources"><img src="assets/badge-t-ches-claude-code-resources.svg" alt="TÂCHES Claude Code Resources"></a>  
 _A well-balanced, "down-to-Earth" set of sub agents, skills, and commands,  that are well-organized, easy to read, and a healthy focus on "meta"-skills/agents, like "skill-auditor", hook creation, etc. - the kind of things you can adapt to your workflow, and not the other way around._  
 ![GitHub Stats for taches-cc-resources](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=taches-cc-resources&username=glittercowboy&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -555,6 +559,13 @@ _Enables users to prompt codex from claude code. Unlike the raw codex mcp server
 <a href="https://github.com/NeoLabHQ/context-engineering-kit"><img src="assets/badge-context-engineering-kit.svg" alt="Context Engineering Kit"></a>  
 _Hand-crafted collection of advanced context engineering techniques and patterns with minimal token footprint focused on improving agent result quality._  
 ![GitHub Stats for context-engineering-kit](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=context-engineering-kit&username=NeoLabHQ&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/obra/superpowers"><img src="assets/badge-superpowers.svg" alt="Superpowers"></a>  
+_A strong bundle of core competencies for software engineering, with good coverage of a large portion of the SDLC - from planning, reviewing, testing, debugging... Well written, well organized, and adaptable. The author refers to them as "superpowers", but many of them are just consolidating engineering best practices - which sometimes does feel like a superpower when working with Claude Code._  
+![GitHub Stats for superpowers](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=superpowers&username=obra&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="assets/entry-separator-light-animated.svg" alt=""></div>
 
