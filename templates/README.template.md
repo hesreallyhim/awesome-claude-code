@@ -1,10 +1,15 @@
 <!--lint disable remark-lint:awesome-badge-->
 
+<h3 align="center">Pick Your Style:</h3>
+<p align="center">
+<a href="./"><img src="assets/badge-style-extra.svg" alt="Extra" height="28" style="border: 2px solid #6a6a8a; border-radius: 6px;"></a>
+<a href="README_ALTERNATIVES/README_CLASSIC.md"><img src="assets/badge-style-classic.svg" alt="Classic" height="28"></a>
+<a href="README_ALTERNATIVES/README_FLAT_ALL_AZ.md"><img src="assets/badge-style-flat.svg" alt="Flat" height="28"></a>
+</p>
+
 <div align="center" id="awesome-claude-code">
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
-
-<a href="README_CLASSIC.md"><img src="assets/classic-banner.svg" alt="View README_CLASSIC.md" width="400"></a>
 
 </div>
 

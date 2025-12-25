@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="28" viewBox="0 0 120 28">
+  <rect x="0" y="0" width="120" height="28" fill="#27272a"/>
+  <rect x="0" y="0" width="4" height="28" fill="#ec4899"/>
+  <text x="62" y="19" font-family="'SF Mono', 'Consolas', monospace" font-size="12" font-weight="600" fill="#d4d4d8" text-anchor="middle">CLAUDE.md</text>
+</svg>

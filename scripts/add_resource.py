@@ -211,7 +211,7 @@ def append_to_csv(data):
     script_dir = os.path.dirname(os.path.abspath(__file__))
     csv_path = os.path.join(os.path.dirname(script_dir), "THE_RESOURCES_TABLE.csv")
 
-    # Prepare row data
+    # Prepare row data (must match CSV column order)
     row = [
         data["id"],
         data["display_name"],
@@ -227,9 +227,12 @@ def append_to_csv(data):
         data.get("last_checked", datetime.now().strftime("%Y-%m-%d:%H-%M-%S")),  # Last Checked
         data["license"],
         data["description"],
-        data.get(
-            "removed_from_origin", "FALSE"
-        ),  # Removed From Origin - new resources default to FALSE
+        data.get("removed_from_origin", "FALSE"),  # Removed From Origin
+        data.get("stale", "FALSE"),  # Stale
+        data.get("repo_created", ""),  # Repo Created (first commit date from GitHub)
+        data.get("latest_release", ""),  # Latest Release date
+        data.get("release_version", ""),  # Release Version (e.g., v1.2.3)
+        data.get("release_source", ""),  # Release Source (npm, pypi, github-releases)
     ]
 
     try:

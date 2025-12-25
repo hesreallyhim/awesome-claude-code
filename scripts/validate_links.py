@@ -290,6 +290,427 @@ def get_github_last_modified(owner, repo, path=None):
     return None
 
 
+def get_github_commit_dates(owner: str, repo: str) -> tuple[str | None, str | None]:
+    """Fetch the first (oldest) and last (newest) commit dates for a GitHub repository.
+
+    Args:
+        owner: GitHub repository owner
+        repo: GitHub repository name
+
+    Returns:
+        Tuple of (first_commit_date, last_commit_date) in YYYY-MM-DD:HH-MM-SS format,
+        or (None, None) if the dates cannot be fetched.
+    """
+    first_commit_date = None
+    last_commit_date = None
+
+    try:
+        # Get the last (most recent) commit
+        api_url = f"https://api.github.com/repos/{owner}/{repo}/commits"
+        params = {"per_page": 1}
+        response = requests.get(api_url, headers=HEADERS, params=params, timeout=10)
+
+        if response.status_code == 200:
+            commit_date = get_committer_date_from_response(response)
+            if commit_date:
+                last_commit_date = format_commit_date(commit_date)
+
+            # Check Link header for pagination to get total pages
+            link_header = response.headers.get("Link", "")
+            # Parse the last page number from Link header
+            # Format: <url>; rel="next", <url?page=N>; rel="last"
+            import re
+
+            last_page_match = re.search(r'page=(\d+)>; rel="last"', link_header)
+            if last_page_match:
+                last_page = int(last_page_match.group(1))
+                # Fetch the first (oldest) commit from the last page
+                params = {"per_page": 1, "page": last_page}
+                response = requests.get(api_url, headers=HEADERS, params=params, timeout=10)
+                if response.status_code == 200:
+                    commit_date = get_committer_date_from_response(response)
+                    if commit_date:
+                        first_commit_date = format_commit_date(commit_date)
+            else:
+                # Only one page of commits, so first = last
+                first_commit_date = last_commit_date
+
+    except Exception as e:
+        print(f"Error fetching commit dates for {owner}/{repo}: {e}")
+
+    return first_commit_date, last_commit_date
+
+
+def get_github_commit_dates_from_url(url: str) -> tuple[str | None, str | None]:
+    """Fetch commit dates from a GitHub URL.
+
+    Args:
+        url: GitHub repository URL
+
+    Returns:
+        Tuple of (first_commit_date, last_commit_date) in YYYY-MM-DD:HH-MM-SS format,
+        or (None, None) if the URL is not a GitHub URL or dates cannot be fetched.
+    """
+    _, is_github, owner, repo = parse_github_url(url)
+    if not is_github or not owner or not repo:
+        return None, None
+    return get_github_commit_dates(owner, repo)
+
+
+def get_github_latest_release(owner: str, repo: str) -> tuple[str | None, str | None]:
+    """Fetch the latest release date and version from GitHub Releases API.
+
+    Args:
+        owner: GitHub repository owner
+        repo: GitHub repository name
+
+    Returns:
+        Tuple of (release_date, version) in (YYYY-MM-DD:HH-MM-SS, tag_name) format,
+        or (None, None) if no releases are found.
+    """
+    try:
+        api_url = f"https://api.github.com/repos/{owner}/{repo}/releases/latest"
+        response = requests.get(api_url, headers=HEADERS, timeout=10)
+
+        if response.status_code == 200:
+            data = response.json()
+            published_at = data.get("published_at")
+            tag_name = data.get("tag_name")
+            if published_at:
+                release_date = format_commit_date(published_at)
+                return release_date, tag_name
+        elif response.status_code == 404:
+            # No releases found, try tags as fallback
+            return get_github_latest_tag(owner, repo)
+    except Exception as e:
+        print(f"Error fetching GitHub release for {owner}/{repo}: {e}")
+
+    return None, None
+
+
+def get_github_latest_tag(owner: str, repo: str) -> tuple[str | None, str | None]:
+    """Fetch the latest tag date and version from GitHub Tags API (fallback).
+
+    Args:
+        owner: GitHub repository owner
+        repo: GitHub repository name
+
+    Returns:
+        Tuple of (tag_date, tag_name) in (YYYY-MM-DD:HH-MM-SS, tag_name) format,
+        or (None, None) if no tags are found.
+    """
+    try:
+        api_url = f"https://api.github.com/repos/{owner}/{repo}/tags"
+        response = requests.get(api_url, headers=HEADERS, params={"per_page": 1}, timeout=10)
+
+        if response.status_code == 200:
+            data = response.json()
+            if data and len(data) > 0:
+                tag = data[0]
+                tag_name = tag.get("name")
+                commit_sha = tag.get("commit", {}).get("sha")
+                if commit_sha:
+                    # Fetch the commit to get the date
+                    commit_url = f"https://api.github.com/repos/{owner}/{repo}/commits/{commit_sha}"
+                    commit_response = requests.get(commit_url, headers=HEADERS, timeout=10)
+                    if commit_response.status_code == 200:
+                        commit_data = commit_response.json()
+                        commit_date = (
+                            commit_data.get("commit", {}).get("committer", {}).get("date")
+                            or commit_data.get("commit", {}).get("author", {}).get("date")
+                        )
+                        if commit_date:
+                            return format_commit_date(commit_date), tag_name
+    except Exception as e:
+        print(f"Error fetching GitHub tags for {owner}/{repo}: {e}")
+
+    return None, None
+
+
+def get_npm_latest_release(package_name: str) -> tuple[str | None, str | None]:
+    """Fetch the latest release date and version from npm registry.
+
+    Args:
+        package_name: npm package name (e.g., 'lodash' or '@scope/package')
+
+    Returns:
+        Tuple of (release_date, version) in (YYYY-MM-DD:HH-MM-SS, version) format,
+        or (None, None) if the package is not found.
+    """
+    try:
+        # Handle scoped packages
+        encoded_name = package_name.replace("/", "%2F")
+        api_url = f"https://registry.npmjs.org/{encoded_name}"
+        response = requests.get(api_url, timeout=10)
+
+        if response.status_code == 200:
+            data = response.json()
+            dist_tags = data.get("dist-tags", {})
+            latest_version = dist_tags.get("latest")
+            if latest_version:
+                time_info = data.get("time", {})
+                release_time = time_info.get(latest_version)
+                if release_time:
+                    release_date = format_commit_date(release_time)
+                    return release_date, latest_version
+    except Exception as e:
+        print(f"Error fetching npm release for {package_name}: {e}")
+
+    return None, None
+
+
+def get_pypi_latest_release(package_name: str) -> tuple[str | None, str | None]:
+    """Fetch the latest release date and version from PyPI.
+
+    Args:
+        package_name: PyPI package name
+
+    Returns:
+        Tuple of (release_date, version) in (YYYY-MM-DD:HH-MM-SS, version) format,
+        or (None, None) if the package is not found.
+    """
+    try:
+        api_url = f"https://pypi.org/pypi/{package_name}/json"
+        response = requests.get(api_url, timeout=10)
+
+        if response.status_code == 200:
+            data = response.json()
+            version = data.get("info", {}).get("version")
+            releases = data.get("releases", {})
+            if version and version in releases:
+                release_files = releases[version]
+                if release_files:
+                    # Get the upload time from the first file
+                    upload_time = release_files[0].get("upload_time_iso_8601")
+                    if upload_time:
+                        release_date = format_commit_date(upload_time)
+                        return release_date, version
+    except Exception as e:
+        print(f"Error fetching PyPI release for {package_name}: {e}")
+
+    return None, None
+
+
+def get_crates_latest_release(crate_name: str) -> tuple[str | None, str | None]:
+    """Fetch the latest release date and version from crates.io (Rust).
+
+    Args:
+        crate_name: Rust crate name
+
+    Returns:
+        Tuple of (release_date, version) in (YYYY-MM-DD:HH-MM-SS, version) format,
+        or (None, None) if the crate is not found.
+    """
+    try:
+        api_url = f"https://crates.io/api/v1/crates/{crate_name}"
+        headers_with_ua = {"User-Agent": USER_AGENT}
+        response = requests.get(api_url, headers=headers_with_ua, timeout=10)
+
+        if response.status_code == 200:
+            data = response.json()
+            crate_info = data.get("crate", {})
+            newest_version = crate_info.get("newest_version")
+            updated_at = crate_info.get("updated_at")
+            if newest_version and updated_at:
+                release_date = format_commit_date(updated_at)
+                return release_date, newest_version
+    except Exception as e:
+        print(f"Error fetching crates.io release for {crate_name}: {e}")
+
+    return None, None
+
+
+def get_homebrew_latest_release(formula_name: str) -> tuple[str | None, str | None]:
+    """Fetch the latest version from Homebrew Formulae API.
+
+    Note: Homebrew doesn't provide release dates, only version numbers.
+    We return the version but no date.
+
+    Args:
+        formula_name: Homebrew formula name
+
+    Returns:
+        Tuple of (None, version) - no date available from Homebrew API,
+        or (None, None) if the formula is not found.
+    """
+    try:
+        api_url = f"https://formulae.brew.sh/api/formula/{formula_name}.json"
+        response = requests.get(api_url, timeout=10)
+
+        if response.status_code == 200:
+            data = response.json()
+            versions = data.get("versions", {})
+            stable = versions.get("stable")
+            if stable:
+                # Homebrew doesn't provide release dates, but we have the version
+                return None, stable
+    except Exception as e:
+        print(f"Error fetching Homebrew release for {formula_name}: {e}")
+
+    return None, None
+
+
+def get_github_readme_version(owner: str, repo: str) -> tuple[str | None, str | None]:
+    """Fallback: Try to extract version from GitHub README or CHANGELOG.
+
+    Searches for version patterns like "v1.2.3", "version 1.2.3", etc.
+
+    Args:
+        owner: GitHub repository owner
+        repo: GitHub repository name
+
+    Returns:
+        Tuple of (None, version) - no reliable date from README parsing,
+        or (None, None) if no version found.
+    """
+    try:
+        # Try to fetch README
+        for readme_name in ["README.md", "README", "readme.md", "Readme.md"]:
+            api_url = f"https://api.github.com/repos/{owner}/{repo}/contents/{readme_name}"
+            response = requests.get(api_url, headers=HEADERS, timeout=10)
+            if response.status_code == 200:
+                data = response.json()
+                # README content is base64 encoded
+                import base64
+
+                content = base64.b64decode(data.get("content", "")).decode("utf-8", errors="ignore")
+
+                # Search for version patterns
+                version_patterns = [
+                    r"version[:\s]+[\"']?v?(\d+\.\d+(?:\.\d+)?)[\"']?",
+                    r"latest[:\s]+[\"']?v?(\d+\.\d+(?:\.\d+)?)[\"']?",
+                    r"\[v?(\d+\.\d+(?:\.\d+)?)\]",  # Badge format
+                    r"v(\d+\.\d+(?:\.\d+)?)",  # Simple v1.2.3
+                ]
+                for pattern in version_patterns:
+                    match = re.search(pattern, content, re.IGNORECASE)
+                    if match:
+                        return None, f"v{match.group(1)}"
+                break
+    except Exception as e:
+        print(f"Error fetching README for {owner}/{repo}: {e}")
+
+    return None, None
+
+
+def detect_package_info(url: str, display_name: str = "") -> tuple[str | None, str | None]:
+    """Detect package registry and name from URL or display name.
+
+    Args:
+        url: Primary URL of the resource
+        display_name: Display name of the resource (for npm/pypi detection)
+
+    Returns:
+        Tuple of (registry_type, package_name) where registry_type is one of:
+        'npm', 'pypi', 'crates', 'homebrew', 'github-releases', or None if not detected.
+    """
+    url_lower = url.lower() if url else ""
+
+    # Check for npm package URL
+    npm_patterns = [
+        r"npmjs\.com/package/([^/?\s]+)",
+        r"npmjs\.org/package/([^/?\s]+)",
+    ]
+    for pattern in npm_patterns:
+        match = re.search(pattern, url_lower)
+        if match:
+            return "npm", match.group(1)
+
+    # Check for PyPI package URL
+    pypi_patterns = [
+        r"pypi\.org/project/([^/?\s]+)",
+        r"pypi\.python\.org/pypi/([^/?\s]+)",
+    ]
+    for pattern in pypi_patterns:
+        match = re.search(pattern, url_lower)
+        if match:
+            return "pypi", match.group(1)
+
+    # Check for crates.io (Rust) URL
+    crates_patterns = [
+        r"crates\.io/crates/([^/?\s]+)",
+    ]
+    for pattern in crates_patterns:
+        match = re.search(pattern, url_lower)
+        if match:
+            return "crates", match.group(1)
+
+    # Check for Homebrew URL
+    homebrew_patterns = [
+        r"formulae\.brew\.sh/formula/([^/?\s]+)",
+        r"brew\.sh/.*formula.*[/=]([^/?\s&]+)",
+    ]
+    for pattern in homebrew_patterns:
+        match = re.search(pattern, url_lower)
+        if match:
+            return "homebrew", match.group(1)
+
+    # Check for GitHub URL - use releases API
+    _, is_github, owner, repo = parse_github_url(url)
+    if is_github and owner and repo:
+        return "github-releases", f"{owner}/{repo}"
+
+    return None, None
+
+
+def get_latest_release_info(
+    url: str, display_name: str = ""
+) -> tuple[str | None, str | None, str | None]:
+    """Fetch the latest release date and version from the appropriate registry.
+
+    Tries multiple sources in order of reliability:
+    1. Package registries (npm, PyPI, crates.io, Homebrew)
+    2. GitHub Releases API
+    3. GitHub Tags API (fallback)
+    4. README version parsing (last resort)
+
+    Args:
+        url: Primary URL of the resource
+        display_name: Display name of the resource
+
+    Returns:
+        Tuple of (release_date, version, source) where:
+        - release_date is in YYYY-MM-DD:HH-MM-SS format (may be None for some sources)
+        - version is the version/tag string
+        - source is 'npm', 'pypi', 'crates', 'homebrew', 'github-releases', 'readme', or None
+    """
+    registry_type, package_name = detect_package_info(url, display_name)
+
+    if registry_type == "npm":
+        release_date, version = get_npm_latest_release(package_name)
+        if release_date:
+            return release_date, version, "npm"
+
+    elif registry_type == "pypi":
+        release_date, version = get_pypi_latest_release(package_name)
+        if release_date:
+            return release_date, version, "pypi"
+
+    elif registry_type == "crates":
+        release_date, version = get_crates_latest_release(package_name)
+        if release_date:
+            return release_date, version, "crates"
+
+    elif registry_type == "homebrew":
+        release_date, version = get_homebrew_latest_release(package_name)
+        if version:
+            # Homebrew doesn't provide dates, but we have the version
+            return release_date, version, "homebrew"
+
+    elif registry_type == "github-releases":
+        owner, repo = package_name.split("/", 1)
+        release_date, version = get_github_latest_release(owner, repo)
+        if release_date:
+            return release_date, version, "github-releases"
+
+        # Fallback: Try README parsing for version (no date available)
+        _, readme_version = get_github_readme_version(owner, repo)
+        if readme_version:
+            return None, readme_version, "readme"
+
+    return None, None, None
+
+
 def validate_url(url, max_retries=5):
     """
     Validate a URL with exponential backoff retry logic.

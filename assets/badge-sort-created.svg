@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="48" viewBox="0 0 180 48">
+  <rect x="0" y="0" width="180" height="48" fill="#1a1a2e"/>
+  <rect x="0" y="0" width="6" height="48" fill="#34d399"/>
+  <text x="93" y="32" font-family="'SF Mono', 'Consolas', monospace" font-size="18" font-weight="700" fill="#e2e8f0" text-anchor="middle" letter-spacing="1">CREATED</text>
+</svg>
