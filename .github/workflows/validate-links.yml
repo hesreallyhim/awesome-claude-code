@@ -19,7 +19,7 @@ jobs:
 
     steps:
     - name: Track Github API Usage
-      uses: ./.github/actions/github-api-usage-tracker.yml
+      uses: ./.github/actions/github-api-usage-tracker
       with:
         output_path: usage.json
 
