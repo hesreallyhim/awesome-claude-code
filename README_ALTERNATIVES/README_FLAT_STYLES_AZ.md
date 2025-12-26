@@ -46,14 +46,12 @@ A flat list view of all resources. Category: **Styles** | Sorted: alphabetically
 | Resource | Category | Sub-Category | Description |
 |----------|----------|--------------|-------------|
 | [**Awesome Claude Code Output Styles (That I Really Like)**](https://github.com/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like)<br>by [Really Him](https://github.com/hesreallyhim/) | Output Styles | General | A fun and moderately amusing collection of experimental output styles. |
-| [**Awesome Claude Code Output Styles (That I Really Like)**](https://github.com/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like)<br>by [Really Him](https://github.com/hesreallyhim/) | Output Styles | General | A fun and moderately amusing collection of experimental output styles. |
-| [**ccoutputstyles**](https://github.com/viveknair/ccoutputstyles)<br>by [Vivek Nair](https://github.com/viveknair) | Output Styles | General | CLI tool and template gallery for customizing Claude Code output styles with pre-built templates. Features over 15 templates at the time of writing! |
 | [**ccoutputstyles**](https://github.com/viveknair/ccoutputstyles)<br>by [Vivek Nair](https://github.com/viveknair) | Output Styles | General | CLI tool and template gallery for customizing Claude Code output styles with pre-built templates. Features over 15 templates at the time of writing! |
 | [**Claude Code Output Styles - Debugging**](https://github.com/JamieM0/claude-output-styles)<br>by [Jamie Matthews](https://github.com/JamieM0) | Output Styles | General | A small set of well-written output styles, specifically focused on debugging - root cause analysis, systematic, methodical debugging, encouraging a more careful approach to bug-squashing from Claude Code. |
 | [**Gen-Alpha Slang**](https://github.com/sjnims/gen-alpha-output-style)<br>by [Steve Nims](https://github.com/sjnims) | Output Styles | General | This is really... different. I don't know what to say about this one. It does what it says on the tin. You might find it funny, you might want throw up. I'll just say candidly this is included strictly for its potentially comedic awesomeness. |
 
 ---
 
-**Total Resources:** 6
+**Total Resources:** 4
 
-**Last Generated:** 2025-12-25 18:44:53 UTC
+**Last Generated:** 2025-12-25 19:35:26 UTC

@@ -1000,6 +1000,17 @@ A highly customizable status line formatter for Claude Code CLI that displays mo
 </details>
 <br>
 
+[`claude-code-statusline`](https://github.com/rz1989s/claude-code-statusline) &nbsp; by &nbsp; [rz1989s](https://github.com/rz1989s)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Enhanced 4-line statusline for Claude Code with themes, cost tracking, and MCP server monitoring
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-code-statusline](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-statusline&username=rz1989s&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`claude-powerline`](https://github.com/Owloops/claude-powerline) &nbsp; by &nbsp; [Owloops](https://github.com/Owloops)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A vim-style powerline statusline for Claude Code with real-time usage tracking, git integration, custom themes, and more
 
@@ -1942,17 +1953,6 @@ Provides detailed and emphatic instructions for Claude to follow as a coding age
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-code-mcp-enhanced](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-mcp-enhanced&username=grahama1970&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Perplexity MCP`](https://github.com/Family-IT-Guy/perplexity-mcp/blob/main/CLAUDE.md) &nbsp; by &nbsp; [Family-IT-Guy](https://github.com/Family-IT-Guy)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;ISC  
-Offers clear step-by-step installation instructions with multiple configuration options, detailed troubleshooting guidance, and concise architecture overview of the MCP protocol.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for perplexity-mcp](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=perplexity-mcp&username=Family-IT-Guy&all_stats=true&stats_only=true)
 
 </details>
 <br>

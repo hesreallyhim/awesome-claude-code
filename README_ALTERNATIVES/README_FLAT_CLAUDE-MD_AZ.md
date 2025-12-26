@@ -65,7 +65,6 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: alphabetica
 | [**Metabase**](https://github.com/metabase/metabase/blob/master/CLAUDE.md)<br>by [metabase](https://github.com/metabase) | CLAUDE.md Files | Language-Specific | Details workflow for REPL-driven development in Clojure/ClojureScript with emphasis on incremental development, testing, and step-by-step approach for feature implementation. |
 | [**Network Chronicles**](https://github.com/Fimeg/NetworkChronicles/blob/legacy-v1/CLAUDE.md)<br>by [Fimeg](https://github.com/Fimeg) | CLAUDE.md Files | Domain-Specific | Presents detailed implementation plan for AI-driven game characters with technical specifications for LLM integration, character guidelines, and service discovery mechanics. |
 | [**Pareto Mac**](https://github.com/ParetoSecurity/pareto-mac/blob/main/CLAUDE.md)<br>by [ParetoSecurity](https://github.com/ParetoSecurity) | CLAUDE.md Files | Domain-Specific | Serves as development guide for Mac security audit tool with build instructions, contribution guidelines, testing procedures, and workflow documentation. |
-| [**Perplexity MCP**](https://github.com/Family-IT-Guy/perplexity-mcp/blob/main/CLAUDE.md)<br>by [Family-IT-Guy](https://github.com/Family-IT-Guy) | CLAUDE.md Files | Project Scaffolding & MCP | Offers clear step-by-step installation instructions with multiple configuration options, detailed troubleshooting guidance, and concise architecture overview of the MCP protocol. |
 | [**SG Cars Trends Backend**](https://github.com/sgcarstrends/backend/blob/main/CLAUDE.md)<br>by [sgcarstrends](https://github.com/sgcarstrends) | CLAUDE.md Files | Language-Specific | Provides comprehensive structure for TypeScript monorepo projects with detailed commands for development, testing, deployment, and AWS/Cloudflare integration. |
 | [**SPy**](https://github.com/spylang/spy/blob/main/CLAUDE.md)<br>by [spylang](https://github.com/spylang) | CLAUDE.md Files | Language-Specific | Enforces strict coding conventions with comprehensive testing guidelines, multiple code compilation options, and backend-specific test decorators for targeted filtering. |
 | [**SteadyStart**](https://github.com/steadycursor/steadystart/blob/main/CLAUDE.md)<br>by [steadycursor](https://github.com/steadycursor) | CLAUDE.md Files | Domain-Specific | Clear and direct instructives about style, permissions, Claude's "role", communications, and documentation of Claude Code sessions for other team members to stay abreast. |
@@ -73,6 +72,6 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: alphabetica
 
 ---
 
-**Total Resources:** 25
+**Total Resources:** 24
 
-**Last Generated:** 2025-12-25 18:44:53 UTC
+**Last Generated:** 2025-12-25 19:35:26 UTC

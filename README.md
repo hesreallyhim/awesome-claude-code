@@ -1176,6 +1176,13 @@ _A highly customizable status line formatter for Claude Code CLI that displays m
 <div align="center"><img src="assets/entry-separator-light-animated.svg" alt=""></div>
 
 
+<a href="https://github.com/rz1989s/claude-code-statusline"><img src="assets/badge-claude-code-statusline.svg" alt="claude-code-statusline"></a>  
+_Enhanced 4-line statusline for Claude Code with themes, cost tracking, and MCP server monitoring_  
+![GitHub Stats for claude-code-statusline](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-statusline&username=rz1989s&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="assets/entry-separator-light-animated.svg" alt=""></div>
+
+
 <a href="https://github.com/Owloops/claude-powerline"><img src="assets/badge-claude-powerline.svg" alt="claude-powerline"></a>  
 _A vim-style powerline statusline for Claude Code with real-time usage tracking, git integration, custom themes, and more_  
 ![GitHub Stats for claude-powerline](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-powerline&username=Owloops&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -1899,13 +1906,6 @@ _Presents an innovative AI-human collaboration framework with Model Context Prot
 <a href="https://github.com/grahama1970/claude-code-mcp-enhanced/blob/main/CLAUDE.md"><img src="assets/badge-claude-code-mcp-enhanced.svg" alt="claude-code-mcp-enhanced"></a>  
 _Provides detailed and emphatic instructions for Claude to follow as a coding agent, with testing guidance, code examples, and compliance checks._  
 ![GitHub Stats for claude-code-mcp-enhanced](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-mcp-enhanced&username=grahama1970&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<div align="center"><img src="assets/entry-separator-light-animated.svg" alt=""></div>
-
-
-<a href="https://github.com/Family-IT-Guy/perplexity-mcp/blob/main/CLAUDE.md"><img src="assets/badge-perplexity-mcp.svg" alt="Perplexity MCP"></a>  
-_Offers clear step-by-step installation instructions with multiple configuration options, detailed troubleshooting guidance, and concise architecture overview of the MCP protocol._  
-![GitHub Stats for perplexity-mcp](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=perplexity-mcp&username=Family-IT-Guy&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="assets/entry-separator-light-animated.svg" alt=""></div>
 

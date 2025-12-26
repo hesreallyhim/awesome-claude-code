@@ -45,9 +45,9 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by last upd
 
 | Resource | Category | Sub-Category | Description |
 |----------|----------|--------------|-------------|
-| [**HASH**](https://github.com/hashintel/hash/blob/main/CLAUDE.md)<br>by [hashintel](https://github.com/hashintel) | CLAUDE.md Files | Language-Specific | Features comprehensive repository structure breakdown with strong emphasis on coding standards, detailed Rust documentation guidelines, and systematic PR review process. |
-| [**SG Cars Trends Backend**](https://github.com/sgcarstrends/backend/blob/main/CLAUDE.md)<br>by [sgcarstrends](https://github.com/sgcarstrends) | CLAUDE.md Files | Language-Specific | Provides comprehensive structure for TypeScript monorepo projects with detailed commands for development, testing, deployment, and AWS/Cloudflare integration. |
 | [**Basic Memory**](https://github.com/basicmachines-co/basic-memory/blob/main/CLAUDE.md)<br>by [basicmachines-co](https://github.com/basicmachines-co) | CLAUDE.md Files | Project Scaffolding & MCP | Presents an innovative AI-human collaboration framework with Model Context Protocol for bidirectional LLM-markdown communication and flexible knowledge structure for complex projects. |
+| [**SG Cars Trends Backend**](https://github.com/sgcarstrends/backend/blob/main/CLAUDE.md)<br>by [sgcarstrends](https://github.com/sgcarstrends) | CLAUDE.md Files | Language-Specific | Provides comprehensive structure for TypeScript monorepo projects with detailed commands for development, testing, deployment, and AWS/Cloudflare integration. |
+| [**HASH**](https://github.com/hashintel/hash/blob/main/CLAUDE.md)<br>by [hashintel](https://github.com/hashintel) | CLAUDE.md Files | Language-Specific | Features comprehensive repository structure breakdown with strong emphasis on coding standards, detailed Rust documentation guidelines, and systematic PR review process. |
 | [**Metabase**](https://github.com/metabase/metabase/blob/master/CLAUDE.md)<br>by [metabase](https://github.com/metabase) | CLAUDE.md Files | Language-Specific | Details workflow for REPL-driven development in Clojure/ClojureScript with emphasis on incremental development, testing, and step-by-step approach for feature implementation. |
 | [**SPy**](https://github.com/spylang/spy/blob/main/CLAUDE.md)<br>by [spylang](https://github.com/spylang) | CLAUDE.md Files | Language-Specific | Enforces strict coding conventions with comprehensive testing guidelines, multiple code compilation options, and backend-specific test decorators for targeted filtering. |
 | [**AWS MCP Server**](https://github.com/alexei-led/aws-mcp-server/blob/main/CLAUDE.md)<br>by [alexei-led](https://github.com/alexei-led) | CLAUDE.md Files | Language-Specific | Features multiple Python environment setup options with detailed code style guidelines, comprehensive error handling recommendations, and security considerations for AWS CLI interactions. |
@@ -64,7 +64,6 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by last upd
 | [**TPL**](https://github.com/KarpelesLab/tpl/blob/master/CLAUDE.md)<br>by [KarpelesLab](https://github.com/KarpelesLab) | CLAUDE.md Files | Language-Specific | Details Go project conventions with comprehensive error handling recommendations, table-driven testing approach guidelines, and modernization suggestions for latest Go features. |
 | [**DroidconKotlin**](https://github.com/touchlab/DroidconKotlin/blob/main/CLAUDE.md)<br>by [touchlab](https://github.com/touchlab) | CLAUDE.md Files | Language-Specific | Delivers comprehensive Gradle commands for cross-platform Kotlin Multiplatform development with clear module structure and practical guidance for dependency injection. |
 | [**Comm**](https://github.com/CommE2E/comm/blob/master/CLAUDE.md)<br>by [CommE2E](https://github.com/CommE2E) | CLAUDE.md Files | Domain-Specific | Serves as a development reference for E2E-encrypted messaging applications with code organization architecture, security implementation details, and testing procedures. |
-| [**Perplexity MCP**](https://github.com/Family-IT-Guy/perplexity-mcp/blob/main/CLAUDE.md)<br>by [Family-IT-Guy](https://github.com/Family-IT-Guy) | CLAUDE.md Files | Project Scaffolding & MCP | Offers clear step-by-step installation instructions with multiple configuration options, detailed troubleshooting guidance, and concise architecture overview of the MCP protocol. |
 | [**Course Builder**](https://github.com/badass-courses/course-builder/blob/main/CLAUDE.md)<br>by [badass-courses](https://github.com/badass-courses) | CLAUDE.md Files | Domain-Specific | Enables real-time multiplayer capabilities for collaborative course creation with diverse tech stack integration and monorepo architecture using Turborepo. |
 | [**LangGraphJS**](https://github.com/langchain-ai/langgraphjs/blob/main/CLAUDE.md)<br>by [langchain-ai](https://github.com/langchain-ai) | CLAUDE.md Files | Language-Specific | Offers comprehensive build and test commands with detailed TypeScript style guidelines, layered library architecture, and monorepo structure using yarn workspaces. |
 | [**AI IntelliJ Plugin**](https://github.com/didalgolab/ai-intellij-plugin/blob/main/CLAUDE.md)<br>by [didalgolab](https://github.com/didalgolab) | CLAUDE.md Files | Language-Specific | Provides comprehensive Gradle commands for IntelliJ plugin development with platform-specific coding patterns, detailed package structure guidelines, and clear internationalization standards. |
@@ -73,6 +72,6 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by last upd
 
 ---
 
-**Total Resources:** 25
+**Total Resources:** 24
 
-**Last Generated:** 2025-12-25 18:44:53 UTC
+**Last Generated:** 2025-12-25 19:35:26 UTC

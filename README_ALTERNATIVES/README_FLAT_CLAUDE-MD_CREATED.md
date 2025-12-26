@@ -48,7 +48,6 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by date cre
 | [**claude-code-mcp-enhanced**](https://github.com/grahama1970/claude-code-mcp-enhanced/blob/main/CLAUDE.md)<br>by [grahama1970](https://github.com/grahama1970) | CLAUDE.md Files | Project Scaffolding & MCP | Provides detailed and emphatic instructions for Claude to follow as a coding agent, with testing guidance, code examples, and compliance checks. |
 | [**EDSL**](https://github.com/hesreallyhim/awesome-claude-code/blob/main/resources/claude.md-files/EDSL/CLAUDE.md)<br>by [expectedparrot](https://github.com/expectedparrot) | CLAUDE.md Files | Language-Specific | Offers detailed build and test commands with strict code style enforcement, comprehensive testing requirements, and standardized development workflow using Black and mypy. |
 | [**AVS Vibe Developer Guide**](https://github.com/Layr-Labs/avs-vibe-developer-guide/blob/master/CLAUDE.md)<br>by [Layr-Labs](https://github.com/Layr-Labs) | CLAUDE.md Files | Domain-Specific | Structures AI-assisted EigenLayer AVS development workflow with consistent naming conventions for prompt files and established terminology standards for blockchain concepts. |
-| [**Perplexity MCP**](https://github.com/Family-IT-Guy/perplexity-mcp/blob/main/CLAUDE.md)<br>by [Family-IT-Guy](https://github.com/Family-IT-Guy) | CLAUDE.md Files | Project Scaffolding & MCP | Offers clear step-by-step installation instructions with multiple configuration options, detailed troubleshooting guidance, and concise architecture overview of the MCP protocol. |
 | [**AWS MCP Server**](https://github.com/alexei-led/aws-mcp-server/blob/main/CLAUDE.md)<br>by [alexei-led](https://github.com/alexei-led) | CLAUDE.md Files | Language-Specific | Features multiple Python environment setup options with detailed code style guidelines, comprehensive error handling recommendations, and security considerations for AWS CLI interactions. |
 | [**Network Chronicles**](https://github.com/Fimeg/NetworkChronicles/blob/legacy-v1/CLAUDE.md)<br>by [Fimeg](https://github.com/Fimeg) | CLAUDE.md Files | Domain-Specific | Presents detailed implementation plan for AI-driven game characters with technical specifications for LLM integration, character guidelines, and service discovery mechanics. |
 | [**Cursor Tools**](https://github.com/eastlondoner/cursor-tools/blob/main/CLAUDE.md)<br>by [eastlondoner](https://github.com/eastlondoner) | CLAUDE.md Files | Domain-Specific | Creates a versatile AI command interface supporting multiple providers and models with flexible command options and browser automation through "Stagehand" feature. |
@@ -73,6 +72,6 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by date cre
 
 ---
 
-**Total Resources:** 25
+**Total Resources:** 24
 
-**Last Generated:** 2025-12-25 18:44:53 UTC
+**Last Generated:** 2025-12-25 19:35:26 UTC
