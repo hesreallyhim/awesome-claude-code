@@ -18,6 +18,34 @@ import yaml  # type: ignore[import-untyped]
 from validate_links import parse_github_url  # type: ignore[import-not-found]
 
 
+# =============================================================================
+# FLAT LIST CONFIGURATION
+# =============================================================================
+
+# Category definitions: slug -> (csv_value, display_name, badge_color)
+FLAT_CATEGORIES = {
+    "all": (None, "All", "#71717a"),
+    "tooling": ("Tooling", "Tooling", "#3b82f6"),
+    "commands": ("Slash-Commands", "Commands", "#8b5cf6"),
+    "claude-md": ("CLAUDE.md Files", "CLAUDE.md", "#ec4899"),
+    "workflows": ("Workflows & Knowledge Guides", "Workflows", "#14b8a6"),
+    "hooks": ("Hooks", "Hooks", "#f97316"),
+    "skills": ("Agent Skills", "Skills", "#eab308"),
+    "styles": ("Output Styles", "Styles", "#06b6d4"),
+    "statusline": ("Status Lines", "Status", "#84cc16"),
+    "docs": ("Official Documentation", "Docs", "#6366f1"),
+    "clients": ("Alternative Clients", "Clients", "#f43f5e"),
+}
+
+# Sort type definitions: slug -> (display_name, badge_color, description)
+FLAT_SORT_TYPES = {
+    "az": ("A - Z", "#6366f1", "alphabetically by name"),
+    "updated": ("UPDATED", "#f472b6", "by last updated date"),
+    "created": ("CREATED", "#34d399", "by date created"),
+    "releases": ("RELEASES", "#f59e0b", "by latest release (30 days)"),
+}
+
+
 def load_template(template_path):
     """Load a template file."""
     with open(template_path, encoding="utf-8") as f:
@@ -2141,6 +2169,10 @@ class ReadmeGenerator(ABC):
 
         # Write output
         output_path = os.path.join(self.repo_root, self.output_filename)
+        # Ensure directory exists for folder-based output
+        output_dir = os.path.dirname(output_path)
+        if output_dir and not os.path.exists(output_dir):
+            os.makedirs(output_dir, exist_ok=True)
         backup_path = self.create_backup(output_path)
 
         try:
@@ -2192,7 +2224,7 @@ class VisualReadmeGenerator(ReadmeGenerator):
 
 
 class MinimalReadmeGenerator(ReadmeGenerator):
-    """Generator for plain markdown README_CLASSIC.md."""
+    """Generator for plain markdown README_CLASSIC/README.md."""
 
     @property
     def template_filename(self) -> str:
@@ -2200,7 +2232,7 @@ class MinimalReadmeGenerator(ReadmeGenerator):
 
     @property
     def output_filename(self) -> str:
-        return "README_CLASSIC.md"
+        return "README_ALTERNATIVES/README_CLASSIC.md"
 
     def format_resource_entry(self, row: dict, include_separator: bool = True) -> str:
         """Format resource as plain markdown with collapsible GitHub stats."""
@@ -2404,8 +2436,324 @@ class MinimalReadmeGenerator(ReadmeGenerator):
         return "\n".join(lines).rstrip() + "\n"
 
 
+class ParameterizedFlatListGenerator(ReadmeGenerator):
+    """Unified generator for flat list READMEs with category filtering and sort options."""
+
+    DAYS_THRESHOLD = 30  # For releases filter
+
+    def __init__(
+        self,
+        csv_path: str,
+        template_dir: str,
+        assets_dir: str,
+        repo_root: str,
+        category_slug: str = "all",
+        sort_type: str = "az",
+    ):
+        super().__init__(csv_path, template_dir, assets_dir, repo_root)
+        self.category_slug = category_slug
+        self.sort_type = sort_type
+        self._category_info = FLAT_CATEGORIES.get(category_slug, FLAT_CATEGORIES["all"])
+        self._sort_info = FLAT_SORT_TYPES.get(sort_type, FLAT_SORT_TYPES["az"])
+
+    @property
+    def template_filename(self) -> str:
+        return "README_FLAT.template.md"
+
+    @property
+    def output_filename(self) -> str:
+        return f"README_ALTERNATIVES/README_FLAT_{self.category_slug.upper()}_{self.sort_type.upper()}.md"
+
+    def format_resource_entry(self, row: dict, include_separator: bool = True) -> str:
+        """Not used for flat list."""
+        _ = include_separator
+        return ""
+
+    def generate_toc(self) -> str:
+        """Not used for flat list."""
+        return ""
+
+    def generate_weekly_section(self) -> str:
+        """Not used for flat list."""
+        return ""
+
+    def generate_section_content(self, category: dict, section_index: int) -> str:
+        """Not used for flat list."""
+        _ = category, section_index
+        return ""
+
+    def get_filtered_resources(self) -> list[dict]:
+        """Get resources filtered by category."""
+        csv_category_value = self._category_info[0]
+        if csv_category_value is None:
+            # "all" - return all resources
+            return list(self.csv_data)
+        return [r for r in self.csv_data if r.get("Category", "").strip() == csv_category_value]
+
+    def sort_resources(self, resources: list[dict]) -> list[dict]:
+        """Sort resources according to sort_type."""
+        if self.sort_type == "az":
+            return sorted(resources, key=lambda x: (x.get("Display Name", "") or "").lower())
+        elif self.sort_type == "updated":
+            with_dates = []
+            for row in resources:
+                last_modified = row.get("Last Modified", "").strip()
+                parsed = parse_resource_date(last_modified) if last_modified else None
+                with_dates.append((parsed, row))
+            with_dates.sort(key=lambda x: (x[0] is None, x[0] if x[0] else datetime.min), reverse=True)
+            return [r for _, r in with_dates]
+        elif self.sort_type == "created":
+            with_dates = []
+            for row in resources:
+                repo_created = row.get("Repo Created", "").strip()
+                parsed = parse_resource_date(repo_created) if repo_created else None
+                with_dates.append((parsed, row))
+            with_dates.sort(key=lambda x: (x[0] is None, x[0] if x[0] else datetime.min), reverse=True)
+            return [r for _, r in with_dates]
+        elif self.sort_type == "releases":
+            cutoff = datetime.now() - timedelta(days=self.DAYS_THRESHOLD)
+            recent = []
+            for row in resources:
+                release_date_str = row.get("Latest Release", "")
+                if not release_date_str:
+                    continue
+                try:
+                    release_date = datetime.strptime(release_date_str, "%Y-%m-%d:%H-%M-%S")
+                except ValueError:
+                    continue
+                if release_date >= cutoff:
+                    row["_parsed_release_date"] = release_date
+                    recent.append(row)
+            recent.sort(key=lambda x: x.get("_parsed_release_date", datetime.min), reverse=True)
+            return recent
+        return resources
+
+    def generate_sort_navigation(self) -> str:
+        """Generate sort option badges."""
+        lines = ['<p align="center">']
+        for slug, (display, color, _) in FLAT_SORT_TYPES.items():
+            filename = f"README_FLAT_{self.category_slug.upper()}_{slug.upper()}.md"
+            is_selected = slug == self.sort_type
+            style = f' style="border: 3px solid {color}; border-radius: 6px;"' if is_selected else ""
+            lines.append(
+                f'  <a href="{filename}"><img src="../assets/badge-sort-{slug}.svg" alt="{display}" height="48"{style}></a>'
+            )
+        lines.append("</p>")
+        return "\n".join(lines)
+
+    def generate_category_navigation(self) -> str:
+        """Generate category filter badges."""
+        lines = ['<p align="center">']
+        for slug, (_, display, color) in FLAT_CATEGORIES.items():
+            filename = f"README_FLAT_{slug.upper()}_{self.sort_type.upper()}.md"
+            is_selected = slug == self.category_slug
+            style = f' style="border: 2px solid {color}; border-radius: 4px;"' if is_selected else ""
+            lines.append(
+                f'  <a href="{filename}"><img src="../assets/badge-cat-{slug}.svg" alt="{display}" height="28"{style}></a>'
+            )
+        lines.append("</p>")
+        return "\n".join(lines)
+
+    def generate_navigation(self) -> str:
+        """Generate combined navigation (sort + category)."""
+        sort_nav = self.generate_sort_navigation()
+        cat_nav = self.generate_category_navigation()
+        _, _, sort_desc = self._sort_info
+        _, cat_display, _ = self._category_info
+
+        current_info = f"**{cat_display}** sorted {sort_desc}"
+        if self.sort_type == "releases":
+            current_info += " (past 30 days)"
+
+        return f"""{sort_nav}
+<p align="center"><strong>Category:</strong></p>
+{cat_nav}
+<p align="center"><em>Currently viewing: {current_info}</em></p>"""
+
+    def generate_resources_table(self) -> str:
+        """Generate the resources table."""
+        resources = self.get_filtered_resources()
+        sorted_resources = self.sort_resources(resources)
+
+        if not sorted_resources:
+            if self.sort_type == "releases":
+                return "*No releases in the past 30 days for this category.*"
+            return "*No resources found in this category.*"
+
+        # Different columns for releases vs other sorts
+        if self.sort_type == "releases":
+            lines = ["| Resource | Version | Source | Release Date | Description |"]
+            lines.append("|----------|---------|--------|--------------|-------------|")
+            for row in sorted_resources:
+                display_name = row.get("Display Name", "").strip()
+                primary_link = row.get("Primary Link", "").strip()
+                author_name = row.get("Author Name", "").strip()
+                author_link = row.get("Author Link", "").strip()
+
+                # Stacked format: Resource name + author
+                resource_link = f"[**{display_name}**]({primary_link})" if primary_link else f"**{display_name}**"
+                author_part = f"[{author_name}]({author_link})" if author_name and author_link else (author_name or "")
+                resource_cell = f"{resource_link}<br>by {author_part}" if author_part else resource_link
+
+                version = row.get("Release Version", "").strip() or "-"
+                source = row.get("Release Source", "").strip()
+                source_display = {
+                    "github-releases": "GitHub", "npm": "npm", "pypi": "PyPI",
+                    "crates": "crates.io", "homebrew": "Homebrew", "readme": "README",
+                }.get(source, source or "-")
+
+                release_date = row.get("Latest Release", "")[:10] if row.get("Latest Release") else "-"
+
+                description = row.get("Description", "").strip().replace("|", "\\|")
+
+                lines.append(f"| {resource_cell} | {version} | {source_display} | {release_date} | {description} |")
+        else:
+            lines = ["| Resource | Category | Sub-Category | Description |"]
+            lines.append("|----------|----------|--------------|-------------|")
+            for row in sorted_resources:
+                display_name = row.get("Display Name", "").strip()
+                primary_link = row.get("Primary Link", "").strip()
+                author_name = row.get("Author Name", "").strip()
+                author_link = row.get("Author Link", "").strip()
+
+                # Stacked format: Resource name + author
+                resource_link = f"[**{display_name}**]({primary_link})" if primary_link else f"**{display_name}**"
+                author_part = f"[{author_name}]({author_link})" if author_name and author_link else (author_name or "")
+                resource_cell = f"{resource_link}<br>by {author_part}" if author_part else resource_link
+
+                category = row.get("Category", "").strip() or "-"
+                sub_category = row.get("Sub-Category", "").strip() or "-"
+
+                description = row.get("Description", "").strip().replace("|", "\\|")
+
+                lines.append(f"| {resource_cell} | {category} | {sub_category} | {description} |")
+
+        return "\n".join(lines)
+
+    def generate(self) -> tuple[int, str | None]:
+        """Generate the flat list README."""
+        self.overrides = self.load_overrides()
+        self.csv_data = self.load_csv_data()
+
+        # Use a generic template
+        template_path = os.path.join(self.template_dir, self.template_filename)
+        if not os.path.exists(template_path):
+            # Create default template content
+            template = self._get_default_template()
+        else:
+            template = load_template(template_path)
+
+        navigation = self.generate_navigation()
+        resources_table = self.generate_resources_table()
+        resources = self.get_filtered_resources()
+        sorted_resources = self.sort_resources(resources)
+
+        generated_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S UTC")
+        _, cat_display, _ = self._category_info
+        _, sort_display, sort_desc = self._sort_info
+
+        # Generate releases disclaimer only for releases views
+        releases_disclaimer = ""
+        if self.sort_type == "releases":
+            releases_disclaimer = """
+> **Note:** We make a best-effort attempt to determine the latest release from GitHub Releases, npm, PyPI, crates.io, and Homebrew. Please verify with the project directly.
+>
+> If your project publishes to a package registry and isn't listed here, please [open an Issue](https://github.com/hesreallyhim/awesome-claude-code/issues).
+"""
+
+        readme_content = template
+        readme_content = readme_content.replace("{{NAVIGATION}}", navigation)
+        readme_content = readme_content.replace("{{RELEASES_DISCLAIMER}}", releases_disclaimer)
+        readme_content = readme_content.replace("{{RESOURCES_TABLE}}", resources_table)
+        readme_content = readme_content.replace("{{RESOURCE_COUNT}}", str(len(sorted_resources)))
+        readme_content = readme_content.replace("{{CATEGORY_NAME}}", cat_display)
+        readme_content = readme_content.replace("{{SORT_DESC}}", sort_desc)
+        readme_content = readme_content.replace("{{GENERATED_DATE}}", generated_date)
+
+        output_path = os.path.join(self.repo_root, self.output_filename)
+        # Ensure directory exists for folder-based output
+        output_dir = os.path.dirname(output_path)
+        if output_dir and not os.path.exists(output_dir):
+            os.makedirs(output_dir, exist_ok=True)
+        backup_path = self.create_backup(output_path)
+
+        try:
+            with open(output_path, "w", encoding="utf-8") as f:
+                f.write(readme_content)
+        except Exception as e:
+            if backup_path:
+                print(f"Error writing {self.output_filename}: {e}")
+                print(f"   Backup preserved at: {backup_path}")
+            raise
+
+        return len(sorted_resources), backup_path
+
+    def _get_default_template(self) -> str:
+        """Return default template content."""
+        return """<!--lint disable remark-lint:awesome-badge-->
+
+<h3 align="center">Pick Your Style:</h3>
+<p align="center">
+<a href="../"><img src="../assets/badge-style-extra.svg" alt="Extra" height="28"></a>
+<a href="README_CLASSIC.md"><img src="../assets/badge-style-classic.svg" alt="Classic" height="28"></a>
+<a href="README_FLAT_ALL_AZ.md"><img src="../assets/badge-style-flat.svg" alt="Flat" height="28" style="border: 2px solid #71717a; border-radius: 4px;"></a>
+</p>
+
+# Awesome Claude Code (Flat)
+
+[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
+
+A flat list view of all resources. Category: **{{CATEGORY_NAME}}** | Sorted: {{SORT_DESC}}
+
+---
+
+## Sort By:
+
+{{NAVIGATION}}
+
+---
+
+## Resources
+{{RELEASES_DISCLAIMER}}
+{{RESOURCES_TABLE}}
+
+---
+
+**Total Resources:** {{RESOURCE_COUNT}}
+
+**Last Generated:** {{GENERATED_DATE}}
+"""
+
+
+def generate_flat_badges(assets_dir: str):
+    """Generate all sort and category badge SVGs."""
+    # Sort badges (larger)
+    for slug, (display, color, _) in FLAT_SORT_TYPES.items():
+        svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="180" height="48" viewBox="0 0 180 48">
+  <rect x="0" y="0" width="180" height="48" fill="#1a1a2e"/>
+  <rect x="0" y="0" width="6" height="48" fill="{color}"/>
+  <text x="93" y="32" font-family="'SF Mono', 'Consolas', monospace" font-size="18" font-weight="700" fill="#e2e8f0" text-anchor="middle" letter-spacing="1">{display}</text>
+</svg>'''
+        filepath = os.path.join(assets_dir, f"badge-sort-{slug}.svg")
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(svg)
+
+    # Category badges (smaller)
+    for slug, (_, display, color) in FLAT_CATEGORIES.items():
+        # Calculate width based on text length
+        width = max(70, len(display) * 10 + 30)
+        svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="28" viewBox="0 0 {width} 28">
+  <rect x="0" y="0" width="{width}" height="28" fill="#27272a"/>
+  <rect x="0" y="0" width="4" height="28" fill="{color}"/>
+  <text x="{width // 2 + 2}" y="19" font-family="'SF Mono', 'Consolas', monospace" font-size="12" font-weight="600" fill="#d4d4d8" text-anchor="middle">{display}</text>
+</svg>'''
+        filepath = os.path.join(assets_dir, f"badge-cat-{slug}.svg")
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(svg)
+
+
 def main():
-    """Main entry point - generates both README versions."""
+    """Main entry point - generates all README versions."""
     script_dir = Path(__file__).parent
     repo_root = script_dir.parent
 
@@ -2413,14 +2761,20 @@ def main():
     template_dir = str(repo_root / "templates")
     assets_dir = str(repo_root / "assets")
 
-    print("=== Dual README Generation ===")
+    print("=== README Generation ===")
 
-    generators = [
+    # Generate flat list badges first
+    print("\n--- Generating flat list badges ---")
+    generate_flat_badges(assets_dir)
+    print("✅ Flat list badges generated")
+
+    # Main README generators (Extra and Classic views)
+    main_generators = [
         VisualReadmeGenerator(csv_path, template_dir, assets_dir, str(repo_root)),
         MinimalReadmeGenerator(csv_path, template_dir, assets_dir, str(repo_root)),
     ]
 
-    for generator in generators:
+    for generator in main_generators:
         print(f"\n--- Generating {generator.output_filename} ---")
         try:
             resource_count, backup_path = generator.generate()
@@ -2431,6 +2785,27 @@ def main():
         except Exception as e:
             print(f"❌ Error generating {generator.output_filename}: {e}")
             sys.exit(1)
+
+    # Generate all flat list combinations (categories × sort types = 44 files)
+    print("\n--- Generating flat list views ---")
+    flat_count = 0
+    for category_slug in FLAT_CATEGORIES:
+        for sort_type in FLAT_SORT_TYPES:
+            generator = ParameterizedFlatListGenerator(
+                csv_path, template_dir, assets_dir, str(repo_root),
+                category_slug=category_slug, sort_type=sort_type
+            )
+            try:
+                resource_count, _ = generator.generate()
+                flat_count += 1
+                # Only print summary for first of each category
+                if sort_type == "az":
+                    print(f"  📂 {category_slug}: {resource_count} resources")
+            except Exception as e:
+                print(f"❌ Error generating {generator.output_filename}: {e}")
+                sys.exit(1)
+
+    print(f"✅ Generated {flat_count} flat list views")
 
     print("\n=== Generation Complete ===")
 

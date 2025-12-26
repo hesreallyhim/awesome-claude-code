@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="28" viewBox="0 0 100 28">
+  <rect x="0" y="0" width="100" height="28" fill="#27272a"/>
+  <rect x="0" y="0" width="4" height="28" fill="#f43f5e"/>
+  <text x="52" y="19" font-family="'SF Mono', 'Consolas', monospace" font-size="12" font-weight="600" fill="#d4d4d8" text-anchor="middle">Clients</text>
+</svg>

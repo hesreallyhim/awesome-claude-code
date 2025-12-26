@@ -236,6 +236,185 @@ Description of the resource
 </details>
 ```
 
+## Alternative README Views
+
+The repository offers multiple README styles to suit different preferences, all generated from the same CSV source of truth.
+
+### Style Options
+
+Users can switch between three presentation styles via navigation badges at the top of each page:
+
+| Style | Description | Location |
+|-------|-------------|----------|
+| **Extra** | Visual/themed with SVG assets, collapsible sections, GitHub stats | `README.md` (root) |
+| **Classic** | Clean markdown, minimal styling, traditional awesome-list format | `README_ALTERNATIVES/README_CLASSIC.md` |
+| **Flat** | Sortable/filterable table view with category filters | `README_ALTERNATIVES/README_FLAT_*.md` |
+
+### File Structure
+
+Alternative views are in the `README_ALTERNATIVES/` folder to keep the root clean:
+
+```
+README.md                                      # Main "Extra" view (root)
+README_ALTERNATIVES/
+├── README_CLASSIC.md                          # Classic markdown view
+├── README_FLAT_ALL_AZ.md                      # Flat: All resources, A-Z
+├── README_FLAT_ALL_UPDATED.md                 # Flat: All resources, by updated
+├── README_FLAT_ALL_CREATED.md                 # Flat: All resources, by created
+├── README_FLAT_ALL_RELEASES.md                # Flat: All resources, recent releases
+├── README_FLAT_TOOLING_AZ.md                  # Flat: Tooling only, A-Z
+├── README_FLAT_HOOKS_UPDATED.md               # Flat: Hooks only, by updated
+└── ... (44 flat views total: 11 categories × 4 sort types)
+```
+
+### Flat List System
+
+The flat view provides a searchable table with dual navigation:
+
+#### Sort Options
+- **A-Z** - Alphabetical by resource name
+- **Updated** - By last modified date (most recent first)
+- **Created** - By repository creation date (newest first)
+- **Releases** - Resources with releases in past 30 days
+
+#### Category Filters
+- **All** - All 164+ resources
+- **Tooling**, **Commands**, **CLAUDE.md**, **Workflows**, **Hooks**, **Skills**, **Styles**, **Status**, **Docs**, **Clients**
+
+#### Table Format
+Resources are displayed with stacked name/author format to maximize description space:
+
+```markdown
+| Resource | Category | Sub-Category | Description |
+|----------|----------|--------------|-------------|
+| [**Resource Name**](link)<br>by [Author](link) | Category | Sub-Cat | Full description... |
+```
+
+### Release Detection
+
+The "Releases" sort option shows resources with published releases in the past 30 days. Release information is fetched from multiple sources in priority order:
+
+1. **GitHub Releases** - Official release tags
+2. **GitHub Tags** - Fallback if no releases
+3. **npm Registry** - For JavaScript packages
+4. **PyPI** - For Python packages
+5. **crates.io** - For Rust packages
+6. **Homebrew** - For Homebrew formulas
+7. **README parsing** - Last resort version extraction
+
+Release data is stored in the CSV with columns:
+- `Latest Release` - Timestamp of the release
+- `Release Version` - Version string
+- `Release Source` - Which registry/method detected it
+
+A disclaimer appears on all release views noting the best-effort nature of detection.
+
+### Generator Architecture
+
+The `generate_readme.py` script uses a class hierarchy for different README styles:
+
+```python
+ReadmeGenerator (ABC)
+├── VisualReadmeGenerator        # README.md (Extra)
+├── MinimalReadmeGenerator       # README_CLASSIC
+└── ParameterizedFlatListGenerator  # All flat views (parameterized by category + sort)
+```
+
+The `ParameterizedFlatListGenerator` takes `category_slug` and `sort_type` parameters, enabling generation of all 44 combinations from a single class.
+
+### Navigation Badges
+
+SVG badges are generated dynamically in `assets/`:
+- `badge-style-*.svg` - Style selector (Extra, Classic, Flat)
+- `badge-sort-*.svg` - Sort options (A-Z, Updated, Created, Releases)
+- `badge-cat-*.svg` - Category filters (All, Tooling, Hooks, etc.)
+
+Current selections are highlighted with colored borders matching each badge's theme color.
+
+### Adding/Removing Flat List Categories
+
+To add a new category filter to flat list views:
+
+1. **Update `FLAT_CATEGORIES`** in `scripts/generate_readme.py`:
+   ```python
+   FLAT_CATEGORIES = {
+       # ... existing categories ...
+       "new-category": ("CSV Category Value", "Display Name", "#hexcolor"),
+   }
+   ```
+   - First value: Exact match for the `Category` column in CSV (or `None` for "all")
+   - Second value: Display name shown on badge
+   - Third value: Hex color for badge accent and selection border
+
+2. **Regenerate READMEs**: Run `python scripts/generate_readme.py`
+   - Creates new files: `README_ALTERNATIVES/README_FLAT_NEWCATEGORY_*.md`
+   - Generates badge: `assets/badge-cat-new-category.svg`
+   - Updates navigation in all 44+ flat views
+
+To remove a category: Delete its entry from `FLAT_CATEGORIES` and run the generator. Manually delete the orphaned `.md` files from `README_ALTERNATIVES/`.
+
+### Adding/Removing Sort Types
+
+To add a new sort option:
+
+1. **Update `FLAT_SORT_TYPES`** in `scripts/generate_readme.py`:
+   ```python
+   FLAT_SORT_TYPES = {
+       # ... existing sorts ...
+       "newsort": ("DISPLAY", "#hexcolor", "description for status text"),
+   }
+   ```
+
+2. **Implement sorting logic** in `ParameterizedFlatListGenerator.sort_resources()`:
+   ```python
+   elif self.sort_type == "newsort":
+       # Custom sorting logic
+       return sorted(resources, key=lambda x: ...)
+   ```
+
+3. **Regenerate READMEs**: Creates new views for all categories × new sort type.
+
+### Adding/Removing README Styles
+
+The main README styles are defined as generator classes:
+
+| Style | Generator Class | Template | Output |
+|-------|----------------|----------|--------|
+| Extra | `VisualReadmeGenerator` | `README.template.md` | `README.md` |
+| Classic | `MinimalReadmeGenerator` | `README_CLASSIC.template.md` | `README_ALTERNATIVES/README_CLASSIC.md` |
+| Flat | `ParameterizedFlatListGenerator` | (built-in) | `README_ALTERNATIVES/README_FLAT_*.md` |
+
+**To add a new README style:**
+
+1. **Create a generator class** extending `ReadmeGenerator`:
+   ```python
+   class NewStyleReadmeGenerator(ReadmeGenerator):
+       @property
+       def template_filename(self) -> str:
+           return "README_NEWSTYLE.template.md"
+
+       @property
+       def output_filename(self) -> str:
+           return "README_ALTERNATIVES/README_NEWSTYLE.md"
+
+       # Implement abstract methods...
+   ```
+
+2. **Create template** in `templates/README_NEWSTYLE.template.md`
+
+3. **Add to `main()`** in `generate_readme.py`:
+   ```python
+   # Generate new style
+   generator = NewStyleReadmeGenerator(csv_path, template_dir, assets_dir, repo_root)
+   resource_count, backup = generator.generate()
+   ```
+
+4. **Create style badge** `assets/badge-style-newstyle.svg`
+
+5. **Update navigation** in all templates to include the new style option
+
+**To remove a style:** Delete the generator class, template, and `main()` call. Update navigation in remaining templates.
+
 ### Announcements System
 
 Announcements are stored in `templates/announcements.yaml`:

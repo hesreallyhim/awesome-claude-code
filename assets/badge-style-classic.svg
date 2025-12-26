@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="44" viewBox="0 0 140 44">
+  <rect x="0" y="0" width="140" height="44" rx="4" fill="#1e3a5f"/>
+  <rect x="2" y="2" width="136" height="40" rx="3" fill="none" stroke="#c9a227" stroke-width="1.5"/>
+  <text x="70" y="29" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="600" fill="#f5f5dc" text-anchor="middle" letter-spacing="3">CLASSIC</text>
+</svg>

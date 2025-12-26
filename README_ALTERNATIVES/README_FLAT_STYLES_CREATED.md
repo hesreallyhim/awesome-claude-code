@@ -1,0 +1,57 @@
+<!--lint disable remark-lint:awesome-badge-->
+
+<h3 align="center">Pick Your Style:</h3>
+<p align="center">
+<a href="../"><img src="../assets/badge-style-extra.svg" alt="Extra" height="28"></a>
+<a href="README_CLASSIC.md"><img src="../assets/badge-style-classic.svg" alt="Classic" height="28"></a>
+<a href="README_FLAT_ALL_AZ.md"><img src="../assets/badge-style-flat.svg" alt="Flat" height="28" style="border: 2px solid #71717a; border-radius: 4px;"></a>
+</p>
+
+# Awesome Claude Code (Flat)
+
+[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
+
+A flat list view of all resources. Category: **Styles** | Sorted: by date created
+
+---
+
+## Sort By:
+
+<p align="center">
+  <a href="README_FLAT_STYLES_AZ.md"><img src="../assets/badge-sort-az.svg" alt="A - Z" height="48"></a>
+  <a href="README_FLAT_STYLES_UPDATED.md"><img src="../assets/badge-sort-updated.svg" alt="UPDATED" height="48"></a>
+  <a href="README_FLAT_STYLES_CREATED.md"><img src="../assets/badge-sort-created.svg" alt="CREATED" height="48" style="border: 3px solid #34d399; border-radius: 6px;"></a>
+  <a href="README_FLAT_STYLES_RELEASES.md"><img src="../assets/badge-sort-releases.svg" alt="RELEASES" height="48"></a>
+</p>
+<p align="center"><strong>Category:</strong></p>
+<p align="center">
+  <a href="README_FLAT_ALL_CREATED.md"><img src="../assets/badge-cat-all.svg" alt="All" height="28"></a>
+  <a href="README_FLAT_TOOLING_CREATED.md"><img src="../assets/badge-cat-tooling.svg" alt="Tooling" height="28"></a>
+  <a href="README_FLAT_COMMANDS_CREATED.md"><img src="../assets/badge-cat-commands.svg" alt="Commands" height="28"></a>
+  <a href="README_FLAT_CLAUDE-MD_CREATED.md"><img src="../assets/badge-cat-claude-md.svg" alt="CLAUDE.md" height="28"></a>
+  <a href="README_FLAT_WORKFLOWS_CREATED.md"><img src="../assets/badge-cat-workflows.svg" alt="Workflows" height="28"></a>
+  <a href="README_FLAT_HOOKS_CREATED.md"><img src="../assets/badge-cat-hooks.svg" alt="Hooks" height="28"></a>
+  <a href="README_FLAT_SKILLS_CREATED.md"><img src="../assets/badge-cat-skills.svg" alt="Skills" height="28"></a>
+  <a href="README_FLAT_STYLES_CREATED.md"><img src="../assets/badge-cat-styles.svg" alt="Styles" height="28" style="border: 2px solid #06b6d4; border-radius: 4px;"></a>
+  <a href="README_FLAT_STATUSLINE_CREATED.md"><img src="../assets/badge-cat-statusline.svg" alt="Status" height="28"></a>
+  <a href="README_FLAT_DOCS_CREATED.md"><img src="../assets/badge-cat-docs.svg" alt="Docs" height="28"></a>
+  <a href="README_FLAT_CLIENTS_CREATED.md"><img src="../assets/badge-cat-clients.svg" alt="Clients" height="28"></a>
+</p>
+<p align="center"><em>Currently viewing: **Styles** sorted by date created</em></p>
+
+---
+
+## Resources
+
+| Resource | Category | Sub-Category | Description |
+|----------|----------|--------------|-------------|
+| [**Gen-Alpha Slang**](https://github.com/sjnims/gen-alpha-output-style)<br>by [Steve Nims](https://github.com/sjnims) | Output Styles | General | This is really... different. I don't know what to say about this one. It does what it says on the tin. You might find it funny, you might want throw up. I'll just say candidly this is included strictly for its potentially comedic awesomeness. |
+| [**Awesome Claude Code Output Styles (That I Really Like)**](https://github.com/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like)<br>by [Really Him](https://github.com/hesreallyhim/) | Output Styles | General | A fun and moderately amusing collection of experimental output styles. |
+| [**Claude Code Output Styles - Debugging**](https://github.com/JamieM0/claude-output-styles)<br>by [Jamie Matthews](https://github.com/JamieM0) | Output Styles | General | A small set of well-written output styles, specifically focused on debugging - root cause analysis, systematic, methodical debugging, encouraging a more careful approach to bug-squashing from Claude Code. |
+| [**ccoutputstyles**](https://github.com/viveknair/ccoutputstyles)<br>by [Vivek Nair](https://github.com/viveknair) | Output Styles | General | CLI tool and template gallery for customizing Claude Code output styles with pre-built templates. Features over 15 templates at the time of writing! |
+
+---
+
+**Total Resources:** 4
+
+**Last Generated:** 2025-12-25 19:35:26 UTC

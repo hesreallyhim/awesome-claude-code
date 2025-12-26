@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="28" viewBox="0 0 90 28">
+  <rect x="0" y="0" width="90" height="28" fill="#27272a"/>
+  <rect x="0" y="0" width="4" height="28" fill="#84cc16"/>
+  <text x="47" y="19" font-family="'SF Mono', 'Consolas', monospace" font-size="12" font-weight="600" fill="#d4d4d8" text-anchor="middle">Status</text>
+</svg>

@@ -1,12 +1,19 @@
 <!--lint disable remark-lint:awesome-badge-->
 
+<h3 align="center">Pick Your Style:</h3>
+<p align="center">
+<a href="../"><img src="../assets/badge-style-extra.svg" alt="Extra" height="28"></a>
+<a href="README_CLASSIC.md"><img src="../assets/badge-style-classic.svg" alt="Classic" height="28" style="border: 2px solid #c9a227; border-radius: 4px;"></a>
+<a href="README_FLAT_ALL_AZ.md"><img src="../assets/badge-style-flat.svg" alt="Flat" height="28"></a>
+</p>
+
 <!-- Responsive Logo with Theme Support -->
 <div align="center">
 
   <!-- Same ASCII art for all screen sizes, just scales down on mobile -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg">
-    <img src="assets/logo-light.svg" alt="Awesome Claude Code" width="100%" style="max-width: 900px;">
+    <source media="(prefers-color-scheme: dark)" srcset="../assets/logo-dark.svg">
+    <img src="../assets/logo-light.svg" alt="Awesome Claude Code" width="100%" style="max-width: 900px;">
   </picture>
 
 </div>
@@ -18,8 +25,7 @@
 
 <!--lint enable remark-lint:awesome-badge-->
 
-[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) [![FREEDOM FUNDER](/assets/freedom-funder-badge.svg)](https://bailproject.org)
-
+[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) [![FREEDOM FUNDER](../assets/freedom-funder-badge.svg)](https://bailproject.org)
 
 # Awesome Claude Code
 
@@ -67,50 +73,6 @@ Professional development environment for Claude Code with spec-driven workflow, 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-codepro](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-codepro&username=maxritter&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Claude Code Hook Comms (HCOM)`](https://github.com/aannoo/claude-hook-comms) &nbsp; by &nbsp; [aannoo](https://github.com/aannoo)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Lightweight CLI tool for real-time communication between Claude Code sub agents using hooks. Enables multi-agent collaboration with @-mention targeting, live dashboard monitoring, and zero-dependency implementation. [NOTE: At the time of posting, this resource is a little unstable - I'm sharing it anyway, because I think it's incredibly promising and creative. I hope by the time you read this, it is production-ready.]
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claude-hook-comms](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-hook-comms&username=aannoo&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Claude Mountaineering Skills`](https://github.com/dreamiurg/claude-mountaineering-skills) &nbsp; by &nbsp; [Dmytro Gaivoronsky](https://github.com/dreamiurg)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Claude Code skill that automates mountain route research for North American peaks. Aggregates data from 10+ mountaineering sources like Mountaineers.org, PeakBagger.com and SummitPost.com to generate detailed route beta reports with weather, avalanche conditions, and trip reports.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claude-mountaineering-skills](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-mountaineering-skills&username=dreamiurg&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Claude Code System Prompts`](https://github.com/Piebald-AI/claude-code-system-prompts) &nbsp; by &nbsp; [Piebald AI](https://github.com/Piebald-AI)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-All parts of Claude Code's system prompt, including builtin tool descriptions, sub agent prompts (Plan/Explore/Task), utility prompts (CLAUDE.md, compact, Bash cmd, security review, agent creation, etc.). Updated for each Claude Code version.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claude-code-system-prompts](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-system-prompts&username=Piebald-AI&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Claude Codex Settings`](https://github.com/fcakyon/claude-codex-settings) &nbsp; by &nbsp; [fatih akyon](https://github.com/fcakyon)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
-A well-organized, well-written set of plugins covering core developer activities, such as working with common cloud platforms like GitHub, Azure, MongoDB, and popular services such as Tavily, Playwright, and more. Clear, not overly-opinionated, and compatible with a few other providers.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claude-codex-settings](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-codex-settings&username=fcakyon&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1034,6 +996,17 @@ A highly customizable status line formatter for Claude Code CLI that displays mo
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for ccstatusline](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ccstatusline&username=sirmalloc&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`claude-code-statusline`](https://github.com/rz1989s/claude-code-statusline) &nbsp; by &nbsp; [rz1989s](https://github.com/rz1989s)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Enhanced 4-line statusline for Claude Code with themes, cost tracking, and MCP server monitoring
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-code-statusline](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-statusline&username=rz1989s&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1980,17 +1953,6 @@ Provides detailed and emphatic instructions for Claude to follow as a coding age
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-code-mcp-enhanced](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-mcp-enhanced&username=grahama1970&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Perplexity MCP`](https://github.com/Family-IT-Guy/perplexity-mcp/blob/main/CLAUDE.md) &nbsp; by &nbsp; [Family-IT-Guy](https://github.com/Family-IT-Guy)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;ISC  
-Offers clear step-by-step installation instructions with multiple configuration options, detailed troubleshooting guidance, and concise architecture overview of the MCP protocol.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for perplexity-mcp](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=perplexity-mcp&username=Family-IT-Guy&all_stats=true&stats_only=true)
 
 </details>
 <br>

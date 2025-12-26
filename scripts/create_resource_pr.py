@@ -17,6 +17,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from add_resource import append_to_csv, generate_pr_content
 from generate_readme import main as generate_readmes
 from resource_id import generate_resource_id
+from validate_links import get_github_commit_dates_from_url, get_latest_release_info
 
 
 def run_command(cmd: list[str], check: bool = True) -> subprocess.CompletedProcess:
@@ -60,18 +61,44 @@ def main():
         resource_data["display_name"], resource_data["primary_link"], resource_data["category"]
     )
 
+    # Fetch commit dates from GitHub if applicable
+    primary_link = resource_data["primary_link"]
+    first_commit_date, last_commit_date = get_github_commit_dates_from_url(primary_link)
+
+    if last_commit_date:
+        print(f"Fetched Last Modified date from GitHub: {last_commit_date}", file=sys.stderr)
+    else:
+        print("Could not fetch Last Modified date from GitHub (non-GitHub URL or API error)", file=sys.stderr)
+
+    if first_commit_date:
+        print(f"Fetched First Commit date from GitHub: {first_commit_date}", file=sys.stderr)
+
+    # Fetch latest release info
+    release_date, release_version, release_source = get_latest_release_info(
+        primary_link, resource_data["display_name"]
+    )
+    if release_date:
+        print(f"Fetched release info: {release_version} from {release_source} ({release_date})", file=sys.stderr)
+    else:
+        print("No release info found (no releases/tags or non-GitHub URL)", file=sys.stderr)
+
     # Prepare the complete resource data
     resource = {
         "id": resource_id,
         "display_name": resource_data["display_name"],
         "category": resource_data["category"],
         "subcategory": resource_data.get("subcategory", ""),
-        "primary_link": resource_data["primary_link"],
+        "primary_link": primary_link,
         "secondary_link": resource_data.get("secondary_link", ""),
         "author_name": resource_data["author_name"],
         "author_link": resource_data["author_link"],
         "license": resource_data.get("license", "NOT_FOUND"),
         "description": resource_data["description"],
+        "last_modified": last_commit_date or "",  # Set from GitHub API
+        "repo_created": first_commit_date or "",  # First commit date from GitHub API
+        "latest_release": release_date or "",  # Latest release date
+        "release_version": release_version or "",  # Release version (e.g., v1.2.3)
+        "release_source": release_source or "",  # Release source (npm, pypi, github-releases)
     }
 
     # Create branch name based on category and display name
@@ -110,7 +137,7 @@ def main():
         else:
             print("CSV sorted successfully", file=sys.stderr)
 
-        # Generate README files (both README.md and README_CLASSIC.md)
+        # Generate all README variants
         print("Generating README files...", file=sys.stderr)
         try:
             generate_readmes()
@@ -130,8 +157,8 @@ def main():
         badge_path = os.path.join(repo_root, "assets", badge_filename)
         badge_warning = ""
 
-        # Stage changes (includes both README.md and README_CLASSIC.md)
-        files_to_stage = ["THE_RESOURCES_TABLE.csv", "README.md", "README_CLASSIC.md"]
+        # Stage changes (all README variants)
+        files_to_stage = ["THE_RESOURCES_TABLE.csv", "README.md", "README_CLASSIC.md", "README_FLAT_LAST_MODIFIED.md", "README_FLAT_LAST_CREATED.md", "README_FLAT_ALPHABETICAL.md", "README_FLAT_LATEST_RELEASES.md"]
 
         if os.path.exists(badge_path):
             # Stage the badge file relative to repo root
