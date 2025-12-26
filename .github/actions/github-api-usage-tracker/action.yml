@@ -1,0 +1,30 @@
+name: GitHub API Usage Tracker
+description: Track GitHub API rate-limit usage for a job (core/graphql/search)
+author: Really Him
+branding:
+  icon: activity
+  color: blue
+
+inputs:
+  token:
+    description: Token to query rate_limit (defaults to github.token)
+    required: false
+    default: ${{ github.token }}
+  log_level:
+    description: quiet | notice | info | debug
+    required: false
+    default: info
+  output_path:
+    description: Path to write JSON report; set empty to skip
+    required: false
+    default: usage.json
+
+outputs:
+  usage:
+    description: JSON string of used requests per bucket (core/graphql/search)
+
+runs:
+  using: node20
+  pre: dist/pre/index.js
+  main: dist/noop/index.js
+  post: dist/post/index.js
