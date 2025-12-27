@@ -18,13 +18,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
     - name: Track Github API Usage
       uses: ./.github/actions/github-api-usage-tracker
       with:
         output_path: usage.json
-
-    - name: Checkout repository
-      uses: actions/checkout@v4
 
     - name: Set up Python
       uses: actions/setup-python@v5
