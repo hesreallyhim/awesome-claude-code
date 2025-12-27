@@ -22,7 +22,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Track Github API Usage
-      uses: ./.github/actions/github-api-usage-tracker
+      uses: hesreallyhim/awesome-claude-code/.github/actions/github-api-usage-tracker@main
       with:
         output_path: usage.json
 
