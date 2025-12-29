@@ -456,4 +456,4 @@ A flat list view of all resources. Category: **Commands** | Sorted: alphabetical
 
 **Total Resources:** 44
 
-**Last Generated:** 2025-12-29 UTC
+**Last Generated:** 2025-12-29
