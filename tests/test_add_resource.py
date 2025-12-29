@@ -3,7 +3,7 @@
 Unit tests for add_resource.py script.
 
 Tests cover:
-- append_to_csv function with all columns including Removed From Origin
+- append_to_csv function with all columns including release metadata
 - CSV column alignment
 - Default values for new resources
 """
@@ -47,6 +47,11 @@ def temp_csv() -> Generator[Path, None, None]:
                 "License",
                 "Description",
                 "Removed From Origin",
+                "Stale",
+                "Repo Created",
+                "Latest Release",
+                "Release Version",
+                "Release Source",
             ]
         )
     yield temp_path
@@ -73,7 +78,7 @@ def sample_resource_data() -> dict[str, str]:
 def test_append_to_csv_adds_all_columns(
     temp_csv: Path, sample_resource_data: dict[str, str]
 ) -> None:
-    """Test that append_to_csv adds a row with all 15 columns."""
+    """Test that append_to_csv adds a row with all 20 columns."""
     # Mock the CSV path
     with patch("scripts.add_resource.os.path.join") as mock_join:
         mock_join.return_value = str(temp_csv)
@@ -86,11 +91,11 @@ def test_append_to_csv_adds_all_columns(
         with open(temp_csv, newline="", encoding="utf-8") as f:
             reader = csv.reader(f)
             header = next(reader)
-            assert len(header) == 15, f"Expected 15 columns in header, got {len(header)}"
+            assert len(header) == 20, f"Expected 20 columns in header, got {len(header)}"
 
             # Read the data row
             data_row = next(reader)
-            assert len(data_row) == 15, f"Expected 15 columns in data row, got {len(data_row)}"
+            assert len(data_row) == 20, f"Expected 20 columns in data row, got {len(data_row)}"
 
             # Verify specific column values
             assert data_row[0] == sample_resource_data["id"]
@@ -105,6 +110,11 @@ def test_append_to_csv_adds_all_columns(
             assert data_row[12] == sample_resource_data["license"]
             assert data_row[13] == sample_resource_data["description"]
             assert data_row[14] == "FALSE"  # Removed From Origin default
+            assert data_row[15] == "FALSE"  # Stale default
+            assert data_row[16] == ""  # Repo Created default
+            assert data_row[17] == ""  # Latest Release default
+            assert data_row[18] == ""  # Release Version default
+            assert data_row[19] == ""  # Release Source default
 
 
 def test_append_to_csv_default_values(temp_csv: Path, sample_resource_data: dict[str, str]) -> None:
@@ -126,6 +136,11 @@ def test_append_to_csv_default_values(temp_csv: Path, sample_resource_data: dict
             assert data_row[8] == "TRUE", "Active should default to TRUE"
             assert data_row[10] == "", "Last Modified should default to empty"
             assert data_row[14] == "FALSE", "Removed From Origin should default to FALSE"
+            assert data_row[15] == "FALSE", "Stale should default to FALSE"
+            assert data_row[16] == "", "Repo Created should default to empty"
+            assert data_row[17] == "", "Latest Release should default to empty"
+            assert data_row[18] == "", "Release Version should default to empty"
+            assert data_row[19] == "", "Release Source should default to empty"
 
 
 def test_append_to_csv_with_removed_from_origin_true(
@@ -221,6 +236,11 @@ def test_append_to_csv_preserves_existing_data(
                 "Apache-2.0",
                 "An existing resource",
                 "FALSE",
+                "FALSE",
+                "",
+                "",
+                "",
+                "",
             ]
         )
 
