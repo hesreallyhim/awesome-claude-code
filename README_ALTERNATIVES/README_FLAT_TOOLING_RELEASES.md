@@ -215,4 +215,4 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by latest rel
 
 **Total Resources:** 15
 
-**Last Generated:** 2025-12-29 UTC
+**Last Generated:** 2025-12-29

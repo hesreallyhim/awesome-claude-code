@@ -2760,7 +2760,7 @@ class ParameterizedFlatListGenerator(ReadmeGenerator):
         resources = self.get_filtered_resources()
         sorted_resources = self.sort_resources(resources)
 
-        generated_date = datetime.now().strftime("%Y-%m-%d UTC")
+        generated_date = datetime.now().strftime("%Y-%m-%d")
         _, cat_display, _ = self._category_info
         _, sort_display, sort_desc = self._sort_info
 
