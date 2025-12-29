@@ -5,6 +5,7 @@ This script is called by the GitHub Action after approval.
 """
 
 import argparse
+import glob
 import json
 import os
 import re
@@ -41,6 +42,44 @@ def get_badge_filename(display_name: str) -> str:
     return f"badge-{safe_name}.svg"
 
 
+def validate_generated_outputs(status_stdout: str, repo_root: str) -> None:
+    """Verify expected outputs exist and no unexpected files are changed."""
+    expected_readme = os.path.join(repo_root, "README.md")
+    expected_csv = os.path.join(repo_root, "THE_RESOURCES_TABLE.csv")
+    expected_readme_dir = os.path.join(repo_root, "README_ALTERNATIVES")
+
+    if not os.path.isfile(expected_readme):
+        raise Exception(f"Missing generated README: {expected_readme}")
+    if not os.path.isfile(expected_csv):
+        raise Exception(f"Missing CSV: {expected_csv}")
+    if not os.path.isdir(expected_readme_dir):
+        raise Exception(f"Missing README directory: {expected_readme_dir}")
+    if not glob.glob(os.path.join(expected_readme_dir, "*.md")):
+        raise Exception(f"No README alternatives found in {expected_readme_dir}")
+
+    changed_paths = []
+    for line in status_stdout.splitlines():
+        if not line.strip():
+            continue
+        path = line[3:]
+        if " -> " in path:
+            path = path.split(" -> ", 1)[1]
+        changed_paths.append(path)
+
+    allowed_files = {"README.md", "THE_RESOURCES_TABLE.csv"}
+    allowed_prefixes = ("README_ALTERNATIVES/", "assets/")
+    ignored_files = {"resource_data.json", "pr_result.json"}
+    unexpected = [
+        path
+        for path in changed_paths
+        if path not in ignored_files
+        and path not in allowed_files
+        and not path.startswith(allowed_prefixes)
+    ]
+    if unexpected:
+        raise Exception(f"Unexpected changes outside generated outputs: {', '.join(unexpected)}")
+
+
 def main():
     """Main entry point."""
     parser = argparse.ArgumentParser(description="Create PR from approved resource submission")
@@ -68,7 +107,10 @@ def main():
     if last_commit_date:
         print(f"Fetched Last Modified date from GitHub: {last_commit_date}", file=sys.stderr)
     else:
-        print("Could not fetch Last Modified date from GitHub (non-GitHub URL or API error)", file=sys.stderr)
+        print(
+            "Could not fetch Last Modified date from GitHub (non-GitHub URL or API error)",
+            file=sys.stderr,
+        )
 
     if first_commit_date:
         print(f"Fetched First Commit date from GitHub: {first_commit_date}", file=sys.stderr)
@@ -78,7 +120,10 @@ def main():
         primary_link, resource_data["display_name"]
     )
     if release_date:
-        print(f"Fetched release info: {release_version} from {release_source} ({release_date})", file=sys.stderr)
+        print(
+            f"Fetched release info: {release_version} from {release_source} ({release_date})",
+            file=sys.stderr,
+        )
     else:
         print("No release info found (no releases/tags or non-GitHub URL)", file=sys.stderr)
 
@@ -150,20 +195,20 @@ def main():
         status_result = run_command(["git", "status", "--porcelain"])
         print(f"Git status after README generation:\n{status_result.stdout}", file=sys.stderr)
 
-        # Compute badge path and check if it was generated
         script_dir_abs = os.path.dirname(os.path.abspath(__file__))
         repo_root = os.path.dirname(script_dir_abs)
+        validate_generated_outputs(status_result.stdout, repo_root)
+
+        # Compute badge path and check if it was generated
         badge_filename = get_badge_filename(resource_data["display_name"])
         badge_path = os.path.join(repo_root, "assets", badge_filename)
         badge_warning = ""
 
-        # Stage changes (all README variants)
-        files_to_stage = ["THE_RESOURCES_TABLE.csv", "README.md", "README_CLASSIC.md", "README_FLAT_LAST_MODIFIED.md", "README_FLAT_LAST_CREATED.md", "README_FLAT_ALPHABETICAL.md", "README_FLAT_LATEST_RELEASES.md"]
+        # Stage changes for generated outputs (README variants + badges)
+        files_to_stage = ["THE_RESOURCES_TABLE.csv", "README.md", "README_ALTERNATIVES", "assets"]
 
         if os.path.exists(badge_path):
-            # Stage the badge file relative to repo root
-            files_to_stage.append(f"assets/{badge_filename}")
-            print(f"Badge file found and will be staged: {badge_filename}", file=sys.stderr)
+            print(f"Badge file found: {badge_filename}", file=sys.stderr)
         else:
             print(f"Warning: Badge file not generated: {badge_path}", file=sys.stderr)
             badge_warning = (
@@ -171,7 +216,7 @@ def main():
                 "Manual attention may be required."
             )
 
-        run_command(["git", "add", *files_to_stage])
+        run_command(["git", "add", "-A", "--", *files_to_stage])
 
         # Commit
         commit_message = f"Add resource: {resource_data['display_name']}\n\n"
