@@ -352,7 +352,7 @@ class TestParameterizedFlatListGenerator(unittest.TestCase):
 
         # Check shields.io badges are present for GitHub resources
         self.assertIn("img.shields.io/github/stars", table)
-        self.assertIn("?style=social", table)
+        self.assertIn("?style=flat", table)
 
     def test_generate_resources_table_empty_category(self):
         """Test resources table for empty category."""

@@ -66,7 +66,7 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by latest relea
 <td>Lightweight CLI tool for real-time communication between Claude Code sub agents using hooks. Enables multi-agent collaboration with @-mention targeting, live dashboard monitoring, and zero-dependency implementation. [NOTE: At the time of posting, this resource is a little unstable - I'm sharing it anyway, because I think it's incredibly promising and creative. I hope by the time you read this, it is production-ready.]</td>
 </tr>
 <tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/aannoo/claude-hook-comms?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/aannoo/claude-hook-comms?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/aannoo/claude-hook-comms?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/aannoo/claude-hook-comms?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/aannoo/claude-hook-comms?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/aannoo/claude-hook-comms?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/aannoo/claude-hook-comms?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/aannoo/claude-hook-comms?style=social" alt="version"> <img src="https://img.shields.io/github/license/aannoo/claude-hook-comms?style=social" alt="license"></td>
+<td colspan="5"><img src="https://img.shields.io/github/stars/aannoo/claude-hook-comms?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/aannoo/claude-hook-comms?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/aannoo/claude-hook-comms?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/aannoo/claude-hook-comms?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/aannoo/claude-hook-comms?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/aannoo/claude-hook-comms?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/aannoo/claude-hook-comms?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/aannoo/claude-hook-comms?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/aannoo/claude-hook-comms?style=flat-square" alt="license"></td>
 </tr>
 </tbody>
 </table>
@@ -75,4 +75,4 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by latest relea
 
 **Total Resources:** 1
 
-**Last Generated:** 2025-12-28 UTC
+**Last Generated:** 2025-12-29 UTC

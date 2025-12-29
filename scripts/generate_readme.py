@@ -98,7 +98,7 @@ def generate_shields_badges(owner: str, repo: str) -> str:
 
     badges = []
     for alt, url in badge_types:
-        badges.append(f'<img src="{url}?style=social" alt="{alt}">')
+        badges.append(f'<img src="{url}?style=flat-square" alt="{alt}">')
 
     return " ".join(badges)
 
