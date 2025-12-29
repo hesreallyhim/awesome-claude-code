@@ -60,7 +60,7 @@ A flat list view of all resources. Category: **Clients** | Sorted: by last updat
 <td>Claudable is an open-source web builder that leverages local CLI agents, such as Claude Code and Cursor Agent, to build and deploy products effortlessly.</td>
 </tr>
 <tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/opactorai/Claudable?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/opactorai/Claudable?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/opactorai/Claudable?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/opactorai/Claudable?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/opactorai/Claudable?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/opactorai/Claudable?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/opactorai/Claudable?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/opactorai/Claudable?style=social" alt="version"> <img src="https://img.shields.io/github/license/opactorai/Claudable?style=social" alt="license"></td>
+<td colspan="4"><img src="https://img.shields.io/github/stars/opactorai/Claudable?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/opactorai/Claudable?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/opactorai/Claudable?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/opactorai/Claudable?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/opactorai/Claudable?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/opactorai/Claudable?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/opactorai/Claudable?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/opactorai/Claudable?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/opactorai/Claudable?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/omnara-ai/omnara"><b>Omnara</b></a><br>by <a href="https://github.com/ishaansehgal99">Ishaan Sehgal</a></td>
@@ -69,7 +69,7 @@ A flat list view of all resources. Category: **Clients** | Sorted: by last updat
 <td>A command center for AI agents that syncs Claude Code sessions across terminal, web, and mobile. Allows for remote monitoring, human-in-the-loop interaction, and team collaboration.</td>
 </tr>
 <tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/omnara-ai/omnara?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/omnara-ai/omnara?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/omnara-ai/omnara?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/omnara-ai/omnara?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/omnara-ai/omnara?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/omnara-ai/omnara?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/omnara-ai/omnara?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/omnara-ai/omnara?style=social" alt="version"> <img src="https://img.shields.io/github/license/omnara-ai/omnara?style=social" alt="license"></td>
+<td colspan="4"><img src="https://img.shields.io/github/stars/omnara-ai/omnara?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/omnara-ai/omnara?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/omnara-ai/omnara?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/omnara-ai/omnara?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/omnara-ai/omnara?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/omnara-ai/omnara?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/omnara-ai/omnara?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/omnara-ai/omnara?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/omnara-ai/omnara?style=flat-square" alt="license"></td>
 </tr>
 </tbody>
 </table>
@@ -78,4 +78,4 @@ A flat list view of all resources. Category: **Clients** | Sorted: by last updat
 
 **Total Resources:** 2
 
-**Last Generated:** 2025-12-28 UTC
+**Last Generated:** 2025-12-29 UTC
