@@ -67,35 +67,31 @@ jobs:
           ISSUE_TITLE: ${{ github.event.issue.title }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          # TODO: Consider emitting issue parsing output via GITHUB_OUTPUT to avoid temp files.
           # First parse the issue to get resource data
           python scripts/parse_issue_form.py > resource_data.json
           
           # Create the PR with the resource
           python scripts/create_resource_pr.py \
             --issue-number $ISSUE_NUMBER \
-            --resource-data resource_data.json \
-            > pr_result.json
+            --resource-data resource_data.json
       
       - name: Comment on issue with results
         if: contains(github.event.comment.body, '/approve') && contains(github.event.issue.labels.*.name, 'validation-passed')
         uses: actions/github-script@v7
+        env:
+          CREATE_PR_SUCCESS: ${{ steps.create_pr.outputs.success }}
+          PR_URL: ${{ steps.create_pr.outputs.pr_url }}
         with:
           script: |
-            const fs = require('fs');
-            let pr_url = null;
-            
-            try {
-              const prResult = JSON.parse(fs.readFileSync('pr_result.json', 'utf8'));
-              pr_url = prResult.pr_url;
-            } catch (error) {
-              console.error('Error reading pr_result.json:', error);
-            }
+            const pr_url = process.env.PR_URL || null;
+            const success = (process.env.CREATE_PR_SUCCESS || '').toLowerCase() === 'true';
             
             const issue_number = context.issue.number;
             
             let comment_body = '## ✅ Resource Approved!\n\n';
             
-            if (pr_url && pr_url !== 'null') {
+            if (success && pr_url && pr_url !== 'null') {
               comment_body += `🎉 A pull request has been created with your resource: ${pr_url}\n\n`;
               comment_body += 'The PR will be merged shortly, and you\'ll be notified when your resource is live.\n\n';
               comment_body += 'Thank you for contributing to Awesome Claude Code!';

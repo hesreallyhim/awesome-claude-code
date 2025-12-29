@@ -5,6 +5,7 @@ This script is called by the GitHub Action after approval.
 """
 
 import argparse
+import contextlib
 import glob
 import json
 import os
@@ -78,6 +79,26 @@ def validate_generated_outputs(status_stdout: str, repo_root: str) -> None:
     ]
     if unexpected:
         raise Exception(f"Unexpected changes outside generated outputs: {', '.join(unexpected)}")
+
+
+def write_step_outputs(outputs: dict[str, str]) -> None:
+    """Write outputs for GitHub Actions, if available."""
+    output_path = os.environ.get("GITHUB_OUTPUT")
+    if not output_path:
+        return
+
+    try:
+        with open(output_path, "a", encoding="utf-8") as f:
+            for key, value in outputs.items():
+                if value is None:
+                    value = ""
+                value_str = str(value)
+                if "\n" in value_str or "\r" in value_str:
+                    f.write(f"{key}<<EOF\n{value_str}\nEOF\n")
+                else:
+                    f.write(f"{key}={value_str}\n")
+    except Exception as e:
+        print(f"Warning: failed to write step outputs: {e}", file=sys.stderr)
 
 
 def main():
@@ -185,7 +206,8 @@ def main():
         # Generate all README variants
         print("Generating README files...", file=sys.stderr)
         try:
-            generate_readmes()
+            with contextlib.redirect_stdout(sys.stderr):
+                generate_readmes()
             print("README generation completed successfully", file=sys.stderr)
         except Exception as e:
             print(f"ERROR generating README: {e}", file=sys.stderr)
@@ -276,6 +298,15 @@ def main():
             "branch_name": branch_name if "branch_name" in locals() else None,
         }
 
+    write_step_outputs(
+        {
+            "success": "true" if result["success"] else "false",
+            "pr_url": result.get("pr_url") or "",
+            "branch_name": result.get("branch_name") or "",
+            "resource_id": result.get("resource_id") or "",
+            "error": result.get("error") or "",
+        }
+    )
     print(json.dumps(result))
     return 0 if result["success"] else 1
 
