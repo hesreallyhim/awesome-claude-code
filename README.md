@@ -1197,9 +1197,16 @@ _A vim-style powerline statusline for Claude Code with real-time usage tracking,
 <div align="center"><img src="assets/entry-separator-light-animated.svg" alt=""></div>
 
 
-<a href="https://github.com/hagan/claudia-statusline"><img src="assets/badge-claudia-statusline.svg" alt="claudia-statusline"></a>  
-_High-performance Rust-based statusline for Claude Code with persistent stats tracking, progress bars, and optional cloud sync. Features SQLite-first persistence, git integration, context progress bars, burn rate calculation, XDG-compliant with theme support (dark/light, NO_COLOR)._  
+<a href="https://github.com/hagan/claudia-statusline"><img src="assets/badge-claudia-statusline.svg" alt="claudia-statusline"></a>
+_High-performance Rust-based statusline for Claude Code with persistent stats tracking, progress bars, and optional cloud sync. Features SQLite-first persistence, git integration, context progress bars, burn rate calculation, XDG-compliant with theme support (dark/light, NO_COLOR)._
 ![GitHub Stats for claudia-statusline](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claudia-statusline&username=hagan&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/ibuckman-docflow/claude-context-statusline"><img src="https://img.shields.io/badge/claude--context--statusline-FF0000?style=flat-square" alt="claude-context-statusline"></a>
+_Lightweight color-coded statusline showing real-time context window usage with smart caching. Simple one-command installation with no dependencies beyond Python 3 and bash._
+![GitHub Stats for claude-context-statusline](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-context-statusline&username=ibuckman-docflow&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="assets/entry-separator-light-animated.svg" alt=""></div>
 
