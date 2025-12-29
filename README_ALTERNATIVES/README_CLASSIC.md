@@ -44,6 +44,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Claude Code Tips`](https://github.com/ykdojo/claude-code-tips) &nbsp; by &nbsp; [ykdojo](https://github.com/ykdojo)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;©  
+A nice variety of 35+ brief but information-dense Claude Code tips covering voice input, system prompt patching, container workflows for risky tasks, conversation cloning(!), multi-model orchestration with Gemini CLI, and plenty more. Nice demos, working scripts, a plugin, I'd say this probably has a little something for everyone.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-code-tips](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-tips&username=ykdojo&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Superpowers`](https://github.com/obra/superpowers) &nbsp; by &nbsp; [Jesse Vincent](https://github.com/obra)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A strong bundle of core competencies for software engineering, with good coverage of a large portion of the SDLC - from planning, reviewing, testing, debugging... Well written, well organized, and adaptable. The author refers to them as "superpowers", but many of them are just consolidating engineering best practices - which sometimes does feel like a superpower when working with Claude Code.
 
@@ -62,17 +73,6 @@ A well-balanced, "down-to-Earth" set of sub agents, skills, and commands,  that 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for taches-cc-resources](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=taches-cc-resources&username=glittercowboy&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Claude CodePro`](https://github.com/maxritter/claude-codepro) &nbsp; by &nbsp; [Max Ritter](https://www.maxritter.net)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
-Professional development environment for Claude Code with spec-driven workflow, TDD enforcement, cross-session memory, semantic search, quality hooks, and modular rules integration. A bit "heavyweight" but feature-packed and has wide coverage.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claude-codepro](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-codepro&username=maxritter&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -333,6 +333,17 @@ All parts of Claude Code's system prompt, including builtin tool descriptions, s
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-code-system-prompts](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-system-prompts&username=Piebald-AI&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Claude Code Tips`](https://github.com/ykdojo/claude-code-tips) &nbsp; by &nbsp; [ykdojo](https://github.com/ykdojo)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;©  
+A nice variety of 35+ brief but information-dense Claude Code tips covering voice input, system prompt patching, container workflows for risky tasks, conversation cloning(!), multi-model orchestration with Gemini CLI, and plenty more. Nice demos, working scripts, a plugin, I'd say this probably has a little something for everyone.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-code-tips](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-tips&username=ykdojo&all_stats=true&stats_only=true)
 
 </details>
 <br>
