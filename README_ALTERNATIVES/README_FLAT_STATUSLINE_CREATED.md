@@ -43,16 +43,66 @@ A flat list view of all resources. Category: **Status** | Sorted: by date create
 
 ## Resources
 
-| Resource | Category | Sub-Category | Description |
-|----------|----------|--------------|-------------|
-| [**claudia-statusline**](https://github.com/hagan/claudia-statusline)<br>by [Hagan Franks](https://github.com/hagan) | Status Lines | General | High-performance Rust-based statusline for Claude Code with persistent stats tracking, progress bars, and optional cloud sync. Features SQLite-first persistence, git integration, context progress bars, burn rate calculation, XDG-compliant with theme support (dark/light, NO_COLOR). |
-| [**claude-code-statusline**](https://github.com/rz1989s/claude-code-statusline)<br>by [rz1989s](https://github.com/rz1989s) | Status Lines | General | Enhanced 4-line statusline for Claude Code with themes, cost tracking, and MCP server monitoring |
-| [**CCometixLine - Claude Code Statusline**](https://github.com/Haleclipse/CCometixLine)<br>by [Haleclipse](https://github.com/Haleclipse) | Status Lines | General | A high-performance Claude Code statusline tool written in Rust with Git integration, usage tracking, interactive TUI configuration, and Claude Code enhancement utilities. |
-| [**claude-powerline**](https://github.com/Owloops/claude-powerline)<br>by [Owloops](https://github.com/Owloops) | Status Lines | General | A vim-style powerline statusline for Claude Code with real-time usage tracking, git integration, custom themes, and more |
-| [**ccstatusline**](https://github.com/sirmalloc/ccstatusline)<br>by [sirmalloc](https://github.com/sirmalloc) | Status Lines | General | A highly customizable status line formatter for Claude Code CLI that displays model info, git branch, token usage, and other metrics in your terminal. |
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Category</th>
+<th>Sub-Category</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/hagan/claudia-statusline"><b>claudia-statusline</b></a><br>by <a href="https://github.com/hagan">Hagan Franks</a></td>
+<td>Status Lines</td>
+<td>General</td>
+<td>High-performance Rust-based statusline for Claude Code with persistent stats tracking, progress bars, and optional cloud sync. Features SQLite-first persistence, git integration, context progress bars, burn rate calculation, XDG-compliant with theme support (dark/light, NO_COLOR).</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/hagan/claudia-statusline?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/hagan/claudia-statusline?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/hagan/claudia-statusline?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/hagan/claudia-statusline?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/hagan/claudia-statusline?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/hagan/claudia-statusline?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/hagan/claudia-statusline?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/hagan/claudia-statusline?style=social" alt="version"> <img src="https://img.shields.io/github/license/hagan/claudia-statusline?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/rz1989s/claude-code-statusline"><b>claude-code-statusline</b></a><br>by <a href="https://github.com/rz1989s">rz1989s</a></td>
+<td>Status Lines</td>
+<td>General</td>
+<td>Enhanced 4-line statusline for Claude Code with themes, cost tracking, and MCP server monitoring</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/rz1989s/claude-code-statusline?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/rz1989s/claude-code-statusline?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/rz1989s/claude-code-statusline?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/rz1989s/claude-code-statusline?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/rz1989s/claude-code-statusline?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/rz1989s/claude-code-statusline?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/rz1989s/claude-code-statusline?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/rz1989s/claude-code-statusline?style=social" alt="version"> <img src="https://img.shields.io/github/license/rz1989s/claude-code-statusline?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Haleclipse/CCometixLine"><b>CCometixLine - Claude Code Statusline</b></a><br>by <a href="https://github.com/Haleclipse">Haleclipse</a></td>
+<td>Status Lines</td>
+<td>General</td>
+<td>A high-performance Claude Code statusline tool written in Rust with Git integration, usage tracking, interactive TUI configuration, and Claude Code enhancement utilities.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/Haleclipse/CCometixLine?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/Haleclipse/CCometixLine?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/Haleclipse/CCometixLine?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Haleclipse/CCometixLine?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/Haleclipse/CCometixLine?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/Haleclipse/CCometixLine?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Haleclipse/CCometixLine?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/Haleclipse/CCometixLine?style=social" alt="version"> <img src="https://img.shields.io/github/license/Haleclipse/CCometixLine?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Owloops/claude-powerline"><b>claude-powerline</b></a><br>by <a href="https://github.com/Owloops">Owloops</a></td>
+<td>Status Lines</td>
+<td>General</td>
+<td>A vim-style powerline statusline for Claude Code with real-time usage tracking, git integration, custom themes, and more</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/Owloops/claude-powerline?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/Owloops/claude-powerline?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/Owloops/claude-powerline?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Owloops/claude-powerline?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/Owloops/claude-powerline?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/Owloops/claude-powerline?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Owloops/claude-powerline?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/Owloops/claude-powerline?style=social" alt="version"> <img src="https://img.shields.io/github/license/Owloops/claude-powerline?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/sirmalloc/ccstatusline"><b>ccstatusline</b></a><br>by <a href="https://github.com/sirmalloc">sirmalloc</a></td>
+<td>Status Lines</td>
+<td>General</td>
+<td>A highly customizable status line formatter for Claude Code CLI that displays model info, git branch, token usage, and other metrics in your terminal.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/sirmalloc/ccstatusline?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/sirmalloc/ccstatusline?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/sirmalloc/ccstatusline?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/sirmalloc/ccstatusline?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/sirmalloc/ccstatusline?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/sirmalloc/ccstatusline?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/sirmalloc/ccstatusline?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/sirmalloc/ccstatusline?style=social" alt="version"> <img src="https://img.shields.io/github/license/sirmalloc/ccstatusline?style=social" alt="license"></td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 **Total Resources:** 5
 
-**Last Generated:** 2025-12-25 19:35:26 UTC
+**Last Generated:** 2025-12-28 UTC

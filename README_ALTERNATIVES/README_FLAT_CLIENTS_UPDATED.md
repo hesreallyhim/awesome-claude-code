@@ -43,13 +43,39 @@ A flat list view of all resources. Category: **Clients** | Sorted: by last updat
 
 ## Resources
 
-| Resource | Category | Sub-Category | Description |
-|----------|----------|--------------|-------------|
-| [**Claudable**](https://github.com/opactorai/Claudable)<br>by [Ethan Park](https://www.linkedin.com/in/seongil-park/) | Alternative Clients | General | Claudable is an open-source web builder that leverages local CLI agents, such as Claude Code and Cursor Agent, to build and deploy products effortlessly. |
-| [**Omnara**](https://github.com/omnara-ai/omnara)<br>by [Ishaan Sehgal](https://github.com/ishaansehgal99) | Alternative Clients | General | A command center for AI agents that syncs Claude Code sessions across terminal, web, and mobile. Allows for remote monitoring, human-in-the-loop interaction, and team collaboration. |
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Category</th>
+<th>Sub-Category</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/opactorai/Claudable"><b>Claudable</b></a><br>by <a href="https://www.linkedin.com/in/seongil-park/">Ethan Park</a></td>
+<td>Alternative Clients</td>
+<td>General</td>
+<td>Claudable is an open-source web builder that leverages local CLI agents, such as Claude Code and Cursor Agent, to build and deploy products effortlessly.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/opactorai/Claudable?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/opactorai/Claudable?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/opactorai/Claudable?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/opactorai/Claudable?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/opactorai/Claudable?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/opactorai/Claudable?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/opactorai/Claudable?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/opactorai/Claudable?style=social" alt="version"> <img src="https://img.shields.io/github/license/opactorai/Claudable?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/omnara-ai/omnara"><b>Omnara</b></a><br>by <a href="https://github.com/ishaansehgal99">Ishaan Sehgal</a></td>
+<td>Alternative Clients</td>
+<td>General</td>
+<td>A command center for AI agents that syncs Claude Code sessions across terminal, web, and mobile. Allows for remote monitoring, human-in-the-loop interaction, and team collaboration.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/omnara-ai/omnara?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/omnara-ai/omnara?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/omnara-ai/omnara?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/omnara-ai/omnara?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/omnara-ai/omnara?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/omnara-ai/omnara?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/omnara-ai/omnara?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/omnara-ai/omnara?style=social" alt="version"> <img src="https://img.shields.io/github/license/omnara-ai/omnara?style=social" alt="license"></td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 **Total Resources:** 2
 
-**Last Generated:** 2025-12-25 19:35:26 UTC
+**Last Generated:** 2025-12-28 UTC
