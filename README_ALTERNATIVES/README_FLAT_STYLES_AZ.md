@@ -43,15 +43,57 @@ A flat list view of all resources. Category: **Styles** | Sorted: alphabetically
 
 ## Resources
 
-| Resource | Category | Sub-Category | Description |
-|----------|----------|--------------|-------------|
-| [**Awesome Claude Code Output Styles (That I Really Like)**](https://github.com/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like)<br>by [Really Him](https://github.com/hesreallyhim/) | Output Styles | General | A fun and moderately amusing collection of experimental output styles. |
-| [**ccoutputstyles**](https://github.com/viveknair/ccoutputstyles)<br>by [Vivek Nair](https://github.com/viveknair) | Output Styles | General | CLI tool and template gallery for customizing Claude Code output styles with pre-built templates. Features over 15 templates at the time of writing! |
-| [**Claude Code Output Styles - Debugging**](https://github.com/JamieM0/claude-output-styles)<br>by [Jamie Matthews](https://github.com/JamieM0) | Output Styles | General | A small set of well-written output styles, specifically focused on debugging - root cause analysis, systematic, methodical debugging, encouraging a more careful approach to bug-squashing from Claude Code. |
-| [**Gen-Alpha Slang**](https://github.com/sjnims/gen-alpha-output-style)<br>by [Steve Nims](https://github.com/sjnims) | Output Styles | General | This is really... different. I don't know what to say about this one. It does what it says on the tin. You might find it funny, you might want throw up. I'll just say candidly this is included strictly for its potentially comedic awesomeness. |
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Category</th>
+<th>Sub-Category</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like"><b>Awesome Claude Code Output Styles (That I Really Like)</b></a><br>by <a href="https://github.com/hesreallyhim/">Really Him</a></td>
+<td>Output Styles</td>
+<td>General</td>
+<td>A fun and moderately amusing collection of experimental output styles.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like?style=social" alt="version"> <img src="https://img.shields.io/github/license/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/viveknair/ccoutputstyles"><b>ccoutputstyles</b></a><br>by <a href="https://github.com/viveknair">Vivek Nair</a></td>
+<td>Output Styles</td>
+<td>General</td>
+<td>CLI tool and template gallery for customizing Claude Code output styles with pre-built templates. Features over 15 templates at the time of writing!</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/viveknair/ccoutputstyles?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/viveknair/ccoutputstyles?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/viveknair/ccoutputstyles?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/viveknair/ccoutputstyles?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/viveknair/ccoutputstyles?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/viveknair/ccoutputstyles?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/viveknair/ccoutputstyles?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/viveknair/ccoutputstyles?style=social" alt="version"> <img src="https://img.shields.io/github/license/viveknair/ccoutputstyles?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/JamieM0/claude-output-styles"><b>Claude Code Output Styles - Debugging</b></a><br>by <a href="https://github.com/JamieM0">Jamie Matthews</a></td>
+<td>Output Styles</td>
+<td>General</td>
+<td>A small set of well-written output styles, specifically focused on debugging - root cause analysis, systematic, methodical debugging, encouraging a more careful approach to bug-squashing from Claude Code.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/JamieM0/claude-output-styles?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/JamieM0/claude-output-styles?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/JamieM0/claude-output-styles?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/JamieM0/claude-output-styles?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/JamieM0/claude-output-styles?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/JamieM0/claude-output-styles?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/JamieM0/claude-output-styles?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/JamieM0/claude-output-styles?style=social" alt="version"> <img src="https://img.shields.io/github/license/JamieM0/claude-output-styles?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/sjnims/gen-alpha-output-style"><b>Gen-Alpha Slang</b></a><br>by <a href="https://github.com/sjnims">Steve Nims</a></td>
+<td>Output Styles</td>
+<td>General</td>
+<td>This is really... different. I don't know what to say about this one. It does what it says on the tin. You might find it funny, you might want throw up. I'll just say candidly this is included strictly for its potentially comedic awesomeness.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/sjnims/gen-alpha-output-style?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/sjnims/gen-alpha-output-style?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/sjnims/gen-alpha-output-style?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/sjnims/gen-alpha-output-style?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/sjnims/gen-alpha-output-style?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/sjnims/gen-alpha-output-style?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/sjnims/gen-alpha-output-style?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/sjnims/gen-alpha-output-style?style=social" alt="version"> <img src="https://img.shields.io/github/license/sjnims/gen-alpha-output-style?style=social" alt="license"></td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 **Total Resources:** 4
 
-**Last Generated:** 2025-12-25 19:35:26 UTC
+**Last Generated:** 2025-12-28 UTC

@@ -43,20 +43,102 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by date created
 
 ## Resources
 
-| Resource | Category | Sub-Category | Description |
-|----------|----------|--------------|-------------|
-| [**Britfix**](https://github.com/Talieisin/britfix)<br>by [Talieisin](https://github.com/Talieisin) | Hooks | General | Claude outputs American spellings by default, which can have an impact on: professional credibility, compliance, documentation, and more. Britfix converts to British English, with a Claude Code hook for automatic conversion as files are written. Context-aware: handles code files intelligently by only converting comments and docstrings, never identifiers or string literals. |
-| [**Claudio**](https://github.com/ctoth/claudio)<br>by [Christopher Toth](https://github.com/ctoth) | Hooks | General | A no-frills little library that adds delightful OS-native sounds to Claude Code via simple hooks. It really sparks joy. |
-| [**CC Notify**](https://github.com/dazuiba/CCNotify)<br>by [dazuiba](https://github.com/dazuiba) | Hooks | General | CCNotify provides desktop notifications for Claude Code, alerting you to input needs or task completion, with one-click jumps back to VS Code and task duration display. |
-| [**Claude Code Hook Comms (HCOM)**](https://github.com/aannoo/claude-hook-comms)<br>by [aannoo](https://github.com/aannoo) | Hooks | General | Lightweight CLI tool for real-time communication between Claude Code sub agents using hooks. Enables multi-agent collaboration with @-mention targeting, live dashboard monitoring, and zero-dependency implementation. [NOTE: At the time of posting, this resource is a little unstable - I'm sharing it anyway, because I think it's incredibly promising and creative. I hope by the time you read this, it is production-ready.] |
-| [**TypeScript Quality Hooks**](https://github.com/bartolli/claude-code-typescript-hooks)<br>by [bartolli](https://github.com/bartolli) | Hooks | General | Quality check hook for Node.js TypeScript projects with TypeScript compilation. ESLint auto-fixing, and Prettier formatting. Uses SHA256 config caching for < 5ms validation performance during real-time editing. |
-| [**cchooks**](https://github.com/GowayLee/cchooks)<br>by [GowayLee](https://github.com/GowayLee) | Hooks | General | A lightweight Python SDK with a clean API and good documentation; simplifies the process of writing hooks and integrating them into your codebase, providing a nice abstraction over the JSON configuration files. |
-| [**claude-hooks**](https://github.com/johnlindquist/claude-hooks)<br>by [John Lindquist](https://github.com/johnlindquist) | Hooks | General | A TypeScript-based system for configuring and customizing Claude Code hooks with a powerful and flexible interface. |
-| [**claude-code-hooks-sdk**](https://github.com/beyondcode/claude-hooks-sdk)<br>by [beyondcode](https://github.com/beyondcode) | Hooks | General | A Laravel-inspired PHP SDK for building Claude Code hook responses with a clean, fluent API. This SDK makes it easy to create structured JSON responses for Claude Code hooks using an expressive, chainable interface. |
-| [**TDD Guard**](https://github.com/nizos/tdd-guard)<br>by [Nizar Selander](https://github.com/nizos) | Hooks | General | A hooks-driven system that monitors file operations in real-time and blocks changes that violate TDD principles. |
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Category</th>
+<th>Sub-Category</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/Talieisin/britfix"><b>Britfix</b></a><br>by <a href="https://github.com/Talieisin">Talieisin</a></td>
+<td>Hooks</td>
+<td>General</td>
+<td>Claude outputs American spellings by default, which can have an impact on: professional credibility, compliance, documentation, and more. Britfix converts to British English, with a Claude Code hook for automatic conversion as files are written. Context-aware: handles code files intelligently by only converting comments and docstrings, never identifiers or string literals.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/Talieisin/britfix?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/Talieisin/britfix?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/Talieisin/britfix?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Talieisin/britfix?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/Talieisin/britfix?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/Talieisin/britfix?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Talieisin/britfix?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/Talieisin/britfix?style=social" alt="version"> <img src="https://img.shields.io/github/license/Talieisin/britfix?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ctoth/claudio"><b>Claudio</b></a><br>by <a href="https://github.com/ctoth">Christopher Toth</a></td>
+<td>Hooks</td>
+<td>General</td>
+<td>A no-frills little library that adds delightful OS-native sounds to Claude Code via simple hooks. It really sparks joy.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/ctoth/claudio?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/ctoth/claudio?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/ctoth/claudio?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ctoth/claudio?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/ctoth/claudio?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/ctoth/claudio?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ctoth/claudio?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/ctoth/claudio?style=social" alt="version"> <img src="https://img.shields.io/github/license/ctoth/claudio?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/dazuiba/CCNotify"><b>CC Notify</b></a><br>by <a href="https://github.com/dazuiba">dazuiba</a></td>
+<td>Hooks</td>
+<td>General</td>
+<td>CCNotify provides desktop notifications for Claude Code, alerting you to input needs or task completion, with one-click jumps back to VS Code and task duration display.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/dazuiba/CCNotify?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/dazuiba/CCNotify?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/dazuiba/CCNotify?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/dazuiba/CCNotify?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/dazuiba/CCNotify?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/dazuiba/CCNotify?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/dazuiba/CCNotify?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/dazuiba/CCNotify?style=social" alt="version"> <img src="https://img.shields.io/github/license/dazuiba/CCNotify?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/aannoo/claude-hook-comms"><b>Claude Code Hook Comms (HCOM)</b></a><br>by <a href="https://github.com/aannoo">aannoo</a></td>
+<td>Hooks</td>
+<td>General</td>
+<td>Lightweight CLI tool for real-time communication between Claude Code sub agents using hooks. Enables multi-agent collaboration with @-mention targeting, live dashboard monitoring, and zero-dependency implementation. [NOTE: At the time of posting, this resource is a little unstable - I'm sharing it anyway, because I think it's incredibly promising and creative. I hope by the time you read this, it is production-ready.]</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/aannoo/claude-hook-comms?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/aannoo/claude-hook-comms?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/aannoo/claude-hook-comms?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/aannoo/claude-hook-comms?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/aannoo/claude-hook-comms?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/aannoo/claude-hook-comms?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/aannoo/claude-hook-comms?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/aannoo/claude-hook-comms?style=social" alt="version"> <img src="https://img.shields.io/github/license/aannoo/claude-hook-comms?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/bartolli/claude-code-typescript-hooks"><b>TypeScript Quality Hooks</b></a><br>by <a href="https://github.com/bartolli">bartolli</a></td>
+<td>Hooks</td>
+<td>General</td>
+<td>Quality check hook for Node.js TypeScript projects with TypeScript compilation. ESLint auto-fixing, and Prettier formatting. Uses SHA256 config caching for < 5ms validation performance during real-time editing.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/bartolli/claude-code-typescript-hooks?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/bartolli/claude-code-typescript-hooks?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/bartolli/claude-code-typescript-hooks?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/bartolli/claude-code-typescript-hooks?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/bartolli/claude-code-typescript-hooks?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/bartolli/claude-code-typescript-hooks?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/bartolli/claude-code-typescript-hooks?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/bartolli/claude-code-typescript-hooks?style=social" alt="version"> <img src="https://img.shields.io/github/license/bartolli/claude-code-typescript-hooks?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/GowayLee/cchooks"><b>cchooks</b></a><br>by <a href="https://github.com/GowayLee">GowayLee</a></td>
+<td>Hooks</td>
+<td>General</td>
+<td>A lightweight Python SDK with a clean API and good documentation; simplifies the process of writing hooks and integrating them into your codebase, providing a nice abstraction over the JSON configuration files.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/GowayLee/cchooks?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/GowayLee/cchooks?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/GowayLee/cchooks?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/GowayLee/cchooks?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/GowayLee/cchooks?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/GowayLee/cchooks?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/GowayLee/cchooks?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/GowayLee/cchooks?style=social" alt="version"> <img src="https://img.shields.io/github/license/GowayLee/cchooks?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/johnlindquist/claude-hooks"><b>claude-hooks</b></a><br>by <a href="https://github.com/johnlindquist">John Lindquist</a></td>
+<td>Hooks</td>
+<td>General</td>
+<td>A TypeScript-based system for configuring and customizing Claude Code hooks with a powerful and flexible interface.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/johnlindquist/claude-hooks?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/johnlindquist/claude-hooks?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/johnlindquist/claude-hooks?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/johnlindquist/claude-hooks?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/johnlindquist/claude-hooks?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/johnlindquist/claude-hooks?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/johnlindquist/claude-hooks?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/johnlindquist/claude-hooks?style=social" alt="version"> <img src="https://img.shields.io/github/license/johnlindquist/claude-hooks?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/beyondcode/claude-hooks-sdk"><b>claude-code-hooks-sdk</b></a><br>by <a href="https://github.com/beyondcode">beyondcode</a></td>
+<td>Hooks</td>
+<td>General</td>
+<td>A Laravel-inspired PHP SDK for building Claude Code hook responses with a clean, fluent API. This SDK makes it easy to create structured JSON responses for Claude Code hooks using an expressive, chainable interface.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/beyondcode/claude-hooks-sdk?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/beyondcode/claude-hooks-sdk?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/beyondcode/claude-hooks-sdk?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/beyondcode/claude-hooks-sdk?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/beyondcode/claude-hooks-sdk?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/beyondcode/claude-hooks-sdk?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/beyondcode/claude-hooks-sdk?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/beyondcode/claude-hooks-sdk?style=social" alt="version"> <img src="https://img.shields.io/github/license/beyondcode/claude-hooks-sdk?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/nizos/tdd-guard"><b>TDD Guard</b></a><br>by <a href="https://github.com/nizos">Nizar Selander</a></td>
+<td>Hooks</td>
+<td>General</td>
+<td>A hooks-driven system that monitors file operations in real-time and blocks changes that violate TDD principles.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/nizos/tdd-guard?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/nizos/tdd-guard?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/nizos/tdd-guard?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/nizos/tdd-guard?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/nizos/tdd-guard?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/nizos/tdd-guard?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/nizos/tdd-guard?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/nizos/tdd-guard?style=social" alt="version"> <img src="https://img.shields.io/github/license/nizos/tdd-guard?style=social" alt="license"></td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 **Total Resources:** 9
 
-**Last Generated:** 2025-12-25 19:35:26 UTC
+**Last Generated:** 2025-12-28 UTC

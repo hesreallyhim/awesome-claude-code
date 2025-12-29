@@ -2,12 +2,11 @@
 """Tests for flat list README generation functionality."""
 
 import os
+import shutil
 import sys
 import tempfile
-import shutil
 import unittest
 from datetime import datetime, timedelta
-from unittest.mock import patch, MagicMock
 
 # Add the scripts directory to the path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
@@ -17,7 +16,6 @@ from generate_readme import (
     FLAT_SORT_TYPES,
     ParameterizedFlatListGenerator,
     generate_flat_badges,
-    parse_resource_date,
 )
 
 
@@ -43,8 +41,19 @@ class TestFlatCategories(unittest.TestCase):
 
     def test_expected_categories_exist(self):
         """Test that expected categories are defined."""
-        expected = ["all", "tooling", "commands", "claude-md", "workflows",
-                    "hooks", "skills", "styles", "statusline", "docs", "clients"]
+        expected = [
+            "all",
+            "tooling",
+            "commands",
+            "claude-md",
+            "workflows",
+            "hooks",
+            "skills",
+            "styles",
+            "statusline",
+            "docs",
+            "clients",
+        ]
         for cat in expected:
             self.assertIn(cat, FLAT_CATEGORIES, f"Missing category: {cat}")
 
@@ -130,6 +139,7 @@ class TestParameterizedFlatListGenerator(unittest.TestCase):
             ]
 
         import csv
+
         fieldnames = list(rows[0].keys()) if rows else []
         with open(self.csv_path, "w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -139,13 +149,14 @@ class TestParameterizedFlatListGenerator(unittest.TestCase):
     def test_output_filename_format(self):
         """Test output filename follows expected pattern."""
         generator = ParameterizedFlatListGenerator(
-            self.csv_path, self.template_dir, self.assets_dir, self.temp_dir,
-            category_slug="all", sort_type="az"
+            self.csv_path,
+            self.template_dir,
+            self.assets_dir,
+            self.temp_dir,
+            category_slug="all",
+            sort_type="az",
         )
-        self.assertEqual(
-            generator.output_filename,
-            "README_ALTERNATIVES/README_FLAT_ALL_AZ.md"
-        )
+        self.assertEqual(generator.output_filename, "README_ALTERNATIVES/README_FLAT_ALL_AZ.md")
 
     def test_output_filename_with_different_params(self):
         """Test output filename with various category/sort combinations."""
@@ -157,16 +168,24 @@ class TestParameterizedFlatListGenerator(unittest.TestCase):
         for cat, sort_type, expected in test_cases:
             with self.subTest(cat=cat, sort_type=sort_type):
                 generator = ParameterizedFlatListGenerator(
-                    self.csv_path, self.template_dir, self.assets_dir, self.temp_dir,
-                    category_slug=cat, sort_type=sort_type
+                    self.csv_path,
+                    self.template_dir,
+                    self.assets_dir,
+                    self.temp_dir,
+                    category_slug=cat,
+                    sort_type=sort_type,
                 )
                 self.assertEqual(generator.output_filename, expected)
 
     def test_get_filtered_resources_all(self):
         """Test filtering with 'all' category returns all resources."""
         generator = ParameterizedFlatListGenerator(
-            self.csv_path, self.template_dir, self.assets_dir, self.temp_dir,
-            category_slug="all", sort_type="az"
+            self.csv_path,
+            self.template_dir,
+            self.assets_dir,
+            self.temp_dir,
+            category_slug="all",
+            sort_type="az",
         )
         generator.csv_data = generator.load_csv_data()
         resources = generator.get_filtered_resources()
@@ -175,8 +194,12 @@ class TestParameterizedFlatListGenerator(unittest.TestCase):
     def test_get_filtered_resources_specific_category(self):
         """Test filtering with specific category."""
         generator = ParameterizedFlatListGenerator(
-            self.csv_path, self.template_dir, self.assets_dir, self.temp_dir,
-            category_slug="tooling", sort_type="az"
+            self.csv_path,
+            self.template_dir,
+            self.assets_dir,
+            self.temp_dir,
+            category_slug="tooling",
+            sort_type="az",
         )
         generator.csv_data = generator.load_csv_data()
         resources = generator.get_filtered_resources()
@@ -186,8 +209,12 @@ class TestParameterizedFlatListGenerator(unittest.TestCase):
     def test_get_filtered_resources_hooks_category(self):
         """Test filtering with hooks category."""
         generator = ParameterizedFlatListGenerator(
-            self.csv_path, self.template_dir, self.assets_dir, self.temp_dir,
-            category_slug="hooks", sort_type="az"
+            self.csv_path,
+            self.template_dir,
+            self.assets_dir,
+            self.temp_dir,
+            category_slug="hooks",
+            sort_type="az",
         )
         generator.csv_data = generator.load_csv_data()
         resources = generator.get_filtered_resources()
@@ -197,8 +224,12 @@ class TestParameterizedFlatListGenerator(unittest.TestCase):
     def test_sort_resources_alphabetical(self):
         """Test alphabetical sorting."""
         generator = ParameterizedFlatListGenerator(
-            self.csv_path, self.template_dir, self.assets_dir, self.temp_dir,
-            category_slug="all", sort_type="az"
+            self.csv_path,
+            self.template_dir,
+            self.assets_dir,
+            self.temp_dir,
+            category_slug="all",
+            sort_type="az",
         )
         generator.csv_data = generator.load_csv_data()
         resources = generator.get_filtered_resources()
@@ -211,8 +242,12 @@ class TestParameterizedFlatListGenerator(unittest.TestCase):
     def test_sort_resources_by_updated(self):
         """Test sorting by last modified date."""
         generator = ParameterizedFlatListGenerator(
-            self.csv_path, self.template_dir, self.assets_dir, self.temp_dir,
-            category_slug="all", sort_type="updated"
+            self.csv_path,
+            self.template_dir,
+            self.assets_dir,
+            self.temp_dir,
+            category_slug="all",
+            sort_type="updated",
         )
         generator.csv_data = generator.load_csv_data()
         resources = generator.get_filtered_resources()
@@ -225,8 +260,12 @@ class TestParameterizedFlatListGenerator(unittest.TestCase):
     def test_sort_resources_by_created(self):
         """Test sorting by repo creation date."""
         generator = ParameterizedFlatListGenerator(
-            self.csv_path, self.template_dir, self.assets_dir, self.temp_dir,
-            category_slug="all", sort_type="created"
+            self.csv_path,
+            self.template_dir,
+            self.assets_dir,
+            self.temp_dir,
+            category_slug="all",
+            sort_type="created",
         )
         generator.csv_data = generator.load_csv_data()
         resources = generator.get_filtered_resources()
@@ -239,8 +278,12 @@ class TestParameterizedFlatListGenerator(unittest.TestCase):
     def test_generate_sort_navigation(self):
         """Test sort navigation badge generation."""
         generator = ParameterizedFlatListGenerator(
-            self.csv_path, self.template_dir, self.assets_dir, self.temp_dir,
-            category_slug="all", sort_type="az"
+            self.csv_path,
+            self.template_dir,
+            self.assets_dir,
+            self.temp_dir,
+            category_slug="all",
+            sort_type="az",
         )
         nav = generator.generate_sort_navigation()
 
@@ -259,8 +302,12 @@ class TestParameterizedFlatListGenerator(unittest.TestCase):
     def test_generate_category_navigation(self):
         """Test category navigation badge generation."""
         generator = ParameterizedFlatListGenerator(
-            self.csv_path, self.template_dir, self.assets_dir, self.temp_dir,
-            category_slug="hooks", sort_type="az"
+            self.csv_path,
+            self.template_dir,
+            self.assets_dir,
+            self.temp_dir,
+            category_slug="hooks",
+            sort_type="az",
         )
         nav = generator.generate_category_navigation()
 
@@ -278,27 +325,44 @@ class TestParameterizedFlatListGenerator(unittest.TestCase):
     def test_generate_resources_table_standard(self):
         """Test resources table generation for non-releases view."""
         generator = ParameterizedFlatListGenerator(
-            self.csv_path, self.template_dir, self.assets_dir, self.temp_dir,
-            category_slug="all", sort_type="az"
+            self.csv_path,
+            self.template_dir,
+            self.assets_dir,
+            self.temp_dir,
+            category_slug="all",
+            sort_type="az",
         )
         generator.csv_data = generator.load_csv_data()
         table = generator.generate_resources_table()
 
-        # Check header
-        self.assertIn("| Resource | Category | Sub-Category | Description |", table)
+        # Check HTML table structure
+        self.assertIn("<table>", table)
+        self.assertIn("<thead>", table)
+        self.assertIn("<th>Resource</th>", table)
+        self.assertIn("<th>Category</th>", table)
+        self.assertIn("<th>Sub-Category</th>", table)
+        self.assertIn("<th>Description</th>", table)
 
-        # Check stacked format
-        self.assertIn("[**Another Resource**]", table)
-        self.assertIn("<br>by [Hook Author]", table)
+        # Check stacked format (now HTML)
+        self.assertIn("<b>Another Resource</b>", table)
+        self.assertIn("<br>by", table)
 
         # Check full description (no truncation)
         self.assertIn("A hooks resource", table)
 
+        # Check shields.io badges are present for GitHub resources
+        self.assertIn("img.shields.io/github/stars", table)
+        self.assertIn("?style=social", table)
+
     def test_generate_resources_table_empty_category(self):
         """Test resources table for empty category."""
         generator = ParameterizedFlatListGenerator(
-            self.csv_path, self.template_dir, self.assets_dir, self.temp_dir,
-            category_slug="clients", sort_type="az"  # No clients in test data
+            self.csv_path,
+            self.template_dir,
+            self.assets_dir,
+            self.temp_dir,
+            category_slug="clients",
+            sort_type="az",  # No clients in test data
         )
         generator.csv_data = generator.load_csv_data()
         table = generator.generate_resources_table()
@@ -308,8 +372,12 @@ class TestParameterizedFlatListGenerator(unittest.TestCase):
     def test_default_template_has_correct_paths(self):
         """Test default template uses correct relative paths."""
         generator = ParameterizedFlatListGenerator(
-            self.csv_path, self.template_dir, self.assets_dir, self.temp_dir,
-            category_slug="all", sort_type="az"
+            self.csv_path,
+            self.template_dir,
+            self.assets_dir,
+            self.temp_dir,
+            category_slug="all",
+            sort_type="az",
         )
         template = generator._get_default_template()
 
@@ -322,8 +390,12 @@ class TestParameterizedFlatListGenerator(unittest.TestCase):
     def test_releases_disclaimer_in_template(self):
         """Test releases view includes disclaimer."""
         generator = ParameterizedFlatListGenerator(
-            self.csv_path, self.template_dir, self.assets_dir, self.temp_dir,
-            category_slug="all", sort_type="releases"
+            self.csv_path,
+            self.template_dir,
+            self.assets_dir,
+            self.temp_dir,
+            category_slug="all",
+            sort_type="releases",
         )
         generator.csv_data = generator.load_csv_data()
 
@@ -364,7 +436,7 @@ class TestGenerateFlatBadges(unittest.TestCase):
         generate_flat_badges(self.temp_dir)
 
         badge_path = os.path.join(self.temp_dir, "badge-sort-az.svg")
-        with open(badge_path, "r", encoding="utf-8") as f:
+        with open(badge_path, encoding="utf-8") as f:
             content = f.read()
 
         self.assertIn("<svg", content)
@@ -376,7 +448,7 @@ class TestGenerateFlatBadges(unittest.TestCase):
         generate_flat_badges(self.temp_dir)
 
         badge_path = os.path.join(self.temp_dir, "badge-sort-az.svg")
-        with open(badge_path, "r", encoding="utf-8") as f:
+        with open(badge_path, encoding="utf-8") as f:
             content = f.read()
 
         display_name = FLAT_SORT_TYPES["az"][0]
@@ -387,7 +459,7 @@ class TestGenerateFlatBadges(unittest.TestCase):
         generate_flat_badges(self.temp_dir)
 
         badge_path = os.path.join(self.temp_dir, "badge-cat-hooks.svg")
-        with open(badge_path, "r", encoding="utf-8") as f:
+        with open(badge_path, encoding="utf-8") as f:
             content = f.read()
 
         display_name = FLAT_CATEGORIES["hooks"][1]
@@ -413,6 +485,7 @@ class TestReleasesSort(unittest.TestCase):
     def _create_csv_with_releases(self, rows):
         """Create CSV with release data."""
         import csv
+
         fieldnames = list(rows[0].keys()) if rows else []
         with open(self.csv_path, "w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -456,8 +529,12 @@ class TestReleasesSort(unittest.TestCase):
         self._create_csv_with_releases(rows)
 
         generator = ParameterizedFlatListGenerator(
-            self.csv_path, self.template_dir, self.assets_dir, self.temp_dir,
-            category_slug="all", sort_type="releases"
+            self.csv_path,
+            self.template_dir,
+            self.assets_dir,
+            self.temp_dir,
+            category_slug="all",
+            sort_type="releases",
         )
         generator.csv_data = generator.load_csv_data()
         resources = generator.get_filtered_resources()
@@ -518,8 +595,12 @@ class TestReleasesSort(unittest.TestCase):
         self._create_csv_with_releases(rows)
 
         generator = ParameterizedFlatListGenerator(
-            self.csv_path, self.template_dir, self.assets_dir, self.temp_dir,
-            category_slug="all", sort_type="releases"
+            self.csv_path,
+            self.template_dir,
+            self.assets_dir,
+            self.temp_dir,
+            category_slug="all",
+            sort_type="releases",
         )
         generator.csv_data = generator.load_csv_data()
         resources = generator.get_filtered_resources()
@@ -553,19 +634,32 @@ class TestReleasesSort(unittest.TestCase):
         self._create_csv_with_releases(rows)
 
         generator = ParameterizedFlatListGenerator(
-            self.csv_path, self.template_dir, self.assets_dir, self.temp_dir,
-            category_slug="all", sort_type="releases"
+            self.csv_path,
+            self.template_dir,
+            self.assets_dir,
+            self.temp_dir,
+            category_slug="all",
+            sort_type="releases",
         )
         generator.csv_data = generator.load_csv_data()
         table = generator.generate_resources_table()
 
-        # Check header columns
-        self.assertIn("| Resource | Version | Source | Release Date | Description |", table)
+        # Check HTML table header columns
+        self.assertIn("<table>", table)
+        self.assertIn("<th>Resource</th>", table)
+        self.assertIn("<th>Version</th>", table)
+        self.assertIn("<th>Source</th>", table)
+        self.assertIn("<th>Release Date</th>", table)
+        self.assertIn("<th>Description</th>", table)
 
         # Check content
         self.assertIn("v1.2.3", table)
         self.assertIn("npm", table)
         self.assertIn("Test Package", table)
+
+        # Check shields.io badges with colspan="5"
+        self.assertIn('colspan="5"', table)
+        self.assertIn("img.shields.io/github/stars", table)
 
 
 class TestCombinationGeneration(unittest.TestCase):
@@ -589,6 +683,7 @@ class TestCombinationGeneration(unittest.TestCase):
     def _create_minimal_csv(self):
         """Create minimal CSV for testing."""
         import csv
+
         rows = [
             {
                 "ID": "test-1",
@@ -616,8 +711,12 @@ class TestCombinationGeneration(unittest.TestCase):
             for sort_type in FLAT_SORT_TYPES:
                 with self.subTest(category=cat_slug, sort=sort_type):
                     generator = ParameterizedFlatListGenerator(
-                        self.csv_path, self.template_dir, self.assets_dir, self.temp_dir,
-                        category_slug=cat_slug, sort_type=sort_type
+                        self.csv_path,
+                        self.template_dir,
+                        self.assets_dir,
+                        self.temp_dir,
+                        category_slug=cat_slug,
+                        sort_type=sort_type,
                     )
                     self.assertIsNotNone(generator)
                     count += 1

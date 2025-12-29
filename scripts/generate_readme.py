@@ -17,7 +17,6 @@ from pathlib import Path
 import yaml  # type: ignore[import-untyped]
 from validate_links import parse_github_url  # type: ignore[import-not-found]
 
-
 # =============================================================================
 # FLAT LIST CONFIGURATION
 # =============================================================================
@@ -44,6 +43,64 @@ FLAT_SORT_TYPES = {
     "created": ("CREATED", "#34d399", "by date created"),
     "releases": ("RELEASES", "#f59e0b", "by latest release (30 days)"),
 }
+
+
+# =============================================================================
+# SHIELDS.IO BADGE HELPERS
+# =============================================================================
+
+
+def extract_github_owner_repo(url: str) -> tuple[str, str] | None:
+    """
+    Extract owner and repo from any GitHub URL.
+
+    Handles formats like:
+    - https://github.com/owner/repo
+    - https://github.com/owner/repo/
+    - https://github.com/owner/repo/blob/main/path/to/file
+    - https://github.com/owner/repo/tree/main/path
+
+    Returns (owner, repo) tuple or None if not a GitHub URL.
+    """
+    patterns = [
+        r"github\.com/([^/]+)/([^/]+?)(?:\.git)?/?$",  # repo root
+        r"github\.com/([^/]+)/([^/]+)/(?:blob|tree|issues|pull|releases)",  # with path
+        r"github\.com/([^/]+)/([^/]+)/?",  # general fallback
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, url)
+        if match:
+            owner, repo = match.groups()[:2]
+            # Clean up repo name (remove trailing path components if any)
+            repo = repo.split("/")[0].split("?")[0].split("#")[0]
+            if owner and repo:
+                return (owner, repo)
+    return None
+
+
+def generate_shields_badges(owner: str, repo: str) -> str:
+    """
+    Generate shields.io badge HTML for a GitHub repository.
+
+    Returns a string of <img> tags for all badges, with ?style=social.
+    """
+    badge_types = [
+        ("stars", f"https://img.shields.io/github/stars/{owner}/{repo}"),
+        ("forks", f"https://img.shields.io/github/forks/{owner}/{repo}"),
+        ("issues", f"https://img.shields.io/github/issues/{owner}/{repo}"),
+        ("prs", f"https://img.shields.io/github/issues-pr/{owner}/{repo}"),
+        ("created", f"https://img.shields.io/github/created-at/{owner}/{repo}"),
+        ("last-commit", f"https://img.shields.io/github/last-commit/{owner}/{repo}"),
+        ("release-date", f"https://img.shields.io/github/release-date/{owner}/{repo}"),
+        ("version", f"https://img.shields.io/github/v/release/{owner}/{repo}"),
+        ("license", f"https://img.shields.io/github/license/{owner}/{repo}"),
+    ]
+
+    badges = []
+    for alt, url in badge_types:
+        badges.append(f'<img src="{url}?style=social" alt="{alt}">')
+
+    return " ".join(badges)
 
 
 def load_template(template_path):
@@ -2500,7 +2557,9 @@ class ParameterizedFlatListGenerator(ReadmeGenerator):
                 last_modified = row.get("Last Modified", "").strip()
                 parsed = parse_resource_date(last_modified) if last_modified else None
                 with_dates.append((parsed, row))
-            with_dates.sort(key=lambda x: (x[0] is None, x[0] if x[0] else datetime.min), reverse=True)
+            with_dates.sort(
+                key=lambda x: (x[0] is None, x[0] if x[0] else datetime.min), reverse=True
+            )
             return [r for _, r in with_dates]
         elif self.sort_type == "created":
             with_dates = []
@@ -2508,7 +2567,9 @@ class ParameterizedFlatListGenerator(ReadmeGenerator):
                 repo_created = row.get("Repo Created", "").strip()
                 parsed = parse_resource_date(repo_created) if repo_created else None
                 with_dates.append((parsed, row))
-            with_dates.sort(key=lambda x: (x[0] is None, x[0] if x[0] else datetime.min), reverse=True)
+            with_dates.sort(
+                key=lambda x: (x[0] is None, x[0] if x[0] else datetime.min), reverse=True
+            )
             return [r for _, r in with_dates]
         elif self.sort_type == "releases":
             cutoff = datetime.now() - timedelta(days=self.DAYS_THRESHOLD)
@@ -2534,7 +2595,9 @@ class ParameterizedFlatListGenerator(ReadmeGenerator):
         for slug, (display, color, _) in FLAT_SORT_TYPES.items():
             filename = f"README_FLAT_{self.category_slug.upper()}_{slug.upper()}.md"
             is_selected = slug == self.sort_type
-            style = f' style="border: 3px solid {color}; border-radius: 6px;"' if is_selected else ""
+            style = (
+                f' style="border: 3px solid {color}; border-radius: 6px;"' if is_selected else ""
+            )
             lines.append(
                 f'  <a href="{filename}"><img src="../assets/badge-sort-{slug}.svg" alt="{display}" height="48"{style}></a>'
             )
@@ -2547,7 +2610,9 @@ class ParameterizedFlatListGenerator(ReadmeGenerator):
         for slug, (_, display, color) in FLAT_CATEGORIES.items():
             filename = f"README_FLAT_{slug.upper()}_{self.sort_type.upper()}.md"
             is_selected = slug == self.category_slug
-            style = f' style="border: 2px solid {color}; border-radius: 4px;"' if is_selected else ""
+            style = (
+                f' style="border: 2px solid {color}; border-radius: 4px;"' if is_selected else ""
+            )
             lines.append(
                 f'  <a href="{filename}"><img src="../assets/badge-cat-{slug}.svg" alt="{display}" height="28"{style}></a>'
             )
@@ -2571,7 +2636,7 @@ class ParameterizedFlatListGenerator(ReadmeGenerator):
 <p align="center"><em>Currently viewing: {current_info}</em></p>"""
 
     def generate_resources_table(self) -> str:
-        """Generate the resources table."""
+        """Generate the resources table as HTML with shields.io badges for GitHub resources."""
         resources = self.get_filtered_resources()
         sorted_resources = self.sort_resources(resources)
 
@@ -2580,54 +2645,101 @@ class ParameterizedFlatListGenerator(ReadmeGenerator):
                 return "*No releases in the past 30 days for this category.*"
             return "*No resources found in this category.*"
 
+        lines: list[str] = ["<table>", "<thead>", "<tr>"]
+
         # Different columns for releases vs other sorts
         if self.sort_type == "releases":
-            lines = ["| Resource | Version | Source | Release Date | Description |"]
-            lines.append("|----------|---------|--------|--------------|-------------|")
-            for row in sorted_resources:
-                display_name = row.get("Display Name", "").strip()
-                primary_link = row.get("Primary Link", "").strip()
-                author_name = row.get("Author Name", "").strip()
-                author_link = row.get("Author Link", "").strip()
+            num_cols = 5
+            lines.extend(
+                [
+                    "<th>Resource</th>",
+                    "<th>Version</th>",
+                    "<th>Source</th>",
+                    "<th>Release Date</th>",
+                    "<th>Description</th>",
+                ]
+            )
+        else:
+            num_cols = 4
+            lines.extend(
+                [
+                    "<th>Resource</th>",
+                    "<th>Category</th>",
+                    "<th>Sub-Category</th>",
+                    "<th>Description</th>",
+                ]
+            )
 
-                # Stacked format: Resource name + author
-                resource_link = f"[**{display_name}**]({primary_link})" if primary_link else f"**{display_name}**"
-                author_part = f"[{author_name}]({author_link})" if author_name and author_link else (author_name or "")
-                resource_cell = f"{resource_link}<br>by {author_part}" if author_part else resource_link
+        lines.extend(["</tr>", "</thead>", "<tbody>"])
 
+        for row in sorted_resources:
+            display_name = row.get("Display Name", "").strip()
+            primary_link = row.get("Primary Link", "").strip()
+            author_name = row.get("Author Name", "").strip()
+            author_link = row.get("Author Link", "").strip()
+
+            # Build resource cell with link and author
+            if primary_link:
+                resource_html = f'<a href="{primary_link}"><b>{display_name}</b></a>'
+            else:
+                resource_html = f"<b>{display_name}</b>"
+
+            if author_name and author_link:
+                author_html = f'<a href="{author_link}">{author_name}</a>'
+            else:
+                author_html = author_name or ""
+
+            if author_html:
+                resource_cell = f"{resource_html}<br>by {author_html}"
+            else:
+                resource_cell = resource_html
+
+            # Build the main row
+            lines.append("<tr>")
+            lines.append(f"<td>{resource_cell}</td>")
+
+            if self.sort_type == "releases":
                 version = row.get("Release Version", "").strip() or "-"
                 source = row.get("Release Source", "").strip()
                 source_display = {
-                    "github-releases": "GitHub", "npm": "npm", "pypi": "PyPI",
-                    "crates": "crates.io", "homebrew": "Homebrew", "readme": "README",
+                    "github-releases": "GitHub",
+                    "npm": "npm",
+                    "pypi": "PyPI",
+                    "crates": "crates.io",
+                    "homebrew": "Homebrew",
+                    "readme": "README",
                 }.get(source, source or "-")
+                release_date = (
+                    row.get("Latest Release", "")[:10] if row.get("Latest Release") else "-"
+                )
+                description = row.get("Description", "").strip()
 
-                release_date = row.get("Latest Release", "")[:10] if row.get("Latest Release") else "-"
-
-                description = row.get("Description", "").strip().replace("|", "\\|")
-
-                lines.append(f"| {resource_cell} | {version} | {source_display} | {release_date} | {description} |")
-        else:
-            lines = ["| Resource | Category | Sub-Category | Description |"]
-            lines.append("|----------|----------|--------------|-------------|")
-            for row in sorted_resources:
-                display_name = row.get("Display Name", "").strip()
-                primary_link = row.get("Primary Link", "").strip()
-                author_name = row.get("Author Name", "").strip()
-                author_link = row.get("Author Link", "").strip()
-
-                # Stacked format: Resource name + author
-                resource_link = f"[**{display_name}**]({primary_link})" if primary_link else f"**{display_name}**"
-                author_part = f"[{author_name}]({author_link})" if author_name and author_link else (author_name or "")
-                resource_cell = f"{resource_link}<br>by {author_part}" if author_part else resource_link
-
+                lines.append(f"<td>{version}</td>")
+                lines.append(f"<td>{source_display}</td>")
+                lines.append(f"<td>{release_date}</td>")
+                lines.append(f"<td>{description}</td>")
+            else:
                 category = row.get("Category", "").strip() or "-"
                 sub_category = row.get("Sub-Category", "").strip() or "-"
+                description = row.get("Description", "").strip()
 
-                description = row.get("Description", "").strip().replace("|", "\\|")
+                lines.append(f"<td>{category}</td>")
+                lines.append(f"<td>{sub_category}</td>")
+                lines.append(f"<td>{description}</td>")
 
-                lines.append(f"| {resource_cell} | {category} | {sub_category} | {description} |")
+            lines.append("</tr>")
 
+            # Add badge row for GitHub resources
+            if primary_link:
+                github_info = extract_github_owner_repo(primary_link)
+                if github_info:
+                    owner, repo = github_info
+                    badges = generate_shields_badges(owner, repo)
+                    lines.append("<tr>")
+                    lines.append(f'<td colspan="{num_cols}">{badges}</td>')
+                    lines.append("</tr>")
+
+        lines.extend(["</tbody>", "</table>"])
         return "\n".join(lines)
 
     def generate(self) -> tuple[int, str | None]:
@@ -2648,7 +2760,7 @@ class ParameterizedFlatListGenerator(ReadmeGenerator):
         resources = self.get_filtered_resources()
         sorted_resources = self.sort_resources(resources)
 
-        generated_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S UTC")
+        generated_date = datetime.now().strftime("%Y-%m-%d UTC")
         _, cat_display, _ = self._category_info
         _, sort_display, sort_desc = self._sort_info
 
@@ -2729,11 +2841,11 @@ def generate_flat_badges(assets_dir: str):
     """Generate all sort and category badge SVGs."""
     # Sort badges (larger)
     for slug, (display, color, _) in FLAT_SORT_TYPES.items():
-        svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="180" height="48" viewBox="0 0 180 48">
+        svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="180" height="48" viewBox="0 0 180 48">
   <rect x="0" y="0" width="180" height="48" fill="#1a1a2e"/>
   <rect x="0" y="0" width="6" height="48" fill="{color}"/>
   <text x="93" y="32" font-family="'SF Mono', 'Consolas', monospace" font-size="18" font-weight="700" fill="#e2e8f0" text-anchor="middle" letter-spacing="1">{display}</text>
-</svg>'''
+</svg>"""
         filepath = os.path.join(assets_dir, f"badge-sort-{slug}.svg")
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(svg)
@@ -2742,11 +2854,11 @@ def generate_flat_badges(assets_dir: str):
     for slug, (_, display, color) in FLAT_CATEGORIES.items():
         # Calculate width based on text length
         width = max(70, len(display) * 10 + 30)
-        svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="28" viewBox="0 0 {width} 28">
+        svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="28" viewBox="0 0 {width} 28">
   <rect x="0" y="0" width="{width}" height="28" fill="#27272a"/>
   <rect x="0" y="0" width="4" height="28" fill="{color}"/>
   <text x="{width // 2 + 2}" y="19" font-family="'SF Mono', 'Consolas', monospace" font-size="12" font-weight="600" fill="#d4d4d8" text-anchor="middle">{display}</text>
-</svg>'''
+</svg>"""
         filepath = os.path.join(assets_dir, f"badge-cat-{slug}.svg")
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(svg)
@@ -2792,8 +2904,12 @@ def main():
     for category_slug in FLAT_CATEGORIES:
         for sort_type in FLAT_SORT_TYPES:
             generator = ParameterizedFlatListGenerator(
-                csv_path, template_dir, assets_dir, str(repo_root),
-                category_slug=category_slug, sort_type=sort_type
+                csv_path,
+                template_dir,
+                assets_dir,
+                str(repo_root),
+                category_slug=category_slug,
+                sort_type=sort_type,
             )
             try:
                 resource_count, _ = generator.generate()

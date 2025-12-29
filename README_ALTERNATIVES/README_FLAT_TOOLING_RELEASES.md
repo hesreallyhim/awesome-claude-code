@@ -47,26 +47,172 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by latest rel
 >
 > If your project publishes to a package registry and isn't listed here, please [open an Issue](https://github.com/hesreallyhim/awesome-claude-code/issues).
 
-| Resource | Version | Source | Release Date | Description |
-|----------|---------|--------|--------------|-------------|
-| [**The Agentic Startup**](https://github.com/rsmdt/the-startup)<br>by [Rudolf Schmidt](https://github.com/rsmdt) | v2.6.2 | GitHub | 2025-12-25 | Yet Another Claude Orchestrator - a collection of agents, commands, etc., for shipping production code - but I like this because it's comprehensive, well-written, and one of the few resources that actually uses Output Styles! +10 points! |
-| [**Claude Squad**](https://github.com/smtg-ai/claude-squad)<br>by [smtg-ai](https://github.com/smtg-ai) | v1.0.14 | GitHub | 2025-12-24 | Claude Squad is a terminal app that manages multiple Claude Code, Codex (and other local agents including Aider) in separate workspaces, allowing you to work on multiple tasks simultaneously. |
-| [**VoiceMode MCP**](https://github.com/mbailey/voicemode)<br>by [Mike Bailey](https://github.com/mbailey) | v7.1.0 | GitHub | 2025-12-24 | VoiceMode MCP brings natural conversations to Claude Code. It supports any OpenAI API compatible voice services and installs free and open source voice services (Whisper.cpp and Kokoro-FastAPI). |
-| [**claude-code-tools**](https://github.com/pchalasani/claude-code-tools)<br>by [Prasad Chalasani](https://github.com/pchalasani) | v1.3.2 | GitHub | 2025-12-24 | A collection of awesome tools, including tmux integrations, better session management, hooks that enhance security - a really well-done set of Claude Code enhancers, especially for tmux users. |
-| [**Rulesync**](https://github.com/dyoshikawa/rulesync)<br>by [dyoshikawa](https://github.com/dyoshikawa) | v4.0.1 | GitHub | 2025-12-23 | A Node.js CLI tool that automatically generates configs (rules, ignore files, MCP servers, commands, and subagents) for various AI coding agents. Rulesync can convert configs between Claude Code and other AI agents in both directions. |
-| [**tweakcc**](https://github.com/Piebald-AI/tweakcc)<br>by [Piebald-AI](https://github.com/Piebald-AI) | v3.2.2 | GitHub | 2025-12-21 | Command-line tool to customize your Claude Code styling. |
-| [**crystal**](https://github.com/stravu/crystal)<br>by [stravu](https://github.com/stravu) | v0.3.4 | GitHub | 2025-12-19 | A full-fledged desktop application for orchestrating, monitoring, and interacting with Claude Code agents. |
-| [**Claude Task Master**](https://github.com/eyaltoledano/claude-task-master)<br>by [eyaltoledano](https://github.com/eyaltoledano) | task-master-ai@0.40.0 | GitHub | 2025-12-19 | A task management system for AI-driven development with Claude, designed to work seamlessly with Cursor AI. |
-| [**ccflare -> **better-ccflare****](https://github.com/tombii/better-ccflare/)<br>by [tombii](https://github.com/tombii) | v3.0.4 | GitHub | 2025-12-18 | A well-maintained and feature-enhanced fork of the glorious `ccflare` usage dashboard by @snipeship (which at the time of writing has not had an update in a few months). `better-ccflare` builds on this foundation with some performance enhancements, extended provider support, bug fixes, Docker deployment, and more. |
-| [**Claude Swarm**](https://github.com/parruda/claude-swarm)<br>by [parruda](https://github.com/parruda) | swarm_sdk-v2.7.4 | GitHub | 2025-12-18 | Launch Claude Code session that is connected to a swarm of Claude Code Agents. |
-| [**viwo-cli**](https://github.com/OverseedAI/viwo)<br>by [Hal Shin](https://github.com/hal-shin) | v0.3.2 | GitHub | 2025-12-16 | Run Claude Code in a Docker container with git worktrees as volume mounts to enable safer usage of `--dangerously-skip-permissions` for frictionless one-shotting prompts. Allows users to spin up multiple instances of Claude Code in the background easily with reduced permission fatigue. |
-| [**CC Usage**](https://github.com/ryoppippi/ccusage)<br>by [ryoppippi](https://github.com/ryoppippi) | v17.2.0 | GitHub | 2025-12-11 | Handy CLI tool for managing and analyzing Claude Code usage, based on analyzing local Claude Code logs. Presents a nice dashboard regarding cost information, token consumption, etc. |
-| [**recall**](https://github.com/zippoxer/recall)<br>by [zippoxer](https://github.com/zippoxer) | v0.4.1 | GitHub | 2025-12-09 | Full-text search your Claude Code sessions. Run `recall` in terminal, type to search, Enter to resume. Alternative to `claude --resume`. |
-| [**Vibe-Log**](https://github.com/vibe-log/vibe-log-cli)<br>by [Vibe-Log](https://github.com/vibe-log) | v0.8.6 | GitHub | 2025-12-05 | Analyzes your Claude Code prompts locally (using CC), provides intelligent session analysis and actionable strategic guidance - works in the statusline and produces very pretty HTML reports as well. Easy to install and remove. |
-| [**TSK - AI Agent Task Manager and Sandbox**](https://github.com/dtormoen/tsk)<br>by [dtormoen](https://github.com/dtormoen) | v0.6.2 | GitHub | 2025-12-03 | A Rust CLI tool that lets you delegate development tasks to AI agents running in sandboxed Docker environments. Multiple agents work in parallel, returning git branches for human review. |
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Version</th>
+<th>Source</th>
+<th>Release Date</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/rsmdt/the-startup"><b>The Agentic Startup</b></a><br>by <a href="https://github.com/rsmdt">Rudolf Schmidt</a></td>
+<td>v2.6.2</td>
+<td>GitHub</td>
+<td>2025-12-25</td>
+<td>Yet Another Claude Orchestrator - a collection of agents, commands, etc., for shipping production code - but I like this because it's comprehensive, well-written, and one of the few resources that actually uses Output Styles! +10 points!</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/rsmdt/the-startup?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/rsmdt/the-startup?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/rsmdt/the-startup?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/rsmdt/the-startup?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/rsmdt/the-startup?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/rsmdt/the-startup?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/rsmdt/the-startup?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/rsmdt/the-startup?style=social" alt="version"> <img src="https://img.shields.io/github/license/rsmdt/the-startup?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/smtg-ai/claude-squad"><b>Claude Squad</b></a><br>by <a href="https://github.com/smtg-ai">smtg-ai</a></td>
+<td>v1.0.14</td>
+<td>GitHub</td>
+<td>2025-12-24</td>
+<td>Claude Squad is a terminal app that manages multiple Claude Code, Codex (and other local agents including Aider) in separate workspaces, allowing you to work on multiple tasks simultaneously.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/smtg-ai/claude-squad?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/smtg-ai/claude-squad?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/smtg-ai/claude-squad?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/smtg-ai/claude-squad?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/smtg-ai/claude-squad?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/smtg-ai/claude-squad?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/smtg-ai/claude-squad?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/smtg-ai/claude-squad?style=social" alt="version"> <img src="https://img.shields.io/github/license/smtg-ai/claude-squad?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/mbailey/voicemode"><b>VoiceMode MCP</b></a><br>by <a href="https://github.com/mbailey">Mike Bailey</a></td>
+<td>v7.1.0</td>
+<td>GitHub</td>
+<td>2025-12-24</td>
+<td>VoiceMode MCP brings natural conversations to Claude Code. It supports any OpenAI API compatible voice services and installs free and open source voice services (Whisper.cpp and Kokoro-FastAPI).</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/mbailey/voicemode?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/mbailey/voicemode?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/mbailey/voicemode?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/mbailey/voicemode?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/mbailey/voicemode?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/mbailey/voicemode?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/mbailey/voicemode?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/mbailey/voicemode?style=social" alt="version"> <img src="https://img.shields.io/github/license/mbailey/voicemode?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/pchalasani/claude-code-tools"><b>claude-code-tools</b></a><br>by <a href="https://github.com/pchalasani">Prasad Chalasani</a></td>
+<td>v1.3.2</td>
+<td>GitHub</td>
+<td>2025-12-24</td>
+<td>A collection of awesome tools, including tmux integrations, better session management, hooks that enhance security - a really well-done set of Claude Code enhancers, especially for tmux users.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/pchalasani/claude-code-tools?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/pchalasani/claude-code-tools?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/pchalasani/claude-code-tools?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/pchalasani/claude-code-tools?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/pchalasani/claude-code-tools?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/pchalasani/claude-code-tools?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/pchalasani/claude-code-tools?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/pchalasani/claude-code-tools?style=social" alt="version"> <img src="https://img.shields.io/github/license/pchalasani/claude-code-tools?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/dyoshikawa/rulesync"><b>Rulesync</b></a><br>by <a href="https://github.com/dyoshikawa">dyoshikawa</a></td>
+<td>v4.0.1</td>
+<td>GitHub</td>
+<td>2025-12-23</td>
+<td>A Node.js CLI tool that automatically generates configs (rules, ignore files, MCP servers, commands, and subagents) for various AI coding agents. Rulesync can convert configs between Claude Code and other AI agents in both directions.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/dyoshikawa/rulesync?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/dyoshikawa/rulesync?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/dyoshikawa/rulesync?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/dyoshikawa/rulesync?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/dyoshikawa/rulesync?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/dyoshikawa/rulesync?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/dyoshikawa/rulesync?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/dyoshikawa/rulesync?style=social" alt="version"> <img src="https://img.shields.io/github/license/dyoshikawa/rulesync?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Piebald-AI/tweakcc"><b>tweakcc</b></a><br>by <a href="https://github.com/Piebald-AI">Piebald-AI</a></td>
+<td>v3.2.2</td>
+<td>GitHub</td>
+<td>2025-12-21</td>
+<td>Command-line tool to customize your Claude Code styling.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/Piebald-AI/tweakcc?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/Piebald-AI/tweakcc?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/Piebald-AI/tweakcc?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Piebald-AI/tweakcc?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/Piebald-AI/tweakcc?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/Piebald-AI/tweakcc?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Piebald-AI/tweakcc?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/Piebald-AI/tweakcc?style=social" alt="version"> <img src="https://img.shields.io/github/license/Piebald-AI/tweakcc?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/stravu/crystal"><b>crystal</b></a><br>by <a href="https://github.com/stravu">stravu</a></td>
+<td>v0.3.4</td>
+<td>GitHub</td>
+<td>2025-12-19</td>
+<td>A full-fledged desktop application for orchestrating, monitoring, and interacting with Claude Code agents.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/stravu/crystal?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/stravu/crystal?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/stravu/crystal?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/stravu/crystal?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/stravu/crystal?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/stravu/crystal?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/stravu/crystal?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/stravu/crystal?style=social" alt="version"> <img src="https://img.shields.io/github/license/stravu/crystal?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/eyaltoledano/claude-task-master"><b>Claude Task Master</b></a><br>by <a href="https://github.com/eyaltoledano">eyaltoledano</a></td>
+<td>task-master-ai@0.40.0</td>
+<td>GitHub</td>
+<td>2025-12-19</td>
+<td>A task management system for AI-driven development with Claude, designed to work seamlessly with Cursor AI.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/eyaltoledano/claude-task-master?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/eyaltoledano/claude-task-master?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/eyaltoledano/claude-task-master?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/eyaltoledano/claude-task-master?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/eyaltoledano/claude-task-master?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/eyaltoledano/claude-task-master?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/eyaltoledano/claude-task-master?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/eyaltoledano/claude-task-master?style=social" alt="version"> <img src="https://img.shields.io/github/license/eyaltoledano/claude-task-master?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/tombii/better-ccflare/"><b>ccflare -> **better-ccflare**</b></a><br>by <a href="https://github.com/tombii">tombii</a></td>
+<td>v3.0.4</td>
+<td>GitHub</td>
+<td>2025-12-18</td>
+<td>A well-maintained and feature-enhanced fork of the glorious `ccflare` usage dashboard by @snipeship (which at the time of writing has not had an update in a few months). `better-ccflare` builds on this foundation with some performance enhancements, extended provider support, bug fixes, Docker deployment, and more.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/tombii/better-ccflare?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/tombii/better-ccflare?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/tombii/better-ccflare?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/tombii/better-ccflare?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/tombii/better-ccflare?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/tombii/better-ccflare?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/tombii/better-ccflare?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/tombii/better-ccflare?style=social" alt="version"> <img src="https://img.shields.io/github/license/tombii/better-ccflare?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/parruda/claude-swarm"><b>Claude Swarm</b></a><br>by <a href="https://github.com/parruda">parruda</a></td>
+<td>swarm_sdk-v2.7.4</td>
+<td>GitHub</td>
+<td>2025-12-18</td>
+<td>Launch Claude Code session that is connected to a swarm of Claude Code Agents.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/parruda/claude-swarm?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/parruda/claude-swarm?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/parruda/claude-swarm?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/parruda/claude-swarm?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/parruda/claude-swarm?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/parruda/claude-swarm?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/parruda/claude-swarm?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/parruda/claude-swarm?style=social" alt="version"> <img src="https://img.shields.io/github/license/parruda/claude-swarm?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/OverseedAI/viwo"><b>viwo-cli</b></a><br>by <a href="https://github.com/hal-shin">Hal Shin</a></td>
+<td>v0.3.2</td>
+<td>GitHub</td>
+<td>2025-12-16</td>
+<td>Run Claude Code in a Docker container with git worktrees as volume mounts to enable safer usage of `--dangerously-skip-permissions` for frictionless one-shotting prompts. Allows users to spin up multiple instances of Claude Code in the background easily with reduced permission fatigue.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/OverseedAI/viwo?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/OverseedAI/viwo?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/OverseedAI/viwo?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/OverseedAI/viwo?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/OverseedAI/viwo?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/OverseedAI/viwo?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/OverseedAI/viwo?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/OverseedAI/viwo?style=social" alt="version"> <img src="https://img.shields.io/github/license/OverseedAI/viwo?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ryoppippi/ccusage"><b>CC Usage</b></a><br>by <a href="https://github.com/ryoppippi">ryoppippi</a></td>
+<td>v17.2.0</td>
+<td>GitHub</td>
+<td>2025-12-11</td>
+<td>Handy CLI tool for managing and analyzing Claude Code usage, based on analyzing local Claude Code logs. Presents a nice dashboard regarding cost information, token consumption, etc.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/ryoppippi/ccusage?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/ryoppippi/ccusage?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/ryoppippi/ccusage?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ryoppippi/ccusage?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/ryoppippi/ccusage?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/ryoppippi/ccusage?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ryoppippi/ccusage?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/ryoppippi/ccusage?style=social" alt="version"> <img src="https://img.shields.io/github/license/ryoppippi/ccusage?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/zippoxer/recall"><b>recall</b></a><br>by <a href="https://github.com/zippoxer">zippoxer</a></td>
+<td>v0.4.1</td>
+<td>GitHub</td>
+<td>2025-12-09</td>
+<td>Full-text search your Claude Code sessions. Run `recall` in terminal, type to search, Enter to resume. Alternative to `claude --resume`.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/zippoxer/recall?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/zippoxer/recall?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/zippoxer/recall?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/zippoxer/recall?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/zippoxer/recall?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/zippoxer/recall?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/zippoxer/recall?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/zippoxer/recall?style=social" alt="version"> <img src="https://img.shields.io/github/license/zippoxer/recall?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/vibe-log/vibe-log-cli"><b>Vibe-Log</b></a><br>by <a href="https://github.com/vibe-log">Vibe-Log</a></td>
+<td>v0.8.6</td>
+<td>GitHub</td>
+<td>2025-12-05</td>
+<td>Analyzes your Claude Code prompts locally (using CC), provides intelligent session analysis and actionable strategic guidance - works in the statusline and produces very pretty HTML reports as well. Easy to install and remove.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/vibe-log/vibe-log-cli?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/vibe-log/vibe-log-cli?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/vibe-log/vibe-log-cli?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/vibe-log/vibe-log-cli?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/vibe-log/vibe-log-cli?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/vibe-log/vibe-log-cli?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/vibe-log/vibe-log-cli?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/vibe-log/vibe-log-cli?style=social" alt="version"> <img src="https://img.shields.io/github/license/vibe-log/vibe-log-cli?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/dtormoen/tsk"><b>TSK - AI Agent Task Manager and Sandbox</b></a><br>by <a href="https://github.com/dtormoen">dtormoen</a></td>
+<td>v0.6.2</td>
+<td>GitHub</td>
+<td>2025-12-03</td>
+<td>A Rust CLI tool that lets you delegate development tasks to AI agents running in sandboxed Docker environments. Multiple agents work in parallel, returning git branches for human review.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/dtormoen/tsk?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/dtormoen/tsk?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/dtormoen/tsk?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/dtormoen/tsk?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/dtormoen/tsk?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/dtormoen/tsk?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/dtormoen/tsk?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/dtormoen/tsk?style=social" alt="version"> <img src="https://img.shields.io/github/license/dtormoen/tsk?style=social" alt="license"></td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 **Total Resources:** 15
 
-**Last Generated:** 2025-12-25 19:35:26 UTC
+**Last Generated:** 2025-12-28 UTC

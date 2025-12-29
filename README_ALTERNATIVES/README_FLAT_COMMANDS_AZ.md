@@ -43,55 +43,417 @@ A flat list view of all resources. Category: **Commands** | Sorted: alphabetical
 
 ## Resources
 
-| Resource | Category | Sub-Category | Description |
-|----------|----------|--------------|-------------|
-| [**/add-to-changelog**](https://github.com/berrydev-ai/blockdoc-python/blob/main/.claude/commands/add-to-changelog.md)<br>by [berrydev-ai](https://github.com/berrydev-ai) | Slash-Commands | Documentation & Changelogs | Adds new entries to changelog files while maintaining format consistency, properly documenting changes, and following established project standards for version tracking. |
-| [**/analyze-issue**](https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/analyze-issue.md)<br>by [jerseycheese](https://github.com/jerseycheese) | Slash-Commands | Version Control & Git | Fetches GitHub issue details to create comprehensive implementation specifications, analyzing requirements and planning structured approach with clear implementation steps. |
-| [**/check**](https://github.com/rygwdn/slack-tools/blob/main/.claude/commands/check.md)<br>by [rygwdn](https://github.com/rygwdn) | Slash-Commands | Code Analysis & Testing | Performs comprehensive code quality and security checks, featuring static analysis integration, security vulnerability scanning, code style enforcement, and detailed reporting. |
-| [**/code_analysis**](https://github.com/kingler/n8n_agent/blob/main/.claude/commands/code_analysis.md)<br>by [kingler](https://github.com/kingler) | Slash-Commands | Code Analysis & Testing | Provides a menu of advanced code analysis commands for deep inspection, including knowledge graph generation, optimization suggestions, and quality evaluation. |
-| [**/commit**](https://github.com/evmts/tevm-monorepo/blob/main/.claude/commands/commit.md)<br>by [evmts](https://github.com/evmts) | Slash-Commands | Version Control & Git | Creates git commits using conventional commit format with appropriate emojis, following project standards and creating descriptive messages that explain the purpose of changes. |
-| [**/commit-fast**](https://github.com/steadycursor/steadystart/blob/main/.claude/commands/2-commit-fast.md)<br>by [steadycursor](https://github.com/steadycursor) | Slash-Commands | Version Control & Git | Automates git commit process by selecting the first suggested message, generating structured commits with consistent formatting while skipping manual confirmation and removing Claude co-Contributorship footer |
-| [**/context-prime**](https://github.com/elizaOS/elizaos.github.io/blob/main/.claude/commands/context-prime.md)<br>by [elizaOS](https://github.com/elizaOS) | Slash-Commands | Context Loading & Priming | Primes Claude with comprehensive project understanding by loading repository structure, setting development context, establishing project goals, and defining collaboration parameters. |
-| [**/create-command**](https://github.com/scopecraft/command/blob/main/.claude/commands/create-command.md)<br>by [scopecraft](https://github.com/scopecraft) | Slash-Commands | Project & Task Management | Guides Claude through creating new custom commands with proper structure by analyzing requirements, templating commands by category, enforcing command standards, and creating supporting documentation. |
-| [**/create-docs**](https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/create-docs.md)<br>by [jerseycheese](https://github.com/jerseycheese) | Slash-Commands | Documentation & Changelogs | Analyzes code structure and purpose to create comprehensive documentation detailing inputs/outputs, behavior, user interaction flows, and edge cases with error handling. |
-| [**/create-hook**](https://github.com/omril321/automated-notebooklm/blob/main/.claude/commands/create-hook.md)<br>by [Omri Lavi](https://github.com/omril321) | Slash-Commands | General | Slash command for hook creation - intelligently prompts you through the creation process with smart suggestions based on your project setup (TS, Prettier, ESLint...). |
-| [**/create-jtbd**](https://github.com/taddyorg/inkverse/blob/main/.claude/commands/create-jtbd.md)<br>by [taddyorg](https://github.com/taddyorg) | Slash-Commands | Project & Task Management | Creates Jobs-to-be-Done frameworks that outline user needs with structured format, focusing on specific user problems and organizing by job categories for product development. |
-| [**/create-pr**](https://github.com/toyamarinyon/giselle/blob/main/.claude/commands/create-pr.md)<br>by [toyamarinyon](https://github.com/toyamarinyon) | Slash-Commands | Version Control & Git | Streamlines pull request creation by handling the entire workflow: creating a new branch, committing changes, formatting modified files with Biome, and submitting the PR. |
-| [**/create-prd**](https://github.com/taddyorg/inkverse/blob/main/.claude/commands/create-prd.md)<br>by [taddyorg](https://github.com/taddyorg) | Slash-Commands | Project & Task Management | Generates comprehensive product requirement documents outlining detailed specifications, requirements, and features following standardized document structure and format. |
-| [**/create-prp**](https://github.com/Wirasm/claudecode-utils/blob/main/.claude/commands/create-prp.md)<br>by [Wirasm](https://github.com/Wirasm) | Slash-Commands | Project & Task Management | Creates product requirement plans by reading PRP methodology, following template structure, creating comprehensive requirements, and structuring product definitions for development. |
-| [**/create-pull-request**](https://github.com/liam-hq/liam/blob/main/.claude/commands/create-pull-request.md)<br>by [liam-hq](https://github.com/liam-hq) | Slash-Commands | Version Control & Git | Provides comprehensive PR creation guidance with GitHub CLI, enforcing title conventions, following template structure, and offering concrete command examples with best practices. |
-| [**/create-worktrees**](https://github.com/evmts/tevm-monorepo/blob/main/.claude/commands/create-worktrees.md)<br>by [evmts](https://github.com/evmts) | Slash-Commands | Version Control & Git | Creates git worktrees for all open PRs or specific branches, handling branches with slashes, cleaning up stale worktrees, and supporting custom branch creation for development. |
-| [**/do-issue**](https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/do-issue.md)<br>by [jerseycheese](https://github.com/jerseycheese) | Slash-Commands | Project & Task Management | Implements GitHub issues with manual review points, following a structured approach with issue number parameter and offering alternative automated mode for efficiency. |
-| [**/docs**](https://github.com/slunsford/coffee-analytics/blob/main/.claude/commands/docs.md)<br>by [slunsford](https://github.com/slunsford) | Slash-Commands | Documentation & Changelogs | Generates comprehensive documentation that follows project structure, documenting APIs and usage patterns with consistent formatting for better user understanding. |
-| [**/explain-issue-fix**](https://github.com/hackdays-io/toban-contribution-viewer/blob/main/.claude/commands/explain-issue-fix.md)<br>by [hackdays-io](https://github.com/hackdays-io) | Slash-Commands | Documentation & Changelogs | Documents solution approaches for GitHub issues, explaining technical decisions, detailing challenges overcome, and providing implementation context for better understanding. |
-| [**/fix-github-issue**](https://github.com/jeremymailen/kotlinter-gradle/blob/master/.claude/commands/fix-github-issue.md)<br>by [jeremymailen](https://github.com/jeremymailen) | Slash-Commands | Version Control & Git | Analyzes and fixes GitHub issues using a structured approach with GitHub CLI for issue details, implementing necessary code changes, running tests, and creating proper commit messages. |
-| [**/fix-issue**](https://github.com/metabase/metabase/blob/master/.claude/commands/fix-issue.md)<br>by [metabase](https://github.com/metabase) | Slash-Commands | Version Control & Git | Addresses GitHub issues by taking issue number as parameter, analyzing context, implementing solution, and testing/validating the fix for proper integration. |
-| [**/fix-pr**](https://github.com/metabase/metabase/blob/master/.claude/commands/fix-pr.md)<br>by [metabase](https://github.com/metabase) | Slash-Commands | Version Control & Git | Fetches and fixes unresolved PR comments by automatically retrieving feedback, addressing reviewer concerns, making targeted code improvements, and streamlining the review process. |
-| [**/fixing_go_in_graph**](https://github.com/Mjvolk3/torchcell/blob/main/.claude/commands/fixing_go_in_graph.md)<br>by [Mjvolk3](https://github.com/Mjvolk3) | Slash-Commands | Miscellaneous | Focuses on Gene Ontology annotation integration in graph databases, handling multiple data sources, addressing graph representation issues, and ensuring correct data incorporation. |
-| [**/husky**](https://github.com/evmts/tevm-monorepo/blob/main/.claude/commands/husky.md)<br>by [evmts](https://github.com/evmts) | Slash-Commands | Version Control & Git | Sets up and manages Husky Git hooks by configuring pre-commit hooks, establishing commit message standards, integrating with linting tools, and ensuring code quality on commits. |
-| [**/initref**](https://github.com/okuvshynov/cubestat/blob/main/.claude/commands/initref.md)<br>by [okuvshynov](https://github.com/okuvshynov) | Slash-Commands | Context Loading & Priming | Initializes reference documentation structure with standard doc templates, API reference setup, documentation conventions, and placeholder content generation. |
-| [**/linux-desktop-slash-commands**](https://github.com/danielrosehill/Claude-Code-Linux-Desktop-Slash-Commands)<br>by [Daniel Rosehill](https://github.com/danielrosehill) | Slash-Commands | General | A library of slash commands intended specifically to facilitate common and advanced operations on Linux desktop environments (although many would also be useful on Linux servers). Command groups include hardware benchmarking, filesystem organisation, and security posture validation. |
-| [**/load-llms-txt**](https://github.com/ethpandaops/xatu-data/blob/master/.claude/commands/load-llms-txt.md)<br>by [ethpandaops](https://github.com/ethpandaops) | Slash-Commands | Context Loading & Priming | Loads LLM configuration files to context, importing specific terminology, model configurations, and establishing baseline terminology for AI discussions. |
-| [**/load_coo_context**](https://github.com/Mjvolk3/torchcell/blob/main/.claude/commands/load_coo_context.md)<br>by [Mjvolk3](https://github.com/Mjvolk3) | Slash-Commands | Context Loading & Priming | References specific files for sparse matrix operations, explains transform usage, compares with previous approaches, and sets data formatting context for development. |
-| [**/load_dango_pipeline**](https://github.com/Mjvolk3/torchcell/blob/main/.claude/commands/load_dango_pipeline.md)<br>by [Mjvolk3](https://github.com/Mjvolk3) | Slash-Commands | Context Loading & Priming | Sets context for model training by referencing pipeline files, establishing working context, and preparing for pipeline work with relevant documentation. |
-| [**/mermaid**](https://github.com/GaloyMoney/lana-bank/blob/main/.claude/commands/mermaid.md)<br>by [GaloyMoney](https://github.com/GaloyMoney) | Slash-Commands | Miscellaneous | Generates Mermaid diagrams from SQL schema files, creating entity relationship diagrams with table properties, validating diagram compilation, and ensuring complete entity coverage. |
-| [**/optimize**](https://github.com/to4iki/ai-project-rules/blob/main/.claude/commands/optimize.md)<br>by [to4iki](https://github.com/to4iki) | Slash-Commands | Code Analysis & Testing | Analyzes code performance to identify bottlenecks, proposing concrete optimizations with implementation guidance for improved application performance. |
-| [**/prime**](https://github.com/yzyydev/AI-Engineering-Structure/blob/main/.claude/commands/prime.md)<br>by [yzyydev](https://github.com/yzyydev) | Slash-Commands | Context Loading & Priming | Sets up initial project context by viewing directory structure and reading key files, creating standardized context with directory visualization and key documentation focus. |
-| [**/project_hello_w_name**](https://github.com/disler/just-prompt/blob/main/.claude/commands/project_hello_w_name.md)<br>by [disler](https://github.com/disler) | Slash-Commands | Project & Task Management | Creates customizable greeting components with name input, demonstrating argument passing, component reusability, state management, and user input handling. |
-| [**/release**](https://github.com/kelp/webdown/blob/main/.claude/commands/release.md)<br>by [kelp](https://github.com/kelp) | Slash-Commands | CI / Deployment | Manages software releases by updating changelogs, reviewing README changes, evaluating version increments, and documenting release changes for better version tracking. |
-| [**/repro-issue**](https://github.com/rzykov/metabase/blob/master/.claude/commands/repro-issue.md)<br>by [rzykov](https://github.com/rzykov) | Slash-Commands | Code Analysis & Testing | Creates reproducible test cases for GitHub issues, ensuring tests fail reliably and documenting clear reproduction steps for developers. |
-| [**/review_dcell_model**](https://github.com/Mjvolk3/torchcell/blob/main/.claude/commands/review_dcell_model.md)<br>by [Mjvolk3](https://github.com/Mjvolk3) | Slash-Commands | Miscellaneous | Reviews old Dcell implementation files, comparing with newer Dango model, noting changes over time, and analyzing refactoring approaches for better code organization. |
-| [**/rsi**](https://github.com/ddisisto/si/blob/main/.claude/commands/rsi.md)<br>by [ddisisto](https://github.com/ddisisto) | Slash-Commands | Context Loading & Priming | Reads all commands and key project files to optimize AI-assisted development by streamlining the process, loading command context, and setting up for better development workflow. |
-| [**/run-ci**](https://github.com/hackdays-io/toban-contribution-viewer/blob/main/.claude/commands/run-ci.md)<br>by [hackdays-io](https://github.com/hackdays-io) | Slash-Commands | CI / Deployment | Activates virtual environments, runs CI-compatible check scripts, iteratively fixes errors, and ensures all tests pass before completion. |
-| [**/tdd**](https://github.com/zscott/pane/blob/main/.claude/commands/tdd.md)<br>by [zscott](https://github.com/zscott) | Slash-Commands | Code Analysis & Testing | Guides development using Test-Driven Development principles, enforcing Red-Green-Refactor discipline, integrating with git workflow, and managing PR creation. |
-| [**/tdd-implement**](https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/tdd-implement.md)<br>by [jerseycheese](https://github.com/jerseycheese) | Slash-Commands | Code Analysis & Testing | Implements Test-Driven Development by analyzing feature requirements, creating tests first (red), implementing minimal passing code (green), and refactoring while maintaining tests. |
-| [**/todo**](https://github.com/chrisleyva/todo-slash-command/blob/main/todo.md)<br>by [chrisleyva](https://github.com/chrisleyva) | Slash-Commands | Project & Task Management | A convenient command to quickly manage project todo items without leaving the Claude Code interface, featuring due dates, sorting, task prioritization, and comprehensive todo list management. |
-| [**/update-branch-name**](https://github.com/giselles-ai/giselle/blob/main/.claude/commands/update-branch-name.md)<br>by [giselles-ai](https://github.com/giselles-ai) | Slash-Commands | Version Control & Git | Updates branch names with proper prefixes and formats, enforcing naming conventions, supporting semantic prefixes, and managing remote branch updates. |
-| [**/update-docs**](https://github.com/Consiliency/Flutter-Structurizr/blob/main/.claude/commands/update-docs.md)<br>by [Consiliency](https://github.com/Consiliency) | Slash-Commands | Documentation & Changelogs | Reviews current documentation status, updates implementation progress, reviews phase documents, and maintains documentation consistency across the project. |
-| [**/use-stepper**](https://github.com/zuplo/docs/blob/main/.claude/commands/use-stepper.md)<br>by [zuplo](https://github.com/zuplo) | Slash-Commands | Miscellaneous | Reformats documentation to use React Stepper component, transforming heading formats, applying proper indentation, and maintaining markdown compatibility with admonition formatting. |
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Category</th>
+<th>Sub-Category</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/berrydev-ai/blockdoc-python/blob/main/.claude/commands/add-to-changelog.md"><b>/add-to-changelog</b></a><br>by <a href="https://github.com/berrydev-ai">berrydev-ai</a></td>
+<td>Slash-Commands</td>
+<td>Documentation & Changelogs</td>
+<td>Adds new entries to changelog files while maintaining format consistency, properly documenting changes, and following established project standards for version tracking.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/berrydev-ai/blockdoc-python?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/berrydev-ai/blockdoc-python?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/berrydev-ai/blockdoc-python?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/berrydev-ai/blockdoc-python?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/berrydev-ai/blockdoc-python?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/berrydev-ai/blockdoc-python?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/berrydev-ai/blockdoc-python?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/berrydev-ai/blockdoc-python?style=social" alt="version"> <img src="https://img.shields.io/github/license/berrydev-ai/blockdoc-python?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/analyze-issue.md"><b>/analyze-issue</b></a><br>by <a href="https://github.com/jerseycheese">jerseycheese</a></td>
+<td>Slash-Commands</td>
+<td>Version Control & Git</td>
+<td>Fetches GitHub issue details to create comprehensive implementation specifications, analyzing requirements and planning structured approach with clear implementation steps.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/jerseycheese/Narraitor?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/jerseycheese/Narraitor?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/jerseycheese/Narraitor?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jerseycheese/Narraitor?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/jerseycheese/Narraitor?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/jerseycheese/Narraitor?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jerseycheese/Narraitor?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/jerseycheese/Narraitor?style=social" alt="version"> <img src="https://img.shields.io/github/license/jerseycheese/Narraitor?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/rygwdn/slack-tools/blob/main/.claude/commands/check.md"><b>/check</b></a><br>by <a href="https://github.com/rygwdn">rygwdn</a></td>
+<td>Slash-Commands</td>
+<td>Code Analysis & Testing</td>
+<td>Performs comprehensive code quality and security checks, featuring static analysis integration, security vulnerability scanning, code style enforcement, and detailed reporting.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/rygwdn/slack-tools?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/rygwdn/slack-tools?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/rygwdn/slack-tools?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/rygwdn/slack-tools?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/rygwdn/slack-tools?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/rygwdn/slack-tools?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/rygwdn/slack-tools?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/rygwdn/slack-tools?style=social" alt="version"> <img src="https://img.shields.io/github/license/rygwdn/slack-tools?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/kingler/n8n_agent/blob/main/.claude/commands/code_analysis.md"><b>/code_analysis</b></a><br>by <a href="https://github.com/kingler">kingler</a></td>
+<td>Slash-Commands</td>
+<td>Code Analysis & Testing</td>
+<td>Provides a menu of advanced code analysis commands for deep inspection, including knowledge graph generation, optimization suggestions, and quality evaluation.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/kingler/n8n_agent?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/kingler/n8n_agent?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/kingler/n8n_agent?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/kingler/n8n_agent?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/kingler/n8n_agent?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/kingler/n8n_agent?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/kingler/n8n_agent?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/kingler/n8n_agent?style=social" alt="version"> <img src="https://img.shields.io/github/license/kingler/n8n_agent?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/evmts/tevm-monorepo/blob/main/.claude/commands/commit.md"><b>/commit</b></a><br>by <a href="https://github.com/evmts">evmts</a></td>
+<td>Slash-Commands</td>
+<td>Version Control & Git</td>
+<td>Creates git commits using conventional commit format with appropriate emojis, following project standards and creating descriptive messages that explain the purpose of changes.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/evmts/tevm-monorepo?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/evmts/tevm-monorepo?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/evmts/tevm-monorepo?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/evmts/tevm-monorepo?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/evmts/tevm-monorepo?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/evmts/tevm-monorepo?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/evmts/tevm-monorepo?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/evmts/tevm-monorepo?style=social" alt="version"> <img src="https://img.shields.io/github/license/evmts/tevm-monorepo?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/steadycursor/steadystart/blob/main/.claude/commands/2-commit-fast.md"><b>/commit-fast</b></a><br>by <a href="https://github.com/steadycursor">steadycursor</a></td>
+<td>Slash-Commands</td>
+<td>Version Control & Git</td>
+<td>Automates git commit process by selecting the first suggested message, generating structured commits with consistent formatting while skipping manual confirmation and removing Claude co-Contributorship footer</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/steadycursor/steadystart?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/steadycursor/steadystart?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/steadycursor/steadystart?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/steadycursor/steadystart?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/steadycursor/steadystart?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/steadycursor/steadystart?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/steadycursor/steadystart?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/steadycursor/steadystart?style=social" alt="version"> <img src="https://img.shields.io/github/license/steadycursor/steadystart?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/elizaOS/elizaos.github.io/blob/main/.claude/commands/context-prime.md"><b>/context-prime</b></a><br>by <a href="https://github.com/elizaOS">elizaOS</a></td>
+<td>Slash-Commands</td>
+<td>Context Loading & Priming</td>
+<td>Primes Claude with comprehensive project understanding by loading repository structure, setting development context, establishing project goals, and defining collaboration parameters.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/elizaOS/elizaos.github.io?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/elizaOS/elizaos.github.io?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/elizaOS/elizaos.github.io?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/elizaOS/elizaos.github.io?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/elizaOS/elizaos.github.io?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/elizaOS/elizaos.github.io?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/elizaOS/elizaos.github.io?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/elizaOS/elizaos.github.io?style=social" alt="version"> <img src="https://img.shields.io/github/license/elizaOS/elizaos.github.io?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/scopecraft/command/blob/main/.claude/commands/create-command.md"><b>/create-command</b></a><br>by <a href="https://github.com/scopecraft">scopecraft</a></td>
+<td>Slash-Commands</td>
+<td>Project & Task Management</td>
+<td>Guides Claude through creating new custom commands with proper structure by analyzing requirements, templating commands by category, enforcing command standards, and creating supporting documentation.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/scopecraft/command?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/scopecraft/command?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/scopecraft/command?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/scopecraft/command?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/scopecraft/command?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/scopecraft/command?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/scopecraft/command?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/scopecraft/command?style=social" alt="version"> <img src="https://img.shields.io/github/license/scopecraft/command?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/create-docs.md"><b>/create-docs</b></a><br>by <a href="https://github.com/jerseycheese">jerseycheese</a></td>
+<td>Slash-Commands</td>
+<td>Documentation & Changelogs</td>
+<td>Analyzes code structure and purpose to create comprehensive documentation detailing inputs/outputs, behavior, user interaction flows, and edge cases with error handling.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/jerseycheese/Narraitor?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/jerseycheese/Narraitor?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/jerseycheese/Narraitor?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jerseycheese/Narraitor?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/jerseycheese/Narraitor?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/jerseycheese/Narraitor?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jerseycheese/Narraitor?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/jerseycheese/Narraitor?style=social" alt="version"> <img src="https://img.shields.io/github/license/jerseycheese/Narraitor?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/omril321/automated-notebooklm/blob/main/.claude/commands/create-hook.md"><b>/create-hook</b></a><br>by <a href="https://github.com/omril321">Omri Lavi</a></td>
+<td>Slash-Commands</td>
+<td>General</td>
+<td>Slash command for hook creation - intelligently prompts you through the creation process with smart suggestions based on your project setup (TS, Prettier, ESLint...).</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/omril321/automated-notebooklm?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/omril321/automated-notebooklm?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/omril321/automated-notebooklm?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/omril321/automated-notebooklm?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/omril321/automated-notebooklm?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/omril321/automated-notebooklm?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/omril321/automated-notebooklm?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/omril321/automated-notebooklm?style=social" alt="version"> <img src="https://img.shields.io/github/license/omril321/automated-notebooklm?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/taddyorg/inkverse/blob/main/.claude/commands/create-jtbd.md"><b>/create-jtbd</b></a><br>by <a href="https://github.com/taddyorg">taddyorg</a></td>
+<td>Slash-Commands</td>
+<td>Project & Task Management</td>
+<td>Creates Jobs-to-be-Done frameworks that outline user needs with structured format, focusing on specific user problems and organizing by job categories for product development.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/taddyorg/inkverse?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/taddyorg/inkverse?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/taddyorg/inkverse?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/taddyorg/inkverse?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/taddyorg/inkverse?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/taddyorg/inkverse?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/taddyorg/inkverse?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/taddyorg/inkverse?style=social" alt="version"> <img src="https://img.shields.io/github/license/taddyorg/inkverse?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/toyamarinyon/giselle/blob/main/.claude/commands/create-pr.md"><b>/create-pr</b></a><br>by <a href="https://github.com/toyamarinyon">toyamarinyon</a></td>
+<td>Slash-Commands</td>
+<td>Version Control & Git</td>
+<td>Streamlines pull request creation by handling the entire workflow: creating a new branch, committing changes, formatting modified files with Biome, and submitting the PR.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/toyamarinyon/giselle?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/toyamarinyon/giselle?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/toyamarinyon/giselle?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/toyamarinyon/giselle?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/toyamarinyon/giselle?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/toyamarinyon/giselle?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/toyamarinyon/giselle?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/toyamarinyon/giselle?style=social" alt="version"> <img src="https://img.shields.io/github/license/toyamarinyon/giselle?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/taddyorg/inkverse/blob/main/.claude/commands/create-prd.md"><b>/create-prd</b></a><br>by <a href="https://github.com/taddyorg">taddyorg</a></td>
+<td>Slash-Commands</td>
+<td>Project & Task Management</td>
+<td>Generates comprehensive product requirement documents outlining detailed specifications, requirements, and features following standardized document structure and format.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/taddyorg/inkverse?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/taddyorg/inkverse?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/taddyorg/inkverse?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/taddyorg/inkverse?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/taddyorg/inkverse?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/taddyorg/inkverse?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/taddyorg/inkverse?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/taddyorg/inkverse?style=social" alt="version"> <img src="https://img.shields.io/github/license/taddyorg/inkverse?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Wirasm/claudecode-utils/blob/main/.claude/commands/create-prp.md"><b>/create-prp</b></a><br>by <a href="https://github.com/Wirasm">Wirasm</a></td>
+<td>Slash-Commands</td>
+<td>Project & Task Management</td>
+<td>Creates product requirement plans by reading PRP methodology, following template structure, creating comprehensive requirements, and structuring product definitions for development.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/Wirasm/claudecode-utils?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/Wirasm/claudecode-utils?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/Wirasm/claudecode-utils?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Wirasm/claudecode-utils?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/Wirasm/claudecode-utils?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/Wirasm/claudecode-utils?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Wirasm/claudecode-utils?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/Wirasm/claudecode-utils?style=social" alt="version"> <img src="https://img.shields.io/github/license/Wirasm/claudecode-utils?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/liam-hq/liam/blob/main/.claude/commands/create-pull-request.md"><b>/create-pull-request</b></a><br>by <a href="https://github.com/liam-hq">liam-hq</a></td>
+<td>Slash-Commands</td>
+<td>Version Control & Git</td>
+<td>Provides comprehensive PR creation guidance with GitHub CLI, enforcing title conventions, following template structure, and offering concrete command examples with best practices.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/liam-hq/liam?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/liam-hq/liam?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/liam-hq/liam?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/liam-hq/liam?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/liam-hq/liam?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/liam-hq/liam?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/liam-hq/liam?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/liam-hq/liam?style=social" alt="version"> <img src="https://img.shields.io/github/license/liam-hq/liam?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/evmts/tevm-monorepo/blob/main/.claude/commands/create-worktrees.md"><b>/create-worktrees</b></a><br>by <a href="https://github.com/evmts">evmts</a></td>
+<td>Slash-Commands</td>
+<td>Version Control & Git</td>
+<td>Creates git worktrees for all open PRs or specific branches, handling branches with slashes, cleaning up stale worktrees, and supporting custom branch creation for development.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/evmts/tevm-monorepo?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/evmts/tevm-monorepo?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/evmts/tevm-monorepo?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/evmts/tevm-monorepo?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/evmts/tevm-monorepo?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/evmts/tevm-monorepo?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/evmts/tevm-monorepo?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/evmts/tevm-monorepo?style=social" alt="version"> <img src="https://img.shields.io/github/license/evmts/tevm-monorepo?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/do-issue.md"><b>/do-issue</b></a><br>by <a href="https://github.com/jerseycheese">jerseycheese</a></td>
+<td>Slash-Commands</td>
+<td>Project & Task Management</td>
+<td>Implements GitHub issues with manual review points, following a structured approach with issue number parameter and offering alternative automated mode for efficiency.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/jerseycheese/Narraitor?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/jerseycheese/Narraitor?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/jerseycheese/Narraitor?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jerseycheese/Narraitor?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/jerseycheese/Narraitor?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/jerseycheese/Narraitor?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jerseycheese/Narraitor?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/jerseycheese/Narraitor?style=social" alt="version"> <img src="https://img.shields.io/github/license/jerseycheese/Narraitor?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/slunsford/coffee-analytics/blob/main/.claude/commands/docs.md"><b>/docs</b></a><br>by <a href="https://github.com/slunsford">slunsford</a></td>
+<td>Slash-Commands</td>
+<td>Documentation & Changelogs</td>
+<td>Generates comprehensive documentation that follows project structure, documenting APIs and usage patterns with consistent formatting for better user understanding.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/slunsford/coffee-analytics?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/slunsford/coffee-analytics?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/slunsford/coffee-analytics?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/slunsford/coffee-analytics?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/slunsford/coffee-analytics?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/slunsford/coffee-analytics?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/slunsford/coffee-analytics?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/slunsford/coffee-analytics?style=social" alt="version"> <img src="https://img.shields.io/github/license/slunsford/coffee-analytics?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/hackdays-io/toban-contribution-viewer/blob/main/.claude/commands/explain-issue-fix.md"><b>/explain-issue-fix</b></a><br>by <a href="https://github.com/hackdays-io">hackdays-io</a></td>
+<td>Slash-Commands</td>
+<td>Documentation & Changelogs</td>
+<td>Documents solution approaches for GitHub issues, explaining technical decisions, detailing challenges overcome, and providing implementation context for better understanding.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/hackdays-io/toban-contribution-viewer?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/hackdays-io/toban-contribution-viewer?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/hackdays-io/toban-contribution-viewer?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/hackdays-io/toban-contribution-viewer?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/hackdays-io/toban-contribution-viewer?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/hackdays-io/toban-contribution-viewer?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/hackdays-io/toban-contribution-viewer?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/hackdays-io/toban-contribution-viewer?style=social" alt="version"> <img src="https://img.shields.io/github/license/hackdays-io/toban-contribution-viewer?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/jeremymailen/kotlinter-gradle/blob/master/.claude/commands/fix-github-issue.md"><b>/fix-github-issue</b></a><br>by <a href="https://github.com/jeremymailen">jeremymailen</a></td>
+<td>Slash-Commands</td>
+<td>Version Control & Git</td>
+<td>Analyzes and fixes GitHub issues using a structured approach with GitHub CLI for issue details, implementing necessary code changes, running tests, and creating proper commit messages.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/jeremymailen/kotlinter-gradle?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/jeremymailen/kotlinter-gradle?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/jeremymailen/kotlinter-gradle?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jeremymailen/kotlinter-gradle?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/jeremymailen/kotlinter-gradle?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/jeremymailen/kotlinter-gradle?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jeremymailen/kotlinter-gradle?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/jeremymailen/kotlinter-gradle?style=social" alt="version"> <img src="https://img.shields.io/github/license/jeremymailen/kotlinter-gradle?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/metabase/metabase/blob/master/.claude/commands/fix-issue.md"><b>/fix-issue</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
+<td>Slash-Commands</td>
+<td>Version Control & Git</td>
+<td>Addresses GitHub issues by taking issue number as parameter, analyzing context, implementing solution, and testing/validating the fix for proper integration.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/metabase/metabase?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/metabase/metabase?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/metabase/metabase?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/metabase/metabase?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/metabase/metabase?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/metabase/metabase?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/metabase/metabase?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/metabase/metabase?style=social" alt="version"> <img src="https://img.shields.io/github/license/metabase/metabase?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/metabase/metabase/blob/master/.claude/commands/fix-pr.md"><b>/fix-pr</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
+<td>Slash-Commands</td>
+<td>Version Control & Git</td>
+<td>Fetches and fixes unresolved PR comments by automatically retrieving feedback, addressing reviewer concerns, making targeted code improvements, and streamlining the review process.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/metabase/metabase?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/metabase/metabase?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/metabase/metabase?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/metabase/metabase?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/metabase/metabase?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/metabase/metabase?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/metabase/metabase?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/metabase/metabase?style=social" alt="version"> <img src="https://img.shields.io/github/license/metabase/metabase?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Mjvolk3/torchcell/blob/main/.claude/commands/fixing_go_in_graph.md"><b>/fixing_go_in_graph</b></a><br>by <a href="https://github.com/Mjvolk3">Mjvolk3</a></td>
+<td>Slash-Commands</td>
+<td>Miscellaneous</td>
+<td>Focuses on Gene Ontology annotation integration in graph databases, handling multiple data sources, addressing graph representation issues, and ensuring correct data incorporation.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/Mjvolk3/torchcell?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/Mjvolk3/torchcell?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/Mjvolk3/torchcell?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Mjvolk3/torchcell?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/Mjvolk3/torchcell?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/Mjvolk3/torchcell?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Mjvolk3/torchcell?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/Mjvolk3/torchcell?style=social" alt="version"> <img src="https://img.shields.io/github/license/Mjvolk3/torchcell?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/evmts/tevm-monorepo/blob/main/.claude/commands/husky.md"><b>/husky</b></a><br>by <a href="https://github.com/evmts">evmts</a></td>
+<td>Slash-Commands</td>
+<td>Version Control & Git</td>
+<td>Sets up and manages Husky Git hooks by configuring pre-commit hooks, establishing commit message standards, integrating with linting tools, and ensuring code quality on commits.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/evmts/tevm-monorepo?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/evmts/tevm-monorepo?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/evmts/tevm-monorepo?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/evmts/tevm-monorepo?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/evmts/tevm-monorepo?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/evmts/tevm-monorepo?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/evmts/tevm-monorepo?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/evmts/tevm-monorepo?style=social" alt="version"> <img src="https://img.shields.io/github/license/evmts/tevm-monorepo?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/okuvshynov/cubestat/blob/main/.claude/commands/initref.md"><b>/initref</b></a><br>by <a href="https://github.com/okuvshynov">okuvshynov</a></td>
+<td>Slash-Commands</td>
+<td>Context Loading & Priming</td>
+<td>Initializes reference documentation structure with standard doc templates, API reference setup, documentation conventions, and placeholder content generation.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/okuvshynov/cubestat?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/okuvshynov/cubestat?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/okuvshynov/cubestat?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/okuvshynov/cubestat?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/okuvshynov/cubestat?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/okuvshynov/cubestat?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/okuvshynov/cubestat?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/okuvshynov/cubestat?style=social" alt="version"> <img src="https://img.shields.io/github/license/okuvshynov/cubestat?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/danielrosehill/Claude-Code-Linux-Desktop-Slash-Commands"><b>/linux-desktop-slash-commands</b></a><br>by <a href="https://github.com/danielrosehill">Daniel Rosehill</a></td>
+<td>Slash-Commands</td>
+<td>General</td>
+<td>A library of slash commands intended specifically to facilitate common and advanced operations on Linux desktop environments (although many would also be useful on Linux servers). Command groups include hardware benchmarking, filesystem organisation, and security posture validation.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/danielrosehill/Claude-Code-Linux-Desktop-Slash-Commands?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/danielrosehill/Claude-Code-Linux-Desktop-Slash-Commands?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/danielrosehill/Claude-Code-Linux-Desktop-Slash-Commands?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/danielrosehill/Claude-Code-Linux-Desktop-Slash-Commands?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/danielrosehill/Claude-Code-Linux-Desktop-Slash-Commands?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/danielrosehill/Claude-Code-Linux-Desktop-Slash-Commands?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/danielrosehill/Claude-Code-Linux-Desktop-Slash-Commands?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/danielrosehill/Claude-Code-Linux-Desktop-Slash-Commands?style=social" alt="version"> <img src="https://img.shields.io/github/license/danielrosehill/Claude-Code-Linux-Desktop-Slash-Commands?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ethpandaops/xatu-data/blob/master/.claude/commands/load-llms-txt.md"><b>/load-llms-txt</b></a><br>by <a href="https://github.com/ethpandaops">ethpandaops</a></td>
+<td>Slash-Commands</td>
+<td>Context Loading & Priming</td>
+<td>Loads LLM configuration files to context, importing specific terminology, model configurations, and establishing baseline terminology for AI discussions.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/ethpandaops/xatu-data?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/ethpandaops/xatu-data?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/ethpandaops/xatu-data?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ethpandaops/xatu-data?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/ethpandaops/xatu-data?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/ethpandaops/xatu-data?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ethpandaops/xatu-data?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/ethpandaops/xatu-data?style=social" alt="version"> <img src="https://img.shields.io/github/license/ethpandaops/xatu-data?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Mjvolk3/torchcell/blob/main/.claude/commands/load_coo_context.md"><b>/load_coo_context</b></a><br>by <a href="https://github.com/Mjvolk3">Mjvolk3</a></td>
+<td>Slash-Commands</td>
+<td>Context Loading & Priming</td>
+<td>References specific files for sparse matrix operations, explains transform usage, compares with previous approaches, and sets data formatting context for development.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/Mjvolk3/torchcell?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/Mjvolk3/torchcell?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/Mjvolk3/torchcell?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Mjvolk3/torchcell?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/Mjvolk3/torchcell?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/Mjvolk3/torchcell?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Mjvolk3/torchcell?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/Mjvolk3/torchcell?style=social" alt="version"> <img src="https://img.shields.io/github/license/Mjvolk3/torchcell?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Mjvolk3/torchcell/blob/main/.claude/commands/load_dango_pipeline.md"><b>/load_dango_pipeline</b></a><br>by <a href="https://github.com/Mjvolk3">Mjvolk3</a></td>
+<td>Slash-Commands</td>
+<td>Context Loading & Priming</td>
+<td>Sets context for model training by referencing pipeline files, establishing working context, and preparing for pipeline work with relevant documentation.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/Mjvolk3/torchcell?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/Mjvolk3/torchcell?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/Mjvolk3/torchcell?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Mjvolk3/torchcell?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/Mjvolk3/torchcell?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/Mjvolk3/torchcell?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Mjvolk3/torchcell?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/Mjvolk3/torchcell?style=social" alt="version"> <img src="https://img.shields.io/github/license/Mjvolk3/torchcell?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/GaloyMoney/lana-bank/blob/main/.claude/commands/mermaid.md"><b>/mermaid</b></a><br>by <a href="https://github.com/GaloyMoney">GaloyMoney</a></td>
+<td>Slash-Commands</td>
+<td>Miscellaneous</td>
+<td>Generates Mermaid diagrams from SQL schema files, creating entity relationship diagrams with table properties, validating diagram compilation, and ensuring complete entity coverage.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/GaloyMoney/lana-bank?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/GaloyMoney/lana-bank?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/GaloyMoney/lana-bank?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/GaloyMoney/lana-bank?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/GaloyMoney/lana-bank?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/GaloyMoney/lana-bank?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/GaloyMoney/lana-bank?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/GaloyMoney/lana-bank?style=social" alt="version"> <img src="https://img.shields.io/github/license/GaloyMoney/lana-bank?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/to4iki/ai-project-rules/blob/main/.claude/commands/optimize.md"><b>/optimize</b></a><br>by <a href="https://github.com/to4iki">to4iki</a></td>
+<td>Slash-Commands</td>
+<td>Code Analysis & Testing</td>
+<td>Analyzes code performance to identify bottlenecks, proposing concrete optimizations with implementation guidance for improved application performance.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/to4iki/ai-project-rules?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/to4iki/ai-project-rules?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/to4iki/ai-project-rules?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/to4iki/ai-project-rules?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/to4iki/ai-project-rules?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/to4iki/ai-project-rules?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/to4iki/ai-project-rules?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/to4iki/ai-project-rules?style=social" alt="version"> <img src="https://img.shields.io/github/license/to4iki/ai-project-rules?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/yzyydev/AI-Engineering-Structure/blob/main/.claude/commands/prime.md"><b>/prime</b></a><br>by <a href="https://github.com/yzyydev">yzyydev</a></td>
+<td>Slash-Commands</td>
+<td>Context Loading & Priming</td>
+<td>Sets up initial project context by viewing directory structure and reading key files, creating standardized context with directory visualization and key documentation focus.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/yzyydev/AI-Engineering-Structure?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/yzyydev/AI-Engineering-Structure?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/yzyydev/AI-Engineering-Structure?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/yzyydev/AI-Engineering-Structure?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/yzyydev/AI-Engineering-Structure?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/yzyydev/AI-Engineering-Structure?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/yzyydev/AI-Engineering-Structure?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/yzyydev/AI-Engineering-Structure?style=social" alt="version"> <img src="https://img.shields.io/github/license/yzyydev/AI-Engineering-Structure?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/disler/just-prompt/blob/main/.claude/commands/project_hello_w_name.md"><b>/project_hello_w_name</b></a><br>by <a href="https://github.com/disler">disler</a></td>
+<td>Slash-Commands</td>
+<td>Project & Task Management</td>
+<td>Creates customizable greeting components with name input, demonstrating argument passing, component reusability, state management, and user input handling.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/disler/just-prompt?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/disler/just-prompt?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/disler/just-prompt?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/disler/just-prompt?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/disler/just-prompt?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/disler/just-prompt?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/disler/just-prompt?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/disler/just-prompt?style=social" alt="version"> <img src="https://img.shields.io/github/license/disler/just-prompt?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/kelp/webdown/blob/main/.claude/commands/release.md"><b>/release</b></a><br>by <a href="https://github.com/kelp">kelp</a></td>
+<td>Slash-Commands</td>
+<td>CI / Deployment</td>
+<td>Manages software releases by updating changelogs, reviewing README changes, evaluating version increments, and documenting release changes for better version tracking.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/kelp/webdown?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/kelp/webdown?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/kelp/webdown?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/kelp/webdown?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/kelp/webdown?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/kelp/webdown?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/kelp/webdown?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/kelp/webdown?style=social" alt="version"> <img src="https://img.shields.io/github/license/kelp/webdown?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/rzykov/metabase/blob/master/.claude/commands/repro-issue.md"><b>/repro-issue</b></a><br>by <a href="https://github.com/rzykov">rzykov</a></td>
+<td>Slash-Commands</td>
+<td>Code Analysis & Testing</td>
+<td>Creates reproducible test cases for GitHub issues, ensuring tests fail reliably and documenting clear reproduction steps for developers.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/rzykov/metabase?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/rzykov/metabase?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/rzykov/metabase?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/rzykov/metabase?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/rzykov/metabase?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/rzykov/metabase?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/rzykov/metabase?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/rzykov/metabase?style=social" alt="version"> <img src="https://img.shields.io/github/license/rzykov/metabase?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Mjvolk3/torchcell/blob/main/.claude/commands/review_dcell_model.md"><b>/review_dcell_model</b></a><br>by <a href="https://github.com/Mjvolk3">Mjvolk3</a></td>
+<td>Slash-Commands</td>
+<td>Miscellaneous</td>
+<td>Reviews old Dcell implementation files, comparing with newer Dango model, noting changes over time, and analyzing refactoring approaches for better code organization.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/Mjvolk3/torchcell?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/Mjvolk3/torchcell?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/Mjvolk3/torchcell?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Mjvolk3/torchcell?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/Mjvolk3/torchcell?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/Mjvolk3/torchcell?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Mjvolk3/torchcell?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/Mjvolk3/torchcell?style=social" alt="version"> <img src="https://img.shields.io/github/license/Mjvolk3/torchcell?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ddisisto/si/blob/main/.claude/commands/rsi.md"><b>/rsi</b></a><br>by <a href="https://github.com/ddisisto">ddisisto</a></td>
+<td>Slash-Commands</td>
+<td>Context Loading & Priming</td>
+<td>Reads all commands and key project files to optimize AI-assisted development by streamlining the process, loading command context, and setting up for better development workflow.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/ddisisto/si?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/ddisisto/si?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/ddisisto/si?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ddisisto/si?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/ddisisto/si?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/ddisisto/si?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ddisisto/si?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/ddisisto/si?style=social" alt="version"> <img src="https://img.shields.io/github/license/ddisisto/si?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/hackdays-io/toban-contribution-viewer/blob/main/.claude/commands/run-ci.md"><b>/run-ci</b></a><br>by <a href="https://github.com/hackdays-io">hackdays-io</a></td>
+<td>Slash-Commands</td>
+<td>CI / Deployment</td>
+<td>Activates virtual environments, runs CI-compatible check scripts, iteratively fixes errors, and ensures all tests pass before completion.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/hackdays-io/toban-contribution-viewer?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/hackdays-io/toban-contribution-viewer?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/hackdays-io/toban-contribution-viewer?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/hackdays-io/toban-contribution-viewer?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/hackdays-io/toban-contribution-viewer?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/hackdays-io/toban-contribution-viewer?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/hackdays-io/toban-contribution-viewer?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/hackdays-io/toban-contribution-viewer?style=social" alt="version"> <img src="https://img.shields.io/github/license/hackdays-io/toban-contribution-viewer?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/zscott/pane/blob/main/.claude/commands/tdd.md"><b>/tdd</b></a><br>by <a href="https://github.com/zscott">zscott</a></td>
+<td>Slash-Commands</td>
+<td>Code Analysis & Testing</td>
+<td>Guides development using Test-Driven Development principles, enforcing Red-Green-Refactor discipline, integrating with git workflow, and managing PR creation.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/zscott/pane?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/zscott/pane?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/zscott/pane?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/zscott/pane?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/zscott/pane?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/zscott/pane?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/zscott/pane?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/zscott/pane?style=social" alt="version"> <img src="https://img.shields.io/github/license/zscott/pane?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/tdd-implement.md"><b>/tdd-implement</b></a><br>by <a href="https://github.com/jerseycheese">jerseycheese</a></td>
+<td>Slash-Commands</td>
+<td>Code Analysis & Testing</td>
+<td>Implements Test-Driven Development by analyzing feature requirements, creating tests first (red), implementing minimal passing code (green), and refactoring while maintaining tests.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/jerseycheese/Narraitor?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/jerseycheese/Narraitor?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/jerseycheese/Narraitor?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jerseycheese/Narraitor?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/jerseycheese/Narraitor?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/jerseycheese/Narraitor?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jerseycheese/Narraitor?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/jerseycheese/Narraitor?style=social" alt="version"> <img src="https://img.shields.io/github/license/jerseycheese/Narraitor?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/chrisleyva/todo-slash-command/blob/main/todo.md"><b>/todo</b></a><br>by <a href="https://github.com/chrisleyva">chrisleyva</a></td>
+<td>Slash-Commands</td>
+<td>Project & Task Management</td>
+<td>A convenient command to quickly manage project todo items without leaving the Claude Code interface, featuring due dates, sorting, task prioritization, and comprehensive todo list management.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/chrisleyva/todo-slash-command?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/chrisleyva/todo-slash-command?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/chrisleyva/todo-slash-command?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/chrisleyva/todo-slash-command?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/chrisleyva/todo-slash-command?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/chrisleyva/todo-slash-command?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/chrisleyva/todo-slash-command?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/chrisleyva/todo-slash-command?style=social" alt="version"> <img src="https://img.shields.io/github/license/chrisleyva/todo-slash-command?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/giselles-ai/giselle/blob/main/.claude/commands/update-branch-name.md"><b>/update-branch-name</b></a><br>by <a href="https://github.com/giselles-ai">giselles-ai</a></td>
+<td>Slash-Commands</td>
+<td>Version Control & Git</td>
+<td>Updates branch names with proper prefixes and formats, enforcing naming conventions, supporting semantic prefixes, and managing remote branch updates.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/giselles-ai/giselle?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/giselles-ai/giselle?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/giselles-ai/giselle?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/giselles-ai/giselle?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/giselles-ai/giselle?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/giselles-ai/giselle?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/giselles-ai/giselle?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/giselles-ai/giselle?style=social" alt="version"> <img src="https://img.shields.io/github/license/giselles-ai/giselle?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Consiliency/Flutter-Structurizr/blob/main/.claude/commands/update-docs.md"><b>/update-docs</b></a><br>by <a href="https://github.com/Consiliency">Consiliency</a></td>
+<td>Slash-Commands</td>
+<td>Documentation & Changelogs</td>
+<td>Reviews current documentation status, updates implementation progress, reviews phase documents, and maintains documentation consistency across the project.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/Consiliency/Flutter-Structurizr?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/Consiliency/Flutter-Structurizr?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/Consiliency/Flutter-Structurizr?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Consiliency/Flutter-Structurizr?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/Consiliency/Flutter-Structurizr?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/Consiliency/Flutter-Structurizr?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Consiliency/Flutter-Structurizr?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/Consiliency/Flutter-Structurizr?style=social" alt="version"> <img src="https://img.shields.io/github/license/Consiliency/Flutter-Structurizr?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/zuplo/docs/blob/main/.claude/commands/use-stepper.md"><b>/use-stepper</b></a><br>by <a href="https://github.com/zuplo">zuplo</a></td>
+<td>Slash-Commands</td>
+<td>Miscellaneous</td>
+<td>Reformats documentation to use React Stepper component, transforming heading formats, applying proper indentation, and maintaining markdown compatibility with admonition formatting.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/zuplo/docs?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/zuplo/docs?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/zuplo/docs?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/zuplo/docs?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/zuplo/docs?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/zuplo/docs?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/zuplo/docs?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/zuplo/docs?style=social" alt="version"> <img src="https://img.shields.io/github/license/zuplo/docs?style=social" alt="license"></td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 **Total Resources:** 44
 
-**Last Generated:** 2025-12-25 19:35:26 UTC
+**Last Generated:** 2025-12-28 UTC

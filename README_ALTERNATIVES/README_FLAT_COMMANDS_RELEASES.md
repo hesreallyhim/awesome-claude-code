@@ -47,16 +47,72 @@ A flat list view of all resources. Category: **Commands** | Sorted: by latest re
 >
 > If your project publishes to a package registry and isn't listed here, please [open an Issue](https://github.com/hesreallyhim/awesome-claude-code/issues).
 
-| Resource | Version | Source | Release Date | Description |
-|----------|---------|--------|--------------|-------------|
-| [**/update-branch-name**](https://github.com/giselles-ai/giselle/blob/main/.claude/commands/update-branch-name.md)<br>by [giselles-ai](https://github.com/giselles-ai) | v0.60.0 | GitHub | 2025-12-25 | Updates branch names with proper prefixes and formats, enforcing naming conventions, supporting semantic prefixes, and managing remote branch updates. |
-| [**/mermaid**](https://github.com/GaloyMoney/lana-bank/blob/main/.claude/commands/mermaid.md)<br>by [GaloyMoney](https://github.com/GaloyMoney) | 0.26.7 | GitHub | 2025-12-24 | Generates Mermaid diagrams from SQL schema files, creating entity relationship diagrams with table properties, validating diagram compilation, and ensuring complete entity coverage. |
-| [**/fix-issue**](https://github.com/metabase/metabase/blob/master/.claude/commands/fix-issue.md)<br>by [metabase](https://github.com/metabase) | v0.57.7 | GitHub | 2025-12-17 | Addresses GitHub issues by taking issue number as parameter, analyzing context, implementing solution, and testing/validating the fix for proper integration. |
-| [**/fix-pr**](https://github.com/metabase/metabase/blob/master/.claude/commands/fix-pr.md)<br>by [metabase](https://github.com/metabase) | v0.57.7 | GitHub | 2025-12-17 | Fetches and fixes unresolved PR comments by automatically retrieving feedback, addressing reviewer concerns, making targeted code improvements, and streamlining the review process. |
-| [**/release**](https://github.com/kelp/webdown/blob/main/.claude/commands/release.md)<br>by [kelp](https://github.com/kelp) | v0.8.1 | GitHub | 2025-12-11 | Manages software releases by updating changelogs, reviewing README changes, evaluating version increments, and documenting release changes for better version tracking. |
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Version</th>
+<th>Source</th>
+<th>Release Date</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/giselles-ai/giselle/blob/main/.claude/commands/update-branch-name.md"><b>/update-branch-name</b></a><br>by <a href="https://github.com/giselles-ai">giselles-ai</a></td>
+<td>v0.60.0</td>
+<td>GitHub</td>
+<td>2025-12-25</td>
+<td>Updates branch names with proper prefixes and formats, enforcing naming conventions, supporting semantic prefixes, and managing remote branch updates.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/giselles-ai/giselle?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/giselles-ai/giselle?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/giselles-ai/giselle?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/giselles-ai/giselle?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/giselles-ai/giselle?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/giselles-ai/giselle?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/giselles-ai/giselle?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/giselles-ai/giselle?style=social" alt="version"> <img src="https://img.shields.io/github/license/giselles-ai/giselle?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/GaloyMoney/lana-bank/blob/main/.claude/commands/mermaid.md"><b>/mermaid</b></a><br>by <a href="https://github.com/GaloyMoney">GaloyMoney</a></td>
+<td>0.26.7</td>
+<td>GitHub</td>
+<td>2025-12-24</td>
+<td>Generates Mermaid diagrams from SQL schema files, creating entity relationship diagrams with table properties, validating diagram compilation, and ensuring complete entity coverage.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/GaloyMoney/lana-bank?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/GaloyMoney/lana-bank?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/GaloyMoney/lana-bank?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/GaloyMoney/lana-bank?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/GaloyMoney/lana-bank?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/GaloyMoney/lana-bank?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/GaloyMoney/lana-bank?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/GaloyMoney/lana-bank?style=social" alt="version"> <img src="https://img.shields.io/github/license/GaloyMoney/lana-bank?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/metabase/metabase/blob/master/.claude/commands/fix-issue.md"><b>/fix-issue</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
+<td>v0.57.7</td>
+<td>GitHub</td>
+<td>2025-12-17</td>
+<td>Addresses GitHub issues by taking issue number as parameter, analyzing context, implementing solution, and testing/validating the fix for proper integration.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/metabase/metabase?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/metabase/metabase?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/metabase/metabase?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/metabase/metabase?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/metabase/metabase?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/metabase/metabase?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/metabase/metabase?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/metabase/metabase?style=social" alt="version"> <img src="https://img.shields.io/github/license/metabase/metabase?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/metabase/metabase/blob/master/.claude/commands/fix-pr.md"><b>/fix-pr</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
+<td>v0.57.7</td>
+<td>GitHub</td>
+<td>2025-12-17</td>
+<td>Fetches and fixes unresolved PR comments by automatically retrieving feedback, addressing reviewer concerns, making targeted code improvements, and streamlining the review process.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/metabase/metabase?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/metabase/metabase?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/metabase/metabase?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/metabase/metabase?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/metabase/metabase?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/metabase/metabase?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/metabase/metabase?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/metabase/metabase?style=social" alt="version"> <img src="https://img.shields.io/github/license/metabase/metabase?style=social" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/kelp/webdown/blob/main/.claude/commands/release.md"><b>/release</b></a><br>by <a href="https://github.com/kelp">kelp</a></td>
+<td>v0.8.1</td>
+<td>GitHub</td>
+<td>2025-12-11</td>
+<td>Manages software releases by updating changelogs, reviewing README changes, evaluating version increments, and documenting release changes for better version tracking.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/kelp/webdown?style=social" alt="stars"> <img src="https://img.shields.io/github/forks/kelp/webdown?style=social" alt="forks"> <img src="https://img.shields.io/github/issues/kelp/webdown?style=social" alt="issues"> <img src="https://img.shields.io/github/issues-pr/kelp/webdown?style=social" alt="prs"> <img src="https://img.shields.io/github/created-at/kelp/webdown?style=social" alt="created"> <img src="https://img.shields.io/github/last-commit/kelp/webdown?style=social" alt="last-commit"> <img src="https://img.shields.io/github/release-date/kelp/webdown?style=social" alt="release-date"> <img src="https://img.shields.io/github/v/release/kelp/webdown?style=social" alt="version"> <img src="https://img.shields.io/github/license/kelp/webdown?style=social" alt="license"></td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 **Total Resources:** 5
 
-**Last Generated:** 2025-12-25 19:35:26 UTC
+**Last Generated:** 2025-12-28 UTC
