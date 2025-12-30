@@ -44,6 +44,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Claude Code Repos Index`](https://github.com/danielrosehill/Claude-Code-Repos-Index) &nbsp; by &nbsp; [Daniel Rosehill](https://github.com/danielrosehill)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+This is either the work of a prolific genius, or a very clever bot (or both), although it hardly matters because the quality is so good - an index of 75+ Claude Code repositories published by the author - and I'm not talking about slop. CMS, system design, deep research, IoT, agentic workflows, server management, personal health... If you spot the lie, let me know, otherwise please check these out.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for Claude-Code-Repos-Index](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Claude-Code-Repos-Index&username=danielrosehill&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Claude Code Tips`](https://github.com/ykdojo/claude-code-tips) &nbsp; by &nbsp; [ykdojo](https://github.com/ykdojo)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;©  
 A nice variety of 35+ brief but information-dense Claude Code tips covering voice input, system prompt patching, container workflows for risky tasks, conversation cloning(!), multi-model orchestration with Gemini CLI, and plenty more. Nice demos, working scripts, a plugin, I'd say this probably has a little something for everyone.
 
@@ -62,17 +73,6 @@ A strong bundle of core competencies for software engineering, with good coverag
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for superpowers](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=superpowers&username=obra&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`TÂCHES Claude Code Resources`](https://github.com/glittercowboy/taches-cc-resources) &nbsp; by &nbsp; [TÂCHES](https://github.com/glittercowboy)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A well-balanced, "down-to-Earth" set of sub agents, skills, and commands,  that are well-organized, easy to read, and a healthy focus on "meta"-skills/agents, like "skill-auditor", hook creation, etc. - the kind of things you can adapt to your workflow, and not the other way around.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for taches-cc-resources](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=taches-cc-resources&username=glittercowboy&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -322,6 +322,17 @@ Really comprehensive and feature-packed project-management workflow for Claude C
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for ccpm](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ccpm&username=automazeio&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Claude Code Repos Index`](https://github.com/danielrosehill/Claude-Code-Repos-Index) &nbsp; by &nbsp; [Daniel Rosehill](https://github.com/danielrosehill)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+This is either the work of a prolific genius, or a very clever bot (or both), although it hardly matters because the quality is so good - an index of 75+ Claude Code repositories published by the author - and I'm not talking about slop. CMS, system design, deep research, IoT, agentic workflows, server management, personal health... If you spot the lie, let me know, otherwise please check these out.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for Claude-Code-Repos-Index](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Claude-Code-Repos-Index&username=danielrosehill&all_stats=true&stats_only=true)
 
 </details>
 <br>

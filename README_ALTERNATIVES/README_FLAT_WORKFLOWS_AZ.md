@@ -114,6 +114,15 @@ A flat list view of all resources. Category: **Workflows** | Sorted: alphabetica
 <td colspan="4"><img src="https://img.shields.io/github/stars/automazeio/ccpm?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/automazeio/ccpm?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/automazeio/ccpm?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/automazeio/ccpm?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/automazeio/ccpm?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/automazeio/ccpm?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/automazeio/ccpm?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/automazeio/ccpm?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/automazeio/ccpm?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/danielrosehill/Claude-Code-Repos-Index"><b>Claude Code Repos Index</b></a><br>by <a href="https://github.com/danielrosehill">Daniel Rosehill</a></td>
+<td>Workflows & Knowledge Guides</td>
+<td>General</td>
+<td>This is either the work of a prolific genius, or a very clever bot (or both), although it hardly matters because the quality is so good - an index of 75+ Claude Code repositories published by the author - and I'm not talking about slop. CMS, system design, deep research, IoT, agentic workflows, server management, personal health... If you spot the lie, let me know, otherwise please check these out.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/Piebald-AI/claude-code-system-prompts"><b>Claude Code System Prompts</b></a><br>by <a href="https://github.com/Piebald-AI">Piebald AI</a></td>
 <td>Workflows & Knowledge Guides</td>
 <td>General</td>
@@ -259,6 +268,6 @@ A flat list view of all resources. Category: **Workflows** | Sorted: alphabetica
 
 ---
 
-**Total Resources:** 23
+**Total Resources:** 24
 
-**Last Generated:** 2025-12-29
+**Last Generated:** 2025-12-30
