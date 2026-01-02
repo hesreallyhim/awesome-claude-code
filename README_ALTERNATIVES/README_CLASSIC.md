@@ -44,7 +44,7 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
-[`Claude Code Repos Index`](https://github.com/danielrosehill/Claude-Code-Repos-Index) &nbsp; by &nbsp; [Daniel Rosehill](https://github.com/danielrosehill)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`Claude Code Repos Index`](https://github.com/danielrosehill/Claude-Code-Repos-Index) &nbsp; by &nbsp; [Daniel Rosehill](https://github.com/danielrosehill)    
 This is either the work of a prolific genius, or a very clever bot (or both), although it hardly matters because the quality is so good - an index of 75+ Claude Code repositories published by the author - and I'm not talking about slop. CMS, system design, deep research, IoT, agentic workflows, server management, personal health... If you spot the lie, let me know, otherwise please check these out.
 
 <details>
@@ -55,7 +55,7 @@ This is either the work of a prolific genius, or a very clever bot (or both), al
 </details>
 <br>
 
-[`Claude Code Tips`](https://github.com/ykdojo/claude-code-tips) &nbsp; by &nbsp; [ykdojo](https://github.com/ykdojo)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;©  
+[`Claude Code Tips`](https://github.com/ykdojo/claude-code-tips) &nbsp; by &nbsp; [ykdojo](https://github.com/ykdojo)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
 A nice variety of 35+ brief but information-dense Claude Code tips covering voice input, system prompt patching, container workflows for risky tasks, conversation cloning(!), multi-model orchestration with Gemini CLI, and plenty more. Nice demos, working scripts, a plugin, I'd say this probably has a little something for everyone.
 
 <details>
@@ -326,7 +326,7 @@ Really comprehensive and feature-packed project-management workflow for Claude C
 </details>
 <br>
 
-[`Claude Code Repos Index`](https://github.com/danielrosehill/Claude-Code-Repos-Index) &nbsp; by &nbsp; [Daniel Rosehill](https://github.com/danielrosehill)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`Claude Code Repos Index`](https://github.com/danielrosehill/Claude-Code-Repos-Index) &nbsp; by &nbsp; [Daniel Rosehill](https://github.com/danielrosehill)    
 This is either the work of a prolific genius, or a very clever bot (or both), although it hardly matters because the quality is so good - an index of 75+ Claude Code repositories published by the author - and I'm not talking about slop. CMS, system design, deep research, IoT, agentic workflows, server management, personal health... If you spot the lie, let me know, otherwise please check these out.
 
 <details>
@@ -348,7 +348,7 @@ All parts of Claude Code's system prompt, including builtin tool descriptions, s
 </details>
 <br>
 
-[`Claude Code Tips`](https://github.com/ykdojo/claude-code-tips) &nbsp; by &nbsp; [ykdojo](https://github.com/ykdojo)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;©  
+[`Claude Code Tips`](https://github.com/ykdojo/claude-code-tips) &nbsp; by &nbsp; [ykdojo](https://github.com/ykdojo)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
 A nice variety of 35+ brief but information-dense Claude Code tips covering voice input, system prompt patching, container workflows for risky tasks, conversation cloning(!), multi-model orchestration with Gemini CLI, and plenty more. Nice demos, working scripts, a plugin, I'd say this probably has a little something for everyone.
 
 <details>
@@ -607,7 +607,7 @@ A webhook service that connects Claude Code to GitHub repositories, enabling AI-
 <br>
 
 [`claude-code-tools`](https://github.com/pchalasani/claude-code-tools) &nbsp; by &nbsp; [Prasad Chalasani](https://github.com/pchalasani)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A collection of awesome tools, including tmux integrations, better session management, hooks that enhance security - a really well-done set of Claude Code enhancers, especially for tmux users.
+Well-crafted toolset for session continuity, featuring skills/commands to avoid compaction and recover context across sessions with cross-agent handoff between Claude Code and Codex CLI. Includes a fast Rust/Tantivy-powered full-text session search (TUI for humans, skill/CLI for agents), tmux-cli skill + command for interacting with scripts and CLI agents, and safety hooks to block dangerous commands.
 
 <details>
 <summary>📊 GitHub Stats</summary>

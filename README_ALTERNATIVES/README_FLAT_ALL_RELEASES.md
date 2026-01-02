@@ -143,7 +143,7 @@ A flat list view of all resources. Category: **All** | Sorted: by latest release
 <td>v1.3.2</td>
 <td>GitHub</td>
 <td>2025-12-24</td>
-<td>A collection of awesome tools, including tmux integrations, better session management, hooks that enhance security - a really well-done set of Claude Code enhancers, especially for tmux users.</td>
+<td>Well-crafted toolset for session continuity, featuring skills/commands to avoid compaction and recover context across sessions with cross-agent handoff between Claude Code and Codex CLI. Includes a fast Rust/Tantivy-powered full-text session search (TUI for humans, skill/CLI for agents), tmux-cli skill + command for interacting with scripts and CLI agents, and safety hooks to block dangerous commands.</td>
 </tr>
 <tr>
 <td colspan="5"><img src="https://img.shields.io/github/stars/pchalasani/claude-code-tools?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/pchalasani/claude-code-tools?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/pchalasani/claude-code-tools?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/pchalasani/claude-code-tools?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/pchalasani/claude-code-tools?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/pchalasani/claude-code-tools?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/pchalasani/claude-code-tools?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/pchalasani/claude-code-tools?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/pchalasani/claude-code-tools?style=flat-square" alt="license"></td>
@@ -398,41 +398,11 @@ A flat list view of all resources. Category: **All** | Sorted: by latest release
 <tr>
 <td colspan="5"><img src="https://img.shields.io/github/stars/vibe-log/vibe-log-cli?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/vibe-log/vibe-log-cli?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/vibe-log/vibe-log-cli?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/vibe-log/vibe-log-cli?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/vibe-log/vibe-log-cli?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/vibe-log/vibe-log-cli?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/vibe-log/vibe-log-cli?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/vibe-log/vibe-log-cli?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/vibe-log/vibe-log-cli?style=flat-square" alt="license"></td>
 </tr>
-<tr>
-<td><a href="https://github.com/dtormoen/tsk"><b>TSK - AI Agent Task Manager and Sandbox</b></a><br>by <a href="https://github.com/dtormoen">dtormoen</a></td>
-<td>v0.6.2</td>
-<td>GitHub</td>
-<td>2025-12-03</td>
-<td>A Rust CLI tool that lets you delegate development tasks to AI agents running in sandboxed Docker environments. Multiple agents work in parallel, returning git branches for human review.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/dtormoen/tsk?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/dtormoen/tsk?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/dtormoen/tsk?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/dtormoen/tsk?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/dtormoen/tsk?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/dtormoen/tsk?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/dtormoen/tsk?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/dtormoen/tsk?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/dtormoen/tsk?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/mattgodbolt/jsbeeb/blob/main/CLAUDE.md"><b>JSBeeb</b></a><br>by <a href="https://github.com/mattgodbolt">mattgodbolt</a></td>
-<td>v1.3.0</td>
-<td>GitHub</td>
-<td>2025-12-02</td>
-<td>Provides development guide for JavaScript BBC Micro emulator with build and testing instructions, architecture documentation, and debugging workflows.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/mattgodbolt/jsbeeb?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/mattgodbolt/jsbeeb?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/mattgodbolt/jsbeeb?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/mattgodbolt/jsbeeb?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/mattgodbolt/jsbeeb?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/mattgodbolt/jsbeeb?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/mattgodbolt/jsbeeb?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/mattgodbolt/jsbeeb?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/mattgodbolt/jsbeeb?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/alexei-led/aws-mcp-server/blob/main/CLAUDE.md"><b>AWS MCP Server</b></a><br>by <a href="https://github.com/alexei-led">alexei-led</a></td>
-<td>1.5.6</td>
-<td>GitHub</td>
-<td>2025-12-01</td>
-<td>Features multiple Python environment setup options with detailed code style guidelines, comprehensive error handling recommendations, and security considerations for AWS CLI interactions.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/alexei-led/aws-mcp-server?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/alexei-led/aws-mcp-server?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/alexei-led/aws-mcp-server?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/alexei-led/aws-mcp-server?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/alexei-led/aws-mcp-server?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/alexei-led/aws-mcp-server?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/alexei-led/aws-mcp-server?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/alexei-led/aws-mcp-server?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/alexei-led/aws-mcp-server?style=flat-square" alt="license"></td>
-</tr>
 </tbody>
 </table>
 
 ---
 
-**Total Resources:** 37
+**Total Resources:** 34
 
-**Last Generated:** 2025-12-30
+**Last Generated:** 2026-01-02

@@ -54,15 +54,6 @@ A flat list view of all resources. Category: **Clients** | Sorted: by last updat
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/opactorai/Claudable"><b>Claudable</b></a><br>by <a href="https://www.linkedin.com/in/seongil-park/">Ethan Park</a></td>
-<td>Alternative Clients</td>
-<td>General</td>
-<td>Claudable is an open-source web builder that leverages local CLI agents, such as Claude Code and Cursor Agent, to build and deploy products effortlessly.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/opactorai/Claudable?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/opactorai/Claudable?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/opactorai/Claudable?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/opactorai/Claudable?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/opactorai/Claudable?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/opactorai/Claudable?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/opactorai/Claudable?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/opactorai/Claudable?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/opactorai/Claudable?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/omnara-ai/omnara"><b>Omnara</b></a><br>by <a href="https://github.com/ishaansehgal99">Ishaan Sehgal</a></td>
 <td>Alternative Clients</td>
 <td>General</td>
@@ -71,6 +62,15 @@ A flat list view of all resources. Category: **Clients** | Sorted: by last updat
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/omnara-ai/omnara?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/omnara-ai/omnara?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/omnara-ai/omnara?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/omnara-ai/omnara?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/omnara-ai/omnara?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/omnara-ai/omnara?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/omnara-ai/omnara?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/omnara-ai/omnara?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/omnara-ai/omnara?style=flat-square" alt="license"></td>
 </tr>
+<tr>
+<td><a href="https://github.com/opactorai/Claudable"><b>Claudable</b></a><br>by <a href="https://www.linkedin.com/in/seongil-park/">Ethan Park</a></td>
+<td>Alternative Clients</td>
+<td>General</td>
+<td>Claudable is an open-source web builder that leverages local CLI agents, such as Claude Code and Cursor Agent, to build and deploy products effortlessly.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/opactorai/Claudable?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/opactorai/Claudable?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/opactorai/Claudable?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/opactorai/Claudable?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/opactorai/Claudable?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/opactorai/Claudable?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/opactorai/Claudable?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/opactorai/Claudable?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/opactorai/Claudable?style=flat-square" alt="license"></td>
+</tr>
 </tbody>
 </table>
 
@@ -78,4 +78,4 @@ A flat list view of all resources. Category: **Clients** | Sorted: by last updat
 
 **Total Resources:** 2
 
-**Last Generated:** 2025-12-30
+**Last Generated:** 2026-01-02

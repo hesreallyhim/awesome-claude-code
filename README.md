@@ -882,7 +882,7 @@ _A webhook service that connects Claude Code to GitHub repositories, enabling AI
 
 
 <a href="https://github.com/pchalasani/claude-code-tools"><img src="assets/badge-claude-code-tools.svg" alt="claude-code-tools"></a>  
-_A collection of awesome tools, including tmux integrations, better session management, hooks that enhance security - a really well-done set of Claude Code enhancers, especially for tmux users._  
+_Well-crafted toolset for session continuity, featuring skills/commands to avoid compaction and recover context across sessions with cross-agent handoff between Claude Code and Codex CLI. Includes a fast Rust/Tantivy-powered full-text session search (TUI for humans, skill/CLI for agents), tmux-cli skill + command for interacting with scripts and CLI agents, and safety hooks to block dangerous commands._  
 ![GitHub Stats for claude-code-tools](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-tools&username=pchalasani&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="assets/entry-separator-light-animated.svg" alt=""></div>
