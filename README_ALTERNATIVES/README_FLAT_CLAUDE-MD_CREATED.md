@@ -276,4 +276,4 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by date cre
 
 **Total Resources:** 24
 
-**Last Generated:** 2025-12-30
+**Last Generated:** 2026-01-02
