@@ -84,4 +84,4 @@ A flat list view of all resources. Category: **Docs** | Sorted: alphabetically b
 
 **Total Resources:** 3
 
-**Last Generated:** 2026-01-02
+**Last Generated:** 2026-01-04

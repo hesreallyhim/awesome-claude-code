@@ -1636,7 +1636,7 @@ def format_resource_entry(row, assets_dir=None, include_separator=True):
         _, is_github, owner, repo = parse_github_url(primary_link)
 
         if is_github and owner and repo:
-            base_url = "https://github-readme-stats-plus-theta.vercel.app/api/pin/"
+            base_url = "https://github-readme-stats-fork-orpin.vercel.app/api/pin/"
             stats_url = f"{base_url}?repo={repo}&username={owner}&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000"
             parts.append("  \n")
             parts.append(f"![GitHub Stats for {repo}]({stats_url})")
@@ -2331,7 +2331,7 @@ class MinimalReadmeGenerator(ReadmeGenerator):
         if primary_link and not removed_from_origin:
             _, is_github, owner, repo = parse_github_url(primary_link)
             if is_github and owner and repo:
-                base_url = "https://github-readme-stats-plus-theta.vercel.app/api/pin/"
+                base_url = "https://github-readme-stats-fork-orpin.vercel.app/api/pin/"
                 stats_url = (
                     f"{base_url}?repo={repo}&username={owner}&all_stats=true&stats_only=true"
                 )
@@ -2689,10 +2689,7 @@ class ParameterizedFlatListGenerator(ReadmeGenerator):
             else:
                 author_html = author_name or ""
 
-            if author_html:
-                resource_cell = f"{resource_html}<br>by {author_html}"
-            else:
-                resource_cell = resource_html
+            resource_cell = f"{resource_html}<br>by {author_html}" if author_html else resource_html
 
             # Build the main row
             lines.append("<tr>")

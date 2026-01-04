@@ -405,4 +405,4 @@ A flat list view of all resources. Category: **All** | Sorted: by latest release
 
 **Total Resources:** 34
 
-**Last Generated:** 2026-01-02
+**Last Generated:** 2026-01-04

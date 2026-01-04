@@ -205,4 +205,4 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by latest rel
 
 **Total Resources:** 14
 
-**Last Generated:** 2026-01-02
+**Last Generated:** 2026-01-04

@@ -50,7 +50,7 @@ This is either the work of a prolific genius, or a very clever bot (or both), al
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for Claude-Code-Repos-Index](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Claude-Code-Repos-Index&username=danielrosehill&all_stats=true&stats_only=true)
+![GitHub Stats for Claude-Code-Repos-Index](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Claude-Code-Repos-Index&username=danielrosehill&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -61,7 +61,7 @@ A nice variety of 35+ brief but information-dense Claude Code tips covering voic
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-code-tips](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-tips&username=ykdojo&all_stats=true&stats_only=true)
+![GitHub Stats for claude-code-tips](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-tips&username=ykdojo&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -72,7 +72,7 @@ A strong bundle of core competencies for software engineering, with good coverag
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for superpowers](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=superpowers&username=obra&all_stats=true&stats_only=true)
+![GitHub Stats for superpowers](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=superpowers&username=obra&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -173,7 +173,7 @@ A well-organized, well-written set of plugins covering core developer activities
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-codex-settings](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-codex-settings&username=fcakyon&all_stats=true&stats_only=true)
+![GitHub Stats for claude-codex-settings](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-codex-settings&username=fcakyon&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -184,7 +184,7 @@ Claude Code skill that automates mountain route research for North American peak
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-mountaineering-skills](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-mountaineering-skills&username=dreamiurg&all_stats=true&stats_only=true)
+![GitHub Stats for claude-mountaineering-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-mountaineering-skills&username=dreamiurg&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -195,7 +195,7 @@ Enables users to prompt codex from claude code. Unlike the raw codex mcp server,
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for skill-codex](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=skill-codex&username=skills-directory&all_stats=true&stats_only=true)
+![GitHub Stats for skill-codex](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=skill-codex&username=skills-directory&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -206,7 +206,7 @@ Hand-crafted collection of advanced context engineering techniques and patterns 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for context-engineering-kit](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=context-engineering-kit&username=NeoLabHQ&all_stats=true&stats_only=true)
+![GitHub Stats for context-engineering-kit](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=context-engineering-kit&username=NeoLabHQ&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -217,7 +217,7 @@ A strong bundle of core competencies for software engineering, with good coverag
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for superpowers](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=superpowers&username=obra&all_stats=true&stats_only=true)
+![GitHub Stats for superpowers](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=superpowers&username=obra&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -228,7 +228,7 @@ A well-balanced, "down-to-Earth" set of sub agents, skills, and commands,  that 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for taches-cc-resources](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=taches-cc-resources&username=glittercowboy&all_stats=true&stats_only=true)
+![GitHub Stats for taches-cc-resources](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=taches-cc-resources&username=glittercowboy&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -239,7 +239,7 @@ Easily generate web assets from Claude Code including favicons, app icons (PWA),
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for web-asset-generator](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=web-asset-generator&username=alonw0&all_stats=true&stats_only=true)
+![GitHub Stats for web-asset-generator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=web-asset-generator&username=alonw0&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -263,7 +263,7 @@ A principled, spec-driven workflow that transforms large problems into focused, 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for ab-method](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ab-method&username=ayoubben18&all_stats=true&stats_only=true)
+![GitHub Stats for ab-method](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ab-method&username=ayoubben18&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -274,7 +274,7 @@ A comprehensive and well-documented collection of agentic patterns from Anthropi
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for agentic-workflow-patterns](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=agentic-workflow-patterns&username=ThibautMelen&all_stats=true&stats_only=true)
+![GitHub Stats for agentic-workflow-patterns](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=agentic-workflow-patterns&username=ThibautMelen&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -285,7 +285,7 @@ Provides a well-structured set of commands for publishing and maintaining a blog
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for cloudartisan.github.io](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=cloudartisan.github.io&username=cloudartisan&all_stats=true&stats_only=true)
+![GitHub Stats for cloudartisan.github.io](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=cloudartisan.github.io&username=cloudartisan&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -296,7 +296,7 @@ A mirror of the Anthropic &copy; PBC documentation pages for Claude Code, update
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-code-docs](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-docs&username=ericbuess&all_stats=true&stats_only=true)
+![GitHub Stats for claude-code-docs](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-docs&username=ericbuess&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -310,7 +310,7 @@ A remarkably innovative approach to working with Skills, the centerpiece of whic
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-code-infrastructure-showcase](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-infrastructure-showcase&username=diet103&all_stats=true&stats_only=true)
+![GitHub Stats for claude-code-infrastructure-showcase](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-infrastructure-showcase&username=diet103&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -321,7 +321,7 @@ Really comprehensive and feature-packed project-management workflow for Claude C
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for ccpm](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ccpm&username=automazeio&all_stats=true&stats_only=true)
+![GitHub Stats for ccpm](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ccpm&username=automazeio&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -332,7 +332,7 @@ This is either the work of a prolific genius, or a very clever bot (or both), al
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for Claude-Code-Repos-Index](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Claude-Code-Repos-Index&username=danielrosehill&all_stats=true&stats_only=true)
+![GitHub Stats for Claude-Code-Repos-Index](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Claude-Code-Repos-Index&username=danielrosehill&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -343,7 +343,7 @@ All parts of Claude Code's system prompt, including builtin tool descriptions, s
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-code-system-prompts](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-system-prompts&username=Piebald-AI&all_stats=true&stats_only=true)
+![GitHub Stats for claude-code-system-prompts](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-system-prompts&username=Piebald-AI&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -354,7 +354,7 @@ A nice variety of 35+ brief but information-dense Claude Code tips covering voic
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-code-tips](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-tips&username=ykdojo&all_stats=true&stats_only=true)
+![GitHub Stats for claude-code-tips](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-tips&username=ykdojo&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -365,7 +365,7 @@ Professional development environment for Claude Code with spec-driven workflow, 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-codepro](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-codepro&username=maxritter&all_stats=true&stats_only=true)
+![GitHub Stats for claude-codepro](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-codepro&username=maxritter&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -376,7 +376,7 @@ A mirror of the Anthropic&copy; PBC documentation site for Claude/Code, but with
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-code-docs](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-docs&username=costiash&all_stats=true&stats_only=true)
+![GitHub Stats for claude-code-docs](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-docs&username=costiash&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -387,7 +387,7 @@ Well-crafted, wide selection of Claude Code hooks, slash commands, subagent file
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claudepro-directory](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claudepro-directory&username=JSONbored&all_stats=true&stats_only=true)
+![GitHub Stats for claudepro-directory](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claudepro-directory&username=JSONbored&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -398,7 +398,7 @@ Provides a systematic approach to priming Claude Code with comprehensive project
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for just-prompt](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=just-prompt&username=disler&all_stats=true&stats_only=true)
+![GitHub Stats for just-prompt](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=just-prompt&username=disler&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -409,7 +409,7 @@ A tailored workflow for enabling automated UI/UX design review, including specia
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-code-workflows](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-workflows&username=OneRedOak&all_stats=true&stats_only=true)
+![GitHub Stats for claude-code-workflows](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-workflows&username=OneRedOak&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -420,7 +420,7 @@ Transform your Laravel TALL (Tailwind, AlpineJS, Laravel, Livewire) stack develo
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for laravel-tall-claude-ai-configs](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=laravel-tall-claude-ai-configs&username=tott&all_stats=true&stats_only=true)
+![GitHub Stats for laravel-tall-claude-ai-configs](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=laravel-tall-claude-ai-configs&username=tott&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -431,7 +431,7 @@ A creative educational framework for Claude Code, inspired by the "FASTER" appro
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for learn-faster-kit](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=learn-faster-kit&username=cheukyin175&all_stats=true&stats_only=true)
+![GitHub Stats for learn-faster-kit](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=learn-faster-kit&username=cheukyin175&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -442,7 +442,7 @@ Amazing comprehensive set of comments for code analysis, QA, design, documentati
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for n8n_agent](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=n8n_agent&username=kingler&all_stats=true&stats_only=true)
+![GitHub Stats for n8n_agent](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=n8n_agent&username=kingler&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -453,7 +453,7 @@ Provides a structured set of commands for bootstrapping and managing a new proje
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for steadystart](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=steadystart&username=steadycursor&all_stats=true&stats_only=true)
+![GitHub Stats for steadystart](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=steadystart&username=steadycursor&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -464,7 +464,7 @@ Really comprehensive set of commands for all aspects of SDLC.
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for command](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=command&username=scopecraft&all_stats=true&stats_only=true)
+![GitHub Stats for command](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=command&username=scopecraft&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -475,7 +475,7 @@ A set of commands that provide a comprehensive workflow system for managing proj
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for dotfiles](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=dotfiles&username=harperreed&all_stats=true&stats_only=true)
+![GitHub Stats for dotfiles](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=dotfiles&username=harperreed&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -486,7 +486,7 @@ Structured development workflow enforcing separation between Research, Innovate,
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-code-riper-5](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-riper-5&username=tony&all_stats=true&stats_only=true)
+![GitHub Stats for claude-code-riper-5](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-riper-5&username=tony&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -500,7 +500,7 @@ A broader project management workflow for Claude Code that encompasses not just 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-simone](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-simone&username=Helmi&all_stats=true&stats_only=true)
+![GitHub Stats for claude-simone](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-simone&username=Helmi&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -524,7 +524,7 @@ An opinionated approach to productive development with Claude Code
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for cc-sessions](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=cc-sessions&username=GWUDCAP&all_stats=true&stats_only=true)
+![GitHub Stats for cc-sessions](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=cc-sessions&username=GWUDCAP&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -535,7 +535,7 @@ High-performance Go implementation of Claude Code hooks and utilities. Provides 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for cc-tools](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=cc-tools&username=Veraticus&all_stats=true&stats_only=true)
+![GitHub Stats for cc-tools](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=cc-tools&username=Veraticus&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -546,7 +546,7 @@ Interactive CLI tool for discovering and managing Claude Code configuration file
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for ccexp](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ccexp&username=nyatinte&all_stats=true&stats_only=true)
+![GitHub Stats for ccexp](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ccexp&username=nyatinte&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -557,7 +557,7 @@ Like the shell history command but for your Claude Code sessions. Easily list al
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for cchistory](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=cchistory&username=eckardt&all_stats=true&stats_only=true)
+![GitHub Stats for cchistory](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=cchistory&username=eckardt&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -568,7 +568,7 @@ A humble but handy utility for viewing Claude Code `.jsonl` conversation files i
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for cclogviewer](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=cclogviewer&username=Brads3290&all_stats=true&stats_only=true)
+![GitHub Stats for cclogviewer](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=cclogviewer&username=Brads3290&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -579,7 +579,7 @@ Incredibly awesome collection of resources from every category in this list, pre
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-code-templates](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-templates&username=davila7&all_stats=true&stats_only=true)
+![GitHub Stats for claude-code-templates](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-templates&username=davila7&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -590,7 +590,7 @@ A tool that adds small enhancements to Claude Code.
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-composer](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-composer&username=possibilities&all_stats=true&stats_only=true)
+![GitHub Stats for claude-composer](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-composer&username=possibilities&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -601,7 +601,7 @@ A webhook service that connects Claude Code to GitHub repositories, enabling AI-
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-hub](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-hub&username=claude-did-this&all_stats=true&stats_only=true)
+![GitHub Stats for claude-hub](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-hub&username=claude-did-this&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -612,7 +612,7 @@ Well-crafted toolset for session continuity, featuring skills/commands to avoid 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-code-tools](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-tools&username=pchalasani&all_stats=true&stats_only=true)
+![GitHub Stats for claude-code-tools](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-tools&username=pchalasani&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -623,7 +623,7 @@ This is a starter template repository designed to provide a complete development
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-starter-kit](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-starter-kit&username=serpro69&all_stats=true&stats_only=true)
+![GitHub Stats for claude-starter-kit](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-starter-kit&username=serpro69&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -634,7 +634,7 @@ Impressive CLI toolkit providing auto-save checkpointing, code quality hooks, sp
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claudekit](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claudekit&username=carlrannaberg&all_stats=true&stats_only=true)
+![GitHub Stats for claudekit](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claudekit&username=carlrannaberg&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -645,7 +645,7 @@ Development environments for coding agents. Enable multiple agents to work safel
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for container-use](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=container-use&username=dagger&all_stats=true&stats_only=true)
+![GitHub Stats for container-use](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=container-use&username=dagger&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -656,7 +656,7 @@ A systematic development framework that transforms Claude Code into a proactive 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for ContextKit](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ContextKit&username=FlineDev&all_stats=true&stats_only=true)
+![GitHub Stats for ContextKit](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ContextKit&username=FlineDev&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -667,7 +667,7 @@ Full-text search your Claude Code sessions. Run `recall` in terminal, type to se
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for recall](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=recall&username=zippoxer&all_stats=true&stats_only=true)
+![GitHub Stats for recall](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=recall&username=zippoxer&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -678,7 +678,7 @@ A Node.js CLI tool that automatically generates configs (rules, ignore files, MC
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for rulesync](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=rulesync&username=dyoshikawa&all_stats=true&stats_only=true)
+![GitHub Stats for rulesync](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=rulesync&username=dyoshikawa&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -689,7 +689,7 @@ A self-contained Docker runner that forwards your current workspace into a safe(
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for run-claude-docker](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=run-claude-docker&username=icanhasjonas&all_stats=true&stats_only=true)
+![GitHub Stats for run-claude-docker](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=run-claude-docker&username=icanhasjonas&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -700,7 +700,7 @@ A push-to-talk speech transcription setup for Linux using a Python MCP server. R
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for stt-mcp-server-linux](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=stt-mcp-server-linux&username=marcindulak&all_stats=true&stats_only=true)
+![GitHub Stats for stt-mcp-server-linux](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=stt-mcp-server-linux&username=marcindulak&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -711,7 +711,7 @@ A versatile configuration framework that enhances Claude Code with specialized c
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for SuperClaude_Framework](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=SuperClaude_Framework&username=SuperClaude-Org&all_stats=true&stats_only=true)
+![GitHub Stats for SuperClaude_Framework](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=SuperClaude_Framework&username=SuperClaude-Org&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -722,7 +722,7 @@ Command-line tool to customize your Claude Code styling.
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for tweakcc](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=tweakcc&username=Piebald-AI&all_stats=true&stats_only=true)
+![GitHub Stats for tweakcc](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=tweakcc&username=Piebald-AI&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -733,7 +733,7 @@ Analyzes your Claude Code prompts locally (using CC), provides intelligent sessi
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for vibe-log-cli](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=vibe-log-cli&username=vibe-log&all_stats=true&stats_only=true)
+![GitHub Stats for vibe-log-cli](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=vibe-log-cli&username=vibe-log&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -744,7 +744,7 @@ Run Claude Code in a Docker container with git worktrees as volume mounts to ena
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for viwo](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=viwo&username=OverseedAI&all_stats=true&stats_only=true)
+![GitHub Stats for viwo](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=viwo&username=OverseedAI&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -755,7 +755,7 @@ VoiceMode MCP brings natural conversations to Claude Code. It supports any OpenA
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for voicemode](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=voicemode&username=mbailey&all_stats=true&stats_only=true)
+![GitHub Stats for voicemode](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=voicemode&username=mbailey&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -774,7 +774,7 @@ claude-code-ide.el integrates Claude Code with Emacs, like Anthropic’s VS Code
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-code-ide.el](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-ide.el&username=manzaltu&all_stats=true&stats_only=true)
+![GitHub Stats for claude-code-ide.el](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-ide.el&username=manzaltu&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -785,7 +785,7 @@ An Emacs interface for Claude Code CLI.
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-code.el](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code.el&username=stevemolitor&all_stats=true&stats_only=true)
+![GitHub Stats for claude-code.el](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code.el&username=stevemolitor&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -796,7 +796,7 @@ A seamless integration between Claude Code AI assistant and Neovim.
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-code.nvim](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code.nvim&username=greggh&all_stats=true&stats_only=true)
+![GitHub Stats for claude-code.nvim](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code.nvim&username=greggh&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -807,7 +807,7 @@ A VSCode extension that brings Claude Code directly into your editor with intera
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for Claudix](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Claudix&username=Haleclipse&all_stats=true&stats_only=true)
+![GitHub Stats for Claudix](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Claudix&username=Haleclipse&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -818,7 +818,7 @@ A full-fledged desktop application for orchestrating, monitoring, and interactin
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for crystal](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=crystal&username=stravu&all_stats=true&stats_only=true)
+![GitHub Stats for crystal](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=crystal&username=stravu&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -834,7 +834,7 @@ Handy CLI tool for managing and analyzing Claude Code usage, based on analyzing 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for ccusage](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ccusage&username=ryoppippi&all_stats=true&stats_only=true)
+![GitHub Stats for ccusage](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ccusage&username=ryoppippi&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -845,7 +845,7 @@ Claude Code usage dashboard with a web-UI that would put Tableau to shame. Thoro
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for ccflare](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ccflare&username=snipeship&all_stats=true&stats_only=true)
+![GitHub Stats for ccflare](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ccflare&username=snipeship&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -856,7 +856,7 @@ A well-maintained and feature-enhanced fork of the glorious `ccflare` usage dash
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for better-ccflare](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=better-ccflare&username=tombii&all_stats=true&stats_only=true)
+![GitHub Stats for better-ccflare](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=better-ccflare&username=tombii&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -867,7 +867,7 @@ A real-time terminal-based tool for monitoring Claude Code token usage. It shows
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for Claude-Code-Usage-Monitor](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Claude-Code-Usage-Monitor&username=Maciek-roboblog&all_stats=true&stats_only=true)
+![GitHub Stats for Claude-Code-Usage-Monitor](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Claude-Code-Usage-Monitor&username=Maciek-roboblog&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -878,7 +878,7 @@ Claudex - A web-based browser for exploring your Claude Code conversation histor
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claudex](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claudex&username=kunwar-shah&all_stats=true&stats_only=true)
+![GitHub Stats for claudex](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claudex&username=kunwar-shah&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -889,7 +889,7 @@ A community-driven leaderboard tool that enables developers to visualize, track,
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for viberank](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=viberank&username=sculptdotfun&all_stats=true&stats_only=true)
+![GitHub Stats for viberank](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=viberank&username=sculptdotfun&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -905,7 +905,7 @@ This mode serves as a code-first orchestration layer, enabling Claude to write, 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-code-flow](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-flow&username=ruvnet&all_stats=true&stats_only=true)
+![GitHub Stats for claude-code-flow](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-flow&username=ruvnet&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -916,7 +916,7 @@ Claude Squad is a terminal app that manages multiple Claude Code, Codex (and oth
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-squad](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-squad&username=smtg-ai&all_stats=true&stats_only=true)
+![GitHub Stats for claude-squad](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-squad&username=smtg-ai&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -927,7 +927,7 @@ Launch Claude Code session that is connected to a swarm of Claude Code Agents.
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-swarm](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-swarm&username=parruda&all_stats=true&stats_only=true)
+![GitHub Stats for claude-swarm](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-swarm&username=parruda&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -938,7 +938,7 @@ A task management system for AI-driven development with Claude, designed to work
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-task-master](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-task-master&username=eyaltoledano&all_stats=true&stats_only=true)
+![GitHub Stats for claude-task-master](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-task-master&username=eyaltoledano&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -949,7 +949,7 @@ A specialized tool to manage context isolation and focused task execution with C
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-task-runner](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-task-runner&username=grahama1970&all_stats=true&stats_only=true)
+![GitHub Stats for claude-task-runner](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-task-runner&username=grahama1970&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -960,7 +960,7 @@ Spawn and control multiple Claude Codes in parallel from your phone or desktop. 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for happy](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=happy&username=slopus&all_stats=true&stats_only=true)
+![GitHub Stats for happy](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=happy&username=slopus&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -971,7 +971,7 @@ Yet Another Claude Orchestrator - a collection of agents, commands, etc., for sh
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for the-startup](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=the-startup&username=rsmdt&all_stats=true&stats_only=true)
+![GitHub Stats for the-startup](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=the-startup&username=rsmdt&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -982,7 +982,7 @@ A Rust CLI tool that lets you delegate development tasks to AI agents running in
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for tsk](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=tsk&username=dtormoen&all_stats=true&stats_only=true)
+![GitHub Stats for tsk](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=tsk&username=dtormoen&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1006,7 +1006,7 @@ A high-performance Claude Code statusline tool written in Rust with Git integrat
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for CCometixLine](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=CCometixLine&username=Haleclipse&all_stats=true&stats_only=true)
+![GitHub Stats for CCometixLine](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=CCometixLine&username=Haleclipse&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1017,7 +1017,7 @@ A highly customizable status line formatter for Claude Code CLI that displays mo
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for ccstatusline](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ccstatusline&username=sirmalloc&all_stats=true&stats_only=true)
+![GitHub Stats for ccstatusline](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ccstatusline&username=sirmalloc&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1028,7 +1028,7 @@ Enhanced 4-line statusline for Claude Code with themes, cost tracking, and MCP s
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-code-statusline](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-statusline&username=rz1989s&all_stats=true&stats_only=true)
+![GitHub Stats for claude-code-statusline](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-statusline&username=rz1989s&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1039,7 +1039,7 @@ A vim-style powerline statusline for Claude Code with real-time usage tracking, 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-powerline](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-powerline&username=Owloops&all_stats=true&stats_only=true)
+![GitHub Stats for claude-powerline](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-powerline&username=Owloops&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1050,7 +1050,7 @@ High-performance Rust-based statusline for Claude Code with persistent stats tra
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claudia-statusline](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claudia-statusline&username=hagan&all_stats=true&stats_only=true)
+![GitHub Stats for claudia-statusline](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claudia-statusline&username=hagan&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1074,7 +1074,7 @@ Claude outputs American spellings by default, which can have an impact on: profe
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for britfix](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=britfix&username=Talieisin&all_stats=true&stats_only=true)
+![GitHub Stats for britfix](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=britfix&username=Talieisin&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1085,7 +1085,7 @@ CCNotify provides desktop notifications for Claude Code, alerting you to input n
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for CCNotify](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=CCNotify&username=dazuiba&all_stats=true&stats_only=true)
+![GitHub Stats for CCNotify](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=CCNotify&username=dazuiba&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1096,7 +1096,7 @@ A lightweight Python SDK with a clean API and good documentation; simplifies the
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for cchooks](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=cchooks&username=GowayLee&all_stats=true&stats_only=true)
+![GitHub Stats for cchooks](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=cchooks&username=GowayLee&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1107,7 +1107,7 @@ Lightweight CLI tool for real-time communication between Claude Code sub agents 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-hook-comms](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-hook-comms&username=aannoo&all_stats=true&stats_only=true)
+![GitHub Stats for claude-hook-comms](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-hook-comms&username=aannoo&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1118,7 +1118,7 @@ A Laravel-inspired PHP SDK for building Claude Code hook responses with a clean,
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-hooks-sdk](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-hooks-sdk&username=beyondcode&all_stats=true&stats_only=true)
+![GitHub Stats for claude-hooks-sdk](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-hooks-sdk&username=beyondcode&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1129,7 +1129,7 @@ A TypeScript-based system for configuring and customizing Claude Code hooks with
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-hooks](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-hooks&username=johnlindquist&all_stats=true&stats_only=true)
+![GitHub Stats for claude-hooks](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-hooks&username=johnlindquist&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1140,7 +1140,7 @@ A no-frills little library that adds delightful OS-native sounds to Claude Code 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claudio](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claudio&username=ctoth&all_stats=true&stats_only=true)
+![GitHub Stats for claudio](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claudio&username=ctoth&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1151,7 +1151,7 @@ A hooks-driven system that monitors file operations in real-time and blocks chan
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for tdd-guard](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=tdd-guard&username=nizos&all_stats=true&stats_only=true)
+![GitHub Stats for tdd-guard](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=tdd-guard&username=nizos&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1162,7 +1162,7 @@ Quality check hook for Node.js TypeScript projects with TypeScript compilation. 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-code-typescript-hooks](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-typescript-hooks&username=bartolli&all_stats=true&stats_only=true)
+![GitHub Stats for claude-code-typescript-hooks](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-typescript-hooks&username=bartolli&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1186,7 +1186,7 @@ Slash command for hook creation - intelligently prompts you through the creation
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for automated-notebooklm](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=automated-notebooklm&username=omril321&all_stats=true&stats_only=true)
+![GitHub Stats for automated-notebooklm](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=automated-notebooklm&username=omril321&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1197,7 +1197,7 @@ A library of slash commands intended specifically to facilitate common and advan
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for Claude-Code-Linux-Desktop-Slash-Commands](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Claude-Code-Linux-Desktop-Slash-Commands&username=danielrosehill&all_stats=true&stats_only=true)
+![GitHub Stats for Claude-Code-Linux-Desktop-Slash-Commands](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Claude-Code-Linux-Desktop-Slash-Commands&username=danielrosehill&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1213,7 +1213,7 @@ Fetches GitHub issue details to create comprehensive implementation specificatio
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for Narraitor](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Narraitor&username=jerseycheese&all_stats=true&stats_only=true)
+![GitHub Stats for Narraitor](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Narraitor&username=jerseycheese&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1224,7 +1224,7 @@ Creates git commits using conventional commit format with appropriate emojis, fo
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for tevm-monorepo](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=tevm-monorepo&username=evmts&all_stats=true&stats_only=true)
+![GitHub Stats for tevm-monorepo](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=tevm-monorepo&username=evmts&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1235,7 +1235,7 @@ Automates git commit process by selecting the first suggested message, generatin
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for steadystart](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=steadystart&username=steadycursor&all_stats=true&stats_only=true)
+![GitHub Stats for steadystart](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=steadystart&username=steadycursor&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1246,7 +1246,7 @@ Streamlines pull request creation by handling the entire workflow: creating a ne
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for giselle](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=giselle&username=toyamarinyon&all_stats=true&stats_only=true)
+![GitHub Stats for giselle](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=giselle&username=toyamarinyon&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1257,7 +1257,7 @@ Provides comprehensive PR creation guidance with GitHub CLI, enforcing title con
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for liam](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=liam&username=liam-hq&all_stats=true&stats_only=true)
+![GitHub Stats for liam](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=liam&username=liam-hq&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1268,7 +1268,7 @@ Creates git worktrees for all open PRs or specific branches, handling branches w
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for tevm-monorepo](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=tevm-monorepo&username=evmts&all_stats=true&stats_only=true)
+![GitHub Stats for tevm-monorepo](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=tevm-monorepo&username=evmts&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1279,7 +1279,7 @@ Analyzes and fixes GitHub issues using a structured approach with GitHub CLI for
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for kotlinter-gradle](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=kotlinter-gradle&username=jeremymailen&all_stats=true&stats_only=true)
+![GitHub Stats for kotlinter-gradle](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=kotlinter-gradle&username=jeremymailen&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1290,7 +1290,7 @@ Addresses GitHub issues by taking issue number as parameter, analyzing context, 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for metabase](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=metabase&username=metabase&all_stats=true&stats_only=true)
+![GitHub Stats for metabase](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=metabase&username=metabase&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1301,7 +1301,7 @@ Fetches and fixes unresolved PR comments by automatically retrieving feedback, a
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for metabase](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=metabase&username=metabase&all_stats=true&stats_only=true)
+![GitHub Stats for metabase](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=metabase&username=metabase&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1312,7 +1312,7 @@ Sets up and manages Husky Git hooks by configuring pre-commit hooks, establishin
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for tevm-monorepo](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=tevm-monorepo&username=evmts&all_stats=true&stats_only=true)
+![GitHub Stats for tevm-monorepo](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=tevm-monorepo&username=evmts&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1323,7 +1323,7 @@ Updates branch names with proper prefixes and formats, enforcing naming conventi
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for giselle](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=giselle&username=giselles-ai&all_stats=true&stats_only=true)
+![GitHub Stats for giselle](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=giselle&username=giselles-ai&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1339,7 +1339,7 @@ Performs comprehensive code quality and security checks, featuring static analys
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for slack-tools](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=slack-tools&username=rygwdn&all_stats=true&stats_only=true)
+![GitHub Stats for slack-tools](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=slack-tools&username=rygwdn&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1350,7 +1350,7 @@ Provides a menu of advanced code analysis commands for deep inspection, includin
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for n8n_agent](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=n8n_agent&username=kingler&all_stats=true&stats_only=true)
+![GitHub Stats for n8n_agent](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=n8n_agent&username=kingler&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1361,7 +1361,7 @@ Analyzes code performance to identify bottlenecks, proposing concrete optimizati
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for ai-project-rules](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ai-project-rules&username=to4iki&all_stats=true&stats_only=true)
+![GitHub Stats for ai-project-rules](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ai-project-rules&username=to4iki&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1372,7 +1372,7 @@ Creates reproducible test cases for GitHub issues, ensuring tests fail reliably 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for metabase](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=metabase&username=rzykov&all_stats=true&stats_only=true)
+![GitHub Stats for metabase](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=metabase&username=rzykov&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1383,7 +1383,7 @@ Guides development using Test-Driven Development principles, enforcing Red-Green
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for pane](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=pane&username=zscott&all_stats=true&stats_only=true)
+![GitHub Stats for pane](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=pane&username=zscott&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1394,7 +1394,7 @@ Implements Test-Driven Development by analyzing feature requirements, creating t
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for Narraitor](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Narraitor&username=jerseycheese&all_stats=true&stats_only=true)
+![GitHub Stats for Narraitor](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Narraitor&username=jerseycheese&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1410,7 +1410,7 @@ Primes Claude with comprehensive project understanding by loading repository str
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for elizaos.github.io](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=elizaos.github.io&username=elizaOS&all_stats=true&stats_only=true)
+![GitHub Stats for elizaos.github.io](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=elizaos.github.io&username=elizaOS&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1421,7 +1421,7 @@ Initializes reference documentation structure with standard doc templates, API r
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for cubestat](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=cubestat&username=okuvshynov&all_stats=true&stats_only=true)
+![GitHub Stats for cubestat](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=cubestat&username=okuvshynov&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1432,7 +1432,7 @@ Loads LLM configuration files to context, importing specific terminology, model 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for xatu-data](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=xatu-data&username=ethpandaops&all_stats=true&stats_only=true)
+![GitHub Stats for xatu-data](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=xatu-data&username=ethpandaops&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1443,7 +1443,7 @@ References specific files for sparse matrix operations, explains transform usage
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for torchcell](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=torchcell&username=Mjvolk3&all_stats=true&stats_only=true)
+![GitHub Stats for torchcell](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=torchcell&username=Mjvolk3&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1454,7 +1454,7 @@ Sets context for model training by referencing pipeline files, establishing work
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for torchcell](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=torchcell&username=Mjvolk3&all_stats=true&stats_only=true)
+![GitHub Stats for torchcell](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=torchcell&username=Mjvolk3&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1465,7 +1465,7 @@ Sets up initial project context by viewing directory structure and reading key f
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for AI-Engineering-Structure](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=AI-Engineering-Structure&username=yzyydev&all_stats=true&stats_only=true)
+![GitHub Stats for AI-Engineering-Structure](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=AI-Engineering-Structure&username=yzyydev&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1476,7 +1476,7 @@ Reads all commands and key project files to optimize AI-assisted development by 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for si](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=si&username=ddisisto&all_stats=true&stats_only=true)
+![GitHub Stats for si](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=si&username=ddisisto&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1492,7 +1492,7 @@ Adds new entries to changelog files while maintaining format consistency, proper
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for blockdoc-python](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=blockdoc-python&username=berrydev-ai&all_stats=true&stats_only=true)
+![GitHub Stats for blockdoc-python](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=blockdoc-python&username=berrydev-ai&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1503,7 +1503,7 @@ Analyzes code structure and purpose to create comprehensive documentation detail
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for Narraitor](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Narraitor&username=jerseycheese&all_stats=true&stats_only=true)
+![GitHub Stats for Narraitor](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Narraitor&username=jerseycheese&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1514,7 +1514,7 @@ Generates comprehensive documentation that follows project structure, documentin
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for coffee-analytics](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=coffee-analytics&username=slunsford&all_stats=true&stats_only=true)
+![GitHub Stats for coffee-analytics](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=coffee-analytics&username=slunsford&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1525,7 +1525,7 @@ Documents solution approaches for GitHub issues, explaining technical decisions,
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for toban-contribution-viewer](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=toban-contribution-viewer&username=hackdays-io&all_stats=true&stats_only=true)
+![GitHub Stats for toban-contribution-viewer](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=toban-contribution-viewer&username=hackdays-io&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1536,7 +1536,7 @@ Reviews current documentation status, updates implementation progress, reviews p
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for Flutter-Structurizr](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Flutter-Structurizr&username=Consiliency&all_stats=true&stats_only=true)
+![GitHub Stats for Flutter-Structurizr](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Flutter-Structurizr&username=Consiliency&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1552,7 +1552,7 @@ Manages software releases by updating changelogs, reviewing README changes, eval
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for webdown](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=webdown&username=kelp&all_stats=true&stats_only=true)
+![GitHub Stats for webdown](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=webdown&username=kelp&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1563,7 +1563,7 @@ Activates virtual environments, runs CI-compatible check scripts, iteratively fi
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for toban-contribution-viewer](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=toban-contribution-viewer&username=hackdays-io&all_stats=true&stats_only=true)
+![GitHub Stats for toban-contribution-viewer](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=toban-contribution-viewer&username=hackdays-io&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1579,7 +1579,7 @@ Guides Claude through creating new custom commands with proper structure by anal
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for command](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=command&username=scopecraft&all_stats=true&stats_only=true)
+![GitHub Stats for command](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=command&username=scopecraft&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1590,7 +1590,7 @@ Creates Jobs-to-be-Done frameworks that outline user needs with structured forma
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for inkverse](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=inkverse&username=taddyorg&all_stats=true&stats_only=true)
+![GitHub Stats for inkverse](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=inkverse&username=taddyorg&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1601,7 +1601,7 @@ Generates comprehensive product requirement documents outlining detailed specifi
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for inkverse](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=inkverse&username=taddyorg&all_stats=true&stats_only=true)
+![GitHub Stats for inkverse](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=inkverse&username=taddyorg&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1612,7 +1612,7 @@ Creates product requirement plans by reading PRP methodology, following template
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claudecode-utils](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claudecode-utils&username=Wirasm&all_stats=true&stats_only=true)
+![GitHub Stats for claudecode-utils](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claudecode-utils&username=Wirasm&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1623,7 +1623,7 @@ Implements GitHub issues with manual review points, following a structured appro
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for Narraitor](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Narraitor&username=jerseycheese&all_stats=true&stats_only=true)
+![GitHub Stats for Narraitor](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Narraitor&username=jerseycheese&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1634,7 +1634,7 @@ Creates customizable greeting components with name input, demonstrating argument
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for just-prompt](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=just-prompt&username=disler&all_stats=true&stats_only=true)
+![GitHub Stats for just-prompt](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=just-prompt&username=disler&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1645,7 +1645,7 @@ A convenient command to quickly manage project todo items without leaving the Cl
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for todo-slash-command](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=todo-slash-command&username=chrisleyva&all_stats=true&stats_only=true)
+![GitHub Stats for todo-slash-command](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=todo-slash-command&username=chrisleyva&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1661,7 +1661,7 @@ Focuses on Gene Ontology annotation integration in graph databases, handling mul
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for torchcell](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=torchcell&username=Mjvolk3&all_stats=true&stats_only=true)
+![GitHub Stats for torchcell](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=torchcell&username=Mjvolk3&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1672,7 +1672,7 @@ Generates Mermaid diagrams from SQL schema files, creating entity relationship d
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for lana-bank](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=lana-bank&username=GaloyMoney&all_stats=true&stats_only=true)
+![GitHub Stats for lana-bank](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=lana-bank&username=GaloyMoney&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1683,7 +1683,7 @@ Reviews old Dcell implementation files, comparing with newer Dango model, noting
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for torchcell](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=torchcell&username=Mjvolk3&all_stats=true&stats_only=true)
+![GitHub Stats for torchcell](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=torchcell&username=Mjvolk3&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1694,7 +1694,7 @@ Reformats documentation to use React Stepper component, transforming heading for
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for docs](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=docs&username=zuplo&all_stats=true&stats_only=true)
+![GitHub Stats for docs](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=docs&username=zuplo&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1718,7 +1718,7 @@ Provides comprehensive Gradle commands for IntelliJ plugin development with plat
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for ai-intellij-plugin](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=ai-intellij-plugin&username=didalgolab&all_stats=true&stats_only=true)
+![GitHub Stats for ai-intellij-plugin](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ai-intellij-plugin&username=didalgolab&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1729,7 +1729,7 @@ Features multiple Python environment setup options with detailed code style guid
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for aws-mcp-server](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=aws-mcp-server&username=alexei-led&all_stats=true&stats_only=true)
+![GitHub Stats for aws-mcp-server](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=aws-mcp-server&username=alexei-led&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1740,7 +1740,7 @@ Delivers comprehensive Gradle commands for cross-platform Kotlin Multiplatform d
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for DroidconKotlin](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=DroidconKotlin&username=touchlab&all_stats=true&stats_only=true)
+![GitHub Stats for DroidconKotlin](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=DroidconKotlin&username=touchlab&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1755,7 +1755,7 @@ Provides detailed build and test commands using pnpm and Vitest with strict code
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for giselle](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=giselle&username=giselles-ai&all_stats=true&stats_only=true)
+![GitHub Stats for giselle](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=giselle&username=giselles-ai&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1766,7 +1766,7 @@ Features comprehensive repository structure breakdown with strong emphasis on co
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for hash](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=hash&username=hashintel&all_stats=true&stats_only=true)
+![GitHub Stats for hash](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=hash&username=hashintel&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1777,7 +1777,7 @@ Structures development workflow using pnpm with emphasis on TypeScript and Vue 3
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for inkline](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=inkline&username=inkline&all_stats=true&stats_only=true)
+![GitHub Stats for inkline](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=inkline&username=inkline&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1788,7 +1788,7 @@ Provides development guide for JavaScript BBC Micro emulator with build and test
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for jsbeeb](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=jsbeeb&username=mattgodbolt&all_stats=true&stats_only=true)
+![GitHub Stats for jsbeeb](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=jsbeeb&username=mattgodbolt&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1799,7 +1799,7 @@ Serves as reference for production prompt engineering library with load balancin
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for lamoom-python](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=lamoom-python&username=LamoomAI&all_stats=true&stats_only=true)
+![GitHub Stats for lamoom-python](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=lamoom-python&username=LamoomAI&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1810,7 +1810,7 @@ Offers comprehensive build and test commands with detailed TypeScript style guid
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for langgraphjs](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=langgraphjs&username=langchain-ai&all_stats=true&stats_only=true)
+![GitHub Stats for langgraphjs](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=langgraphjs&username=langchain-ai&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1821,7 +1821,7 @@ Details workflow for REPL-driven development in Clojure/ClojureScript with empha
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for metabase](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=metabase&username=metabase&all_stats=true&stats_only=true)
+![GitHub Stats for metabase](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=metabase&username=metabase&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1832,7 +1832,7 @@ Provides comprehensive structure for TypeScript monorepo projects with detailed 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for backend](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=backend&username=sgcarstrends&all_stats=true&stats_only=true)
+![GitHub Stats for backend](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=backend&username=sgcarstrends&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1843,7 +1843,7 @@ Enforces strict coding conventions with comprehensive testing guidelines, multip
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for spy](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=spy&username=spylang&all_stats=true&stats_only=true)
+![GitHub Stats for spy](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=spy&username=spylang&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1854,7 +1854,7 @@ Details Go project conventions with comprehensive error handling recommendations
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for tpl](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=tpl&username=KarpelesLab&all_stats=true&stats_only=true)
+![GitHub Stats for tpl](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=tpl&username=KarpelesLab&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1870,7 +1870,7 @@ Structures AI-assisted EigenLayer AVS development workflow with consistent namin
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for avs-vibe-developer-guide](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=avs-vibe-developer-guide&username=Layr-Labs&all_stats=true&stats_only=true)
+![GitHub Stats for avs-vibe-developer-guide](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=avs-vibe-developer-guide&username=Layr-Labs&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1881,7 +1881,7 @@ Serves as a development reference for E2E-encrypted messaging applications with 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for comm](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=comm&username=CommE2E&all_stats=true&stats_only=true)
+![GitHub Stats for comm](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=comm&username=CommE2E&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1892,7 +1892,7 @@ Enables real-time multiplayer capabilities for collaborative course creation wit
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for course-builder](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=course-builder&username=badass-courses&all_stats=true&stats_only=true)
+![GitHub Stats for course-builder](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=course-builder&username=badass-courses&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1903,7 +1903,7 @@ Creates a versatile AI command interface supporting multiple providers and model
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for cursor-tools](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=cursor-tools&username=eastlondoner&all_stats=true&stats_only=true)
+![GitHub Stats for cursor-tools](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=cursor-tools&username=eastlondoner&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1914,7 +1914,7 @@ Serves as development guide for Guitar Git GUI Client with build commands for va
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for Guitar](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Guitar&username=soramimi&all_stats=true&stats_only=true)
+![GitHub Stats for Guitar](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Guitar&username=soramimi&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1925,7 +1925,7 @@ Presents detailed implementation plan for AI-driven game characters with technic
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for NetworkChronicles](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=NetworkChronicles&username=Fimeg&all_stats=true&stats_only=true)
+![GitHub Stats for NetworkChronicles](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=NetworkChronicles&username=Fimeg&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1936,7 +1936,7 @@ Serves as development guide for Mac security audit tool with build instructions,
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for pareto-mac](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=pareto-mac&username=ParetoSecurity&all_stats=true&stats_only=true)
+![GitHub Stats for pareto-mac](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=pareto-mac&username=ParetoSecurity&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1947,7 +1947,7 @@ Clear and direct instructives about style, permissions, Claude's "role", communi
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for steadystart](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=steadystart&username=steadycursor&all_stats=true&stats_only=true)
+![GitHub Stats for steadystart](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=steadystart&username=steadycursor&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1963,7 +1963,7 @@ Presents an innovative AI-human collaboration framework with Model Context Proto
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for basic-memory](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=basic-memory&username=basicmachines-co&all_stats=true&stats_only=true)
+![GitHub Stats for basic-memory](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=basic-memory&username=basicmachines-co&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1974,7 +1974,7 @@ Provides detailed and emphatic instructions for Claude to follow as a coding age
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-code-mcp-enhanced](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-mcp-enhanced&username=grahama1970&all_stats=true&stats_only=true)
+![GitHub Stats for claude-code-mcp-enhanced](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-mcp-enhanced&username=grahama1970&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1998,7 +1998,7 @@ Claudable is an open-source web builder that leverages local CLI agents, such as
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for Claudable](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=Claudable&username=opactorai&all_stats=true&stats_only=true)
+![GitHub Stats for Claudable](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Claudable&username=opactorai&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -2009,7 +2009,7 @@ A command center for AI agents that syncs Claude Code sessions across terminal, 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for omnara](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=omnara&username=omnara-ai&all_stats=true&stats_only=true)
+![GitHub Stats for omnara](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=omnara&username=omnara-ai&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -2036,7 +2036,7 @@ Offers comprehensive development guides for three distinct AI-powered demo proje
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-quickstarts](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-quickstarts&username=anthropics&all_stats=true&stats_only=true)
+![GitHub Stats for claude-quickstarts](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-quickstarts&username=anthropics&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -2047,7 +2047,7 @@ Official GitHub Actions integration for Claude Code with examples and documentat
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-code-action](https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=claude-code-action&username=anthropics&all_stats=true&stats_only=true)
+![GitHub Stats for claude-code-action](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-action&username=anthropics&all_stats=true&stats_only=true)
 
 </details>
 <br>

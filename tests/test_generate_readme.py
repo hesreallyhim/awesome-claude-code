@@ -874,7 +874,7 @@ class TestFormatResourceEntryGitHubStats(unittest.TestCase):
         self.assertIn("<details>", result)
         self.assertIn("📊 GitHub Stats", result)
         self.assertIn(
-            "https://github-readme-stats-plus-theta.vercel.app/api/pin/?repo=repo&username=owner&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000",
+            "https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=repo&username=owner&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000",
             result,
         )
 

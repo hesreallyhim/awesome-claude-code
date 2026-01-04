@@ -141,4 +141,4 @@ A flat list view of all resources. Category: **Hooks** | Sorted: alphabetically 
 
 **Total Resources:** 9
 
-**Last Generated:** 2026-01-02
+**Last Generated:** 2026-01-04
