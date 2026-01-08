@@ -123,4 +123,4 @@ A flat list view of all resources. Category: **Skills** | Sorted: by date create
 
 **Total Resources:** 7
 
-**Last Generated:** 2026-01-04
+**Last Generated:** 2026-01-07

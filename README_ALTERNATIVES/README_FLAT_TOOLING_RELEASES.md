@@ -188,21 +188,11 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by latest rel
 <tr>
 <td colspan="5"><img src="https://img.shields.io/github/stars/zippoxer/recall?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/zippoxer/recall?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/zippoxer/recall?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/zippoxer/recall?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/zippoxer/recall?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/zippoxer/recall?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/zippoxer/recall?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/zippoxer/recall?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/zippoxer/recall?style=flat-square" alt="license"></td>
 </tr>
-<tr>
-<td><a href="https://github.com/vibe-log/vibe-log-cli"><b>Vibe-Log</b></a><br>by <a href="https://github.com/vibe-log">Vibe-Log</a></td>
-<td>v0.8.6</td>
-<td>GitHub</td>
-<td>2025-12-05</td>
-<td>Analyzes your Claude Code prompts locally (using CC), provides intelligent session analysis and actionable strategic guidance - works in the statusline and produces very pretty HTML reports as well. Easy to install and remove.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/vibe-log/vibe-log-cli?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/vibe-log/vibe-log-cli?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/vibe-log/vibe-log-cli?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/vibe-log/vibe-log-cli?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/vibe-log/vibe-log-cli?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/vibe-log/vibe-log-cli?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/vibe-log/vibe-log-cli?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/vibe-log/vibe-log-cli?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/vibe-log/vibe-log-cli?style=flat-square" alt="license"></td>
-</tr>
 </tbody>
 </table>
 
 ---
 
-**Total Resources:** 14
+**Total Resources:** 13
 
-**Last Generated:** 2026-01-04
+**Last Generated:** 2026-01-07

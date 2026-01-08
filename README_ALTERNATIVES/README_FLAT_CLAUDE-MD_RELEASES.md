@@ -98,21 +98,11 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by latest r
 <tr>
 <td colspan="5"><img src="https://img.shields.io/github/stars/metabase/metabase?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/metabase/metabase?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/metabase/metabase?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/metabase/metabase?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/metabase/metabase?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/metabase/metabase?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/metabase/metabase?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/metabase/metabase?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/metabase/metabase?style=flat-square" alt="license"></td>
 </tr>
-<tr>
-<td><a href="https://github.com/CommE2E/comm/blob/master/CLAUDE.md"><b>Comm</b></a><br>by <a href="https://github.com/CommE2E">CommE2E</a></td>
-<td>web-v1.0.209</td>
-<td>GitHub</td>
-<td>2025-12-06</td>
-<td>Serves as a development reference for E2E-encrypted messaging applications with code organization architecture, security implementation details, and testing procedures.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/CommE2E/comm?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/CommE2E/comm?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/CommE2E/comm?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/CommE2E/comm?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/CommE2E/comm?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/CommE2E/comm?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/CommE2E/comm?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/CommE2E/comm?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/CommE2E/comm?style=flat-square" alt="license"></td>
-</tr>
 </tbody>
 </table>
 
 ---
 
-**Total Resources:** 5
+**Total Resources:** 4
 
-**Last Generated:** 2026-01-04
+**Last Generated:** 2026-01-07

@@ -435,4 +435,4 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by date creat
 
 **Total Resources:** 42
 
-**Last Generated:** 2026-01-04
+**Last Generated:** 2026-01-07

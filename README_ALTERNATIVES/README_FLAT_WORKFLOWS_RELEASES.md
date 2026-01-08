@@ -88,21 +88,11 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by latest r
 <tr>
 <td colspan="5"><img src="https://img.shields.io/github/stars/maxritter/claude-codepro?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/maxritter/claude-codepro?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/maxritter/claude-codepro?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/maxritter/claude-codepro?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/maxritter/claude-codepro?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/maxritter/claude-codepro?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/maxritter/claude-codepro?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/maxritter/claude-codepro?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/maxritter/claude-codepro?style=flat-square" alt="license"></td>
 </tr>
-<tr>
-<td><a href="https://github.com/costiash/claude-code-docs"><b>claude-code-docs</b></a><br>by <a href="https://github.com/costiash">Constantin Shafranski</a></td>
-<td>v0.5.0</td>
-<td>GitHub</td>
-<td>2025-12-05</td>
-<td>A mirror of the Anthropic&copy; PBC documentation site for Claude/Code, but with bonus features like full-text search and query-time updates - a nice companion to `claude-code-docs` for up-to-the-minute, fully-indexed information so that Claude Code can read about itself.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/costiash/claude-code-docs?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/costiash/claude-code-docs?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/costiash/claude-code-docs?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/costiash/claude-code-docs?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/costiash/claude-code-docs?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/costiash/claude-code-docs?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/costiash/claude-code-docs?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/costiash/claude-code-docs?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/costiash/claude-code-docs?style=flat-square" alt="license"></td>
-</tr>
 </tbody>
 </table>
 
 ---
 
-**Total Resources:** 4
+**Total Resources:** 3
 
-**Last Generated:** 2026-01-04
+**Last Generated:** 2026-01-07
