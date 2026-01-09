@@ -10,9 +10,11 @@ jobs:
     # Only run when:
     # 1. PR was merged (not just closed)
     # 2. PR was created by github-actions bot (automated resource PR)
+    # 3. PR does NOT have the 'do-not-disturb' label (allows skipping notifications)
     if: |
       github.event.pull_request.merged == true &&
-      github.event.pull_request.user.login == 'github-actions[bot]'
+      github.event.pull_request.user.login == 'github-actions[bot]' &&
+      !contains(github.event.pull_request.labels.*.name, 'do-not-disturb')
     
     runs-on: ubuntu-latest
     

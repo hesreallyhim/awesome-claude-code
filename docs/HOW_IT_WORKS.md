@@ -21,6 +21,7 @@ The submission system uses several labels to track issue state:
 
 - **`broken-links`** - Applied by scheduled link validation when resources become unavailable
 - **`automated`** - Applied alongside `broken-links` to indicate automated detection
+- **`do-not-disturb`** - Apply to a resource PR before merging to skip the badge notification to the resource author's repository
 
 #### Label State Transitions
 
