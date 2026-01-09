@@ -1,5 +1,8 @@
 """Awesome README generator implementation."""
 
+import os
+from pathlib import Path
+
 from scripts.readme.generators.base import ReadmeGenerator
 from scripts.readme.markup.awesome import (
     format_resource_entry as format_awesome_resource_entry,
@@ -16,6 +19,7 @@ from scripts.readme.markup.awesome import (
 from scripts.readme.markup.awesome import (
     generate_weekly_section as generate_awesome_weekly_section,
 )
+from scripts.utils.repo_root import find_repo_root
 
 
 class AwesomeReadmeGenerator(ReadmeGenerator):
@@ -53,3 +57,16 @@ class AwesomeReadmeGenerator(ReadmeGenerator):
     def generate_repo_ticker(self) -> str:
         """Generate the awesome-style animated SVG repo ticker."""
         return generate_awesome_repo_ticker()
+
+    def generate_banner_image(self, output_path: Path) -> str:
+        """Generate centered banner image for Awesome style README."""
+        repo_root = find_repo_root(Path(__file__))
+        banner_file = ".claude/awesome-claude-code-social-clawd-2.png"
+
+        # Calculate relative path from output location to banner
+        banner_abs = repo_root / banner_file
+        rel_path = Path(os.path.relpath(banner_abs, start=output_path.parent)).as_posix()
+
+        return f"""<p align="center">
+  <img src="{rel_path}" alt="Awesome Claude Code" width="600">
+</p>"""

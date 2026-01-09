@@ -164,6 +164,11 @@ class ReadmeGenerator(ABC):
         """Generate the repo ticker section."""
         return ""
 
+    def generate_banner_image(self, output_path: Path) -> str:
+        """Generate banner image HTML. Override in subclasses to add a banner."""
+        _ = output_path
+        return ""
+
     def load_csv_data(self) -> list[dict]:
         """Load and filter active resources from CSV."""
         csv_data = []
@@ -241,6 +246,9 @@ class ReadmeGenerator(ABC):
             "{{STYLE_SELECTOR}}", self.get_style_selector(Path(output_path))
         )
         readme_content = readme_content.replace("{{REPO_TICKER}}", self.generate_repo_ticker())
+        readme_content = readme_content.replace(
+            "{{BANNER_IMAGE}}", self.generate_banner_image(Path(output_path))
+        )
 
         readme_content = ensure_generated_header(readme_content)
         readme_content = resolve_asset_tokens(
