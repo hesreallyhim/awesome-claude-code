@@ -6,7 +6,8 @@ from datetime import datetime, timedelta
 
 from scripts.readme.helpers.readme_paths import asset_path_token
 from scripts.readme.helpers.readme_utils import (
-    get_anchor_suffix_for_icon,
+    generate_subcategory_anchor,
+    generate_toc_anchor,
     parse_resource_date,
 )
 
@@ -60,16 +61,8 @@ def generate_toc(categories: list[dict], csv_data: list[dict]) -> str:
         section_title = category.get("name", "")
         icon = category.get("icon", "")
         subcategories = category.get("subcategories", [])
-        anchor_suffix = get_anchor_suffix_for_icon(icon)
 
-        anchor = (
-            section_title.lower()
-            .replace(" ", "-")
-            .replace("&", "")
-            .replace("/", "")
-            .replace(".", "")
-        )
-
+        anchor = generate_toc_anchor(section_title, icon=icon)
         display_title = f"{section_title} {icon}" if icon else section_title
 
         if subcategories:
@@ -77,7 +70,7 @@ def generate_toc(categories: list[dict], csv_data: list[dict]) -> str:
             has_resources = any(r["Category"] == category_name for r in csv_data)
 
             if has_resources:
-                toc_lines.append(f"- [{display_title}](#{anchor}{anchor_suffix})")
+                toc_lines.append(f"- [{display_title}](#{anchor})")
 
                 for subcat in subcategories:
                     sub_title = subcat["name"]
@@ -90,20 +83,12 @@ def generate_toc(categories: list[dict], csv_data: list[dict]) -> str:
                     ]
 
                     if resources:
-                        sub_anchor = (
-                            sub_title.lower().replace(" ", "-").replace("&", "").replace("/", "")
+                        sub_anchor, general_counter = generate_subcategory_anchor(
+                            sub_title, general_counter
                         )
-
-                        if sub_title == "General":
-                            if general_counter == 0:
-                                sub_anchor = "general"
-                            else:
-                                sub_anchor = f"general-{general_counter}"
-                            general_counter += 1
-
                         toc_lines.append(f"  - [{sub_title}](#{sub_anchor})")
         else:
-            toc_lines.append(f"- [{display_title}](#{anchor}{anchor_suffix})")
+            toc_lines.append(f"- [{display_title}](#{anchor})")
 
     return "\n".join(toc_lines).strip()
 

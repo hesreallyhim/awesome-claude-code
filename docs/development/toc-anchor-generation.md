@@ -82,14 +82,15 @@ make test  # Includes TOC anchor validation tests
 
 ## HTML Fixture Storage
 
-GitHub-rendered HTML fixtures are stored in `tests/fixtures/github-html/` (version controlled):
+GitHub-rendered HTML fixtures are stored in `tests/fixtures/github-html/` (version controlled).
+Fixture filenames indicate root vs non-root placement to detect potential rendering differences:
 
-| Style | README Path | HTML Fixture Path |
-|-------|-------------|-------------------|
-| AWESOME | `README.md` | `tests/fixtures/github-html/awesome.html` |
-| CLASSIC | `README_ALTERNATIVES/README_CLASSIC.md` | `tests/fixtures/github-html/classic.html` |
-| EXTRA | `README_ALTERNATIVES/README_EXTRA.md` | `tests/fixtures/github-html/extra.html` |
-| FLAT | `README_ALTERNATIVES/README_FLAT_ALL_AZ.md` | `tests/fixtures/github-html/flat.html` |
+| Style | README Path | HTML Fixture | Placement |
+|-------|-------------|--------------|-----------|
+| AWESOME | `README.md` | `awesome-root.html` | Root |
+| CLASSIC | `README_ALTERNATIVES/README_CLASSIC.md` | `classic-non-root.html` | Non-root |
+| EXTRA | `README_ALTERNATIVES/README_EXTRA.md` | `extra-non-root.html` | Non-root |
+| FLAT | `README_ALTERNATIVES/README_FLAT_ALL_AZ.md` | `flat-non-root.html` | Non-root |
 
 Validation commands:
 ```bash
@@ -102,17 +103,55 @@ python3 -m scripts.testing.validate_toc_anchors --style extra
 python3 -m scripts.testing.validate_toc_anchors --style flat
 ```
 
-## Remaining Work
+## Validation Status
 
-| Style | Validated | Notes |
-|-------|-----------|-------|
-| AWESOME | ✅ | Root README, tested and fixed |
-| CLASSIC | ✅ | Tested and fixed (different anchor format due to 🔝 in headings) |
-| EXTRA | ❌ | Uses explicit `id` attributes; needs validation |
-| FLAT | ❌ | Simpler format (no subcategories); needs validation |
+| Style | Status | Notes |
+|-------|--------|-------|
+| AWESOME | ✅ | Root README, 30 TOC anchors verified |
+| CLASSIC | ✅ | Different anchor format due to 🔝 in headings |
+| EXTRA | ✅ | Uses explicit `id` attributes; template anchor fixed |
+| FLAT | ✅ | No TOC anchors (flat list format) |
 
-### TODO
-- [ ] Download GitHub HTML for EXTRA style and validate
-- [ ] Download GitHub HTML for FLAT style and validate
-- [ ] Fix any anchor mismatches found in EXTRA/FLAT
-- [ ] Consider unifying anchor generation logic into shared helpers
+## Future Work
+
+- [ ] Unify anchor generation logic into shared helper with parameterized flags
+- [ ] Add CI job to validate TOC anchors on README changes
+
+---
+
+## Architectural Decision: Anchor Generation Unification
+
+**Date**: 2026-01-09
+
+**Context**: TOC anchor generation logic is duplicated across three files (`awesome.py`, `minimal.py`, `visual.py`) with subtle differences due to each style's heading format.
+
+**Options Considered**:
+
+1. **Parameterized flags** - Create shared helper with semantic flags like `has_back_to_top_in_heading`
+2. **Unify to ID-based** - Migrate all styles to use explicit `<h2 id="...">` like EXTRA
+
+**Decision**: Option 1 (parameterized flags)
+
+**Rationale**:
+- Lower risk: heading markup remains unchanged
+- AWESOME style intentionally uses clean markdown (`## Title`) for aesthetic reasons
+- ID-based approach would require CLASSIC to restructure its `[🔝](#...)` links
+- Parameterized flags are self-documenting and decouple anchor logic from style names
+
+**Proposed API**:
+```python
+def generate_toc_anchor(
+    title: str,
+    icon: str | None = None,
+    has_back_to_top_in_heading: bool = False,
+) -> str:
+    """Generate TOC anchor for a heading.
+
+    Args:
+        title: The heading text (e.g., "Agent Skills")
+        icon: Optional trailing emoji icon (e.g., "🤖")
+        has_back_to_top_in_heading: True if heading contains 🔝 back-to-top link
+    """
+```
+
+**Trade-off**: If a style changes its heading format (e.g., CLASSIC removes 🔝), only the flag value changes—not the shared logic.

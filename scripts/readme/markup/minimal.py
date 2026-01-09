@@ -5,7 +5,8 @@ from __future__ import annotations
 from datetime import datetime, timedelta
 
 from scripts.readme.helpers.readme_utils import (
-    get_anchor_suffix_for_icon,
+    generate_subcategory_anchor,
+    generate_toc_anchor,
     parse_resource_date,
 )
 from scripts.utils.github_utils import parse_github_url
@@ -67,28 +68,21 @@ def generate_toc(categories: list[dict], csv_data: list[dict]) -> str:
     toc_lines.append("")
 
     general_counter = 0
+    # CLASSIC style headings include [🔝](#awesome-claude-code) which adds another dash
+    has_back_to_top = True
 
     for category in categories:
         section_title = category.get("name", "")
         icon = category.get("icon", "")
         subcategories = category.get("subcategories", [])
-        anchor_suffix = get_anchor_suffix_for_icon(icon)
-        # CLASSIC style headings include [🔝](#awesome-claude-code) which adds another dash
-        back_to_top_suffix = "-"
 
-        anchor = (
-            section_title.lower()
-            .replace(" ", "-")
-            .replace("&", "")
-            .replace("/", "")
-            .replace(".", "")
+        anchor = generate_toc_anchor(
+            section_title, icon=icon, has_back_to_top_in_heading=has_back_to_top
         )
 
         if subcategories:
             toc_lines.append("- <details open>")
-            toc_lines.append(
-                f'  <summary><a href="#{anchor}{anchor_suffix}{back_to_top_suffix}">{section_title}</a></summary>'
-            )
+            toc_lines.append(f'  <summary><a href="#{anchor}">{section_title}</a></summary>')
             toc_lines.append("")
 
             for subcat in subcategories:
@@ -103,27 +97,15 @@ def generate_toc(categories: list[dict], csv_data: list[dict]) -> str:
                 ]
 
                 if resources:
-                    sub_anchor = (
-                        sub_title.lower().replace(" ", "-").replace("&", "").replace("/", "")
+                    sub_anchor, general_counter = generate_subcategory_anchor(
+                        sub_title, general_counter, has_back_to_top_in_heading=has_back_to_top
                     )
-
-                    # CLASSIC subcategory headings include 🔝 which adds a trailing dash
-                    if sub_title == "General":
-                        if general_counter == 0:
-                            sub_anchor = "general-"
-                        else:
-                            # GitHub uses double-dash before counter: general--1, general--2
-                            sub_anchor = f"general--{general_counter}"
-                        general_counter += 1
-                    else:
-                        sub_anchor = f"{sub_anchor}-"
-
                     toc_lines.append(f"  - [{sub_title}](#{sub_anchor})")
 
             toc_lines.append("")
             toc_lines.append("  </details>")
         else:
-            toc_lines.append(f"- [{section_title}](#{anchor}{anchor_suffix}{back_to_top_suffix})")
+            toc_lines.append(f"- [{section_title}](#{anchor})")
 
         toc_lines.append("")
 

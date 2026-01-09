@@ -42,18 +42,19 @@ FIXTURES_DIR = REPO_ROOT / "tests" / "fixtures" / "github-html"
 EXPECTED_ANCHORS_PATH = REPO_ROOT / "tests" / "fixtures" / "expected_toc_anchors.txt"
 
 # Style configurations: (html_fixture, readme_path)
+# HTML fixture names indicate root vs non-root placement on GitHub
 STYLE_CONFIGS = {
-    "awesome": (FIXTURES_DIR / "awesome.html", REPO_ROOT / "README.md"),
+    "awesome": (FIXTURES_DIR / "awesome-root.html", REPO_ROOT / "README.md"),
     "classic": (
-        FIXTURES_DIR / "classic.html",
+        FIXTURES_DIR / "classic-non-root.html",
         REPO_ROOT / "README_ALTERNATIVES" / "README_CLASSIC.md",
     ),
     "extra": (
-        FIXTURES_DIR / "extra.html",
+        FIXTURES_DIR / "extra-non-root.html",
         REPO_ROOT / "README_ALTERNATIVES" / "README_EXTRA.md",
     ),
     "flat": (
-        FIXTURES_DIR / "flat.html",
+        FIXTURES_DIR / "flat-non-root.html",
         REPO_ROOT / "README_ALTERNATIVES" / "README_FLAT_ALL_AZ.md",
     ),
 }

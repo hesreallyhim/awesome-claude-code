@@ -16,6 +16,7 @@ from scripts.readme.helpers.readme_assets import (
 )
 from scripts.readme.helpers.readme_paths import asset_path_token
 from scripts.readme.helpers.readme_utils import (
+    generate_toc_anchor,
     parse_resource_date,
     sanitize_filename_from_anchor,
 )
@@ -163,22 +164,15 @@ style="height:48px;max-width:none;">
         section_title = category["name"]
         category_name = category.get("name", "")
         category_id = category.get("id", "")
-        anchor = (
-            section_title.lower()
-            .replace(" ", "-")
-            .replace("&", "")
-            .replace("/", "")
-            .replace(".", "")
-        )
-
-        anchor_suffix = "-"
+        # EXTRA style uses explicit IDs with trailing dash (no icon in anchor)
+        anchor = generate_toc_anchor(section_title, icon=None, has_back_to_top_in_heading=True)
 
         svg_filename = get_category_svg_filename(category_id)
 
         dark_svg = svg_filename
         light_svg = svg_filename.replace(".svg", "-light-anim-scanline.svg")
         toc_lines.append('<div style="height:40px;width:400px;overflow:hidden;display:block;">')
-        toc_lines.append(f'<a href="#{anchor}{anchor_suffix}">')
+        toc_lines.append(f'<a href="#{anchor}">')
         toc_lines.append("  <picture>")
         toc_lines.append(
             f'    <source media="(prefers-color-scheme: dark)" srcset="{asset_path_token(dark_svg)}">'
@@ -285,8 +279,8 @@ def generate_section_content(
     lines.append("</div>")
     lines.append("")
 
-    anchor = title.lower().replace(" ", "-").replace("&", "").replace("/", "").replace(".", "")
-    anchor_id = f"{anchor}-"
+    # EXTRA style uses explicit IDs with trailing dash (no icon in anchor)
+    anchor_id = generate_toc_anchor(title, icon=None, has_back_to_top_in_heading=True)
 
     section_number = str(section_index + 1).zfill(2)
     display_title = title

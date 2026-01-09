@@ -60,6 +60,63 @@ def get_anchor_suffix_for_icon(icon: str | None) -> str:
     return "-"
 
 
+def generate_toc_anchor(
+    title: str,
+    icon: str | None = None,
+    has_back_to_top_in_heading: bool = False,
+) -> str:
+    """Generate a TOC anchor for a heading.
+
+    Centralizes anchor generation logic across all README styles.
+
+    Args:
+        title: The heading text (e.g., "Agent Skills")
+        icon: Optional trailing emoji icon (e.g., "🤖"). Each emoji adds a dash.
+        has_back_to_top_in_heading: True if heading contains 🔝 back-to-top link,
+            which adds an additional trailing dash to the anchor.
+
+    Returns:
+        The anchor string without the leading '#' (e.g., "agent-skills-")
+    """
+    base = title.lower().replace(" ", "-").replace("&", "").replace("/", "").replace(".", "")
+    suffix = get_anchor_suffix_for_icon(icon)
+    back_to_top_suffix = "-" if has_back_to_top_in_heading else ""
+    return f"{base}{suffix}{back_to_top_suffix}"
+
+
+def generate_subcategory_anchor(
+    title: str,
+    general_counter: int = 0,
+    has_back_to_top_in_heading: bool = False,
+) -> tuple[str, int]:
+    """Generate a TOC anchor for a subcategory heading.
+
+    Handles the special case of multiple "General" subcategories which need
+    unique anchors (general, general-1, general-2, etc.).
+
+    Args:
+        title: The subcategory name (e.g., "General", "IDE Integrations")
+        general_counter: Current count of "General" subcategories seen so far
+        has_back_to_top_in_heading: True if heading contains 🔝 back-to-top link
+
+    Returns:
+        Tuple of (anchor_string, updated_general_counter)
+    """
+    base = title.lower().replace(" ", "-").replace("&", "").replace("/", "")
+    back_to_top_suffix = "-" if has_back_to_top_in_heading else ""
+
+    if title == "General":
+        if general_counter == 0:
+            anchor = f"general{back_to_top_suffix}"
+        else:
+            # GitHub uses double-dash before counter when back-to-top present
+            separator = "-" if has_back_to_top_in_heading else ""
+            anchor = f"general-{separator}{general_counter}"
+        return anchor, general_counter + 1
+
+    return f"{base}{back_to_top_suffix}", general_counter
+
+
 def sanitize_filename_from_anchor(anchor: str) -> str:
     """Convert an anchor string to a tidy filename fragment."""
     name = anchor.rstrip("-")

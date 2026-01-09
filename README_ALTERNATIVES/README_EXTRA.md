@@ -97,7 +97,7 @@
 </a>
 </td>
 <td align="center">
-<a href="#workflows-knowledge-guides-">
+<a href="#workflows--knowledge-guides-">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/card-workflows.svg">
   <source media="(prefers-color-scheme: light)" srcset="../assets/card-workflows-light-anim-lineprint.svg">
