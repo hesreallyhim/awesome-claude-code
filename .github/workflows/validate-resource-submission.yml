@@ -3,6 +3,9 @@ name: Validate Resource Submission
 on:
   issues:
     types: [opened, reopened, edited]
+    # This listens for events on the issue body itself,
+    # which is what the bot checks for validation.
+    # This is not for handling comments.
 
 jobs:
   validate-submission:
@@ -22,6 +25,7 @@ jobs:
             scripts/
             templates/
             THE_RESOURCES_TABLE.csv
+            pyproject.toml
       
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -31,7 +35,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install PyYAML requests python-dotenv
+          pip install PyGithub PyYAML requests python-dotenv
       
       - name: Parse and validate submission
         id: validate
@@ -39,10 +43,11 @@ jobs:
           ISSUE_BODY: ${{ github.event.issue.body }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PYTHONPATH: ${{ github.workspace }}
         run: |
           # Run validation and capture only the last line (JSON output)
           # The script now outputs compact JSON on the last line
-          python scripts/parse_issue_form.py --validate 2>&1 | tail -n 1 > validation_result.json
+          python -m scripts.resources.parse_issue_form --validate 2>&1 | tail -n 1 > validation_result.json
           
           # Display validation status
           if grep -q '"valid": true' validation_result.json; then

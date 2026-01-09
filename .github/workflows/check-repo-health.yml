@@ -1,0 +1,47 @@
+name: Check Repository Health
+
+# This workflow checks the health of active GitHub repositories listed in THE_RESOURCES_TABLE.csv.
+# It verifies that repositories are still active and maintained by checking:
+# - Number of open issues
+# - Date of last push or PR merge
+#
+# The workflow will fail if any repository:
+# - Has not been updated in over 6 months AND
+# - Has more than 2 open issues
+#
+# Deleted repositories are logged but do not cause the workflow to fail.
+
+on:
+  schedule:
+    # Run weekly on Monday at 9:00 AM UTC
+    - cron: '0 9 * * 1'
+  workflow_dispatch: # Allow manual triggering
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  PYTHONPATH: ${{ github.workspace }}
+
+permissions:
+  contents: read
+
+jobs:
+  check-repo-health:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python3 -m pip install --upgrade pip
+        python3 -m pip install -e ".[dev]"
+
+    - name: Run repository health check
+      run: |
+        python3 -m scripts.maintenance.check_repo_health

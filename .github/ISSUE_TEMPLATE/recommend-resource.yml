@@ -10,10 +10,12 @@ body:
         ## Welcome! 👋
 
         Thank you for recommending a resource to Awesome Claude Code! This form will guide you through the recommendation process.
+        Please make sure that you have already reviewed the CONTRIBUTING document as well as the CODE_OF_CONDUCT
 
         **Resource Guidelines:**
         - Ensure that your resource is unique and provides genuine value to Claude Code users.
-        - Avoid submitting resources that violate the Claude Code Usage Policy (to the best of your understanding)
+        - Avoid submitting resources that violate the Claude Code Usage Policy (to the best of your understanding).
+        - Make sure that the project does not violate the licensing rights of other independent developers.
         - Recommendations will be closely scrutinized for security and potential risk.
         - Although most recommendations are submitted by the authors, you may submit any resource that you love.
         

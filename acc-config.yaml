@@ -1,0 +1,53 @@
+# Awesome Claude Code Configuration
+# This file controls various aspects of README generation and repository behavior.
+
+# =============================================================================
+# README Generation Settings
+# =============================================================================
+
+readme:
+  # Which README style should be the root (lives at repo root as README.md)
+  # Options: extra, classic, awesome, flat
+  root_style: awesome
+
+# =============================================================================
+# Style Selector Configuration
+# =============================================================================
+# Defines the styles shown in the "Pick Your Style" selector across all READMEs.
+# Each style has:
+#   - name: Display name for the badge alt text
+#   - badge: SVG badge filename (without path)
+#   - highlight_color: Border color when this style is selected
+#   - filename: README variant filename stored under README_ALTERNATIVES/
+
+styles:
+  extra:
+    name: Extra
+    badge: badge-style-extra.svg
+    highlight_color: "#6a6a8a"
+    filename: README_EXTRA.md
+
+  classic:
+    name: Classic
+    badge: badge-style-classic.svg
+    highlight_color: "#c9a227"
+    filename: README_CLASSIC.md
+
+  awesome:
+    name: Awesome
+    badge: badge-style-awesome.svg
+    highlight_color: "#cc3366"
+    filename: README_AWESOME.md
+
+  flat:
+    name: Flat
+    badge: badge-style-flat.svg
+    highlight_color: "#71717a"
+    filename: README_FLAT_ALL_AZ.md
+
+# Order in which styles appear in the selector (left to right)
+style_order:
+  - awesome
+  - extra
+  - classic
+  - flat

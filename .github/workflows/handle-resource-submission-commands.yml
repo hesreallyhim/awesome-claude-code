@@ -1,0 +1,216 @@
+name: Handle Resource Submission Commands
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  process-commands:
+    # Only run when:
+    # 1. Comment is on an issue (not a PR)
+    # 2. Issue has resource-submission label
+    # 3. Commenter has write permissions (maintainer/owner)
+    # 4. Comment contains one of the commands: /approve, /reject, /request-changes
+    if: |
+      github.event.issue.pull_request == null &&
+      contains(github.event.issue.labels.*.name, 'resource-submission') &&
+      (github.event.comment.author_association == 'OWNER' || github.event.comment.author_association == 'MEMBER' || github.event.comment.author_association == 'COLLABORATOR') &&
+      (contains(github.event.comment.body, '/approve') || contains(github.event.comment.body, '/reject') || contains(github.event.comment.body, '/request-changes'))
+    
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install PyYAML requests PyGithub python-dotenv
+      
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      
+      - name: React to approval comment
+        if: contains(github.event.comment.body, '/approve') && contains(github.event.issue.labels.*.name, 'validation-passed')
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.reactions.createForIssueComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: context.payload.comment.id,
+              content: 'rocket'
+            });
+      
+      - name: Parse issue and create PR
+        id: create_pr
+        if: contains(github.event.comment.body, '/approve') && contains(github.event.issue.labels.*.name, 'validation-passed')
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PYTHONPATH: ${{ github.workspace }}
+        run: |
+          # TODO: Consider emitting issue parsing output via GITHUB_OUTPUT to avoid temp files.
+          # First parse the issue to get resource data
+          python -m scripts.resources.parse_issue_form > resource_data.json
+          
+          # Create the PR with the resource
+          python -m scripts.resources.create_resource_pr \
+            --issue-number $ISSUE_NUMBER \
+            --resource-data resource_data.json
+      
+      - name: Comment on issue with results
+        if: contains(github.event.comment.body, '/approve') && contains(github.event.issue.labels.*.name, 'validation-passed')
+        uses: actions/github-script@v7
+        env:
+          CREATE_PR_SUCCESS: ${{ steps.create_pr.outputs.success }}
+          PR_URL: ${{ steps.create_pr.outputs.pr_url }}
+        with:
+          script: |
+            const pr_url = process.env.PR_URL || null;
+            const success = (process.env.CREATE_PR_SUCCESS || '').toLowerCase() === 'true';
+            
+            const issue_number = context.issue.number;
+            
+            let comment_body = '## ✅ Resource Approved!\n\n';
+            
+            if (success && pr_url && pr_url !== 'null') {
+              comment_body += `🎉 A pull request has been created with your resource: ${pr_url}\n\n`;
+              comment_body += 'The PR will be merged shortly, and you\'ll be notified when your resource is live.\n\n';
+              comment_body += 'Thank you for contributing to Awesome Claude Code!';
+              
+              // Add approved label
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue_number,
+                labels: ['approved', 'pr-created']
+              });
+              
+              // Close the issue
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue_number,
+                state: 'closed',
+                state_reason: 'completed'
+              });
+            } else {
+              comment_body += '❌ There was an error creating the pull request.\n\n';
+              comment_body += 'Please check the workflow logs for details.';
+              
+              // Add error label
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue_number,
+                labels: ['error-creating-pr']
+              });
+            }
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue_number,
+              body: comment_body
+            });
+      
+      - name: Handle rejection
+        if: contains(github.event.comment.body, '/reject')
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const comment = context.payload.comment.body;
+            const issue_number = context.issue.number;
+            
+            // Extract rejection reason
+            const reasonMatch = comment.match(/\/reject\s+(.*)/);
+            const reason = reasonMatch ? reasonMatch[1] : 'No reason provided';
+            
+            // Add rejection comment
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue_number,
+              body: `## ❌ Submission Rejected\n\n**Reason:** ${reason}\n\n`
+            });
+            
+            // Update labels and close
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue_number,
+              labels: ['rejected']
+            });
+            
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue_number,
+              state: 'closed',
+              state_reason: 'not_planned'
+            });
+      
+      - name: React to request changes command
+        if: contains(github.event.comment.body, '/request-changes')
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.reactions.createForIssueComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: context.payload.comment.id,
+              content: 'eyes'
+            });
+      
+      - name: Handle request changes
+        if: contains(github.event.comment.body, '/request-changes')
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const comment = context.payload.comment.body;
+            const issue_number = context.issue.number;
+            
+            // Extract requested changes
+            const changesMatch = comment.match(/\/request-changes\s+(.*)/s);
+            const changes = changesMatch ? changesMatch[1] : 'Please review the submission requirements.';
+            
+            // Add comment with maintainer mention
+            const maintainer = context.payload.comment.user.login;
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue_number,
+              body: `## 🔄 Changes Requested by @${maintainer}\n\n${changes}\n\nPlease edit your issue to address these points. The validation will run again automatically after you make changes.`
+            });
+            
+            // Update labels
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue_number,
+              labels: ['changes-requested']
+            });
+      
+      - name: Cleanup temporary files
+        if: always()
+        run: |
+          rm -f pr_result.json resource_data.json

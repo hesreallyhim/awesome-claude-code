@@ -13,7 +13,7 @@ import yaml
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from scripts.category_utils import CategoryManager  # noqa: E402
+from scripts.categories.category_utils import CategoryManager  # noqa: E402
 
 
 def create_test_categories() -> dict[str, Any]:
@@ -66,7 +66,7 @@ def test_get_all_categories() -> None:
     """Test getting all category names."""
     # Create a new instance with test data
     manager = CategoryManager()
-    manager._data = create_test_categories()
+    CategoryManager._data = create_test_categories()
 
     categories = manager.get_all_categories()
 
@@ -80,7 +80,7 @@ def test_get_all_categories() -> None:
 def test_get_category_prefixes() -> None:
     """Test getting category ID prefixes."""
     manager = CategoryManager()
-    manager._data = create_test_categories()
+    CategoryManager._data = create_test_categories()
 
     prefixes = manager.get_category_prefixes()
 
@@ -94,7 +94,7 @@ def test_get_category_prefixes() -> None:
 def test_get_category_by_name() -> None:
     """Test retrieving category by name."""
     manager = CategoryManager()
-    manager._data = create_test_categories()
+    CategoryManager._data = create_test_categories()
 
     # Test existing category
     cat_one = manager.get_category_by_name("Category One")
@@ -112,7 +112,7 @@ def test_get_category_by_name() -> None:
 def test_get_category_by_id() -> None:
     """Test retrieving category by ID."""
     manager = CategoryManager()
-    manager._data = create_test_categories()
+    CategoryManager._data = create_test_categories()
 
     # Test existing category
     cat_two = manager.get_category_by_id("cat2")
@@ -129,7 +129,7 @@ def test_get_category_by_id() -> None:
 def test_get_all_subcategories() -> None:
     """Test getting all subcategories with parent info."""
     manager = CategoryManager()
-    manager._data = create_test_categories()
+    CategoryManager._data = create_test_categories()
 
     subcategories = manager.get_all_subcategories()
 
@@ -158,7 +158,7 @@ def test_get_all_subcategories() -> None:
 def test_get_subcategories_for_category() -> None:
     """Test getting subcategories for a specific category."""
     manager = CategoryManager()
-    manager._data = create_test_categories()
+    CategoryManager._data = create_test_categories()
 
     # Category with subcategories
     cat_one_subs = manager.get_subcategories_for_category("Category One")
@@ -178,7 +178,7 @@ def test_get_subcategories_for_category() -> None:
 def test_validate_category_subcategory() -> None:
     """Test validation of category-subcategory relationships."""
     manager = CategoryManager()
-    manager._data = create_test_categories()
+    CategoryManager._data = create_test_categories()
 
     # Valid combinations
     assert manager.validate_category_subcategory("Category One", "Subcategory A") is True
@@ -197,7 +197,7 @@ def test_validate_category_subcategory() -> None:
 def test_get_categories_for_readme() -> None:
     """Test getting categories ordered for README generation."""
     manager = CategoryManager()
-    manager._data = create_test_categories()
+    CategoryManager._data = create_test_categories()
 
     categories = manager.get_categories_for_readme()
 
@@ -213,7 +213,7 @@ def test_get_categories_for_readme() -> None:
 def test_get_toc_config() -> None:
     """Test getting table of contents configuration."""
     manager = CategoryManager()
-    manager._data = create_test_categories()
+    CategoryManager._data = create_test_categories()
 
     toc_config = manager.get_toc_config()
 
@@ -250,9 +250,9 @@ def test_loading_from_file() -> None:
 
         def mock_load(self: Any) -> None:
             with open(temp_path, encoding="utf-8") as f:
-                self._data = yaml.safe_load(f)
+                type(self)._data = yaml.safe_load(f)
 
-        CategoryManager._load_categories = mock_load
+        CategoryManager._load_categories = mock_load  # type: ignore[method-assign]
 
         # Create a fresh instance (reset singleton)
         CategoryManager._instance = None
@@ -266,7 +266,7 @@ def test_loading_from_file() -> None:
         assert "Category One" in categories
 
         # Restore original method
-        CategoryManager._load_categories = original_load
+        CategoryManager._load_categories = original_load  # type: ignore[method-assign]
     finally:
         # Clean up
         Path(temp_path).unlink()
@@ -275,7 +275,7 @@ def test_loading_from_file() -> None:
 def test_robustness_with_missing_fields() -> None:
     """Test that the manager handles missing optional fields gracefully."""
     manager = CategoryManager()
-    manager._data = {
+    CategoryManager._data = {
         "categories": [
             {
                 "id": "minimal",

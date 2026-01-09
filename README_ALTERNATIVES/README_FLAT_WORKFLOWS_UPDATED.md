@@ -1,8 +1,10 @@
+<!-- GENERATED FILE: do not edit directly -->
 <!--lint disable remark-lint:awesome-badge-->
 
 <h3 align="center">Pick Your Style:</h3>
 <p align="center">
-<a href="../"><img src="../assets/badge-style-extra.svg" alt="Extra" height="28"></a>
+<a href="../"><img src="../assets/badge-style-awesome.svg" alt="Awesome" height="28"></a>
+<a href="README_EXTRA.md"><img src="../assets/badge-style-extra.svg" alt="Extra" height="28"></a>
 <a href="README_CLASSIC.md"><img src="../assets/badge-style-classic.svg" alt="Classic" height="28"></a>
 <a href="README_FLAT_ALL_AZ.md"><img src="../assets/badge-style-flat.svg" alt="Flat" height="28" style="border: 2px solid #71717a; border-radius: 4px;"></a>
 </p>
@@ -93,13 +95,13 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by last upd
 <td colspan="4"><img src="https://img.shields.io/github/stars/ericbuess/claude-code-docs?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ericbuess/claude-code-docs?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ericbuess/claude-code-docs?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ericbuess/claude-code-docs?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ericbuess/claude-code-docs?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ericbuess/claude-code-docs?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ericbuess/claude-code-docs?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ericbuess/claude-code-docs?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ericbuess/claude-code-docs?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/danielrosehill/Claude-Code-Repos-Index"><b>Claude Code Repos Index</b></a><br>by <a href="https://github.com/danielrosehill">Daniel Rosehill</a></td>
+<td><a href="https://github.com/maxritter/claude-codepro"><b>Claude CodePro</b></a><br>by <a href="https://www.maxritter.net">Max Ritter</a></td>
 <td>Workflows & Knowledge Guides</td>
 <td>General</td>
-<td>This is either the work of a prolific genius, or a very clever bot (or both), although it hardly matters because the quality is so good - an index of 75+ Claude Code repositories published by the author - and I'm not talking about slop. CMS, system design, deep research, IoT, agentic workflows, server management, personal health... If you spot the lie, let me know, otherwise please check these out.</td>
+<td>Professional development environment for Claude Code with spec-driven workflow, TDD enforcement, cross-session memory, semantic search, quality hooks, and modular rules integration. A bit "heavyweight" but feature-packed and has wide coverage.</td>
 </tr>
 <tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="license"></td>
+<td colspan="4"><img src="https://img.shields.io/github/stars/maxritter/claude-codepro?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/maxritter/claude-codepro?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/maxritter/claude-codepro?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/maxritter/claude-codepro?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/maxritter/claude-codepro?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/maxritter/claude-codepro?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/maxritter/claude-codepro?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/maxritter/claude-codepro?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/maxritter/claude-codepro?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/Piebald-AI/claude-code-system-prompts"><b>Claude Code System Prompts</b></a><br>by <a href="https://github.com/Piebald-AI">Piebald AI</a></td>
@@ -120,13 +122,13 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by last upd
 <td colspan="4"><img src="https://img.shields.io/github/stars/harperreed/dotfiles?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/harperreed/dotfiles?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/harperreed/dotfiles?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/harperreed/dotfiles?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/harperreed/dotfiles?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/harperreed/dotfiles?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/harperreed/dotfiles?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/harperreed/dotfiles?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/harperreed/dotfiles?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/maxritter/claude-codepro"><b>Claude CodePro</b></a><br>by <a href="https://www.maxritter.net">Max Ritter</a></td>
+<td><a href="https://github.com/danielrosehill/Claude-Code-Repos-Index"><b>Claude Code Repos Index</b></a><br>by <a href="https://github.com/danielrosehill">Daniel Rosehill</a></td>
 <td>Workflows & Knowledge Guides</td>
 <td>General</td>
-<td>Professional development environment for Claude Code with spec-driven workflow, TDD enforcement, cross-session memory, semantic search, quality hooks, and modular rules integration. A bit "heavyweight" but feature-packed and has wide coverage.</td>
+<td>This is either the work of a prolific genius, or a very clever bot (or both), although it hardly matters because the quality is so good - an index of 75+ Claude Code repositories published by the author - and I'm not talking about slop. CMS, system design, deep research, IoT, agentic workflows, server management, personal health... If you spot the lie, let me know, otherwise please check these out.</td>
 </tr>
 <tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/maxritter/claude-codepro?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/maxritter/claude-codepro?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/maxritter/claude-codepro?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/maxritter/claude-codepro?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/maxritter/claude-codepro?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/maxritter/claude-codepro?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/maxritter/claude-codepro?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/maxritter/claude-codepro?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/maxritter/claude-codepro?style=flat-square" alt="license"></td>
+<td colspan="4"><img src="https://img.shields.io/github/stars/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/ThibautMelen/agentic-workflow-patterns"><b>Agentic Workflow Patterns</b></a><br>by <a href="https://github.com/ThibautMelen">ThibautMelen</a></td>
@@ -270,4 +272,4 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by last upd
 
 **Total Resources:** 24
 
-**Last Generated:** 2026-01-07
+**Last Generated:** 2026-01-09

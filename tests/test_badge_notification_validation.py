@@ -4,18 +4,15 @@ Security validation tests for badge notification system
 Tests that dangerous inputs are REJECTED, not sanitized
 """
 
-import os
 import sys
-import unittest.mock as mock
+from pathlib import Path
 
-scripts_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "scripts"))
-if scripts_dir not in sys.path:
-    sys.path.insert(0, scripts_dir)
+import pytest
 
-try:
-    from badge_notification_core import BadgeNotificationCore  # type: ignore[import]
-except ImportError:
-    from scripts.badge_notification_core import BadgeNotificationCore  # noqa: E402
+repo_root = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(repo_root))
+
+from scripts.badges.badge_notification_core import BadgeNotificationCore  # noqa: E402
 
 
 def test_dangerous_input_rejection() -> None:
@@ -105,13 +102,12 @@ def test_case_insensitive_detection() -> None:
         print(f"  ✓ Rejected: {description}")
 
 
+@pytest.mark.usefixtures("github_stub")
 def test_issue_creation_with_validation() -> None:
     """Test that issue creation fails with dangerous inputs"""
     print("\nTesting Issue Creation with Validation...")
 
-    # Create a mock notifier
-    with mock.patch("badge_notification_core.Github"):
-        notifier = BadgeNotificationCore("fake_token")
+    notifier = BadgeNotificationCore("fake_token")
 
     # Test with dangerous resource name
     try:
@@ -139,20 +135,18 @@ def test_issue_creation_with_validation() -> None:
         raise AssertionError(f"Should not have raised ValueError for safe inputs: {e}") from e
 
 
+@pytest.mark.usefixtures("github_stub")
 def test_notification_creation_flow() -> None:
     """Test the full notification creation flow with validation"""
     print("\nTesting Full Notification Creation Flow...")
 
-    # Create a mock notifier
-    with mock.patch("badge_notification_core.Github"):
-        notifier = BadgeNotificationCore("fake_token")
+    notifier = BadgeNotificationCore("fake_token")
 
     # Test that dangerous inputs result in failed notification
     result = notifier.create_notification_issue(
         repo_url="https://github.com/owner/repo",
         resource_name="<script>alert('XSS')</script>",
         description="Normal description",
-        skip_duplicate_check=True,
     )
 
     assert not result["success"], "Should have failed with dangerous input"

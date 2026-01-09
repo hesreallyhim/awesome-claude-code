@@ -1,21 +1,20 @@
 # Pull Request
 
-<!-- IMPORTANT: Submit only ONE resource per pull request. If you have multiple resources, please create separate PRs. -->
+If you want to submit a resource for recommendation for Awesome Claude Code, please use the [resource recommendation issue form](https://github.com/hesreallyhim/awesome-claude-code/issues/new?template=recommen-resource.yml) and don't open a PR.
+
+It's fairly uncommon for anyone to open a PR to this repo, even the maintainer. However, if you've noticed a technical problem/bug or a documentation problem, then this may be appropriate. Otherwise, in general, only the bots get to make PRs.
 
 ## Type of Contribution
 
 <!-- Select ONE by marking with an [x] -->
 
-- [ ] **New Resource** - Adding a new resource to the list (ONE per PR)
+- [ ] **New Resource** - Adding a new resource to the list [ONLY THE BOT MAY DO THIS]
 - [ ] **Update Resource** - Updating existing resource information (e.g., broken link, license info)
-- [ ] **Repository Improvement** - Improving the repository itself (not adding resources)
+- [ ] **Repository Improvement** - Improving the repository itself (not adding resources) [Use [this issue template](https://github.com/hesreallyhim/awesome-claude-code/issues/new?template=repository-enhancement.yml) to suggest general improvements]
 
 ---
 
 ## For New Resources
-
-<!-- If you used the script, paste the generated content from .pr_template_content.md here -->
-<!-- If you're manually adding a resource, complete all fields below -->
 
 ### Resource Information
 
@@ -68,9 +67,7 @@
 ## Additional Notes
 
 <!-- Any additional context that would help reviewers -->
-<!-- Remember: Only ONE resource per PR. Multiple resources require separate pull requests. -->
 
 ## Questions?
 
-- See [CONTRIBUTING.md](../CONTRIBUTING.md) for detailed contribution guidelines
-- See [HOW_IT_WORKS.md](../HOW_IT_WORKS.md) for detailed information about how it works.
+- See [CONTRIBUTING.md](../docs/CONTRIBUTING.md) for detailed contribution guidelines

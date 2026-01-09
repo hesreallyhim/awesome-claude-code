@@ -12,7 +12,7 @@ import sys
 # Add scripts directory to path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
 
-from validate_links import apply_overrides
+from scripts.validation.validate_links import apply_overrides  # noqa: E402
 
 
 def test_auto_locking():

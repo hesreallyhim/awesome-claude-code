@@ -9,6 +9,9 @@ on:
 permissions:
   contents: write
 
+env:
+  PYTHONPATH: ${{ github.workspace }}
+
 jobs:
   update-ticker:
     runs-on: ubuntu-latest
@@ -39,11 +42,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python scripts/fetch_repo_ticker_data.py
+          python -m scripts.ticker.fetch_repo_ticker_data
 
       - name: Generate ticker SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python scripts/generate_ticker_svg.py
+          python -m scripts.ticker.generate_ticker_svg
 
       - name: Commit and push if changed
         run: |

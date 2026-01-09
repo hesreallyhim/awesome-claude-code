@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "awesome-claude-code"
-version = "2.0.0"
+version = "2.0.1"
 description = "A curated list of slash-commands, CLAUDE.md files, CLI tools, and other resources for enhancing Claude Code workflows"
-authors = [{ name = "Really Him", email = "hesreallyhim@proton.me" }]
+authors = [{ name = "Really Him", email = "git-dev@hesreallyhim.com" }]
 readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.11"
-dependencies = ["PyGithub>=2.1.1"]
+dependencies = ["PyGithub>=2.1.1", "PyYAML>=6.0.0"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
@@ -29,6 +29,8 @@ dev = [
     "types-PyYAML>=6.0.0",
     "ruff>=0.1.0",
     "pre-commit>=3.5.0",
+    "pytest-cov>=7.0.0",
+    "mypy>=1.10.0",
 ]
 
 [project.urls]
@@ -39,6 +41,7 @@ dev = [
 [tool.ruff]
 target-version = "py311"
 line-length = 100
+exclude = ["scripts/archive"]
 
 [tool.ruff.lint]
 select = [
@@ -51,6 +54,10 @@ select = [
     "B",   # flake8-bugbear
     "C4",  # flake8-comprehensions
     "SIM", # flake8-simplify
+]
+ignore = [
+    "E203",  # whitespace before ':'
+    "E402",  # module level import not at top of file
 ]
 
 
@@ -67,3 +74,19 @@ include = ["scripts*"]
 
 [tool.setuptools.package-data]
 "scripts" = ["*.csv"]
+
+[tool.coverage.run]
+branch = true
+source = ["scripts"]
+omit = ["scripts/archive/*", "scripts/testing/test_regenerate_cycle.py"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+norecursedirs = ["scripts/archive"]
+
+[tool.mypy]
+exclude = "^resources/"

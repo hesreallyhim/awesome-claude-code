@@ -1,8 +1,10 @@
+<!-- GENERATED FILE: do not edit directly -->
 <!--lint disable remark-lint:awesome-badge-->
 
 <h3 align="center">Pick Your Style:</h3>
 <p align="center">
-<a href="../"><img src="../assets/badge-style-extra.svg" alt="Extra" height="28"></a>
+<a href="../"><img src="../assets/badge-style-awesome.svg" alt="Awesome" height="28"></a>
+<a href="README_EXTRA.md"><img src="../assets/badge-style-extra.svg" alt="Extra" height="28"></a>
 <a href="README_CLASSIC.md"><img src="../assets/badge-style-classic.svg" alt="Classic" height="28"></a>
 <a href="README_FLAT_ALL_AZ.md"><img src="../assets/badge-style-flat.svg" alt="Flat" height="28" style="border: 2px solid #71717a; border-radius: 4px;"></a>
 </p>
@@ -43,9 +45,7 @@ A flat list view of all resources. Category: **Skills** | Sorted: by latest rele
 
 ## Resources
 
-> **Note:** We make a best-effort attempt to determine the latest release from GitHub Releases, npm, PyPI, crates.io, and Homebrew. Please verify with the project directly.
->
-> If your project publishes to a package registry and isn't listed here, please [open an Issue](https://github.com/hesreallyhim/awesome-claude-code/issues).
+> **Note:** Latest release data is pulled from GitHub Releases only. Projects without GitHub Releases will not show release info here. Please verify with the project directly.
 
 <table>
 <thead>
@@ -60,9 +60,9 @@ A flat list view of all resources. Category: **Skills** | Sorted: by latest rele
 <tbody>
 <tr>
 <td><a href="https://github.com/NeoLabHQ/context-engineering-kit"><b>Context Engineering Kit</b></a><br>by <a href="https://github.com/LeoVS09">Vlad Goncharov</a></td>
-<td>v1.4.0</td>
+<td>v1.7.2</td>
 <td>GitHub</td>
-<td>2025-12-25</td>
+<td>2026-01-05</td>
 <td>Hand-crafted collection of advanced context engineering techniques and patterns with minimal token footprint focused on improving agent result quality.</td>
 </tr>
 <tr>
@@ -70,29 +70,19 @@ A flat list view of all resources. Category: **Skills** | Sorted: by latest rele
 </tr>
 <tr>
 <td><a href="https://github.com/fcakyon/claude-codex-settings"><b>Claude Codex Settings</b></a><br>by <a href="https://github.com/fcakyon">fatih akyon</a></td>
-<td>v2.0.4</td>
+<td>v2.0.7</td>
 <td>GitHub</td>
-<td>2025-12-24</td>
+<td>2025-12-27</td>
 <td>A well-organized, well-written set of plugins covering core developer activities, such as working with common cloud platforms like GitHub, Azure, MongoDB, and popular services such as Tavily, Playwright, and more. Clear, not overly-opinionated, and compatible with a few other providers.</td>
 </tr>
 <tr>
 <td colspan="5"><img src="https://img.shields.io/github/stars/fcakyon/claude-codex-settings?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/fcakyon/claude-codex-settings?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/fcakyon/claude-codex-settings?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/fcakyon/claude-codex-settings?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/fcakyon/claude-codex-settings?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/fcakyon/claude-codex-settings?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/fcakyon/claude-codex-settings?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/fcakyon/claude-codex-settings?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/fcakyon/claude-codex-settings?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/obra/superpowers"><b>Superpowers</b></a><br>by <a href="https://github.com/obra">Jesse Vincent</a></td>
-<td>v4.0.2</td>
-<td>GitHub</td>
-<td>2025-12-24</td>
-<td>A strong bundle of core competencies for software engineering, with good coverage of a large portion of the SDLC - from planning, reviewing, testing, debugging... Well written, well organized, and adaptable. The author refers to them as "superpowers", but many of them are just consolidating engineering best practices - which sometimes does feel like a superpower when working with Claude Code.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/obra/superpowers?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/obra/superpowers?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/obra/superpowers?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/obra/superpowers?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/obra/superpowers?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/obra/superpowers?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/obra/superpowers?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/obra/superpowers?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/obra/superpowers?style=flat-square" alt="license"></td>
 </tr>
 </tbody>
 </table>
 
 ---
 
-**Total Resources:** 3
+**Total Resources:** 2
 
-**Last Generated:** 2026-01-07
+**Last Generated:** 2026-01-09

@@ -1,19 +1,14 @@
 <!--lint disable remark-lint:awesome-badge-->
 
-<h3 align="center">Pick Your Style:</h3>
-<p align="center">
-<a href="../"><img src="../assets/badge-style-extra.svg" alt="Extra" height="28"></a>
-<a href="README_CLASSIC.md"><img src="../assets/badge-style-classic.svg" alt="Classic" height="28" style="border: 2px solid #c9a227; border-radius: 4px;"></a>
-<a href="README_FLAT_ALL_AZ.md"><img src="../assets/badge-style-flat.svg" alt="Flat" height="28"></a>
-</p>
+{{STYLE_SELECTOR}}
 
 <!-- Responsive Logo with Theme Support -->
 <div align="center">
 
   <!-- Same ASCII art for all screen sizes, just scales down on mobile -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="../assets/logo-dark.svg">
-    <img src="../assets/logo-light.svg" alt="Awesome Claude Code" width="100%" style="max-width: 900px;">
+    <source media="(prefers-color-scheme: dark)" srcset="{{ASSET_PATH('logo-dark.svg')}}">
+    <img src="{{ASSET_PATH('logo-light.svg')}}" alt="Awesome Claude Code" width="100%" style="max-width: 900px;">
   </picture>
 
 </div>
@@ -25,7 +20,7 @@
 
 <!--lint enable remark-lint:awesome-badge-->
 
-[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) [![FREEDOM FUNDER](../assets/freedom-funder-badge.svg)](https://bailproject.org)
+[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) [![FREEDOM FUNDER]({{ASSET_PATH('freedom-funder-badge.svg')}})](https://bailproject.org)
 
 # Awesome Claude Code
 

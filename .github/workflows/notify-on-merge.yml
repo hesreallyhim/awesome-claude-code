@@ -82,11 +82,10 @@ jobs:
           REPOSITORY_URL: ${{ steps.extract_resource.outputs.github_url }}
           RESOURCE_NAME: ${{ steps.extract_resource.outputs.resource_name }}
           DESCRIPTION: ""  # Will use default description
-          SKIP_DUPLICATE_CHECK: "false"  # Check for duplicates
-          ENABLE_TRACKING: "false"  # Don't track these (one per merge is enough)
+          PYTHONPATH: ${{ github.workspace }}
         run: |
           echo "Sending notification to: $REPOSITORY_URL"
-          python scripts/manual_badge_notification.py || {
+          python -m scripts.badges.badge_notification || {
             echo "⚠️ Failed to send notification, but continuing workflow"
             echo "This might happen if:"
             echo "- The repository has issues disabled"

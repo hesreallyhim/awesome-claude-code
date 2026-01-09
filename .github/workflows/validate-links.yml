@@ -36,9 +36,11 @@ jobs:
 
     - name: Run link validation
       id: validate
+      env:
+        PYTHONPATH: ${{ github.workspace }}
       run: |
         make validate-github
-        echo "has_broken_links=$(python -c "import json; data=json.load(open('validation_results.json')); print('true' if data['newly_broken'] else 'false')")" >> "$GITHUB_OUTPUT"
+        echo "has_broken_links=$(python -c \"import json; data=json.load(open('validation_results.json')); print('true' if data['newly_broken'] else 'false')\")" >> "$GITHUB_OUTPUT"
 
     - name: Upload validation results
       if: always()
@@ -94,7 +96,7 @@ jobs:
           issueBody += `---\n`;
           issueBody += `*This issue was automatically created by the [link validation workflow](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/workflows/validate-links.yml).*`;
 
-          const existingIssueNumber = ${{ steps.check_issue.outputs.result }} || 0;
+          const existingIssueNumber = Number("${{ steps.check_issue.outputs.issue_number }}") || 0;
 
           if (existingIssueNumber) {
             await github.rest.issues.update({

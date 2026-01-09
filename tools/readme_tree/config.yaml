@@ -1,0 +1,181 @@
+root: "awesome-claude-code/"
+doc_path: "docs/README-GENERATION.md"
+marker_start: "<!-- TREE:START -->"
+marker_end: "<!-- TREE:END -->"
+max_depth: 5
+respect_gitignore: true
+
+include:
+  - "THE_RESOURCES_TABLE.csv"
+  - "acc-config.yaml"
+  - "README.md"
+  - "README_ALTERNATIVES/"
+  - "templates/"
+  - "scripts/readme/"
+  - "scripts/ticker/"
+  - "scripts/categories/"
+  - "scripts/resources/"
+  - "assets/"
+  - "data/"
+  - "docs/README-GENERATION.md"
+
+ignore:
+  - "__init__.py"
+  - "py.typed"
+
+prune:
+  - "README_ALTERNATIVES/"
+  - "assets/"
+
+entries:
+  "THE_RESOURCES_TABLE.csv": "Master data file"
+  "acc-config.yaml": "Root style + selector config"
+  "README.md": "Generated root README (root_style)"
+  "README_ALTERNATIVES/": "All generated README variants"
+  "templates/": "README templates and supporting YAML"
+  "templates/categories.yaml": "Category definitions"
+  "templates/announcements.yaml": "Announcements content"
+  "templates/footer.template.md": "Shared footer"
+  "templates/README_EXTRA.template.md": "Extra style template"
+  "templates/README_CLASSIC.template.md": "Classic style template"
+  "templates/README_AWESOME.template.md": "Awesome style template"
+  "templates/resource-overrides.yaml": "Manual resource overrides"
+  "scripts/readme/": "README generation pipeline"
+  "scripts/readme/generators/": "README generator classes by style"
+  "scripts/readme/generate_readme.py": "Generator entrypoint"
+  "scripts/readme/helpers/": "Config/utils/assets helpers for README generation"
+  "scripts/readme/markup/": "Markdown/HTML renderers by style"
+  "scripts/readme/svg_templates/": "SVG renderers used by the generator"
+  "scripts/readme/generators/base.py": "ReadmeGenerator base + shared helpers"
+  "scripts/readme/generators/visual.py": "Extra (visual) README generator"
+  "scripts/readme/generators/minimal.py": "Classic README generator"
+  "scripts/readme/generators/awesome.py": "Awesome list README generator"
+  "scripts/readme/generators/flat.py": "Flat list README generator"
+  "scripts/ticker/": "Repo ticker generation scripts"
+  "scripts/ticker/generate_ticker_svg.py": "Repo ticker SVG generator"
+  "scripts/ticker/fetch_repo_ticker_data.py": "GitHub stats fetcher"
+  "scripts/categories/": "Category management scripts"
+  "scripts/categories/category_utils.py": "Category management"
+  "scripts/categories/add_category.py": "Category addition tool"
+  "scripts/resources/": "Resource maintenance scripts"
+  "scripts/resources/sort_resources.py": "CSV sorting (used by generator)"
+  "scripts/resources/resource_utils.py": "CSV append + PR content helpers"
+  "assets/": "SVG badges, headers, dividers"
+  "data/": "Generated ticker data"
+  "data/repo-ticker.csv": "Current repository stats"
+  "data/repo-ticker-previous.csv": "Previous stats (for deltas)"
+  "docs/README-GENERATION.md": "This file"
+
+virtual_entries:
+  "README_ALTERNATIVES/README_EXTRA.md": "Generated (Extra style, always)"
+  "README_ALTERNATIVES/README_CLASSIC.md": "Generated (Classic style)"
+  "README_ALTERNATIVES/README_AWESOME.md": "Generated (Awesome list style)"
+  "README_ALTERNATIVES/README_FLAT_*.md": "Generated (44 flat list views)"
+  "assets/badge-*.svg": "Resource badges (auto-generated)"
+  "assets/header_*.svg": "Category headers"
+  "assets/section-divider-*.svg": "Section dividers"
+  "assets/desc-box-*.svg": "Description boxes"
+  "assets/toc-*.svg": "TOC elements"
+  "assets/subheader_*.svg": "Subcategory headers"
+  "assets/badge-sort-*.svg": "Flat list sort badges"
+  "assets/badge-cat-*.svg": "Flat list category badges"
+  "assets/badge-style-*.svg": "Style selector badges"
+  "assets/repo-ticker*.svg": "Animated repo tickers"
+  "assets/entry-separator-*.svg": "Entry separators"
+
+order:
+  "": [
+    "THE_RESOURCES_TABLE.csv",
+    "acc-config.yaml",
+    "README.md",
+    "README_ALTERNATIVES",
+    "templates",
+    "scripts",
+    "assets",
+    "data",
+    "docs",
+  ]
+  "README_ALTERNATIVES": [
+    "README_EXTRA.md",
+    "README_CLASSIC.md",
+    "README_AWESOME.md",
+    "README_FLAT_*.md",
+  ]
+  "templates": [
+    "categories.yaml",
+    "announcements.yaml",
+    "README_EXTRA.template.md",
+    "README_CLASSIC.template.md",
+    "README_AWESOME.template.md",
+    "footer.template.md",
+  ]
+  "scripts": [
+    "readme",
+    "ticker",
+    "categories",
+    "resources",
+  ]
+  "scripts/readme": [
+    "generate_readme.py",
+    "generators",
+    "helpers",
+    "markup",
+    "svg_templates",
+  ]
+  "scripts/readme/generators": [
+    "base.py",
+    "visual.py",
+    "minimal.py",
+    "awesome.py",
+    "flat.py",
+  ]
+  "scripts/readme/helpers": [
+    "readme_assets.py",
+    "readme_config.py",
+    "readme_utils.py",
+  ]
+  "scripts/readme/markup": [
+    "awesome.py",
+    "flat.py",
+    "minimal.py",
+    "shared.py",
+    "visual.py",
+  ]
+  "scripts/readme/svg_templates": [
+    "badges.py",
+    "dividers.py",
+    "headers.py",
+    "toc.py",
+  ]
+  "scripts/ticker": [
+    "generate_ticker_svg.py",
+    "fetch_repo_ticker_data.py",
+  ]
+  "scripts/categories": [
+    "category_utils.py",
+    "add_category.py",
+  ]
+  "scripts/resources": [
+    "sort_resources.py",
+    "resource_utils.py",
+  ]
+  "assets": [
+    "badge-*.svg",
+    "header_*.svg",
+    "section-divider-*.svg",
+    "desc-box-*.svg",
+    "toc-*.svg",
+    "subheader_*.svg",
+    "badge-sort-*.svg",
+    "badge-cat-*.svg",
+    "badge-style-*.svg",
+    "repo-ticker*.svg",
+    "entry-separator-*.svg",
+  ]
+  "data": [
+    "repo-ticker.csv",
+    "repo-ticker-previous.csv",
+  ]
+  "docs": [
+    "README-GENERATION.md",
+  ]

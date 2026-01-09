@@ -1,8 +1,10 @@
+<!-- GENERATED FILE: do not edit directly -->
 <!--lint disable remark-lint:awesome-badge-->
 
 <h3 align="center">Pick Your Style:</h3>
 <p align="center">
-<a href="../"><img src="../assets/badge-style-extra.svg" alt="Extra" height="28"></a>
+<a href="../"><img src="../assets/badge-style-awesome.svg" alt="Awesome" height="28"></a>
+<a href="README_EXTRA.md"><img src="../assets/badge-style-extra.svg" alt="Extra" height="28"></a>
 <a href="README_CLASSIC.md"><img src="../assets/badge-style-classic.svg" alt="Classic" height="28" style="border: 2px solid #c9a227; border-radius: 4px;"></a>
 <a href="README_FLAT_ALL_AZ.md"><img src="../assets/badge-style-flat.svg" alt="Flat" height="28"></a>
 </p>
@@ -2057,29 +2059,24 @@ Official GitHub Actions integration for Claude Code with examples and documentat
 <br>
 
 
-## Contributing 🌻 [🔝](#awesome-claude-code)
+## Contributing [🔝](#awesome-claude-code)
 
-### 🚀 **[Submit a new resource here!](https://github.com/hesreallyhim/awesome-claude-code/issues/new?template=recommend-resource.yml)**
+### **[Recommend a new resource here!](https://github.com/hesreallyhim/awesome-claude-code/issues/new?template=recommend-resource.yml)**
 
-It's easy! Just click the link above and fill out the form. No Git knowledge required - our automated system handles everything for you.
+Recommending a resource for the list is very simple, and the automated system handles everything for you. Please do not open a PR to submit a recommendation - the only person who is allowed to submit PRs to this repo is Claude.
 
-**How we evaluate submissions**
+Make sure that you have read the CONTRIBUTING.md document and CODE_OF_CONDUCT.md before you submit a recommendation.
 
-- First and foremost, best efforts are made to ensure that any resource on this list is free of malware, bloatware, or other unwanted risks.
-- Second, being a _curated_ list, every entry is manually evaluated and "tested out" to see if it actually delivers value to Claude Code users. If you want an _un-curated_ list, you can find many great resources [here](https://github.com/search?q=%22claude+code%22&type=repositories&s=stars&o=desc).
+For suggestions about the repository itself, please [open a repository enhancement issue](https://github.com/hesreallyhim/awesome-claude-code/issues/new?template=repository-enhancement.yml).
 
-See [CONTRIBUTING.md](/CONTRIBUTING.md) for the complete submission guide and review process.
+This project is released with a Code of Conduct. By participating, you agree to abide by its terms. And although I take strong measures to uphold the quality and safety of this list, I take no responsibility or liability for anything that might happen as a result of these third-party resources.
 
-For suggestions about the repository itself, please [open a general issue](https://github.com/hesreallyhim/awesome-claude-code/issues/new).
-
-This project is released with a [Contributor Code of Conduct](/code-of-conduct.md). By participating, you agree to abide by its terms. And although I take strong measures to uphold the quality and safety of this list, I take no responsibility or liability for anything bad that might happen as a result of these third-party resources.
-
-## Growing thanks to you ❤️
+## Growing thanks to you
 [![Stargazers over time](https://starchart.cc/hesreallyhim/awesome-claude-code.svg?variant=adaptive)](https://starchart.cc/hesreallyhim/awesome-claude-code)
 
 ## License
 
-This list is licensed under a somewhat restrictive license: [Creative Commons CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) - this means you are welcome to fork, clone, copy and redistribute the list, provided you include appropriate attribution; however you are not permitted to distribute any modified versions - and you are not permitted to use it for any commercial purposes. This is to prevent unlawful appropriation of the work of the authors whose resources are listed here, an issue which has arisen in the past. Please note that **all resources included in this list have their own license terms** - if you wish to incorporate those authors' works into your _own_ product, it would be really nice to do so according to the terms that _those authors_ have set out.
+This list is licensed under [Creative Commons CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) - this means you are welcome to fork, clone, copy and redistribute the list, provided you include appropriate attribution; however you are not permitted to distribute any modified versions or to use it for any commercial purposes. This is to prevent disregard for the licenses of the authors whose resources are listed here. Please note that all resources included in this list have their own license terms.
 
 
 <!-- OBLIGATORY GUARD AGAINST SILLY END-OF-FILE PROBLEM -->

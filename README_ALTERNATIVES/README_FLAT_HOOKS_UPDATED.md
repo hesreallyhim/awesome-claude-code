@@ -1,8 +1,10 @@
+<!-- GENERATED FILE: do not edit directly -->
 <!--lint disable remark-lint:awesome-badge-->
 
 <h3 align="center">Pick Your Style:</h3>
 <p align="center">
-<a href="../"><img src="../assets/badge-style-extra.svg" alt="Extra" height="28"></a>
+<a href="../"><img src="../assets/badge-style-awesome.svg" alt="Awesome" height="28"></a>
+<a href="README_EXTRA.md"><img src="../assets/badge-style-extra.svg" alt="Extra" height="28"></a>
 <a href="README_CLASSIC.md"><img src="../assets/badge-style-classic.svg" alt="Classic" height="28"></a>
 <a href="README_FLAT_ALL_AZ.md"><img src="../assets/badge-style-flat.svg" alt="Flat" height="28" style="border: 2px solid #71717a; border-radius: 4px;"></a>
 </p>
@@ -54,6 +56,15 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by last updated
 </thead>
 <tbody>
 <tr>
+<td><a href="https://github.com/ctoth/claudio"><b>Claudio</b></a><br>by <a href="https://github.com/ctoth">Christopher Toth</a></td>
+<td>Hooks</td>
+<td>General</td>
+<td>A no-frills little library that adds delightful OS-native sounds to Claude Code via simple hooks. It really sparks joy.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/ctoth/claudio?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ctoth/claudio?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ctoth/claudio?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ctoth/claudio?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ctoth/claudio?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ctoth/claudio?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ctoth/claudio?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ctoth/claudio?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ctoth/claudio?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/nizos/tdd-guard"><b>TDD Guard</b></a><br>by <a href="https://github.com/nizos">Nizar Selander</a></td>
 <td>Hooks</td>
 <td>General</td>
@@ -88,15 +99,6 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by last updated
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/GowayLee/cchooks?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/GowayLee/cchooks?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/GowayLee/cchooks?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/GowayLee/cchooks?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/GowayLee/cchooks?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/GowayLee/cchooks?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/GowayLee/cchooks?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/GowayLee/cchooks?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/GowayLee/cchooks?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/ctoth/claudio"><b>Claudio</b></a><br>by <a href="https://github.com/ctoth">Christopher Toth</a></td>
-<td>Hooks</td>
-<td>General</td>
-<td>A no-frills little library that adds delightful OS-native sounds to Claude Code via simple hooks. It really sparks joy.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/ctoth/claudio?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ctoth/claudio?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ctoth/claudio?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ctoth/claudio?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ctoth/claudio?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ctoth/claudio?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ctoth/claudio?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ctoth/claudio?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ctoth/claudio?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/dazuiba/CCNotify"><b>CC Notify</b></a><br>by <a href="https://github.com/dazuiba">dazuiba</a></td>
@@ -141,4 +143,4 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by last updated
 
 **Total Resources:** 9
 
-**Last Generated:** 2026-01-07
+**Last Generated:** 2026-01-09

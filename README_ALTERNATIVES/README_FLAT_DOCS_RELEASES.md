@@ -1,8 +1,10 @@
+<!-- GENERATED FILE: do not edit directly -->
 <!--lint disable remark-lint:awesome-badge-->
 
 <h3 align="center">Pick Your Style:</h3>
 <p align="center">
-<a href="../"><img src="../assets/badge-style-extra.svg" alt="Extra" height="28"></a>
+<a href="../"><img src="../assets/badge-style-awesome.svg" alt="Awesome" height="28"></a>
+<a href="README_EXTRA.md"><img src="../assets/badge-style-extra.svg" alt="Extra" height="28"></a>
 <a href="README_CLASSIC.md"><img src="../assets/badge-style-classic.svg" alt="Classic" height="28"></a>
 <a href="README_FLAT_ALL_AZ.md"><img src="../assets/badge-style-flat.svg" alt="Flat" height="28" style="border: 2px solid #71717a; border-radius: 4px;"></a>
 </p>
@@ -43,9 +45,7 @@ A flat list view of all resources. Category: **Docs** | Sorted: by latest releas
 
 ## Resources
 
-> **Note:** We make a best-effort attempt to determine the latest release from GitHub Releases, npm, PyPI, crates.io, and Homebrew. Please verify with the project directly.
->
-> If your project publishes to a package registry and isn't listed here, please [open an Issue](https://github.com/hesreallyhim/awesome-claude-code/issues).
+> **Note:** Latest release data is pulled from GitHub Releases only. Projects without GitHub Releases will not show release info here. Please verify with the project directly.
 
 *No releases in the past 30 days for this category.*
 
@@ -53,4 +53,4 @@ A flat list view of all resources. Category: **Docs** | Sorted: by latest releas
 
 **Total Resources:** 0
 
-**Last Generated:** 2026-01-07
+**Last Generated:** 2026-01-09

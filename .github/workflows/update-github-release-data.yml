@@ -1,0 +1,43 @@
+name: Update GitHub Release Data
+
+on:
+  schedule:
+    # Run daily at 3:00 AM UTC
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  PYTHONPATH: ${{ github.workspace }}
+
+permissions:
+  contents: write
+
+jobs:
+  update-github-release-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[dev]"
+
+      - name: Update GitHub release data
+        run: |
+          python -m scripts.maintenance.update_github_release_data
+
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add THE_RESOURCES_TABLE.csv
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update GitHub release data [skip ci]" && git push)

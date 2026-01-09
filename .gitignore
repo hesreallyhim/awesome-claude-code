@@ -21,3 +21,5 @@ venv/
 .vscode/
 
 marketplace/
+
+coverage.xml

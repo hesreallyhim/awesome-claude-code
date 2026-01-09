@@ -1,8 +1,10 @@
+<!-- GENERATED FILE: do not edit directly -->
 <!--lint disable remark-lint:awesome-badge-->
 
 <h3 align="center">Pick Your Style:</h3>
 <p align="center">
-<a href="../"><img src="../assets/badge-style-extra.svg" alt="Extra" height="28"></a>
+<a href="../"><img src="../assets/badge-style-awesome.svg" alt="Awesome" height="28"></a>
+<a href="README_EXTRA.md"><img src="../assets/badge-style-extra.svg" alt="Extra" height="28"></a>
 <a href="README_CLASSIC.md"><img src="../assets/badge-style-classic.svg" alt="Classic" height="28"></a>
 <a href="README_FLAT_ALL_AZ.md"><img src="../assets/badge-style-flat.svg" alt="Flat" height="28" style="border: 2px solid #71717a; border-radius: 4px;"></a>
 </p>
@@ -60,15 +62,6 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by last updat
 <td>An elegant and user-friendly Claude Code chat interface for VS Code.</td>
 </tr>
 <tr>
-<td><a href="https://github.com/sculptdotfun/viberank"><b>viberank</b></a><br>by <a href="https://github.com/nikshepsvn">nikshepsvn</a></td>
-<td>Tooling</td>
-<td>Usage Monitors</td>
-<td>A community-driven leaderboard tool that enables developers to visualize, track, and compete based on their Claude Code usage statistics. It features robust data analytics, GitHub OAuth, data validation, and user-friendly CLI/web submission methods.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/sculptdotfun/viberank?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/sculptdotfun/viberank?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/sculptdotfun/viberank?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/sculptdotfun/viberank?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/sculptdotfun/viberank?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/sculptdotfun/viberank?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/sculptdotfun/viberank?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/sculptdotfun/viberank?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/sculptdotfun/viberank?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/davila7/claude-code-templates"><b>Claude Code Templates</b></a><br>by <a href="https://github.com/davila7">Daniel Avila</a></td>
 <td>Tooling</td>
 <td>General</td>
@@ -76,6 +69,15 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by last updat
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/davila7/claude-code-templates?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/davila7/claude-code-templates?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/davila7/claude-code-templates?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/davila7/claude-code-templates?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/davila7/claude-code-templates?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/davila7/claude-code-templates?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/davila7/claude-code-templates?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/davila7/claude-code-templates?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/davila7/claude-code-templates?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/tombii/better-ccflare/"><b>ccflare -> **better-ccflare**</b></a><br>by <a href="https://github.com/tombii">tombii</a></td>
+<td>Tooling</td>
+<td>Usage Monitors</td>
+<td>A well-maintained and feature-enhanced fork of the glorious `ccflare` usage dashboard by @snipeship (which at the time of writing has not had an update in a few months). `better-ccflare` builds on this foundation with some performance enhancements, extended provider support, bug fixes, Docker deployment, and more.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/tombii/better-ccflare?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/tombii/better-ccflare?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/tombii/better-ccflare?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/tombii/better-ccflare?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/tombii/better-ccflare?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/tombii/better-ccflare?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/tombii/better-ccflare?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/tombii/better-ccflare?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/tombii/better-ccflare?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/pchalasani/claude-code-tools"><b>claude-code-tools</b></a><br>by <a href="https://github.com/pchalasani">Prasad Chalasani</a></td>
@@ -105,13 +107,22 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by last updat
 <td colspan="4"><img src="https://img.shields.io/github/stars/dyoshikawa/rulesync?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/dyoshikawa/rulesync?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/dyoshikawa/rulesync?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/dyoshikawa/rulesync?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/dyoshikawa/rulesync?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/dyoshikawa/rulesync?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/dyoshikawa/rulesync?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/dyoshikawa/rulesync?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/dyoshikawa/rulesync?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/manzaltu/claude-code-ide.el"><b>claude-code-ide.el</b></a><br>by <a href="https://github.com/manzaltu">manzaltu</a></td>
+<td><a href="https://github.com/OverseedAI/viwo"><b>viwo-cli</b></a><br>by <a href="https://github.com/hal-shin">Hal Shin</a></td>
 <td>Tooling</td>
-<td>IDE Integrations</td>
-<td>claude-code-ide.el integrates Claude Code with Emacs, like Anthropic’s VS Code/IntelliJ extensions. It shows ediff-based code suggestions, pulls LSP/flymake/flycheck diagnostics, and tracks buffer context. It adds an extensible MCP tool support for symbol refs/defs, project metadata, and tree-sitter AST queries.</td>
+<td>General</td>
+<td>Run Claude Code in a Docker container with git worktrees as volume mounts to enable safer usage of `--dangerously-skip-permissions` for frictionless one-shotting prompts. Allows users to spin up multiple instances of Claude Code in the background easily with reduced permission fatigue.</td>
 </tr>
 <tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/manzaltu/claude-code-ide.el?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/manzaltu/claude-code-ide.el?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/manzaltu/claude-code-ide.el?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/manzaltu/claude-code-ide.el?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/manzaltu/claude-code-ide.el?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/manzaltu/claude-code-ide.el?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/manzaltu/claude-code-ide.el?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/manzaltu/claude-code-ide.el?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/manzaltu/claude-code-ide.el?style=flat-square" alt="license"></td>
+<td colspan="4"><img src="https://img.shields.io/github/stars/OverseedAI/viwo?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/OverseedAI/viwo?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/OverseedAI/viwo?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/OverseedAI/viwo?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/OverseedAI/viwo?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/OverseedAI/viwo?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/OverseedAI/viwo?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/OverseedAI/viwo?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/OverseedAI/viwo?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/slopus/happy"><b>Happy Coder</b></a><br>by <a href="https://peoplesgrocers.com/en/projects">GrocerPublishAgent</a></td>
+<td>Tooling</td>
+<td>Orchestrators</td>
+<td>Spawn and control multiple Claude Codes in parallel from your phone or desktop. Happy Coder runs Claude Code on your hardware, sends push notifications when Claude needs more input or permission, and costs nothing.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/slopus/happy?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/slopus/happy?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/slopus/happy?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/slopus/happy?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/slopus/happy?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/slopus/happy?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/slopus/happy?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/slopus/happy?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/slopus/happy?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/mbailey/voicemode"><b>VoiceMode MCP</b></a><br>by <a href="https://github.com/mbailey">Mike Bailey</a></td>
@@ -132,15 +143,6 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by last updat
 <td colspan="4"><img src="https://img.shields.io/github/stars/rsmdt/the-startup?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/rsmdt/the-startup?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/rsmdt/the-startup?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/rsmdt/the-startup?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/rsmdt/the-startup?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/rsmdt/the-startup?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/rsmdt/the-startup?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/rsmdt/the-startup?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/rsmdt/the-startup?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/serpro69/claude-starter-kit"><b>claude-starter-kit</b></a><br>by <a href="https://github.com/serpro69">serpro69</a></td>
-<td>Tooling</td>
-<td>General</td>
-<td>This is a starter template repository designed to provide a complete development environment for Claude-Code with pre-configured MCP servers and tools for AI-powered development workflows. The repository is intentionally minimal, containing only configuration templates for three primary systems: Claude Code, Serena, and Task Master.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/serpro69/claude-starter-kit?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/serpro69/claude-starter-kit?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/serpro69/claude-starter-kit?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/serpro69/claude-starter-kit?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/serpro69/claude-starter-kit?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/serpro69/claude-starter-kit?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/serpro69/claude-starter-kit?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/serpro69/claude-starter-kit?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/serpro69/claude-starter-kit?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/ryoppippi/ccusage"><b>CC Usage</b></a><br>by <a href="https://github.com/ryoppippi">ryoppippi</a></td>
 <td>Tooling</td>
 <td>Usage Monitors</td>
@@ -150,31 +152,22 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by last updat
 <td colspan="4"><img src="https://img.shields.io/github/stars/ryoppippi/ccusage?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ryoppippi/ccusage?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ryoppippi/ccusage?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ryoppippi/ccusage?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ryoppippi/ccusage?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ryoppippi/ccusage?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ryoppippi/ccusage?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ryoppippi/ccusage?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ryoppippi/ccusage?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/slopus/happy"><b>Happy Coder</b></a><br>by <a href="https://peoplesgrocers.com/en/projects">GrocerPublishAgent</a></td>
-<td>Tooling</td>
-<td>Orchestrators</td>
-<td>Spawn and control multiple Claude Codes in parallel from your phone or desktop. Happy Coder runs Claude Code on your hardware, sends push notifications when Claude needs more input or permission, and costs nothing.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/slopus/happy?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/slopus/happy?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/slopus/happy?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/slopus/happy?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/slopus/happy?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/slopus/happy?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/slopus/happy?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/slopus/happy?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/slopus/happy?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/eyaltoledano/claude-task-master"><b>Claude Task Master</b></a><br>by <a href="https://github.com/eyaltoledano">eyaltoledano</a></td>
-<td>Tooling</td>
-<td>Orchestrators</td>
-<td>A task management system for AI-driven development with Claude, designed to work seamlessly with Cursor AI.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/eyaltoledano/claude-task-master?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/eyaltoledano/claude-task-master?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/eyaltoledano/claude-task-master?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/eyaltoledano/claude-task-master?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/eyaltoledano/claude-task-master?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/eyaltoledano/claude-task-master?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/eyaltoledano/claude-task-master?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/eyaltoledano/claude-task-master?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/eyaltoledano/claude-task-master?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/OverseedAI/viwo"><b>viwo-cli</b></a><br>by <a href="https://github.com/hal-shin">Hal Shin</a></td>
+<td><a href="https://github.com/serpro69/claude-starter-kit"><b>claude-starter-kit</b></a><br>by <a href="https://github.com/serpro69">serpro69</a></td>
 <td>Tooling</td>
 <td>General</td>
-<td>Run Claude Code in a Docker container with git worktrees as volume mounts to enable safer usage of `--dangerously-skip-permissions` for frictionless one-shotting prompts. Allows users to spin up multiple instances of Claude Code in the background easily with reduced permission fatigue.</td>
+<td>This is a starter template repository designed to provide a complete development environment for Claude-Code with pre-configured MCP servers and tools for AI-powered development workflows. The repository is intentionally minimal, containing only configuration templates for three primary systems: Claude Code, Serena, and Task Master.</td>
 </tr>
 <tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/OverseedAI/viwo?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/OverseedAI/viwo?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/OverseedAI/viwo?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/OverseedAI/viwo?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/OverseedAI/viwo?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/OverseedAI/viwo?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/OverseedAI/viwo?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/OverseedAI/viwo?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/OverseedAI/viwo?style=flat-square" alt="license"></td>
+<td colspan="4"><img src="https://img.shields.io/github/stars/serpro69/claude-starter-kit?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/serpro69/claude-starter-kit?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/serpro69/claude-starter-kit?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/serpro69/claude-starter-kit?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/serpro69/claude-starter-kit?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/serpro69/claude-starter-kit?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/serpro69/claude-starter-kit?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/serpro69/claude-starter-kit?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/serpro69/claude-starter-kit?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/sculptdotfun/viberank"><b>viberank</b></a><br>by <a href="https://github.com/nikshepsvn">nikshepsvn</a></td>
+<td>Tooling</td>
+<td>Usage Monitors</td>
+<td>A community-driven leaderboard tool that enables developers to visualize, track, and compete based on their Claude Code usage statistics. It features robust data analytics, GitHub OAuth, data validation, and user-friendly CLI/web submission methods.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/sculptdotfun/viberank?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/sculptdotfun/viberank?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/sculptdotfun/viberank?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/sculptdotfun/viberank?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/sculptdotfun/viberank?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/sculptdotfun/viberank?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/sculptdotfun/viberank?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/sculptdotfun/viberank?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/sculptdotfun/viberank?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/FlineDev/ContextKit"><b>ContextKit</b></a><br>by <a href="https://github.com/Jeehut">Cihat Gündüz</a></td>
@@ -184,6 +177,24 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by last updat
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/FlineDev/ContextKit?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/FlineDev/ContextKit?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/FlineDev/ContextKit?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/FlineDev/ContextKit?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/FlineDev/ContextKit?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/FlineDev/ContextKit?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/FlineDev/ContextKit?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/FlineDev/ContextKit?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/FlineDev/ContextKit?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/manzaltu/claude-code-ide.el"><b>claude-code-ide.el</b></a><br>by <a href="https://github.com/manzaltu">manzaltu</a></td>
+<td>Tooling</td>
+<td>IDE Integrations</td>
+<td>claude-code-ide.el integrates Claude Code with Emacs, like Anthropic’s VS Code/IntelliJ extensions. It shows ediff-based code suggestions, pulls LSP/flymake/flycheck diagnostics, and tracks buffer context. It adds an extensible MCP tool support for symbol refs/defs, project metadata, and tree-sitter AST queries.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/manzaltu/claude-code-ide.el?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/manzaltu/claude-code-ide.el?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/manzaltu/claude-code-ide.el?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/manzaltu/claude-code-ide.el?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/manzaltu/claude-code-ide.el?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/manzaltu/claude-code-ide.el?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/manzaltu/claude-code-ide.el?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/manzaltu/claude-code-ide.el?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/manzaltu/claude-code-ide.el?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/eyaltoledano/claude-task-master"><b>Claude Task Master</b></a><br>by <a href="https://github.com/eyaltoledano">eyaltoledano</a></td>
+<td>Tooling</td>
+<td>Orchestrators</td>
+<td>A task management system for AI-driven development with Claude, designed to work seamlessly with Cursor AI.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/eyaltoledano/claude-task-master?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/eyaltoledano/claude-task-master?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/eyaltoledano/claude-task-master?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/eyaltoledano/claude-task-master?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/eyaltoledano/claude-task-master?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/eyaltoledano/claude-task-master?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/eyaltoledano/claude-task-master?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/eyaltoledano/claude-task-master?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/eyaltoledano/claude-task-master?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/smtg-ai/claude-squad"><b>Claude Squad</b></a><br>by <a href="https://github.com/smtg-ai">smtg-ai</a></td>
@@ -220,15 +231,6 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by last updat
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/stevemolitor/claude-code.el?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/stevemolitor/claude-code.el?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/stevemolitor/claude-code.el?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/stevemolitor/claude-code.el?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/stevemolitor/claude-code.el?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/stevemolitor/claude-code.el?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/stevemolitor/claude-code.el?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/stevemolitor/claude-code.el?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/stevemolitor/claude-code.el?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/tombii/better-ccflare/"><b>ccflare -> **better-ccflare**</b></a><br>by <a href="https://github.com/tombii">tombii</a></td>
-<td>Tooling</td>
-<td>Usage Monitors</td>
-<td>A well-maintained and feature-enhanced fork of the glorious `ccflare` usage dashboard by @snipeship (which at the time of writing has not had an update in a few months). `better-ccflare` builds on this foundation with some performance enhancements, extended provider support, bug fixes, Docker deployment, and more.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/tombii/better-ccflare?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/tombii/better-ccflare?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/tombii/better-ccflare?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/tombii/better-ccflare?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/tombii/better-ccflare?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/tombii/better-ccflare?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/tombii/better-ccflare?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/tombii/better-ccflare?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/tombii/better-ccflare?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/Veraticus/cc-tools"><b>cc-tools</b></a><br>by <a href="https://github.com/Veraticus">Josh Symonds</a></td>
@@ -435,4 +437,4 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by last updat
 
 **Total Resources:** 42
 
-**Last Generated:** 2026-01-07
+**Last Generated:** 2026-01-09

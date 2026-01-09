@@ -16,13 +16,12 @@ import tempfile
 from collections.abc import Generator
 from pathlib import Path
 from typing import Any
-from unittest.mock import patch
 
 import pytest
 
 # Add parent directory to path to import the script
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from scripts.sort_resources import sort_resources  # noqa
+from scripts.resources.sort_resources import sort_resources  # noqa
 
 
 @pytest.fixture
@@ -109,11 +108,36 @@ def read_csv(path: Path) -> list[dict[str, str]]:
         return list(csv.DictReader(f))
 
 
+def set_category_order(monkeypatch: pytest.MonkeyPatch, categories: list[dict[str, Any]]) -> None:
+    """Override category order for sorting tests."""
+    monkeypatch.setattr(
+        "scripts.categories.category_utils.category_manager.get_categories_for_readme",
+        lambda: categories,
+    )
+
+
+def set_category_order_error(
+    monkeypatch: pytest.MonkeyPatch, message: str = "Category manager error"
+) -> None:
+    """Force category manager to raise an error."""
+
+    def _raise() -> None:
+        raise Exception(message)
+
+    monkeypatch.setattr(
+        "scripts.categories.category_utils.category_manager.get_categories_for_readme",
+        _raise,
+    )
+
+
 class TestSortResources:
     """Test cases for sort_resources function."""
 
     def test_sort_by_category_order(
-        self, temp_csv: Path, sample_csv_data: list[dict[str, str]]
+        self,
+        temp_csv: Path,
+        sample_csv_data: list[dict[str, str]],
+        monkeypatch: pytest.MonkeyPatch,
     ) -> None:
         """Test that resources are sorted according to category order from category_utils."""
         # Mock category manager to provide a specific order
@@ -123,43 +147,40 @@ class TestSortResources:
             {"name": "Slash-Commands"},
         ]
 
-        with patch(
-            "scripts.category_utils.category_manager.get_categories_for_readme",
-            return_value=mock_categories,
-        ):
-            write_csv(temp_csv, sample_csv_data)
-            sort_resources(temp_csv)
+        set_category_order(monkeypatch, mock_categories)
+        write_csv(temp_csv, sample_csv_data)
+        sort_resources(temp_csv)
 
-            sorted_data = read_csv(temp_csv)
-            categories = [row["Category"] for row in sorted_data]
+        sorted_data = read_csv(temp_csv)
+        categories = [row["Category"] for row in sorted_data]
 
-            # Check that categories appear in the specified order
-            assert categories[0] == "Workflows & Knowledge Guides"
-            assert categories[1] == "Tooling"
-            assert categories[2:] == ["Slash-Commands"] * 3
+        # Check that categories appear in the specified order
+        assert categories[0] == "Workflows & Knowledge Guides"
+        assert categories[1] == "Tooling"
+        assert categories[2:] == ["Slash-Commands"] * 3
 
     def test_sort_by_subcategory(
-        self, temp_csv: Path, sample_csv_data: list[dict[str, str]]
+        self,
+        temp_csv: Path,
+        sample_csv_data: list[dict[str, str]],
+        monkeypatch: pytest.MonkeyPatch,
     ) -> None:
         """Test that resources within a category are sorted by sub-category."""
-        with patch(
-            "scripts.category_utils.category_manager.get_categories_for_readme",
-            return_value=[{"name": "Slash-Commands"}],
-        ):
-            # Filter to just Slash-Commands for this test
-            slash_commands = [d for d in sample_csv_data if d["Category"] == "Slash-Commands"]
-            write_csv(temp_csv, slash_commands)
-            sort_resources(temp_csv)
+        set_category_order(monkeypatch, [{"name": "Slash-Commands"}])
+        # Filter to just Slash-Commands for this test
+        slash_commands = [d for d in sample_csv_data if d["Category"] == "Slash-Commands"]
+        write_csv(temp_csv, slash_commands)
+        sort_resources(temp_csv)
 
-            sorted_data = read_csv(temp_csv)
-            subcategories = [row["Sub-Category"] for row in sorted_data]
+        sorted_data = read_csv(temp_csv)
+        subcategories = [row["Sub-Category"] for row in sorted_data]
 
-            # "Code Analysis & Testing" should come before "Version Control & Git"
-            assert subcategories[0] == "Code Analysis & Testing"
-            assert subcategories[1] == "Code Analysis & Testing"
-            assert subcategories[2] == "Version Control & Git"
+        # "Code Analysis & Testing" should come before "Version Control & Git"
+        assert subcategories[0] == "Code Analysis & Testing"
+        assert subcategories[1] == "Code Analysis & Testing"
+        assert subcategories[2] == "Version Control & Git"
 
-    def test_sort_by_display_name(self, temp_csv: Path) -> None:
+    def test_sort_by_display_name(self, temp_csv: Path, monkeypatch: pytest.MonkeyPatch) -> None:
         """Test that resources within same category/subcategory are sorted by display name."""
         data = [
             {
@@ -194,19 +215,18 @@ class TestSortResources:
             },
         ]
 
-        with patch(
-            "scripts.category_utils.category_manager.get_categories_for_readme",
-            return_value=[{"name": "Same"}],
-        ):
-            write_csv(temp_csv, data)
-            sort_resources(temp_csv)
+        set_category_order(monkeypatch, [{"name": "Same"}])
+        write_csv(temp_csv, data)
+        sort_resources(temp_csv)
 
-            sorted_data = read_csv(temp_csv)
-            names = [row["Display Name"] for row in sorted_data]
+        sorted_data = read_csv(temp_csv)
+        names = [row["Display Name"] for row in sorted_data]
 
-            assert names == ["Alpha", "Beta", "Zebra"]
+        assert names == ["Alpha", "Beta", "Zebra"]
 
-    def test_empty_subcategory_sorts_last(self, temp_csv: Path) -> None:
+    def test_empty_subcategory_sorts_last(
+        self, temp_csv: Path, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
         """Test that empty sub-categories sort after filled ones."""
         data = [
             {
@@ -231,20 +251,19 @@ class TestSortResources:
             },
         ]
 
-        with patch(
-            "scripts.category_utils.category_manager.get_categories_for_readme",
-            return_value=[{"name": "Test"}],
-        ):
-            write_csv(temp_csv, data)
-            sort_resources(temp_csv)
+        set_category_order(monkeypatch, [{"name": "Test"}])
+        write_csv(temp_csv, data)
+        sort_resources(temp_csv)
 
-            sorted_data = read_csv(temp_csv)
+        sorted_data = read_csv(temp_csv)
 
-            # Item with subcategory should come first
-            assert sorted_data[0]["Sub-Category"] == "Subcategory A"
-            assert sorted_data[1]["Sub-Category"] == ""
+        # Item with subcategory should come first
+        assert sorted_data[0]["Sub-Category"] == "Subcategory A"
+        assert sorted_data[1]["Sub-Category"] == ""
 
-    def test_unknown_category_sorts_last(self, temp_csv: Path) -> None:
+    def test_unknown_category_sorts_last(
+        self, temp_csv: Path, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
         """Test that categories not in the predefined order sort last."""
         data = [
             {
@@ -269,20 +288,19 @@ class TestSortResources:
             },
         ]
 
-        with patch(
-            "scripts.category_utils.category_manager.get_categories_for_readme",
-            return_value=[{"name": "Known"}],
-        ):
-            write_csv(temp_csv, data)
-            sort_resources(temp_csv)
+        set_category_order(monkeypatch, [{"name": "Known"}])
+        write_csv(temp_csv, data)
+        sort_resources(temp_csv)
 
-            sorted_data = read_csv(temp_csv)
+        sorted_data = read_csv(temp_csv)
 
-            # Known category should come first
-            assert sorted_data[0]["Category"] == "Known"
-            assert sorted_data[1]["Category"] == "Unknown Category"
+        # Known category should come first
+        assert sorted_data[0]["Category"] == "Known"
+        assert sorted_data[1]["Category"] == "Unknown Category"
 
-    def test_subcategory_yaml_order_sort(self, temp_csv: Path) -> None:
+    def test_subcategory_yaml_order_sort(
+        self, temp_csv: Path, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
         """Test that subcategories are sorted by their defined order in YAML."""
         data = [
             {
@@ -344,26 +362,25 @@ class TestSortResources:
             }
         ]
 
-        with patch(
-            "scripts.category_utils.category_manager.get_categories_for_readme",
-            return_value=mock_categories,
-        ):
-            write_csv(temp_csv, data)
-            sort_resources(temp_csv)
+        set_category_order(monkeypatch, mock_categories)
+        write_csv(temp_csv, data)
+        sort_resources(temp_csv)
 
-            sorted_data = read_csv(temp_csv)
-            subcats = [row["Sub-Category"] for row in sorted_data]
+        sorted_data = read_csv(temp_csv)
+        subcats = [row["Sub-Category"] for row in sorted_data]
 
-            # Should follow YAML order: General first, Version Control,
-            # CI/Deployment, then Miscellaneous last
-            assert subcats == [
-                "General",
-                "Version Control & Git",
-                "CI / Deployment",
-                "Miscellaneous",
-            ]
+        # Should follow YAML order: General first, Version Control,
+        # CI/Deployment, then Miscellaneous last
+        assert subcats == [
+            "General",
+            "Version Control & Git",
+            "CI / Deployment",
+            "Miscellaneous",
+        ]
 
-    def test_case_insensitive_display_name_sort(self, temp_csv: Path) -> None:
+    def test_case_insensitive_display_name_sort(
+        self, temp_csv: Path, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
         """Test that display name sorting is case-insensitive."""
         data = [
             {
@@ -398,35 +415,31 @@ class TestSortResources:
             },
         ]
 
-        with patch(
-            "scripts.category_utils.category_manager.get_categories_for_readme",
-            return_value=[{"name": "Test"}],
-        ):
-            write_csv(temp_csv, data)
-            sort_resources(temp_csv)
+        set_category_order(monkeypatch, [{"name": "Test"}])
+        write_csv(temp_csv, data)
+        sort_resources(temp_csv)
 
-            sorted_data = read_csv(temp_csv)
-            names = [row["Display Name"] for row in sorted_data]
+        sorted_data = read_csv(temp_csv)
+        names = [row["Display Name"] for row in sorted_data]
 
-            # Should be sorted alphabetically regardless of case
-            assert names == ["lowercase", "MixedCase", "UPPERCASE"]
+        # Should be sorted alphabetically regardless of case
+        assert names == ["lowercase", "MixedCase", "UPPERCASE"]
 
-    def test_empty_csv_file(self, temp_csv: Path) -> None:
+    def test_empty_csv_file(self, temp_csv: Path, monkeypatch: pytest.MonkeyPatch) -> None:
         """Test handling of empty CSV file."""
         # Create empty file
         temp_csv.write_text("")
 
-        with patch(
-            "scripts.category_utils.category_manager.get_categories_for_readme",
-            return_value=[],
-        ):
-            # Should not raise an error
-            sort_resources(temp_csv)
+        set_category_order(monkeypatch, [])
+        # Should not raise an error
+        sort_resources(temp_csv)
 
-            # File should still be empty
-            assert temp_csv.read_text() == ""
+        # File should still be empty
+        assert temp_csv.read_text() == ""
 
-    def test_missing_fields_handled_gracefully(self, temp_csv: Path) -> None:
+    def test_missing_fields_handled_gracefully(
+        self, temp_csv: Path, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
         """Test that missing fields in CSV rows are handled gracefully."""
         data = [
             {
@@ -461,41 +474,39 @@ class TestSortResources:
             },
         ]
 
-        with patch(
-            "scripts.category_utils.category_manager.get_categories_for_readme",
-            return_value=[{"name": "Test"}],
-        ):
-            write_csv(temp_csv, data)
-            sort_resources(temp_csv)
+        set_category_order(monkeypatch, [{"name": "Test"}])
+        write_csv(temp_csv, data)
+        sort_resources(temp_csv)
 
-            sorted_data = read_csv(temp_csv)
+        sorted_data = read_csv(temp_csv)
 
-            # Should handle missing fields without crashing
-            assert len(sorted_data) == 3
-            # Missing display name should sort as empty string (first)
-            assert sorted_data[0]["ID"] == "3"
+        # Should handle missing fields without crashing
+        assert len(sorted_data) == 3
+        # Missing display name should sort as empty string (first)
+        assert sorted_data[0]["ID"] == "3"
 
     def test_category_manager_exception_handling(
-        self, temp_csv: Path, sample_csv_data: list[dict[str, str]], capsys: Any
+        self,
+        temp_csv: Path,
+        sample_csv_data: list[dict[str, str]],
+        capsys: Any,
+        monkeypatch: pytest.MonkeyPatch,
     ) -> None:
         """Test that exceptions from category_manager are handled gracefully."""
-        with patch(
-            "scripts.category_utils.category_manager.get_categories_for_readme",
-            side_effect=Exception("Category manager error"),
-        ):
-            write_csv(temp_csv, sample_csv_data)
-            sort_resources(temp_csv)
+        set_category_order_error(monkeypatch, "Category manager error")
+        write_csv(temp_csv, sample_csv_data)
+        sort_resources(temp_csv)
 
-            # Should still sort the file (alphabetically)
-            sorted_data = read_csv(temp_csv)
-            assert len(sorted_data) == len(sample_csv_data)
+        # Should still sort the file (alphabetically)
+        sorted_data = read_csv(temp_csv)
+        assert len(sorted_data) == len(sample_csv_data)
 
-            # Check that warning was printed
-            captured = capsys.readouterr()
-            assert "Warning: Could not load category order" in captured.out
-            assert "Using alphabetical sorting instead" in captured.out
+        # Check that warning was printed
+        captured = capsys.readouterr()
+        assert "Warning: Could not load category order" in captured.out
+        assert "Using alphabetical sorting instead" in captured.out
 
-    def test_preserve_all_csv_fields(self, temp_csv: Path) -> None:
+    def test_preserve_all_csv_fields(self, temp_csv: Path, monkeypatch: pytest.MonkeyPatch) -> None:
         """Test that all CSV fields are preserved after sorting."""
         data = [
             {
@@ -514,70 +525,74 @@ class TestSortResources:
             }
         ]
 
-        with patch(
-            "scripts.category_utils.category_manager.get_categories_for_readme",
-            return_value=[{"name": "Test"}],
-        ):
-            write_csv(temp_csv, data)
-            sort_resources(temp_csv)
+        set_category_order(monkeypatch, [{"name": "Test"}])
+        write_csv(temp_csv, data)
+        sort_resources(temp_csv)
 
-            sorted_data = read_csv(temp_csv)
+        sorted_data = read_csv(temp_csv)
 
-            # All fields should be preserved
-            assert sorted_data[0]["Extra Field 1"] == "Extra Value 1"
-            assert sorted_data[0]["Extra Field 2"] == "Extra Value 2"
-            assert sorted_data[0]["Active"] == "true"
-            assert sorted_data[0]["Last Checked"] == "2024-01-01"
+        # All fields should be preserved
+        assert sorted_data[0]["Extra Field 1"] == "Extra Value 1"
+        assert sorted_data[0]["Extra Field 2"] == "Extra Value 2"
+        assert sorted_data[0]["Active"] == "true"
+        assert sorted_data[0]["Last Checked"] == "2024-01-01"
 
     def test_category_summary_output(
-        self, temp_csv: Path, sample_csv_data: list[dict[str, str]], capsys: Any
+        self,
+        temp_csv: Path,
+        sample_csv_data: list[dict[str, str]],
+        capsys: Any,
+        monkeypatch: pytest.MonkeyPatch,
     ) -> None:
         """Test that category summary is printed correctly."""
-        with patch(
-            "scripts.category_utils.category_manager.get_categories_for_readme",
-            return_value=[
+        set_category_order(
+            monkeypatch,
+            [
                 {"name": "Workflows & Knowledge Guides"},
                 {"name": "Tooling"},
                 {"name": "Slash-Commands"},
             ],
-        ):
-            write_csv(temp_csv, sample_csv_data)
-            sort_resources(temp_csv)
+        )
+        write_csv(temp_csv, sample_csv_data)
+        sort_resources(temp_csv)
 
-            captured = capsys.readouterr()
+        captured = capsys.readouterr()
 
-            # Check summary output
-            assert "Category Summary:" in captured.out
-            assert "Workflows & Knowledge Guides:" in captured.out
-            assert "(no sub-category): 1 items" in captured.out
-            assert "Slash-Commands:" in captured.out
-            assert "Code Analysis & Testing: 2 items" in captured.out
-            assert "Version Control & Git: 1 items" in captured.out
+        # Check summary output
+        assert "Category Summary:" in captured.out
+        assert "Workflows & Knowledge Guides:" in captured.out
+        assert "(no sub-category): 1 items" in captured.out
+        assert "Slash-Commands:" in captured.out
+        assert "Code Analysis & Testing: 2 items" in captured.out
+        assert "Version Control & Git: 1 items" in captured.out
 
     def test_multiple_sort_stability(
-        self, temp_csv: Path, sample_csv_data: list[dict[str, str]]
+        self,
+        temp_csv: Path,
+        sample_csv_data: list[dict[str, str]],
+        monkeypatch: pytest.MonkeyPatch,
     ) -> None:
         """
         Test that sorting multiple times produces the same result
         (stable sort).
         """
-        with patch(
-            "scripts.category_utils.category_manager.get_categories_for_readme",
-            return_value=[
+        set_category_order(
+            monkeypatch,
+            [
                 {"name": "Workflows & Knowledge Guides"},
                 {"name": "Tooling"},
                 {"name": "Slash-Commands"},
             ],
-        ):
-            write_csv(temp_csv, sample_csv_data)
+        )
+        write_csv(temp_csv, sample_csv_data)
 
-            # Sort once
-            sort_resources(temp_csv)
-            first_sort = read_csv(temp_csv)
+        # Sort once
+        sort_resources(temp_csv)
+        first_sort = read_csv(temp_csv)
 
-            # Sort again
-            sort_resources(temp_csv)
-            second_sort = read_csv(temp_csv)
+        # Sort again
+        sort_resources(temp_csv)
+        second_sort = read_csv(temp_csv)
 
-            # Results should be identical
-            assert first_sort == second_sort
+        # Results should be identical
+        assert first_sort == second_sort

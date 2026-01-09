@@ -4,10 +4,10 @@
 import sys
 from pathlib import Path
 
-# Add scripts directory to path so we can import the module
-sys.path.insert(0, str(Path(__file__).parent.parent / "scripts"))
+# Add repo root to path so we can import the module
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from generate_ticker_svg import truncate_repo_name
+from scripts.ticker.generate_ticker_svg import truncate_repo_name  # noqa: E402
 
 
 def test_truncate_repo_name_short():

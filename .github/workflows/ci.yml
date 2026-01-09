@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      docs_tree_check:
+        description: "Fail CI if README tree is out of date"
+        type: boolean
+        default: true
+      docs_tree_debug:
+        description: "Print diff/context on mismatch"
+        type: boolean
+        default: false
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    env:
+      CI: true
+      # Defaults for push/PR
+      DOCS_TREE_CHECK: "1"
+      DOCS_TREE_DEBUG: "0"
+      PYTHONPATH: ${{ github.workspace }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[dev]"
+
+      - name: Run CI checks
+        run: make ci
+        env:
+          # Override defaults only for workflow_dispatch
+          DOCS_TREE_CHECK: ${{ github.event_name == 'workflow_dispatch' && (inputs.docs_tree_check && '1' || '0') || '1' }}
+          DOCS_TREE_DEBUG: ${{ github.event_name == 'workflow_dispatch' && (inputs.docs_tree_debug && '1' || '0') || '0' }}

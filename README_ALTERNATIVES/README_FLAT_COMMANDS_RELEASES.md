@@ -1,8 +1,10 @@
+<!-- GENERATED FILE: do not edit directly -->
 <!--lint disable remark-lint:awesome-badge-->
 
 <h3 align="center">Pick Your Style:</h3>
 <p align="center">
-<a href="../"><img src="../assets/badge-style-extra.svg" alt="Extra" height="28"></a>
+<a href="../"><img src="../assets/badge-style-awesome.svg" alt="Awesome" height="28"></a>
+<a href="README_EXTRA.md"><img src="../assets/badge-style-extra.svg" alt="Extra" height="28"></a>
 <a href="README_CLASSIC.md"><img src="../assets/badge-style-classic.svg" alt="Classic" height="28"></a>
 <a href="README_FLAT_ALL_AZ.md"><img src="../assets/badge-style-flat.svg" alt="Flat" height="28" style="border: 2px solid #71717a; border-radius: 4px;"></a>
 </p>
@@ -43,9 +45,7 @@ A flat list view of all resources. Category: **Commands** | Sorted: by latest re
 
 ## Resources
 
-> **Note:** We make a best-effort attempt to determine the latest release from GitHub Releases, npm, PyPI, crates.io, and Homebrew. Please verify with the project directly.
->
-> If your project publishes to a package registry and isn't listed here, please [open an Issue](https://github.com/hesreallyhim/awesome-claude-code/issues).
+> **Note:** Latest release data is pulled from GitHub Releases only. Projects without GitHub Releases will not show release info here. Please verify with the project directly.
 
 <table>
 <thead>
@@ -60,9 +60,9 @@ A flat list view of all resources. Category: **Commands** | Sorted: by latest re
 <tbody>
 <tr>
 <td><a href="https://github.com/giselles-ai/giselle/blob/main/.claude/commands/update-branch-name.md"><b>/update-branch-name</b></a><br>by <a href="https://github.com/giselles-ai">giselles-ai</a></td>
-<td>v0.60.0</td>
+<td>v0.60.9</td>
 <td>GitHub</td>
-<td>2025-12-25</td>
+<td>2026-01-09</td>
 <td>Updates branch names with proper prefixes and formats, enforcing naming conventions, supporting semantic prefixes, and managing remote branch updates.</td>
 </tr>
 <tr>
@@ -70,9 +70,9 @@ A flat list view of all resources. Category: **Commands** | Sorted: by latest re
 </tr>
 <tr>
 <td><a href="https://github.com/GaloyMoney/lana-bank/blob/main/.claude/commands/mermaid.md"><b>/mermaid</b></a><br>by <a href="https://github.com/GaloyMoney">GaloyMoney</a></td>
-<td>0.26.7</td>
+<td>0.31.3</td>
 <td>GitHub</td>
-<td>2025-12-24</td>
+<td>2026-01-08</td>
 <td>Generates Mermaid diagrams from SQL schema files, creating entity relationship diagrams with table properties, validating diagram compilation, and ensuring complete entity coverage.</td>
 </tr>
 <tr>
@@ -80,9 +80,9 @@ A flat list view of all resources. Category: **Commands** | Sorted: by latest re
 </tr>
 <tr>
 <td><a href="https://github.com/metabase/metabase/blob/master/.claude/commands/fix-issue.md"><b>/fix-issue</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
-<td>v0.57.7</td>
+<td>v0.58.1</td>
 <td>GitHub</td>
-<td>2025-12-17</td>
+<td>2026-01-06</td>
 <td>Addresses GitHub issues by taking issue number as parameter, analyzing context, implementing solution, and testing/validating the fix for proper integration.</td>
 </tr>
 <tr>
@@ -90,9 +90,9 @@ A flat list view of all resources. Category: **Commands** | Sorted: by latest re
 </tr>
 <tr>
 <td><a href="https://github.com/metabase/metabase/blob/master/.claude/commands/fix-pr.md"><b>/fix-pr</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
-<td>v0.57.7</td>
+<td>v0.58.1</td>
 <td>GitHub</td>
-<td>2025-12-17</td>
+<td>2026-01-06</td>
 <td>Fetches and fixes unresolved PR comments by automatically retrieving feedback, addressing reviewer concerns, making targeted code improvements, and streamlining the review process.</td>
 </tr>
 <tr>
@@ -115,4 +115,4 @@ A flat list view of all resources. Category: **Commands** | Sorted: by latest re
 
 **Total Resources:** 5
 
-**Last Generated:** 2026-01-07
+**Last Generated:** 2026-01-09
