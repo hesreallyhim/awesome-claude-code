@@ -1,5 +1,7 @@
 {{STYLE_SELECTOR}}
 
+{{BANNER_IMAGE}}
+
 # Awesome Claude Code
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)

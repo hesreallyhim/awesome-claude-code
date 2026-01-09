@@ -7,6 +7,10 @@
 <a href="README_FLAT_ALL_AZ.md"><img src="../assets/badge-style-flat.svg" alt="Flat" height="28"></a>
 </p>
 
+<p align="center">
+  <img src="../assets/awesome-claude-code-social-clawd-2.png" alt="Awesome Claude Code" width="600">
+</p>
+
 # Awesome Claude Code
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
