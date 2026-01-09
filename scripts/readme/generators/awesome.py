@@ -61,7 +61,7 @@ class AwesomeReadmeGenerator(ReadmeGenerator):
     def generate_banner_image(self, output_path: Path) -> str:
         """Generate centered banner image for Awesome style README."""
         repo_root = find_repo_root(Path(__file__))
-        banner_file = ".claude/awesome-claude-code-social-clawd-2.png"
+        banner_file = "assets/awesome-claude-code-social-clawd-2.png"
 
         # Calculate relative path from output location to banner
         banner_abs = repo_root / banner_file
