@@ -7,13 +7,14 @@ else
 endif
 SCRIPTS_DIR := ./scripts
 
-.PHONY: help validate validate-single test coverage generate test-regenerate test-regenerate-no-cleanup test-regenerate-allow-diff test-regenerate-cycle docs-tree docs-tree-check download-resources add_resource add-category sort format format-check generate-resource-id mypy ci clean clean-all
+.PHONY: help validate validate-single validate-toc test coverage generate test-regenerate test-regenerate-no-cleanup test-regenerate-allow-diff test-regenerate-cycle docs-tree docs-tree-check download-resources add_resource add-category sort format format-check generate-resource-id mypy ci clean clean-all
 
 help:
 	@echo "Available commands:"
 	@echo "  make add-category      - Add a new category to the repository"
 	@echo "  make validate          - Validate all links in the resource CSV"
 	@echo "  make validate-single URL=<url> - Validate a single resource URL"
+	@echo "  make validate-toc      - Validate TOC anchors against GitHub HTML"
 	@echo "  make test              - Run validation tests on test CSV"
 	@echo "  make coverage          - Run pytest with coverage reports"
 	@echo "  make mypy              - Run mypy type checks"
@@ -68,6 +69,11 @@ validate-single:
 		exit 1; \
 	fi
 	@$(PYTHON) -m scripts.validation.validate_single_resource "$(URL)" $(if $(SECONDARY),--secondary "$(SECONDARY)") $(if $(NAME),--name "$(NAME)")
+
+# Validate TOC anchors against GitHub HTML (requires .claude/root-readme-html-article-body.html)
+validate-toc:
+	@echo "Validating TOC anchors against GitHub HTML..."
+	@$(PYTHON) -m scripts.testing.validate_toc_anchors
 
 # Run all tests using pytest
 test:

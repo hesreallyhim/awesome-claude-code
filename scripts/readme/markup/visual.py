@@ -218,11 +218,9 @@ style="height:48px;max-width:none;">
 
                     if sub_title == "General":
                         if general_map is not None:
-                            sub_anchor = general_map.get((category_id, sub_title), "general-")
+                            sub_anchor = general_map.get((category_id, sub_title), "general")
                         else:
                             sub_anchor = f"{category_id}-general"
-                    else:
-                        sub_anchor = sub_anchor + "-"
 
                     svg_filename = get_subcategory_svg_filename(subcat_id)
 
@@ -374,16 +372,11 @@ def generate_section_content(
 
                 if sub_title == "General":
                     if general_map is not None:
-                        sub_anchor = general_map.get((category_id, sub_title), "general-")
+                        sub_anchor = general_map.get((category_id, sub_title), "general")
                     else:
                         sub_anchor = f"{category_id}-general"
-                else:
-                    sub_anchor = f"{sub_anchor}-"
 
-                if sub_title == "General":
-                    sub_anchor_id = sub_anchor
-                else:
-                    sub_anchor_id = sub_anchor if sub_anchor.endswith("-") else f"{sub_anchor}-"
+                sub_anchor_id = sub_anchor
 
                 safe_filename = sanitize_filename_from_anchor(sub_anchor)
                 svg_filename = f"subheader_{safe_filename}.svg"

@@ -144,10 +144,10 @@ class TestGenerateTOC:
         # Check for main structure
         assert "<summary>Table of Contents</summary>" in result
 
-        # Check for simple links
-        assert "- [Getting Started](#getting-started-)" in result
-        assert "- [Resources](#resources-)" in result
-        assert "- [Tools](#tools-)" in result
+        # Check for simple links (CLASSIC style adds extra dash for 🔝 back-to-top)
+        assert "- [Getting Started](#getting-started--)" in result
+        assert "- [Resources](#resources--)" in result
+        assert "- [Tools](#tools--)" in result
 
     def test_categories_with_subcategories(self) -> None:
         """Test TOC generation with categories containing subcategories."""
@@ -170,15 +170,15 @@ class TestGenerateTOC:
 
         # Check for collapsible category with subcategories (open by default)
         assert "- <details open>" in result
-        # All category headers now have "-" suffix for back-to-top links
-        assert '  <summary><a href="#configuration--%EF%B8%8F">Configuration</a>' in result
+        # CLASSIC style: icon suffix + extra dash for 🔝 back-to-top
+        assert '  <summary><a href="#configuration-%EF%B8%8F-">Configuration</a>' in result
 
-        # Check for subcategories (also have "-" suffix)
+        # Check for subcategories (CLASSIC adds trailing dash for 🔝)
         assert "  - [Basic Setup](#basic-setup-)" in result
         assert "  - [Advanced Options](#advanced-options-)" in result
 
-        # Check for simple category
-        assert "- [Simple Category](#simple-category)" in result
+        # Check for simple category (CLASSIC adds extra dash for 🔝)
+        assert "- [Simple Category](#simple-category-)" in result
 
     def test_special_characters_in_names(self) -> None:
         """Test TOC generation with special characters in category names."""
@@ -190,9 +190,10 @@ class TestGenerateTOC:
         result = generate_toc(categories, [])
 
         # Check that special characters are properly handled in anchors
-        assert "[Tips & Tricks](#tips--tricks)" in result
-        assert "[CI/CD Tools](#cicd-tools)" in result
-        assert "[Node.js Resources](#nodejs-resources)" in result
+        # CLASSIC style adds extra dash for 🔝 back-to-top
+        assert "[Tips & Tricks](#tips--tricks-)" in result
+        assert "[CI/CD Tools](#cicd-tools-)" in result
+        assert "[Node.js Resources](#nodejs-resources-)" in result
 
     def test_mixed_categories(self) -> None:
         """Test TOC with a mix of simple and nested categories."""
@@ -226,11 +227,11 @@ class TestGenerateTOC:
         assert lines[2] == "<details open>"
         assert lines[3] == "<summary>Table of Contents</summary>"
 
-        # Check for simple categories
-        assert "- [Overview](#overview)" in result
-        assert "- [Community](#community-)" in result
+        # Check for simple categories (CLASSIC adds extra dash for 🔝)
+        assert "- [Overview](#overview-)" in result
+        assert "- [Community](#community--)" in result
 
-        # Check for nested categories
+        # Check for nested categories (CLASSIC: icon dash + 🔝 dash)
         assert '  <summary><a href="#documentation--">Documentation</a>' in result
         assert "  - [API Reference](#api-reference-)" in result
         assert "  - [Tutorials](#tutorials-)" in result

@@ -266,7 +266,7 @@ _A strong bundle of core competencies for software engineering, with good covera
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
-<a href="#ide-integrations-">
+<a href="#ide-integrations">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="../assets/toc-sub-ide.svg">
     <source media="(prefers-color-scheme: light)" srcset="../assets/toc-sub-ide-light-anim-scanline.svg">
@@ -275,7 +275,7 @@ _A strong bundle of core competencies for software engineering, with good covera
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
-<a href="#usage-monitors-">
+<a href="#usage-monitors">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="../assets/toc-sub-monitors.svg">
     <source media="(prefers-color-scheme: light)" srcset="../assets/toc-sub-monitors-light-anim-scanline.svg">
@@ -284,7 +284,7 @@ _A strong bundle of core competencies for software engineering, with good covera
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
-<a href="#orchestrators-">
+<a href="#orchestrators">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="../assets/toc-sub-orchestrators.svg">
     <source media="(prefers-color-scheme: light)" srcset="../assets/toc-sub-orchestrators-light-anim-scanline.svg">
@@ -347,7 +347,7 @@ _A strong bundle of core competencies for software engineering, with good covera
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
-<a href="#version-control--git-">
+<a href="#version-control--git">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="../assets/toc-sub-git.svg">
     <source media="(prefers-color-scheme: light)" srcset="../assets/toc-sub-git-light-anim-scanline.svg">
@@ -356,7 +356,7 @@ _A strong bundle of core competencies for software engineering, with good covera
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
-<a href="#code-analysis--testing-">
+<a href="#code-analysis--testing">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="../assets/toc-sub-code-analysis.svg">
     <source media="(prefers-color-scheme: light)" srcset="../assets/toc-sub-code-analysis-light-anim-scanline.svg">
@@ -365,7 +365,7 @@ _A strong bundle of core competencies for software engineering, with good covera
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
-<a href="#context-loading--priming-">
+<a href="#context-loading--priming">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="../assets/toc-sub-context.svg">
     <source media="(prefers-color-scheme: light)" srcset="../assets/toc-sub-context-light-anim-scanline.svg">
@@ -374,7 +374,7 @@ _A strong bundle of core competencies for software engineering, with good covera
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
-<a href="#documentation--changelogs-">
+<a href="#documentation--changelogs">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="../assets/toc-sub-documentation.svg">
     <source media="(prefers-color-scheme: light)" srcset="../assets/toc-sub-documentation-light-anim-scanline.svg">
@@ -383,7 +383,7 @@ _A strong bundle of core competencies for software engineering, with good covera
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
-<a href="#ci--deployment-">
+<a href="#ci--deployment">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="../assets/toc-sub-ci.svg">
     <source media="(prefers-color-scheme: light)" srcset="../assets/toc-sub-ci-light-anim-scanline.svg">
@@ -392,7 +392,7 @@ _A strong bundle of core competencies for software engineering, with good covera
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
-<a href="#project--task-management-">
+<a href="#project--task-management">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="../assets/toc-sub-project-mgmt.svg">
     <source media="(prefers-color-scheme: light)" srcset="../assets/toc-sub-project-mgmt-light-anim-scanline.svg">
@@ -401,7 +401,7 @@ _A strong bundle of core competencies for software engineering, with good covera
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
-<a href="#miscellaneous-">
+<a href="#miscellaneous">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="../assets/toc-sub-misc.svg">
     <source media="(prefers-color-scheme: light)" srcset="../assets/toc-sub-misc-light-anim-scanline.svg">
@@ -419,7 +419,7 @@ _A strong bundle of core competencies for software engineering, with good covera
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
-<a href="#language-specific-">
+<a href="#language-specific">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="../assets/toc-sub-language.svg">
     <source media="(prefers-color-scheme: light)" srcset="../assets/toc-sub-language-light-anim-scanline.svg">
@@ -428,7 +428,7 @@ _A strong bundle of core competencies for software engineering, with good covera
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
-<a href="#domain-specific-">
+<a href="#domain-specific">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="../assets/toc-sub-domain.svg">
     <source media="(prefers-color-scheme: light)" srcset="../assets/toc-sub-domain-light-anim-scanline.svg">
@@ -437,7 +437,7 @@ _A strong bundle of core competencies for software engineering, with good covera
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
-<a href="#project-scaffolding--mcp-">
+<a href="#project-scaffolding--mcp">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="../assets/toc-sub-scaffolding.svg">
     <source media="(prefers-color-scheme: light)" srcset="../assets/toc-sub-scaffolding-light-anim-scanline.svg">
@@ -983,7 +983,7 @@ _VoiceMode MCP brings natural conversations to Claude Code. It supports any Open
 
 </details>
 
-<details open id="ide-integrations-">
+<details open id="ide-integrations">
 <summary><span><picture><img src="../assets/subheader_ide_integrations.svg" alt="IDE Integrations" align="absmiddle"></picture></span></summary>
 
 <a href="https://marketplace.visualstudio.com/items?itemName=AndrePimenta.claude-code-chat"><img src="../assets/badge-claude-code-chat.svg" alt="Claude Code Chat"></a>  
@@ -1029,7 +1029,7 @@ _A full-fledged desktop application for orchestrating, monitoring, and interacti
 
 </details>
 
-<details open id="usage-monitors-">
+<details open id="usage-monitors">
 <summary><span><picture><img src="../assets/subheader_usage_monitors.svg" alt="Usage Monitors" align="absmiddle"></picture></span></summary>
 
 <a href="https://github.com/ryoppippi/ccusage"><img src="../assets/badge-cc-usage.svg" alt="CC Usage"></a>  
@@ -1076,7 +1076,7 @@ _A community-driven leaderboard tool that enables developers to visualize, track
 
 </details>
 
-<details open id="orchestrators-">
+<details open id="orchestrators">
 <summary><span><picture><img src="../assets/subheader_orchestrators.svg" alt="Orchestrators" align="absmiddle"></picture></span></summary>
 
 <a href="https://github.com/ruvnet/claude-code-flow"><img src="../assets/badge-claude-code-flow.svg" alt="Claude Code Flow"></a>  
@@ -1378,7 +1378,7 @@ _A library of slash commands intended specifically to facilitate common and adva
 
 </details>
 
-<details open id="version-control--git-">
+<details open id="version-control--git">
 <summary><span><picture><img src="../assets/subheader_version_control_git.svg" alt="Version Control & Git" align="absmiddle"></picture></span></summary>
 
 <a href="https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/analyze-issue.md"><img src="../assets/badge-analyze-issue.svg" alt="/analyze-issue"></a>  
@@ -1460,7 +1460,7 @@ _Updates branch names with proper prefixes and formats, enforcing naming convent
 
 </details>
 
-<details open id="code-analysis--testing-">
+<details open id="code-analysis--testing">
 <summary><span><picture><img src="../assets/subheader_code_analysis_testing.svg" alt="Code Analysis & Testing" align="absmiddle"></picture></span></summary>
 
 <a href="https://github.com/rygwdn/slack-tools/blob/main/.claude/commands/check.md"><img src="../assets/badge-check.svg" alt="/check"></a>  
@@ -1507,7 +1507,7 @@ _Implements Test-Driven Development by analyzing feature requirements, creating 
 
 </details>
 
-<details open id="context-loading--priming-">
+<details open id="context-loading--priming">
 <summary><span><picture><img src="../assets/subheader_context_loading_priming.svg" alt="Context Loading & Priming" align="absmiddle"></picture></span></summary>
 
 <a href="https://github.com/elizaOS/elizaos.github.io/blob/main/.claude/commands/context-prime.md"><img src="../assets/badge-context-prime.svg" alt="/context-prime"></a>  
@@ -1561,7 +1561,7 @@ _Reads all commands and key project files to optimize AI-assisted development by
 
 </details>
 
-<details open id="documentation--changelogs-">
+<details open id="documentation--changelogs">
 <summary><span><picture><img src="../assets/subheader_documentation_changelogs.svg" alt="Documentation & Changelogs" align="absmiddle"></picture></span></summary>
 
 <a href="https://github.com/berrydev-ai/blockdoc-python/blob/main/.claude/commands/add-to-changelog.md"><img src="../assets/badge-add-to-changelog.svg" alt="/add-to-changelog"></a>  
@@ -1601,7 +1601,7 @@ _Reviews current documentation status, updates implementation progress, reviews 
 
 </details>
 
-<details open id="ci--deployment-">
+<details open id="ci--deployment">
 <summary><span><picture><img src="../assets/subheader_ci_deployment.svg" alt="CI / Deployment" align="absmiddle"></picture></span></summary>
 
 <a href="https://github.com/kelp/webdown/blob/main/.claude/commands/release.md"><img src="../assets/badge-release.svg" alt="/release"></a>  
@@ -1620,7 +1620,7 @@ _Activates virtual environments, runs CI-compatible check scripts, iteratively f
 
 </details>
 
-<details open id="project--task-management-">
+<details open id="project--task-management">
 <summary><span><picture><img src="../assets/subheader_project_task_management.svg" alt="Project & Task Management" align="absmiddle"></picture></span></summary>
 
 <a href="https://github.com/scopecraft/command/blob/main/.claude/commands/create-command.md"><img src="../assets/badge-create-command.svg" alt="/create-command"></a>  
@@ -1674,7 +1674,7 @@ _A convenient command to quickly manage project todo items without leaving the C
 
 </details>
 
-<details open id="miscellaneous-">
+<details open id="miscellaneous">
 <summary><span><picture><img src="../assets/subheader_miscellaneous.svg" alt="Miscellaneous" align="absmiddle"></picture></span></summary>
 
 <a href="https://github.com/Mjvolk3/torchcell/blob/main/.claude/commands/fixing_go_in_graph.md"><img src="../assets/badge-fixing-go-in-graph.svg" alt="/fixing_go_in_graph"></a>  
@@ -1745,7 +1745,7 @@ _Reformats documentation to use React Stepper component, transforming heading fo
   </picture>
 </div>
 
-<details open id="language-specific-">
+<details open id="language-specific">
 <summary><span><picture><img src="../assets/subheader_language_specific.svg" alt="Language-Specific" align="absmiddle"></picture></span></summary>
 
 <a href="https://github.com/didalgolab/ai-intellij-plugin/blob/main/CLAUDE.md"><img src="../assets/badge-ai-intellij-plugin.svg" alt="AI IntelliJ Plugin"></a>  
@@ -1848,7 +1848,7 @@ _Details Go project conventions with comprehensive error handling recommendation
 
 </details>
 
-<details open id="domain-specific-">
+<details open id="domain-specific">
 <summary><span><picture><img src="../assets/subheader_domain_specific.svg" alt="Domain-Specific" align="absmiddle"></picture></span></summary>
 
 <a href="https://github.com/Layr-Labs/avs-vibe-developer-guide/blob/master/CLAUDE.md"><img src="../assets/badge-avs-vibe-developer-guide.svg" alt="AVS Vibe Developer Guide"></a>  
@@ -1909,7 +1909,7 @@ _Clear and direct instructives about style, permissions, Claude's "role", commun
 
 </details>
 
-<details open id="project-scaffolding--mcp-">
+<details open id="project-scaffolding--mcp">
 <summary><span><picture><img src="../assets/subheader_project_scaffolding_mcp.svg" alt="Project Scaffolding & MCP" align="absmiddle"></picture></span></summary>
 
 <a href="https://github.com/basicmachines-co/basic-memory/blob/main/CLAUDE.md"><img src="../assets/badge-basic-memory.svg" alt="Basic Memory"></a>  

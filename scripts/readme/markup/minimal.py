@@ -73,6 +73,8 @@ def generate_toc(categories: list[dict], csv_data: list[dict]) -> str:
         icon = category.get("icon", "")
         subcategories = category.get("subcategories", [])
         anchor_suffix = get_anchor_suffix_for_icon(icon)
+        # CLASSIC style headings include [🔝](#awesome-claude-code) which adds another dash
+        back_to_top_suffix = "-"
 
         anchor = (
             section_title.lower()
@@ -85,7 +87,7 @@ def generate_toc(categories: list[dict], csv_data: list[dict]) -> str:
         if subcategories:
             toc_lines.append("- <details open>")
             toc_lines.append(
-                f'  <summary><a href="#{anchor}-{anchor_suffix}">{section_title}</a></summary>'
+                f'  <summary><a href="#{anchor}{anchor_suffix}{back_to_top_suffix}">{section_title}</a></summary>'
             )
             toc_lines.append("")
 
@@ -105,21 +107,23 @@ def generate_toc(categories: list[dict], csv_data: list[dict]) -> str:
                         sub_title.lower().replace(" ", "-").replace("&", "").replace("/", "")
                     )
 
+                    # CLASSIC subcategory headings include 🔝 which adds a trailing dash
                     if sub_title == "General":
                         if general_counter == 0:
                             sub_anchor = "general-"
                         else:
+                            # GitHub uses double-dash before counter: general--1, general--2
                             sub_anchor = f"general--{general_counter}"
                         general_counter += 1
                     else:
-                        sub_anchor = sub_anchor + "-"
+                        sub_anchor = f"{sub_anchor}-"
 
                     toc_lines.append(f"  - [{sub_title}](#{sub_anchor})")
 
             toc_lines.append("")
             toc_lines.append("  </details>")
         else:
-            toc_lines.append(f"- [{section_title}](#{anchor}{anchor_suffix})")
+            toc_lines.append(f"- [{section_title}](#{anchor}{anchor_suffix}{back_to_top_suffix})")
 
         toc_lines.append("")
 

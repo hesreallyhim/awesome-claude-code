@@ -154,7 +154,7 @@ A strong bundle of core competencies for software engineering, with good coverag
   </details>
 
 - <details open>
-  <summary><a href="#official-documentation--%EF%B8%8F">Official Documentation</a></summary>
+  <summary><a href="#official-documentation-%EF%B8%8F-">Official Documentation</a></summary>
 
   - [General](#general--7)
 

@@ -77,7 +77,7 @@ def generate_toc(categories: list[dict], csv_data: list[dict]) -> str:
             has_resources = any(r["Category"] == category_name for r in csv_data)
 
             if has_resources:
-                toc_lines.append(f"- [{display_title}](#{anchor}-{anchor_suffix})")
+                toc_lines.append(f"- [{display_title}](#{anchor}{anchor_suffix})")
 
                 for subcat in subcategories:
                     sub_title = subcat["name"]
@@ -96,16 +96,14 @@ def generate_toc(categories: list[dict], csv_data: list[dict]) -> str:
 
                         if sub_title == "General":
                             if general_counter == 0:
-                                sub_anchor = "general-"
+                                sub_anchor = "general"
                             else:
-                                sub_anchor = f"general--{general_counter}"
+                                sub_anchor = f"general-{general_counter}"
                             general_counter += 1
-                        else:
-                            sub_anchor = sub_anchor + "-"
 
                         toc_lines.append(f"  - [{sub_title}](#{sub_anchor})")
         else:
-            toc_lines.append(f"- [{display_title}](#{anchor}-{anchor_suffix})")
+            toc_lines.append(f"- [{display_title}](#{anchor}{anchor_suffix})")
 
     return "\n".join(toc_lines).strip()
 
