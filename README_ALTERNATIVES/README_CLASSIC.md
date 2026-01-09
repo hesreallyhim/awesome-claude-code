@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Ralph for Claude Code`](https://github.com/frankbria/ralph-claude-code) &nbsp; by &nbsp; [Frank Bria](https://github.com/frankbria)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+An autonomous AI development framework that enables Claude Code to work iteratively on projects until completion. Features intelligent exit detection, rate limiting, circuit breaker patterns, and comprehensive safety guardrails to prevent infinite loops and API overuse. Built with Bash, integrated with tmux for live monitoring, and includes 75+ comprehensive tests.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for ralph-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-claude-code&username=frankbria&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Claude Code Repos Index`](https://github.com/danielrosehill/Claude-Code-Repos-Index) &nbsp; by &nbsp; [Daniel Rosehill](https://github.com/danielrosehill)    
 This is either the work of a prolific genius, or a very clever bot (or both), although it hardly matters because the quality is so good - an index of 75+ Claude Code repositories published by the author - and I'm not talking about slop. CMS, system design, deep research, IoT, agentic workflows, server management, personal health... If you spot the lie, let me know, otherwise please check these out.
 
@@ -64,17 +75,6 @@ A nice variety of 35+ brief but information-dense Claude Code tips covering voic
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-code-tips](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-tips&username=ykdojo&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Superpowers`](https://github.com/obra/superpowers) &nbsp; by &nbsp; [Jesse Vincent](https://github.com/obra)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A strong bundle of core competencies for software engineering, with good coverage of a large portion of the SDLC - from planning, reviewing, testing, debugging... Well written, well organized, and adaptable. The author refers to them as "superpowers", but many of them are just consolidating engineering best practices - which sometimes does feel like a superpower when working with Claude Code.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for superpowers](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=superpowers&username=obra&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -209,6 +209,17 @@ Hand-crafted collection of advanced context engineering techniques and patterns 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for context-engineering-kit](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=context-engineering-kit&username=NeoLabHQ&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Ralph for Claude Code`](https://github.com/frankbria/ralph-claude-code) &nbsp; by &nbsp; [Frank Bria](https://github.com/frankbria)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+An autonomous AI development framework that enables Claude Code to work iteratively on projects until completion. Features intelligent exit detection, rate limiting, circuit breaker patterns, and comprehensive safety guardrails to prevent infinite loops and API overuse. Built with Bash, integrated with tmux for live monitoring, and includes 75+ comprehensive tests.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for ralph-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-claude-code&username=frankbria&all_stats=true&stats_only=true)
 
 </details>
 <br>
