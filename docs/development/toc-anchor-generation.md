@@ -82,32 +82,24 @@ make test  # Includes TOC anchor validation tests
 
 ## HTML Fixture Storage
 
-Store GitHub-rendered HTML in `.claude/` (gitignored):
+GitHub-rendered HTML fixtures are stored in `tests/fixtures/github-html/` (version controlled):
 
 | Style | README Path | HTML Fixture Path |
 |-------|-------------|-------------------|
-| AWESOME | `README.md` | `.claude/github-html-awesome.html` |
-| CLASSIC | `README_ALTERNATIVES/README_CLASSIC.md` | `.claude/github-html-classic.html` |
-| EXTRA | `README_ALTERNATIVES/README_EXTRA.md` | `.claude/github-html-extra.html` |
-| FLAT | `README_ALTERNATIVES/README_FLAT_ALL_AZ.md` | `.claude/github-html-flat.html` |
+| AWESOME | `README.md` | `tests/fixtures/github-html/awesome.html` |
+| CLASSIC | `README_ALTERNATIVES/README_CLASSIC.md` | `tests/fixtures/github-html/classic.html` |
+| EXTRA | `README_ALTERNATIVES/README_EXTRA.md` | `tests/fixtures/github-html/extra.html` |
+| FLAT | `README_ALTERNATIVES/README_FLAT_ALL_AZ.md` | `tests/fixtures/github-html/flat.html` |
 
 Validation commands:
 ```bash
-# AWESOME
-python3 -m scripts.testing.validate_toc_anchors \
-  --html .claude/github-html-awesome.html --readme README.md
+# AWESOME (default)
+python3 -m scripts.testing.validate_toc_anchors
 
-# CLASSIC
-python3 -m scripts.testing.validate_toc_anchors \
-  --html .claude/github-html-classic.html --readme README_ALTERNATIVES/README_CLASSIC.md
-
-# EXTRA
-python3 -m scripts.testing.validate_toc_anchors \
-  --html .claude/github-html-extra.html --readme README_ALTERNATIVES/README_EXTRA.md
-
-# FLAT
-python3 -m scripts.testing.validate_toc_anchors \
-  --html .claude/github-html-flat.html --readme README_ALTERNATIVES/README_FLAT_ALL_AZ.md
+# Other styles
+python3 -m scripts.testing.validate_toc_anchors --style classic
+python3 -m scripts.testing.validate_toc_anchors --style extra
+python3 -m scripts.testing.validate_toc_anchors --style flat
 ```
 
 ## Remaining Work

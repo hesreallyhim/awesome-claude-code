@@ -5,8 +5,13 @@ This utility compares the anchor links in our generated README's table of conten
 against the actual anchor IDs that GitHub generates when rendering the markdown.
 
 Usage:
-    # Validate against saved HTML fixture
+    # Validate AWESOME style (default)
     python -m scripts.testing.validate_toc_anchors
+
+    # Validate specific style
+    python -m scripts.testing.validate_toc_anchors --style classic
+    python -m scripts.testing.validate_toc_anchors --style extra
+    python -m scripts.testing.validate_toc_anchors --style flat
 
     # Validate with custom paths
     python -m scripts.testing.validate_toc_anchors --html path/to/github.html --readme README.md
@@ -19,7 +24,7 @@ To obtain the GitHub HTML:
     2. View the rendered README page
     3. Open browser dev tools (F12)
     4. Find the <article> element containing the README content
-    5. Copy the inner HTML and save to .claude/root-readme-html-article-body.html
+    5. Copy the inner HTML to tests/fixtures/github-html/<style>.html
 """
 
 from __future__ import annotations
@@ -33,9 +38,28 @@ from pathlib import Path
 from scripts.utils.repo_root import find_repo_root
 
 REPO_ROOT = find_repo_root(Path(__file__))
-DEFAULT_HTML_PATH = REPO_ROOT / ".claude" / "root-readme-html-article-body.html"
-DEFAULT_README_PATH = REPO_ROOT / "README.md"
+FIXTURES_DIR = REPO_ROOT / "tests" / "fixtures" / "github-html"
 EXPECTED_ANCHORS_PATH = REPO_ROOT / "tests" / "fixtures" / "expected_toc_anchors.txt"
+
+# Style configurations: (html_fixture, readme_path)
+STYLE_CONFIGS = {
+    "awesome": (FIXTURES_DIR / "awesome.html", REPO_ROOT / "README.md"),
+    "classic": (
+        FIXTURES_DIR / "classic.html",
+        REPO_ROOT / "README_ALTERNATIVES" / "README_CLASSIC.md",
+    ),
+    "extra": (
+        FIXTURES_DIR / "extra.html",
+        REPO_ROOT / "README_ALTERNATIVES" / "README_EXTRA.md",
+    ),
+    "flat": (
+        FIXTURES_DIR / "flat.html",
+        REPO_ROOT / "README_ALTERNATIVES" / "README_FLAT_ALL_AZ.md",
+    ),
+}
+
+DEFAULT_HTML_PATH = STYLE_CONFIGS["awesome"][0]
+DEFAULT_README_PATH = STYLE_CONFIGS["awesome"][1]
 
 
 def extract_github_anchor_ids(html_content: str) -> set[str]:
@@ -191,16 +215,22 @@ def main() -> int:
         epilog=__doc__,
     )
     parser.add_argument(
+        "--style",
+        choices=list(STYLE_CONFIGS.keys()),
+        default="awesome",
+        help="README style to validate (default: awesome)",
+    )
+    parser.add_argument(
         "--html",
         type=Path,
-        default=DEFAULT_HTML_PATH,
-        help="Path to GitHub-rendered HTML file",
+        default=None,
+        help="Path to GitHub-rendered HTML file (overrides --style)",
     )
     parser.add_argument(
         "--readme",
         type=Path,
-        default=DEFAULT_README_PATH,
-        help="Path to README.md file",
+        default=None,
+        help="Path to README.md file (overrides --style)",
     )
     parser.add_argument(
         "--generate-expected",
@@ -216,11 +246,15 @@ def main() -> int:
 
     args = parser.parse_args()
 
+    # Resolve paths from style or explicit arguments
+    html_path = args.html if args.html else STYLE_CONFIGS[args.style][0]
+    readme_path = args.readme if args.readme else STYLE_CONFIGS[args.style][1]
+
     if args.generate_expected:
-        generate_expected_anchors(args.html)
+        generate_expected_anchors(html_path)
         return 0
 
-    success = validate(args.html, args.readme, verbose=not args.quiet)
+    success = validate(html_path, readme_path, verbose=not args.quiet)
     return 0 if success else 1
 
 
