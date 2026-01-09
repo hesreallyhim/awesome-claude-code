@@ -40,7 +40,7 @@ class RateLimiter:
         """Check current rate limit status"""
         try:
             rate_limit = github_client.get_rate_limit()
-            core = rate_limit.core
+            core = rate_limit.resources.core
             return {
                 "remaining": core.remaining,
                 "limit": core.limit,
