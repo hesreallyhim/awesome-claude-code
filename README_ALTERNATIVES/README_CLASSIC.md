@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Ralph Wiggum Plugin`](https://github.com/anthropics/claude-code/tree/4f18698a9ed25517861a75125b526e319bcf8354/plugins/ralph-wiggum) &nbsp; by &nbsp; [Anthropic PBC](https://github.com/anthropics)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;&copy;  
+The official Anthropic implementation of the Ralph Wiggum technique for iterative, self-referential AI development loops in Claude Code.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code&username=anthropics&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`ralph-orchestrator`](https://github.com/mikeyobrien/ralph-orchestrator) &nbsp; by &nbsp; [mikeyobrien](https://github.com/mikeyobrien)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Ralph Orchestrator implements the simple but effective "Ralph Wiggum" technique for autonomous task completion, continuously running an AI agent against a prompt file until the task is marked as complete or limits are reached. This implementation provides a robust, well-tested, and feature-complete orchestration system for AI-driven development. Also cited in the Anthropic Ralph plugin documentation.
 
@@ -64,17 +75,6 @@ An autonomous AI development framework that enables Claude Code to work iterativ
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for ralph-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-claude-code&username=frankbria&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Claude Code Repos Index`](https://github.com/danielrosehill/Claude-Code-Repos-Index) &nbsp; by &nbsp; [Daniel Rosehill](https://github.com/danielrosehill)    
-This is either the work of a prolific genius, or a very clever bot (or both), although it hardly matters because the quality is so good - an index of 75+ Claude Code repositories published by the author - and I'm not talking about slop. CMS, system design, deep research, IoT, agentic workflows, server management, personal health... If you spot the lie, let me know, otherwise please check these out.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for Claude-Code-Repos-Index](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Claude-Code-Repos-Index&username=danielrosehill&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -2072,6 +2072,17 @@ Official GitHub Actions integration for Claude Code with examples and documentat
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-code-action](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-action&username=anthropics&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Ralph Wiggum Plugin`](https://github.com/anthropics/claude-code/tree/4f18698a9ed25517861a75125b526e319bcf8354/plugins/ralph-wiggum) &nbsp; by &nbsp; [Anthropic PBC](https://github.com/anthropics)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;&copy;  
+The official Anthropic implementation of the Ralph Wiggum technique for iterative, self-referential AI development loops in Claude Code.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code&username=anthropics&all_stats=true&stats_only=true)
 
 </details>
 <br>
