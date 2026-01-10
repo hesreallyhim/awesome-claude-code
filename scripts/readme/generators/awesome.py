@@ -68,5 +68,7 @@ class AwesomeReadmeGenerator(ReadmeGenerator):
         rel_path = Path(os.path.relpath(banner_abs, start=output_path.parent)).as_posix()
 
         return f"""<p align="center">
-  <img src="{rel_path}" alt="Awesome Claude Code" width="600">
+  <picture>
+    <img src="{rel_path}" alt="Awesome Claude Code" width="600">
+  </picture>
 </p>"""

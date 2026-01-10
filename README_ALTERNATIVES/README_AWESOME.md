@@ -8,7 +8,9 @@
 </p>
 
 <p align="center">
-  <img src="../assets/awesome-claude-code-social-clawd-2.png" alt="Awesome Claude Code" width="600">
+  <picture>
+    <img src="../assets/awesome-claude-code-social-clawd-2.png" alt="Awesome Claude Code" width="600">
+  </picture>
 </p>
 
 # Awesome Claude Code
