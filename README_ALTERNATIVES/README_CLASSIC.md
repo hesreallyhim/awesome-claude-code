@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`ralph-orchestrator`](https://github.com/mikeyobrien/ralph-orchestrator) &nbsp; by &nbsp; [mikeyobrien](https://github.com/mikeyobrien)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Ralph Orchestrator implements the simple but effective "Ralph Wiggum" technique for autonomous task completion, continuously running an AI agent against a prompt file until the task is marked as complete or limits are reached. This implementation provides a robust, well-tested, and feature-complete orchestration system for AI-driven development. Also cited in the Anthropic Ralph plugin documentation.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for ralph-orchestrator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-orchestrator&username=mikeyobrien&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Ralph for Claude Code`](https://github.com/frankbria/ralph-claude-code) &nbsp; by &nbsp; [Frank Bria](https://github.com/frankbria)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 An autonomous AI development framework that enables Claude Code to work iteratively on projects until completion. Features intelligent exit detection, rate limiting, circuit breaker patterns, and comprehensive safety guardrails to prevent infinite loops and API overuse. Built with Bash, integrated with tmux for live monitoring, and includes 75+ comprehensive tests.
 
@@ -64,17 +75,6 @@ This is either the work of a prolific genius, or a very clever bot (or both), al
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for Claude-Code-Repos-Index](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Claude-Code-Repos-Index&username=danielrosehill&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Claude Code Tips`](https://github.com/ykdojo/claude-code-tips) &nbsp; by &nbsp; [ykdojo](https://github.com/ykdojo)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
-A nice variety of 35+ brief but information-dense Claude Code tips covering voice input, system prompt patching, container workflows for risky tasks, conversation cloning(!), multi-model orchestration with Gemini CLI, and plenty more. Nice demos, working scripts, a plugin, I'd say this probably has a little something for everyone.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claude-code-tips](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-tips&username=ykdojo&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -974,6 +974,17 @@ Spawn and control multiple Claude Codes in parallel from your phone or desktop. 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for happy](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=happy&username=slopus&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`ralph-orchestrator`](https://github.com/mikeyobrien/ralph-orchestrator) &nbsp; by &nbsp; [mikeyobrien](https://github.com/mikeyobrien)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Ralph Orchestrator implements the simple but effective "Ralph Wiggum" technique for autonomous task completion, continuously running an AI agent against a prompt file until the task is marked as complete or limits are reached. This implementation provides a robust, well-tested, and feature-complete orchestration system for AI-driven development. Also cited in the Anthropic Ralph plugin documentation.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for ralph-orchestrator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-orchestrator&username=mikeyobrien&all_stats=true&stats_only=true)
 
 </details>
 <br>
