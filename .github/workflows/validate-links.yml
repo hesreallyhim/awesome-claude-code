@@ -40,7 +40,8 @@ jobs:
         PYTHONPATH: ${{ github.workspace }}
       run: |
         make validate-github
-        echo "has_broken_links=$(python -c \"import json; data=json.load(open('validation_results.json')); print('true' if data['newly_broken'] else 'false')\")" >> "$GITHUB_OUTPUT"
+        has_broken_links=$(python -c "import json; data=json.load(open('validation_results.json')); print('true' if data['newly_broken'] else 'false')")
+        echo "has_broken_links=${has_broken_links}" >> "$GITHUB_OUTPUT"
 
     - name: Upload validation results
       if: always()
