@@ -54,5 +54,5 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/repo-ticker.csv data/repo-ticker-previous.csv assets/repo-ticker.svg assets/repo-ticker-light.svg
+          git add data/repo-ticker.csv data/repo-ticker-previous.csv assets/repo-ticker.svg assets/repo-ticker-light.svg assets/repo-ticker-awesome.svg
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update repo ticker data and SVGs [skip ci]" && git push)
