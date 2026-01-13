@@ -56,6 +56,15 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by last updated
 </thead>
 <tbody>
 <tr>
+<td><a href="https://github.com/beyondcode/claude-hooks-sdk"><b>claude-code-hooks-sdk</b></a><br>by <a href="https://github.com/beyondcode">beyondcode</a></td>
+<td>Hooks</td>
+<td>General</td>
+<td>A Laravel-inspired PHP SDK for building Claude Code hook responses with a clean, fluent API. This SDK makes it easy to create structured JSON responses for Claude Code hooks using an expressive, chainable interface.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/beyondcode/claude-hooks-sdk?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/beyondcode/claude-hooks-sdk?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/beyondcode/claude-hooks-sdk?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/beyondcode/claude-hooks-sdk?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/beyondcode/claude-hooks-sdk?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/beyondcode/claude-hooks-sdk?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/beyondcode/claude-hooks-sdk?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/beyondcode/claude-hooks-sdk?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/beyondcode/claude-hooks-sdk?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/ctoth/claudio"><b>Claudio</b></a><br>by <a href="https://github.com/ctoth">Christopher Toth</a></td>
 <td>Hooks</td>
 <td>General</td>
@@ -126,15 +135,6 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by last updated
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/johnlindquist/claude-hooks?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/johnlindquist/claude-hooks?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/johnlindquist/claude-hooks?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/johnlindquist/claude-hooks?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/johnlindquist/claude-hooks?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/johnlindquist/claude-hooks?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/johnlindquist/claude-hooks?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/johnlindquist/claude-hooks?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/johnlindquist/claude-hooks?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/beyondcode/claude-hooks-sdk"><b>claude-code-hooks-sdk</b></a><br>by <a href="https://github.com/beyondcode">beyondcode</a></td>
-<td>Hooks</td>
-<td>General</td>
-<td>A Laravel-inspired PHP SDK for building Claude Code hook responses with a clean, fluent API. This SDK makes it easy to create structured JSON responses for Claude Code hooks using an expressive, chainable interface.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/beyondcode/claude-hooks-sdk?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/beyondcode/claude-hooks-sdk?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/beyondcode/claude-hooks-sdk?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/beyondcode/claude-hooks-sdk?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/beyondcode/claude-hooks-sdk?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/beyondcode/claude-hooks-sdk?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/beyondcode/claude-hooks-sdk?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/beyondcode/claude-hooks-sdk?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/beyondcode/claude-hooks-sdk?style=flat-square" alt="license"></td>
 </tr>
 </tbody>
 </table>
