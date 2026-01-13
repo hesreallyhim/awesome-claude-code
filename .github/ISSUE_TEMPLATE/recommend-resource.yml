@@ -10,10 +10,10 @@ body:
         ## Welcome! 👋
 
         Thank you for recommending a resource to Awesome Claude Code! This form will guide you through the recommendation process.
-        Please make sure that you have already reviewed the CONTRIBUTING document as well as the CODE_OF_CONDUCT
+        Please make sure that you have already reviewed the CONTRIBUTING document as well as the CODE_OF_CONDUCT.
 
         **Resource Guidelines:**
-        - Ensure that your resource is unique and provides genuine value to Claude Code users.
+        - Ensure that your resource is unique and provides genuine value to Claude Code users. (Review the existing resources before submitting.)
         - Avoid submitting resources that violate the Claude Code Usage Policy (to the best of your understanding).
         - Make sure that the project does not violate the licensing rights of other independent developers.
         - Recommendations will be closely scrutinized for security and potential risk.
@@ -21,15 +21,15 @@ body:
         
         **Tips and Tricks for a Speedy Review:**
         - Please provide clear installation AND uninstallation instructions for any installable resources.
-        - Short examples or demos are tremendously helpful in the review process.
+        - If your resource requires me to execute a bash script, you **must** provide me with a clearly annotated/commented version in which everything is documented clearly. I _can_ read Bash, but it hurts my eyes after a while.
+        - Short examples or demos are tremendously helpful in the review process. If I can see it in action before I think about running it, you're way ahead of the curve.
         - If your resource requires elevated access or "--dangerously-skip-permissions", please make sure the user is aware of this(!)
-        - If you are claiming that a resource improves Claude's capacity to perform some particular action - \
-        ***provide clear instructions explaining how to demonstrate it.*** Instead of listing 100 things that your \
-        framework/plugin/etc. provides, better to pick one awesome thing it can do that makes it stand out, and explain how to validate that claim. \
-        That's not only helpful for me, but for anyone who is interested in your resource.
+        - If you are claiming that a resource improves Claude's capacity to perform some particular action - ***provide clear instructions explaining how to demonstrate it.*** Instead of listing 100 things that your framework/plugin/skill provides, better to pick one awesome thing it can do that makes it stand out, and explain how to validate that claim. That's not only helpful for me, but for any potential users.
 
-        After submission, our automated system will validate whether your Issue is well-formed with respect to the requirements of the template, \
-        and post the results as a comment. (This is merely a pre-requisite for being added.)
+        **Ask Claude for a Candid Review:**
+        When I review your recommendation, most likely I will ask my assistant Claude Code to give me its opinion as well. I might say: "Please give a careful review of this repository and evaluate it from 1-10 on the following aspects: (i) code quality; (ii) security; (iii) documentation; (iv) functionality. Finally, give an overall score and determine whether you would recommend this resource." Something like that. Do that. What you do after that is up to you, just be aware that this is something I will be doing as well.
+
+        After submission, our automated system will validate whether your Issue is well-formed with respect to the requirements of the template, and post the results as a comment. (This is merely a formality and does not constitute a review.)
 
   - type: input
     id: display_name
@@ -44,7 +44,7 @@ body:
     id: category
     attributes:
       label: Category
-      description: Select the primary category for your resource
+      description: Select the primary category for your resource (note that I'm currenlty lumping most things called "plugins" under "Agent Skills" until I figure out a better classification system).
       options:
         - Agent Skills
         - Workflows & Knowledge Guides
@@ -92,19 +92,10 @@ body:
       required: true
 
   - type: input
-    id: secondary_link
-    attributes:
-      label: Secondary Link
-      description: Optional additional link (e.g., documentation, npm package, website)
-      placeholder: "https://example.com/docs"
-    validations:
-      required: false
-
-  - type: input
     id: author_name
     attributes:
       label: Author Name
-      description: "The author's name, alias, or GitHub username (You may submit public/open-source resources that you do not own.)"
+      description: "The author's name, alias, or GitHub username. (You may submit public/open-source resources that you do not own.)"
       placeholder: "Jane Doe or janedoe"
     validations:
       required: true
@@ -122,7 +113,7 @@ body:
     id: license
     attributes:
       label: License
-      description: Select the license for your resource (or choose 'Other' to specify)
+      description: Select the license for your resource (or choose 'Other' to specify something unlisted).
       options:
         - MIT
         - Apache-2.0
@@ -159,12 +150,35 @@ body:
     validations:
       required: true
 
+  - type: markdown
+    attributes:
+      value: |
+        The following three fields are encouraged for all users. If you are recommending a plugin, skill, collection, framework, etc., then these are **mandatory**.
+
   - type: textarea
     id: validate_claims
     attributes:
       label: Validate Claims
-      description: "If you are submitting a complicated resource that gives Claude Code super-powers, suggest a low-friction way for me, or anyone, to prove it to themselves that what you're claiming is true."
+      description: "If you are submitting a complicated resource that gives Claude Code super-powers, suggest a low-friction way for me, or anyone, to prove it to themselves that what you're claiming is true. If you are submitting a plugin, skill, framework, or similar, this field is mandatory."
       placeholder: "e.g., install this Skill and ask Claude how many times the letter 'r' appears in your codebase"
+    validations:
+      required: false
+
+  - type: textarea
+    id: validate_claim_part_2
+    attributes:
+      label: Specific Task(s)
+      description: "Tell me at least one specific task I should give to Claude Code to demonstrate the value of your resource."
+      placeholder: "e.g., install this Skill and give Claude a counting task."
+    validations:
+      required: false
+
+  - type: textarea
+    id: validate_claims_part_3
+    attributes:
+      label: Specific Prompt(s)
+      description: "Tell me what to say to Claude Code when I give it the task above. The more I have to figure things out for myself, the more likely it is that I will miss the unique value of your resource. So you are advised to be as specific as possible."
+      placeholder: "Ask Claude how many times the letter 'r' appears in your codebase"
     validations:
       required: false
 
@@ -199,8 +213,8 @@ body:
       value: |
         ## What happens next?
 
-        1. **Automated Validation**: Our bot will validate the well-formed-ness of this Issue and comment with results
-        2. **Review**: If validation passes, a maintainer will review your recommendation as fast as possible given their available resources
+        1. **Automated Validation**: Our bot will validate the well-formed-ness of this Issue and let you know if anything needs to be fixed
+        2. **Review**: If validation passes, you should go back to working on your library - your recommendation has been received
         3. **Approval**: If approved, a PR will be automatically created with your resource
         4. **Notification**: You'll be notified when your resource is added
 
