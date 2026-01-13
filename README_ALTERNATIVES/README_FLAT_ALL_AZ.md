@@ -1316,6 +1316,15 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/frankbria/ralph-claude-code?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/frankbria/ralph-claude-code?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/frankbria/ralph-claude-code?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/frankbria/ralph-claude-code?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/frankbria/ralph-claude-code?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/frankbria/ralph-claude-code?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/frankbria/ralph-claude-code?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/frankbria/ralph-claude-code?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/frankbria/ralph-claude-code?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/muratcankoylan/ralph-wiggum-marketer"><b>Ralph Wiggum Marketer</b></a><br>by <a href="https://github.com/muratcankoylan">Muratcan Koylan</a></td>
+<td>Workflows & Knowledge Guides</td>
+<td>Ralph Wiggum</td>
+<td>A Claude Code plugin that provides an autonomous AI copywriter,  integrating the Ralph loop with customized knowledge bases for market research agents. The agents do the research, Ralph writes the copy, you stay in bed. Whether or not you practice Ralph-Driven Development (RDD), I think these projects are interesting and creative explorations of general agentic patterns.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/anthropics/claude-code/tree/4f18698a9ed25517861a75125b526e319bcf8354/plugins/ralph-wiggum"><b>Ralph Wiggum Plugin</b></a><br>by <a href="https://github.com/anthropics">Anthropic PBC</a></td>
 <td>Workflows & Knowledge Guides</td>
 <td>Ralph Wiggum</td>
@@ -1560,6 +1569,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 
 ---
 
-**Total Resources:** 168
+**Total Resources:** 169
 
 **Last Generated:** 2026-01-13

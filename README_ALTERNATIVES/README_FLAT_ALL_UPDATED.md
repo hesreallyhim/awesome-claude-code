@@ -575,6 +575,15 @@ A flat list view of all resources. Category: **All** | Sorted: by last updated d
 <td colspan="4"><img src="https://img.shields.io/github/stars/ctoth/claudio?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ctoth/claudio?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ctoth/claudio?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ctoth/claudio?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ctoth/claudio?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ctoth/claudio?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ctoth/claudio?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ctoth/claudio?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ctoth/claudio?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/muratcankoylan/ralph-wiggum-marketer"><b>Ralph Wiggum Marketer</b></a><br>by <a href="https://github.com/muratcankoylan">Muratcan Koylan</a></td>
+<td>Workflows & Knowledge Guides</td>
+<td>Ralph Wiggum</td>
+<td>A Claude Code plugin that provides an autonomous AI copywriter,  integrating the Ralph loop with customized knowledge bases for market research agents. The agents do the research, Ralph writes the copy, you stay in bed. Whether or not you practice Ralph-Driven Development (RDD), I think these projects are interesting and creative explorations of general agentic patterns.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/harperreed/dotfiles/tree/master/.claude/commands"><b>Project Workflow System</b></a><br>by <a href="https://github.com/harperreed">harperreed</a></td>
 <td>Workflows & Knowledge Guides</td>
 <td>General</td>
@@ -1560,6 +1569,6 @@ A flat list view of all resources. Category: **All** | Sorted: by last updated d
 
 ---
 
-**Total Resources:** 168
+**Total Resources:** 169
 
 **Last Generated:** 2026-01-13

@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Ralph Wiggum Marketer`](https://github.com/muratcankoylan/ralph-wiggum-marketer) &nbsp; by &nbsp; [Muratcan Koylan](https://github.com/muratcankoylan)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A Claude Code plugin that provides an autonomous AI copywriter,  integrating the Ralph loop with customized knowledge bases for market research agents. The agents do the research, Ralph writes the copy, you stay in bed. Whether or not you practice Ralph-Driven Development (RDD), I think these projects are interesting and creative explorations of general agentic patterns.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for ralph-wiggum-marketer](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-wiggum-marketer&username=muratcankoylan&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`The Ralph Playbook`](https://github.com/ClaytonFarr/ralph-playbook) &nbsp; by &nbsp; [Clayton Farr](https://github.com/ClaytonFarr)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;No License / Not Specified  
 A remarkably detailed and comprehensive guide to the Ralph Wiggum technique, featuring well-written theoretical commentary paired with practical guidelines and advice.
 
@@ -531,6 +542,17 @@ An autonomous AI development framework that enables Claude Code to work iterativ
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for ralph-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-claude-code&username=frankbria&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Ralph Wiggum Marketer`](https://github.com/muratcankoylan/ralph-wiggum-marketer) &nbsp; by &nbsp; [Muratcan Koylan](https://github.com/muratcankoylan)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A Claude Code plugin that provides an autonomous AI copywriter,  integrating the Ralph loop with customized knowledge bases for market research agents. The agents do the research, Ralph writes the copy, you stay in bed. Whether or not you practice Ralph-Driven Development (RDD), I think these projects are interesting and creative explorations of general agentic patterns.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for ralph-wiggum-marketer](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-wiggum-marketer&username=muratcankoylan&all_stats=true&stats_only=true)
 
 </details>
 <br>
