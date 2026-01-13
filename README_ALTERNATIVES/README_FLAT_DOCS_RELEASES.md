@@ -47,32 +47,10 @@ A flat list view of all resources. Category: **Docs** | Sorted: by latest releas
 
 > **Note:** Latest release data is pulled from GitHub Releases only. Projects without GitHub Releases will not show release info here. Please verify with the project directly.
 
-<table>
-<thead>
-<tr>
-<th>Resource</th>
-<th>Version</th>
-<th>Source</th>
-<th>Release Date</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/anthropics/claude-code/tree/4f18698a9ed25517861a75125b526e319bcf8354/plugins/ralph-wiggum"><b>Ralph Wiggum Plugin</b></a><br>by <a href="https://github.com/anthropics">Anthropic PBC</a></td>
-<td>v2.1.3</td>
-<td>GitHub</td>
-<td>2026-01-09</td>
-<td>The official Anthropic implementation of the Ralph Wiggum technique for iterative, self-referential AI development loops in Claude Code.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/anthropics/claude-code?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/anthropics/claude-code?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/anthropics/claude-code?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/anthropics/claude-code?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/anthropics/claude-code?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/anthropics/claude-code?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/anthropics/claude-code?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/anthropics/claude-code?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/anthropics/claude-code?style=flat-square" alt="license"></td>
-</tr>
-</tbody>
-</table>
+*No releases in the past 30 days for this category.*
 
 ---
 
-**Total Resources:** 1
+**Total Resources:** 0
 
-**Last Generated:** 2026-01-10
+**Last Generated:** 2026-01-12

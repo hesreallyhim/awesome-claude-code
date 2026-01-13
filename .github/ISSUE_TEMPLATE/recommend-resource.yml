@@ -66,6 +66,7 @@ body:
       description: Select a sub-category if applicable (based on your category choice above)
       options:
         - General
+        - "Workflows & Knowledge Guides: Ralph Wiggum"
         - "Tooling: IDE Integrations"
         - "Tooling: Usage Monitors"
         - "Tooling: Orchestrators"

@@ -29,6 +29,7 @@ orchestrators
 pick-your-style
 project--task-management
 project-scaffolding--mcp
+ralph-wiggum
 recommend-a-new-resource-here
 slash-commands-
 status-lines-

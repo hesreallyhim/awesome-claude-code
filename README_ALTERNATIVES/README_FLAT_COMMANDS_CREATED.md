@@ -458,4 +458,4 @@ A flat list view of all resources. Category: **Commands** | Sorted: by date crea
 
 **Total Resources:** 44
 
-**Last Generated:** 2026-01-10
+**Last Generated:** 2026-01-12
