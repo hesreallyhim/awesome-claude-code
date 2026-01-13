@@ -248,6 +248,15 @@ _An autonomous AI development framework that enables Claude Code to work iterati
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
+<a href="#ralph-wiggum">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="../assets/toc-sub-ralph-wiggum.svg">
+    <source media="(prefers-color-scheme: light)" srcset="../assets/toc-sub-ralph-wiggum-light-anim-scanline.svg">
+    <img src="../assets/toc-sub-ralph-wiggum-light-anim-scanline.svg" alt="Ralph Wiggum" height="40" style="height:40px;max-width:none;">
+  </picture>
+</a>
+</div>
+<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#tooling-">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="../assets/toc-row-tooling.svg">
@@ -554,13 +563,6 @@ _Hand-crafted collection of advanced context engineering techniques and patterns
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 
 
-<a href="https://github.com/frankbria/ralph-claude-code"><img src="../assets/badge-ralph-for-claude-code.svg" alt="Ralph for Claude Code"></a>  
-_An autonomous AI development framework that enables Claude Code to work iteratively on projects until completion. Features intelligent exit detection, rate limiting, circuit breaker patterns, and comprehensive safety guardrails to prevent infinite loops and API overuse. Built with Bash, integrated with tmux for live monitoring, and includes 75+ comprehensive tests._  
-![GitHub Stats for ralph-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-claude-code&username=frankbria&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
-
-
 <a href="https://github.com/obra/superpowers"><img src="../assets/badge-superpowers.svg" alt="Superpowers"></a>  
 _A strong bundle of core competencies for software engineering, with good coverage of a large portion of the SDLC - from planning, reviewing, testing, debugging... Well written, well organized, and adaptable. The author refers to them as "superpowers", but many of them are just consolidating engineering best practices - which sometimes does feel like a superpower when working with Claude Code._  
 ![GitHub Stats for superpowers](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=superpowers&username=obra&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -787,6 +789,32 @@ _A detailed blog post explaining the author's process for shipping a product wit
 <a href="https://github.com/Helmi/claude-simone"><img src="../assets/badge-simone.svg" alt="Simone"></a>  
 _A broader project management workflow for Claude Code that encompasses not just a set of commands, but a system of documents, guidelines, and processes to facilitate project planning and execution._  
 ![GitHub Stats for claude-simone](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-simone&username=Helmi&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+</details>
+
+<details open id="ralph-wiggum">
+<summary><span><picture><img src="../assets/subheader_ralph_wiggum.svg" alt="Ralph Wiggum" align="absmiddle"></picture></span></summary>
+
+<a href="https://github.com/frankbria/ralph-claude-code"><img src="../assets/badge-ralph-for-claude-code.svg" alt="Ralph for Claude Code"></a>  
+_An autonomous AI development framework that enables Claude Code to work iteratively on projects until completion. Features intelligent exit detection, rate limiting, circuit breaker patterns, and comprehensive safety guardrails to prevent infinite loops and API overuse. Built with Bash, integrated with tmux for live monitoring, and includes 75+ comprehensive tests._  
+![GitHub Stats for ralph-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-claude-code&username=frankbria&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/anthropics/claude-code/tree/4f18698a9ed25517861a75125b526e319bcf8354/plugins/ralph-wiggum"><img src="../assets/badge-ralph-wiggum-plugin.svg" alt="Ralph Wiggum Plugin"></a>  
+_The official Anthropic implementation of the Ralph Wiggum technique for iterative, self-referential AI development loops in Claude Code._  
+![GitHub Stats for claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code&username=anthropics&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/mikeyobrien/ralph-orchestrator"><img src="../assets/badge-ralph-orchestrator.svg" alt="ralph-orchestrator"></a>  
+_Ralph Orchestrator implements the simple but effective "Ralph Wiggum" technique for autonomous task completion, continuously running an AI agent against a prompt file until the task is marked as complete or limits are reached. This implementation provides a robust, well-tested, and feature-complete orchestration system for AI-driven development. Also cited in the Anthropic Ralph plugin documentation._  
+![GitHub Stats for ralph-orchestrator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-orchestrator&username=mikeyobrien&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 
@@ -1124,13 +1152,6 @@ _A specialized tool to manage context isolation and focused task execution with 
 <a href="https://github.com/slopus/happy"><img src="../assets/badge-happy-coder.svg" alt="Happy Coder"></a>  
 _Spawn and control multiple Claude Codes in parallel from your phone or desktop. Happy Coder runs Claude Code on your hardware, sends push notifications when Claude needs more input or permission, and costs nothing._  
 ![GitHub Stats for happy](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=happy&username=slopus&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
-
-
-<a href="https://github.com/mikeyobrien/ralph-orchestrator"><img src="../assets/badge-ralph-orchestrator.svg" alt="ralph-orchestrator"></a>  
-_Ralph Orchestrator implements the simple but effective "Ralph Wiggum" technique for autonomous task completion, continuously running an AI agent against a prompt file until the task is marked as complete or limits are reached. This implementation provides a robust, well-tested, and feature-complete orchestration system for AI-driven development. Also cited in the Anthropic Ralph plugin documentation._  
-![GitHub Stats for ralph-orchestrator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-orchestrator&username=mikeyobrien&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 
@@ -2056,13 +2077,6 @@ _Offers comprehensive development guides for three distinct AI-powered demo proj
 <a href="https://github.com/anthropics/claude-code-action/tree/main/examples"><img src="../assets/badge-claude-code-github-actions.svg" alt="Claude Code GitHub Actions"></a>  
 _Official GitHub Actions integration for Claude Code with examples and documentation for automating AI-powered workflows in CI/CD pipelines._  
 ![GitHub Stats for claude-code-action](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-action&username=anthropics&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
-
-
-<a href="https://github.com/anthropics/claude-code/tree/4f18698a9ed25517861a75125b526e319bcf8354/plugins/ralph-wiggum"><img src="../assets/badge-ralph-wiggum-plugin.svg" alt="Ralph Wiggum Plugin"></a>  
-_The official Anthropic implementation of the Ralph Wiggum technique for iterative, self-referential AI development loops in Claude Code._  
-![GitHub Stats for claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code&username=anthropics&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 

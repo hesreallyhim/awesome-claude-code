@@ -1308,8 +1308,8 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 </tr>
 <tr>
 <td><a href="https://github.com/frankbria/ralph-claude-code"><b>Ralph for Claude Code</b></a><br>by <a href="https://github.com/frankbria">Frank Bria</a></td>
-<td>Agent Skills</td>
-<td>General</td>
+<td>Workflows & Knowledge Guides</td>
+<td>Ralph Wiggum</td>
 <td>An autonomous AI development framework that enables Claude Code to work iteratively on projects until completion. Features intelligent exit detection, rate limiting, circuit breaker patterns, and comprehensive safety guardrails to prevent infinite loops and API overuse. Built with Bash, integrated with tmux for live monitoring, and includes 75+ comprehensive tests.</td>
 </tr>
 <tr>
@@ -1317,8 +1317,8 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 </tr>
 <tr>
 <td><a href="https://github.com/anthropics/claude-code/tree/4f18698a9ed25517861a75125b526e319bcf8354/plugins/ralph-wiggum"><b>Ralph Wiggum Plugin</b></a><br>by <a href="https://github.com/anthropics">Anthropic PBC</a></td>
-<td>Official Documentation</td>
-<td>General</td>
+<td>Workflows & Knowledge Guides</td>
+<td>Ralph Wiggum</td>
 <td>The official Anthropic implementation of the Ralph Wiggum technique for iterative, self-referential AI development loops in Claude Code.</td>
 </tr>
 <tr>
@@ -1326,8 +1326,8 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 </tr>
 <tr>
 <td><a href="https://github.com/mikeyobrien/ralph-orchestrator"><b>ralph-orchestrator</b></a><br>by <a href="https://github.com/mikeyobrien">mikeyobrien</a></td>
-<td>Tooling</td>
-<td>Orchestrators</td>
+<td>Workflows & Knowledge Guides</td>
+<td>Ralph Wiggum</td>
 <td>Ralph Orchestrator implements the simple but effective "Ralph Wiggum" technique for autonomous task completion, continuously running an AI agent against a prompt file until the task is marked as complete or limits are reached. This implementation provides a robust, well-tested, and feature-complete orchestration system for AI-driven development. Also cited in the Anthropic Ralph plugin documentation.</td>
 </tr>
 <tr>
@@ -1553,4 +1553,4 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 
 **Total Resources:** 167
 
-**Last Generated:** 2026-01-10
+**Last Generated:** 2026-01-12
