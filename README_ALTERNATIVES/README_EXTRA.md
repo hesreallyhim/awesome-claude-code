@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/muratcankoylan/ralph-wiggum-marketer"><img src="../assets/badge-ralph-wiggum-marketer.svg" alt="Ralph Wiggum Marketer"></a>  
+_A Claude Code plugin that provides an autonomous AI copywriter,  integrating the Ralph loop with customized knowledge bases for market research agents. The agents do the research, Ralph writes the copy, you stay in bed. Whether or not you practice Ralph-Driven Development (RDD), I think these projects are interesting and creative explorations of general agentic patterns._  
+![GitHub Stats for ralph-wiggum-marketer](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-wiggum-marketer&username=muratcankoylan&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/ClaytonFarr/ralph-playbook"><img src="../assets/badge-the-ralph-playbook.svg" alt="The Ralph Playbook"></a>  
 _A remarkably detailed and comprehensive guide to the Ralph Wiggum technique, featuring well-written theoretical commentary paired with practical guidelines and advice._  
 ![GitHub Stats for ralph-playbook](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-playbook&username=ClaytonFarr&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -805,6 +809,13 @@ _A broader project management workflow for Claude Code that encompasses not just
 <a href="https://github.com/frankbria/ralph-claude-code"><img src="../assets/badge-ralph-for-claude-code.svg" alt="Ralph for Claude Code"></a>  
 _An autonomous AI development framework that enables Claude Code to work iteratively on projects until completion. Features intelligent exit detection, rate limiting, circuit breaker patterns, and comprehensive safety guardrails to prevent infinite loops and API overuse. Built with Bash, integrated with tmux for live monitoring, and includes 75+ comprehensive tests._  
 ![GitHub Stats for ralph-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-claude-code&username=frankbria&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/muratcankoylan/ralph-wiggum-marketer"><img src="../assets/badge-ralph-wiggum-marketer.svg" alt="Ralph Wiggum Marketer"></a>  
+_A Claude Code plugin that provides an autonomous AI copywriter,  integrating the Ralph loop with customized knowledge bases for market research agents. The agents do the research, Ralph writes the copy, you stay in bed. Whether or not you practice Ralph-Driven Development (RDD), I think these projects are interesting and creative explorations of general agentic patterns._  
+![GitHub Stats for ralph-wiggum-marketer](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-wiggum-marketer&username=muratcankoylan&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 
