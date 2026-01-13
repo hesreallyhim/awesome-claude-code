@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`The Ralph Playbook`](https://github.com/ClaytonFarr/ralph-playbook) &nbsp; by &nbsp; [Clayton Farr](https://github.com/ClaytonFarr)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;No License / Not Specified  
+A remarkably detailed and comprehensive guide to the Ralph Wiggum technique, featuring well-written theoretical commentary paired with practical guidelines and advice.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for ralph-playbook](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-playbook&username=ClaytonFarr&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Ralph Wiggum Plugin`](https://github.com/anthropics/claude-code/tree/4f18698a9ed25517861a75125b526e319bcf8354/plugins/ralph-wiggum) &nbsp; by &nbsp; [Anthropic PBC](https://github.com/anthropics)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;&copy;  
 The official Anthropic implementation of the Ralph Wiggum technique for iterative, self-referential AI development loops in Claude Code.
 
@@ -542,6 +553,17 @@ Ralph Orchestrator implements the simple but effective "Ralph Wiggum" technique 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for ralph-orchestrator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-orchestrator&username=mikeyobrien&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`The Ralph Playbook`](https://github.com/ClaytonFarr/ralph-playbook) &nbsp; by &nbsp; [Clayton Farr](https://github.com/ClaytonFarr)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;No License / Not Specified  
+A remarkably detailed and comprehensive guide to the Ralph Wiggum technique, featuring well-written theoretical commentary paired with practical guidelines and advice.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for ralph-playbook](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-playbook&username=ClaytonFarr&all_stats=true&stats_only=true)
 
 </details>
 <br>

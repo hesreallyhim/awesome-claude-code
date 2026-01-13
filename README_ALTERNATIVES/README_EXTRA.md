@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/ClaytonFarr/ralph-playbook"><img src="../assets/badge-the-ralph-playbook.svg" alt="The Ralph Playbook"></a>  
+_A remarkably detailed and comprehensive guide to the Ralph Wiggum technique, featuring well-written theoretical commentary paired with practical guidelines and advice._  
+![GitHub Stats for ralph-playbook](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-playbook&username=ClaytonFarr&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/anthropics/claude-code/tree/4f18698a9ed25517861a75125b526e319bcf8354/plugins/ralph-wiggum"><img src="../assets/badge-ralph-wiggum-plugin.svg" alt="Ralph Wiggum Plugin"></a>  
 _The official Anthropic implementation of the Ralph Wiggum technique for iterative, self-referential AI development loops in Claude Code._  
 ![GitHub Stats for claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code&username=anthropics&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -815,6 +819,13 @@ _The official Anthropic implementation of the Ralph Wiggum technique for iterati
 <a href="https://github.com/mikeyobrien/ralph-orchestrator"><img src="../assets/badge-ralph-orchestrator.svg" alt="ralph-orchestrator"></a>  
 _Ralph Orchestrator implements the simple but effective "Ralph Wiggum" technique for autonomous task completion, continuously running an AI agent against a prompt file until the task is marked as complete or limits are reached. This implementation provides a robust, well-tested, and feature-complete orchestration system for AI-driven development. Also cited in the Anthropic Ralph plugin documentation._  
 ![GitHub Stats for ralph-orchestrator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-orchestrator&username=mikeyobrien&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/ClaytonFarr/ralph-playbook"><img src="../assets/badge-the-ralph-playbook.svg" alt="The Ralph Playbook"></a>  
+_A remarkably detailed and comprehensive guide to the Ralph Wiggum technique, featuring well-written theoretical commentary paired with practical guidelines and advice._  
+![GitHub Stats for ralph-playbook](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-playbook&username=ClaytonFarr&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 
