@@ -23,3 +23,9 @@ venv/
 marketplace/
 
 coverage.xml
+
+!.claude/
+.claude/*
+!.claude/commands/
+.claude/commands/*
+!.claude/commands/evaluate-repository.md

@@ -27,7 +27,7 @@ body:
         - If you are claiming that a resource improves Claude's capacity to perform some particular action - ***provide clear instructions explaining how to demonstrate it.*** Instead of listing 100 things that your framework/plugin/skill provides, better to pick one awesome thing it can do that makes it stand out, and explain how to validate that claim. That's not only helpful for me, but for any potential users.
 
         **Ask Claude for a Candid Review:**
-        When I review your recommendation, most likely I will ask my assistant Claude Code to give me its opinion as well. I might say: "Please give a careful review of this repository and evaluate it from 1-10 on the following aspects: (i) code quality; (ii) security; (iii) documentation; (iv) functionality. Finally, give an overall score and determine whether you would recommend this resource." Something like that. Do that. What you do after that is up to you, just be aware that this is something I will be doing as well.
+        When I review your recommendation, I will ask my assistant Claude Code to perform a review (this is to assist me - I do not base my judgment on this review alone.) You can find the prompt in `.claude/commands/evaluate-repository.md`. I recommend that you run this evaluation yourself ahead of time.
 
         After submission, our automated system will validate whether your Issue is well-formed with respect to the requirements of the template, and post the results as a comment. (This is merely a formality and does not constitute a review.)
 

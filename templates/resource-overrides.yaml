@@ -41,6 +41,10 @@ overrides:
 
   tool-1e4657fd:
     license: "MIT"
+  
+  # This is a sub-directory - current workflow does not accommodate directories
+  wf-5e01a9a6:
+    skip_validation: true
 
 # Supported override fields:
 # - license: Override the detected license (automatically locked)

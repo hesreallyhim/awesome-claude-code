@@ -1,0 +1,8 @@
+{
+  "description": "Informal submission with custom structure using **Field:** pattern (no labels) - triggers HIGH confidence (close).",
+  "original_labels": [],
+  "workflow_runs_detection": true,
+  "title": "Add: awesome-resource",
+  "body": "## Resource Information\n\n**Name:** awesome-resource\n\n**URL:** https://github.com/username/awesome-resource\n\n**Author:** Username (https://github.com/username)\n\n**Category:** Agent Skills > General\n\n**Description:** This is an awesome resource and I think it would be great to include. It has full testing and I recommend it. A curated collection of plugins with enforcement hooks, desktop notifications, and usage monitoring.\n\n## Why it fits\n\nA well-organized plugin collection with:\n- **linter:** Enforcement hooks for security, cleanup, automatic linting, version syncing\n- **notifier:** Desktop notifications showing current status\n- **tracker:** Real-time usage display with progress bars\n- Comprehensive documentation\n\n## Additional context\n\nThe repository follows best practices and is actively maintained.",
+  "expected_action_if_evaluated_by_workflow": "close"
+}

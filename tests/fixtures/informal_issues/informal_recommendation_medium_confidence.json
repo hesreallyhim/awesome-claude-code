@@ -1,0 +1,8 @@
+{
+  "description": "Informal submission using 'Resource Recommendation' pattern with markdown headers (no labels). Uses '### Category' not 'Category:' so fewer template signals - triggers MEDIUM confidence (warn).",
+  "original_labels": [],
+  "workflow_runs_detection": true,
+  "title": "Resource Recommendation: awesome-resource",
+  "body": "## Resource Recommendation\n\n### Resource Name\nawesome-resource\n\n### Resource URL\nhttps://github.com/username/awesome-resource\n\n### Category\nSlash-Commands > Project & Task Management\n\n### About\nA plugin that generates documents from conversation context. Works standalone without external templates.\n\n### Features\n- Works immediately after install\n- Synthesizes requirements from conversation\n- Generates standard sections\n- Accepts optional arguments\n\n### Author\nUsername (@username)",
+  "expected_action_if_evaluated_by_workflow": "warn"
+}

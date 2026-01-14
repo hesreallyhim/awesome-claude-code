@@ -1,6 +1,101 @@
-# Repository Health Check
+# GitHub Workflows
 
-This directory contains a GitHub Action workflow that monitors the health of active repositories listed in `THE_RESOURCES_TABLE.csv`.
+This directory contains GitHub Action workflows for repository maintenance, resource submission handling, and health monitoring.
+
+---
+
+## Workflow: Validate New Issue
+
+**File:** `.github/workflows/validate-new-issue.yml`
+
+### Purpose
+
+Handles all new issues opened in the repository with two mutually exclusive jobs:
+
+1. **validate-resource**: Validates properly-submitted resource recommendations (issues with `resource-submission` label)
+2. **detect-informal**: Detects informal submissions that bypassed the issue template (issues without the label)
+
+### Trigger
+
+- `issues.opened` - New issue created
+- `issues.reopened` - Issue reopened
+- `issues.edited` - Issue body edited
+
+### Job 1: Validate Resource Submission
+
+Runs when an issue has the `resource-submission` label (applied automatically by the issue template).
+
+**Behavior:**
+- Parses the issue body using `scripts/resources/parse_issue_form.py`
+- Validates all required fields (display name, category, URLs, etc.)
+- Checks for duplicate resources in `THE_RESOURCES_TABLE.csv`
+- Validates URL accessibility
+- Posts validation results as a comment
+- Updates labels: `validation-passed` or `validation-failed`
+- Notifies maintainer when changes are made after `/request-changes`
+
+### Job 2: Detect Informal Submission
+
+Runs when a **new** issue does NOT have the `resource-submission` label.
+
+**Purpose:** Catches users who try to recommend resources without using the official template.
+
+**Detection Signals:**
+
+| Signal Type | Examples | Weight |
+|-------------|----------|--------|
+| Template field labels | `Display Name:`, `Category:`, `Primary Link:` | Very strong (+0.7 for 3+) |
+| Submission language | "recommend", "submit", "please add" | Strong (+0.3 each) |
+| Resource mentions | "plugin", "skill", "hook", "slash command" | Medium (+0.15 each) |
+| GitHub URLs | `github.com/user/repo` | Medium (+0.15) |
+| License mentions | MIT, Apache, GPL | Medium (+0.15) |
+| Bug/question language | "bug", "error", "how do I" | Negative (-0.2 each) |
+
+**Two-Tier Response:**
+
+| Confidence | Action |
+|------------|--------|
+| ≥ 0.6 (High) | Add `needs-template` label, post warning, **auto-close** |
+| 0.4 - 0.6 (Medium) | Add `needs-template` label, post gentle warning, **leave open** |
+| < 0.4 (Low) | No action |
+
+### Local Usage
+
+```bash
+# Test informal submission detection
+ISSUE_TITLE="Check out my plugin" ISSUE_BODY="I made this tool at github.com/user/repo" \
+  python -m scripts.resources.detect_informal_submission
+```
+
+### Related Scripts
+
+- `scripts/resources/parse_issue_form.py` - Parses and validates issue form data
+- `scripts/resources/detect_informal_submission.py` - Detects informal submissions
+
+---
+
+## Workflow: Handle Resource Submission Commands
+
+**File:** `.github/workflows/handle-resource-submission-commands.yml`
+
+### Purpose
+
+Processes maintainer commands on resource submission issues.
+
+### Commands
+
+| Command | Description | Requirements |
+|---------|-------------|--------------|
+| `/approve` | Creates PR to add resource to CSV | Issue must have `validation-passed` label |
+| `/reject [reason]` | Closes issue as rejected | Maintainer permission |
+| `/request-changes [message]` | Requests changes from submitter | Maintainer permission |
+
+### Trigger
+
+- `issue_comment.created` on issues with `resource-submission` label
+- Only processes comments from OWNER, MEMBER, or COLLABORATOR
+
+---
 
 ## Workflow: Update GitHub Release Data
 

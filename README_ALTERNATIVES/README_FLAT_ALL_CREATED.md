@@ -1160,15 +1160,6 @@ A flat list view of all resources. Category: **All** | Sorted: by date created
 <td colspan="4"><img src="https://img.shields.io/github/stars/greggh/claude-code.nvim?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/greggh/claude-code.nvim?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/greggh/claude-code.nvim?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/greggh/claude-code.nvim?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/greggh/claude-code.nvim?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/greggh/claude-code.nvim?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/greggh/claude-code.nvim?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/greggh/claude-code.nvim?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/greggh/claude-code.nvim?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/anthropics/claude-code/tree/4f18698a9ed25517861a75125b526e319bcf8354/plugins/ralph-wiggum"><b>Ralph Wiggum Plugin</b></a><br>by <a href="https://github.com/anthropics">Anthropic PBC</a></td>
-<td>Workflows & Knowledge Guides</td>
-<td>Ralph Wiggum</td>
-<td>The official Anthropic implementation of the Ralph Wiggum technique for iterative, self-referential AI development loops in Claude Code.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/anthropics/claude-code?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/anthropics/claude-code?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/anthropics/claude-code?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/anthropics/claude-code?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/anthropics/claude-code?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/anthropics/claude-code?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/anthropics/claude-code?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/anthropics/claude-code?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/anthropics/claude-code?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/eastlondoner/cursor-tools/blob/main/CLAUDE.md"><b>Cursor Tools</b></a><br>by <a href="https://github.com/eastlondoner">eastlondoner</a></td>
 <td>CLAUDE.md Files</td>
 <td>Domain-Specific</td>
@@ -1569,6 +1560,6 @@ A flat list view of all resources. Category: **All** | Sorted: by date created
 
 ---
 
-**Total Resources:** 169
+**Total Resources:** 168
 
-**Last Generated:** 2026-01-13
+**Last Generated:** 2026-01-14

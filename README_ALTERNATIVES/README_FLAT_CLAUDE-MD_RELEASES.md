@@ -60,9 +60,9 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by latest r
 <tbody>
 <tr>
 <td><a href="https://github.com/giselles-ai/giselle/blob/main/CLAUDE.md"><b>Giselle</b></a><br>by <a href="https://github.com/giselles-ai">giselles-ai</a></td>
-<td>v0.60.10</td>
+<td>v0.60.11</td>
 <td>GitHub</td>
-<td>2026-01-13</td>
+<td>2026-01-14</td>
 <td>Provides detailed build and test commands using pnpm and Vitest with strict code formatting requirements and comprehensive naming conventions for code consistency.</td>
 </tr>
 <tr>
@@ -135,4 +135,4 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by latest r
 
 **Total Resources:** 7
 
-**Last Generated:** 2026-01-13
+**Last Generated:** 2026-01-14

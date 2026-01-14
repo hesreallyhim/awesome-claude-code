@@ -468,6 +468,7 @@ awesome-claude-code//
 │       ├── sort_resources.py  # CSV sorting (used by generator)
 │       ├── resource_utils.py  # CSV append + PR content helpers
 │       ├── create_resource_pr.py
+│       ├── detect_informal_submission.py
 │       ├── download_resources.py
 │       └── parse_issue_form.py
 ├── assets/  # SVG badges, headers, dividers

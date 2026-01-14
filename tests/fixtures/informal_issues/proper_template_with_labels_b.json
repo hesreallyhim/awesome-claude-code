@@ -1,0 +1,11 @@
+{
+  "description": "Issue submitted using proper template (has resource-submission label). Script outputs 'close' but workflow job never runs due to label condition.",
+  "original_labels": [
+    "resource-submission",
+    "validation-passed"
+  ],
+  "workflow_runs_detection": false,
+  "title": "[Resource]: awesome-resource",
+  "body": "### Display Name\n\nawesome-resource\n\n### Category\n\nTooling\n\n### Sub-Category\n\nGeneral\n\n### Primary Link\n\nhttps://github.com/username/awesome-resource\n\n### Author Name\n\nusername\n\n### Author Link\n\nhttps://github.com/username\n\n### License\n\nMIT\n\n### Other License\n\n_No response_\n\n### Description\n\nThis is an awesome resource and I think it would be great to include. It has full testing and I recommend it. Terminal session manager for running multiple coding sessions in parallel.\n\n### Validate Claims\n\nInstall via the readme instructions, then open the application and observe the features in action.\n\n### Specific Task(s)\n\n_No response_\n\n### Specific Prompt(s)\n\n_No response_\n\n### Additional Comments\n\n_No response_\n\n### Recommendation Checklist\n\n- [x] I have checked that this resource hasn't already been submitted\n- [x] My resource provides genuine value to Claude Code users, and any risks are clearly stated\n- [x] All provided links are working and publicly accessible\n- [x] I am submitting only ONE resource in this issue\n- [x] I understand that low-quality or duplicate submissions may be rejected",
+  "expected_action_if_evaluated_by_workflow": "close"
+}

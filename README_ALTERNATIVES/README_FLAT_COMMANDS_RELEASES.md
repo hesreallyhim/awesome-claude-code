@@ -60,9 +60,9 @@ A flat list view of all resources. Category: **Commands** | Sorted: by latest re
 <tbody>
 <tr>
 <td><a href="https://github.com/giselles-ai/giselle/blob/main/.claude/commands/update-branch-name.md"><b>/update-branch-name</b></a><br>by <a href="https://github.com/giselles-ai">giselles-ai</a></td>
-<td>v0.60.10</td>
+<td>v0.60.11</td>
 <td>GitHub</td>
-<td>2026-01-13</td>
+<td>2026-01-14</td>
 <td>Updates branch names with proper prefixes and formats, enforcing naming conventions, supporting semantic prefixes, and managing remote branch updates.</td>
 </tr>
 <tr>
@@ -70,9 +70,9 @@ A flat list view of all resources. Category: **Commands** | Sorted: by latest re
 </tr>
 <tr>
 <td><a href="https://github.com/GaloyMoney/lana-bank/blob/main/.claude/commands/mermaid.md"><b>/mermaid</b></a><br>by <a href="https://github.com/GaloyMoney">GaloyMoney</a></td>
-<td>0.32.5</td>
+<td>0.34.0</td>
 <td>GitHub</td>
-<td>2026-01-12</td>
+<td>2026-01-13</td>
 <td>Generates Mermaid diagrams from SQL schema files, creating entity relationship diagrams with table properties, validating diagram compilation, and ensuring complete entity coverage.</td>
 </tr>
 <tr>
@@ -105,4 +105,4 @@ A flat list view of all resources. Category: **Commands** | Sorted: by latest re
 
 **Total Resources:** 4
 
-**Last Generated:** 2026-01-13
+**Last Generated:** 2026-01-14
