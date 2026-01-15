@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Plannotator`](https://github.com/backnotprop/plannotator) &nbsp; by &nbsp; [backnotprop](https://github.com/backnotprop)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Business Source License 1.1  
+Interactive plan review UI that intercepts ExitPlanMode via hooks, letting users visually annotate plans with comments, deletions, and replacements before approving or denying with detailed feedback.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for plannotator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=plannotator&username=backnotprop&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Ralph Wiggum Marketer`](https://github.com/muratcankoylan/ralph-wiggum-marketer) &nbsp; by &nbsp; [Muratcan Koylan](https://github.com/muratcankoylan)    
 A Claude Code plugin that provides an autonomous AI copywriter,  integrating the Ralph loop with customized knowledge bases for market research agents. The agents do the research, Ralph writes the copy, you stay in bed. Whether or not you practice Ralph-Driven Development (RDD), I think these projects are interesting and creative explorations of general agentic patterns.
 

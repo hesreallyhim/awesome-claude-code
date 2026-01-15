@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/backnotprop/plannotator"><img src="../assets/badge-plannotator.svg" alt="Plannotator"></a>  
+_Interactive plan review UI that intercepts ExitPlanMode via hooks, letting users visually annotate plans with comments, deletions, and replacements before approving or denying with detailed feedback._  
+![GitHub Stats for plannotator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=plannotator&username=backnotprop&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/muratcankoylan/ralph-wiggum-marketer"><img src="../assets/badge-ralph-wiggum-marketer.svg" alt="Ralph Wiggum Marketer"></a>  
 _A Claude Code plugin that provides an autonomous AI copywriter,  integrating the Ralph loop with customized knowledge bases for market research agents. The agents do the research, Ralph writes the copy, you stay in bed. Whether or not you practice Ralph-Driven Development (RDD), I think these projects are interesting and creative explorations of general agentic patterns._  
 ![GitHub Stats for ralph-wiggum-marketer](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-wiggum-marketer&username=muratcankoylan&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
