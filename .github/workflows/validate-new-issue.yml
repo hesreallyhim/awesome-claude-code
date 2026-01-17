@@ -401,7 +401,7 @@ jobs:
               '- Missing fields will cause your submission to be skipped',
               '',
               '**Next steps:**',
-              '1. Make sure you have read the CONTRIBUTING.md document.'
+              '1. Make sure you have read the CONTRIBUTING.md document.',
               `2. [Click here to submit using the correct template](${templateUrl})`,
               '3. Fill out all required fields',
               '',
