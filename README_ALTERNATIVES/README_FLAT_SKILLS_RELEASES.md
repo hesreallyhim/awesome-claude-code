@@ -60,9 +60,9 @@ A flat list view of all resources. Category: **Skills** | Sorted: by latest rele
 <tbody>
 <tr>
 <td><a href="https://github.com/NeoLabHQ/context-engineering-kit"><b>Context Engineering Kit</b></a><br>by <a href="https://github.com/LeoVS09">Vlad Goncharov</a></td>
-<td>v1.7.2</td>
+<td>v1.8.0</td>
 <td>GitHub</td>
-<td>2026-01-05</td>
+<td>2026-01-16</td>
 <td>Hand-crafted collection of advanced context engineering techniques and patterns with minimal token footprint focused on improving agent result quality.</td>
 </tr>
 <tr>
@@ -85,4 +85,4 @@ A flat list view of all resources. Category: **Skills** | Sorted: by latest rele
 
 **Total Resources:** 2
 
-**Last Generated:** 2026-01-14
+**Last Generated:** 2026-01-17

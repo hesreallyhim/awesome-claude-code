@@ -53,4 +53,4 @@ A flat list view of all resources. Category: **Styles** | Sorted: by latest rele
 
 **Total Resources:** 0
 
-**Last Generated:** 2026-01-14
+**Last Generated:** 2026-01-17

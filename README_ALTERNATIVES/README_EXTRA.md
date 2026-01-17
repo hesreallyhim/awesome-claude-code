@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/backnotprop/plannotator"><img src="../assets/badge-plannotator.svg" alt="Plannotator"></a>  
+_Interactive plan review UI that intercepts ExitPlanMode via hooks, letting users visually annotate plans with comments, deletions, and replacements before approving or denying with detailed feedback._  
+![GitHub Stats for plannotator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=plannotator&username=backnotprop&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/muratcankoylan/ralph-wiggum-marketer"><img src="../assets/badge-ralph-wiggum-marketer.svg" alt="Ralph Wiggum Marketer"></a>  
 _A Claude Code plugin that provides an autonomous AI copywriter,  integrating the Ralph loop with customized knowledge bases for market research agents. The agents do the research, Ralph writes the copy, you stay in bed. Whether or not you practice Ralph-Driven Development (RDD), I think these projects are interesting and creative explorations of general agentic patterns._  
 ![GitHub Stats for ralph-wiggum-marketer](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-wiggum-marketer&username=muratcankoylan&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -198,10 +202,6 @@ _A remarkably detailed and comprehensive guide to the Ralph Wiggum technique, fe
 <a href="https://github.com/mikeyobrien/ralph-orchestrator"><img src="../assets/badge-ralph-orchestrator.svg" alt="ralph-orchestrator"></a>  
 _Ralph Orchestrator implements the simple but effective "Ralph Wiggum" technique for autonomous task completion, continuously running an AI agent against a prompt file until the task is marked as complete or limits are reached. This implementation provides a robust, well-tested, and feature-complete orchestration system for AI-driven development. Also cited in the Anthropic Ralph plugin documentation._  
 ![GitHub Stats for ralph-orchestrator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-orchestrator&username=mikeyobrien&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/frankbria/ralph-claude-code"><img src="../assets/badge-ralph-for-claude-code.svg" alt="Ralph for Claude Code"></a>  
-_An autonomous AI development framework that enables Claude Code to work iteratively on projects until completion. Features intelligent exit detection, rate limiting, circuit breaker patterns, and comprehensive safety guardrails to prevent infinite loops and API overuse. Built with Bash, integrated with tmux for live monitoring, and includes 75+ comprehensive tests._  
-![GitHub Stats for ralph-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-claude-code&username=frankbria&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 
 <br>
