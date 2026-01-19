@@ -65,6 +65,15 @@ A flat list view of all resources. Category: **Commands** | Sorted: by last upda
 <td colspan="4"><img src="https://img.shields.io/github/stars/ethpandaops/xatu-data?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ethpandaops/xatu-data?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ethpandaops/xatu-data?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ethpandaops/xatu-data?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ethpandaops/xatu-data?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ethpandaops/xatu-data?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ethpandaops/xatu-data?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ethpandaops/xatu-data?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ethpandaops/xatu-data?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/elizaOS/elizaos.github.io/blob/main/.claude/commands/context-prime.md"><b>/context-prime</b></a><br>by <a href="https://github.com/elizaOS">elizaOS</a></td>
+<td>Slash-Commands</td>
+<td>Context Loading & Priming</td>
+<td>Primes Claude with comprehensive project understanding by loading repository structure, setting development context, establishing project goals, and defining collaboration parameters.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/elizaOS/elizaos.github.io?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/elizaOS/elizaos.github.io?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/elizaOS/elizaos.github.io?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/elizaOS/elizaos.github.io?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/elizaOS/elizaos.github.io?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/elizaOS/elizaos.github.io?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/elizaOS/elizaos.github.io?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/elizaOS/elizaos.github.io?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/elizaOS/elizaos.github.io?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/metabase/metabase/blob/master/.claude/commands/fix-issue.md"><b>/fix-issue</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
 <td>Slash-Commands</td>
 <td>Version Control & Git</td>
@@ -144,15 +153,6 @@ A flat list view of all resources. Category: **Commands** | Sorted: by last upda
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/zuplo/docs?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/zuplo/docs?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/zuplo/docs?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/zuplo/docs?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/zuplo/docs?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/zuplo/docs?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/zuplo/docs?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/zuplo/docs?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/zuplo/docs?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/elizaOS/elizaos.github.io/blob/main/.claude/commands/context-prime.md"><b>/context-prime</b></a><br>by <a href="https://github.com/elizaOS">elizaOS</a></td>
-<td>Slash-Commands</td>
-<td>Context Loading & Priming</td>
-<td>Primes Claude with comprehensive project understanding by loading repository structure, setting development context, establishing project goals, and defining collaboration parameters.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/elizaOS/elizaos.github.io?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/elizaOS/elizaos.github.io?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/elizaOS/elizaos.github.io?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/elizaOS/elizaos.github.io?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/elizaOS/elizaos.github.io?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/elizaOS/elizaos.github.io?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/elizaOS/elizaos.github.io?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/elizaOS/elizaos.github.io?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/elizaOS/elizaos.github.io?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/analyze-issue.md"><b>/analyze-issue</b></a><br>by <a href="https://github.com/jerseycheese">jerseycheese</a></td>
@@ -458,4 +458,4 @@ A flat list view of all resources. Category: **Commands** | Sorted: by last upda
 
 **Total Resources:** 44
 
-**Last Generated:** 2026-01-17
+**Last Generated:** 2026-01-19

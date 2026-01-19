@@ -60,9 +60,9 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by latest relea
 <tbody>
 <tr>
 <td><a href="https://github.com/backnotprop/plannotator"><b>Plannotator</b></a><br>by <a href="https://github.com/backnotprop">backnotprop</a></td>
-<td>v0.6.4</td>
+<td>v0.6.5</td>
 <td>GitHub</td>
-<td>2026-01-16</td>
+<td>2026-01-17</td>
 <td>Interactive plan review UI that intercepts ExitPlanMode via hooks, letting users visually annotate plans with comments, deletions, and replacements before approving or denying with detailed feedback.</td>
 </tr>
 <tr>
@@ -85,4 +85,4 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by latest relea
 
 **Total Resources:** 2
 
-**Last Generated:** 2026-01-17
+**Last Generated:** 2026-01-19

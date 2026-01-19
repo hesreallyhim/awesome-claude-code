@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Trail of Bits Security Skills`](https://github.com/trailofbits/skills) &nbsp; by &nbsp; [Trail of Bits](https://github.com/trailofbits)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;CC-BY-SA-4.0  
+A very professional collection of over a dozen security-focused skills for code auditing and vulnerability detection. Includes skills for static analysis with CodeQL and Semgrep, variant analysis across codebases, fix verification, and differential code review.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=skills&username=trailofbits&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Plannotator`](https://github.com/backnotprop/plannotator) &nbsp; by &nbsp; [backnotprop](https://github.com/backnotprop)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Business Source License 1.1  
 Interactive plan review UI that intercepts ExitPlanMode via hooks, letting users visually annotate plans with comments, deletions, and replacements before approving or denying with detailed feedback.
 
@@ -75,17 +86,6 @@ A remarkably detailed and comprehensive guide to the Ralph Wiggum technique, fea
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for ralph-playbook](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-playbook&username=ClaytonFarr&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`ralph-orchestrator`](https://github.com/mikeyobrien/ralph-orchestrator) &nbsp; by &nbsp; [mikeyobrien](https://github.com/mikeyobrien)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Ralph Orchestrator implements the simple but effective "Ralph Wiggum" technique for autonomous task completion, continuously running an AI agent against a prompt file until the task is marked as complete or limits are reached. This implementation provides a robust, well-tested, and feature-complete orchestration system for AI-driven development. Also cited in the Anthropic Ralph plugin documentation.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for ralph-orchestrator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-orchestrator&username=mikeyobrien&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -232,6 +232,17 @@ A strong bundle of core competencies for software engineering, with good coverag
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for superpowers](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=superpowers&username=obra&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Trail of Bits Security Skills`](https://github.com/trailofbits/skills) &nbsp; by &nbsp; [Trail of Bits](https://github.com/trailofbits)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;CC-BY-SA-4.0  
+A very professional collection of over a dozen security-focused skills for code auditing and vulnerability detection. Includes skills for static analysis with CodeQL and Semgrep, variant analysis across codebases, fix verification, and differential code review.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=skills&username=trailofbits&all_stats=true&stats_only=true)
 
 </details>
 <br>
