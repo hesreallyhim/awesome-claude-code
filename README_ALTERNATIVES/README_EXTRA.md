@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/trailofbits/skills"><img src="../assets/badge-trail-of-bits-security-skills.svg" alt="Trail of Bits Security Skills"></a>  
+_A very professional collection of over a dozen security-focused skills for code auditing and vulnerability detection. Includes skills for static analysis with CodeQL and Semgrep, variant analysis across codebases, fix verification, and differential code review._  
+![GitHub Stats for skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=skills&username=trailofbits&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/backnotprop/plannotator"><img src="../assets/badge-plannotator.svg" alt="Plannotator"></a>  
 _Interactive plan review UI that intercepts ExitPlanMode via hooks, letting users visually annotate plans with comments, deletions, and replacements before approving or denying with detailed feedback._  
 ![GitHub Stats for plannotator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=plannotator&username=backnotprop&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -198,10 +202,6 @@ _A Claude Code plugin that provides an autonomous AI copywriter,  integrating th
 <a href="https://github.com/ClaytonFarr/ralph-playbook"><img src="../assets/badge-the-ralph-playbook.svg" alt="The Ralph Playbook"></a>  
 _A remarkably detailed and comprehensive guide to the Ralph Wiggum technique, featuring well-written theoretical commentary paired with practical guidelines and advice._  
 ![GitHub Stats for ralph-playbook](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-playbook&username=ClaytonFarr&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/mikeyobrien/ralph-orchestrator"><img src="../assets/badge-ralph-orchestrator.svg" alt="ralph-orchestrator"></a>  
-_Ralph Orchestrator implements the simple but effective "Ralph Wiggum" technique for autonomous task completion, continuously running an AI agent against a prompt file until the task is marked as complete or limits are reached. This implementation provides a robust, well-tested, and feature-complete orchestration system for AI-driven development. Also cited in the Anthropic Ralph plugin documentation._  
-![GitHub Stats for ralph-orchestrator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-orchestrator&username=mikeyobrien&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 
 <br>
@@ -570,6 +570,13 @@ _Hand-crafted collection of advanced context engineering techniques and patterns
 <a href="https://github.com/obra/superpowers"><img src="../assets/badge-superpowers.svg" alt="Superpowers"></a>  
 _A strong bundle of core competencies for software engineering, with good coverage of a large portion of the SDLC - from planning, reviewing, testing, debugging... Well written, well organized, and adaptable. The author refers to them as "superpowers", but many of them are just consolidating engineering best practices - which sometimes does feel like a superpower when working with Claude Code._  
 ![GitHub Stats for superpowers](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=superpowers&username=obra&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/trailofbits/skills"><img src="../assets/badge-trail-of-bits-security-skills.svg" alt="Trail of Bits Security Skills"></a>  
+_A very professional collection of over a dozen security-focused skills for code auditing and vulnerability detection. Includes skills for static analysis with CodeQL and Semgrep, variant analysis across codebases, fix verification, and differential code review._  
+![GitHub Stats for skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=skills&username=trailofbits&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 

@@ -65,6 +65,15 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by last updated
 <td colspan="4"><img src="https://img.shields.io/github/stars/backnotprop/plannotator?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/backnotprop/plannotator?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/backnotprop/plannotator?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/backnotprop/plannotator?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/backnotprop/plannotator?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/backnotprop/plannotator?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/backnotprop/plannotator?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/backnotprop/plannotator?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/backnotprop/plannotator?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/Talieisin/britfix"><b>Britfix</b></a><br>by <a href="https://github.com/Talieisin">Talieisin</a></td>
+<td>Hooks</td>
+<td>General</td>
+<td>Claude outputs American spellings by default, which can have an impact on: professional credibility, compliance, documentation, and more. Britfix converts to British English, with a Claude Code hook for automatic conversion as files are written. Context-aware: handles code files intelligently by only converting comments and docstrings, never identifiers or string literals.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/Talieisin/britfix?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Talieisin/britfix?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Talieisin/britfix?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Talieisin/britfix?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Talieisin/britfix?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Talieisin/britfix?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Talieisin/britfix?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Talieisin/britfix?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Talieisin/britfix?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/beyondcode/claude-hooks-sdk"><b>claude-code-hooks-sdk</b></a><br>by <a href="https://github.com/beyondcode">beyondcode</a></td>
 <td>Hooks</td>
 <td>General</td>
@@ -99,15 +108,6 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by last updated
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/aannoo/claude-hook-comms?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/aannoo/claude-hook-comms?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/aannoo/claude-hook-comms?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/aannoo/claude-hook-comms?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/aannoo/claude-hook-comms?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/aannoo/claude-hook-comms?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/aannoo/claude-hook-comms?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/aannoo/claude-hook-comms?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/aannoo/claude-hook-comms?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/Talieisin/britfix"><b>Britfix</b></a><br>by <a href="https://github.com/Talieisin">Talieisin</a></td>
-<td>Hooks</td>
-<td>General</td>
-<td>Claude outputs American spellings by default, which can have an impact on: professional credibility, compliance, documentation, and more. Britfix converts to British English, with a Claude Code hook for automatic conversion as files are written. Context-aware: handles code files intelligently by only converting comments and docstrings, never identifiers or string literals.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/Talieisin/britfix?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Talieisin/britfix?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Talieisin/britfix?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Talieisin/britfix?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Talieisin/britfix?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Talieisin/britfix?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Talieisin/britfix?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Talieisin/britfix?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Talieisin/britfix?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/GowayLee/cchooks"><b>cchooks</b></a><br>by <a href="https://github.com/GowayLee">GowayLee</a></td>
@@ -152,4 +152,4 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by last updated
 
 **Total Resources:** 10
 
-**Last Generated:** 2026-01-17
+**Last Generated:** 2026-01-19

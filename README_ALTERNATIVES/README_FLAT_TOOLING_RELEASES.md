@@ -188,21 +188,11 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by latest rel
 <tr>
 <td colspan="5"><img src="https://img.shields.io/github/stars/smtg-ai/claude-squad?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/smtg-ai/claude-squad?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/smtg-ai/claude-squad?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/smtg-ai/claude-squad?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/smtg-ai/claude-squad?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/smtg-ai/claude-squad?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/smtg-ai/claude-squad?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/smtg-ai/claude-squad?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/smtg-ai/claude-squad?style=flat-square" alt="license"></td>
 </tr>
-<tr>
-<td><a href="https://github.com/stravu/crystal"><b>crystal</b></a><br>by <a href="https://github.com/stravu">stravu</a></td>
-<td>v0.3.4</td>
-<td>GitHub</td>
-<td>2025-12-19</td>
-<td>A full-fledged desktop application for orchestrating, monitoring, and interacting with Claude Code agents.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/stravu/crystal?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/stravu/crystal?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/stravu/crystal?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/stravu/crystal?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/stravu/crystal?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/stravu/crystal?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/stravu/crystal?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/stravu/crystal?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/stravu/crystal?style=flat-square" alt="license"></td>
-</tr>
 </tbody>
 </table>
 
 ---
 
-**Total Resources:** 14
+**Total Resources:** 13
 
-**Last Generated:** 2026-01-17
+**Last Generated:** 2026-01-19

@@ -59,6 +59,16 @@ A flat list view of all resources. Category: **Status** | Sorted: by latest rele
 </thead>
 <tbody>
 <tr>
+<td><a href="https://github.com/hagan/claudia-statusline"><b>claudia-statusline</b></a><br>by <a href="https://github.com/hagan">Hagan Franks</a></td>
+<td>v2.22.1</td>
+<td>GitHub</td>
+<td>2026-01-17</td>
+<td>High-performance Rust-based statusline for Claude Code with persistent stats tracking, progress bars, and optional cloud sync. Features SQLite-first persistence, git integration, context progress bars, burn rate calculation, XDG-compliant with theme support (dark/light, NO_COLOR).</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/hagan/claudia-statusline?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/hagan/claudia-statusline?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/hagan/claudia-statusline?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/hagan/claudia-statusline?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/hagan/claudia-statusline?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/hagan/claudia-statusline?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/hagan/claudia-statusline?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/hagan/claudia-statusline?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/hagan/claudia-statusline?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/Owloops/claude-powerline"><b>claude-powerline</b></a><br>by <a href="https://github.com/Owloops">Owloops</a></td>
 <td>v1.16.1</td>
 <td>GitHub</td>
@@ -93,6 +103,6 @@ A flat list view of all resources. Category: **Status** | Sorted: by latest rele
 
 ---
 
-**Total Resources:** 3
+**Total Resources:** 4
 
-**Last Generated:** 2026-01-17
+**Last Generated:** 2026-01-19
