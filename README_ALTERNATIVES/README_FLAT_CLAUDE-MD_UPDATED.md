@@ -65,6 +65,24 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by last upd
 <td colspan="4"><img src="https://img.shields.io/github/stars/hesreallyhim/awesome-claude-code?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/hesreallyhim/awesome-claude-code?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/hesreallyhim/awesome-claude-code?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/hesreallyhim/awesome-claude-code?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/hesreallyhim/awesome-claude-code?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/hesreallyhim/awesome-claude-code?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/hesreallyhim/awesome-claude-code?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/hesreallyhim/awesome-claude-code?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/hesreallyhim/awesome-claude-code?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/badass-courses/course-builder/blob/main/CLAUDE.md"><b>Course Builder</b></a><br>by <a href="https://github.com/badass-courses">badass-courses</a></td>
+<td>CLAUDE.md Files</td>
+<td>Domain-Specific</td>
+<td>Enables real-time multiplayer capabilities for collaborative course creation with diverse tech stack integration and monorepo architecture using Turborepo.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/badass-courses/course-builder?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/badass-courses/course-builder?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/badass-courses/course-builder?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/badass-courses/course-builder?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/badass-courses/course-builder?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/badass-courses/course-builder?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/badass-courses/course-builder?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/badass-courses/course-builder?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/badass-courses/course-builder?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/KarpelesLab/tpl/blob/master/CLAUDE.md"><b>TPL</b></a><br>by <a href="https://github.com/KarpelesLab">KarpelesLab</a></td>
+<td>CLAUDE.md Files</td>
+<td>Language-Specific</td>
+<td>Details Go project conventions with comprehensive error handling recommendations, table-driven testing approach guidelines, and modernization suggestions for latest Go features.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/KarpelesLab/tpl?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/KarpelesLab/tpl?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/KarpelesLab/tpl?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/KarpelesLab/tpl?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/KarpelesLab/tpl?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/KarpelesLab/tpl?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/KarpelesLab/tpl?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/KarpelesLab/tpl?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/KarpelesLab/tpl?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/basicmachines-co/basic-memory/blob/main/CLAUDE.md"><b>Basic Memory</b></a><br>by <a href="https://github.com/basicmachines-co">basicmachines-co</a></td>
 <td>CLAUDE.md Files</td>
 <td>Project Scaffolding & MCP</td>
@@ -83,15 +101,6 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by last upd
 <td colspan="4"><img src="https://img.shields.io/github/stars/hashintel/hash?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/hashintel/hash?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/hashintel/hash?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/hashintel/hash?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/hashintel/hash?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/hashintel/hash?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/hashintel/hash?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/hashintel/hash?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/hashintel/hash?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/badass-courses/course-builder/blob/main/CLAUDE.md"><b>Course Builder</b></a><br>by <a href="https://github.com/badass-courses">badass-courses</a></td>
-<td>CLAUDE.md Files</td>
-<td>Domain-Specific</td>
-<td>Enables real-time multiplayer capabilities for collaborative course creation with diverse tech stack integration and monorepo architecture using Turborepo.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/badass-courses/course-builder?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/badass-courses/course-builder?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/badass-courses/course-builder?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/badass-courses/course-builder?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/badass-courses/course-builder?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/badass-courses/course-builder?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/badass-courses/course-builder?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/badass-courses/course-builder?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/badass-courses/course-builder?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/langchain-ai/langgraphjs/blob/main/CLAUDE.md"><b>LangGraphJS</b></a><br>by <a href="https://github.com/langchain-ai">langchain-ai</a></td>
 <td>CLAUDE.md Files</td>
 <td>Language-Specific</td>
@@ -99,15 +108,6 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by last upd
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/langchain-ai/langgraphjs?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/langchain-ai/langgraphjs?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/langchain-ai/langgraphjs?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/langchain-ai/langgraphjs?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/langchain-ai/langgraphjs?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/langchain-ai/langgraphjs?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/langchain-ai/langgraphjs?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/langchain-ai/langgraphjs?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/langchain-ai/langgraphjs?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/KarpelesLab/tpl/blob/master/CLAUDE.md"><b>TPL</b></a><br>by <a href="https://github.com/KarpelesLab">KarpelesLab</a></td>
-<td>CLAUDE.md Files</td>
-<td>Language-Specific</td>
-<td>Details Go project conventions with comprehensive error handling recommendations, table-driven testing approach guidelines, and modernization suggestions for latest Go features.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/KarpelesLab/tpl?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/KarpelesLab/tpl?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/KarpelesLab/tpl?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/KarpelesLab/tpl?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/KarpelesLab/tpl?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/KarpelesLab/tpl?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/KarpelesLab/tpl?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/KarpelesLab/tpl?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/KarpelesLab/tpl?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/sgcarstrends/backend/blob/main/CLAUDE.md"><b>SG Cars Trends Backend</b></a><br>by <a href="https://github.com/sgcarstrends">sgcarstrends</a></td>

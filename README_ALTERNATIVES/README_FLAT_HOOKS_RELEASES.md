@@ -60,9 +60,9 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by latest relea
 <tbody>
 <tr>
 <td><a href="https://github.com/backnotprop/plannotator"><b>Plannotator</b></a><br>by <a href="https://github.com/backnotprop">backnotprop</a></td>
-<td>v0.6.5</td>
+<td>v0.6.6</td>
 <td>GitHub</td>
-<td>2026-01-17</td>
+<td>2026-01-18</td>
 <td>Interactive plan review UI that intercepts ExitPlanMode via hooks, letting users visually annotate plans with comments, deletions, and replacements before approving or denying with detailed feedback.</td>
 </tr>
 <tr>
@@ -70,9 +70,9 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by latest relea
 </tr>
 <tr>
 <td><a href="https://github.com/aannoo/claude-hook-comms"><b>Claude Code Hook Comms (HCOM)</b></a><br>by <a href="https://github.com/aannoo">aannoo</a></td>
-<td>v0.6.10</td>
+<td>v0.6.11</td>
 <td>GitHub</td>
-<td>2025-12-20</td>
+<td>2026-01-18</td>
 <td>Lightweight CLI tool for real-time communication between Claude Code sub agents using hooks. Enables multi-agent collaboration with @-mention targeting, live dashboard monitoring, and zero-dependency implementation. [NOTE: At the time of posting, this resource is a little unstable - I'm sharing it anyway, because I think it's incredibly promising and creative. I hope by the time you read this, it is production-ready.]</td>
 </tr>
 <tr>
