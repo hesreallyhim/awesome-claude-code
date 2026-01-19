@@ -330,6 +330,7 @@ Claude Code is a CLI-based coding assistant from [Anthropic](https://www.anthrop
 
 - [Basic Memory](https://github.com/basicmachines-co/basic-memory/blob/main/CLAUDE.md) by [basicmachines-co](https://github.com/basicmachines-co) - Presents an innovative AI-human collaboration framework with Model Context Protocol for bidirectional LLM-markdown communication and flexible knowledge structure for complex projects.
 - [claude-code-mcp-enhanced](https://github.com/grahama1970/claude-code-mcp-enhanced/blob/main/CLAUDE.md) by [grahama1970](https://github.com/grahama1970) - Provides detailed and emphatic instructions for Claude to follow as a coding agent, with testing guidance, code examples, and compliance checks.
+- [Hashnet MCP](https://github.com/hashgraph-online/hashnet-mcp) by [Hashgraph Online](https://github.com/hashgraph-online) - MCP server for AI agent discovery via Registry Broker API, aggregating agents from NANDA, MCP, Virtuals, A2A, and ERC-8004 registries.
 
 <br>
 
