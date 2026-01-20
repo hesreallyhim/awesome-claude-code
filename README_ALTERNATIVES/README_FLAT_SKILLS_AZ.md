@@ -134,4 +134,4 @@ A flat list view of all resources. Category: **Skills** | Sorted: alphabetically
 
 **Total Resources:** 8
 
-**Last Generated:** 2026-01-19
+**Last Generated:** 2026-01-20

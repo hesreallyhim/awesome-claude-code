@@ -107,4 +107,4 @@ A flat list view of all resources. Category: **Status** | Sorted: by last update
 
 **Total Resources:** 5
 
-**Last Generated:** 2026-01-19
+**Last Generated:** 2026-01-20
