@@ -62,15 +62,6 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by last updat
 <td>An elegant and user-friendly Claude Code chat interface for VS Code.</td>
 </tr>
 <tr>
-<td><a href="https://github.com/davila7/claude-code-templates"><b>Claude Code Templates</b></a><br>by <a href="https://github.com/davila7">Daniel Avila</a></td>
-<td>Tooling</td>
-<td>General</td>
-<td>Incredibly awesome collection of resources from every category in this list, presented with a neatly polished UI, great features like usage dashboard, analytics, and everything from slash commands to hooks to agents. An awesome companion for this awesome list.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/davila7/claude-code-templates?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/davila7/claude-code-templates?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/davila7/claude-code-templates?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/davila7/claude-code-templates?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/davila7/claude-code-templates?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/davila7/claude-code-templates?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/davila7/claude-code-templates?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/davila7/claude-code-templates?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/davila7/claude-code-templates?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/dyoshikawa/rulesync"><b>Rulesync</b></a><br>by <a href="https://github.com/dyoshikawa">dyoshikawa</a></td>
 <td>Tooling</td>
 <td>General</td>
@@ -78,6 +69,15 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by last updat
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/dyoshikawa/rulesync?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/dyoshikawa/rulesync?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/dyoshikawa/rulesync?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/dyoshikawa/rulesync?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/dyoshikawa/rulesync?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/dyoshikawa/rulesync?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/dyoshikawa/rulesync?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/dyoshikawa/rulesync?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/dyoshikawa/rulesync?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/davila7/claude-code-templates"><b>Claude Code Templates</b></a><br>by <a href="https://github.com/davila7">Daniel Avila</a></td>
+<td>Tooling</td>
+<td>General</td>
+<td>Incredibly awesome collection of resources from every category in this list, presented with a neatly polished UI, great features like usage dashboard, analytics, and everything from slash commands to hooks to agents. An awesome companion for this awesome list.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/davila7/claude-code-templates?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/davila7/claude-code-templates?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/davila7/claude-code-templates?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/davila7/claude-code-templates?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/davila7/claude-code-templates?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/davila7/claude-code-templates?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/davila7/claude-code-templates?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/davila7/claude-code-templates?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/davila7/claude-code-templates?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/parruda/claude-swarm"><b>Claude Swarm</b></a><br>by <a href="https://github.com/parruda">parruda</a></td>

@@ -57,7 +57,7 @@ A very professional collection of over a dozen security-focused skills for code 
 </details>
 <br>
 
-[`Plannotator`](https://github.com/backnotprop/plannotator) &nbsp; by &nbsp; [backnotprop](https://github.com/backnotprop)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Business Source License 1.1  
+[`Plannotator`](https://github.com/backnotprop/plannotator) &nbsp; by &nbsp; [backnotprop](https://github.com/backnotprop)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
 Interactive plan review UI that intercepts ExitPlanMode via hooks, letting users visually annotate plans with comments, deletions, and replacements before approving or denying with detailed feedback.
 
 <details>
@@ -973,7 +973,7 @@ A community-driven leaderboard tool that enables developers to visualize, track,
 <details open>
 <summary><h3>Orchestrators <a href="#awesome-claude-code">🔝</a></h3></summary>
 
-[`Claude Code Flow`](https://github.com/ruvnet/claude-code-flow) &nbsp; by &nbsp; [ruvnet](https://github.com/ruvnet)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`Claude Code Flow`](https://github.com/ruvnet/claude-code-flow) &nbsp; by &nbsp; [ruvnet](https://github.com/ruvnet)    
 This mode serves as a code-first orchestration layer, enabling Claude to write, edit, test, and optimize code autonomously across recursive agent cycles.
 
 <details>
