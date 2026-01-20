@@ -60,9 +60,9 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by latest r
 <tbody>
 <tr>
 <td><a href="https://github.com/giselles-ai/giselle/blob/main/CLAUDE.md"><b>Giselle</b></a><br>by <a href="https://github.com/giselles-ai">giselles-ai</a></td>
-<td>v0.61.0</td>
+<td>v0.61.1</td>
 <td>GitHub</td>
-<td>2026-01-19</td>
+<td>2026-01-20</td>
 <td>Provides detailed build and test commands using pnpm and Vitest with strict code formatting requirements and comprehensive naming conventions for code consistency.</td>
 </tr>
 <tr>
@@ -70,9 +70,9 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by latest r
 </tr>
 <tr>
 <td><a href="https://github.com/basicmachines-co/basic-memory/blob/main/CLAUDE.md"><b>Basic Memory</b></a><br>by <a href="https://github.com/basicmachines-co">basicmachines-co</a></td>
-<td>v0.17.6</td>
+<td>v0.17.7</td>
 <td>GitHub</td>
-<td>2026-01-17</td>
+<td>2026-01-19</td>
 <td>Presents an innovative AI-human collaboration framework with Model Context Protocol for bidirectional LLM-markdown communication and flexible knowledge structure for complex projects.</td>
 </tr>
 <tr>

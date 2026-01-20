@@ -180,6 +180,7 @@ def get_subcategory_svg_filename(subcat_id: str) -> str:
         "language-specific": "toc-sub-language.svg",
         "domain-specific": "toc-sub-domain.svg",
         "project-scaffolding-mcp": "toc-sub-scaffolding.svg",
+        "ralph-wiggum": "toc-sub-ralph-wiggum.svg",
     }
     return svg_map.get(subcat_id, f"toc-sub-{subcat_id}.svg")
 
