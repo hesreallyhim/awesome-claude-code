@@ -22,7 +22,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Track Github API Usage
-      uses: hesreallyhim/github-api-usage-tracker@v1.0.2
+      uses: hesreallyhim/github-api-usage-tracker@feat/handle-reset-crossing
       with:
         output_path: usage.json
 
