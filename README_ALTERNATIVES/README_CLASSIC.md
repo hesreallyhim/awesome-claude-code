@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Compound Engineering Plugin`](https://github.com/EveryInc/compound-engineering-plugin) &nbsp; by &nbsp; [EveryInc](https://github.com/EveryInc/compound-engineering-plugin)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A very pragmatic set of well-designed agents, skills, and commands, built around a discipline of turning past mistakes and errors into lessons and opportunities for future growth and improvement. Good documentation.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for compound-engineering-plugin](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=compound-engineering-plugin&username=EveryInc&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Trail of Bits Security Skills`](https://github.com/trailofbits/skills) &nbsp; by &nbsp; [Trail of Bits](https://github.com/trailofbits)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;CC-BY-SA-4.0  
 A very professional collection of over a dozen security-focused skills for code auditing and vulnerability detection. Includes skills for static analysis with CodeQL and Semgrep, variant analysis across codebases, fix verification, and differential code review.
 
@@ -64,28 +75,6 @@ Interactive plan review UI that intercepts ExitPlanMode via hooks, letting users
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for plannotator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=plannotator&username=backnotprop&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Ralph Wiggum Marketer`](https://github.com/muratcankoylan/ralph-wiggum-marketer) &nbsp; by &nbsp; [Muratcan Koylan](https://github.com/muratcankoylan)    
-A Claude Code plugin that provides an autonomous AI copywriter,  integrating the Ralph loop with customized knowledge bases for market research agents. The agents do the research, Ralph writes the copy, you stay in bed. Whether or not you practice Ralph-Driven Development (RDD), I think these projects are interesting and creative explorations of general agentic patterns.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for ralph-wiggum-marketer](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-wiggum-marketer&username=muratcankoylan&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`The Ralph Playbook`](https://github.com/ClaytonFarr/ralph-playbook) &nbsp; by &nbsp; [Clayton Farr](https://github.com/ClaytonFarr)    
-A remarkably detailed and comprehensive guide to the Ralph Wiggum technique, featuring well-written theoretical commentary paired with practical guidelines and advice.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for ralph-playbook](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-playbook&username=ClaytonFarr&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -210,6 +199,17 @@ Enables users to prompt codex from claude code. Unlike the raw codex mcp server,
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for skill-codex](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=skill-codex&username=skills-directory&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Compound Engineering Plugin`](https://github.com/EveryInc/compound-engineering-plugin) &nbsp; by &nbsp; [EveryInc](https://github.com/EveryInc/compound-engineering-plugin)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A very pragmatic set of well-designed agents, skills, and commands, built around a discipline of turning past mistakes and errors into lessons and opportunities for future growth and improvement. Good documentation.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for compound-engineering-plugin](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=compound-engineering-plugin&username=EveryInc&all_stats=true&stats_only=true)
 
 </details>
 <br>
