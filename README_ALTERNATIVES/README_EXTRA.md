@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/EveryInc/compound-engineering-plugin"><img src="../assets/badge-compound-engineering-plugin.svg" alt="Compound Engineering Plugin"></a>  
+_A very pragmatic set of well-designed agents, skills, and commands, built around a discipline of turning past mistakes and errors into lessons and opportunities for future growth and improvement. Good documentation._  
+![GitHub Stats for compound-engineering-plugin](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=compound-engineering-plugin&username=EveryInc&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/trailofbits/skills"><img src="../assets/badge-trail-of-bits-security-skills.svg" alt="Trail of Bits Security Skills"></a>  
 _A very professional collection of over a dozen security-focused skills for code auditing and vulnerability detection. Includes skills for static analysis with CodeQL and Semgrep, variant analysis across codebases, fix verification, and differential code review._  
 ![GitHub Stats for skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=skills&username=trailofbits&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -194,14 +198,6 @@ _A very professional collection of over a dozen security-focused skills for code
 <a href="https://github.com/backnotprop/plannotator"><img src="../assets/badge-plannotator.svg" alt="Plannotator"></a>  
 _Interactive plan review UI that intercepts ExitPlanMode via hooks, letting users visually annotate plans with comments, deletions, and replacements before approving or denying with detailed feedback._  
 ![GitHub Stats for plannotator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=plannotator&username=backnotprop&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/muratcankoylan/ralph-wiggum-marketer"><img src="../assets/badge-ralph-wiggum-marketer.svg" alt="Ralph Wiggum Marketer"></a>  
-_A Claude Code plugin that provides an autonomous AI copywriter,  integrating the Ralph loop with customized knowledge bases for market research agents. The agents do the research, Ralph writes the copy, you stay in bed. Whether or not you practice Ralph-Driven Development (RDD), I think these projects are interesting and creative explorations of general agentic patterns._  
-![GitHub Stats for ralph-wiggum-marketer](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-wiggum-marketer&username=muratcankoylan&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/ClaytonFarr/ralph-playbook"><img src="../assets/badge-the-ralph-playbook.svg" alt="The Ralph Playbook"></a>  
-_A remarkably detailed and comprehensive guide to the Ralph Wiggum technique, featuring well-written theoretical commentary paired with practical guidelines and advice._  
-![GitHub Stats for ralph-playbook](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-playbook&username=ClaytonFarr&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 
 <br>
@@ -556,6 +552,13 @@ _Claude Code skill that automates mountain route research for North American pea
 <a href="https://github.com/skills-directory/skill-codex"><img src="../assets/badge-codex-skill.svg" alt="Codex Skill"></a>  
 _Enables users to prompt codex from claude code. Unlike the raw codex mcp server, this skill infers parameters such as model, reasoning effort, sandboxing from your prompt or asks you to specify them. It also simplifies continuing prior codex sessions so that codex can continue with the prior context._  
 ![GitHub Stats for skill-codex](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=skill-codex&username=skills-directory&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/EveryInc/compound-engineering-plugin"><img src="../assets/badge-compound-engineering-plugin.svg" alt="Compound Engineering Plugin"></a>  
+_A very pragmatic set of well-designed agents, skills, and commands, built around a discipline of turning past mistakes and errors into lessons and opportunities for future growth and improvement. Good documentation._  
+![GitHub Stats for compound-engineering-plugin](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=compound-engineering-plugin&username=EveryInc&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 

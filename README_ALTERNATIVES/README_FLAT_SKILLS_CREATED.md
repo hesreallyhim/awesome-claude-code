@@ -110,6 +110,15 @@ A flat list view of all resources. Category: **Skills** | Sorted: by date create
 <td colspan="4"><img src="https://img.shields.io/github/stars/dreamiurg/claude-mountaineering-skills?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/dreamiurg/claude-mountaineering-skills?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/dreamiurg/claude-mountaineering-skills?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/dreamiurg/claude-mountaineering-skills?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/dreamiurg/claude-mountaineering-skills?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/dreamiurg/claude-mountaineering-skills?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/dreamiurg/claude-mountaineering-skills?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/dreamiurg/claude-mountaineering-skills?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/dreamiurg/claude-mountaineering-skills?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/EveryInc/compound-engineering-plugin"><b>Compound Engineering Plugin</b></a><br>by <a href="https://github.com/EveryInc">EveryInc</a></td>
+<td>Agent Skills</td>
+<td>General</td>
+<td>A very pragmatic set of well-designed agents, skills, and commands, built around a discipline of turning past mistakes and errors into lessons and opportunities for future growth and improvement. Good documentation.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/EveryInc/compound-engineering-plugin?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/EveryInc/compound-engineering-plugin?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/EveryInc/compound-engineering-plugin?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/EveryInc/compound-engineering-plugin?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/EveryInc/compound-engineering-plugin?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/EveryInc/compound-engineering-plugin?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/EveryInc/compound-engineering-plugin?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/EveryInc/compound-engineering-plugin?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/EveryInc/compound-engineering-plugin?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/obra/superpowers"><b>Superpowers</b></a><br>by <a href="https://github.com/obra">Jesse Vincent</a></td>
 <td>Agent Skills</td>
 <td>General</td>
@@ -132,6 +141,6 @@ A flat list view of all resources. Category: **Skills** | Sorted: by date create
 
 ---
 
-**Total Resources:** 8
+**Total Resources:** 9
 
-**Last Generated:** 2026-01-20
+**Last Generated:** 2026-01-22
