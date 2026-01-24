@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Everything Claude Code`](https://github.com/affaan-m/everything-claude-code) &nbsp; by &nbsp; [Affaan Mustafa](https://github.com/affaan-m/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Top-notch, well-written resources covering "just about everything" from core engineering domains. What's nice about this "everything-" store is most of the resources have significant standalone value and unlike some all-encompassing frameworks, although you can opt in to the author's own specific workflow patterns if you choose, the individual resources offer exemplary patterns in (just about) every Claude Code feature you can find (apologies to the Output Styles devotees).
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for everything-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=everything-claude-code&username=affaan-m&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Compound Engineering Plugin`](https://github.com/EveryInc/compound-engineering-plugin) &nbsp; by &nbsp; [EveryInc](https://github.com/EveryInc)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A very pragmatic set of well-designed agents, skills, and commands, built around a discipline of turning past mistakes and errors into lessons and opportunities for future growth and improvement. Good documentation.
 
@@ -64,17 +75,6 @@ A very professional collection of over a dozen security-focused skills for code 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=skills&username=trailofbits&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Plannotator`](https://github.com/backnotprop/plannotator) &nbsp; by &nbsp; [backnotprop](https://github.com/backnotprop)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
-Interactive plan review UI that intercepts ExitPlanMode via hooks, letting users visually annotate plans with comments, deletions, and replacements before approving or denying with detailed feedback.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for plannotator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=plannotator&username=backnotprop&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -221,6 +221,17 @@ Hand-crafted collection of advanced context engineering techniques and patterns 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for context-engineering-kit](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=context-engineering-kit&username=NeoLabHQ&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Everything Claude Code`](https://github.com/affaan-m/everything-claude-code) &nbsp; by &nbsp; [Affaan Mustafa](https://github.com/affaan-m/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Top-notch, well-written resources covering "just about everything" from core engineering domains. What's nice about this "everything-" store is most of the resources have significant standalone value and unlike some all-encompassing frameworks, although you can opt in to the author's own specific workflow patterns if you choose, the individual resources offer exemplary patterns in (just about) every Claude Code feature you can find (apologies to the Output Styles devotees).
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for everything-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=everything-claude-code&username=affaan-m&all_stats=true&stats_only=true)
 
 </details>
 <br>

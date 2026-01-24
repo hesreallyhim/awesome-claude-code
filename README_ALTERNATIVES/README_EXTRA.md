@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/affaan-m/everything-claude-code"><img src="../assets/badge-everything-claude-code.svg" alt="Everything Claude Code"></a>  
+_Top-notch, well-written resources covering "just about everything" from core engineering domains. What's nice about this "everything-" store is most of the resources have significant standalone value and unlike some all-encompassing frameworks, although you can opt in to the author's own specific workflow patterns if you choose, the individual resources offer exemplary patterns in (just about) every Claude Code feature you can find (apologies to the Output Styles devotees)._  
+![GitHub Stats for everything-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=everything-claude-code&username=affaan-m&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/EveryInc/compound-engineering-plugin"><img src="../assets/badge-compound-engineering-plugin.svg" alt="Compound Engineering Plugin"></a>  
 _A very pragmatic set of well-designed agents, skills, and commands, built around a discipline of turning past mistakes and errors into lessons and opportunities for future growth and improvement. Good documentation._  
 ![GitHub Stats for compound-engineering-plugin](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=compound-engineering-plugin&username=EveryInc&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -194,10 +198,6 @@ _A very pragmatic set of well-designed agents, skills, and commands, built aroun
 <a href="https://github.com/trailofbits/skills"><img src="../assets/badge-trail-of-bits-security-skills.svg" alt="Trail of Bits Security Skills"></a>  
 _A very professional collection of over a dozen security-focused skills for code auditing and vulnerability detection. Includes skills for static analysis with CodeQL and Semgrep, variant analysis across codebases, fix verification, and differential code review._  
 ![GitHub Stats for skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=skills&username=trailofbits&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/backnotprop/plannotator"><img src="../assets/badge-plannotator.svg" alt="Plannotator"></a>  
-_Interactive plan review UI that intercepts ExitPlanMode via hooks, letting users visually annotate plans with comments, deletions, and replacements before approving or denying with detailed feedback._  
-![GitHub Stats for plannotator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=plannotator&username=backnotprop&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 
 <br>
@@ -566,6 +566,13 @@ _A very pragmatic set of well-designed agents, skills, and commands, built aroun
 <a href="https://github.com/NeoLabHQ/context-engineering-kit"><img src="../assets/badge-context-engineering-kit.svg" alt="Context Engineering Kit"></a>  
 _Hand-crafted collection of advanced context engineering techniques and patterns with minimal token footprint focused on improving agent result quality._  
 ![GitHub Stats for context-engineering-kit](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=context-engineering-kit&username=NeoLabHQ&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/affaan-m/everything-claude-code"><img src="../assets/badge-everything-claude-code.svg" alt="Everything Claude Code"></a>  
+_Top-notch, well-written resources covering "just about everything" from core engineering domains. What's nice about this "everything-" store is most of the resources have significant standalone value and unlike some all-encompassing frameworks, although you can opt in to the author's own specific workflow patterns if you choose, the individual resources offer exemplary patterns in (just about) every Claude Code feature you can find (apologies to the Output Styles devotees)._  
+![GitHub Stats for everything-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=everything-claude-code&username=affaan-m&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 
