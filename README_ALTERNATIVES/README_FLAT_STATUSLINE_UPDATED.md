@@ -56,6 +56,15 @@ A flat list view of all resources. Category: **Status** | Sorted: by last update
 </thead>
 <tbody>
 <tr>
+<td><a href="https://github.com/Haleclipse/CCometixLine"><b>CCometixLine - Claude Code Statusline</b></a><br>by <a href="https://github.com/Haleclipse">Haleclipse</a></td>
+<td>Status Lines</td>
+<td>General</td>
+<td>A high-performance Claude Code statusline tool written in Rust with Git integration, usage tracking, interactive TUI configuration, and Claude Code enhancement utilities.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/Haleclipse/CCometixLine?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Haleclipse/CCometixLine?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Haleclipse/CCometixLine?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Haleclipse/CCometixLine?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Haleclipse/CCometixLine?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Haleclipse/CCometixLine?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Haleclipse/CCometixLine?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Haleclipse/CCometixLine?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Haleclipse/CCometixLine?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/rz1989s/claude-code-statusline"><b>claude-code-statusline</b></a><br>by <a href="https://github.com/rz1989s">rz1989s</a></td>
 <td>Status Lines</td>
 <td>General</td>
@@ -83,15 +92,6 @@ A flat list view of all resources. Category: **Status** | Sorted: by last update
 <td colspan="4"><img src="https://img.shields.io/github/stars/hagan/claudia-statusline?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/hagan/claudia-statusline?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/hagan/claudia-statusline?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/hagan/claudia-statusline?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/hagan/claudia-statusline?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/hagan/claudia-statusline?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/hagan/claudia-statusline?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/hagan/claudia-statusline?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/hagan/claudia-statusline?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/Haleclipse/CCometixLine"><b>CCometixLine - Claude Code Statusline</b></a><br>by <a href="https://github.com/Haleclipse">Haleclipse</a></td>
-<td>Status Lines</td>
-<td>General</td>
-<td>A high-performance Claude Code statusline tool written in Rust with Git integration, usage tracking, interactive TUI configuration, and Claude Code enhancement utilities.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/Haleclipse/CCometixLine?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Haleclipse/CCometixLine?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Haleclipse/CCometixLine?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Haleclipse/CCometixLine?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Haleclipse/CCometixLine?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Haleclipse/CCometixLine?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Haleclipse/CCometixLine?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Haleclipse/CCometixLine?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Haleclipse/CCometixLine?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/sirmalloc/ccstatusline"><b>ccstatusline</b></a><br>by <a href="https://github.com/sirmalloc">sirmalloc</a></td>
 <td>Status Lines</td>
 <td>General</td>
@@ -107,4 +107,4 @@ A flat list view of all resources. Category: **Status** | Sorted: by last update
 
 **Total Resources:** 5
 
-**Last Generated:** 2026-01-22
+**Last Generated:** 2026-01-24
