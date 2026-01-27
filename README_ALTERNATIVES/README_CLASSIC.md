@@ -46,6 +46,9 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`AI Agent, AI Spy`](https://youtu.be/0ANECpNdt-4) &nbsp; by &nbsp; [Whittaker & Tiwari](https://signalfoundation.org/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;No License / Not Specified  
+Members from the Signal Foundation with some really great tips and tricks on how to turn your operating system into an instrument of total surveillance, and why some companies are doing this really awesome thing. [warning: YouTube link]
+
 [`Everything Claude Code`](https://github.com/affaan-m/everything-claude-code) &nbsp; by &nbsp; [Affaan Mustafa](https://github.com/affaan-m/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Top-notch, well-written resources covering "just about everything" from core engineering domains. What's nice about this "everything-" store is most of the resources have significant standalone value and unlike some all-encompassing frameworks, although you can opt in to the author's own specific workflow patterns if you choose, the individual resources offer exemplary patterns in (just about) every Claude Code feature you can find (apologies to the Output Styles devotees).
 
@@ -64,17 +67,6 @@ A very pragmatic set of well-designed agents, skills, and commands, built around
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for compound-engineering-plugin](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=compound-engineering-plugin&username=EveryInc&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Trail of Bits Security Skills`](https://github.com/trailofbits/skills) &nbsp; by &nbsp; [Trail of Bits](https://github.com/trailofbits)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;CC-BY-SA-4.0  
-A very professional collection of over a dozen security-focused skills for code auditing and vulnerability detection. Includes skills for static analysis with CodeQL and Semgrep, variant analysis across codebases, fix verification, and differential code review.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=skills&username=trailofbits&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -169,6 +161,9 @@ A very professional collection of over a dozen security-focused skills for code 
 
 <details open>
 <summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
+
+[`AI Agent, AI Spy`](https://youtu.be/0ANECpNdt-4) &nbsp; by &nbsp; [Whittaker & Tiwari](https://signalfoundation.org/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;No License / Not Specified  
+Members from the Signal Foundation with some really great tips and tricks on how to turn your operating system into an instrument of total surveillance, and why some companies are doing this really awesome thing. [warning: YouTube link]
 
 [`Claude Codex Settings`](https://github.com/fcakyon/claude-codex-settings) &nbsp; by &nbsp; [fatih akyon](https://github.com/fcakyon)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
 A well-organized, well-written set of plugins covering core developer activities, such as working with common cloud platforms like GitHub, Azure, MongoDB, and popular services such as Tavily, Playwright, and more. Clear, not overly-opinionated, and compatible with a few other providers.

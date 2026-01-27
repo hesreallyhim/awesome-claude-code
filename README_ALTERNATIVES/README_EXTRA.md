@@ -187,6 +187,9 @@
   </picture>
 </div>
 
+<a href="https://youtu.be/0ANECpNdt-4"><img src="../assets/badge-ai-agent-ai-spy.svg" alt="AI Agent, AI Spy"></a>  
+_Members from the Signal Foundation with some really great tips and tricks on how to turn your operating system into an instrument of total surveillance, and why some companies are doing this really awesome thing. [warning: YouTube link]_
+
 <a href="https://github.com/affaan-m/everything-claude-code"><img src="../assets/badge-everything-claude-code.svg" alt="Everything Claude Code"></a>  
 _Top-notch, well-written resources covering "just about everything" from core engineering domains. What's nice about this "everything-" store is most of the resources have significant standalone value and unlike some all-encompassing frameworks, although you can opt in to the author's own specific workflow patterns if you choose, the individual resources offer exemplary patterns in (just about) every Claude Code feature you can find (apologies to the Output Styles devotees)._  
 ![GitHub Stats for everything-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=everything-claude-code&username=affaan-m&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -194,10 +197,6 @@ _Top-notch, well-written resources covering "just about everything" from core en
 <a href="https://github.com/EveryInc/compound-engineering-plugin"><img src="../assets/badge-compound-engineering-plugin.svg" alt="Compound Engineering Plugin"></a>  
 _A very pragmatic set of well-designed agents, skills, and commands, built around a discipline of turning past mistakes and errors into lessons and opportunities for future growth and improvement. Good documentation._  
 ![GitHub Stats for compound-engineering-plugin](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=compound-engineering-plugin&username=EveryInc&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/trailofbits/skills"><img src="../assets/badge-trail-of-bits-security-skills.svg" alt="Trail of Bits Security Skills"></a>  
-_A very professional collection of over a dozen security-focused skills for code auditing and vulnerability detection. Includes skills for static analysis with CodeQL and Semgrep, variant analysis across codebases, fix verification, and differential code review._  
-![GitHub Stats for skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=skills&username=trailofbits&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 
 <br>
@@ -534,6 +533,12 @@ _A very professional collection of over a dozen security-focused skills for code
 
 <details open id="skills-general">
 <summary><span><picture><img src="../assets/subheader_skills_general.svg" alt="General" align="absmiddle"></picture></span></summary>
+
+<a href="https://youtu.be/0ANECpNdt-4"><img src="../assets/badge-ai-agent-ai-spy.svg" alt="AI Agent, AI Spy"></a>  
+_Members from the Signal Foundation with some really great tips and tricks on how to turn your operating system into an instrument of total surveillance, and why some companies are doing this really awesome thing. [warning: YouTube link]_
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
 
 <a href="https://github.com/fcakyon/claude-codex-settings"><img src="../assets/badge-claude-codex-settings.svg" alt="Claude Codex Settings"></a>  
 _A well-organized, well-written set of plugins covering core developer activities, such as working with common cloud platforms like GitHub, Azure, MongoDB, and popular services such as Tavily, Playwright, and more. Clear, not overly-opinionated, and compatible with a few other providers._  

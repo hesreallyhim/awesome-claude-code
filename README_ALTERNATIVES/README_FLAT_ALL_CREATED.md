@@ -56,6 +56,12 @@ A flat list view of all resources. Category: **All** | Sorted: by date created
 </thead>
 <tbody>
 <tr>
+<td><a href="https://youtu.be/0ANECpNdt-4"><b>AI Agent, AI Spy</b></a><br>by <a href="https://signalfoundation.org/">Whittaker & Tiwari</a></td>
+<td>Agent Skills</td>
+<td>General</td>
+<td>Members from the Signal Foundation with some really great tips and tricks on how to turn your operating system into an instrument of total surveillance, and why some companies are doing this really awesome thing. [warning: YouTube link]</td>
+</tr>
+<tr>
 <td><a href="https://nikiforovall.blog/claude-code-rules/"><b>Claude Code Handbook</b></a><br>by <a href="https://github.com/nikiforovall">nikiforovall</a></td>
 <td>Workflows & Knowledge Guides</td>
 <td>General</td>
@@ -1596,6 +1602,6 @@ A flat list view of all resources. Category: **All** | Sorted: by date created
 
 ---
 
-**Total Resources:** 172
+**Total Resources:** 173
 
-**Last Generated:** 2026-01-24
+**Last Generated:** 2026-01-27
