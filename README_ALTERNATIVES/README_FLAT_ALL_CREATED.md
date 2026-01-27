@@ -761,6 +761,15 @@ A flat list view of all resources. Category: **All** | Sorted: by date created
 <td colspan="4"><img src="https://img.shields.io/github/stars/nyatinte/ccexp?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/nyatinte/ccexp?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/nyatinte/ccexp?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/nyatinte/ccexp?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/nyatinte/ccexp?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/nyatinte/ccexp?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/nyatinte/ccexp?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/nyatinte/ccexp?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/nyatinte/ccexp?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/shareAI-lab/learn-claude-code"><b>Learn Claude Code</b></a><br>by <a href="https://github.com/shareAI-lab/">shareAI-Lab</a></td>
+<td>Workflows & Knowledge Guides</td>
+<td>General</td>
+<td>A really interesting analysis of how coding agents like Claude Code are designed. It attempts to break an agent down into its fundamental parts and reconstruct it with minimal code. Great learning resource. Final product is a rudimentary agent with skills, sub-agents, and a todo-list in roughly a few hundred lines of Python.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/shareAI-lab/learn-claude-code?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/shareAI-lab/learn-claude-code?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/shareAI-lab/learn-claude-code?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/shareAI-lab/learn-claude-code?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/shareAI-lab/learn-claude-code?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/shareAI-lab/learn-claude-code?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/shareAI-lab/learn-claude-code?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/shareAI-lab/learn-claude-code?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/shareAI-lab/learn-claude-code?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/manzaltu/claude-code-ide.el"><b>claude-code-ide.el</b></a><br>by <a href="https://github.com/manzaltu">manzaltu</a></td>
 <td>Tooling</td>
 <td>IDE Integrations</td>
@@ -1602,6 +1611,6 @@ A flat list view of all resources. Category: **All** | Sorted: by date created
 
 ---
 
-**Total Resources:** 173
+**Total Resources:** 174
 
 **Last Generated:** 2026-01-27

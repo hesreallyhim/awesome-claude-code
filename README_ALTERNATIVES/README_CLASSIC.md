@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Learn Claude Code`](https://github.com/shareAI-lab/learn-claude-code) &nbsp; by &nbsp; [shareAI-Lab](https://github.com/shareAI-lab/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A really interesting analysis of how coding agents like Claude Code are designed. It attempts to break an agent down into its fundamental parts and reconstruct it with minimal code. Great learning resource. Final product is a rudimentary agent with skills, sub-agents, and a todo-list in roughly a few hundred lines of Python.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for learn-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=learn-claude-code&username=shareAI-lab&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`AI Agent, AI Spy`](https://youtu.be/0ANECpNdt-4) &nbsp; by &nbsp; [Whittaker & Tiwari](https://signalfoundation.org/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;No License / Not Specified  
 Members from the Signal Foundation with some really great tips and tricks on how to turn your operating system into an instrument of total surveillance, and why some companies are doing this really awesome thing. [warning: YouTube link]
 
@@ -452,6 +463,17 @@ Transform your Laravel TALL (Tailwind, AlpineJS, Laravel, Livewire) stack develo
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for laravel-tall-claude-ai-configs](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=laravel-tall-claude-ai-configs&username=tott&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Learn Claude Code`](https://github.com/shareAI-lab/learn-claude-code) &nbsp; by &nbsp; [shareAI-Lab](https://github.com/shareAI-lab/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A really interesting analysis of how coding agents like Claude Code are designed. It attempts to break an agent down into its fundamental parts and reconstruct it with minimal code. Great learning resource. Final product is a rudimentary agent with skills, sub-agents, and a todo-list in roughly a few hundred lines of Python.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for learn-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=learn-claude-code&username=shareAI-lab&all_stats=true&stats_only=true)
 
 </details>
 <br>

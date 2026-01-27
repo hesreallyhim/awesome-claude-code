@@ -197,6 +197,15 @@ A flat list view of all resources. Category: **Workflows** | Sorted: alphabetica
 <td colspan="4"><img src="https://img.shields.io/github/stars/tott/laravel-tall-claude-ai-configs?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/tott/laravel-tall-claude-ai-configs?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/tott/laravel-tall-claude-ai-configs?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/tott/laravel-tall-claude-ai-configs?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/tott/laravel-tall-claude-ai-configs?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/tott/laravel-tall-claude-ai-configs?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/tott/laravel-tall-claude-ai-configs?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/tott/laravel-tall-claude-ai-configs?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/tott/laravel-tall-claude-ai-configs?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/shareAI-lab/learn-claude-code"><b>Learn Claude Code</b></a><br>by <a href="https://github.com/shareAI-lab/">shareAI-Lab</a></td>
+<td>Workflows & Knowledge Guides</td>
+<td>General</td>
+<td>A really interesting analysis of how coding agents like Claude Code are designed. It attempts to break an agent down into its fundamental parts and reconstruct it with minimal code. Great learning resource. Final product is a rudimentary agent with skills, sub-agents, and a todo-list in roughly a few hundred lines of Python.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/shareAI-lab/learn-claude-code?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/shareAI-lab/learn-claude-code?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/shareAI-lab/learn-claude-code?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/shareAI-lab/learn-claude-code?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/shareAI-lab/learn-claude-code?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/shareAI-lab/learn-claude-code?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/shareAI-lab/learn-claude-code?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/shareAI-lab/learn-claude-code?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/shareAI-lab/learn-claude-code?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/cheukyin175/learn-faster-kit"><b>learn-faster-kit</b></a><br>by <a href="https://github.com/cheukyin175">Hugo Lau</a></td>
 <td>Workflows & Knowledge Guides</td>
 <td>General</td>
@@ -306,6 +315,6 @@ A flat list view of all resources. Category: **Workflows** | Sorted: alphabetica
 
 ---
 
-**Total Resources:** 28
+**Total Resources:** 29
 
 **Last Generated:** 2026-01-27
