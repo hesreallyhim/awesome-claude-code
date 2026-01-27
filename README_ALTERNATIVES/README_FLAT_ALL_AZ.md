@@ -470,6 +470,12 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://youtu.be/0ANECpNdt-4"><b>AI Agent, AI Spy</b></a><br>by <a href="https://signalfoundation.org/">Whittaker & Tiwari</a></td>
+<td>Agent Skills</td>
+<td>General</td>
+<td>Members from the Signal Foundation with some really great tips and tricks on how to turn your operating system into an instrument of total surveillance, and why some companies are doing this really awesome thing. [warning: YouTube link]</td>
+</tr>
+<tr>
 <td><a href="https://github.com/didalgolab/ai-intellij-plugin/blob/main/CLAUDE.md"><b>AI IntelliJ Plugin</b></a><br>by <a href="https://github.com/didalgolab">didalgolab</a></td>
 <td>CLAUDE.md Files</td>
 <td>Language-Specific</td>
@@ -1596,6 +1602,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 
 ---
 
-**Total Resources:** 172
+**Total Resources:** 173
 
-**Last Generated:** 2026-01-24
+**Last Generated:** 2026-01-27
