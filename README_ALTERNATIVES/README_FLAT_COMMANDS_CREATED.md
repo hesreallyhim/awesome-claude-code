@@ -137,22 +137,13 @@ A flat list view of all resources. Category: **Commands** | Sorted: by date crea
 <td colspan="4"><img src="https://img.shields.io/github/stars/yzyydev/AI-Engineering-Structure?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/yzyydev/AI-Engineering-Structure?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/yzyydev/AI-Engineering-Structure?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/yzyydev/AI-Engineering-Structure?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/yzyydev/AI-Engineering-Structure?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/yzyydev/AI-Engineering-Structure?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/yzyydev/AI-Engineering-Structure?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/yzyydev/AI-Engineering-Structure?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/yzyydev/AI-Engineering-Structure?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/taddyorg/inkverse/blob/main/.claude/commands/create-jtbd.md"><b>/create-jtbd</b></a><br>by <a href="https://github.com/taddyorg">taddyorg</a></td>
-<td>Slash-Commands</td>
-<td>Project & Task Management</td>
-<td>Creates Jobs-to-be-Done frameworks that outline user needs with structured format, focusing on specific user problems and organizing by job categories for product development.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/taddyorg/inkverse?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/taddyorg/inkverse?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/taddyorg/inkverse?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/taddyorg/inkverse?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/taddyorg/inkverse?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/taddyorg/inkverse?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/taddyorg/inkverse?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/taddyorg/inkverse?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/taddyorg/inkverse?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/taddyorg/inkverse/blob/main/.claude/commands/create-prd.md"><b>/create-prd</b></a><br>by <a href="https://github.com/taddyorg">taddyorg</a></td>
+<td><a href="https://github.com/hesreallyhim/inkverse-fork/blob/preserve-claude-resources/.claude/commands/create-plan.md"><b>/create-plan</b></a><br>by <a href="https://github.com/taddyorg">taddyorg</a></td>
 <td>Slash-Commands</td>
 <td>Project & Task Management</td>
 <td>Generates comprehensive product requirement documents outlining detailed specifications, requirements, and features following standardized document structure and format.</td>
 </tr>
 <tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/taddyorg/inkverse?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/taddyorg/inkverse?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/taddyorg/inkverse?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/taddyorg/inkverse?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/taddyorg/inkverse?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/taddyorg/inkverse?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/taddyorg/inkverse?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/taddyorg/inkverse?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/taddyorg/inkverse?style=flat-square" alt="license"></td>
+<td colspan="4"><img src="https://img.shields.io/github/stars/hesreallyhim/inkverse-fork?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/hesreallyhim/inkverse-fork?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/hesreallyhim/inkverse-fork?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/hesreallyhim/inkverse-fork?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/hesreallyhim/inkverse-fork?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/hesreallyhim/inkverse-fork?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/hesreallyhim/inkverse-fork?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/hesreallyhim/inkverse-fork?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/hesreallyhim/inkverse-fork?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/analyze-issue.md"><b>/analyze-issue</b></a><br>by <a href="https://github.com/jerseycheese">jerseycheese</a></td>
@@ -456,6 +447,6 @@ A flat list view of all resources. Category: **Commands** | Sorted: by date crea
 
 ---
 
-**Total Resources:** 44
+**Total Resources:** 43
 
-**Last Generated:** 2026-01-27
+**Last Generated:** 2026-01-28

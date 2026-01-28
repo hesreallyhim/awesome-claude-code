@@ -46,6 +46,9 @@ overrides:
   wf-5e01a9a6:
     skip_validation: true
 
+  cmd-0420f9cb:
+    skip_validation: true
+
 # Supported override fields:
 # - license: Override the detected license (automatically locked)
 # - active: Override the active status (automatically locked)

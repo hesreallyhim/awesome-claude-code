@@ -146,13 +146,13 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/omril321/automated-notebooklm?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/omril321/automated-notebooklm?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/omril321/automated-notebooklm?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/omril321/automated-notebooklm?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/omril321/automated-notebooklm?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/omril321/automated-notebooklm?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/omril321/automated-notebooklm?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/omril321/automated-notebooklm?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/omril321/automated-notebooklm?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/taddyorg/inkverse/blob/main/.claude/commands/create-jtbd.md"><b>/create-jtbd</b></a><br>by <a href="https://github.com/taddyorg">taddyorg</a></td>
+<td><a href="https://github.com/hesreallyhim/inkverse-fork/blob/preserve-claude-resources/.claude/commands/create-plan.md"><b>/create-plan</b></a><br>by <a href="https://github.com/taddyorg">taddyorg</a></td>
 <td>Slash-Commands</td>
 <td>Project & Task Management</td>
-<td>Creates Jobs-to-be-Done frameworks that outline user needs with structured format, focusing on specific user problems and organizing by job categories for product development.</td>
+<td>Generates comprehensive product requirement documents outlining detailed specifications, requirements, and features following standardized document structure and format.</td>
 </tr>
 <tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/taddyorg/inkverse?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/taddyorg/inkverse?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/taddyorg/inkverse?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/taddyorg/inkverse?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/taddyorg/inkverse?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/taddyorg/inkverse?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/taddyorg/inkverse?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/taddyorg/inkverse?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/taddyorg/inkverse?style=flat-square" alt="license"></td>
+<td colspan="4"><img src="https://img.shields.io/github/stars/hesreallyhim/inkverse-fork?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/hesreallyhim/inkverse-fork?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/hesreallyhim/inkverse-fork?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/hesreallyhim/inkverse-fork?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/hesreallyhim/inkverse-fork?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/hesreallyhim/inkverse-fork?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/hesreallyhim/inkverse-fork?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/hesreallyhim/inkverse-fork?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/hesreallyhim/inkverse-fork?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/toyamarinyon/giselle/blob/main/.claude/commands/create-pr.md"><b>/create-pr</b></a><br>by <a href="https://github.com/toyamarinyon">toyamarinyon</a></td>
@@ -162,15 +162,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/toyamarinyon/giselle?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/toyamarinyon/giselle?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/toyamarinyon/giselle?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/toyamarinyon/giselle?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/toyamarinyon/giselle?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/toyamarinyon/giselle?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/toyamarinyon/giselle?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/toyamarinyon/giselle?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/toyamarinyon/giselle?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/taddyorg/inkverse/blob/main/.claude/commands/create-prd.md"><b>/create-prd</b></a><br>by <a href="https://github.com/taddyorg">taddyorg</a></td>
-<td>Slash-Commands</td>
-<td>Project & Task Management</td>
-<td>Generates comprehensive product requirement documents outlining detailed specifications, requirements, and features following standardized document structure and format.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/taddyorg/inkverse?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/taddyorg/inkverse?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/taddyorg/inkverse?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/taddyorg/inkverse?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/taddyorg/inkverse?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/taddyorg/inkverse?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/taddyorg/inkverse?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/taddyorg/inkverse?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/taddyorg/inkverse?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/Wirasm/claudecode-utils/blob/main/.claude/commands/create-prp.md"><b>/create-prp</b></a><br>by <a href="https://github.com/Wirasm">Wirasm</a></td>
@@ -1611,6 +1602,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 
 ---
 
-**Total Resources:** 174
+**Total Resources:** 173
 
-**Last Generated:** 2026-01-27
+**Last Generated:** 2026-01-28

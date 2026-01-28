@@ -1709,16 +1709,9 @@ _Guides Claude through creating new custom commands with proper structure by ana
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 
 
-<a href="https://github.com/taddyorg/inkverse/blob/main/.claude/commands/create-jtbd.md"><img src="../assets/badge-create-jtbd.svg" alt="/create-jtbd"></a>  
-_Creates Jobs-to-be-Done frameworks that outline user needs with structured format, focusing on specific user problems and organizing by job categories for product development._  
-![GitHub Stats for inkverse](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=inkverse&username=taddyorg&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
-
-
-<a href="https://github.com/taddyorg/inkverse/blob/main/.claude/commands/create-prd.md"><img src="../assets/badge-create-prd.svg" alt="/create-prd"></a>  
-_Generates comprehensive product requirement documents outlining detailed specifications, requirements, and features following standardized document structure and format._  
-![GitHub Stats for inkverse](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=inkverse&username=taddyorg&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+<a href="https://github.com/hesreallyhim/inkverse-fork/blob/preserve-claude-resources/.claude/commands/create-plan.md"><img src="../assets/badge-create-plan.svg" alt="/create-plan"></a>  
+_Generates comprehensive product requirement documents outlining detailed specifications, requirements, and features following standardized document structure and format._*  
+<sub>* Removed from origin</sub>
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 

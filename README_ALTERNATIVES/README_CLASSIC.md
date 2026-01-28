@@ -1001,7 +1001,7 @@ A community-driven leaderboard tool that enables developers to visualize, track,
 <details open>
 <summary><h3>Orchestrators <a href="#awesome-claude-code">🔝</a></h3></summary>
 
-[`Claude Code Flow`](https://github.com/ruvnet/claude-code-flow) &nbsp; by &nbsp; [ruvnet](https://github.com/ruvnet)    
+[`Claude Code Flow`](https://github.com/ruvnet/claude-code-flow) &nbsp; by &nbsp; [ruvnet](https://github.com/ruvnet)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 This mode serves as a code-first orchestration layer, enabling Claude to write, edit, test, and optimize code autonomously across recursive agent cycles.
 
 <details>
@@ -1686,27 +1686,9 @@ Guides Claude through creating new custom commands with proper structure by anal
 </details>
 <br>
 
-[`/create-jtbd`](https://github.com/taddyorg/inkverse/blob/main/.claude/commands/create-jtbd.md) &nbsp; by &nbsp; [taddyorg](https://github.com/taddyorg)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;AGPL-3.0  
-Creates Jobs-to-be-Done frameworks that outline user needs with structured format, focusing on specific user problems and organizing by job categories for product development.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for inkverse](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=inkverse&username=taddyorg&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`/create-prd`](https://github.com/taddyorg/inkverse/blob/main/.claude/commands/create-prd.md) &nbsp; by &nbsp; [taddyorg](https://github.com/taddyorg)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;AGPL-3.0  
-Generates comprehensive product requirement documents outlining detailed specifications, requirements, and features following standardized document structure and format.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for inkverse](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=inkverse&username=taddyorg&all_stats=true&stats_only=true)
-
-</details>
-<br>
+[`/create-plan`](https://github.com/hesreallyhim/inkverse-fork/blob/preserve-claude-resources/.claude/commands/create-plan.md) &nbsp; by &nbsp; [taddyorg](https://github.com/taddyorg)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;AGPL-3.0  
+Generates comprehensive product requirement documents outlining detailed specifications, requirements, and features following standardized document structure and format.*  
+<sub>* Removed from origin</sub>
 
 [`/create-prp`](https://github.com/Wirasm/claudecode-utils/blob/main/.claude/commands/create-prp.md) &nbsp; by &nbsp; [Wirasm](https://github.com/Wirasm)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Creates product requirement plans by reading PRP methodology, following template structure, creating comprehensive requirements, and structuring product definitions for development.
