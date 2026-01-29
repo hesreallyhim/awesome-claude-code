@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Claude Session Restore`](https://github.com/ZENG3LD/claude-session-restore) &nbsp; by &nbsp; [ZENG3LD](https://github.com/ZENG3LD)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT OR Apache-2.0  
+Efficiently restore context from previous Claude Code sessions by analyzing session files and git history. Features multi-factor data collection across numerous Claude Code capacities with time-based filtering. Uses tail-based parsing for efficient handling of large session files up to 2GB. Includes both a CLI tool for manual analysis and a Claude Code skill for automatic session restoration.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-session-restore](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-session-restore&username=ZENG3LD&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Learn Claude Code`](https://github.com/shareAI-lab/learn-claude-code) &nbsp; by &nbsp; [shareAI-Lab](https://github.com/shareAI-lab/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A really interesting analysis of how coding agents like Claude Code are designed. It attempts to break an agent down into its fundamental parts and reconstruct it with minimal code. Great learning resource. Final product is a rudimentary agent with skills, sub-agents, and a todo-list in roughly a few hundred lines of Python.
 
@@ -704,6 +715,17 @@ A webhook service that connects Claude Code to GitHub repositories, enabling AI-
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-hub](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-hub&username=claude-did-this&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Claude Session Restore`](https://github.com/ZENG3LD/claude-session-restore) &nbsp; by &nbsp; [ZENG3LD](https://github.com/ZENG3LD)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT OR Apache-2.0  
+Efficiently restore context from previous Claude Code sessions by analyzing session files and git history. Features multi-factor data collection across numerous Claude Code capacities with time-based filtering. Uses tail-based parsing for efficient handling of large session files up to 2GB. Includes both a CLI tool for manual analysis and a Claude Code skill for automatic session restoration.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-session-restore](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-session-restore&username=ZENG3LD&all_stats=true&stats_only=true)
 
 </details>
 <br>

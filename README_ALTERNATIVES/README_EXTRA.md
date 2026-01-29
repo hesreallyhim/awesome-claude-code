@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/ZENG3LD/claude-session-restore"><img src="../assets/badge-claude-session-restore.svg" alt="Claude Session Restore"></a>  
+_Efficiently restore context from previous Claude Code sessions by analyzing session files and git history. Features multi-factor data collection across numerous Claude Code capacities with time-based filtering. Uses tail-based parsing for efficient handling of large session files up to 2GB. Includes both a CLI tool for manual analysis and a Claude Code skill for automatic session restoration._  
+![GitHub Stats for claude-session-restore](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-session-restore&username=ZENG3LD&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/shareAI-lab/learn-claude-code"><img src="../assets/badge-learn-claude-code.svg" alt="Learn Claude Code"></a>  
 _A really interesting analysis of how coding agents like Claude Code are designed. It attempts to break an agent down into its fundamental parts and reconstruct it with minimal code. Great learning resource. Final product is a rudimentary agent with skills, sub-agents, and a todo-list in roughly a few hundred lines of Python._  
 ![GitHub Stats for learn-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=learn-claude-code&username=shareAI-lab&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -958,6 +962,13 @@ _A tool that adds small enhancements to Claude Code._
 <a href="https://github.com/claude-did-this/claude-hub"><img src="../assets/badge-claude-hub.svg" alt="Claude Hub"></a>  
 _A webhook service that connects Claude Code to GitHub repositories, enabling AI-powered code assistance directly through pull requests and issues. This integration allows Claude to analyze repositories, answer technical questions, and help developers understand and improve their codebase through simple @mentions._  
 ![GitHub Stats for claude-hub](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-hub&username=claude-did-this&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/ZENG3LD/claude-session-restore"><img src="../assets/badge-claude-session-restore.svg" alt="Claude Session Restore"></a>  
+_Efficiently restore context from previous Claude Code sessions by analyzing session files and git history. Features multi-factor data collection across numerous Claude Code capacities with time-based filtering. Uses tail-based parsing for efficient handling of large session files up to 2GB. Includes both a CLI tool for manual analysis and a Claude Code skill for automatic session restoration._  
+![GitHub Stats for claude-session-restore](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-session-restore&username=ZENG3LD&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 
