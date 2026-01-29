@@ -62,6 +62,15 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by date creat
 <td>An elegant and user-friendly Claude Code chat interface for VS Code.</td>
 </tr>
 <tr>
+<td><a href="https://github.com/ZENG3LD/claude-session-restore"><b>Claude Session Restore</b></a><br>by <a href="https://github.com/ZENG3LD">ZENG3LD</a></td>
+<td>Tooling</td>
+<td>General</td>
+<td>Efficiently restore context from previous Claude Code sessions by analyzing session files and git history. Features multi-factor data collection across numerous Claude Code capacities with time-based filtering. Uses tail-based parsing for efficient handling of large session files up to 2GB. Includes both a CLI tool for manual analysis and a Claude Code skill for automatic session restoration.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/ZENG3LD/claude-session-restore?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ZENG3LD/claude-session-restore?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ZENG3LD/claude-session-restore?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ZENG3LD/claude-session-restore?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ZENG3LD/claude-session-restore?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ZENG3LD/claude-session-restore?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ZENG3LD/claude-session-restore?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ZENG3LD/claude-session-restore?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ZENG3LD/claude-session-restore?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/zippoxer/recall"><b>recall</b></a><br>by <a href="https://github.com/zippoxer">zippoxer</a></td>
 <td>Tooling</td>
 <td>General</td>
@@ -435,6 +444,6 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by date creat
 
 ---
 
-**Total Resources:** 42
+**Total Resources:** 43
 
-**Last Generated:** 2026-01-28
+**Last Generated:** 2026-01-29
