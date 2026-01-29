@@ -1126,9 +1126,16 @@ _Yet Another Claude Orchestrator - a collection of agents, commands, etc., for s
 <div align="center"><img src="assets/entry-separator-light-animated.svg" alt=""></div>
 
 
-<a href="https://github.com/dtormoen/tsk"><img src="assets/badge-tsk-ai-agent-task-manager-and-sandbox.svg" alt="TSK - AI Agent Task Manager and Sandbox"></a>  
-_A Rust CLI tool that lets you delegate development tasks to AI agents running in sandboxed Docker environments. Multiple agents work in parallel, returning git branches for human review._  
+<a href="https://github.com/dtormoen/tsk"><img src="assets/badge-tsk-ai-agent-task-manager-and-sandbox.svg" alt="TSK - AI Agent Task Manager and Sandbox"></a>
+_A Rust CLI tool that lets you delegate development tasks to AI agents running in sandboxed Docker environments. Multiple agents work in parallel, returning git branches for human review._
 ![GitHub Stats for tsk](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=tsk&username=dtormoen&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/agents-squads/squads-cli">**squads-cli**</a>
+_Open source CLI for AI agent coordination. Organize agents into domain-aligned squads (engineering, marketing, research) with persistent memory, goal tracking, and human-in-the-loop approval workflows. Built on Claude Code._
+![GitHub Stats for squads-cli](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=squads-cli&username=agents-squads&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="assets/entry-separator-light-animated.svg" alt=""></div>
 
