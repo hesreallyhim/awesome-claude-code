@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`/prd-generator`](https://github.com/dredozubov/prd-generator) &nbsp; by &nbsp; [Denis Redozubov](https://github.com/dredozubov)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A Claude Code plugin that generates comprehensive Product Requirements Documents (PRDs) from conversation context. Invoke `/create-prd` after discussing requirements and it produces a complete PRD with all standard sections including Executive Summary, User Stories, MVP Scope, Architecture, Success Criteria, and Implementation Phases.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for prd-generator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=prd-generator&username=dredozubov&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Claude Session Restore`](https://github.com/ZENG3LD/claude-session-restore) &nbsp; by &nbsp; [ZENG3LD](https://github.com/ZENG3LD)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT OR Apache-2.0  
 Efficiently restore context from previous Claude Code sessions by analyzing session files and git history. Features multi-factor data collection across numerous Claude Code capacities with time-based filtering. Uses tail-based parsing for efficient handling of large session files up to 2GB. Includes both a CLI tool for manual analysis and a Claude Code skill for automatic session restoration.
 
@@ -78,17 +89,6 @@ Top-notch, well-written resources covering "just about everything" from core eng
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for everything-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=everything-claude-code&username=affaan-m&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Compound Engineering Plugin`](https://github.com/EveryInc/compound-engineering-plugin) &nbsp; by &nbsp; [EveryInc](https://github.com/EveryInc)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A very pragmatic set of well-designed agents, skills, and commands, built around a discipline of turning past mistakes and errors into lessons and opportunities for future growth and improvement. Good documentation.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for compound-engineering-plugin](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=compound-engineering-plugin&username=EveryInc&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1730,6 +1730,17 @@ Implements GitHub issues with manual review points, following a structured appro
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for Narraitor](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Narraitor&username=jerseycheese&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`/prd-generator`](https://github.com/dredozubov/prd-generator) &nbsp; by &nbsp; [Denis Redozubov](https://github.com/dredozubov)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A Claude Code plugin that generates comprehensive Product Requirements Documents (PRDs) from conversation context. Invoke `/create-prd` after discussing requirements and it produces a complete PRD with all standard sections including Executive Summary, User Stories, MVP Scope, Architecture, Success Criteria, and Implementation Phases.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for prd-generator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=prd-generator&username=dredozubov&all_stats=true&stats_only=true)
 
 </details>
 <br>

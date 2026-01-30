@@ -326,6 +326,15 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/to4iki/ai-project-rules?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/to4iki/ai-project-rules?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/to4iki/ai-project-rules?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/to4iki/ai-project-rules?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/to4iki/ai-project-rules?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/to4iki/ai-project-rules?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/to4iki/ai-project-rules?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/to4iki/ai-project-rules?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/to4iki/ai-project-rules?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/dredozubov/prd-generator"><b>/prd-generator</b></a><br>by <a href="https://github.com/dredozubov">Denis Redozubov</a></td>
+<td>Slash-Commands</td>
+<td>Project & Task Management</td>
+<td>A Claude Code plugin that generates comprehensive Product Requirements Documents (PRDs) from conversation context. Invoke `/create-prd` after discussing requirements and it produces a complete PRD with all standard sections including Executive Summary, User Stories, MVP Scope, Architecture, Success Criteria, and Implementation Phases.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/dredozubov/prd-generator?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/dredozubov/prd-generator?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/dredozubov/prd-generator?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/dredozubov/prd-generator?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/dredozubov/prd-generator?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/dredozubov/prd-generator?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/dredozubov/prd-generator?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/dredozubov/prd-generator?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/dredozubov/prd-generator?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/yzyydev/AI-Engineering-Structure/blob/main/.claude/commands/prime.md"><b>/prime</b></a><br>by <a href="https://github.com/yzyydev">yzyydev</a></td>
 <td>Slash-Commands</td>
 <td>Context Loading & Priming</td>
@@ -1611,6 +1620,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 
 ---
 
-**Total Resources:** 174
+**Total Resources:** 175
 
-**Last Generated:** 2026-01-29
+**Last Generated:** 2026-01-30
