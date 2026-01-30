@@ -62,15 +62,6 @@ A flat list view of all resources. Category: **Skills** | Sorted: by last update
 <td>Members from the Signal Foundation with some really great tips and tricks on how to turn your operating system into an instrument of total surveillance, and why some companies are doing this really awesome thing. [warning: YouTube link]</td>
 </tr>
 <tr>
-<td><a href="https://github.com/affaan-m/everything-claude-code"><b>Everything Claude Code</b></a><br>by <a href="https://github.com/affaan-m/">Affaan Mustafa</a></td>
-<td>Agent Skills</td>
-<td>General</td>
-<td>Top-notch, well-written resources covering "just about everything" from core engineering domains. What's nice about this "everything-" store is most of the resources have significant standalone value and unlike some all-encompassing frameworks, although you can opt in to the author's own specific workflow patterns if you choose, the individual resources offer exemplary patterns in (just about) every Claude Code feature you can find (apologies to the Output Styles devotees).</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/affaan-m/everything-claude-code?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/affaan-m/everything-claude-code?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/affaan-m/everything-claude-code?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/affaan-m/everything-claude-code?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/affaan-m/everything-claude-code?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/affaan-m/everything-claude-code?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/affaan-m/everything-claude-code?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/affaan-m/everything-claude-code?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/affaan-m/everything-claude-code?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/trailofbits/skills"><b>Trail of Bits Security Skills</b></a><br>by <a href="https://github.com/trailofbits">Trail of Bits</a></td>
 <td>Agent Skills</td>
 <td>General</td>
@@ -78,6 +69,24 @@ A flat list view of all resources. Category: **Skills** | Sorted: by last update
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/trailofbits/skills?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/trailofbits/skills?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/trailofbits/skills?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/trailofbits/skills?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/trailofbits/skills?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/trailofbits/skills?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/trailofbits/skills?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/trailofbits/skills?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/trailofbits/skills?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/alonw0/web-asset-generator"><b>Web Assets Generator Skill</b></a><br>by <a href="https://github.com/alonw0">Alon Wolenitz</a></td>
+<td>Agent Skills</td>
+<td>General</td>
+<td>Easily generate web assets from Claude Code including favicons, app icons (PWA), and social media meta images (Open Graph) for Facebook, Twitter, WhatsApp, and LinkedIn. Handles image resizing, text-to-image generation, emojis, and provides proper HTML meta tags.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/alonw0/web-asset-generator?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/alonw0/web-asset-generator?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/alonw0/web-asset-generator?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/alonw0/web-asset-generator?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/alonw0/web-asset-generator?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/alonw0/web-asset-generator?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/alonw0/web-asset-generator?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/alonw0/web-asset-generator?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/alonw0/web-asset-generator?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/affaan-m/everything-claude-code"><b>Everything Claude Code</b></a><br>by <a href="https://github.com/affaan-m/">Affaan Mustafa</a></td>
+<td>Agent Skills</td>
+<td>General</td>
+<td>Top-notch, well-written resources covering "just about everything" from core engineering domains. What's nice about this "everything-" store is most of the resources have significant standalone value and unlike some all-encompassing frameworks, although you can opt in to the author's own specific workflow patterns if you choose, the individual resources offer exemplary patterns in (just about) every Claude Code feature you can find (apologies to the Output Styles devotees).</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/affaan-m/everything-claude-code?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/affaan-m/everything-claude-code?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/affaan-m/everything-claude-code?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/affaan-m/everything-claude-code?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/affaan-m/everything-claude-code?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/affaan-m/everything-claude-code?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/affaan-m/everything-claude-code?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/affaan-m/everything-claude-code?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/affaan-m/everything-claude-code?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/NeoLabHQ/context-engineering-kit"><b>Context Engineering Kit</b></a><br>by <a href="https://github.com/LeoVS09">Vlad Goncharov</a></td>
@@ -134,15 +143,6 @@ A flat list view of all resources. Category: **Skills** | Sorted: by last update
 <td colspan="4"><img src="https://img.shields.io/github/stars/skills-directory/skill-codex?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/skills-directory/skill-codex?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/skills-directory/skill-codex?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/skills-directory/skill-codex?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/skills-directory/skill-codex?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/skills-directory/skill-codex?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/skills-directory/skill-codex?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/skills-directory/skill-codex?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/skills-directory/skill-codex?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/alonw0/web-asset-generator"><b>Web Assets Generator Skill</b></a><br>by <a href="https://github.com/alonw0">Alon Wolenitz</a></td>
-<td>Agent Skills</td>
-<td>General</td>
-<td>Easily generate web assets from Claude Code including favicons, app icons (PWA), and social media meta images (Open Graph) for Facebook, Twitter, WhatsApp, and LinkedIn. Handles image resizing, text-to-image generation, emojis, and provides proper HTML meta tags.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/alonw0/web-asset-generator?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/alonw0/web-asset-generator?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/alonw0/web-asset-generator?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/alonw0/web-asset-generator?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/alonw0/web-asset-generator?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/alonw0/web-asset-generator?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/alonw0/web-asset-generator?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/alonw0/web-asset-generator?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/alonw0/web-asset-generator?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/dreamiurg/claude-mountaineering-skills"><b>Claude Mountaineering Skills</b></a><br>by <a href="https://github.com/dreamiurg">Dmytro Gaivoronsky</a></td>
 <td>Agent Skills</td>
 <td>General</td>
@@ -158,4 +158,4 @@ A flat list view of all resources. Category: **Skills** | Sorted: by last update
 
 **Total Resources:** 11
 
-**Last Generated:** 2026-01-29
+**Last Generated:** 2026-01-30

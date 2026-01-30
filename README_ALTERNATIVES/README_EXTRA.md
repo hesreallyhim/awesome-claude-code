@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/dredozubov/prd-generator"><img src="../assets/badge-prd-generator.svg" alt="/prd-generator"></a>  
+_A Claude Code plugin that generates comprehensive Product Requirements Documents (PRDs) from conversation context. Invoke `/create-prd` after discussing requirements and it produces a complete PRD with all standard sections including Executive Summary, User Stories, MVP Scope, Architecture, Success Criteria, and Implementation Phases._  
+![GitHub Stats for prd-generator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=prd-generator&username=dredozubov&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/ZENG3LD/claude-session-restore"><img src="../assets/badge-claude-session-restore.svg" alt="Claude Session Restore"></a>  
 _Efficiently restore context from previous Claude Code sessions by analyzing session files and git history. Features multi-factor data collection across numerous Claude Code capacities with time-based filtering. Uses tail-based parsing for efficient handling of large session files up to 2GB. Includes both a CLI tool for manual analysis and a Claude Code skill for automatic session restoration._  
 ![GitHub Stats for claude-session-restore](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-session-restore&username=ZENG3LD&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -201,10 +205,6 @@ _Members from the Signal Foundation with some really great tips and tricks on ho
 <a href="https://github.com/affaan-m/everything-claude-code"><img src="../assets/badge-everything-claude-code.svg" alt="Everything Claude Code"></a>  
 _Top-notch, well-written resources covering "just about everything" from core engineering domains. What's nice about this "everything-" store is most of the resources have significant standalone value and unlike some all-encompassing frameworks, although you can opt in to the author's own specific workflow patterns if you choose, the individual resources offer exemplary patterns in (just about) every Claude Code feature you can find (apologies to the Output Styles devotees)._  
 ![GitHub Stats for everything-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=everything-claude-code&username=affaan-m&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/EveryInc/compound-engineering-plugin"><img src="../assets/badge-compound-engineering-plugin.svg" alt="Compound Engineering Plugin"></a>  
-_A very pragmatic set of well-designed agents, skills, and commands, built around a discipline of turning past mistakes and errors into lessons and opportunities for future growth and improvement. Good documentation._  
-![GitHub Stats for compound-engineering-plugin](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=compound-engineering-plugin&username=EveryInc&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 
 <br>
@@ -1737,6 +1737,13 @@ _Creates product requirement plans by reading PRP methodology, following templat
 <a href="https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/do-issue.md"><img src="../assets/badge-do-issue.svg" alt="/do-issue"></a>  
 _Implements GitHub issues with manual review points, following a structured approach with issue number parameter and offering alternative automated mode for efficiency._  
 ![GitHub Stats for Narraitor](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Narraitor&username=jerseycheese&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/dredozubov/prd-generator"><img src="../assets/badge-prd-generator.svg" alt="/prd-generator"></a>  
+_A Claude Code plugin that generates comprehensive Product Requirements Documents (PRDs) from conversation context. Invoke `/create-prd` after discussing requirements and it produces a complete PRD with all standard sections including Executive Summary, User Stories, MVP Scope, Architecture, Success Criteria, and Implementation Phases._  
+![GitHub Stats for prd-generator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=prd-generator&username=dredozubov&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 

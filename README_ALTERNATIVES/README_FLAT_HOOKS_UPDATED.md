@@ -56,6 +56,15 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by last updated
 </thead>
 <tbody>
 <tr>
+<td><a href="https://github.com/backnotprop/plannotator"><b>Plannotator</b></a><br>by <a href="https://github.com/backnotprop">backnotprop</a></td>
+<td>Hooks</td>
+<td>-</td>
+<td>Interactive plan review UI that intercepts ExitPlanMode via hooks, letting users visually annotate plans with comments, deletions, and replacements before approving or denying with detailed feedback.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/backnotprop/plannotator?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/backnotprop/plannotator?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/backnotprop/plannotator?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/backnotprop/plannotator?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/backnotprop/plannotator?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/backnotprop/plannotator?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/backnotprop/plannotator?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/backnotprop/plannotator?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/backnotprop/plannotator?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/aannoo/claude-hook-comms"><b>Claude Code Hook Comms (HCOM)</b></a><br>by <a href="https://github.com/aannoo">aannoo</a></td>
 <td>Hooks</td>
 <td>General</td>
@@ -72,15 +81,6 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by last updated
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/nizos/tdd-guard?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/nizos/tdd-guard?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/nizos/tdd-guard?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/nizos/tdd-guard?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/nizos/tdd-guard?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/nizos/tdd-guard?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/nizos/tdd-guard?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/nizos/tdd-guard?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/nizos/tdd-guard?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/backnotprop/plannotator"><b>Plannotator</b></a><br>by <a href="https://github.com/backnotprop">backnotprop</a></td>
-<td>Hooks</td>
-<td>-</td>
-<td>Interactive plan review UI that intercepts ExitPlanMode via hooks, letting users visually annotate plans with comments, deletions, and replacements before approving or denying with detailed feedback.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/backnotprop/plannotator?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/backnotprop/plannotator?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/backnotprop/plannotator?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/backnotprop/plannotator?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/backnotprop/plannotator?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/backnotprop/plannotator?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/backnotprop/plannotator?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/backnotprop/plannotator?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/backnotprop/plannotator?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/Talieisin/britfix"><b>Britfix</b></a><br>by <a href="https://github.com/Talieisin">Talieisin</a></td>
@@ -152,4 +152,4 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by last updated
 
 **Total Resources:** 10
 
-**Last Generated:** 2026-01-29
+**Last Generated:** 2026-01-30
