@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/akin-ozer/cc-devops-skills"><img src="../assets/badge-cc-devops-skills.svg" alt="cc-devops-skills"></a>  
+_Immensely detailed set of skills for DevOps Engineers (or anyone who has to deploy code, really). Works with validations, generators, shell scripts and CLI tools to create high quality IaC code for about any platform you've ever struggled painfully to work with. Worth downloading even just as a source of documentation._  
+![GitHub Stats for cc-devops-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=cc-devops-skills&username=akin-ozer&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/dredozubov/prd-generator"><img src="../assets/badge-prd-generator.svg" alt="/prd-generator"></a>  
 _A Claude Code plugin that generates comprehensive Product Requirements Documents (PRDs) from conversation context. Invoke `/create-prd` after discussing requirements and it produces a complete PRD with all standard sections including Executive Summary, User Stories, MVP Scope, Architecture, Success Criteria, and Implementation Phases._  
 ![GitHub Stats for prd-generator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=prd-generator&username=dredozubov&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -544,6 +548,13 @@ _Top-notch, well-written resources covering "just about everything" from core en
 
 <a href="https://youtu.be/0ANECpNdt-4"><img src="../assets/badge-ai-agent-ai-spy.svg" alt="AI Agent, AI Spy"></a>  
 _Members from the Signal Foundation with some really great tips and tricks on how to turn your operating system into an instrument of total surveillance, and why some companies are doing this really awesome thing. [warning: YouTube link]_
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/akin-ozer/cc-devops-skills"><img src="../assets/badge-cc-devops-skills.svg" alt="cc-devops-skills"></a>  
+_Immensely detailed set of skills for DevOps Engineers (or anyone who has to deploy code, really). Works with validations, generators, shell scripts and CLI tools to create high quality IaC code for about any platform you've ever struggled painfully to work with. Worth downloading even just as a source of documentation._  
+![GitHub Stats for cc-devops-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=cc-devops-skills&username=akin-ozer&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 
