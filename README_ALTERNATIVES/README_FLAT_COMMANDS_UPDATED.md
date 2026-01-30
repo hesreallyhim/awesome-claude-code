@@ -56,24 +56,6 @@ A flat list view of all resources. Category: **Commands** | Sorted: by last upda
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/giselles-ai/giselle/blob/main/.claude/commands/update-branch-name.md"><b>/update-branch-name</b></a><br>by <a href="https://github.com/giselles-ai">giselles-ai</a></td>
-<td>Slash-Commands</td>
-<td>Version Control & Git</td>
-<td>Updates branch names with proper prefixes and formats, enforcing naming conventions, supporting semantic prefixes, and managing remote branch updates.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/giselles-ai/giselle?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/giselles-ai/giselle?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/giselles-ai/giselle?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/giselles-ai/giselle?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/giselles-ai/giselle?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/giselles-ai/giselle?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/giselles-ai/giselle?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/giselles-ai/giselle?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/giselles-ai/giselle?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/ethpandaops/xatu-data/blob/master/.claude/commands/load-llms-txt.md"><b>/load-llms-txt</b></a><br>by <a href="https://github.com/ethpandaops">ethpandaops</a></td>
-<td>Slash-Commands</td>
-<td>Context Loading & Priming</td>
-<td>Loads LLM configuration files to context, importing specific terminology, model configurations, and establishing baseline terminology for AI discussions.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/ethpandaops/xatu-data?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ethpandaops/xatu-data?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ethpandaops/xatu-data?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ethpandaops/xatu-data?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ethpandaops/xatu-data?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ethpandaops/xatu-data?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ethpandaops/xatu-data?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ethpandaops/xatu-data?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ethpandaops/xatu-data?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/metabase/metabase/blob/master/.claude/commands/fix-issue.md"><b>/fix-issue</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
 <td>Slash-Commands</td>
 <td>Version Control & Git</td>
@@ -92,15 +74,6 @@ A flat list view of all resources. Category: **Commands** | Sorted: by last upda
 <td colspan="4"><img src="https://img.shields.io/github/stars/metabase/metabase?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/metabase/metabase?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/metabase/metabase?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/metabase/metabase?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/metabase/metabase?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/metabase/metabase?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/metabase/metabase?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/metabase/metabase?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/metabase/metabase?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/zuplo/docs/blob/main/.claude/commands/use-stepper.md"><b>/use-stepper</b></a><br>by <a href="https://github.com/zuplo">zuplo</a></td>
-<td>Slash-Commands</td>
-<td>Miscellaneous</td>
-<td>Reformats documentation to use React Stepper component, transforming heading formats, applying proper indentation, and maintaining markdown compatibility with admonition formatting.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/zuplo/docs?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/zuplo/docs?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/zuplo/docs?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/zuplo/docs?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/zuplo/docs?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/zuplo/docs?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/zuplo/docs?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/zuplo/docs?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/zuplo/docs?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/GaloyMoney/lana-bank/blob/main/.claude/commands/mermaid.md"><b>/mermaid</b></a><br>by <a href="https://github.com/GaloyMoney">GaloyMoney</a></td>
 <td>Slash-Commands</td>
 <td>Miscellaneous</td>
@@ -108,6 +81,33 @@ A flat list view of all resources. Category: **Commands** | Sorted: by last upda
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/GaloyMoney/lana-bank?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/GaloyMoney/lana-bank?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/GaloyMoney/lana-bank?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/GaloyMoney/lana-bank?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/GaloyMoney/lana-bank?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/GaloyMoney/lana-bank?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/GaloyMoney/lana-bank?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/GaloyMoney/lana-bank?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/GaloyMoney/lana-bank?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ethpandaops/xatu-data/blob/master/.claude/commands/load-llms-txt.md"><b>/load-llms-txt</b></a><br>by <a href="https://github.com/ethpandaops">ethpandaops</a></td>
+<td>Slash-Commands</td>
+<td>Context Loading & Priming</td>
+<td>Loads LLM configuration files to context, importing specific terminology, model configurations, and establishing baseline terminology for AI discussions.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/ethpandaops/xatu-data?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ethpandaops/xatu-data?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ethpandaops/xatu-data?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ethpandaops/xatu-data?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ethpandaops/xatu-data?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ethpandaops/xatu-data?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ethpandaops/xatu-data?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ethpandaops/xatu-data?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ethpandaops/xatu-data?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/giselles-ai/giselle/blob/main/.claude/commands/update-branch-name.md"><b>/update-branch-name</b></a><br>by <a href="https://github.com/giselles-ai">giselles-ai</a></td>
+<td>Slash-Commands</td>
+<td>Version Control & Git</td>
+<td>Updates branch names with proper prefixes and formats, enforcing naming conventions, supporting semantic prefixes, and managing remote branch updates.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/giselles-ai/giselle?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/giselles-ai/giselle?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/giselles-ai/giselle?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/giselles-ai/giselle?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/giselles-ai/giselle?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/giselles-ai/giselle?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/giselles-ai/giselle?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/giselles-ai/giselle?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/giselles-ai/giselle?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/zuplo/docs/blob/main/.claude/commands/use-stepper.md"><b>/use-stepper</b></a><br>by <a href="https://github.com/zuplo">zuplo</a></td>
+<td>Slash-Commands</td>
+<td>Miscellaneous</td>
+<td>Reformats documentation to use React Stepper component, transforming heading formats, applying proper indentation, and maintaining markdown compatibility with admonition formatting.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/zuplo/docs?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/zuplo/docs?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/zuplo/docs?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/zuplo/docs?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/zuplo/docs?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/zuplo/docs?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/zuplo/docs?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/zuplo/docs?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/zuplo/docs?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/hesreallyhim/inkverse-fork/blob/preserve-claude-resources/.claude/commands/create-plan.md"><b>/create-plan</b></a><br>by <a href="https://github.com/taddyorg">taddyorg</a></td>

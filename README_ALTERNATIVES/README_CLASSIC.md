@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`cc-devops-skills`](https://github.com/akin-ozer/cc-devops-skills) &nbsp; by &nbsp; [akin-ozer](https://github.com/akin-ozer)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
+Immensely detailed set of skills for DevOps Engineers (or anyone who has to deploy code, really). Works with validations, generators, shell scripts and CLI tools to create high quality IaC code for about any platform you've ever struggled painfully to work with. Worth downloading even just as a source of documentation.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for cc-devops-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=cc-devops-skills&username=akin-ozer&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`/prd-generator`](https://github.com/dredozubov/prd-generator) &nbsp; by &nbsp; [Denis Redozubov](https://github.com/dredozubov)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A Claude Code plugin that generates comprehensive Product Requirements Documents (PRDs) from conversation context. Invoke `/create-prd` after discussing requirements and it produces a complete PRD with all standard sections including Executive Summary, User Stories, MVP Scope, Architecture, Success Criteria, and Implementation Phases.
 
@@ -186,6 +197,17 @@ Top-notch, well-written resources covering "just about everything" from core eng
 
 [`AI Agent, AI Spy`](https://youtu.be/0ANECpNdt-4) &nbsp; by &nbsp; [Whittaker & Tiwari](https://signalfoundation.org/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;No License / Not Specified  
 Members from the Signal Foundation with some really great tips and tricks on how to turn your operating system into an instrument of total surveillance, and why some companies are doing this really awesome thing. [warning: YouTube link]
+
+[`cc-devops-skills`](https://github.com/akin-ozer/cc-devops-skills) &nbsp; by &nbsp; [akin-ozer](https://github.com/akin-ozer)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
+Immensely detailed set of skills for DevOps Engineers (or anyone who has to deploy code, really). Works with validations, generators, shell scripts and CLI tools to create high quality IaC code for about any platform you've ever struggled painfully to work with. Worth downloading even just as a source of documentation.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for cc-devops-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=cc-devops-skills&username=akin-ozer&all_stats=true&stats_only=true)
+
+</details>
+<br>
 
 [`Claude Codex Settings`](https://github.com/fcakyon/claude-codex-settings) &nbsp; by &nbsp; [fatih akyon](https://github.com/fcakyon)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
 A well-organized, well-written set of plugins covering core developer activities, such as working with common cloud platforms like GitHub, Azure, MongoDB, and popular services such as Tavily, Playwright, and more. Clear, not overly-opinionated, and compatible with a few other providers.

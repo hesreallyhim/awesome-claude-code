@@ -56,15 +56,6 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by last upd
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/giselles-ai/giselle/blob/main/CLAUDE.md"><b>Giselle</b></a><br>by <a href="https://github.com/giselles-ai">giselles-ai</a></td>
-<td>CLAUDE.md Files</td>
-<td>Language-Specific</td>
-<td>Provides detailed build and test commands using pnpm and Vitest with strict code formatting requirements and comprehensive naming conventions for code consistency.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/giselles-ai/giselle?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/giselles-ai/giselle?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/giselles-ai/giselle?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/giselles-ai/giselle?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/giselles-ai/giselle?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/giselles-ai/giselle?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/giselles-ai/giselle?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/giselles-ai/giselle?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/giselles-ai/giselle?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/hesreallyhim/awesome-claude-code/blob/main/resources/claude.md-files/EDSL/CLAUDE.md"><b>EDSL</b></a><br>by <a href="https://github.com/expectedparrot">expectedparrot</a></td>
 <td>CLAUDE.md Files</td>
 <td>Language-Specific</td>
@@ -74,15 +65,6 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by last upd
 <td colspan="4"><img src="https://img.shields.io/github/stars/hesreallyhim/awesome-claude-code?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/hesreallyhim/awesome-claude-code?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/hesreallyhim/awesome-claude-code?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/hesreallyhim/awesome-claude-code?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/hesreallyhim/awesome-claude-code?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/hesreallyhim/awesome-claude-code?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/hesreallyhim/awesome-claude-code?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/hesreallyhim/awesome-claude-code?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/hesreallyhim/awesome-claude-code?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/basicmachines-co/basic-memory/blob/main/CLAUDE.md"><b>Basic Memory</b></a><br>by <a href="https://github.com/basicmachines-co">basicmachines-co</a></td>
-<td>CLAUDE.md Files</td>
-<td>Project Scaffolding & MCP</td>
-<td>Presents an innovative AI-human collaboration framework with Model Context Protocol for bidirectional LLM-markdown communication and flexible knowledge structure for complex projects.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/basicmachines-co/basic-memory?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/basicmachines-co/basic-memory?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/basicmachines-co/basic-memory?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/basicmachines-co/basic-memory?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/basicmachines-co/basic-memory?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/basicmachines-co/basic-memory?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/basicmachines-co/basic-memory?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/basicmachines-co/basic-memory?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/basicmachines-co/basic-memory?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/metabase/metabase/blob/master/CLAUDE.md"><b>Metabase</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
 <td>CLAUDE.md Files</td>
 <td>Language-Specific</td>
@@ -90,6 +72,24 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by last upd
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/metabase/metabase?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/metabase/metabase?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/metabase/metabase?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/metabase/metabase?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/metabase/metabase?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/metabase/metabase?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/metabase/metabase?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/metabase/metabase?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/metabase/metabase?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/spylang/spy/blob/main/CLAUDE.md"><b>SPy</b></a><br>by <a href="https://github.com/spylang">spylang</a></td>
+<td>CLAUDE.md Files</td>
+<td>Language-Specific</td>
+<td>Enforces strict coding conventions with comprehensive testing guidelines, multiple code compilation options, and backend-specific test decorators for targeted filtering.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/spylang/spy?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/spylang/spy?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/spylang/spy?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/spylang/spy?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/spylang/spy?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/spylang/spy?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/spylang/spy?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/spylang/spy?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/spylang/spy?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/sgcarstrends/backend/blob/main/CLAUDE.md"><b>SG Cars Trends Backend</b></a><br>by <a href="https://github.com/sgcarstrends">sgcarstrends</a></td>
+<td>CLAUDE.md Files</td>
+<td>Language-Specific</td>
+<td>Provides comprehensive structure for TypeScript monorepo projects with detailed commands for development, testing, deployment, and AWS/Cloudflare integration.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/sgcarstrends/backend?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/sgcarstrends/backend?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/sgcarstrends/backend?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/sgcarstrends/backend?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/sgcarstrends/backend?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/sgcarstrends/backend?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/sgcarstrends/backend?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/sgcarstrends/backend?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/sgcarstrends/backend?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/badass-courses/course-builder/blob/main/CLAUDE.md"><b>Course Builder</b></a><br>by <a href="https://github.com/badass-courses">badass-courses</a></td>
@@ -110,22 +110,22 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by last upd
 <td colspan="4"><img src="https://img.shields.io/github/stars/hashintel/hash?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/hashintel/hash?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/hashintel/hash?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/hashintel/hash?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/hashintel/hash?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/hashintel/hash?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/hashintel/hash?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/hashintel/hash?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/hashintel/hash?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/sgcarstrends/backend/blob/main/CLAUDE.md"><b>SG Cars Trends Backend</b></a><br>by <a href="https://github.com/sgcarstrends">sgcarstrends</a></td>
+<td><a href="https://github.com/giselles-ai/giselle/blob/main/CLAUDE.md"><b>Giselle</b></a><br>by <a href="https://github.com/giselles-ai">giselles-ai</a></td>
 <td>CLAUDE.md Files</td>
 <td>Language-Specific</td>
-<td>Provides comprehensive structure for TypeScript monorepo projects with detailed commands for development, testing, deployment, and AWS/Cloudflare integration.</td>
+<td>Provides detailed build and test commands using pnpm and Vitest with strict code formatting requirements and comprehensive naming conventions for code consistency.</td>
 </tr>
 <tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/sgcarstrends/backend?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/sgcarstrends/backend?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/sgcarstrends/backend?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/sgcarstrends/backend?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/sgcarstrends/backend?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/sgcarstrends/backend?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/sgcarstrends/backend?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/sgcarstrends/backend?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/sgcarstrends/backend?style=flat-square" alt="license"></td>
+<td colspan="4"><img src="https://img.shields.io/github/stars/giselles-ai/giselle?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/giselles-ai/giselle?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/giselles-ai/giselle?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/giselles-ai/giselle?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/giselles-ai/giselle?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/giselles-ai/giselle?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/giselles-ai/giselle?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/giselles-ai/giselle?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/giselles-ai/giselle?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/spylang/spy/blob/main/CLAUDE.md"><b>SPy</b></a><br>by <a href="https://github.com/spylang">spylang</a></td>
+<td><a href="https://github.com/basicmachines-co/basic-memory/blob/main/CLAUDE.md"><b>Basic Memory</b></a><br>by <a href="https://github.com/basicmachines-co">basicmachines-co</a></td>
 <td>CLAUDE.md Files</td>
-<td>Language-Specific</td>
-<td>Enforces strict coding conventions with comprehensive testing guidelines, multiple code compilation options, and backend-specific test decorators for targeted filtering.</td>
+<td>Project Scaffolding & MCP</td>
+<td>Presents an innovative AI-human collaboration framework with Model Context Protocol for bidirectional LLM-markdown communication and flexible knowledge structure for complex projects.</td>
 </tr>
 <tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/spylang/spy?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/spylang/spy?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/spylang/spy?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/spylang/spy?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/spylang/spy?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/spylang/spy?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/spylang/spy?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/spylang/spy?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/spylang/spy?style=flat-square" alt="license"></td>
+<td colspan="4"><img src="https://img.shields.io/github/stars/basicmachines-co/basic-memory?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/basicmachines-co/basic-memory?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/basicmachines-co/basic-memory?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/basicmachines-co/basic-memory?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/basicmachines-co/basic-memory?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/basicmachines-co/basic-memory?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/basicmachines-co/basic-memory?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/basicmachines-co/basic-memory?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/basicmachines-co/basic-memory?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/langchain-ai/langgraphjs/blob/main/CLAUDE.md"><b>LangGraphJS</b></a><br>by <a href="https://github.com/langchain-ai">langchain-ai</a></td>
