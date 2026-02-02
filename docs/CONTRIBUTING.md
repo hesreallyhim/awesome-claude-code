@@ -21,6 +21,11 @@ First, make sure you've read the above information. Second, make sure you've rea
 
 That's it! Just click the link above and fill out the form. You don't even need to use git. (And please don't open a PR for this.)
 
+> [!Warning]
+> It is **not** possible to submit a resource recommendation using the `gh` CLI.
+
+Resource recommendations must be created by human beings.
+
 ### The Recommendation Process
 
 The entire recommendation process is managed via automation - even the maintainer does not use PRs to add entries to the list. The bot is really good at it. Here's what happens when you submit a resource for recommendation:
