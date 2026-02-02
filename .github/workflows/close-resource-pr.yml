@@ -1,0 +1,154 @@
+name: Close Resource Submission PRs
+
+on:
+  pull_request_target:
+    types: [opened]
+
+jobs:
+  detect-and-close:
+    name: Detect Resource Submission PR
+    runs-on: ubuntu-latest
+
+    # Skip PRs from bots (GitHub Actions bot, Dependabot, etc.)
+    if: github.event.pull_request.user.type != 'Bot'
+
+    permissions:
+      pull-requests: write
+
+    steps:
+      - name: Check if PR is a resource submission
+        id: detect
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = context.payload.pull_request.title || '';
+            const body = context.payload.pull_request.body || '';
+            const combined = `${title}\n${body}`.toLowerCase();
+
+            // ── High-signal title patterns ──────────────────────────
+            const highSignalTitlePatterns = [
+              // "Add [resource]: My Tool" or "Add [resource]: My Tool to Hooks"
+              /^add\s*\[resource\]\s*:/i,
+              // "[Resource]: My Tool"
+              /^\[resource\]\s*:/i,
+              // "Add <name> to <section>" (common PR title for list additions)
+              /^add\s+.+\s+to\s+(slash.?commands?|hooks?|claude\.?md|tooling|skills?|agent|mcp|plugins?|workflows?|status.?lines?)/i,
+            ];
+
+            let titleHighSignal = false;
+            for (const pattern of highSignalTitlePatterns) {
+              if (pattern.test(title)) {
+                titleHighSignal = true;
+                console.log(`High-signal title match: ${pattern}`);
+                break;
+              }
+            }
+
+            // ── Body phrase patterns (medium signal) ────────────────
+            const bodyPhrases = [
+              /add(ing)?\s+(a\s+)?(new\s+)?resource/i,
+              /submit(ting)?\s+(a\s+)?resource/i,
+              /resource\s+(submission|recommendation)/i,
+              /please\s+add\s+(this|my)/i,
+              /adding\s+.+\s+to\s+the\s+(list|awesome\s+list)/i,
+              /new\s+entry\s+(for|in)\s+/i,
+              /recommend(ing)?\s+(this|a)\s+(tool|resource|project)/i,
+            ];
+
+            let bodyMatchCount = 0;
+            for (const pattern of bodyPhrases) {
+              if (pattern.test(combined)) {
+                bodyMatchCount++;
+                console.log(`Body phrase match: ${pattern}`);
+              }
+            }
+
+            // ── CSV / README file changes (very high signal) ────────
+            // Check if the PR touches THE_RESOURCES_TABLE.csv or README.md
+            const files = await github.rest.pulls.listFiles({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number,
+              per_page: 50,
+            });
+
+            let touchesResourceFiles = false;
+            for (const file of files.data) {
+              if (
+                file.filename === 'THE_RESOURCES_TABLE.csv' ||
+                file.filename === 'README.md' ||
+                file.filename.startsWith('README_ALTERNATIVES/')
+              ) {
+                touchesResourceFiles = true;
+                console.log(`Touches resource file: ${file.filename}`);
+                break;
+              }
+            }
+
+            // ── Decision logic ──────────────────────────────────────
+            // High-signal title alone is enough
+            // Body phrases + resource file changes is enough
+            // 2+ body phrase matches is enough
+            const isResourceSubmission =
+              titleHighSignal ||
+              (bodyMatchCount >= 1 && touchesResourceFiles) ||
+              bodyMatchCount >= 2;
+
+            console.log(`Title high signal: ${titleHighSignal}`);
+            console.log(`Body match count: ${bodyMatchCount}`);
+            console.log(`Touches resource files: ${touchesResourceFiles}`);
+            console.log(`Is resource submission: ${isResourceSubmission}`);
+
+            core.setOutput('is_resource_submission', isResourceSubmission.toString());
+
+      - name: Post comment and close PR
+        if: steps.detect.outputs.is_resource_submission == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr_number = context.payload.pull_request.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const templateUrl = `https://github.com/${owner}/${repo}/issues/new?template=recommend-resource.yml`;
+            const contributingUrl = `https://github.com/${owner}/${repo}/blob/main/docs/CONTRIBUTING.md`;
+
+            const body = [
+              '## ⚠️ Resource submissions are not accepted via pull request',
+              '',
+              'Thank you for your interest in contributing to Awesome Claude Code!',
+              '',
+              'However, resource recommendations **must** be submitted through our issue template, not as a pull request. The entire resource pipeline — validation, review, and merging — is managed by automation. Even the maintainer does not use PRs to add entries to the list.',
+              '',
+              '**To submit your resource correctly:**',
+              '',
+              `1. 📖 Read the [CONTRIBUTING.md](${contributingUrl}) document`,
+              `2. 📝 [Submit your resource using the official template](${templateUrl})`,
+              '3. ✅ The bot will validate your submission automatically',
+              '4. 👀 A maintainer will review it once validation passes',
+              '',
+              'If this PR is **not** a resource submission (e.g., it\'s a bug fix or improvement), please comment below and we\'ll reopen it.',
+              '',
+              '---',
+              '*This PR has been automatically closed.*',
+            ].join('\n');
+
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: pr_number,
+              body,
+            });
+
+            await github.rest.pulls.update({
+              owner,
+              repo,
+              pull_number: pr_number,
+              state: 'closed',
+            });
+
+            await github.rest.issues.addLabels({
+              owner,
+              repo,
+              issue_number: pr_number,
+              labels: ['needs-template'],
+            });
