@@ -347,6 +347,7 @@ Claude Code is a CLI-based coding assistant from [Anthropic](https://www.anthrop
 
 ### General
 
+- [AdaL](https://sylph.ai/) by [SylphAI](https://sylph.ai/) - Self-evolving AI coding agent that lets models collaborate. Runs locally, keeps code private, and learns your codebase patterns. Built on open-source AdalFlow.
 - [Claudable](https://github.com/opactorai/Claudable) by [Ethan Park](https://www.linkedin.com/in/seongil-park/) - Claudable is an open-source web builder that leverages local CLI agents, such as Claude Code and Cursor Agent, to build and deploy products effortlessly.
 - [Omnara](https://github.com/omnara-ai/omnara) by [Ishaan Sehgal](https://github.com/ishaansehgal99) - A command center for AI agents that syncs Claude Code sessions across terminal, web, and mobile. Allows for remote monitoring, human-in-the-loop interaction, and team collaboration.
 
