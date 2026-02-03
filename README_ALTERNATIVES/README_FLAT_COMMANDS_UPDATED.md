@@ -56,22 +56,13 @@ A flat list view of all resources. Category: **Commands** | Sorted: by last upda
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/metabase/metabase/blob/master/.claude/commands/fix-issue.md"><b>/fix-issue</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
+<td><a href="https://github.com/giselles-ai/giselle/blob/main/.claude/commands/update-branch-name.md"><b>/update-branch-name</b></a><br>by <a href="https://github.com/giselles-ai">giselles-ai</a></td>
 <td>Slash-Commands</td>
 <td>Version Control & Git</td>
-<td>Addresses GitHub issues by taking issue number as parameter, analyzing context, implementing solution, and testing/validating the fix for proper integration.</td>
+<td>Updates branch names with proper prefixes and formats, enforcing naming conventions, supporting semantic prefixes, and managing remote branch updates.</td>
 </tr>
 <tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/metabase/metabase?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/metabase/metabase?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/metabase/metabase?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/metabase/metabase?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/metabase/metabase?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/metabase/metabase?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/metabase/metabase?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/metabase/metabase?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/metabase/metabase?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/metabase/metabase/blob/master/.claude/commands/fix-pr.md"><b>/fix-pr</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
-<td>Slash-Commands</td>
-<td>Version Control & Git</td>
-<td>Fetches and fixes unresolved PR comments by automatically retrieving feedback, addressing reviewer concerns, making targeted code improvements, and streamlining the review process.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/metabase/metabase?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/metabase/metabase?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/metabase/metabase?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/metabase/metabase?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/metabase/metabase?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/metabase/metabase?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/metabase/metabase?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/metabase/metabase?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/metabase/metabase?style=flat-square" alt="license"></td>
+<td colspan="4"><img src="https://img.shields.io/github/stars/giselles-ai/giselle?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/giselles-ai/giselle?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/giselles-ai/giselle?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/giselles-ai/giselle?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/giselles-ai/giselle?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/giselles-ai/giselle?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/giselles-ai/giselle?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/giselles-ai/giselle?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/giselles-ai/giselle?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/GaloyMoney/lana-bank/blob/main/.claude/commands/mermaid.md"><b>/mermaid</b></a><br>by <a href="https://github.com/GaloyMoney">GaloyMoney</a></td>
@@ -92,13 +83,94 @@ A flat list view of all resources. Category: **Commands** | Sorted: by last upda
 <td colspan="4"><img src="https://img.shields.io/github/stars/ethpandaops/xatu-data?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ethpandaops/xatu-data?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ethpandaops/xatu-data?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ethpandaops/xatu-data?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ethpandaops/xatu-data?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ethpandaops/xatu-data?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ethpandaops/xatu-data?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ethpandaops/xatu-data?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ethpandaops/xatu-data?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/giselles-ai/giselle/blob/main/.claude/commands/update-branch-name.md"><b>/update-branch-name</b></a><br>by <a href="https://github.com/giselles-ai">giselles-ai</a></td>
+<td><a href="https://github.com/metabase/metabase/blob/master/.claude/commands/fix-issue.md"><b>/fix-issue</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
 <td>Slash-Commands</td>
 <td>Version Control & Git</td>
-<td>Updates branch names with proper prefixes and formats, enforcing naming conventions, supporting semantic prefixes, and managing remote branch updates.</td>
+<td>Addresses GitHub issues by taking issue number as parameter, analyzing context, implementing solution, and testing/validating the fix for proper integration.</td>
 </tr>
 <tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/giselles-ai/giselle?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/giselles-ai/giselle?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/giselles-ai/giselle?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/giselles-ai/giselle?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/giselles-ai/giselle?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/giselles-ai/giselle?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/giselles-ai/giselle?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/giselles-ai/giselle?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/giselles-ai/giselle?style=flat-square" alt="license"></td>
+<td colspan="4"><img src="https://img.shields.io/github/stars/metabase/metabase?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/metabase/metabase?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/metabase/metabase?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/metabase/metabase?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/metabase/metabase?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/metabase/metabase?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/metabase/metabase?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/metabase/metabase?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/metabase/metabase?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/metabase/metabase/blob/master/.claude/commands/fix-pr.md"><b>/fix-pr</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
+<td>Slash-Commands</td>
+<td>Version Control & Git</td>
+<td>Fetches and fixes unresolved PR comments by automatically retrieving feedback, addressing reviewer concerns, making targeted code improvements, and streamlining the review process.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/metabase/metabase?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/metabase/metabase?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/metabase/metabase?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/metabase/metabase?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/metabase/metabase?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/metabase/metabase?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/metabase/metabase?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/metabase/metabase?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/metabase/metabase?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/analyze-issue.md"><b>/analyze-issue</b></a><br>by <a href="https://github.com/jerseycheese">jerseycheese</a></td>
+<td>Slash-Commands</td>
+<td>Version Control & Git</td>
+<td>Fetches GitHub issue details to create comprehensive implementation specifications, analyzing requirements and planning structured approach with clear implementation steps.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/jerseycheese/Narraitor?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/jerseycheese/Narraitor?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/jerseycheese/Narraitor?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jerseycheese/Narraitor?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/jerseycheese/Narraitor?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/jerseycheese/Narraitor?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jerseycheese/Narraitor?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/jerseycheese/Narraitor?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/jerseycheese/Narraitor?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/tdd-implement.md"><b>/tdd-implement</b></a><br>by <a href="https://github.com/jerseycheese">jerseycheese</a></td>
+<td>Slash-Commands</td>
+<td>Code Analysis & Testing</td>
+<td>Implements Test-Driven Development by analyzing feature requirements, creating tests first (red), implementing minimal passing code (green), and refactoring while maintaining tests.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/jerseycheese/Narraitor?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/jerseycheese/Narraitor?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/jerseycheese/Narraitor?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jerseycheese/Narraitor?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/jerseycheese/Narraitor?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/jerseycheese/Narraitor?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jerseycheese/Narraitor?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/jerseycheese/Narraitor?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/jerseycheese/Narraitor?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/create-docs.md"><b>/create-docs</b></a><br>by <a href="https://github.com/jerseycheese">jerseycheese</a></td>
+<td>Slash-Commands</td>
+<td>Documentation & Changelogs</td>
+<td>Analyzes code structure and purpose to create comprehensive documentation detailing inputs/outputs, behavior, user interaction flows, and edge cases with error handling.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/jerseycheese/Narraitor?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/jerseycheese/Narraitor?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/jerseycheese/Narraitor?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jerseycheese/Narraitor?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/jerseycheese/Narraitor?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/jerseycheese/Narraitor?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jerseycheese/Narraitor?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/jerseycheese/Narraitor?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/jerseycheese/Narraitor?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/do-issue.md"><b>/do-issue</b></a><br>by <a href="https://github.com/jerseycheese">jerseycheese</a></td>
+<td>Slash-Commands</td>
+<td>Project & Task Management</td>
+<td>Implements GitHub issues with manual review points, following a structured approach with issue number parameter and offering alternative automated mode for efficiency.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/jerseycheese/Narraitor?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/jerseycheese/Narraitor?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/jerseycheese/Narraitor?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jerseycheese/Narraitor?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/jerseycheese/Narraitor?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/jerseycheese/Narraitor?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jerseycheese/Narraitor?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/jerseycheese/Narraitor?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/jerseycheese/Narraitor?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/evmts/tevm-monorepo/blob/main/.claude/commands/commit.md"><b>/commit</b></a><br>by <a href="https://github.com/evmts">evmts</a></td>
+<td>Slash-Commands</td>
+<td>Version Control & Git</td>
+<td>Creates git commits using conventional commit format with appropriate emojis, following project standards and creating descriptive messages that explain the purpose of changes.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/evmts/tevm-monorepo?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/evmts/tevm-monorepo?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/evmts/tevm-monorepo?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/evmts/tevm-monorepo?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/evmts/tevm-monorepo?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/evmts/tevm-monorepo?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/evmts/tevm-monorepo?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/evmts/tevm-monorepo?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/evmts/tevm-monorepo?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/evmts/tevm-monorepo/blob/main/.claude/commands/create-worktrees.md"><b>/create-worktrees</b></a><br>by <a href="https://github.com/evmts">evmts</a></td>
+<td>Slash-Commands</td>
+<td>Version Control & Git</td>
+<td>Creates git worktrees for all open PRs or specific branches, handling branches with slashes, cleaning up stale worktrees, and supporting custom branch creation for development.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/evmts/tevm-monorepo?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/evmts/tevm-monorepo?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/evmts/tevm-monorepo?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/evmts/tevm-monorepo?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/evmts/tevm-monorepo?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/evmts/tevm-monorepo?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/evmts/tevm-monorepo?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/evmts/tevm-monorepo?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/evmts/tevm-monorepo?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/evmts/tevm-monorepo/blob/main/.claude/commands/husky.md"><b>/husky</b></a><br>by <a href="https://github.com/evmts">evmts</a></td>
+<td>Slash-Commands</td>
+<td>Version Control & Git</td>
+<td>Sets up and manages Husky Git hooks by configuring pre-commit hooks, establishing commit message standards, integrating with linting tools, and ensuring code quality on commits.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/evmts/tevm-monorepo?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/evmts/tevm-monorepo?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/evmts/tevm-monorepo?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/evmts/tevm-monorepo?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/evmts/tevm-monorepo?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/evmts/tevm-monorepo?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/evmts/tevm-monorepo?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/evmts/tevm-monorepo?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/evmts/tevm-monorepo?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/omril321/automated-notebooklm/blob/main/.claude/commands/create-hook.md"><b>/create-hook</b></a><br>by <a href="https://github.com/omril321">Omri Lavi</a></td>
+<td>Slash-Commands</td>
+<td>General</td>
+<td>Slash command for hook creation - intelligently prompts you through the creation process with smart suggestions based on your project setup (TS, Prettier, ESLint...).</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/omril321/automated-notebooklm?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/omril321/automated-notebooklm?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/omril321/automated-notebooklm?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/omril321/automated-notebooklm?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/omril321/automated-notebooklm?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/omril321/automated-notebooklm?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/omril321/automated-notebooklm?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/omril321/automated-notebooklm?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/omril321/automated-notebooklm?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/zuplo/docs/blob/main/.claude/commands/use-stepper.md"><b>/use-stepper</b></a><br>by <a href="https://github.com/zuplo">zuplo</a></td>
@@ -173,42 +245,6 @@ A flat list view of all resources. Category: **Commands** | Sorted: by last upda
 <td colspan="4"><img src="https://img.shields.io/github/stars/jeremymailen/kotlinter-gradle?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/jeremymailen/kotlinter-gradle?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/jeremymailen/kotlinter-gradle?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jeremymailen/kotlinter-gradle?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/jeremymailen/kotlinter-gradle?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/jeremymailen/kotlinter-gradle?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jeremymailen/kotlinter-gradle?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/jeremymailen/kotlinter-gradle?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/jeremymailen/kotlinter-gradle?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/analyze-issue.md"><b>/analyze-issue</b></a><br>by <a href="https://github.com/jerseycheese">jerseycheese</a></td>
-<td>Slash-Commands</td>
-<td>Version Control & Git</td>
-<td>Fetches GitHub issue details to create comprehensive implementation specifications, analyzing requirements and planning structured approach with clear implementation steps.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/jerseycheese/Narraitor?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/jerseycheese/Narraitor?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/jerseycheese/Narraitor?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jerseycheese/Narraitor?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/jerseycheese/Narraitor?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/jerseycheese/Narraitor?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jerseycheese/Narraitor?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/jerseycheese/Narraitor?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/jerseycheese/Narraitor?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/tdd-implement.md"><b>/tdd-implement</b></a><br>by <a href="https://github.com/jerseycheese">jerseycheese</a></td>
-<td>Slash-Commands</td>
-<td>Code Analysis & Testing</td>
-<td>Implements Test-Driven Development by analyzing feature requirements, creating tests first (red), implementing minimal passing code (green), and refactoring while maintaining tests.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/jerseycheese/Narraitor?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/jerseycheese/Narraitor?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/jerseycheese/Narraitor?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jerseycheese/Narraitor?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/jerseycheese/Narraitor?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/jerseycheese/Narraitor?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jerseycheese/Narraitor?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/jerseycheese/Narraitor?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/jerseycheese/Narraitor?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/create-docs.md"><b>/create-docs</b></a><br>by <a href="https://github.com/jerseycheese">jerseycheese</a></td>
-<td>Slash-Commands</td>
-<td>Documentation & Changelogs</td>
-<td>Analyzes code structure and purpose to create comprehensive documentation detailing inputs/outputs, behavior, user interaction flows, and edge cases with error handling.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/jerseycheese/Narraitor?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/jerseycheese/Narraitor?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/jerseycheese/Narraitor?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jerseycheese/Narraitor?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/jerseycheese/Narraitor?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/jerseycheese/Narraitor?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jerseycheese/Narraitor?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/jerseycheese/Narraitor?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/jerseycheese/Narraitor?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/do-issue.md"><b>/do-issue</b></a><br>by <a href="https://github.com/jerseycheese">jerseycheese</a></td>
-<td>Slash-Commands</td>
-<td>Project & Task Management</td>
-<td>Implements GitHub issues with manual review points, following a structured approach with issue number parameter and offering alternative automated mode for efficiency.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/jerseycheese/Narraitor?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/jerseycheese/Narraitor?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/jerseycheese/Narraitor?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jerseycheese/Narraitor?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/jerseycheese/Narraitor?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/jerseycheese/Narraitor?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jerseycheese/Narraitor?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/jerseycheese/Narraitor?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/jerseycheese/Narraitor?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/liam-hq/liam/blob/main/.claude/commands/create-pull-request.md"><b>/create-pull-request</b></a><br>by <a href="https://github.com/liam-hq">liam-hq</a></td>
 <td>Slash-Commands</td>
 <td>Version Control & Git</td>
@@ -225,42 +261,6 @@ A flat list view of all resources. Category: **Commands** | Sorted: by last upda
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/dredozubov/prd-generator?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/dredozubov/prd-generator?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/dredozubov/prd-generator?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/dredozubov/prd-generator?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/dredozubov/prd-generator?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/dredozubov/prd-generator?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/dredozubov/prd-generator?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/dredozubov/prd-generator?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/dredozubov/prd-generator?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/evmts/tevm-monorepo/blob/main/.claude/commands/commit.md"><b>/commit</b></a><br>by <a href="https://github.com/evmts">evmts</a></td>
-<td>Slash-Commands</td>
-<td>Version Control & Git</td>
-<td>Creates git commits using conventional commit format with appropriate emojis, following project standards and creating descriptive messages that explain the purpose of changes.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/evmts/tevm-monorepo?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/evmts/tevm-monorepo?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/evmts/tevm-monorepo?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/evmts/tevm-monorepo?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/evmts/tevm-monorepo?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/evmts/tevm-monorepo?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/evmts/tevm-monorepo?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/evmts/tevm-monorepo?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/evmts/tevm-monorepo?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/evmts/tevm-monorepo/blob/main/.claude/commands/create-worktrees.md"><b>/create-worktrees</b></a><br>by <a href="https://github.com/evmts">evmts</a></td>
-<td>Slash-Commands</td>
-<td>Version Control & Git</td>
-<td>Creates git worktrees for all open PRs or specific branches, handling branches with slashes, cleaning up stale worktrees, and supporting custom branch creation for development.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/evmts/tevm-monorepo?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/evmts/tevm-monorepo?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/evmts/tevm-monorepo?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/evmts/tevm-monorepo?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/evmts/tevm-monorepo?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/evmts/tevm-monorepo?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/evmts/tevm-monorepo?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/evmts/tevm-monorepo?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/evmts/tevm-monorepo?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/evmts/tevm-monorepo/blob/main/.claude/commands/husky.md"><b>/husky</b></a><br>by <a href="https://github.com/evmts">evmts</a></td>
-<td>Slash-Commands</td>
-<td>Version Control & Git</td>
-<td>Sets up and manages Husky Git hooks by configuring pre-commit hooks, establishing commit message standards, integrating with linting tools, and ensuring code quality on commits.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/evmts/tevm-monorepo?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/evmts/tevm-monorepo?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/evmts/tevm-monorepo?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/evmts/tevm-monorepo?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/evmts/tevm-monorepo?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/evmts/tevm-monorepo?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/evmts/tevm-monorepo?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/evmts/tevm-monorepo?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/evmts/tevm-monorepo?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/omril321/automated-notebooklm/blob/main/.claude/commands/create-hook.md"><b>/create-hook</b></a><br>by <a href="https://github.com/omril321">Omri Lavi</a></td>
-<td>Slash-Commands</td>
-<td>General</td>
-<td>Slash command for hook creation - intelligently prompts you through the creation process with smart suggestions based on your project setup (TS, Prettier, ESLint...).</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/omril321/automated-notebooklm?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/omril321/automated-notebooklm?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/omril321/automated-notebooklm?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/omril321/automated-notebooklm?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/omril321/automated-notebooklm?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/omril321/automated-notebooklm?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/omril321/automated-notebooklm?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/omril321/automated-notebooklm?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/omril321/automated-notebooklm?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/kelp/webdown/blob/main/.claude/commands/release.md"><b>/release</b></a><br>by <a href="https://github.com/kelp">kelp</a></td>
@@ -458,4 +458,4 @@ A flat list view of all resources. Category: **Commands** | Sorted: by last upda
 
 **Total Resources:** 44
 
-**Last Generated:** 2026-01-30
+**Last Generated:** 2026-02-03
