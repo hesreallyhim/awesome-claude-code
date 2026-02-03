@@ -93,6 +93,7 @@ Claude Code is a CLI-based coding assistant from [Anthropic](https://www.anthrop
 - [Web Assets Generator Skill](https://github.com/alonw0/web-asset-generator) by [Alon Wolenitz](https://github.com/alonw0) - Easily generate web assets from Claude Code including favicons, app icons (PWA), and social media meta images (Open Graph) for Facebook, Twitter, WhatsApp, and LinkedIn. Handles image resizing, text-to-image generation, emojis, and provides proper HTML meta tags.
 
 <br>
+- [arch-drive](https://github.com/weijiafu14/arch-drive) - Simpler alternative to Ralph mode. Three commands (/arch, /save, /loop) give Claude Code persistent project memory and infinite task stamina. Pure prompt engineering, zero infrastructure needed.
 
 ## Workflows & Knowledge Guides 🧠
 
