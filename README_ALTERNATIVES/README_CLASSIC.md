@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`ralph-wiggum-bdd`](https://github.com/marcindulak/ralph-wiggum-bdd) &nbsp; by &nbsp; [marcindulak](https://github.com/marcindulak)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
+A standalone Bash script for Behavior-Driven Development with Ralph Wiggum Loop. In principle, while running unattended, the script can keep code and requirements in sync, but in practice it still requires interactive human supervision, so it supports both modes. The script is standalone and can be modified and committed into your project.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for ralph-wiggum-bdd](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-wiggum-bdd&username=marcindulak&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`cc-devops-skills`](https://github.com/akin-ozer/cc-devops-skills) &nbsp; by &nbsp; [akin-ozer](https://github.com/akin-ozer)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
 Immensely detailed set of skills for DevOps Engineers (or anyone who has to deploy code, really). Works with validations, generators, shell scripts and CLI tools to create high quality IaC code for about any platform you've ever struggled painfully to work with. Worth downloading even just as a source of documentation.
 
@@ -92,17 +103,6 @@ A really interesting analysis of how coding agents like Claude Code are designed
 
 [`AI Agent, AI Spy`](https://youtu.be/0ANECpNdt-4) &nbsp; by &nbsp; [Whittaker & Tiwari](https://signalfoundation.org/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;No License / Not Specified  
 Members from the Signal Foundation with some really great tips and tricks on how to turn your operating system into an instrument of total surveillance, and why some companies are doing this really awesome thing. [warning: YouTube link]
-
-[`Everything Claude Code`](https://github.com/affaan-m/everything-claude-code) &nbsp; by &nbsp; [Affaan Mustafa](https://github.com/affaan-m/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Top-notch, well-written resources covering "just about everything" from core engineering domains. What's nice about this "everything-" store is most of the resources have significant standalone value and unlike some all-encompassing frameworks, although you can opt in to the author's own specific workflow patterns if you choose, the individual resources offer exemplary patterns in (just about) every Claude Code feature you can find (apologies to the Output Styles devotees).
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for everything-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=everything-claude-code&username=affaan-m&all_stats=true&stats_only=true)
-
-</details>
-<br>
 
 
 ## Contents [🔝](#awesome-claude-code)
@@ -625,6 +625,17 @@ Ralph Orchestrator implements the simple but effective "Ralph Wiggum" technique 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for ralph-orchestrator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-orchestrator&username=mikeyobrien&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`ralph-wiggum-bdd`](https://github.com/marcindulak/ralph-wiggum-bdd) &nbsp; by &nbsp; [marcindulak](https://github.com/marcindulak)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
+A standalone Bash script for Behavior-Driven Development with Ralph Wiggum Loop. In principle, while running unattended, the script can keep code and requirements in sync, but in practice it still requires interactive human supervision, so it supports both modes. The script is standalone and can be modified and committed into your project.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for ralph-wiggum-bdd](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-wiggum-bdd&username=marcindulak&all_stats=true&stats_only=true)
 
 </details>
 <br>

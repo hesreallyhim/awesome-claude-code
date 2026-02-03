@@ -68,6 +68,15 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by date cre
 <td>A detailed blog post explaining the author's process for shipping a product with Claude Code, including CLAUDE.md files and other interesting resources.</td>
 </tr>
 <tr>
+<td><a href="https://github.com/marcindulak/ralph-wiggum-bdd"><b>ralph-wiggum-bdd</b></a><br>by <a href="https://github.com/marcindulak">marcindulak</a></td>
+<td>Workflows & Knowledge Guides</td>
+<td>Ralph Wiggum</td>
+<td>A standalone Bash script for Behavior-Driven Development with Ralph Wiggum Loop. In principle, while running unattended, the script can keep code and requirements in sync, but in practice it still requires interactive human supervision, so it supports both modes. The script is standalone and can be modified and committed into your project.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/marcindulak/ralph-wiggum-bdd?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/marcindulak/ralph-wiggum-bdd?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/marcindulak/ralph-wiggum-bdd?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/marcindulak/ralph-wiggum-bdd?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/marcindulak/ralph-wiggum-bdd?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/marcindulak/ralph-wiggum-bdd?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/marcindulak/ralph-wiggum-bdd?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/marcindulak/ralph-wiggum-bdd?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/marcindulak/ralph-wiggum-bdd?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/ClaytonFarr/ralph-playbook"><b>The Ralph Playbook</b></a><br>by <a href="https://github.com/ClaytonFarr">Clayton Farr</a></td>
 <td>Workflows & Knowledge Guides</td>
 <td>Ralph Wiggum</td>
@@ -315,6 +324,6 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by date cre
 
 ---
 
-**Total Resources:** 29
+**Total Resources:** 30
 
-**Last Generated:** 2026-01-30
+**Last Generated:** 2026-02-03

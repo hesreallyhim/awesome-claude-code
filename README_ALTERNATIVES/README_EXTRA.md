@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/marcindulak/ralph-wiggum-bdd"><img src="../assets/badge-ralph-wiggum-bdd.svg" alt="ralph-wiggum-bdd"></a>  
+_A standalone Bash script for Behavior-Driven Development with Ralph Wiggum Loop. In principle, while running unattended, the script can keep code and requirements in sync, but in practice it still requires interactive human supervision, so it supports both modes. The script is standalone and can be modified and committed into your project._  
+![GitHub Stats for ralph-wiggum-bdd](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-wiggum-bdd&username=marcindulak&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/akin-ozer/cc-devops-skills"><img src="../assets/badge-cc-devops-skills.svg" alt="cc-devops-skills"></a>  
 _Immensely detailed set of skills for DevOps Engineers (or anyone who has to deploy code, really). Works with validations, generators, shell scripts and CLI tools to create high quality IaC code for about any platform you've ever struggled painfully to work with. Worth downloading even just as a source of documentation._  
 ![GitHub Stats for cc-devops-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=cc-devops-skills&username=akin-ozer&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -205,10 +209,6 @@ _A really interesting analysis of how coding agents like Claude Code are designe
 
 <a href="https://youtu.be/0ANECpNdt-4"><img src="../assets/badge-ai-agent-ai-spy.svg" alt="AI Agent, AI Spy"></a>  
 _Members from the Signal Foundation with some really great tips and tricks on how to turn your operating system into an instrument of total surveillance, and why some companies are doing this really awesome thing. [warning: YouTube link]_
-
-<a href="https://github.com/affaan-m/everything-claude-code"><img src="../assets/badge-everything-claude-code.svg" alt="Everything Claude Code"></a>  
-_Top-notch, well-written resources covering "just about everything" from core engineering domains. What's nice about this "everything-" store is most of the resources have significant standalone value and unlike some all-encompassing frameworks, although you can opt in to the author's own specific workflow patterns if you choose, the individual resources offer exemplary patterns in (just about) every Claude Code feature you can find (apologies to the Output Styles devotees)._  
-![GitHub Stats for everything-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=everything-claude-code&username=affaan-m&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 
 <br>
@@ -867,6 +867,13 @@ _A Claude Code plugin that provides an autonomous AI copywriter,  integrating th
 <a href="https://github.com/mikeyobrien/ralph-orchestrator"><img src="../assets/badge-ralph-orchestrator.svg" alt="ralph-orchestrator"></a>  
 _Ralph Orchestrator implements the simple but effective "Ralph Wiggum" technique for autonomous task completion, continuously running an AI agent against a prompt file until the task is marked as complete or limits are reached. This implementation provides a robust, well-tested, and feature-complete orchestration system for AI-driven development. Also cited in the Anthropic Ralph plugin documentation._  
 ![GitHub Stats for ralph-orchestrator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-orchestrator&username=mikeyobrien&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/marcindulak/ralph-wiggum-bdd"><img src="../assets/badge-ralph-wiggum-bdd.svg" alt="ralph-wiggum-bdd"></a>  
+_A standalone Bash script for Behavior-Driven Development with Ralph Wiggum Loop. In principle, while running unattended, the script can keep code and requirements in sync, but in practice it still requires interactive human supervision, so it supports both modes. The script is standalone and can be modified and committed into your project._  
+![GitHub Stats for ralph-wiggum-bdd](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-wiggum-bdd&username=marcindulak&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 
