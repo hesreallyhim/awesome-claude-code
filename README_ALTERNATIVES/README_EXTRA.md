@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/snwfdhmp/awesome-ralph"><img src="../assets/badge-awesome-ralph.svg" alt="awesome-ralph"></a>  
+_A curated list of resources about Ralph, the AI coding technique that runs AI coding agents in automated loops until specifications are fulfilled._  
+![GitHub Stats for awesome-ralph](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=awesome-ralph&username=snwfdhmp&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/marcindulak/ralph-wiggum-bdd"><img src="../assets/badge-ralph-wiggum-bdd.svg" alt="ralph-wiggum-bdd"></a>  
 _A standalone Bash script for Behavior-Driven Development with Ralph Wiggum Loop. In principle, while running unattended, the script can keep code and requirements in sync, but in practice it still requires interactive human supervision, so it supports both modes. The script is standalone and can be modified and committed into your project._  
 ![GitHub Stats for ralph-wiggum-bdd](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-wiggum-bdd&username=marcindulak&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -202,13 +206,6 @@ _A Claude Code plugin that generates comprehensive Product Requirements Document
 <a href="https://github.com/ZENG3LD/claude-session-restore"><img src="../assets/badge-claude-session-restore.svg" alt="Claude Session Restore"></a>  
 _Efficiently restore context from previous Claude Code sessions by analyzing session files and git history. Features multi-factor data collection across numerous Claude Code capacities with time-based filtering. Uses tail-based parsing for efficient handling of large session files up to 2GB. Includes both a CLI tool for manual analysis and a Claude Code skill for automatic session restoration._  
 ![GitHub Stats for claude-session-restore](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-session-restore&username=ZENG3LD&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/shareAI-lab/learn-claude-code"><img src="../assets/badge-learn-claude-code.svg" alt="Learn Claude Code"></a>  
-_A really interesting analysis of how coding agents like Claude Code are designed. It attempts to break an agent down into its fundamental parts and reconstruct it with minimal code. Great learning resource. Final product is a rudimentary agent with skills, sub-agents, and a todo-list in roughly a few hundred lines of Python._  
-![GitHub Stats for learn-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=learn-claude-code&username=shareAI-lab&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://youtu.be/0ANECpNdt-4"><img src="../assets/badge-ai-agent-ai-spy.svg" alt="AI Agent, AI Spy"></a>  
-_Members from the Signal Foundation with some really great tips and tricks on how to turn your operating system into an instrument of total surveillance, and why some companies are doing this really awesome thing. [warning: YouTube link]_
 
 
 <br>
@@ -849,6 +846,13 @@ _A broader project management workflow for Claude Code that encompasses not just
 
 <details open id="ralph-wiggum">
 <summary><span><picture><img src="../assets/subheader_ralph_wiggum.svg" alt="Ralph Wiggum" align="absmiddle"></picture></span></summary>
+
+<a href="https://github.com/snwfdhmp/awesome-ralph"><img src="../assets/badge-awesome-ralph.svg" alt="awesome-ralph"></a>  
+_A curated list of resources about Ralph, the AI coding technique that runs AI coding agents in automated loops until specifications are fulfilled._  
+![GitHub Stats for awesome-ralph](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=awesome-ralph&username=snwfdhmp&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
 
 <a href="https://github.com/frankbria/ralph-claude-code"><img src="../assets/badge-ralph-for-claude-code.svg" alt="Ralph for Claude Code"></a>  
 _An autonomous AI development framework that enables Claude Code to work iteratively on projects until completion. Features intelligent exit detection, rate limiting, circuit breaker patterns, and comprehensive safety guardrails to prevent infinite loops and API overuse. Built with Bash, integrated with tmux for live monitoring, and includes 75+ comprehensive tests._  

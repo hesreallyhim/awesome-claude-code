@@ -74,6 +74,15 @@ A flat list view of all resources. Category: **Workflows** | Sorted: alphabetica
 <td colspan="4"><img src="https://img.shields.io/github/stars/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/snwfdhmp/awesome-ralph"><b>awesome-ralph</b></a><br>by <a href="https://github.com/snwfdhmp">Martin Joly</a></td>
+<td>Workflows & Knowledge Guides</td>
+<td>Ralph Wiggum</td>
+<td>A curated list of resources about Ralph, the AI coding technique that runs AI coding agents in automated loops until specifications are fulfilled.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/snwfdhmp/awesome-ralph?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/snwfdhmp/awesome-ralph?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/snwfdhmp/awesome-ralph?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/snwfdhmp/awesome-ralph?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/snwfdhmp/awesome-ralph?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/snwfdhmp/awesome-ralph?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/snwfdhmp/awesome-ralph?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/snwfdhmp/awesome-ralph?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/snwfdhmp/awesome-ralph?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/cloudartisan/cloudartisan.github.io/tree/main/.claude/commands"><b>Blogging Platform Instructions</b></a><br>by <a href="https://github.com/cloudartisan">cloudartisan</a></td>
 <td>Workflows & Knowledge Guides</td>
 <td>General</td>
@@ -324,6 +333,6 @@ A flat list view of all resources. Category: **Workflows** | Sorted: alphabetica
 
 ---
 
-**Total Resources:** 30
+**Total Resources:** 31
 
-**Last Generated:** 2026-02-03
+**Last Generated:** 2026-02-04

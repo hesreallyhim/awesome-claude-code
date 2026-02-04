@@ -104,6 +104,15 @@ A flat list view of all resources. Category: **All** | Sorted: by date created
 <td colspan="4"><img src="https://img.shields.io/github/stars/marcindulak/ralph-wiggum-bdd?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/marcindulak/ralph-wiggum-bdd?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/marcindulak/ralph-wiggum-bdd?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/marcindulak/ralph-wiggum-bdd?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/marcindulak/ralph-wiggum-bdd?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/marcindulak/ralph-wiggum-bdd?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/marcindulak/ralph-wiggum-bdd?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/marcindulak/ralph-wiggum-bdd?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/marcindulak/ralph-wiggum-bdd?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/snwfdhmp/awesome-ralph"><b>awesome-ralph</b></a><br>by <a href="https://github.com/snwfdhmp">Martin Joly</a></td>
+<td>Workflows & Knowledge Guides</td>
+<td>Ralph Wiggum</td>
+<td>A curated list of resources about Ralph, the AI coding technique that runs AI coding agents in automated loops until specifications are fulfilled.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/snwfdhmp/awesome-ralph?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/snwfdhmp/awesome-ralph?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/snwfdhmp/awesome-ralph?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/snwfdhmp/awesome-ralph?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/snwfdhmp/awesome-ralph?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/snwfdhmp/awesome-ralph?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/snwfdhmp/awesome-ralph?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/snwfdhmp/awesome-ralph?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/snwfdhmp/awesome-ralph?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/affaan-m/everything-claude-code"><b>Everything Claude Code</b></a><br>by <a href="https://github.com/affaan-m/">Affaan Mustafa</a></td>
 <td>Agent Skills</td>
 <td>General</td>
@@ -1638,6 +1647,6 @@ A flat list view of all resources. Category: **All** | Sorted: by date created
 
 ---
 
-**Total Resources:** 177
+**Total Resources:** 178
 
-**Last Generated:** 2026-02-03
+**Last Generated:** 2026-02-04

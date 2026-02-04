@@ -95,15 +95,6 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by last upd
 <td colspan="4"><img src="https://img.shields.io/github/stars/costiash/claude-code-docs?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/costiash/claude-code-docs?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/costiash/claude-code-docs?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/costiash/claude-code-docs?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/costiash/claude-code-docs?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/costiash/claude-code-docs?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/costiash/claude-code-docs?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/costiash/claude-code-docs?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/costiash/claude-code-docs?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/harperreed/dotfiles/tree/master/.claude/commands"><b>Project Workflow System</b></a><br>by <a href="https://github.com/harperreed">harperreed</a></td>
-<td>Workflows & Knowledge Guides</td>
-<td>General</td>
-<td>A set of commands that provide a comprehensive workflow system for managing projects, including task management, code review, and deployment processes.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/harperreed/dotfiles?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/harperreed/dotfiles?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/harperreed/dotfiles?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/harperreed/dotfiles?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/harperreed/dotfiles?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/harperreed/dotfiles?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/harperreed/dotfiles?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/harperreed/dotfiles?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/harperreed/dotfiles?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/frankbria/ralph-claude-code"><b>Ralph for Claude Code</b></a><br>by <a href="https://github.com/frankbria">Frank Bria</a></td>
 <td>Workflows & Knowledge Guides</td>
 <td>Ralph Wiggum</td>
@@ -111,6 +102,15 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by last upd
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/frankbria/ralph-claude-code?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/frankbria/ralph-claude-code?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/frankbria/ralph-claude-code?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/frankbria/ralph-claude-code?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/frankbria/ralph-claude-code?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/frankbria/ralph-claude-code?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/frankbria/ralph-claude-code?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/frankbria/ralph-claude-code?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/frankbria/ralph-claude-code?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Piebald-AI/claude-code-system-prompts"><b>Claude Code System Prompts</b></a><br>by <a href="https://github.com/Piebald-AI">Piebald AI</a></td>
+<td>Workflows & Knowledge Guides</td>
+<td>General</td>
+<td>All parts of Claude Code's system prompt, including builtin tool descriptions, sub agent prompts (Plan/Explore/Task), utility prompts (CLAUDE.md, compact, Bash cmd, security review, agent creation, etc.). Updated for each Claude Code version.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/maxritter/claude-codepro"><b>Claude CodePro</b></a><br>by <a href="https://www.maxritter.net">Max Ritter</a></td>
@@ -131,13 +131,22 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by last upd
 <td colspan="4"><img src="https://img.shields.io/github/stars/mikeyobrien/ralph-orchestrator?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/mikeyobrien/ralph-orchestrator?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/mikeyobrien/ralph-orchestrator?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/mikeyobrien/ralph-orchestrator?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/mikeyobrien/ralph-orchestrator?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/mikeyobrien/ralph-orchestrator?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/mikeyobrien/ralph-orchestrator?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/mikeyobrien/ralph-orchestrator?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/mikeyobrien/ralph-orchestrator?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/Piebald-AI/claude-code-system-prompts"><b>Claude Code System Prompts</b></a><br>by <a href="https://github.com/Piebald-AI">Piebald AI</a></td>
+<td><a href="https://github.com/snwfdhmp/awesome-ralph"><b>awesome-ralph</b></a><br>by <a href="https://github.com/snwfdhmp">Martin Joly</a></td>
 <td>Workflows & Knowledge Guides</td>
-<td>General</td>
-<td>All parts of Claude Code's system prompt, including builtin tool descriptions, sub agent prompts (Plan/Explore/Task), utility prompts (CLAUDE.md, compact, Bash cmd, security review, agent creation, etc.). Updated for each Claude Code version.</td>
+<td>Ralph Wiggum</td>
+<td>A curated list of resources about Ralph, the AI coding technique that runs AI coding agents in automated loops until specifications are fulfilled.</td>
 </tr>
 <tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="license"></td>
+<td colspan="4"><img src="https://img.shields.io/github/stars/snwfdhmp/awesome-ralph?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/snwfdhmp/awesome-ralph?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/snwfdhmp/awesome-ralph?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/snwfdhmp/awesome-ralph?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/snwfdhmp/awesome-ralph?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/snwfdhmp/awesome-ralph?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/snwfdhmp/awesome-ralph?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/snwfdhmp/awesome-ralph?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/snwfdhmp/awesome-ralph?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/harperreed/dotfiles/tree/master/.claude/commands"><b>Project Workflow System</b></a><br>by <a href="https://github.com/harperreed">harperreed</a></td>
+<td>Workflows & Knowledge Guides</td>
+<td>General</td>
+<td>A set of commands that provide a comprehensive workflow system for managing projects, including task management, code review, and deployment processes.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/harperreed/dotfiles?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/harperreed/dotfiles?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/harperreed/dotfiles?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/harperreed/dotfiles?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/harperreed/dotfiles?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/harperreed/dotfiles?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/harperreed/dotfiles?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/harperreed/dotfiles?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/harperreed/dotfiles?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/muratcankoylan/ralph-wiggum-marketer"><b>Ralph Wiggum Marketer</b></a><br>by <a href="https://github.com/muratcankoylan">Muratcan Koylan</a></td>
@@ -324,6 +333,6 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by last upd
 
 ---
 
-**Total Resources:** 30
+**Total Resources:** 31
 
-**Last Generated:** 2026-02-03
+**Last Generated:** 2026-02-04
