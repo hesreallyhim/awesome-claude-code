@@ -62,6 +62,15 @@ A flat list view of all resources. Category: **Skills** | Sorted: by last update
 <td>Members from the Signal Foundation with some really great tips and tricks on how to turn your operating system into an instrument of total surveillance, and why some companies are doing this really awesome thing. [warning: YouTube link]</td>
 </tr>
 <tr>
+<td><a href="https://github.com/akin-ozer/cc-devops-skills"><b>cc-devops-skills</b></a><br>by <a href="https://github.com/akin-ozer">akin-ozer</a></td>
+<td>Agent Skills</td>
+<td>General</td>
+<td>Immensely detailed set of skills for DevOps Engineers (or anyone who has to deploy code, really). Works with validations, generators, shell scripts and CLI tools to create high quality IaC code for about any platform you've ever struggled painfully to work with. Worth downloading even just as a source of documentation.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/akin-ozer/cc-devops-skills?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/akin-ozer/cc-devops-skills?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/akin-ozer/cc-devops-skills?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/akin-ozer/cc-devops-skills?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/akin-ozer/cc-devops-skills?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/akin-ozer/cc-devops-skills?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/akin-ozer/cc-devops-skills?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/akin-ozer/cc-devops-skills?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/akin-ozer/cc-devops-skills?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/affaan-m/everything-claude-code"><b>Everything Claude Code</b></a><br>by <a href="https://github.com/affaan-m/">Affaan Mustafa</a></td>
 <td>Agent Skills</td>
 <td>General</td>
@@ -143,15 +152,6 @@ A flat list view of all resources. Category: **Skills** | Sorted: by last update
 <td colspan="4"><img src="https://img.shields.io/github/stars/glittercowboy/taches-cc-resources?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/glittercowboy/taches-cc-resources?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/glittercowboy/taches-cc-resources?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/glittercowboy/taches-cc-resources?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/glittercowboy/taches-cc-resources?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/glittercowboy/taches-cc-resources?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/glittercowboy/taches-cc-resources?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/glittercowboy/taches-cc-resources?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/glittercowboy/taches-cc-resources?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/akin-ozer/cc-devops-skills"><b>cc-devops-skills</b></a><br>by <a href="https://github.com/akin-ozer">akin-ozer</a></td>
-<td>Agent Skills</td>
-<td>General</td>
-<td>Immensely detailed set of skills for DevOps Engineers (or anyone who has to deploy code, really). Works with validations, generators, shell scripts and CLI tools to create high quality IaC code for about any platform you've ever struggled painfully to work with. Worth downloading even just as a source of documentation.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/akin-ozer/cc-devops-skills?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/akin-ozer/cc-devops-skills?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/akin-ozer/cc-devops-skills?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/akin-ozer/cc-devops-skills?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/akin-ozer/cc-devops-skills?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/akin-ozer/cc-devops-skills?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/akin-ozer/cc-devops-skills?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/akin-ozer/cc-devops-skills?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/akin-ozer/cc-devops-skills?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/skills-directory/skill-codex"><b>Codex Skill</b></a><br>by <a href="https://github.com/klaudworks">klaudworks</a></td>
 <td>Agent Skills</td>
 <td>General</td>
@@ -167,4 +167,4 @@ A flat list view of all resources. Category: **Skills** | Sorted: by last update
 
 **Total Resources:** 12
 
-**Last Generated:** 2026-02-03
+**Last Generated:** 2026-02-04

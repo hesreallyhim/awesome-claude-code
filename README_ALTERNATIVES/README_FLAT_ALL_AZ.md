@@ -518,6 +518,15 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/snwfdhmp/awesome-ralph"><b>awesome-ralph</b></a><br>by <a href="https://github.com/snwfdhmp">Martin Joly</a></td>
+<td>Workflows & Knowledge Guides</td>
+<td>Ralph Wiggum</td>
+<td>A curated list of resources about Ralph, the AI coding technique that runs AI coding agents in automated loops until specifications are fulfilled.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/snwfdhmp/awesome-ralph?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/snwfdhmp/awesome-ralph?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/snwfdhmp/awesome-ralph?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/snwfdhmp/awesome-ralph?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/snwfdhmp/awesome-ralph?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/snwfdhmp/awesome-ralph?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/snwfdhmp/awesome-ralph?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/snwfdhmp/awesome-ralph?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/snwfdhmp/awesome-ralph?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/alexei-led/aws-mcp-server/blob/main/CLAUDE.md"><b>AWS MCP Server</b></a><br>by <a href="https://github.com/alexei-led">alexei-led</a></td>
 <td>CLAUDE.md Files</td>
 <td>Language-Specific</td>
@@ -1638,6 +1647,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 
 ---
 
-**Total Resources:** 177
+**Total Resources:** 178
 
-**Last Generated:** 2026-02-03
+**Last Generated:** 2026-02-04

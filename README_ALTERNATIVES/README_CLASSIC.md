@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`awesome-ralph`](https://github.com/snwfdhmp/awesome-ralph) &nbsp; by &nbsp; [Martin Joly](https://github.com/snwfdhmp)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A curated list of resources about Ralph, the AI coding technique that runs AI coding agents in automated loops until specifications are fulfilled.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for awesome-ralph](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=awesome-ralph&username=snwfdhmp&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`ralph-wiggum-bdd`](https://github.com/marcindulak/ralph-wiggum-bdd) &nbsp; by &nbsp; [marcindulak](https://github.com/marcindulak)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
 A standalone Bash script for Behavior-Driven Development with Ralph Wiggum Loop. In principle, while running unattended, the script can keep code and requirements in sync, but in practice it still requires interactive human supervision, so it supports both modes. The script is standalone and can be modified and committed into your project.
 
@@ -89,20 +100,6 @@ Efficiently restore context from previous Claude Code sessions by analyzing sess
 
 </details>
 <br>
-
-[`Learn Claude Code`](https://github.com/shareAI-lab/learn-claude-code) &nbsp; by &nbsp; [shareAI-Lab](https://github.com/shareAI-lab/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A really interesting analysis of how coding agents like Claude Code are designed. It attempts to break an agent down into its fundamental parts and reconstruct it with minimal code. Great learning resource. Final product is a rudimentary agent with skills, sub-agents, and a todo-list in roughly a few hundred lines of Python.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for learn-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=learn-claude-code&username=shareAI-lab&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`AI Agent, AI Spy`](https://youtu.be/0ANECpNdt-4) &nbsp; by &nbsp; [Whittaker & Tiwari](https://signalfoundation.org/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;No License / Not Specified  
-Members from the Signal Foundation with some really great tips and tricks on how to turn your operating system into an instrument of total surveillance, and why some companies are doing this really awesome thing. [warning: YouTube link]
 
 
 ## Contents [🔝](#awesome-claude-code)
@@ -595,6 +592,17 @@ A broader project management workflow for Claude Code that encompasses not just 
 
 <details open>
 <summary><h3>Ralph Wiggum <a href="#awesome-claude-code">🔝</a></h3></summary>
+
+[`awesome-ralph`](https://github.com/snwfdhmp/awesome-ralph) &nbsp; by &nbsp; [Martin Joly](https://github.com/snwfdhmp)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A curated list of resources about Ralph, the AI coding technique that runs AI coding agents in automated loops until specifications are fulfilled.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for awesome-ralph](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=awesome-ralph&username=snwfdhmp&all_stats=true&stats_only=true)
+
+</details>
+<br>
 
 [`Ralph for Claude Code`](https://github.com/frankbria/ralph-claude-code) &nbsp; by &nbsp; [Frank Bria](https://github.com/frankbria)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 An autonomous AI development framework that enables Claude Code to work iteratively on projects until completion. Features intelligent exit detection, rate limiting, circuit breaker patterns, and comprehensive safety guardrails to prevent infinite loops and API overuse. Built with Bash, integrated with tmux for live monitoring, and includes 75+ comprehensive tests.
