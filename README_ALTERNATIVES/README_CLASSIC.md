@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`read-only-postgres`](https://github.com/jawwadfirdousi/agent-skills) &nbsp; by &nbsp; [jawwadfirdousi](https://github.com/jawwadfirdousi)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Read-only PostgreSQL query skill for Claude Code. Executes SELECT/SHOW/EXPLAIN/WITH queries across configured databases with strict validation, timeouts, and row limits. Supports multiple connections with descriptions for database selection.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for agent-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=agent-skills&username=jawwadfirdousi&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`awesome-ralph`](https://github.com/snwfdhmp/awesome-ralph) &nbsp; by &nbsp; [Martin Joly](https://github.com/snwfdhmp)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A curated list of resources about Ralph, the AI coding technique that runs AI coding agents in automated loops until specifications are fulfilled.
 
