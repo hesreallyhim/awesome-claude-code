@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/jawwadfirdousi/agent-skills"><img src="../assets/badge-read-only-postgres.svg" alt="read-only-postgres"></a>  
+_Read-only PostgreSQL query skill for Claude Code. Executes SELECT/SHOW/EXPLAIN/WITH queries across configured databases with strict validation, timeouts, and row limits. Supports multiple connections with descriptions for database selection._  
+![GitHub Stats for agent-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=agent-skills&username=jawwadfirdousi&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/snwfdhmp/awesome-ralph"><img src="../assets/badge-awesome-ralph.svg" alt="awesome-ralph"></a>  
 _A curated list of resources about Ralph, the AI coding technique that runs AI coding agents in automated loops until specifications are fulfilled._  
 ![GitHub Stats for awesome-ralph](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=awesome-ralph&username=snwfdhmp&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -594,6 +598,13 @@ _Hand-crafted collection of advanced context engineering techniques and patterns
 <a href="https://github.com/affaan-m/everything-claude-code"><img src="../assets/badge-everything-claude-code.svg" alt="Everything Claude Code"></a>  
 _Top-notch, well-written resources covering "just about everything" from core engineering domains. What's nice about this "everything-" store is most of the resources have significant standalone value and unlike some all-encompassing frameworks, although you can opt in to the author's own specific workflow patterns if you choose, the individual resources offer exemplary patterns in (just about) every Claude Code feature you can find (apologies to the Output Styles devotees)._  
 ![GitHub Stats for everything-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=everything-claude-code&username=affaan-m&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/jawwadfirdousi/agent-skills"><img src="../assets/badge-read-only-postgres.svg" alt="read-only-postgres"></a>  
+_Read-only PostgreSQL query skill for Claude Code. Executes SELECT/SHOW/EXPLAIN/WITH queries across configured databases with strict validation, timeouts, and row limits. Supports multiple connections with descriptions for database selection._  
+![GitHub Stats for agent-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=agent-skills&username=jawwadfirdousi&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 
