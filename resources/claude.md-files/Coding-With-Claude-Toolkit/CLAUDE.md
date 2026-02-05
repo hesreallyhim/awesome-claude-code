@@ -1,112 +1,177 @@
-# Coding With Claude -- Structured Development Workflow
+# Coding With Claude -- Automatic Structured Development
 
-## The Problem This Solves
+## How This Works
 
-If you find yourself saying things like "fix this error" or "add a feature" and getting bad results, this toolkit forces a structured workflow that gives Claude the context it needs.
+You don't need to invoke any commands. Just talk naturally. Claude will automatically detect what kind of help you need and apply the right workflow. Think of it as a coding partner who always asks the right follow-up questions before jumping in.
 
-## The Workflow
+There are three automatic behaviors and one optional planning flow you can trigger when you want it.
+
+---
+
+## Auto-Detect Behaviors (Always On)
+
+### 1. Vague Request Detection
+
+When your message is a coding request but is missing critical context, Claude will **pause and ask clarifying questions** before writing any code.
+
+**Triggers:** Requests that are missing 2+ of these: specific files, current behavior, desired behavior, acceptance criteria.
+
+**What Claude does:**
+- Reads any files or code you mentioned to ground the questions in your actual codebase
+- Asks only about what's missing (not a generic questionnaire)
+- Asks at most 3 targeted questions per round
+- After getting answers, restates the request as a structured spec for confirmation:
 
 ```
- 1. CLARIFY        2. PLAN           3. IMPLEMENT       4. DEBUG
- /structure-request  /plan-feature     /act               /debug-error
-  "what exactly?"    "PRD + tasks      "one task at        "diagnose,
-                      + test plan"      a time"            don't guess"
-                                            |
-                                            v
-                                       /commit
-                                      "ship it"
+Got it. Here's what I'll do:
+- Goal: [one sentence]
+- Files: [specific paths]
+- Change: [current behavior] -> [desired behavior]
+- Done when: [acceptance criteria]
+
+Good to go?
 ```
 
-### Step 1: Clarify (`/structure-request`)
+**Examples of what triggers this:**
 
-Before asking Claude to build anything, run `/structure-request` with your rough idea.
-It will ask targeted questions and produce a structured spec with:
-- Goal, files involved, current vs. desired behavior, acceptance criteria
+| You say | What's missing | Claude asks |
+|---------|---------------|-------------|
+| "add user auth" | Everything | "What kind of auth? Which routes need it? Is there an existing user model?" |
+| "fix the login bug" | Which bug, expected behavior | "What happens when you try to log in? What should happen? Any error message?" |
+| "make this faster" | What's slow, how slow, target | "Which operation is slow? How long does it take now? What's acceptable?" |
+| "refactor the API" | Which part, what's wrong with it, what better looks like | "Which endpoints? What's the problem -- readability, performance, structure?" |
 
-**Instead of:** "add user auth"
-**You get:** A spec that names the files, the expected behavior, and how to verify it.
+**What does NOT trigger this** (Claude proceeds directly):
+- "The `calculateTotal` function in `src/cart.ts` returns 0 when the cart has items with discounts. It should sum `item.price * item.quantity` after applying the discount percentage. Here's the function: [paste]"
+- Requests that name files, describe the problem, and state the expected outcome
 
-### Step 2: Plan (`/plan-feature`)
+### 2. Error Diagnosis Mode
 
-Take your structured request and run `/plan-feature` to break it into:
-- A mini-PRD (problem, solution, scope, key decisions)
-- A numbered task list in `todos.md`
-- A test plan with unit, integration, and manual verification steps
+When your message contains an error (stack trace, build failure, test failure, runtime exception), Claude will **automatically diagnose before fixing**.
 
-Tests are defined before code is written, not after.
+**Triggers:** Messages containing stack traces, error messages, tracebacks, build/test output with failures.
 
-### Step 3: Implement (`/act`)
+**What Claude does (in order):**
 
-Work through the task list one item at a time using `/act`:
-- Pick the next unchecked item from `todos.md`
-- Plan the implementation
-- Code it
-- Check it off
-- Commit
+1. **Read** the files referenced in the error -- no guessing at contents
+2. **Ask for missing context** if needed:
+   - "Did this work before? What changed recently?"
+   - "What command triggered this?"
+   - "Have you already tried anything?"
+3. **State a hypothesis** before making changes:
+   ```
+   HYPOTHESIS: [what I think is wrong and why]
+   Let me verify this by checking [specific thing]...
+   ```
+4. **Verify** the hypothesis (read more code, check config, run a diagnostic)
+5. **Apply the minimal fix** -- smallest change that addresses the root cause
+6. **Run the test/command again** to confirm the fix works
+7. **Explain what happened:**
+   ```
+   ROOT CAUSE: [what was actually wrong]
+   FIX: [what changed]
+   PREVENTION: [how to avoid this, if relevant]
+   ```
 
-One task, one commit. Small, verifiable increments.
+**What Claude will NOT do in this mode:**
+- Guess at file contents without reading them
+- Refactor surrounding code while fixing the bug
+- Add defensive error handling unrelated to the issue
+- Suppress the error without fixing the cause
+- Make multiple speculative changes at once
 
-### Step 4: Debug (`/debug-error`)
+### 3. Scope Check
 
-When you hit an error, run `/debug-error` instead of just pasting the stack trace.
-It enforces a diagnostic process:
-1. Gather facts (error, recent changes, what was expected)
-2. Form a hypothesis
-3. Verify before fixing
-4. Apply minimal fix
-5. Confirm the fix works
+When your message asks for multiple unrelated things at once, Claude will **split them and confirm priority**.
 
-**Instead of:** pasting an error and saying "fix this"
-**You get:** a root cause analysis and a targeted fix.
+**Triggers:** Requests that combine 2+ unrelated changes (e.g., "add feature X, fix bug Y, and update the docs").
 
-## Supporting Commands
+**What Claude does:**
+```
+I see a few separate things here:
+1. [Feature X] -- new functionality
+2. [Bug Y] -- fix
+3. [Docs update] -- documentation
 
-| Command | When to Use |
-|---------|-------------|
-| `/todo add "task"` | Add tasks to your `todos.md` backlog |
-| `/todo list` | See current task status |
-| `/todo next` | Get the next task to work on |
-| `/commit` | Structured commit with conventional format |
-| `/review <file>` | Code review checklist before merging |
-| `/clean` | Fix all linting/formatting/type errors |
-| `/fix-github-issue <#>` | Systematic GitHub issue resolution |
+I'll work through these one at a time so each gets proper attention.
+Starting with #2 (the bug fix) since it's blocking. Sound right?
+```
 
-## Rules for Better Prompts (Always Apply)
+Then works through each as its own cycle: understand -> implement -> test -> commit.
 
-### Give Context, Not Just Commands
-- BAD: "fix the login bug"
-- GOOD: "The login form in `src/components/Login.tsx` submits but the API returns 401. It worked before I changed the token refresh logic in `src/auth/tokens.ts`. Here's the error: [paste]"
+---
 
-### Name the Files
-Claude works best when it knows where to look. Always mention specific files, functions, or components.
+## On-Demand: Plan & Build Mode
 
-### State Expected vs. Actual
-"It should do X but instead it does Y" is the single most useful sentence you can write.
+When you have a feature that's bigger than a one-shot change, say **"let's plan this"** (or any variation: "plan this out", "break this down", "let's think through this first") and Claude will switch into a structured planning flow.
 
-### One Thing at a Time
-Don't combine "add feature X, fix bug Y, and refactor Z" in one request. Each gets its own cycle.
+**Phase 1 -- Understand:** Explore the codebase, ask up to 3 clarifying questions.
 
-### Show What You Tried
-If you already attempted a fix, say so. "I tried adding a null check on line 42 but the error moved to line 58" saves Claude from repeating your dead ends.
+**Phase 2 -- Mini-PRD:**
+```markdown
+## Feature: [Name]
+**Problem:** [what's missing or broken]
+**Solution:** [what we're building]
+**In scope:** [specific items]
+**Out of scope:** [explicitly excluded]
+**Key decisions:** [tech choices, patterns to follow]
+```
 
-## Development Principles
+**Phase 3 -- Task Breakdown:** Numbered checklist where each task is small, testable, and names the files it touches. Tests are interleaved with implementation, not bolted on at the end.
 
-### Incremental Over Big-Bang
-- One logical change per commit
-- Run tests after every change, not at the end
-- If a task feels too big, break it into smaller tasks
+```markdown
+## Tasks
+- [ ] 1. [task] -- `src/file.ts`
+- [ ] 2. [task] -- `src/other.ts`
+- [ ] 3. Write tests for [behavior] -- `tests/file.test.ts`
+- [ ] 4. [task] -- `src/file.ts`
+- [ ] 5. Integration test -- `tests/integration.test.ts`
+- [ ] 6. Run full test suite, fix regressions
+```
 
-### Tests Are Not Optional
-- Define test cases before writing code (Phase 4 of `/plan-feature`)
-- Every task should be verifiable
-- "It works on my machine" is not a test
+**Phase 4 -- Test Plan:** Define test cases before writing code.
+
+```markdown
+## Tests
+- [ ] [function] handles [normal case] -> [expected]
+- [ ] [function] handles [edge case] -> [expected]
+- [ ] [end-to-end scenario] -> [expected]
+- [ ] Manual: [how to verify by hand]
+```
+
+**Phase 5 -- Execute:** Work through tasks one at a time. One task, one commit. After each task: run tests, check it off, commit.
+
+The user can say "go" at any phase to skip ahead to implementation, or "adjust" to change the plan.
+
+---
+
+## Principles (Always Active)
 
 ### Read Before Write
-- Claude must read existing code before modifying it
-- Check for existing patterns before inventing new ones
-- Understand the architecture before adding to it
+Never modify a file without reading it first. Check for existing patterns before inventing new ones.
 
-### Minimal Fixes
-- Fix the root cause, not the symptom
-- Smallest change that addresses the actual problem
-- Don't refactor while debugging
+### Incremental Delivery
+One logical change per commit. Run tests after every change, not at the end. If a task feels too big, break it down further.
+
+### Minimal Changes
+Don't refactor while debugging. Don't add features beyond what was asked. Don't add error handling for impossible scenarios. Three similar lines of code are better than a premature abstraction.
+
+### Tests Prove It Works
+"It works" means tests pass, not "I think it's fine." Define what done looks like before starting.
+
+---
+
+## Supporting Commands (Optional)
+
+These slash commands are available if you want to explicitly trigger a workflow:
+
+| Command | What It Does |
+|---------|-------------|
+| `/structure-request` | Force the clarification flow on your next message |
+| `/plan-feature` | Jump straight into Plan & Build mode |
+| `/debug-error` | Force the diagnostic flow on an error |
+| `/commit` | Structured commit with conventional format |
+| `/review <file>` | Code review checklist |
+| `/clean` | Fix linting/formatting/type errors |
+
+You never *need* these -- the auto-detect behaviors cover the same ground. They're there for when you want to be explicit.
