@@ -4,7 +4,7 @@
 
 You don't need to invoke any commands. Just talk naturally. Claude will automatically detect what kind of help you need and apply the right workflow. Think of it as a coding partner who always asks the right follow-up questions before jumping in.
 
-There are three automatic behaviors and one optional planning flow you can trigger when you want it.
+There are five automatic behaviors and one optional planning flow you can trigger when you want it.
 
 ---
 
@@ -98,6 +98,49 @@ Starting with #2 (the bug fix) since it's blocking. Sound right?
 ```
 
 Then works through each as its own cycle: understand -> implement -> test -> commit.
+
+### 4. Pre-Commit Cleanup
+
+After implementing changes and before committing, Claude will **automatically clean up**.
+
+**Triggers:** Claude is about to commit, or the user says "commit", "ship it", "looks good", etc.
+
+**What Claude does (in order):**
+
+1. **Detect the project's tooling** by checking for config files:
+   - Python: `pyproject.toml`, `setup.cfg`, `.flake8` -> ruff/black/isort/mypy/flake8 as configured
+   - JavaScript/TypeScript: `package.json`, `.eslintrc`, `biome.json` -> eslint/prettier/biome/tsc as configured
+   - Rust: `Cargo.toml` -> `cargo fmt`, `cargo clippy`
+   - Go: `go.mod` -> `go fmt`, `go vet`
+   - Other: check for `.editorconfig`, Makefile lint targets, or CI config for hints
+2. **Run the formatter** on changed files only (not the whole codebase)
+3. **Run the linter** on changed files only
+4. **Run type checking** if the project has it configured
+5. **Run tests** related to the changed files
+6. **Fix any issues found** -- formatting auto-fixes applied silently, lint/type errors fixed and explained
+7. **Only then commit** with a clean diff
+
+Claude will NOT skip this process. If tests fail, Claude fixes them before committing. If it can't fix something, it tells the user what's wrong instead of committing broken code.
+
+### 5. Test Awareness
+
+When Claude is about to implement a change that touches logic (not just formatting, comments, or config), it will **think about tests first**.
+
+**Triggers:** Any implementation that modifies function behavior, adds new functions, or changes data flow.
+
+**What Claude does:**
+
+1. **Check if tests exist** for the code being changed
+2. **If tests exist:** run them first to establish a baseline, then run again after changes
+3. **If no tests exist and the change is non-trivial:** briefly note what should be tested:
+   ```
+   Note: there are no tests for this function. After the change,
+   you may want to add tests for [specific behaviors]. Want me to
+   write them?
+   ```
+4. **Don't block on this** -- it's a suggestion, not a gate. If the user says "just do it", proceed without tests.
+
+This works for any language. Claude detects the test framework from the project structure (pytest, jest, cargo test, go test, etc.) and runs accordingly.
 
 ---
 
