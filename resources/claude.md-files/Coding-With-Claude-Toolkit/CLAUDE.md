@@ -407,36 +407,27 @@ You never *need* these -- the auto-detect behaviors cover the same ground. They'
 
 ## Setup
 
-### Quick Install (from awesome-claude-code repo)
+### If you have the awesome-claude-code repo cloned
 
-From the root of the awesome-claude-code repo, run:
+Run `/start` inside Claude Code. It will:
+1. Install the base toolkit (this file) into your project's `CLAUDE.md`
+2. Ask what you're building
+3. Layer on domain-specific resources (Databricks, FastAPI, etc.) if relevant
+
+### If you just want the toolkit in one command
+
 ```bash
+# From the awesome-claude-code repo:
 ./resources/claude.md-files/Coding-With-Claude-Toolkit/install.sh /path/to/your-project
+
+# With optional slash commands:
+./resources/claude.md-files/Coding-With-Claude-Toolkit/install.sh /path/to/your-project --commands
+
+# If your project already has a CLAUDE.md:
+./resources/claude.md-files/Coding-With-Claude-Toolkit/install.sh /path/to/your-project --append
 ```
 
-This copies the CLAUDE.md and slash commands into the right places.
-
-### Manual Install
-
-**Step 1 (required):** Copy this file into your project root as `CLAUDE.md`.
-```bash
-cp CLAUDE.md /path/to/your-project/CLAUDE.md
-```
-If your project already has a `CLAUDE.md`, append the contents instead:
-```bash
-cat CLAUDE.md >> /path/to/your-project/CLAUDE.md
-```
-
-**Step 2 (optional):** Copy the slash commands for explicit triggers.
-```bash
-mkdir -p /path/to/your-project/.claude/commands
-cp structure-request.md /path/to/your-project/.claude/commands/
-cp plan-feature.md /path/to/your-project/.claude/commands/
-cp debug-error.md /path/to/your-project/.claude/commands/
-cp act.md /path/to/your-project/.claude/commands/
-```
-
-### What Goes Where
+### What goes where
 
 ```
 your-project/
