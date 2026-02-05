@@ -31,3 +31,8 @@ coverage.xml
 !.claude/commands/
 .claude/commands/*
 !.claude/commands/evaluate-repository.md
+!.claude/commands/start.md
+!.claude/commands/pick.md
+!.claude/commands/list-resources.md
+!.claude/commands/commit.md
+!.claude/commands/review.md
