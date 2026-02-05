@@ -8,7 +8,7 @@ on:
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+w
 permissions:
   contents: read
   issues: write
@@ -22,9 +22,9 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Track Github API Usage
-      uses: hesreallyhim/github-api-usage-tracker@major
+      uses: hesreallyhim/github-api-usage-monitor@v1
       with:
-        output_path: usage.json
+        diagnostics: true
 
     - name: Set up Python
       uses: actions/setup-python@v5
