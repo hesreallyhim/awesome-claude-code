@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Fullstack Dev Skills`](https://github.com/jeffallan/claude-skills) &nbsp; by &nbsp; [jeffallan](https://github.com/jeffallan)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A comprehensive Claude Code plugin with 65 specialized skills covering full-stack development across a wide range of specific frameworks. Features 9 project workflow commands for Jira/Confluence integration and, notably, an interesting approach to context engineering via a  `/common-ground` command that surfaces Claude's hidden assumptions about your project. This is a smart thing to do.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-skills&username=jeffallan&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`read-only-postgres`](https://github.com/jawwadfirdousi/agent-skills) &nbsp; by &nbsp; [jawwadfirdousi](https://github.com/jawwadfirdousi)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Read-only PostgreSQL query skill for Claude Code. Executes SELECT/SHOW/EXPLAIN/WITH queries across configured databases with strict validation, timeouts, and row limits. Supports multiple connections with descriptions for database selection.
 
@@ -97,17 +108,6 @@ A Claude Code plugin that generates comprehensive Product Requirements Documents
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for prd-generator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=prd-generator&username=dredozubov&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Claude Session Restore`](https://github.com/ZENG3LD/claude-session-restore) &nbsp; by &nbsp; [ZENG3LD](https://github.com/ZENG3LD)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT OR Apache-2.0  
-Efficiently restore context from previous Claude Code sessions by analyzing session files and git history. Features multi-factor data collection across numerous Claude Code capacities with time-based filtering. Uses tail-based parsing for efficient handling of large session files up to 2GB. Includes both a CLI tool for manual analysis and a Claude Code skill for automatic session restoration.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claude-session-restore](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-session-restore&username=ZENG3LD&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -279,6 +279,17 @@ Top-notch, well-written resources covering "just about everything" from core eng
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for everything-claude-code](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=everything-claude-code&username=affaan-m&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Fullstack Dev Skills`](https://github.com/jeffallan/claude-skills) &nbsp; by &nbsp; [jeffallan](https://github.com/jeffallan)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A comprehensive Claude Code plugin with 65 specialized skills covering full-stack development across a wide range of specific frameworks. Features 9 project workflow commands for Jira/Confluence integration and, notably, an interesting approach to context engineering via a  `/common-ground` command that surfaces Claude's hidden assumptions about your project. This is a smart thing to do.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-skills&username=jeffallan&all_stats=true&stats_only=true)
 
 </details>
 <br>
