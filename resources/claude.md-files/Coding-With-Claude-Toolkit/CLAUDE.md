@@ -402,3 +402,55 @@ These slash commands are available if you want to explicitly trigger a workflow:
 | `/clean` | Fix linting/formatting/type errors |
 
 You never *need* these -- the auto-detect behaviors cover the same ground. They're there for when you want to be explicit.
+
+---
+
+## Setup
+
+### Quick Install (from awesome-claude-code repo)
+
+From the root of the awesome-claude-code repo, run:
+```bash
+./resources/claude.md-files/Coding-With-Claude-Toolkit/install.sh /path/to/your-project
+```
+
+This copies the CLAUDE.md and slash commands into the right places.
+
+### Manual Install
+
+**Step 1 (required):** Copy this file into your project root as `CLAUDE.md`.
+```bash
+cp CLAUDE.md /path/to/your-project/CLAUDE.md
+```
+If your project already has a `CLAUDE.md`, append the contents instead:
+```bash
+cat CLAUDE.md >> /path/to/your-project/CLAUDE.md
+```
+
+**Step 2 (optional):** Copy the slash commands for explicit triggers.
+```bash
+mkdir -p /path/to/your-project/.claude/commands
+cp structure-request.md /path/to/your-project/.claude/commands/
+cp plan-feature.md /path/to/your-project/.claude/commands/
+cp debug-error.md /path/to/your-project/.claude/commands/
+cp act.md /path/to/your-project/.claude/commands/
+```
+
+### What Goes Where
+
+```
+your-project/
+├── CLAUDE.md                          <-- all 9 auto-behaviors live here
+├── .claude/
+│   └── commands/                      <-- optional explicit triggers
+│       ├── structure-request.md
+│       ├── plan-feature.md
+│       ├── debug-error.md
+│       └── act.md
+├── src/
+└── ...
+```
+
+- `CLAUDE.md` is read automatically by Claude Code at the start of every session
+- `.claude/commands/*.md` become slash commands you can type (e.g., `/structure-request`)
+- The CLAUDE.md is the only file you actually need -- the commands are conveniences
