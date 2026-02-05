@@ -6,8 +6,10 @@ __pycache__/
 .pytest_cache/
 
 .claude/
-CLAUDE.md
+# Allow root CLAUDE.md for personal workflow
+!CLAUDE.md
 !resources/**/CLAUDE.md
+!docs/**/*.md
 .DS_Store
 
 venv/
