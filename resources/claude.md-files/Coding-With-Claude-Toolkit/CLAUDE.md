@@ -4,7 +4,7 @@
 
 You don't need to invoke any commands. Just talk naturally. Claude will automatically detect what kind of help you need and apply the right workflow. Think of it as a coding partner who always asks the right follow-up questions before jumping in.
 
-There are eight automatic behaviors and one optional planning flow you can trigger when you want it.
+There are nine automatic behaviors and one optional planning flow you can trigger when you want it.
 
 ---
 
@@ -261,6 +261,70 @@ Single-file bug fixes, internal refactors, and cosmetic changes do NOT trigger t
 - Create new documentation files unprompted (only update existing ones)
 - Add boilerplate doc comments to every function it touches
 - Update docs for internal-only changes that don't affect users or developers
+
+### 9. Gotcha Capture
+
+When Claude discovers something non-obvious during a session -- a manual step that should be automated, a deployment quirk, a config that silently breaks things -- it **captures the lesson persistently** so it doesn't get lost when the conversation ends.
+
+**Triggers:**
+- A manual workaround is needed for something that should be automated
+- An undocumented step is required to make something work (e.g., "you have to manually upload the build files")
+- A debugging session reveals a non-obvious root cause
+- Something works only because of a hidden dependency or implicit ordering
+- A "gotcha" is discovered that would surprise the next person (or future you)
+
+**What Claude does:**
+
+1. **Flag it in the moment.** When Claude encounters or the user describes one of these situations, Claude calls it out:
+   ```
+   That's a gotcha worth capturing. The frontend build files aren't
+   included in the deployment automatically -- you have to upload
+   them to the workspace manually after deploy. Let me record this
+   so it doesn't bite us again.
+   ```
+
+2. **Record it in `CLAUDE.md`.** Append to a `## Known Gotchas` section (create the section if it doesn't exist, but don't create a new file). Format:
+   ```markdown
+   ## Known Gotchas
+
+   ### Frontend build files not included in deploy
+   The deployment process does not automatically upload frontend build
+   artifacts to the workspace. After running deploy, manually upload
+   the contents of `build/` to the workspace, or add a post-deploy
+   step to the CI pipeline.
+   *Discovered: [date] | Context: [brief description of when this came up]*
+   ```
+
+3. **Suggest a permanent fix.** After recording the gotcha, Claude proposes how to eliminate it entirely:
+   ```
+   Recorded in CLAUDE.md under Known Gotchas.
+
+   To fix this permanently, we could:
+   - Add a post-deploy script that uploads build/ automatically
+   - Add a CI step that includes the build artifacts in the deploy package
+   - Add a pre-deploy check that fails if build/ is missing
+
+   Want to implement one of these now, or leave it as a known manual step?
+   ```
+
+4. **Check gotchas before repeating mistakes.** On future sessions, when Claude reads `CLAUDE.md` (as part of Goal Drift Detection), it also reads the Known Gotchas section. Before deployment, configuration changes, or similar operations, Claude checks if any known gotchas apply:
+   ```
+   Heads up -- there's a known gotcha here: the frontend build files
+   need to be uploaded manually after deploy. Want me to handle that
+   as part of this deployment?
+   ```
+
+**What gets captured vs. what doesn't:**
+
+| Capture | Don't Capture |
+|---------|---------------|
+| Manual steps that should be automated | One-time typos |
+| Undocumented deployment requirements | Standard debugging steps |
+| Config that silently breaks things | Obvious errors with clear messages |
+| Hidden dependencies between systems | Things already documented elsewhere |
+| Environment-specific quirks | Personal preferences |
+
+**The goal:** Every session leaves the project smarter than it found it. Knowledge compounds instead of evaporating.
 
 ---
 
