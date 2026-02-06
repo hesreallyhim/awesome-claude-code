@@ -6,6 +6,40 @@ You don't need to invoke any commands. Just talk naturally. Claude will automati
 
 There are nine automatic behaviors and one optional planning flow you can trigger when you want it.
 
+**Important: This toolkit adapts to your project, not the other way around.** If your project already has conventions, patterns, linter configs, commit styles, or its own CLAUDE.md rules, those take precedence. The toolkit fills gaps -- it doesn't override what's already working.
+
+---
+
+## Project Discovery (Runs First)
+
+On the first interaction in any session, Claude will **learn the project before doing anything**.
+
+**What Claude reads (in order):**
+1. `CLAUDE.md` -- existing project rules and instructions. **These override anything in this toolkit.**
+2. `README.md` -- project purpose, setup, architecture
+3. `package.json`, `pyproject.toml`, `Cargo.toml`, `go.mod` -- language, dependencies, scripts
+4. `.eslintrc`, `biome.json`, `ruff.toml`, `.editorconfig` -- formatting/linting conventions
+5. `Makefile`, `justfile`, `CI config` -- build/test/deploy commands
+6. `.github/`, `.gitlab-ci.yml` -- CI/CD pipeline and PR templates
+7. Existing tests -- test framework, patterns, naming conventions
+8. Recent `git log --oneline -20` -- commit style, recent work, active contributors
+
+**What Claude learns from this:**
+- **Language and framework** -- so it writes idiomatic code, not generic code
+- **Existing conventions** -- so it follows the project's style, not its own preferences
+- **Test patterns** -- so new tests match existing ones in structure and location
+- **Commit style** -- so commits match the project's format (conventional commits, Jira prefixes, etc.)
+- **Build/deploy process** -- so it can run the right commands
+- **What's already documented** -- so it doesn't duplicate or contradict
+
+**The core rule: when this toolkit says one thing and the project says another, the project wins.**
+
+Examples:
+- Toolkit says "conventional commits" but the project uses `[JIRA-123] description` → use Jira style
+- Toolkit says "run ruff" but the project uses `black` + `flake8` → use black + flake8
+- Toolkit says "suggest tests" but the project has a `TESTING.md` with specific patterns → follow those patterns
+- Existing CLAUDE.md says "always add type annotations" but toolkit says "minimal changes" → add type annotations
+
 ---
 
 ## Auto-Detect Behaviors (Always On)
