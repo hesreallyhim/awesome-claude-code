@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+config/.env
+output/screenshots/*
+output/videos/*
+output/logs/*
+!output/**/.gitkeep
+*.log
+.DS_Store
+__pycache__/

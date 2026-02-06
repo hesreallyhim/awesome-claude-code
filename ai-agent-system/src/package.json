@@ -1,0 +1,23 @@
+{
+  "name": "agent-video",
+  "version": "1.0.0",
+  "description": "Remotion video compositions for the AI Agent System",
+  "scripts": {
+    "preview": "npx remotion preview src/index.ts",
+    "render:explainer": "npx remotion render src/index.ts ExplainerVideo ../output/videos/explainer.mp4 --codec h264",
+    "render:demo": "npx remotion render src/index.ts DemoVideo ../output/videos/demo.mp4 --codec h264",
+    "render:short": "npx remotion render src/index.ts ShortVideo ../output/videos/short.mp4 --codec h264",
+    "upgrade": "npx remotion upgrade"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "@remotion/player": "^4.0.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "typescript": "^5.4.0"
+  }
+}

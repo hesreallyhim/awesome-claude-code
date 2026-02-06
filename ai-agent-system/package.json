@@ -1,0 +1,27 @@
+{
+  "name": "ai-agent-system",
+  "version": "1.0.0",
+  "description": "Autonomous AI Agent System built with Claude Code — skills training, browser automation, video creation, content promotion. No OpenClaw required.",
+  "main": "scripts/browser.js",
+  "scripts": {
+    "setup": "bash scripts/setup.sh",
+    "browse": "node scripts/browser.js",
+    "record": "node scripts/record-demo.js",
+    "screenshot": "node scripts/screenshot.js",
+    "pipeline": "bash scripts/run-pipeline.sh",
+    "video:preview": "cd src && npx remotion preview",
+    "video:render": "cd src && npx remotion render ExplainerVideo ../output/videos/explainer.mp4",
+    "video:demo": "cd src && npx remotion render DemoVideo ../output/videos/demo.mp4",
+    "video:short": "cd src && npx remotion render ShortVideo ../output/videos/short.mp4",
+    "test": "node scripts/test-agent.js"
+  },
+  "dependencies": {
+    "puppeteer-core": "^23.0.0",
+    "dotenv": "^16.4.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}
