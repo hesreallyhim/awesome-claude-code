@@ -457,41 +457,48 @@ You never *need* these -- the auto-detect behaviors cover the same ground. They'
 
 ## Setup
 
-### If you have the awesome-claude-code repo cloned
+### Option 1: One-liner (no clone required)
 
-Run `/start` inside Claude Code. It will:
-1. Install the base toolkit (this file) into your project's `CLAUDE.md`
-2. Ask what you're building
-3. Layer on domain-specific resources (Databricks, FastAPI, etc.) if relevant
-
-### If you just want the toolkit in one command
-
+From inside your project directory:
 ```bash
-# From the awesome-claude-code repo:
-./resources/claude.md-files/Coding-With-Claude-Toolkit/install.sh /path/to/your-project
-
-# With optional slash commands:
-./resources/claude.md-files/Coding-With-Claude-Toolkit/install.sh /path/to/your-project --commands
-
-# If your project already has a CLAUDE.md:
-./resources/claude.md-files/Coding-With-Claude-Toolkit/install.sh /path/to/your-project --append
+curl -fsSL https://raw.githubusercontent.com/stuagano/awesome-claude-code/main/resources/claude.md-files/Coding-With-Claude-Toolkit/install.sh | bash -s -- .
 ```
 
-### What goes where
+If your project already has a `CLAUDE.md`:
+```bash
+curl -fsSL https://raw.githubusercontent.com/stuagano/awesome-claude-code/main/resources/claude.md-files/Coding-With-Claude-Toolkit/install.sh | bash -s -- . --append
+```
+
+### Option 2: From a local clone
+
+If you've cloned the awesome-claude-code repo:
+```bash
+# Install into any project
+~/awesome-claude-code/resources/claude.md-files/Coding-With-Claude-Toolkit/install.sh ~/my-project
+
+# Append to existing CLAUDE.md
+~/awesome-claude-code/resources/claude.md-files/Coding-With-Claude-Toolkit/install.sh ~/my-project --append
+
+# Also install optional slash commands
+~/awesome-claude-code/resources/claude.md-files/Coding-With-Claude-Toolkit/install.sh ~/my-project --commands
+```
+
+### Option 3: Interactive setup with domain resources
+
+Clone the repo, `cd` into it, run Claude Code, then `/start`. This is the only option that adds domain-specific resources (Databricks, FastAPI, etc.) on top of the base toolkit.
+
+### What ends up in your project
 
 ```
 your-project/
-├── CLAUDE.md                          <-- all 9 auto-behaviors live here
+├── CLAUDE.md          <-- all 9 auto-behaviors (this is all you need)
 ├── .claude/
-│   └── commands/                      <-- optional explicit triggers
+│   └── commands/      <-- optional, only with --commands flag
 │       ├── structure-request.md
 │       ├── plan-feature.md
 │       ├── debug-error.md
 │       └── act.md
-├── src/
-└── ...
+└── src/
 ```
 
-- `CLAUDE.md` is read automatically by Claude Code at the start of every session
-- `.claude/commands/*.md` become slash commands you can type (e.g., `/structure-request`)
-- The CLAUDE.md is the only file you actually need -- the commands are conveniences
+`CLAUDE.md` is read automatically by Claude Code at the start of every session. That's it -- one file, no dependencies, no connection back to this repo.
