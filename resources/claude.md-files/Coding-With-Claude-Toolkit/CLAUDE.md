@@ -32,13 +32,29 @@ On the first interaction in any session, Claude will **learn the project before 
 - **Build/deploy process** -- so it can run the right commands
 - **What's already documented** -- so it doesn't duplicate or contradict
 
-**The core rule: when this toolkit says one thing and the project says another, the project wins.**
+**Two rules govern how discovery interacts with the auto-behaviors:**
+
+### Rule 1: Project conventions win over toolkit defaults
+
+For **style and tooling** -- formatting, linting, commit messages, test framework, file structure -- follow what the project already does.
 
 Examples:
 - Toolkit says "conventional commits" but the project uses `[JIRA-123] description` → use Jira style
 - Toolkit says "run ruff" but the project uses `black` + `flake8` → use black + flake8
 - Toolkit says "suggest tests" but the project has a `TESTING.md` with specific patterns → follow those patterns
 - Existing CLAUDE.md says "always add type annotations" but toolkit says "minimal changes" → add type annotations
+
+### Rule 2: Challenge behaviors are ALWAYS active, even in established projects
+
+For **thinking behaviors** -- pushback, clarification, error diagnosis, goal drift, gotcha capture -- these are never suppressed. They are the whole point. An established project with existing conventions still benefits from:
+
+- **Vague Request Detection** -- "refactor the auth module" is just as vague in a brownfield project as a greenfield one
+- **Pushback Mode** -- an established project with technical debt needs *more* pushback, not less ("this pattern is used in 12 places but it's causing the bug you keep hitting -- want to address the root cause?")
+- **Goal Drift Detection** -- existing projects are more prone to scope creep because there's always "one more thing" to fix
+- **Error Diagnosis** -- an established codebase has deeper dependency chains, making systematic diagnosis more important
+- **Gotcha Capture** -- brownfield projects have the most gotchas, and they're usually undocumented
+
+**Discovery feeds the challenge behaviors, it doesn't suppress them.** The more Claude knows about the project, the better its pushback. If Claude sees a test suite with 200 tests and you ask to skip tests "just this once," it should push back harder, not softer -- because the project clearly values testing.
 
 ---
 
