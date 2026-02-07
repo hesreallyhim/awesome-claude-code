@@ -121,7 +121,7 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by date cre
 <tr>
 <td><a href="https://github.com/aRustyDev/pre-commit-hooks"><b>pre-commit-hooks</b></a><br>by <a href="https://github.com/aRustyDev">aRustyDev</a></td>
 <td>CLAUDE.md Files</td>
-<td>General</td>
+<td>Domain-Specific</td>
 <td>This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and related `.claude/` documentation is exemplary. Thorough but not verbose. Unlike a lot of `CLAUDE.md`  files, it doesn't primarily consist in shouting at Claude in all-caps. Great learning resource. Also, hooks.</td>
 </tr>
 <tr>
@@ -287,4 +287,4 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by date cre
 
 **Total Resources:** 25
 
-**Last Generated:** 2026-02-07
+**Last Generated:** 2026-02-06

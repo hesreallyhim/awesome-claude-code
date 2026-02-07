@@ -64,14 +64,13 @@ Claude Code is a CLI-based coding assistant from [Anthropic](https://www.anthrop
   - [Project & Task Management](#project--task-management)
   - [Miscellaneous](#miscellaneous)
 - [CLAUDE.md Files 📂](#claudemd-files-)
-  - [General](#general-6)
   - [Language-Specific](#language-specific)
   - [Domain-Specific](#domain-specific)
   - [Project Scaffolding & MCP](#project-scaffolding--mcp)
 - [Alternative Clients 📱](#alternative-clients-)
-  - [General](#general-7)
+  - [General](#general-6)
 - [Official Documentation 🏛️](#official-documentation-%EF%B8%8F)
-  - [General](#general-8)
+  - [General](#general-7)
 
 ## Agent Skills 🤖
 
@@ -310,10 +309,6 @@ Claude Code is a CLI-based coding assistant from [Anthropic](https://www.anthrop
 
 > `CLAUDE.md` files are files that contain important guidelines and context-specific information or instructions that help Claude Code to better understand your project and your coding standards
 
-### General
-
-- [pre-commit-hooks](https://github.com/aRustyDev/pre-commit-hooks) by [aRustyDev](https://github.com/aRustyDev) - This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and related `.claude/` documentation is exemplary. Thorough but not verbose. Unlike a lot of `CLAUDE.md`  files, it doesn't primarily consist in shouting at Claude in all-caps. Great learning resource. Also, hooks.
-
 ### Language-Specific
 
 - [AI IntelliJ Plugin](https://github.com/didalgolab/ai-intellij-plugin/blob/main/CLAUDE.md) by [didalgolab](https://github.com/didalgolab) - Provides comprehensive Gradle commands for IntelliJ plugin development with platform-specific coding patterns, detailed package structure guidelines, and clear internationalization standards.
@@ -340,6 +335,7 @@ Claude Code is a CLI-based coding assistant from [Anthropic](https://www.anthrop
 - [Guitar](https://github.com/soramimi/Guitar/blob/master/CLAUDE.md) by [soramimi](https://github.com/soramimi) - Serves as development guide for Guitar Git GUI Client with build commands for various platforms, code style guidelines for contributing, and project structure explanation.
 - [Network Chronicles](https://github.com/Fimeg/NetworkChronicles/blob/legacy-v1/CLAUDE.md) by [Fimeg](https://github.com/Fimeg) - Presents detailed implementation plan for AI-driven game characters with technical specifications for LLM integration, character guidelines, and service discovery mechanics.
 - [Pareto Mac](https://github.com/ParetoSecurity/pareto-mac/blob/main/CLAUDE.md) by [ParetoSecurity](https://github.com/ParetoSecurity) - Serves as development guide for Mac security audit tool with build instructions, contribution guidelines, testing procedures, and workflow documentation.
+- [pre-commit-hooks](https://github.com/aRustyDev/pre-commit-hooks) by [aRustyDev](https://github.com/aRustyDev) - This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and related `.claude/` documentation is exemplary. Thorough but not verbose. Unlike a lot of `CLAUDE.md`  files, it doesn't primarily consist in shouting at Claude in all-caps. Great learning resource. Also, hooks.
 - [SteadyStart](https://github.com/steadycursor/steadystart/blob/main/CLAUDE.md) by [steadycursor](https://github.com/steadycursor) - Clear and direct instructives about style, permissions, Claude's "role", communications, and documentation of Claude Code sessions for other team members to stay abreast.
 
 ### Project Scaffolding & MCP

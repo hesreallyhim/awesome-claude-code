@@ -436,15 +436,6 @@ _A standalone Bash script for Behavior-Driven Development with Ralph Wiggum Loop
 </a>
 </div>
 <div style="height:40px;width:400px;overflow:hidden;display:block;">
-<a href="#claude-md-files-general">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="../assets/toc-sub-general.svg">
-    <source media="(prefers-color-scheme: light)" srcset="../assets/toc-sub-general-light-anim-scanline.svg">
-    <img src="../assets/toc-sub-general-light-anim-scanline.svg" alt="General" height="40" style="height:40px;max-width:none;">
-  </picture>
-</a>
-</div>
-<div style="height:40px;width:400px;overflow:hidden;display:block;">
 <a href="#language-specific">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="../assets/toc-sub-language.svg">
@@ -1880,18 +1871,6 @@ _Reformats documentation to use React Stepper component, transforming heading fo
   </picture>
 </div>
 
-<details open id="claude-md-files-general">
-<summary><span><picture><img src="../assets/subheader_claude_md_files_general.svg" alt="General" align="absmiddle"></picture></span></summary>
-
-<a href="https://github.com/aRustyDev/pre-commit-hooks"><img src="../assets/badge-pre-commit-hooks.svg" alt="pre-commit-hooks"></a>  
-_This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and related `.claude/` documentation is exemplary. Thorough but not verbose. Unlike a lot of `CLAUDE.md`  files, it doesn't primarily consist in shouting at Claude in all-caps. Great learning resource. Also, hooks._  
-![GitHub Stats for pre-commit-hooks](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=pre-commit-hooks&username=aRustyDev&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
-
-
-</details>
-
 <details open id="language-specific">
 <summary><span><picture><img src="../assets/subheader_language_specific.svg" alt="Language-Specific" align="absmiddle"></picture></span></summary>
 
@@ -2043,6 +2022,13 @@ _Presents detailed implementation plan for AI-driven game characters with techni
 <a href="https://github.com/ParetoSecurity/pareto-mac/blob/main/CLAUDE.md"><img src="../assets/badge-pareto-mac.svg" alt="Pareto Mac"></a>  
 _Serves as development guide for Mac security audit tool with build instructions, contribution guidelines, testing procedures, and workflow documentation._  
 ![GitHub Stats for pareto-mac](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=pareto-mac&username=ParetoSecurity&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/aRustyDev/pre-commit-hooks"><img src="../assets/badge-pre-commit-hooks.svg" alt="pre-commit-hooks"></a>  
+_This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and related `.claude/` documentation is exemplary. Thorough but not verbose. Unlike a lot of `CLAUDE.md`  files, it doesn't primarily consist in shouting at Claude in all-caps. Great learning resource. Also, hooks._  
+![GitHub Stats for pre-commit-hooks](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=pre-commit-hooks&username=aRustyDev&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 

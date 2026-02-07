@@ -163,7 +163,6 @@ A standalone Bash script for Behavior-Driven Development with Ralph Wiggum Loop.
 - <details open>
   <summary><a href="#claudemd-files--">CLAUDE.md Files</a></summary>
 
-  - [General](#general--6)
   - [Language-Specific](#language-specific-)
   - [Domain-Specific](#domain-specific-)
   - [Project Scaffolding & MCP](#project-scaffolding--mcp-)
@@ -173,14 +172,14 @@ A standalone Bash script for Behavior-Driven Development with Ralph Wiggum Loop.
 - <details open>
   <summary><a href="#alternative-clients--">Alternative Clients</a></summary>
 
-  - [General](#general--7)
+  - [General](#general--6)
 
   </details>
 
 - <details open>
   <summary><a href="#official-documentation-%EF%B8%8F-">Official Documentation</a></summary>
 
-  - [General](#general--8)
+  - [General](#general--7)
 
   </details>
 
@@ -1891,22 +1890,6 @@ Reformats documentation to use React Stepper component, transforming heading for
 > `CLAUDE.md` files are files that contain important guidelines and context-specific information or instructions that help Claude Code to better understand your project and your coding standards
 
 <details open>
-<summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
-
-[`pre-commit-hooks`](https://github.com/aRustyDev/pre-commit-hooks) &nbsp; by &nbsp; [aRustyDev](https://github.com/aRustyDev)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;GPL-3.0  
-This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and related `.claude/` documentation is exemplary. Thorough but not verbose. Unlike a lot of `CLAUDE.md`  files, it doesn't primarily consist in shouting at Claude in all-caps. Great learning resource. Also, hooks.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for pre-commit-hooks](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=pre-commit-hooks&username=aRustyDev&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-</details>
-
-<details open>
 <summary><h3>Language-Specific <a href="#awesome-claude-code">🔝</a></h3></summary>
 
 [`AI IntelliJ Plugin`](https://github.com/didalgolab/ai-intellij-plugin/blob/main/CLAUDE.md) &nbsp; by &nbsp; [didalgolab](https://github.com/didalgolab)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
@@ -2134,6 +2117,17 @@ Serves as development guide for Mac security audit tool with build instructions,
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for pareto-mac](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=pareto-mac&username=ParetoSecurity&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`pre-commit-hooks`](https://github.com/aRustyDev/pre-commit-hooks) &nbsp; by &nbsp; [aRustyDev](https://github.com/aRustyDev)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;GPL-3.0  
+This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and related `.claude/` documentation is exemplary. Thorough but not verbose. Unlike a lot of `CLAUDE.md`  files, it doesn't primarily consist in shouting at Claude in all-caps. Great learning resource. Also, hooks.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for pre-commit-hooks](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=pre-commit-hooks&username=aRustyDev&all_stats=true&stats_only=true)
 
 </details>
 <br>
