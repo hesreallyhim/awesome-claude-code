@@ -144,6 +144,7 @@ Claude Code is a CLI-based coding assistant from [Anthropic](https://www.anthrop
 
 ### General
 
+- [AgentStore](https://github.com/techgangboss/agentstore) by [techgangboss](https://github.com/techgangboss) - Open-source marketplace for Claude Code plugins with gasless USDC payments via x402 protocol. Browse, install, and publish MCP-backed agents with CLI, web dashboard, and an agent-friendly HTTP API. Publishers earn 80% of sales in USDC.
 - [cc-sessions](https://github.com/GWUDCAP/cc-sessions) by [toastdev](https://github.com/satoastshi) - An opinionated approach to productive development with Claude Code.
 - [cc-tools](https://github.com/Veraticus/cc-tools) by [Josh Symonds](https://github.com/Veraticus) - High-performance Go implementation of Claude Code hooks and utilities. Provides smart linting, testing, and statusline generation with minimal overhead.
 - [ccexp](https://github.com/nyatinte/ccexp) by [nyatinte](https://github.com/nyatinte) - Interactive CLI tool for discovering and managing Claude Code configuration files and slash commands with a beautiful terminal UI.
