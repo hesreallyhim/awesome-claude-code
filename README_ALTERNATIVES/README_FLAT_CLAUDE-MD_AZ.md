@@ -236,6 +236,15 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: alphabetica
 <td colspan="4"><img src="https://img.shields.io/github/stars/ParetoSecurity/pareto-mac?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ParetoSecurity/pareto-mac?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ParetoSecurity/pareto-mac?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ParetoSecurity/pareto-mac?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ParetoSecurity/pareto-mac?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ParetoSecurity/pareto-mac?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ParetoSecurity/pareto-mac?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ParetoSecurity/pareto-mac?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ParetoSecurity/pareto-mac?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/aRustyDev/pre-commit-hooks"><b>pre-commit-hooks</b></a><br>by <a href="https://github.com/aRustyDev">aRustyDev</a></td>
+<td>CLAUDE.md Files</td>
+<td>General</td>
+<td>This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and related `.claude/` documentation is exemplary. Thorough but not verbose. Unlike a lot of `CLAUDE.md`  files, it doesn't primarily consist in shouting at Claude in all-caps. Great learning resource. Also, hooks.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/aRustyDev/pre-commit-hooks?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/aRustyDev/pre-commit-hooks?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/aRustyDev/pre-commit-hooks?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/aRustyDev/pre-commit-hooks?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/aRustyDev/pre-commit-hooks?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/aRustyDev/pre-commit-hooks?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/aRustyDev/pre-commit-hooks?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/aRustyDev/pre-commit-hooks?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/aRustyDev/pre-commit-hooks?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/sgcarstrends/backend/blob/main/CLAUDE.md"><b>SG Cars Trends Backend</b></a><br>by <a href="https://github.com/sgcarstrends">sgcarstrends</a></td>
 <td>CLAUDE.md Files</td>
 <td>Language-Specific</td>
@@ -276,6 +285,6 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: alphabetica
 
 ---
 
-**Total Resources:** 24
+**Total Resources:** 25
 
-**Last Generated:** 2026-02-05
+**Last Generated:** 2026-02-07
