@@ -1310,6 +1310,15 @@ A flat list view of all resources. Category: **All** | Sorted: by date created
 <td colspan="4"><img src="https://img.shields.io/github/stars/liam-hq/liam?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/liam-hq/liam?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/liam-hq/liam?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/liam-hq/liam?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/liam-hq/liam?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/liam-hq/liam?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/liam-hq/liam?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/liam-hq/liam?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/liam-hq/liam?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/aRustyDev/pre-commit-hooks"><b>pre-commit-hooks</b></a><br>by <a href="https://github.com/aRustyDev">aRustyDev</a></td>
+<td>CLAUDE.md Files</td>
+<td>Domain-Specific</td>
+<td>This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and related `.claude/` documentation is exemplary. Thorough but not verbose. Unlike a lot of `CLAUDE.md`  files, it doesn't primarily consist in shouting at Claude in all-caps. Great learning resource. Also, hooks.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/aRustyDev/pre-commit-hooks?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/aRustyDev/pre-commit-hooks?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/aRustyDev/pre-commit-hooks?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/aRustyDev/pre-commit-hooks?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/aRustyDev/pre-commit-hooks?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/aRustyDev/pre-commit-hooks?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/aRustyDev/pre-commit-hooks?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/aRustyDev/pre-commit-hooks?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/aRustyDev/pre-commit-hooks?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/GaloyMoney/lana-bank/blob/main/.claude/commands/mermaid.md"><b>/mermaid</b></a><br>by <a href="https://github.com/GaloyMoney">GaloyMoney</a></td>
 <td>Slash-Commands</td>
 <td>Miscellaneous</td>
@@ -1665,6 +1674,6 @@ A flat list view of all resources. Category: **All** | Sorted: by date created
 
 ---
 
-**Total Resources:** 180
+**Total Resources:** 181
 
-**Last Generated:** 2026-02-05
+**Last Generated:** 2026-02-06

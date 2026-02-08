@@ -1358,6 +1358,15 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/backnotprop/plannotator?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/backnotprop/plannotator?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/backnotprop/plannotator?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/backnotprop/plannotator?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/backnotprop/plannotator?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/backnotprop/plannotator?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/backnotprop/plannotator?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/backnotprop/plannotator?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/backnotprop/plannotator?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/aRustyDev/pre-commit-hooks"><b>pre-commit-hooks</b></a><br>by <a href="https://github.com/aRustyDev">aRustyDev</a></td>
+<td>CLAUDE.md Files</td>
+<td>Domain-Specific</td>
+<td>This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and related `.claude/` documentation is exemplary. Thorough but not verbose. Unlike a lot of `CLAUDE.md`  files, it doesn't primarily consist in shouting at Claude in all-caps. Great learning resource. Also, hooks.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/aRustyDev/pre-commit-hooks?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/aRustyDev/pre-commit-hooks?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/aRustyDev/pre-commit-hooks?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/aRustyDev/pre-commit-hooks?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/aRustyDev/pre-commit-hooks?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/aRustyDev/pre-commit-hooks?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/aRustyDev/pre-commit-hooks?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/aRustyDev/pre-commit-hooks?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/aRustyDev/pre-commit-hooks?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/steadycursor/steadystart/tree/main/.claude/commands"><b>Project Bootstrapping and Task Management</b></a><br>by <a href="https://github.com/steadycursor">steadycursor</a></td>
 <td>Workflows & Knowledge Guides</td>
 <td>General</td>
@@ -1665,6 +1674,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 
 ---
 
-**Total Resources:** 180
+**Total Resources:** 181
 
-**Last Generated:** 2026-02-05
+**Last Generated:** 2026-02-06

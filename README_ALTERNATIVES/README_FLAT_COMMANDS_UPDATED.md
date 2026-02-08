@@ -56,15 +56,6 @@ A flat list view of all resources. Category: **Commands** | Sorted: by last upda
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/elizaOS/elizaos.github.io/blob/main/.claude/commands/context-prime.md"><b>/context-prime</b></a><br>by <a href="https://github.com/elizaOS">elizaOS</a></td>
-<td>Slash-Commands</td>
-<td>Context Loading & Priming</td>
-<td>Primes Claude with comprehensive project understanding by loading repository structure, setting development context, establishing project goals, and defining collaboration parameters.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/elizaOS/elizaos.github.io?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/elizaOS/elizaos.github.io?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/elizaOS/elizaos.github.io?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/elizaOS/elizaos.github.io?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/elizaOS/elizaos.github.io?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/elizaOS/elizaos.github.io?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/elizaOS/elizaos.github.io?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/elizaOS/elizaos.github.io?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/elizaOS/elizaos.github.io?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/giselles-ai/giselle/blob/main/.claude/commands/update-branch-name.md"><b>/update-branch-name</b></a><br>by <a href="https://github.com/giselles-ai">giselles-ai</a></td>
 <td>Slash-Commands</td>
 <td>Version Control & Git</td>
@@ -110,13 +101,13 @@ A flat list view of all resources. Category: **Commands** | Sorted: by last upda
 <td colspan="4"><img src="https://img.shields.io/github/stars/GaloyMoney/lana-bank?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/GaloyMoney/lana-bank?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/GaloyMoney/lana-bank?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/GaloyMoney/lana-bank?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/GaloyMoney/lana-bank?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/GaloyMoney/lana-bank?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/GaloyMoney/lana-bank?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/GaloyMoney/lana-bank?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/GaloyMoney/lana-bank?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/jeremymailen/kotlinter-gradle/blob/master/.claude/commands/fix-github-issue.md"><b>/fix-github-issue</b></a><br>by <a href="https://github.com/jeremymailen">jeremymailen</a></td>
+<td><a href="https://github.com/zuplo/docs/blob/main/.claude/commands/use-stepper.md"><b>/use-stepper</b></a><br>by <a href="https://github.com/zuplo">zuplo</a></td>
 <td>Slash-Commands</td>
-<td>Version Control & Git</td>
-<td>Analyzes and fixes GitHub issues using a structured approach with GitHub CLI for issue details, implementing necessary code changes, running tests, and creating proper commit messages.</td>
+<td>Miscellaneous</td>
+<td>Reformats documentation to use React Stepper component, transforming heading formats, applying proper indentation, and maintaining markdown compatibility with admonition formatting.</td>
 </tr>
 <tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/jeremymailen/kotlinter-gradle?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/jeremymailen/kotlinter-gradle?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/jeremymailen/kotlinter-gradle?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jeremymailen/kotlinter-gradle?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/jeremymailen/kotlinter-gradle?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/jeremymailen/kotlinter-gradle?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jeremymailen/kotlinter-gradle?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/jeremymailen/kotlinter-gradle?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/jeremymailen/kotlinter-gradle?style=flat-square" alt="license"></td>
+<td colspan="4"><img src="https://img.shields.io/github/stars/zuplo/docs?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/zuplo/docs?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/zuplo/docs?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/zuplo/docs?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/zuplo/docs?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/zuplo/docs?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/zuplo/docs?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/zuplo/docs?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/zuplo/docs?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/analyze-issue.md"><b>/analyze-issue</b></a><br>by <a href="https://github.com/jerseycheese">jerseycheese</a></td>
@@ -155,6 +146,24 @@ A flat list view of all resources. Category: **Commands** | Sorted: by last upda
 <td colspan="4"><img src="https://img.shields.io/github/stars/jerseycheese/Narraitor?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/jerseycheese/Narraitor?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/jerseycheese/Narraitor?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jerseycheese/Narraitor?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/jerseycheese/Narraitor?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/jerseycheese/Narraitor?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jerseycheese/Narraitor?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/jerseycheese/Narraitor?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/jerseycheese/Narraitor?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/elizaOS/elizaos.github.io/blob/main/.claude/commands/context-prime.md"><b>/context-prime</b></a><br>by <a href="https://github.com/elizaOS">elizaOS</a></td>
+<td>Slash-Commands</td>
+<td>Context Loading & Priming</td>
+<td>Primes Claude with comprehensive project understanding by loading repository structure, setting development context, establishing project goals, and defining collaboration parameters.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/elizaOS/elizaos.github.io?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/elizaOS/elizaos.github.io?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/elizaOS/elizaos.github.io?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/elizaOS/elizaos.github.io?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/elizaOS/elizaos.github.io?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/elizaOS/elizaos.github.io?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/elizaOS/elizaos.github.io?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/elizaOS/elizaos.github.io?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/elizaOS/elizaos.github.io?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/jeremymailen/kotlinter-gradle/blob/master/.claude/commands/fix-github-issue.md"><b>/fix-github-issue</b></a><br>by <a href="https://github.com/jeremymailen">jeremymailen</a></td>
+<td>Slash-Commands</td>
+<td>Version Control & Git</td>
+<td>Analyzes and fixes GitHub issues using a structured approach with GitHub CLI for issue details, implementing necessary code changes, running tests, and creating proper commit messages.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/jeremymailen/kotlinter-gradle?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/jeremymailen/kotlinter-gradle?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/jeremymailen/kotlinter-gradle?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jeremymailen/kotlinter-gradle?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/jeremymailen/kotlinter-gradle?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/jeremymailen/kotlinter-gradle?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jeremymailen/kotlinter-gradle?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/jeremymailen/kotlinter-gradle?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/jeremymailen/kotlinter-gradle?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/evmts/tevm-monorepo/blob/main/.claude/commands/commit.md"><b>/commit</b></a><br>by <a href="https://github.com/evmts">evmts</a></td>
 <td>Slash-Commands</td>
 <td>Version Control & Git</td>
@@ -189,15 +198,6 @@ A flat list view of all resources. Category: **Commands** | Sorted: by last upda
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/omril321/automated-notebooklm?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/omril321/automated-notebooklm?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/omril321/automated-notebooklm?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/omril321/automated-notebooklm?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/omril321/automated-notebooklm?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/omril321/automated-notebooklm?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/omril321/automated-notebooklm?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/omril321/automated-notebooklm?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/omril321/automated-notebooklm?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/zuplo/docs/blob/main/.claude/commands/use-stepper.md"><b>/use-stepper</b></a><br>by <a href="https://github.com/zuplo">zuplo</a></td>
-<td>Slash-Commands</td>
-<td>Miscellaneous</td>
-<td>Reformats documentation to use React Stepper component, transforming heading formats, applying proper indentation, and maintaining markdown compatibility with admonition formatting.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/zuplo/docs?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/zuplo/docs?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/zuplo/docs?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/zuplo/docs?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/zuplo/docs?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/zuplo/docs?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/zuplo/docs?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/zuplo/docs?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/zuplo/docs?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/hesreallyhim/inkverse-fork/blob/preserve-claude-resources/.claude/commands/create-plan.md"><b>/create-plan</b></a><br>by <a href="https://github.com/taddyorg">taddyorg</a></td>
@@ -458,4 +458,4 @@ A flat list view of all resources. Category: **Commands** | Sorted: by last upda
 
 **Total Resources:** 44
 
-**Last Generated:** 2026-02-05
+**Last Generated:** 2026-02-06

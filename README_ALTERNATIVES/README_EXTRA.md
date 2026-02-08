@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/aRustyDev/pre-commit-hooks"><img src="../assets/badge-pre-commit-hooks.svg" alt="pre-commit-hooks"></a>  
+_This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and related `.claude/` documentation is exemplary. Thorough but not verbose. Unlike a lot of `CLAUDE.md`  files, it doesn't primarily consist in shouting at Claude in all-caps. Great learning resource. Also, hooks._  
+![GitHub Stats for pre-commit-hooks](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=pre-commit-hooks&username=aRustyDev&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/jeffallan/claude-skills"><img src="../assets/badge-fullstack-dev-skills.svg" alt="Fullstack Dev Skills"></a>  
 _A comprehensive Claude Code plugin with 65 specialized skills covering full-stack development across a wide range of specific frameworks. Features 9 project workflow commands for Jira/Confluence integration and, notably, an interesting approach to context engineering via a  `/common-ground` command that surfaces Claude's hidden assumptions about your project. This is a smart thing to do._  
 ![GitHub Stats for claude-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-skills&username=jeffallan&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -202,14 +206,6 @@ _A curated list of resources about Ralph, the AI coding technique that runs AI c
 <a href="https://github.com/marcindulak/ralph-wiggum-bdd"><img src="../assets/badge-ralph-wiggum-bdd.svg" alt="ralph-wiggum-bdd"></a>  
 _A standalone Bash script for Behavior-Driven Development with Ralph Wiggum Loop. In principle, while running unattended, the script can keep code and requirements in sync, but in practice it still requires interactive human supervision, so it supports both modes. The script is standalone and can be modified and committed into your project._  
 ![GitHub Stats for ralph-wiggum-bdd](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-wiggum-bdd&username=marcindulak&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/akin-ozer/cc-devops-skills"><img src="../assets/badge-cc-devops-skills.svg" alt="cc-devops-skills"></a>  
-_Immensely detailed set of skills for DevOps Engineers (or anyone who has to deploy code, really). Works with validations, generators, shell scripts and CLI tools to create high quality IaC code for about any platform you've ever struggled painfully to work with. Worth downloading even just as a source of documentation._  
-![GitHub Stats for cc-devops-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=cc-devops-skills&username=akin-ozer&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/dredozubov/prd-generator"><img src="../assets/badge-prd-generator.svg" alt="/prd-generator"></a>  
-_A Claude Code plugin that generates comprehensive Product Requirements Documents (PRDs) from conversation context. Invoke `/create-prd` after discussing requirements and it produces a complete PRD with all standard sections including Executive Summary, User Stories, MVP Scope, Architecture, Success Criteria, and Implementation Phases._  
-![GitHub Stats for prd-generator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=prd-generator&username=dredozubov&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 
 <br>
@@ -2026,6 +2022,13 @@ _Presents detailed implementation plan for AI-driven game characters with techni
 <a href="https://github.com/ParetoSecurity/pareto-mac/blob/main/CLAUDE.md"><img src="../assets/badge-pareto-mac.svg" alt="Pareto Mac"></a>  
 _Serves as development guide for Mac security audit tool with build instructions, contribution guidelines, testing procedures, and workflow documentation._  
 ![GitHub Stats for pareto-mac](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=pareto-mac&username=ParetoSecurity&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/aRustyDev/pre-commit-hooks"><img src="../assets/badge-pre-commit-hooks.svg" alt="pre-commit-hooks"></a>  
+_This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and related `.claude/` documentation is exemplary. Thorough but not verbose. Unlike a lot of `CLAUDE.md`  files, it doesn't primarily consist in shouting at Claude in all-caps. Great learning resource. Also, hooks._  
+![GitHub Stats for pre-commit-hooks](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=pre-commit-hooks&username=aRustyDev&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 

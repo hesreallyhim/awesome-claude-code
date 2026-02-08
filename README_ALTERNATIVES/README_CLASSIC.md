@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`pre-commit-hooks`](https://github.com/aRustyDev/pre-commit-hooks) &nbsp; by &nbsp; [aRustyDev](https://github.com/aRustyDev)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;GPL-3.0  
+This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and related `.claude/` documentation is exemplary. Thorough but not verbose. Unlike a lot of `CLAUDE.md`  files, it doesn't primarily consist in shouting at Claude in all-caps. Great learning resource. Also, hooks.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for pre-commit-hooks](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=pre-commit-hooks&username=aRustyDev&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Fullstack Dev Skills`](https://github.com/jeffallan/claude-skills) &nbsp; by &nbsp; [jeffallan](https://github.com/jeffallan)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A comprehensive Claude Code plugin with 65 specialized skills covering full-stack development across a wide range of specific frameworks. Features 9 project workflow commands for Jira/Confluence integration and, notably, an interesting approach to context engineering via a  `/common-ground` command that surfaces Claude's hidden assumptions about your project. This is a smart thing to do.
 
@@ -86,28 +97,6 @@ A standalone Bash script for Behavior-Driven Development with Ralph Wiggum Loop.
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for ralph-wiggum-bdd](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-wiggum-bdd&username=marcindulak&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`cc-devops-skills`](https://github.com/akin-ozer/cc-devops-skills) &nbsp; by &nbsp; [akin-ozer](https://github.com/akin-ozer)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
-Immensely detailed set of skills for DevOps Engineers (or anyone who has to deploy code, really). Works with validations, generators, shell scripts and CLI tools to create high quality IaC code for about any platform you've ever struggled painfully to work with. Worth downloading even just as a source of documentation.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for cc-devops-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=cc-devops-skills&username=akin-ozer&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`/prd-generator`](https://github.com/dredozubov/prd-generator) &nbsp; by &nbsp; [Denis Redozubov](https://github.com/dredozubov)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A Claude Code plugin that generates comprehensive Product Requirements Documents (PRDs) from conversation context. Invoke `/create-prd` after discussing requirements and it produces a complete PRD with all standard sections including Executive Summary, User Stories, MVP Scope, Architecture, Success Criteria, and Implementation Phases.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for prd-generator](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=prd-generator&username=dredozubov&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -2128,6 +2117,17 @@ Serves as development guide for Mac security audit tool with build instructions,
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for pareto-mac](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=pareto-mac&username=ParetoSecurity&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`pre-commit-hooks`](https://github.com/aRustyDev/pre-commit-hooks) &nbsp; by &nbsp; [aRustyDev](https://github.com/aRustyDev)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;GPL-3.0  
+This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and related `.claude/` documentation is exemplary. Thorough but not verbose. Unlike a lot of `CLAUDE.md`  files, it doesn't primarily consist in shouting at Claude in all-caps. Great learning resource. Also, hooks.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for pre-commit-hooks](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=pre-commit-hooks&username=aRustyDev&all_stats=true&stats_only=true)
 
 </details>
 <br>
