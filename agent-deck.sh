@@ -1,40 +1,35 @@
 #!/usr/bin/env bash
-# agent-deck - Collection manager + tmux session launcher for Claude Code
+# agent-deck - Home base for Claude Code sessions
 #
-# Creates and manages "collections" — named sets of resources tailored to a
-# project type. Each collection is saved as a config file so it can be
-# re-applied to new projects. The deck is your home base; sub-sessions are
-# spawned for each project.
+# A session is scoped to a project folder. It's configured with resources
+# and can run multiple agent windows (each a Claude Code instance or
+# supporting tool). The deck is where you manage all your sessions.
 #
 # Usage:
-#   agent-deck                          # Home base (interactive)
-#   agent-deck new                      # Create a new collection (guided)
-#   agent-deck install <collection> [dir]  # Install collection into a project
-#   agent-deck launch <path>            # Spawn a Claude Code sub-session
-#   agent-deck list                     # List collections + active sessions
-#   agent-deck status                   # Show running sessions
-#   agent-deck attach <name>            # Attach to a running session
-#   agent-deck kill <name>              # Kill a session
+#   agent-deck                        Home base (interactive)
+#   agent-deck setup [dir]            Create + configure a session for a project
+#   agent-deck open <session>         Open a session (attach or create)
+#   agent-deck spawn <session>        Add another agent window to a session
+#   agent-deck list                   List all sessions
+#   agent-deck kill <session>         Kill a session
+#   agent-deck help                   Show help
 
 set -euo pipefail
 
 # ── Config ────────────────────────────────────────────────────────────
 DECK_HOME="${AGENT_DECK_HOME:-$HOME/.agent-deck}"
-COLLECTIONS_DIR="$DECK_HOME/collections"
+SESSIONS_DIR="$DECK_HOME/sessions"
 ACC_REPO_URL="https://github.com/hesreallyhim/awesome-claude-code.git"
 ACC_CACHE="$DECK_HOME/cache/awesome-claude-code"
 SESSION_PREFIX="deck"
-
-SEARCH_DIRS=("$HOME/projects" "$HOME/repos" "$HOME/code" "$HOME/work" "$HOME")
-MAX_DEPTH=3
 
 # ── Colors ────────────────────────────────────────────────────────────
 if [ -t 1 ]; then
     BOLD='\033[1m' DIM='\033[2m'
     GREEN='\033[0;32m' YELLOW='\033[0;33m' CYAN='\033[0;36m'
-    RED='\033[0;31m' BLUE='\033[0;34m' RESET='\033[0m'
+    RED='\033[0;31m' BLUE='\033[0;34m' MAGENTA='\033[0;35m' RESET='\033[0m'
 else
-    BOLD='' DIM='' GREEN='' YELLOW='' CYAN='' RED='' BLUE='' RESET=''
+    BOLD='' DIM='' GREEN='' YELLOW='' CYAN='' RED='' BLUE='' MAGENTA='' RESET=''
 fi
 
 info()  { echo -e "${CYAN}${BOLD}>>>${RESET} $*"; }
@@ -44,14 +39,12 @@ err()   { echo -e "${RED}${BOLD} x${RESET} $*" >&2; }
 
 # ── Init ──────────────────────────────────────────────────────────────
 init_deck() {
-    mkdir -p "$COLLECTIONS_DIR"
-    mkdir -p "$DECK_HOME/cache"
+    mkdir -p "$SESSIONS_DIR" "$DECK_HOME/cache"
 }
 
-# ── ACC repo cache ────────────────────────────────────────────────────
-ensure_acc() {
+# ── Resource cache ────────────────────────────────────────────────────
+ensure_cache() {
     if [ -d "$ACC_CACHE/resources" ]; then
-        # Refresh if older than 1 day
         local age=0
         if [ -f "$ACC_CACHE/.fetch_time" ]; then
             local fetch_time
@@ -59,7 +52,7 @@ ensure_acc() {
             age=$(( $(date +%s) - fetch_time ))
         fi
         if [ "$age" -gt 86400 ]; then
-            info "Updating resource cache..."
+            info "Updating resources..."
             git -C "$ACC_CACHE" pull --quiet 2>/dev/null || true
             date +%s > "$ACC_CACHE/.fetch_time"
         fi
@@ -72,27 +65,21 @@ ensure_acc() {
         return 1
     fi
     date +%s > "$ACC_CACHE/.fetch_time"
-    ok "Resources cached at $ACC_CACHE"
+    ok "Resources cached."
 }
 
-# ── Domain/needs mapping ──────────────────────────────────────────────
-# Returns space-separated list of command names
+# ── Resource mappings ─────────────────────────────────────────────────
 commands_for_domain() {
-    local domain="$1"
-    case "$domain" in
+    case "$1" in
         ml)          echo "mlflow-log-model uc-register-model feature-table databricks-deploy" ;;
         databricks)  echo "databricks-job databricks-deploy feature-table mlflow-log-model uc-register-model" ;;
-        backend)     echo "" ;;
-        frontend)    echo "" ;;
         devops)      echo "act create-hook husky" ;;
-        cli)         echo "" ;;
-        general)     echo "" ;;
+        *)           echo "" ;;
     esac
 }
 
 templates_for_domain() {
-    local domain="$1"
-    case "$domain" in
+    case "$1" in
         ml)          echo "DSPy MLflow-Databricks Feature-Engineering Vector-Search Mosaic-AI-Agents Databricks-AI-Dev-Kit" ;;
         databricks)  echo "Databricks-Full-Stack Delta-Live-Tables Databricks-Jobs Unity-Catalog" ;;
         backend)     echo "SG-Cars-Trends-Backend LangGraphJS AWS-MCP-Server Giselle" ;;
@@ -100,85 +87,29 @@ templates_for_domain() {
         devops)      echo "Databricks-MCP-Server claude-code-mcp-enhanced" ;;
         cli)         echo "TPL Cursor-Tools" ;;
         general)     echo "Basic-Memory" ;;
+        *)           echo "" ;;
     esac
 }
 
 commands_for_needs() {
-    local needs="$1"
     local cmds=""
-    if echo "$needs" | grep -q "git"; then
-        cmds="$cmds create-pr fix-github-issue create-worktrees update-branch-name husky"
-    fi
-    if echo "$needs" | grep -q "quality"; then
-        cmds="$cmds testing_plan_integration create-hook"
-    fi
-    if echo "$needs" | grep -q "context"; then
-        cmds="$cmds context-prime initref load-llms-txt"
-    fi
-    if echo "$needs" | grep -q "docs"; then
-        cmds="$cmds update-docs add-to-changelog"
-    fi
-    if echo "$needs" | grep -q "deploy"; then
-        cmds="$cmds release act"
-    fi
+    for need in $1; do
+        case "$need" in
+            git)     cmds="$cmds create-pr fix-github-issue create-worktrees update-branch-name husky" ;;
+            quality) cmds="$cmds testing_plan_integration create-hook" ;;
+            context) cmds="$cmds context-prime initref load-llms-txt" ;;
+            docs)    cmds="$cmds update-docs add-to-changelog" ;;
+            deploy)  cmds="$cmds release act" ;;
+        esac
+    done
     echo "$cmds"
 }
 
-# ── Collection management ─────────────────────────────────────────────
-
-save_collection() {
-    local name="$1" domain="$2" needs="$3" commands="$4" templates="$5"
-    local file="$COLLECTIONS_DIR/$name.conf"
-
-    cat > "$file" << EOF
-# Agent Deck Collection: $name
-# Created: $(date -u +%Y-%m-%dT%H:%M:%SZ)
-DOMAIN=$domain
-NEEDS=$needs
-COMMANDS=$commands
-TEMPLATES=$templates
-EOF
-    ok "Collection saved: $name"
-}
-
-load_collection() {
-    local name="$1"
-    local file="$COLLECTIONS_DIR/$name.conf"
-    if [ ! -f "$file" ]; then
-        err "Collection not found: $name"
-        return 1
-    fi
-    # Source the collection config
-    # shellcheck disable=SC1090
-    source "$file"
-}
-
-list_collections() {
-    echo -e "${BOLD}${BLUE}  Collections${RESET}"
-    echo -e "${DIM}  ─────────────────────────────────────────${RESET}"
-
-    if [ ! -d "$COLLECTIONS_DIR" ] || [ -z "$(ls "$COLLECTIONS_DIR"/*.conf 2>/dev/null)" ]; then
-        echo -e "  ${DIM}No collections yet. Run: agent-deck new${RESET}"
-        return
-    fi
-
-    for file in "$COLLECTIONS_DIR"/*.conf; do
-        local name domain commands templates
-        name=$(basename "$file" .conf)
-        domain=$(grep '^DOMAIN=' "$file" | cut -d= -f2)
-        commands=$(grep '^COMMANDS=' "$file" | cut -d= -f2 | wc -w | tr -d ' ')
-        templates=$(grep '^TEMPLATES=' "$file" | cut -d= -f2 | wc -w | tr -d ' ')
-        echo -e "  ${GREEN}${BOLD}$name${RESET}  ${DIM}($domain — ${commands} commands, ${templates} templates)${RESET}"
-    done
-}
-
 # ── Project detection ─────────────────────────────────────────────────
-
-detect_project_at() {
+detect_project() {
     local dir="$1"
     DETECTED_LANG="" DETECTED_FRAMEWORK="" DETECTED_DEFAULT_DOMAIN="7"
 
-    # Language
     if [ -f "$dir/pyproject.toml" ] || [ -f "$dir/setup.py" ] || [ -f "$dir/requirements.txt" ]; then
         DETECTED_LANG="python"
     elif [ -f "$dir/package.json" ]; then
@@ -193,7 +124,6 @@ detect_project_at() {
         DETECTED_LANG="ruby"
     fi
 
-    # Framework → default domain
     if [ -f "$dir/package.json" ]; then
         grep -q '"react"\|"next"' "$dir/package.json" 2>/dev/null && DETECTED_FRAMEWORK="react" && DETECTED_DEFAULT_DOMAIN="4"
         grep -q '"express"\|"fastify"' "$dir/package.json" 2>/dev/null && DETECTED_FRAMEWORK="node-api" && DETECTED_DEFAULT_DOMAIN="3"
@@ -205,57 +135,126 @@ detect_project_at() {
     fi
 }
 
-# ── Create a new collection (guided) ──────────────────────────────────
+# ── Session config ────────────────────────────────────────────────────
+session_name_from_path() {
+    local name
+    name=$(basename "$1" | tr '.' '-' | tr ' ' '-' | tr '[:upper:]' '[:lower:]')
+    echo "${SESSION_PREFIX}-${name}"
+}
 
-cmd_new() {
-    local target_dir="${1:-}"
+save_session() {
+    local name="$1" dir="$2" domain="$3" needs="$4" commands="$5" templates="$6"
+    cat > "$SESSIONS_DIR/$name.conf" << EOF
+# Agent Deck Session: $name
+# Created: $(date -u +%Y-%m-%dT%H:%M:%SZ)
+PROJECT_DIR=$dir
+DOMAIN=$domain
+NEEDS=$needs
+COMMANDS=$commands
+TEMPLATES=$templates
+EOF
+}
 
-    echo ""
-    echo -e "${BOLD}${BLUE}  New Collection${RESET}"
-    echo -e "${DIM}  Create a tailored set of resources${RESET}"
-    echo ""
-
-    # If a target directory was provided, detect its project type
-    if [ -n "$target_dir" ] && [ -d "$target_dir" ]; then
-        detect_project_at "$target_dir"
-        if [ -n "$DETECTED_LANG" ]; then
-            echo -e "  Detected: ${CYAN}$DETECTED_LANG${RESET} project"
-        fi
-        if [ -n "$DETECTED_FRAMEWORK" ]; then
-            echo -e "  Framework: ${CYAN}$DETECTED_FRAMEWORK${RESET}"
-        fi
-        echo ""
-    fi
-
-    # Name
-    local default_name=""
-    if [ -n "$target_dir" ]; then
-        default_name=$(basename "$target_dir" | tr '.' '-' | tr ' ' '-' | tr '[:upper:]' '[:lower:]')
-    fi
-
-    if [ -n "$default_name" ]; then
-        echo -ne "  ${BOLD}Collection name${RESET} ($default_name): "
-    else
-        echo -ne "  ${BOLD}Collection name:${RESET} "
-    fi
-    read -r coll_name
-    coll_name="${coll_name:-$default_name}"
-    coll_name=$(echo "$coll_name" | tr ' ' '-' | tr '[:upper:]' '[:lower:]')
-
-    if [ -z "$coll_name" ]; then
-        err "Name required."
+load_session() {
+    local name="$1"
+    # Try with and without prefix
+    local file="$SESSIONS_DIR/$name.conf"
+    [ ! -f "$file" ] && file="$SESSIONS_DIR/${SESSION_PREFIX}-${name}.conf"
+    if [ ! -f "$file" ]; then
+        err "Session not found: $name"
         return 1
     fi
+    # shellcheck disable=SC1090
+    source "$file"
+}
 
-    if [ -f "$COLLECTIONS_DIR/$coll_name.conf" ]; then
-        warn "Collection '$coll_name' already exists."
-        echo -n "  Overwrite? [y/N] "
-        read -r confirm
-        [ "$confirm" != "y" ] && [ "$confirm" != "Y" ] && return 0
-    fi
+tmux_session_exists() {
+    tmux has-session -t "$1" 2>/dev/null
+}
 
-    # Domain
+tmux_window_count() {
+    tmux list-windows -t "$1" 2>/dev/null | wc -l | tr -d ' '
+}
+
+# ── Install resources into a directory ────────────────────────────────
+install_resources() {
+    local target_dir="$1" commands="$2" templates="$3"
+
+    ensure_cache || return 1
+
+    # Install commands
+    mkdir -p "$target_dir/.claude/commands"
+    local cmd_count=0
+    for cmd in $commands; do
+        local src="$ACC_CACHE/resources/slash-commands/$cmd"
+        if [ -d "$src" ]; then
+            local md_file
+            md_file=$(find "$src" -maxdepth 1 -name "*.md" | head -1)
+            if [ -n "$md_file" ]; then
+                local dest="$target_dir/.claude/commands/$(basename "$md_file")"
+                if [ ! -f "$dest" ]; then
+                    cp "$md_file" "$dest"
+                    ok "/$cmd"
+                    cmd_count=$((cmd_count + 1))
+                fi
+            fi
+        fi
+    done
+
+    # Install templates
+    local tpl_count=0
+    for tpl in $templates; do
+        local src="$ACC_CACHE/resources/claude.md-files/$tpl/CLAUDE.md"
+        if [ -f "$src" ]; then
+            local dest="$target_dir/CLAUDE.md"
+            local marker="# --- awesome-claude-code: $tpl ---"
+            if [ -f "$dest" ] && grep -qF "$marker" "$dest" 2>/dev/null; then
+                continue
+            fi
+            {
+                [ -f "$dest" ] && echo ""
+                echo "$marker"
+                echo ""
+                cat "$src"
+            } >> "$dest"
+            ok "$tpl"
+            tpl_count=$((tpl_count + 1))
+        fi
+    done
+
     echo ""
+    ok "Installed $cmd_count commands + $tpl_count templates"
+}
+
+# ══════════════════════════════════════════════════════════════════════
+# COMMANDS
+# ══════════════════════════════════════════════════════════════════════
+
+# ── setup: create + configure a session for a project ─────────────────
+cmd_setup() {
+    local target_dir="${1:-$(pwd)}"
+    target_dir="$(cd "$target_dir" && pwd)"
+
+    local name
+    name=$(session_name_from_path "$target_dir")
+
+    echo ""
+    echo -e "${BOLD}${BLUE}  Agent Deck — Session Setup${RESET}"
+    echo -e "${DIM}  $target_dir${RESET}"
+    echo ""
+
+    # Detect project
+    detect_project "$target_dir"
+    if [ -n "$DETECTED_LANG" ]; then
+        echo -e "  Detected: ${CYAN}$DETECTED_LANG${RESET}"
+    fi
+    if [ -n "$DETECTED_FRAMEWORK" ]; then
+        echo -e "  Framework: ${CYAN}$DETECTED_FRAMEWORK${RESET}"
+    fi
+    [ -d "$target_dir/.claude" ] && echo -e "  Claude Code: ${GREEN}configured${RESET}"
+    echo ""
+
+    # ── Domain ──
     echo -e "  ${BOLD}What are you building?${RESET}"
     echo ""
     echo "    1) ML / Data Science"
@@ -274,18 +273,14 @@ cmd_new() {
 
     local domain
     case "$domain_choice" in
-        1) domain="ml" ;;
-        2) domain="databricks" ;;
-        3) domain="backend" ;;
-        4) domain="frontend" ;;
-        5) domain="devops" ;;
-        6) domain="cli" ;;
+        1) domain="ml" ;; 2) domain="databricks" ;; 3) domain="backend" ;;
+        4) domain="frontend" ;; 5) domain="devops" ;; 6) domain="cli" ;;
         *) domain="general" ;;
     esac
 
-    # Needs
+    # ── Needs ──
     echo ""
-    echo -e "  ${BOLD}What do you need?${RESET} ${DIM}(multiple: e.g. 1 3 5)${RESET}"
+    echo -e "  ${BOLD}What do you need?${RESET} ${DIM}(multiple: 1 3 5)${RESET}"
     echo ""
     echo "    1) Git workflow      — Commits, PRs, branches"
     echo "    2) Code quality      — Reviews, optimization, testing"
@@ -300,31 +295,27 @@ cmd_new() {
     local needs=""
     for n in $needs_choice; do
         case "$n" in
-            1) needs="$needs git" ;;
-            2) needs="$needs quality" ;;
-            3) needs="$needs context" ;;
-            4) needs="$needs docs" ;;
-            5) needs="$needs deploy" ;;
-            6) needs="git quality context docs deploy" ;;
+            1) needs="$needs git" ;; 2) needs="$needs quality" ;;
+            3) needs="$needs context" ;; 4) needs="$needs docs" ;;
+            5) needs="$needs deploy" ;; 6) needs="git quality context docs deploy" ;;
         esac
     done
 
-    # Build resource lists
-    local base_cmds="commit pr-review optimize deck"
+    # ── Build resource list ──
+    local base_cmds="commit pr-review optimize"
     local domain_cmds
     domain_cmds=$(commands_for_domain "$domain")
     local needs_cmds
     needs_cmds=$(commands_for_needs "$needs")
     local all_cmds
     all_cmds=$(echo "$base_cmds $domain_cmds $needs_cmds" | tr ' ' '\n' | sort -u | tr '\n' ' ')
-
     local templates
     templates=$(templates_for_domain "$domain")
 
-    # Preview
+    # ── Preview ──
     echo ""
     echo -e "${DIM}  ─────────────────────────────────────────${RESET}"
-    echo -e "  ${BOLD}Collection: ${GREEN}$coll_name${RESET}"
+    echo -e "  ${BOLD}Session: ${GREEN}$name${RESET}"
     echo ""
     echo -e "  ${BOLD}Commands:${RESET}"
     for cmd in $all_cmds; do
@@ -338,187 +329,159 @@ cmd_new() {
         done
     fi
 
+    # ── Confirm + install ──
     echo ""
-    echo -n "  Save this collection? [Y/n] "
+    echo -ne "  Set up this session? ${DIM}[Y/n]${RESET} "
     read -r confirm
     confirm="${confirm:-y}"
     [ "$confirm" = "n" ] || [ "$confirm" = "N" ] && return 0
 
-    save_collection "$coll_name" "$domain" "$needs" "$all_cmds" "$templates"
+    echo ""
+    info "Installing resources..."
+    echo ""
+    install_resources "$target_dir" "$all_cmds" "$templates"
 
-    # If target_dir was provided, offer to install immediately
-    if [ -n "$target_dir" ]; then
-        echo ""
-        echo -ne "  Install into ${BOLD}$target_dir${RESET} now? [Y/n] "
-        read -r install_confirm
-        install_confirm="${install_confirm:-y}"
-        if [ "$install_confirm" != "n" ] && [ "$install_confirm" != "N" ]; then
-            cmd_install "$coll_name" "$target_dir"
+    # Save session config
+    save_session "$name" "$target_dir" "$domain" "$needs" "$all_cmds" "$templates"
+
+    # ── Launch? ──
+    echo ""
+    if command -v tmux &>/dev/null; then
+        echo -ne "  Launch session now? ${DIM}[Y/n]${RESET} "
+        read -r launch_confirm
+        launch_confirm="${launch_confirm:-y}"
+        if [ "$launch_confirm" != "n" ] && [ "$launch_confirm" != "N" ]; then
+            cmd_open "$name"
             return
         fi
     fi
 
     echo ""
-    echo -e "  ${BOLD}Next:${RESET}"
-    echo -e "    agent-deck install $coll_name /path/to/project"
-    echo -e "    agent-deck launch /path/to/project"
+    echo -e "${BOLD}${GREEN}  Session ready.${RESET}"
+    echo ""
+    echo "  Open it:"
+    echo -e "    ${CYAN}agent-deck open $name${RESET}"
+    echo ""
+    echo "  Add more agents:"
+    echo -e "    ${CYAN}agent-deck spawn $name${RESET}"
     echo ""
 }
 
-# ── Setup: new + install in one step for a directory ──────────────────
+# ── open: attach to or create a tmux session ──────────────────────────
+cmd_open() {
+    require_tmux
+    local name="$1"
 
-cmd_setup() {
-    local target_dir="${1:-$(pwd)}"
+    # Add prefix if needed
+    [[ "$name" == ${SESSION_PREFIX}-* ]] || name="${SESSION_PREFIX}-${name}"
 
-    if [ ! -d "$target_dir" ]; then
-        err "Directory not found: $target_dir"
-        return 1
-    fi
-
-    target_dir="$(cd "$target_dir" && pwd)"
-    cmd_new "$target_dir"
-}
-
-# ── Install collection into a directory ───────────────────────────────
-
-cmd_install() {
-    local coll_name="${1:-}"
-    local target_dir="${2:-$(pwd)}"
-
-    if [ -z "$coll_name" ]; then
-        echo ""
-        list_collections
-        echo ""
-        echo -ne "  ${BOLD}Collection to install:${RESET} "
-        read -r coll_name
-    fi
-
-    load_collection "$coll_name" || return 1
-    ensure_acc || return 1
-
-    if [ ! -d "$target_dir" ]; then
-        info "Creating directory: $target_dir"
-        mkdir -p "$target_dir"
-    fi
-
-    echo ""
-    info "Installing collection '$coll_name' into $target_dir"
-    echo ""
-
-    # Install commands
-    mkdir -p "$target_dir/.claude/commands"
-    local cmd_count=0
-    for cmd in $COMMANDS; do
-        local src="$ACC_CACHE/resources/slash-commands/$cmd"
-        if [ -d "$src" ]; then
-            local md_file
-            md_file=$(find "$src" -maxdepth 1 -name "*.md" | head -1)
-            if [ -n "$md_file" ]; then
-                local dest="$target_dir/.claude/commands/$(basename "$md_file")"
-                if [ -f "$dest" ]; then
-                    warn "Exists: .claude/commands/$(basename "$md_file")"
-                else
-                    cp "$md_file" "$dest"
-                    ok "/$cmd"
-                    cmd_count=$((cmd_count + 1))
-                fi
-            fi
-        fi
-    done
-
-    # Install templates
-    local tpl_count=0
-    if [ -n "$TEMPLATES" ]; then
-        for tpl in $TEMPLATES; do
-            local src="$ACC_CACHE/resources/claude.md-files/$tpl/CLAUDE.md"
-            if [ -f "$src" ]; then
-                local dest="$target_dir/CLAUDE.md"
-                local marker="# --- awesome-claude-code: $tpl ---"
-
-                if [ -f "$dest" ] && grep -qF "$marker" "$dest" 2>/dev/null; then
-                    warn "Template '$tpl' already in CLAUDE.md"
-                else
-                    {
-                        [ -f "$dest" ] && echo ""
-                        echo "$marker"
-                        echo ""
-                        cat "$src"
-                    } >> "$dest"
-                    ok "$tpl template"
-                    tpl_count=$((tpl_count + 1))
-                fi
-            fi
-        done
-    fi
-
-    echo ""
-    ok "Installed $cmd_count commands + $tpl_count templates"
-    echo ""
-    echo -e "  ${BOLD}Launch a session:${RESET}"
-    echo -e "    agent-deck launch $target_dir"
-    echo ""
-}
-
-# ── Session management ────────────────────────────────────────────────
-
-session_name() {
-    local path="$1"
-    local name
-    name=$(basename "$path" | tr '.' '-' | tr ' ' '-' | tr '[:upper:]' '[:lower:]')
-    echo "${SESSION_PREFIX}-${name}"
-}
-
-session_exists() {
-    tmux has-session -t "$1" 2>/dev/null
-}
-
-cmd_launch() {
-    local project_path="$1"
-
-    if [ ! -d "$project_path" ]; then
-        err "Directory not found: $project_path"
-        return 1
-    fi
-
-    # Resolve to absolute path
-    project_path="$(cd "$project_path" && pwd)"
-
-    local name
-    name=$(session_name "$project_path")
-
-    if session_exists "$name"; then
-        echo -e "${YELLOW}Session '${name}' already running. Attaching...${RESET}"
+    # If tmux session exists, attach
+    if tmux_session_exists "$name"; then
+        echo -e "${GREEN}Attaching to: ${name}${RESET}"
         tmux attach -t "$name"
         return
     fi
 
-    echo -e "${GREEN}Launching: ${name}${RESET}"
-    echo -e "${DIM}Project: ${project_path}${RESET}"
+    # Try to load session config for the project dir
+    local project_dir=""
+    if [ -f "$SESSIONS_DIR/$name.conf" ]; then
+        # shellcheck disable=SC1090
+        source "$SESSIONS_DIR/$name.conf"
+        project_dir="$PROJECT_DIR"
+    fi
 
-    tmux new-session -d -s "$name" -c "$project_path"
+    if [ -z "$project_dir" ] || [ ! -d "$project_dir" ]; then
+        err "No session config for '$name'. Run: agent-deck setup <project-dir>"
+        return 1
+    fi
+
+    echo -e "${GREEN}Launching: ${name}${RESET}"
+    echo -e "${DIM}Project: ${project_dir}${RESET}"
+
+    tmux new-session -d -s "$name" -c "$project_dir"
     tmux send-keys -t "$name" 'claude' Enter
     tmux attach -t "$name"
 }
 
-cmd_attach() {
+# ── spawn: add another agent window to a running session ──────────────
+cmd_spawn() {
+    require_tmux
     local name="$1"
     [[ "$name" == ${SESSION_PREFIX}-* ]] || name="${SESSION_PREFIX}-${name}"
 
-    if ! session_exists "$name"; then
-        err "No session: $name"
-        cmd_status
+    if ! tmux_session_exists "$name"; then
+        # If session config exists, open it first
+        if [ -f "$SESSIONS_DIR/$name.conf" ]; then
+            cmd_open "$name"
+            return
+        fi
+        err "No running session: $name"
         return 1
     fi
 
-    tmux attach -t "$name"
+    local window_count
+    window_count=$(tmux_window_count "$name")
+    local new_window="agent-$((window_count + 1))"
+
+    echo -e "${GREEN}Spawning agent window: ${new_window}${RESET}"
+
+    tmux new-window -t "$name" -n "$new_window"
+    tmux send-keys -t "$name:$new_window" 'claude' Enter
+
+    # If we're not attached, attach
+    if [ -z "${TMUX:-}" ]; then
+        tmux attach -t "$name"
+    else
+        tmux select-window -t "$name:$new_window"
+    fi
 }
 
+# ── list: show all sessions ───────────────────────────────────────────
+cmd_list() {
+    echo ""
+    echo -e "${BOLD}${BLUE}  Sessions${RESET}"
+    echo -e "${DIM}  ─────────────────────────────────────────${RESET}"
+
+    local has_any=false
+
+    for file in "$SESSIONS_DIR"/*.conf 2>/dev/null; do
+        [ -f "$file" ] || continue
+        has_any=true
+
+        local name project_dir domain
+        name=$(basename "$file" .conf)
+        project_dir=$(grep '^PROJECT_DIR=' "$file" | cut -d= -f2)
+        domain=$(grep '^DOMAIN=' "$file" | cut -d= -f2)
+
+        local status_icon windows_info
+        if command -v tmux &>/dev/null && tmux_session_exists "$name"; then
+            local wc
+            wc=$(tmux_window_count "$name")
+            status_icon="${GREEN}●${RESET}"
+            windows_info=" ${DIM}(${wc} agent$([ "$wc" != "1" ] && echo "s"))${RESET}"
+        else
+            status_icon="${DIM}○${RESET}"
+            windows_info=""
+        fi
+
+        echo -e "  $status_icon ${BOLD}$name${RESET}$windows_info  ${DIM}$domain${RESET}"
+        echo -e "    ${DIM}$project_dir${RESET}"
+    done
+
+    if [ "$has_any" = false ]; then
+        echo -e "  ${DIM}No sessions. Run: agent-deck setup <project-dir>${RESET}"
+    fi
+    echo ""
+}
+
+# ── kill: terminate a session ─────────────────────────────────────────
 cmd_kill() {
+    require_tmux
     local name="$1"
     [[ "$name" == ${SESSION_PREFIX}-* ]] || name="${SESSION_PREFIX}-${name}"
 
-    if ! session_exists "$name"; then
-        err "No session: $name"
+    if ! tmux_session_exists "$name"; then
+        err "No running session: $name"
         return 1
     fi
 
@@ -526,109 +489,15 @@ cmd_kill() {
     ok "Killed: $name"
 }
 
-cmd_status() {
-    echo -e "${BOLD}${BLUE}  Active Sessions${RESET}"
-    echo -e "${DIM}  ─────────────────────────────────────────${RESET}"
-
-    local sessions
-    sessions=$(tmux list-sessions -F '#{session_name} #{session_path} #{session_windows} #{session_created}' 2>/dev/null | grep "^${SESSION_PREFIX}-" || true)
-
-    if [ -z "$sessions" ]; then
-        echo -e "  ${DIM}No active sessions.${RESET}"
-        return
-    fi
-
-    while IFS=' ' read -r name path windows created; do
-        local now age human_age
-        now=$(date +%s)
-        age=$(( now - created ))
-        if [ $age -lt 3600 ]; then
-            human_age="$((age / 60))m"
-        elif [ $age -lt 86400 ]; then
-            human_age="$((age / 3600))h"
-        else
-            human_age="$((age / 86400))d"
-        fi
-        echo -e "  ${GREEN}●${RESET} ${BOLD}${name}${RESET}  ${DIM}(${windows}w, ${human_age})${RESET}  ${DIM}${path}${RESET}"
-    done <<< "$sessions"
-}
-
-# ── Discover projects ─────────────────────────────────────────────────
-discover_projects() {
-    local found=()
-    for dir in "${SEARCH_DIRS[@]}"; do
-        [ -d "$dir" ] || continue
-        while IFS= read -r -d '' claude_file; do
-            local project_dir
-            project_dir="$(dirname "$claude_file")"
-            if [[ "$claude_file" == *"/.claude" ]]; then
-                project_dir="$(dirname "$claude_file")"
-            fi
-            local already=false
-            for p in "${found[@]+"${found[@]}"}"; do
-                [ "$p" = "$project_dir" ] && already=true && break
-            done
-            $already || found+=("$project_dir")
-        done < <(find "$dir" -maxdepth "$MAX_DEPTH" -name "CLAUDE.md" -print0 2>/dev/null)
-
-        while IFS= read -r -d '' claude_dir; do
-            local project_dir
-            project_dir="$(dirname "$claude_dir")"
-            local already=false
-            for p in "${found[@]+"${found[@]}"}"; do
-                [ "$p" = "$project_dir" ] && already=true && break
-            done
-            $already || found+=("$project_dir")
-        done < <(find "$dir" -maxdepth "$MAX_DEPTH" -type d -name ".claude" -print0 2>/dev/null)
-    done
-    printf '%s\n' "${found[@]+"${found[@]}"}" | sort -u
-}
-
-# ── Home base (interactive) ───────────────────────────────────────────
+# ── home: interactive dashboard ───────────────────────────────────────
 cmd_home() {
     echo ""
     echo -e "${BOLD}${BLUE}  Agent Deck${RESET}"
-    echo -e "${DIM}  Your Claude Code home base${RESET}"
-    echo ""
 
-    # Show collections
-    list_collections
-    echo ""
+    cmd_list
 
-    # Show active sessions
-    cmd_status
-    echo ""
-
-    # Show discovered projects
-    echo -e "${BOLD}${BLUE}  Projects${RESET}"
     echo -e "${DIM}  ─────────────────────────────────────────${RESET}"
-
-    local projects=()
-    while IFS= read -r line; do
-        [ -n "$line" ] && projects+=("$line")
-    done < <(discover_projects)
-
-    if [ ${#projects[@]} -eq 0 ]; then
-        echo -e "  ${DIM}No Claude Code projects found.${RESET}"
-    else
-        local idx=1
-        for project in "${projects[@]}"; do
-            local name
-            name=$(session_name "$project")
-            local status_icon
-            if session_exists "$name"; then
-                status_icon="${GREEN}●${RESET}"
-            else
-                status_icon="${DIM}○${RESET}"
-            fi
-            echo -e "  ${BOLD}${idx})${RESET} $status_icon ${BOLD}$(basename "$project")${RESET}  ${DIM}${project}${RESET}"
-            ((idx++))
-        done
-    fi
-
-    echo ""
-    echo -e "${DIM}  ─────────────────────────────────────────${RESET}"
-    echo -e "  ${CYAN}n${RESET}ew  ${CYAN}s${RESET}etup <dir>  ${CYAN}i${RESET}nstall  ${CYAN}<num>${RESET} launch  s${CYAN}t${RESET}atus  ${CYAN}q${RESET}uit"
+    echo -e "  ${CYAN}s${RESET}etup <dir>   ${CYAN}o${RESET}pen <name>   s${CYAN}p${RESET}awn <name>   ${CYAN}k${RESET}ill <name>   ${CYAN}q${RESET}uit"
     echo ""
 
     while true; do
@@ -637,59 +506,56 @@ cmd_home() {
 
         case "$input" in
             q|quit|exit) break ;;
-            n|new) cmd_new ;;
-            setup\ *|s\ *)
-                local setup_dir="${input#* }"
-                cmd_setup "$setup_dir"
+            s\ *|setup\ *)
+                local dir="${input#* }"
+                cmd_setup "$dir"
+                cmd_list
                 ;;
-            i|install)
-                echo -ne "  Collection name: "
-                read -r cname
-                echo -ne "  Target directory: "
-                read -r tdir
-                cmd_install "$cname" "$tdir"
+            o\ *|open\ *)
+                local target="${input#* }"
+                cmd_open "$target"
+                break
                 ;;
-            t|st|status) echo ""; cmd_status; echo "" ;;
-            k\ *)
-                local target="${input#k }"
+            p\ *|spawn\ *)
+                local target="${input#* }"
+                cmd_spawn "$target"
+                break
+                ;;
+            k\ *|kill\ *)
+                local target="${input#* }"
                 cmd_kill "$target"
+                echo ""
                 ;;
-            ''|*[!0-9]*)
-                echo -e "  ${DIM}n=new  setup <dir>  i=install  <num>=launch  t=status  k <name>=kill  q=quit${RESET}"
+            l|list|ls)
+                cmd_list
                 ;;
             *)
-                local idx=$((input - 1))
-                if [ "$idx" -ge 0 ] && [ "$idx" -lt ${#projects[@]} ]; then
-                    cmd_launch "${projects[$idx]}"
-                    break
-                else
-                    echo -e "  ${RED}Invalid selection.${RESET}"
-                fi
+                echo -e "  ${DIM}setup <dir>  open <name>  spawn <name>  kill <name>  list  quit${RESET}"
                 ;;
         esac
     done
 }
 
-# ── Usage ─────────────────────────────────────────────────────────────
+# ── help ──────────────────────────────────────────────────────────────
 usage() {
-    echo "agent-deck - Collection manager + session launcher for Claude Code"
+    echo "agent-deck - Home base for Claude Code sessions"
+    echo ""
+    echo "A session is scoped to a project folder. It can run multiple"
+    echo "agent windows — each a Claude Code instance or supporting tool."
     echo ""
     echo "Usage:"
-    echo "  agent-deck                              Home base (interactive)"
-    echo "  agent-deck setup [dir]                  Guided setup for a project (new + install)"
-    echo "  agent-deck new [dir]                    Create a new collection"
-    echo "  agent-deck install <collection> [dir]   Install collection into project"
-    echo "  agent-deck launch <path>                Spawn Claude Code sub-session"
-    echo "  agent-deck list                         List collections"
-    echo "  agent-deck status                       Show active sessions"
-    echo "  agent-deck attach <name>                Attach to session"
-    echo "  agent-deck kill <name>                  Kill a session"
+    echo "  agent-deck                        Home base (interactive)"
+    echo "  agent-deck setup [dir]            Create + configure a session"
+    echo "  agent-deck open <session>         Open a session"
+    echo "  agent-deck spawn <session>        Add another agent window"
+    echo "  agent-deck list                   List all sessions"
+    echo "  agent-deck kill <session>         Kill a session"
     echo ""
-    echo "Collections are saved to: $COLLECTIONS_DIR"
-    echo "Resource cache: $ACC_CACHE"
+    echo "Sessions: $SESSIONS_DIR"
+    echo "Cache:    $ACC_CACHE"
 }
 
-# ── Main ──────────────────────────────────────────────────────────────
+# ── Helpers ───────────────────────────────────────────────────────────
 require_tmux() {
     if ! command -v tmux &>/dev/null; then
         err "tmux is required for session management."
@@ -698,37 +564,34 @@ require_tmux() {
     fi
 }
 
+# ── Main ──────────────────────────────────────────────────────────────
 main() {
     init_deck
 
     local cmd="${1:-}"
 
     case "$cmd" in
-        # These work without tmux
-        new)                shift; cmd_new "$@" ;;
-        setup)              shift; cmd_setup "$@" ;;
-        install)            shift; cmd_install "$@" ;;
-        list|ls)            list_collections ;;
-        help|-h|--help)     usage ;;
+        # Works without tmux
+        setup)          shift; cmd_setup "$@" ;;
+        list|ls)        cmd_list ;;
+        help|-h|--help) usage ;;
 
-        # These require tmux
-        launch|start)
-            require_tmux
-            [ -z "${2:-}" ] && err "Usage: agent-deck launch <path>" && exit 1
-            cmd_launch "$2"
+        # Requires tmux
+        open|o)
+            [ -z "${2:-}" ] && err "Usage: agent-deck open <session>" && exit 1
+            cmd_open "$2"
             ;;
-        attach|a)
-            require_tmux
-            [ -z "${2:-}" ] && err "Usage: agent-deck attach <name>" && exit 1
-            cmd_attach "$2"
+        spawn|p)
+            [ -z "${2:-}" ] && err "Usage: agent-deck spawn <session>" && exit 1
+            cmd_spawn "$2"
             ;;
         kill|rm)
-            require_tmux
-            [ -z "${2:-}" ] && err "Usage: agent-deck kill <name>" && exit 1
+            [ -z "${2:-}" ] && err "Usage: agent-deck kill <session>" && exit 1
             cmd_kill "$2"
             ;;
-        status|st)          require_tmux; cmd_status ;;
-        *)                  require_tmux; cmd_home ;;
+        *)
+            require_tmux; cmd_home
+            ;;
     esac
 }
 

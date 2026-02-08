@@ -9,9 +9,9 @@
 #   bash install.sh
 #
 # After install, use:
-#   agent-deck new           Create a collection (guided setup)
-#   agent-deck install       Install a collection into a project
-#   agent-deck launch        Spawn a Claude Code tmux session
+#   agent-deck setup         Guided setup for your project
+#   agent-deck open          Open a session
+#   agent-deck spawn         Add another agent window
 
 set -euo pipefail
 
@@ -41,7 +41,7 @@ main() {
     # ── Clone or update the resource cache ──
 
     local cache_dir="$DECK_HOME/cache/awesome-claude-code"
-    mkdir -p "$DECK_HOME/collections" "$DECK_HOME/cache"
+    mkdir -p "$DECK_HOME/sessions" "$DECK_HOME/cache"
 
     if [ -d "$cache_dir/resources" ]; then
         info "Updating resource cache..."
@@ -68,25 +68,6 @@ main() {
         exit 1
     fi
 
-    # ── Install /deck command to current project (if it looks like a project) ──
-
-    local target="$(pwd)"
-    if [ -d "$target/.git" ] || [ -f "$target/package.json" ] || \
-       [ -f "$target/pyproject.toml" ] || [ -f "$target/Cargo.toml" ] || \
-       [ -f "$target/go.mod" ] || [ -f "$target/Makefile" ]; then
-
-        local deck_cmd="$cache_dir/resources/slash-commands/deck"
-        if [ -d "$deck_cmd" ]; then
-            mkdir -p "$target/.claude/commands"
-            local md_file
-            md_file=$(find "$deck_cmd" -maxdepth 1 -name "*.md" | head -1)
-            if [ -n "$md_file" ] && [ ! -f "$target/.claude/commands/deck.md" ]; then
-                cp "$md_file" "$target/.claude/commands/deck.md"
-                ok "Installed /deck command to this project"
-            fi
-        fi
-    fi
-
     # ── Set up shell alias ──
 
     echo ""
@@ -99,13 +80,10 @@ main() {
     echo -e "${DIM}────────────────────────────────────────${RESET}"
     echo ""
     echo "Get started:"
-    echo -e "  ${BOLD}agent-deck new${RESET}           Create a collection (guided setup)"
-    echo -e "  ${BOLD}agent-deck install${RESET}       Install a collection into a project"
-    echo -e "  ${BOLD}agent-deck launch <dir>${RESET}  Spawn a Claude Code tmux session"
-    echo -e "  ${BOLD}agent-deck${RESET}               Home base (interactive)"
-    echo ""
-    echo "Or from Claude Code:"
-    echo -e "  ${BOLD}/deck${RESET}                    Full agent deck experience"
+    echo -e "  ${BOLD}agent-deck setup${RESET}             Guided setup for your project"
+    echo -e "  ${BOLD}agent-deck open <session>${RESET}    Open a session"
+    echo -e "  ${BOLD}agent-deck spawn <session>${RESET}   Add another agent window"
+    echo -e "  ${BOLD}agent-deck${RESET}                   Home base (interactive)"
     echo ""
 }
 
