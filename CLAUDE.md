@@ -80,6 +80,37 @@ resources/
 └── workflows-knowledge-guides/
 ```
 
+## Adding Resources to an Existing Project
+
+### Step 1: Install the Agent Deck
+
+From your project directory:
+```bash
+curl -fsSL https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/main/install.sh | bash
+```
+
+This installs the Agent Deck (`~/.agent-deck/agent-deck.sh`) and sets up the resource cache.
+
+### Step 2: Set Up Your Project
+
+```bash
+agent-deck setup              # Guided setup for current directory
+agent-deck setup ~/my-project # ...or specify a path
+```
+
+Setup detects your project, asks what you're building and what you need, installs the right resources, and saves a session config.
+
+### Ongoing: Manage Sessions
+
+```bash
+agent-deck                    # Home base — all sessions at a glance
+agent-deck open <session>     # Open a session (attach or launch)
+agent-deck spawn <session>    # Add another agent window
+agent-deck list               # List all sessions
+```
+
+See [docs/INSTALL.md](docs/INSTALL.md) for the full guide.
+
 ## Quick Start Examples
 
 **Databricks ML Project:**
