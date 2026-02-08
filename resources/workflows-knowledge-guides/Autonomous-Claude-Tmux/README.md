@@ -19,6 +19,10 @@ tmux provides persistent terminal sessions that survive disconnections, SSH drop
 - [Session Scripts](./session-scripts.md) - Automation scripts for creating development dashboards and managing sessions
 - [Autonomous Workflows](./autonomous-workflows.md) - Patterns for leave-your-computer autonomous Claude Code execution
 
+### Agent Deck
+- [Agent Deck Guide](./agent-deck.md) - Documentation for the session navigator
+- [agent-deck.sh](./agent-deck.sh) - The script itself: discovers all Claude Code projects on your machine and provides an interactive dashboard to launch, navigate, and monitor autonomous sessions
+
 ## Source
 
 Based on [Claude Code + tmux: The Ultimate Terminal Workflow for AI Development](https://www.blle.co/blog/claude-code-tmux-beautiful-terminal) by Blue Leaf LLC.
