@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# agent-deck - Home base for Claude Code sessions
+# agent-deck - Home base for Claude Code agent teams
 #
-# A session is scoped to a project folder. It's configured with resources
-# and can run multiple agent windows (each a Claude Code instance or
-# supporting tool). The deck is where you manage all your sessions.
+# A session is scoped to a project folder. Each session launches a Claude
+# Code team lead (orchestrator) that can spawn Agent Teams teammates for
+# parallel work. The deck is where you manage all your sessions.
 #
 # Usage:
 #   agent-deck                        Home base (interactive)
@@ -144,6 +144,8 @@ session_name_from_path() {
 
 save_session() {
     local name="$1" dir="$2" domain="$3" needs="$4" commands="$5" templates="$6"
+    # Team name derived from session name (strip prefix)
+    local team_name="${name#${SESSION_PREFIX}-}"
     cat > "$SESSIONS_DIR/$name.conf" << EOF
 # Agent Deck Session: $name
 # Created: $(date -u +%Y-%m-%dT%H:%M:%SZ)
@@ -152,6 +154,7 @@ DOMAIN=$domain
 NEEDS=$needs
 COMMANDS=$commands
 TEMPLATES=$templates
+TEAM_NAME=$team_name
 EOF
 }
 
@@ -383,11 +386,12 @@ cmd_open() {
     fi
 
     # Try to load session config for the project dir
-    local project_dir=""
+    local project_dir="" team_name=""
     if [ -f "$SESSIONS_DIR/$name.conf" ]; then
         # shellcheck disable=SC1090
         source "$SESSIONS_DIR/$name.conf"
         project_dir="$PROJECT_DIR"
+        team_name="${TEAM_NAME:-${name#${SESSION_PREFIX}-}}"
     fi
 
     if [ -z "$project_dir" ] || [ ! -d "$project_dir" ]; then
@@ -397,9 +401,12 @@ cmd_open() {
 
     echo -e "${GREEN}Launching: ${name}${RESET}"
     echo -e "${DIM}Project: ${project_dir}${RESET}"
+    echo -e "${DIM}Agent Teams: enabled (team: ${team_name})${RESET}"
 
+    # Launch with Agent Teams enabled
     tmux new-session -d -s "$name" -c "$project_dir"
-    tmux send-keys -t "$name" 'claude' Enter
+    tmux set-environment -t "$name" CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS 1
+    tmux send-keys -t "$name" "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 claude" Enter
     tmux attach -t "$name"
 }
 
@@ -426,7 +433,7 @@ cmd_spawn() {
     echo -e "${GREEN}Spawning agent window: ${new_window}${RESET}"
 
     tmux new-window -t "$name" -n "$new_window"
-    tmux send-keys -t "$name:$new_window" 'claude' Enter
+    tmux send-keys -t "$name:$new_window" "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 claude" Enter
 
     # If we're not attached, attach
     if [ -z "${TMUX:-}" ]; then
@@ -434,6 +441,36 @@ cmd_spawn() {
     else
         tmux select-window -t "$name:$new_window"
     fi
+}
+
+# ── Task status from Agent Teams ──────────────────────────────────────
+get_team_task_summary() {
+    local team_name="$1"
+    local tasks_dir="$HOME/.claude/tasks/$team_name"
+
+    [ ! -d "$tasks_dir" ] && return
+
+    local completed=0 in_progress=0 pending=0 total=0
+    for task_file in "$tasks_dir"/*.json; do
+        [ -f "$task_file" ] || continue
+        total=$((total + 1))
+        # Parse status from JSON (simple grep, no jq dependency)
+        local status
+        status=$(grep -o '"status"[[:space:]]*:[[:space:]]*"[^"]*"' "$task_file" 2>/dev/null | head -1 | grep -o '"[^"]*"$' | tr -d '"')
+        case "$status" in
+            completed)   completed=$((completed + 1)) ;;
+            in_progress) in_progress=$((in_progress + 1)) ;;
+            *)           pending=$((pending + 1)) ;;
+        esac
+    done
+
+    [ "$total" -eq 0 ] && return
+
+    local parts=""
+    [ "$completed" -gt 0 ] && parts="${GREEN}${completed}✓${RESET}"
+    [ "$in_progress" -gt 0 ] && parts="${parts:+$parts }${YELLOW}${in_progress}→${RESET}"
+    [ "$pending" -gt 0 ] && parts="${parts:+$parts }${DIM}${pending}○${RESET}"
+    echo "$parts"
 }
 
 # ── list: show all sessions ───────────────────────────────────────────
@@ -444,14 +481,16 @@ cmd_list() {
 
     local has_any=false
 
-    for file in "$SESSIONS_DIR"/*.conf 2>/dev/null; do
+    for file in "$SESSIONS_DIR"/*.conf; do
         [ -f "$file" ] || continue
         has_any=true
 
-        local name project_dir domain
+        local name project_dir domain team_name
         name=$(basename "$file" .conf)
         project_dir=$(grep '^PROJECT_DIR=' "$file" | cut -d= -f2)
         domain=$(grep '^DOMAIN=' "$file" | cut -d= -f2)
+        team_name=$(grep '^TEAM_NAME=' "$file" | cut -d= -f2)
+        team_name="${team_name:-${name#${SESSION_PREFIX}-}}"
 
         local status_icon windows_info
         if command -v tmux &>/dev/null && tmux_session_exists "$name"; then
@@ -464,7 +503,13 @@ cmd_list() {
             windows_info=""
         fi
 
-        echo -e "  $status_icon ${BOLD}$name${RESET}$windows_info  ${DIM}$domain${RESET}"
+        # Get task progress from Agent Teams
+        local task_summary
+        task_summary=$(get_team_task_summary "$team_name")
+        local task_info=""
+        [ -n "$task_summary" ] && task_info="  ${task_summary}"
+
+        echo -e "  $status_icon ${BOLD}$name${RESET}$windows_info  ${DIM}$domain${RESET}${task_info}"
         echo -e "    ${DIM}$project_dir${RESET}"
     done
 
@@ -538,10 +583,10 @@ cmd_home() {
 
 # ── help ──────────────────────────────────────────────────────────────
 usage() {
-    echo "agent-deck - Home base for Claude Code sessions"
+    echo "agent-deck - Home base for Claude Code agent teams"
     echo ""
-    echo "A session is scoped to a project folder. It can run multiple"
-    echo "agent windows — each a Claude Code instance or supporting tool."
+    echo "Each session is scoped to a project folder. It launches Claude Code"
+    echo "as a team lead (orchestrator) that can spawn Agent Teams teammates."
     echo ""
     echo "Usage:"
     echo "  agent-deck                        Home base (interactive)"
