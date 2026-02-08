@@ -105,6 +105,17 @@ Claude will inspect your project, ask guided questions, and recommend the right 
 
 See [docs/INSTALL.md](docs/INSTALL.md) for the full installation guide.
 
+### Option 3: Agent Deck (collection manager + tmux sessions)
+
+For managing multiple projects with saved resource collections:
+```bash
+bash install.sh --deck
+```
+
+Or from Claude Code: `/deck`
+
+The Agent Deck lets you create named collections (e.g., "ml-pipeline"), install them to any directory, and spawn tmux sub-sessions — each running its own Claude Code instance. See [docs/INSTALL.md](docs/INSTALL.md) for details.
+
 ## Quick Start Examples
 
 **Databricks ML Project:**

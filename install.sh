@@ -298,6 +298,37 @@ install_templates_by_name() {
     done
 }
 
+install_agent_deck() {
+    ensure_repo
+
+    local deck_home="$HOME/.agent-deck"
+    mkdir -p "$deck_home/collections" "$deck_home/cache"
+
+    # Copy agent-deck.sh
+    if [ -f "$TMPDIR_ACC/agent-deck.sh" ]; then
+        cp "$TMPDIR_ACC/agent-deck.sh" "$deck_home/agent-deck.sh"
+        chmod +x "$deck_home/agent-deck.sh"
+        ok "Installed: ~/.agent-deck/agent-deck.sh"
+    fi
+
+    # Install /deck command to current project
+    if [ -d "$TMPDIR_ACC/resources/slash-commands/deck" ]; then
+        mkdir -p "$TARGET_DIR/.claude/commands"
+        local md_file
+        md_file=$(find "$TMPDIR_ACC/resources/slash-commands/deck" -maxdepth 1 -name "*.md" | head -1)
+        if [ -n "$md_file" ]; then
+            cp "$md_file" "$TARGET_DIR/.claude/commands/deck.md"
+            ok "Installed: .claude/commands/deck.md"
+        fi
+    fi
+
+    # Suggest shell alias
+    echo ""
+    echo -e "${DIM}Add to your shell profile for quick access:${RESET}"
+    echo -e "  ${CYAN}alias agent-deck='bash ~/.agent-deck/agent-deck.sh'${RESET}"
+    echo ""
+}
+
 pick_resource() {
     local resource="$1"
     ensure_repo
@@ -583,11 +614,24 @@ guided() {
         echo "CLAUDE.md updated with project-specific patterns."
     fi
 
+    # ── Offer agent deck ──
+
+    echo ""
+    echo -ne "Install the Agent Deck for managing collections + tmux sessions? ${DIM}[y/N]${RESET} "
+    read -r deck_confirm
+
+    if [ "$deck_confirm" = "y" ] || [ "$deck_confirm" = "Y" ]; then
+        install_agent_deck
+    fi
+
     echo ""
     echo "Next steps:"
     echo "  1. Open Claude Code in your project"
     echo "  2. Try /commit for your next git commit"
     echo "  3. Run /setup again anytime to add more resources"
+    if [ -f "$HOME/.agent-deck/agent-deck.sh" ]; then
+        echo "  4. Run agent-deck to manage collections and sessions"
+    fi
     echo ""
 }
 
@@ -727,6 +771,7 @@ usage() {
     echo "  --list                 List all available resources"
     echo "  --pick <cat/name>      Install a specific resource"
     echo "  --all-commands         Install all slash commands"
+    echo "  --deck                 Install Agent Deck (collection manager + tmux launcher)"
     echo "  --target <dir>         Target project directory (default: current)"
     echo "  --help                 Show this help"
     echo ""
@@ -765,6 +810,10 @@ main() {
                 ;;
             --all-commands)
                 action="all-commands"
+                shift
+                ;;
+            --deck)
+                action="deck"
                 shift
                 ;;
             --menu|-m)
@@ -817,6 +866,9 @@ main() {
             ;;
         all-commands)
             install_all_commands
+            ;;
+        deck)
+            install_agent_deck
             ;;
     esac
 }
