@@ -1,17 +1,40 @@
-# Awesome Claude Code - Interactive Toolkit
+# Awesome Claude Code - Agent Deck
 
-## What Are We Building?
+## How It Works
 
-Use `/start` to begin an interactive session that configures this project based on what you're building.
+Each project gets a **persistent orchestrator** — a Claude Code session that manages work, spawns subagents, and tracks progress. You switch between projects with `agent-deck`.
 
 ```
-/start
+You
+├── agent-deck open deck-mirion      → Orchestrator for Mirion
+│   ├── subagent → "fix auth bug"
+│   ├── subagent → "run tests"
+│   └── tracks progress, reports on check-in
+│
+├── agent-deck open deck-guidepoint  → Orchestrator for Guidepoint
+│   ├── subagent → "build API endpoint"
+│   └── subagent → "review PR"
+│
+└── agent-deck list                  → status of everything
+```
 
-→ "What are we building today?"
-→ You: "ML pipeline on Databricks"
-→ "Which area?" (MLflow, DLT, Feature Store, etc.)
-→ "What style of help?" (hands-on coding, architecture review, debugging)
-→ Pulls in relevant resources automatically
+See [docs/SYSTEM_OVERVIEW.md](docs/SYSTEM_OVERVIEW.md) for the full architecture.
+
+## Quick Start
+
+```bash
+# Install (one-time)
+curl -fsSL https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/main/install.sh | bash
+alias agent-deck='bash ~/.agent-deck/agent-deck.sh'
+
+# Set up a project
+agent-deck setup ~/mirion           # guided: detects stack, installs resources
+agent-deck setup ~/guidepoint       # same for another project
+
+# Work
+agent-deck open deck-mirion         # orchestrator session
+agent-deck open deck-guidepoint     # switch projects
+agent-deck list                     # see all sessions
 ```
 
 ## Available Domains
@@ -51,6 +74,16 @@ Use `/start` to begin an interactive session that configures this project based 
 - Stage specific files (avoid `git add -A`)
 - One logical change per commit
 
+## The Orchestrator
+
+When you `agent-deck open` a session, Claude Code starts as the **orchestrator** for that project. The orchestrator:
+
+- Knows the project context (codebase, domain, what's been done)
+- Plans work and breaks it into tasks
+- Spawns subagents via the Task tool for parallel execution
+- Tracks progress and reports status when you check back in
+- Uses installed slash commands (`/commit`, `/pr-review`, `/optimize`, etc.)
+
 ## Commands
 
 | Command | Purpose |
@@ -63,72 +96,14 @@ Use `/start` to begin an interactive session that configures this project based 
 
 ## Resources
 
-Browse `/resources/` for domain-specific content:
+69 resources across three types, installed per-project during setup:
 
-```
-resources/
-├── claude.md-files/        # Project templates
-│   ├── Databricks-Full-Stack/
-│   ├── DSPy/
-│   ├── MLflow/
-│   └── ...
-├── slash-commands/         # Reusable commands
-│   ├── commit/
-│   ├── pr-review/
-│   ├── optimize/
-│   └── ...
-└── workflows-knowledge-guides/
-```
+| Type | Location | Count | Purpose |
+|------|----------|-------|---------|
+| Slash commands | `.claude/commands/` | 31 | Workflow templates (commit, deploy, review, etc.) |
+| CLAUDE.md templates | Appended to `CLAUDE.md` | 35 | Domain-specific instructions (MLflow, Databricks, FastAPI, etc.) |
+| Workflow guides | Reference docs | 3 | Multi-step patterns (autonomous work, design review) |
 
-## Adding Resources to an Existing Project
+Browse all: `/list-resources` or see `resources/` directory.
 
-### Step 1: Install the Agent Deck
-
-From your project directory:
-```bash
-curl -fsSL https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/main/install.sh | bash
-```
-
-This installs the Agent Deck (`~/.agent-deck/agent-deck.sh`) and sets up the resource cache.
-
-### Step 2: Set Up Your Project
-
-```bash
-agent-deck setup              # Guided setup for current directory
-agent-deck setup ~/my-project # ...or specify a path
-```
-
-Setup detects your project, asks what you're building and what you need, installs the right resources, and saves a session config.
-
-### Ongoing: Manage Sessions
-
-```bash
-agent-deck                    # Home base — all sessions at a glance
-agent-deck open <session>     # Open a session (attach or launch)
-agent-deck spawn <session>    # Add another agent window
-agent-deck list               # List all sessions
-```
-
-See [docs/INSTALL.md](docs/INSTALL.md) for the full guide.
-
-## Quick Start Examples
-
-**Databricks ML Project:**
-```
-/start
-→ "Databricks ML pipeline"
-→ Adds: MLflow patterns, Unity Catalog, testing strategy
-```
-
-**API Development:**
-```
-/start
-→ "FastAPI backend"
-→ Adds: API patterns, authentication, database access
-```
-
-**Just exploring:**
-```
-/list-resources
-/pick slash-commands/optimize
-```
+See [docs/INSTALL.md](docs/INSTALL.md) for installation details.
