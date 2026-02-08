@@ -15,6 +15,28 @@ $ARGUMENTS
 
 If no argument: show the home dashboard.
 
+If the argument is `setup`: run the guided setup for the current project directory (combines `new` + `install` into one step — detects the project, asks questions, creates a collection, and installs it here).
+
+## `setup` — Guided Setup for This Project
+
+This is the primary entry point for brownfield projects. It combines `new` + `install` into one flow.
+
+1. **Inspect the current project** silently first:
+   - Read top-level files (package.json, pyproject.toml, Cargo.toml, go.mod, etc.)
+   - Check for existing `.claude/` directory and `CLAUDE.md`
+   - Check for test directories, CI configs
+   - Determine language, framework, domain
+2. **Greet**: "I've looked at your project. Let me help set up the right resources."
+   - State what you detected (language, framework, existing config)
+3. **Ask domain** (pre-suggest based on detection): "What best describes your project?"
+4. **Ask needs**: "What would help you most?"
+5. **Build the collection**, show preview
+6. **Save** to `~/.agent-deck/collections/<project-name>.conf`
+7. **Install** directly into the current project directory
+8. **Summarize** what was added, suggest next steps
+
+This is the recommended flow for someone who just wants to get set up quickly.
+
 ## Home Dashboard (no args)
 
 Show a combined view:
@@ -77,7 +99,7 @@ Ask: **"What would help most?"** (multiple OK)
 
 ### Step 4: Build & Save
 
-Always include these base commands: `commit`, `pr-review`, `optimize`, `setup`
+Always include these base commands: `commit`, `pr-review`, `optimize`, `deck`
 
 Combine base + domain + needs commands (deduplicate). Gather domain templates.
 

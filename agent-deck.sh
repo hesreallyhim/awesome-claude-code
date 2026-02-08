@@ -172,18 +172,80 @@ list_collections() {
     done
 }
 
+# ── Project detection ─────────────────────────────────────────────────
+
+detect_project_at() {
+    local dir="$1"
+    DETECTED_LANG="" DETECTED_FRAMEWORK="" DETECTED_DEFAULT_DOMAIN="7"
+
+    # Language
+    if [ -f "$dir/pyproject.toml" ] || [ -f "$dir/setup.py" ] || [ -f "$dir/requirements.txt" ]; then
+        DETECTED_LANG="python"
+    elif [ -f "$dir/package.json" ]; then
+        DETECTED_LANG="javascript"
+    elif [ -f "$dir/Cargo.toml" ]; then
+        DETECTED_LANG="rust"
+    elif [ -f "$dir/go.mod" ]; then
+        DETECTED_LANG="go"
+    elif [ -f "$dir/pom.xml" ] || [ -f "$dir/build.gradle" ]; then
+        DETECTED_LANG="java"
+    elif [ -f "$dir/Gemfile" ]; then
+        DETECTED_LANG="ruby"
+    fi
+
+    # Framework → default domain
+    if [ -f "$dir/package.json" ]; then
+        grep -q '"react"\|"next"' "$dir/package.json" 2>/dev/null && DETECTED_FRAMEWORK="react" && DETECTED_DEFAULT_DOMAIN="4"
+        grep -q '"express"\|"fastify"' "$dir/package.json" 2>/dev/null && DETECTED_FRAMEWORK="node-api" && DETECTED_DEFAULT_DOMAIN="3"
+    fi
+    if [ -f "$dir/pyproject.toml" ]; then
+        grep -q 'fastapi\|django\|flask' "$dir/pyproject.toml" 2>/dev/null && DETECTED_FRAMEWORK="python-api" && DETECTED_DEFAULT_DOMAIN="3"
+        grep -q 'mlflow\|databricks\|pyspark' "$dir/pyproject.toml" 2>/dev/null && DETECTED_FRAMEWORK="databricks" && DETECTED_DEFAULT_DOMAIN="2"
+        grep -q 'torch\|tensorflow\|scikit' "$dir/pyproject.toml" 2>/dev/null && DETECTED_FRAMEWORK="ml" && DETECTED_DEFAULT_DOMAIN="1"
+    fi
+}
+
 # ── Create a new collection (guided) ──────────────────────────────────
 
 cmd_new() {
+    local target_dir="${1:-}"
+
     echo ""
     echo -e "${BOLD}${BLUE}  New Collection${RESET}"
     echo -e "${DIM}  Create a tailored set of resources${RESET}"
     echo ""
 
+    # If a target directory was provided, detect its project type
+    if [ -n "$target_dir" ] && [ -d "$target_dir" ]; then
+        detect_project_at "$target_dir"
+        if [ -n "$DETECTED_LANG" ]; then
+            echo -e "  Detected: ${CYAN}$DETECTED_LANG${RESET} project"
+        fi
+        if [ -n "$DETECTED_FRAMEWORK" ]; then
+            echo -e "  Framework: ${CYAN}$DETECTED_FRAMEWORK${RESET}"
+        fi
+        echo ""
+    fi
+
     # Name
-    echo -ne "  ${BOLD}Collection name:${RESET} "
+    local default_name=""
+    if [ -n "$target_dir" ]; then
+        default_name=$(basename "$target_dir" | tr '.' '-' | tr ' ' '-' | tr '[:upper:]' '[:lower:]')
+    fi
+
+    if [ -n "$default_name" ]; then
+        echo -ne "  ${BOLD}Collection name${RESET} ($default_name): "
+    else
+        echo -ne "  ${BOLD}Collection name:${RESET} "
+    fi
     read -r coll_name
+    coll_name="${coll_name:-$default_name}"
     coll_name=$(echo "$coll_name" | tr ' ' '-' | tr '[:upper:]' '[:lower:]')
+
+    if [ -z "$coll_name" ]; then
+        err "Name required."
+        return 1
+    fi
 
     if [ -f "$COLLECTIONS_DIR/$coll_name.conf" ]; then
         warn "Collection '$coll_name' already exists."
@@ -204,8 +266,11 @@ cmd_new() {
     echo "    6) CLI / Tooling"
     echo "    7) General software project"
     echo ""
-    echo -n "  Choice [1-7]: "
+
+    local default_domain="${DETECTED_DEFAULT_DOMAIN:-7}"
+    echo -ne "  Choice [1-7] (${default_domain}): "
     read -r domain_choice
+    domain_choice="${domain_choice:-$default_domain}"
 
     local domain
     case "$domain_choice" in
@@ -222,11 +287,11 @@ cmd_new() {
     echo ""
     echo -e "  ${BOLD}What do you need?${RESET} ${DIM}(multiple: e.g. 1 3 5)${RESET}"
     echo ""
-    echo "    1) Git workflow"
-    echo "    2) Code quality"
-    echo "    3) Project context"
-    echo "    4) Documentation"
-    echo "    5) Deployment"
+    echo "    1) Git workflow      — Commits, PRs, branches"
+    echo "    2) Code quality      — Reviews, optimization, testing"
+    echo "    3) Project context   — Help Claude understand your code"
+    echo "    4) Documentation     — Docs, changelogs, release notes"
+    echo "    5) Deployment        — CI/CD, releases"
     echo "    6) Everything"
     echo ""
     echo -n "  Choice: "
@@ -245,7 +310,7 @@ cmd_new() {
     done
 
     # Build resource lists
-    local base_cmds="commit pr-review optimize setup"
+    local base_cmds="commit pr-review optimize deck"
     local domain_cmds
     domain_cmds=$(commands_for_domain "$domain")
     local needs_cmds
@@ -281,11 +346,37 @@ cmd_new() {
 
     save_collection "$coll_name" "$domain" "$needs" "$all_cmds" "$templates"
 
+    # If target_dir was provided, offer to install immediately
+    if [ -n "$target_dir" ]; then
+        echo ""
+        echo -ne "  Install into ${BOLD}$target_dir${RESET} now? [Y/n] "
+        read -r install_confirm
+        install_confirm="${install_confirm:-y}"
+        if [ "$install_confirm" != "n" ] && [ "$install_confirm" != "N" ]; then
+            cmd_install "$coll_name" "$target_dir"
+            return
+        fi
+    fi
+
     echo ""
     echo -e "  ${BOLD}Next:${RESET}"
     echo -e "    agent-deck install $coll_name /path/to/project"
     echo -e "    agent-deck launch /path/to/project"
     echo ""
+}
+
+# ── Setup: new + install in one step for a directory ──────────────────
+
+cmd_setup() {
+    local target_dir="${1:-$(pwd)}"
+
+    if [ ! -d "$target_dir" ]; then
+        err "Directory not found: $target_dir"
+        return 1
+    fi
+
+    target_dir="$(cd "$target_dir" && pwd)"
+    cmd_new "$target_dir"
 }
 
 # ── Install collection into a directory ───────────────────────────────
@@ -537,7 +628,7 @@ cmd_home() {
 
     echo ""
     echo -e "${DIM}  ─────────────────────────────────────────${RESET}"
-    echo -e "  ${CYAN}n${RESET}ew collection  ${CYAN}i${RESET}nstall  ${CYAN}<num>${RESET} launch  ${CYAN}s${RESET}tatus  ${CYAN}q${RESET}uit"
+    echo -e "  ${CYAN}n${RESET}ew  ${CYAN}s${RESET}etup <dir>  ${CYAN}i${RESET}nstall  ${CYAN}<num>${RESET} launch  s${CYAN}t${RESET}atus  ${CYAN}q${RESET}uit"
     echo ""
 
     while true; do
@@ -547,6 +638,10 @@ cmd_home() {
         case "$input" in
             q|quit|exit) break ;;
             n|new) cmd_new ;;
+            setup\ *|s\ *)
+                local setup_dir="${input#* }"
+                cmd_setup "$setup_dir"
+                ;;
             i|install)
                 echo -ne "  Collection name: "
                 read -r cname
@@ -554,13 +649,13 @@ cmd_home() {
                 read -r tdir
                 cmd_install "$cname" "$tdir"
                 ;;
-            s|status) echo ""; cmd_status; echo "" ;;
+            t|st|status) echo ""; cmd_status; echo "" ;;
             k\ *)
                 local target="${input#k }"
                 cmd_kill "$target"
                 ;;
             ''|*[!0-9]*)
-                echo -e "  ${DIM}n=new  i=install  <num>=launch  s=status  k <name>=kill  q=quit${RESET}"
+                echo -e "  ${DIM}n=new  setup <dir>  i=install  <num>=launch  t=status  k <name>=kill  q=quit${RESET}"
                 ;;
             *)
                 local idx=$((input - 1))
@@ -581,7 +676,8 @@ usage() {
     echo ""
     echo "Usage:"
     echo "  agent-deck                              Home base (interactive)"
-    echo "  agent-deck new                          Create a new collection"
+    echo "  agent-deck setup [dir]                  Guided setup for a project (new + install)"
+    echo "  agent-deck new [dir]                    Create a new collection"
     echo "  agent-deck install <collection> [dir]   Install collection into project"
     echo "  agent-deck launch <path>                Spawn Claude Code sub-session"
     echo "  agent-deck list                         List collections"
@@ -594,36 +690,45 @@ usage() {
 }
 
 # ── Main ──────────────────────────────────────────────────────────────
-main() {
-    init_deck
-
+require_tmux() {
     if ! command -v tmux &>/dev/null; then
-        err "tmux is not installed."
+        err "tmux is required for session management."
         echo -e "Install: ${CYAN}sudo apt install tmux${RESET} or ${CYAN}brew install tmux${RESET}"
         exit 1
     fi
+}
+
+main() {
+    init_deck
 
     local cmd="${1:-}"
 
     case "$cmd" in
-        new)                cmd_new ;;
-        install|setup)      shift; cmd_install "$@" ;;
+        # These work without tmux
+        new)                shift; cmd_new "$@" ;;
+        setup)              shift; cmd_setup "$@" ;;
+        install)            shift; cmd_install "$@" ;;
+        list|ls)            list_collections ;;
+        help|-h|--help)     usage ;;
+
+        # These require tmux
         launch|start)
+            require_tmux
             [ -z "${2:-}" ] && err "Usage: agent-deck launch <path>" && exit 1
             cmd_launch "$2"
             ;;
         attach|a)
+            require_tmux
             [ -z "${2:-}" ] && err "Usage: agent-deck attach <name>" && exit 1
             cmd_attach "$2"
             ;;
         kill|rm)
+            require_tmux
             [ -z "${2:-}" ] && err "Usage: agent-deck kill <name>" && exit 1
             cmd_kill "$2"
             ;;
-        list|ls)            list_collections ;;
-        status|st)          cmd_status ;;
-        help|-h|--help)     usage ;;
-        *)                  cmd_home ;;
+        status|st)          require_tmux; cmd_status ;;
+        *)                  require_tmux; cmd_home ;;
     esac
 }
 
