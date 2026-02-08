@@ -1,305 +1,169 @@
 # Installing Resources into an Existing Project
 
-This guide covers how to add awesome-claude-code resources to a project you're already working on (a "brownfield" project).
+This guide covers how to add awesome-claude-code resources to a project you're already working on.
+
+## How It Works
+
+There are two pieces:
+
+1. **`install.sh`** — A one-liner that bootstraps the Agent Deck onto your machine
+2. **Agent Deck** — The actual tool. Creates collections, installs resources, manages tmux sessions. Has the guided setup built in.
+
+```
+install.sh (run once)
+    └── installs → Agent Deck (~/.agent-deck/)
+                        ├── agent-deck setup    ← guided setup (this is what you use)
+                        ├── agent-deck new      ← create a collection
+                        ├── agent-deck install  ← install to a project
+                        └── agent-deck launch   ← spawn tmux sub-session
+```
 
 ## Quick Start
 
-From your project directory, run:
-
 ```bash
+# 1. Install the Agent Deck (one-time)
 curl -fsSL https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/main/install.sh | bash
+
+# 2. Add the alias it suggests
+alias agent-deck='bash ~/.agent-deck/agent-deck.sh'
+
+# 3. Set up your project (guided)
+cd ~/my-project
+agent-deck setup
 ```
 
-The installer will:
-1. Detect your project type (language, framework, existing setup)
+The `setup` command will:
+1. Detect your project type (language, framework, existing config)
 2. Ask what you're building (ML, backend, frontend, etc.)
-3. Ask what you need help with (git workflow, code quality, deployment, etc.)
-4. Recommend and install the right resources for your situation
+3. Ask what you need (git workflow, code quality, docs, etc.)
+4. Create a named collection with the right resources
+5. Install everything into your project
 
-It clones the repo to a temp directory, copies what you select, and cleans up after itself.
-
-## Two Ways to Set Up
-
-### 1. Guided Setup via Bash (the bootstrapper)
-
-Run the install script from your project directory. It walks you through two questions, recommends resources, and installs them:
-
-```bash
-bash install.sh
+Or from Claude Code:
 ```
-
-The guided flow also installs a `/setup` slash command so you can re-run the setup later from within Claude Code.
-
-### 2. Guided Setup via Claude Code (the agent experience)
-
-Once `/setup` is installed (either by the bash script or manually), you get a richer agent-driven experience inside Claude Code:
-
+/deck setup
 ```
-/setup
-```
-
-The `/setup` command goes deeper than the bash script. It:
-- Reads your actual project files to understand your stack
-- Has a conversational Q&A (not just numbered menus)
-- Makes smarter recommendations based on what it finds in your codebase
-- Can explain each resource and why it's relevant
-
-This is the recommended path if you already have Claude Code running in your project.
 
 ## What Gets Installed Where
 
-| Resource Type | Source | Destination in Your Project |
-|---|---|---|
-| Slash commands | `resources/slash-commands/` | `.claude/commands/<name>.md` |
-| CLAUDE.md templates | `resources/claude.md-files/` | Appended to `CLAUDE.md` |
-| Workflow guides | `resources/workflows-knowledge-guides/` | `.claude/workflows/<name>/` |
+| Resource Type | Destination |
+|---|---|
+| Slash commands | `.claude/commands/<name>.md` |
+| CLAUDE.md templates | Appended to `CLAUDE.md` |
+| Agent Deck | `~/.agent-deck/` (shared across projects) |
+| Collections | `~/.agent-deck/collections/` (reusable) |
 
-Slash commands become immediately usable as `/<command-name>` in your Claude Code session. CLAUDE.md templates provide project-specific guidance that Claude reads automatically.
+## Agent Deck Commands
 
-## Install Options
+### `agent-deck setup [dir]` — Guided Setup
 
-### Guided setup (recommended)
+The primary command for setting up a project. Detects your stack, asks two questions, creates a collection, and installs resources. If no directory given, uses the current directory.
 
-```bash
-bash install.sh
-```
+### `agent-deck new [dir]` — Create a Collection
 
-Asks about your project and needs, then recommends and installs resources.
+Same guided Q&A as `setup`, but just saves the collection without installing. Useful if you want to create a collection first and install it to multiple projects later.
 
-### Simple menu
+If a directory is provided, the project is inspected to pre-suggest the domain.
 
-```bash
-bash install.sh --menu
-```
+### `agent-deck install <collection> [dir]` — Install a Collection
 
-Browse and pick resources from a numbered list without the questionnaire.
-
-### List available resources
+Apply a saved collection to a project directory. If no directory given, uses the current directory.
 
 ```bash
-bash install.sh --list
+agent-deck install ml-pipeline ~/projects/my-model
+agent-deck install api-service .
 ```
 
-### Install a specific resource
+### `agent-deck launch <path>` — Spawn a Sub-Session
+
+Create a tmux session for a project directory and start Claude Code in it.
 
 ```bash
-# A slash command
-bash install.sh --pick slash-commands/commit
-
-# A CLAUDE.md template
-bash install.sh --pick claude.md-files/DSPy
-
-# A workflow guide
-bash install.sh --pick workflows-knowledge-guides/Design-Review-Workflow
+agent-deck launch ~/projects/my-model
+# → tmux session "deck-my-model" running claude
 ```
 
-### Install all slash commands at once
+### `agent-deck` — Home Base
 
-```bash
-bash install.sh --all-commands
+Interactive dashboard showing collections, active sessions, and discovered projects. Navigate between them.
+
+### `agent-deck list` / `agent-deck status`
+
+List saved collections or show active tmux sessions.
+
+## Collections
+
+A collection is a named set of resources tailored to a project type. It's stored as a plain `.conf` file:
+
+```ini
+# Agent Deck Collection: ml-pipeline
+# Created: 2026-02-08T12:00:00Z
+DOMAIN=ml
+NEEDS=git quality context
+COMMANDS=commit context-prime create-pr deck feature-table mlflow-log-model optimize pr-review testing_plan_integration uc-register-model
+TEMPLATES=DSPy MLflow-Databricks Feature-Engineering Vector-Search Mosaic-AI-Agents Databricks-AI-Dev-Kit
 ```
 
-### Target a different directory
+Collections are:
+- **Reusable** — install the same collection to multiple projects
+- **Portable** — share `.conf` files with your team
+- **Saved** — in `~/.agent-deck/collections/`, persist across sessions
 
-```bash
-bash install.sh --target /path/to/my/project --pick slash-commands/optimize
+## Claude Code Integration
+
+The installer also copies `/deck` into your project's `.claude/commands/`, giving you the full Agent Deck experience within Claude Code:
+
+```
+/deck                    Home dashboard
+/deck setup              Guided project setup
+/deck new                Create a collection
+/deck install <name>     Install a collection
+/deck launch <path>      Spawn a tmux session
+/deck status             Show active sessions
 ```
 
-## What the Script Does
+`/setup` is also available as a shortcut for `/deck setup`.
 
-1. Detects your project type (language, framework, CI, tests, existing Claude Code config)
-2. Asks two guided questions about your domain and needs
-3. Recommends resources tailored to your answers
-4. Clones the awesome-claude-code repo to a temporary directory (shallow clone)
-5. Copies selected resources to the correct locations in your project
-6. Removes the temporary clone on exit
+## What Gets Installed (Resource Catalog)
 
-It does **not**:
-- Modify existing files without asking
-- Install any dependencies or packages
-- Touch anything outside your project directory
-- Leave the cloned repo behind
-
-## Manual Installation
-
-If you prefer not to run the script, you can manually copy resources:
-
-```bash
-# Clone the repo somewhere
-git clone --depth 1 https://github.com/hesreallyhim/awesome-claude-code.git /tmp/acc
-
-# Copy a slash command
-mkdir -p .claude/commands
-cp /tmp/acc/resources/slash-commands/commit/commit.md .claude/commands/
-
-# Copy the /setup command for future use
-cp /tmp/acc/resources/slash-commands/setup/setup.md .claude/commands/
-
-# Append a CLAUDE.md template
-cat /tmp/acc/resources/claude.md-files/DSPy/CLAUDE.md >> CLAUDE.md
-
-# Clean up
-rm -rf /tmp/acc
-```
-
-## Available Resources
-
-### Slash Commands (29)
-
-Commands you can invoke with `/<name>` in Claude Code:
+### Slash Commands
 
 | Command | Purpose |
 |---|---|
-| `/setup` | **Guided project setup** (install this first) |
-| `/act` | Act on a task |
-| `/add-to-changelog` | Add changelog entries |
-| `/clean` | Clean up project artifacts |
+| `/deck` | Agent Deck — collection manager + session launcher |
+| `/setup` | Guided project setup (alias for `/deck setup`) |
 | `/commit` | Conventional commit workflow |
+| `/pr-review` | Multi-perspective code review |
+| `/optimize` | Performance analysis |
 | `/context-prime` | Prime Claude with project context |
-| `/create-hook` | Create Claude Code hooks |
-| `/create-jtbd` | Create Jobs-to-be-Done specs |
 | `/create-pr` | Create pull requests |
-| `/create-prd` | Create product requirement docs |
-| `/create-prp` | Create product requirement plans |
-| `/create-pull-request` | Pull request with template |
-| `/create-worktrees` | Create git worktrees |
+| `/fix-github-issue` | Issue-driven development |
+| `/testing_plan_integration` | Testing strategy |
+| `/release` | Release management |
+| `/update-docs` | Documentation updates |
+| `/add-to-changelog` | Changelog management |
+| `/mlflow-log-model` | MLflow model logging |
 | `/databricks-deploy` | Deploy to Databricks |
 | `/databricks-job` | Manage Databricks jobs |
-| `/feature-table` | Feature table operations |
-| `/fix-github-issue` | Fix GitHub issues |
-| `/husky` | Set up git hooks |
-| `/initref` | Initialize reference docs |
-| `/load-llms-txt` | Load LLM config files |
-| `/mlflow-log-model` | Log MLflow models |
-| `/optimize` | Performance optimization |
-| `/pr-review` | Review pull requests |
-| `/release` | Manage releases |
-| `/testing_plan_integration` | Integration test planning |
-| `/todo` | Manage project todos |
-| `/uc-register-model` | Register Unity Catalog models |
-| `/update-branch-name` | Update branch names |
-| `/update-docs` | Update documentation |
+| ... | And more — run `agent-deck new` to see domain-specific options |
 
-### CLAUDE.md Templates (34)
+### CLAUDE.md Templates
 
-Project-specific guidance templates. Each adds domain knowledge and coding standards to your `CLAUDE.md`:
-
-- AI-IntelliJ-Plugin, APX-Databricks-Apps, AVS-Vibe-Developer-Guide, AWS-MCP-Server
-- Basic-Memory, Comm, Course-Builder, Cursor-Tools
-- DSPy, Databricks-AI-Dev-Kit, Databricks-Full-Stack, Databricks-Jobs
-- Databricks-MCP-Server, Delta-Live-Tables, DroidconKotlin, EDSL
-- Feature-Engineering, Giselle, Guitar, JSBeeb
-- Lamoom-Python, LangGraphJS, MLflow-Databricks, Mosaic-AI-Agents
-- Network-Chronicles, Note-Companion, Pareto-Mac, Perplexity-MCP
-- SG-Cars-Trends-Backend, SPy, TPL, Unity-Catalog
-- Vector-Search, claude-code-mcp-enhanced
-
-### Workflow Guides (3)
-
-Multi-file reference implementations for specific workflows:
-
-- **Autonomous-Claude-Tmux** — Autonomous agent orchestration
-- **Blogging-Platform-Instructions** — Blogging platform workflow
-- **Design-Review-Workflow** — UI/UX design review agents
+34 project-specific templates covering ML, Databricks, backend, frontend, DevOps, and more. The guided setup recommends the right ones for your stack.
 
 ## Removing Resources
-
-Resources are plain files in your project. To remove:
 
 ```bash
 # Remove a slash command
 rm .claude/commands/commit.md
 
-# Remove a workflow guide
-rm -rf .claude/workflows/Design-Review-Workflow/
+# Remove a template section from CLAUDE.md
+# Find and delete between "# --- awesome-claude-code: <name> ---" markers
+
+# Uninstall the Agent Deck entirely
+rm -rf ~/.agent-deck
 ```
 
-For CLAUDE.md templates, find and remove the section between `# --- awesome-claude-code: <name> ---` markers.
+## Updating
 
-## Updating Resources
-
-Re-run the install script or `/setup` to get the latest versions. Both will ask before overwriting existing files.
-
-## Agent Deck (Advanced)
-
-The Agent Deck adds a layer on top of the basic installer: **collections** (saved resource sets) + **tmux sub-sessions** (one Claude Code instance per project).
-
-### What It Does
-
-```
-                    Agent Deck (home base)
-                    ┌─────────────────────────────┐
-                    │  Collections     Sessions    │
-                    │  ● ml-pipeline   ● my-model  │
-                    │  ● api-service   ● api-v2    │
-                    │  ● devops-kit    ○ infra     │
-                    └──────┬──────────────┬────────┘
-                           │              │
-              ┌────────────┘              └────────────┐
-              ▼                                        ▼
-    tmux: deck-my-model                    tmux: deck-api-v2
-    ┌─────────────────┐                    ┌─────────────────┐
-    │  claude          │                    │  claude          │
-    │  (with ML        │                    │  (with API       │
-    │   resources)     │                    │   resources)     │
-    └─────────────────┘                    └─────────────────┘
-```
-
-- **Collections** are named, saved resource configurations (e.g., "ml-pipeline" = MLflow commands + DSPy template + commit workflow)
-- **Sessions** are tmux windows, each running their own Claude Code instance in a project directory
-- The **home base** is the agent-deck terminal, where you create collections, install them, and launch sessions
-
-### Install the Agent Deck
-
-```bash
-# During guided setup (offered at the end)
-bash install.sh
-
-# Or directly
-bash install.sh --deck
-```
-
-This installs:
-- `~/.agent-deck/agent-deck.sh` — the deck script
-- `~/.agent-deck/collections/` — where your collections are saved
-- `.claude/commands/deck.md` — the `/deck` slash command for Claude Code
-
-### Usage
-
-**From the terminal:**
-```bash
-# Add shell alias (recommended)
-alias agent-deck='bash ~/.agent-deck/agent-deck.sh'
-
-# Interactive home base
-agent-deck
-
-# Create a collection
-agent-deck new
-
-# Install collection into a project
-agent-deck install ml-pipeline ~/projects/my-model
-
-# Launch a Claude Code session
-agent-deck launch ~/projects/my-model
-
-# Show running sessions
-agent-deck status
-```
-
-**From Claude Code (after installing /deck):**
-```
-/deck              # Show dashboard
-/deck new          # Create collection
-/deck install ml-pipeline ~/projects/my-model
-/deck launch ~/projects/my-model
-```
-
-### Collection Workflow
-
-1. `agent-deck new` — Answer two questions (domain + needs), get a named collection
-2. `agent-deck install <name> <dir>` — Apply that collection to any project
-3. `agent-deck launch <dir>` — Spawn a Claude Code sub-session with all resources ready
-4. Repeat for more projects — same collection can be installed to many directories
-
-Collections are plain text `.conf` files in `~/.agent-deck/collections/`. They're portable and shareable.
+Re-run `agent-deck setup` to get the latest resources. The deck auto-updates its cache when it's more than a day old.

@@ -82,39 +82,40 @@ resources/
 
 ## Adding Resources to an Existing Project
 
-Two options for adding resources to a project you're already working on:
-
-### Option 1: Bash installer (bootstrapper)
+### Step 1: Install the Agent Deck
 
 From your project directory:
 ```bash
 curl -fsSL https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/main/install.sh | bash
 ```
 
-The installer detects your project type, asks what you're building and what you need, then recommends and installs tailored resources. It also installs the `/setup` command for future use.
+This installs the Agent Deck (`~/.agent-deck/agent-deck.sh`) and the `/deck` slash command.
 
-### Option 2: `/setup` command (agent-driven)
+### Step 2: Set Up Your Project
 
-If you already have the `/setup` command in your project (installed by the bash script or copied manually), run it in Claude Code for a richer guided experience:
-
-```
-/setup
-```
-
-Claude will inspect your project, ask guided questions, and recommend the right mix of slash commands and CLAUDE.md templates.
-
-See [docs/INSTALL.md](docs/INSTALL.md) for the full installation guide.
-
-### Option 3: Agent Deck (collection manager + tmux sessions)
-
-For managing multiple projects with saved resource collections:
+**From the terminal:**
 ```bash
-bash install.sh --deck
+agent-deck setup              # Guided setup for current directory
+agent-deck setup ~/my-project # ...or specify a path
 ```
 
-Or from Claude Code: `/deck`
+**From Claude Code:**
+```
+/deck setup
+```
 
-The Agent Deck lets you create named collections (e.g., "ml-pipeline"), install them to any directory, and spawn tmux sub-sessions — each running its own Claude Code instance. See [docs/INSTALL.md](docs/INSTALL.md) for details.
+Both paths do the same thing: detect your project, ask what you're building and what you need, create a collection, and install the right resources.
+
+### Ongoing: Manage Collections + Sessions
+
+```bash
+agent-deck                    # Home base — collections, sessions, projects
+agent-deck new                # Create a reusable collection
+agent-deck install <name> .   # Apply a collection to a directory
+agent-deck launch <path>      # Spawn a Claude Code tmux sub-session
+```
+
+See [docs/INSTALL.md](docs/INSTALL.md) for the full guide.
 
 ## Quick Start Examples
 
