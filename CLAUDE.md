@@ -2,20 +2,20 @@
 
 ## How It Works
 
-Each project gets a **persistent orchestrator** — a Claude Code session that manages work, spawns subagents, and tracks progress. You switch between projects with `agent-deck`.
+Each project gets a **persistent team lead** — a Claude Code session with Agent Teams enabled that manages work, spawns teammates, and tracks progress. You switch between projects with `agent-deck`.
 
 ```
 You
-├── agent-deck open deck-mirion      → Orchestrator for Mirion
-│   ├── subagent → "fix auth bug"
-│   ├── subagent → "run tests"
-│   └── tracks progress, reports on check-in
+├── agent-deck open deck-mirion      → Team Lead for Mirion
+│   ├── teammate → "fix auth bug"        (own tmux pane)
+│   ├── teammate → "run tests"           (own tmux pane)
+│   └── tracks tasks, reports on check-in
 │
-├── agent-deck open deck-guidepoint  → Orchestrator for Guidepoint
-│   ├── subagent → "build API endpoint"
-│   └── subagent → "review PR"
+├── agent-deck open deck-guidepoint  → Team Lead for Guidepoint
+│   ├── teammate → "build API endpoint"  (own tmux pane)
+│   └── teammate → "review PR"           (own tmux pane)
 │
-└── agent-deck list                  → status of everything
+└── agent-deck list                  → status + task progress
 ```
 
 See [docs/SYSTEM_OVERVIEW.md](docs/SYSTEM_OVERVIEW.md) for the full architecture.
@@ -74,15 +74,56 @@ agent-deck list                     # see all sessions
 - Stage specific files (avoid `git add -A`)
 - One logical change per commit
 
-## The Orchestrator
+## The Orchestrator (Team Lead)
 
-When you `agent-deck open` a session, Claude Code starts as the **orchestrator** for that project. The orchestrator:
+When you `agent-deck open` a session, Claude Code starts as the **team lead** for that project. Agent Teams is enabled automatically.
 
-- Knows the project context (codebase, domain, what's been done)
-- Plans work and breaks it into tasks
-- Spawns subagents via the Task tool for parallel execution
-- Tracks progress and reports status when you check back in
-- Uses installed slash commands (`/commit`, `/pr-review`, `/optimize`, etc.)
+### How to Orchestrate
+
+When given a complex task, the team lead should:
+
+1. **Plan the work** — Break it into a task DAG with dependencies
+2. **Spawn a team** — Use `spawnTeam` to create the team
+3. **Create tasks** — Use `TaskCreate` for each work item, with `blockedBy` for dependencies
+4. **Spawn teammates** — Each teammate is a separate Claude Code process in its own tmux pane
+5. **Coordinate** — Use direct messages (`write`) or `broadcast` to communicate
+6. **Track progress** — Monitor the shared task list, unblock downstream work
+7. **Report** — When the user checks in, summarize status
+
+### When to Use Teammates vs. Subagents
+
+| Use | For |
+|-----|-----|
+| **Agent Teams teammates** | Real implementation work — features, bug fixes, tests, deployments. Each gets its own context, tmux pane, and codebase access. |
+| **Subagents (Task tool)** | Quick lookups — search for a file, read docs, analyze a diff. Results come back inline, no tmux pane needed. |
+
+### Delegate Mode
+
+Press `Shift+Tab` to enter delegate mode — the team lead coordinates only, no direct code changes. Use this for pure project management: spawn teammates, message them, manage tasks, approve plans.
+
+### Check-In Protocol
+
+When the user returns to a session after being away, immediately:
+
+1. Read the task list (`~/.claude/tasks/<team>/`) for current status
+2. Check the mailbox for any messages from teammates
+3. Present a status summary:
+   ```
+   Status for <team>:
+     ✓ Task 1 (description) — completed by worker-1
+     ✓ Task 2 (description) — completed by worker-2
+     → Task 3 (description) — in progress (worker-1)
+     ○ Task 4 (description) — pending (blocked by 3)
+     ✗ Task 5 (description) — needs attention: [reason]
+   ```
+4. Flag anything that needs user input or decision
+5. Suggest next steps
+
+### Quality Gates
+
+Use hooks to enforce standards:
+- **`TaskCompleted`** — exit code 2 blocks completion (e.g., "run tests before marking done")
+- **`TeammateIdle`** — exit code 2 sends feedback to keep teammate working
 
 ## Commands
 
