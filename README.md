@@ -288,6 +288,7 @@ Claude Code is a CLI-based coding assistant from [Anthropic](https://www.anthrop
 
 ### Project & Task Management
 
+- [/decide (AgDR)](https://github.com/me2resh/agent-decision-record) by [me2resh](https://github.com/me2resh) - Enforces structured decision-making for AI coding agents. When comparing libraries, choosing patterns, or making architecture choices, creates an auditable Agent Decision Record (AgDR) with options, trade-offs, and justification. Includes integrations for Claude Code, Cursor, Copilot, and Windsurf.
 - [/create-command](https://github.com/scopecraft/command/blob/main/.claude/commands/create-command.md) by [scopecraft](https://github.com/scopecraft) - Guides Claude through creating new custom commands with proper structure by analyzing requirements, templating commands by category, enforcing command standards, and creating supporting documentation.
 - [/create-plan](https://github.com/hesreallyhim/inkverse-fork/blob/preserve-claude-resources/.claude/commands/create-plan.md) by [taddyorg](https://github.com/taddyorg) - Generates comprehensive product requirement documents outlining detailed specifications, requirements, and features following standardized document structure and format. *(Removed from origin)*
 - [/create-prp](https://github.com/Wirasm/claudecode-utils/blob/main/.claude/commands/create-prp.md) by [Wirasm](https://github.com/Wirasm) - Creates product requirement plans by reading PRP methodology, following template structure, creating comprehensive requirements, and structuring product definitions for development.
