@@ -80,6 +80,31 @@ resources/
 └── workflows-knowledge-guides/
 ```
 
+## Adding Resources to an Existing Project
+
+Two options for adding resources to a project you're already working on:
+
+### Option 1: Bash installer (bootstrapper)
+
+From your project directory:
+```bash
+curl -fsSL https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/main/install.sh | bash
+```
+
+The installer detects your project type, asks what you're building and what you need, then recommends and installs tailored resources. It also installs the `/setup` command for future use.
+
+### Option 2: `/setup` command (agent-driven)
+
+If you already have the `/setup` command in your project (installed by the bash script or copied manually), run it in Claude Code for a richer guided experience:
+
+```
+/setup
+```
+
+Claude will inspect your project, ask guided questions, and recommend the right mix of slash commands and CLAUDE.md templates.
+
+See [docs/INSTALL.md](docs/INSTALL.md) for the full installation guide.
+
 ## Quick Start Examples
 
 **Databricks ML Project:**
