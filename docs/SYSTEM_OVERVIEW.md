@@ -1,98 +1,176 @@
 # System Overview
 
-How the Agent Deck actually works — and how it's supposed to work.
+How the Agent Deck works.
 
 ## The Core Idea
 
-You're working on multiple projects at once. Maybe Mirion and Guidepoint. You want each project to have a **persistent AI orchestrator** that knows the project, manages work, spawns subagents for tasks, and keeps running while you focus elsewhere. You switch between them when you want to check in.
+You're working on multiple projects at once — Mirion and Guidepoint. Each project gets a persistent orchestrator (a Claude Code team lead) that manages work, spawns Agent Teams teammates as workers, and keeps running while you focus elsewhere. You switch between projects to check in.
 
 ```
 You
 │
-├── agent-deck switch mirion
-│   └── Orchestrator (persistent Claude Code session)
-│       ├── context: Mirion codebase, goals, what's in flight
-│       ├── subagent → "refactor the ingestion pipeline"
-│       ├── subagent → "fix failing tests in module X"
-│       └── subagent → "draft PR for feature Y"
+├── agent-deck open deck-mirion
+│   └── Team Lead (persistent Claude Code session)
+│       ├── teammate → "refactor ingestion pipeline"   ← own tmux pane
+│       ├── teammate → "fix failing tests"             ← own tmux pane
+│       └── teammate → "draft PR for feature Y"        ← own tmux pane
+│       Tasks: ~/.claude/tasks/mirion/
+│       Mailbox: ~/.claude/teams/mirion/inboxes/
 │
-├── agent-deck switch guidepoint
-│   └── Orchestrator (persistent Claude Code session)
-│       ├── context: Guidepoint codebase, goals, what's in flight
-│       ├── subagent → "build the API endpoint"
-│       ├── subagent → "review the auth changes"
-│       └── subagent → "run integration tests"
+├── agent-deck open deck-guidepoint
+│   └── Team Lead (persistent Claude Code session)
+│       ├── teammate → "build the API endpoint"
+│       ├── teammate → "review the auth changes"
+│       └── teammate → "run integration tests"
+│       Tasks: ~/.claude/tasks/guidepoint/
+│       Mailbox: ~/.claude/teams/guidepoint/inboxes/
 │
-└── agent-deck → home base, status of everything
+└── agent-deck list → status across everything
 ```
 
 ## Architecture: Three Layers
 
 ### Layer 1: Agent Deck (the session switcher)
 
-`agent-deck.sh` is a bash script that manages sessions. It's the thing you interact with from the terminal.
+`agent-deck.sh` is a bash script. It manages sessions — nothing more. It launches orchestrators, lets you switch between projects, and shows you status.
 
 **What it does:**
-- Creates and stores session configs (project dir, domain, resources)
-- Launches tmux sessions with Claude Code
-- Lets you switch between projects
+- Creates and stores session configs (project dir, domain, installed resources)
+- Launches tmux sessions with Claude Code as team lead
+- Switches between projects
 - Shows status of all running sessions
+- Enables Agent Teams (`CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`)
 
 **What it is NOT:**
-- It is not the orchestrator. It just launches orchestrators.
-- It doesn't coordinate work. It's a launcher.
+- Not the orchestrator. It just launches them.
+- Doesn't coordinate work. Doesn't touch tasks or messages.
 
 ```bash
 agent-deck setup ~/mirion        # configure + launch
-agent-deck setup ~/guidepoint    # configure + launch
+agent-deck setup ~/guidepoint    # same for another project
 agent-deck list                  # see both running
 agent-deck open deck-mirion      # switch to Mirion
 agent-deck open deck-guidepoint  # switch to Guidepoint
 ```
 
-### Layer 2: Orchestrator (one per session)
+### Layer 2: Orchestrator / Team Lead (one per session)
 
-Each session has a **single Claude Code instance that acts as the orchestrator**. This is the brain of the session. It:
+Each session has a **Claude Code instance acting as the team lead**. This is the brain of the project. It uses the native Agent Teams feature (`spawnTeam`) to create a team and coordinate work.
 
-- Holds the full project context (what we're building, what's been done, what's blocked)
-- Plans work and breaks it into tasks
-- Spawns subagents for parallel execution
-- Tracks progress across all subagents
-- Reports status when you check in
-- Persists across disconnections (tmux keeps it alive)
+**The team lead:**
+- Holds project context (what we're building, what's been done, what's blocked)
+- Plans work and breaks it into tasks (DAG with dependencies)
+- Spawns teammates to do the actual work
+- Coordinates via the mailbox (direct messages and broadcasts)
+- Approves or rejects teammate plans (when `planModeRequired` is set)
+- Tracks progress via the shared task list
+- Reports status when you check back in
+- Can operate in **delegate mode** (`Shift+Tab`) — pure coordination, no direct code changes
 
-The orchestrator is a Claude Code session running in the primary tmux window. Its context includes:
+**The team lead's context includes:**
 - The project's `CLAUDE.md` (domain-specific instructions, coding standards)
 - Installed slash commands in `.claude/commands/`
-- The full conversation history (what you've asked, what's been done)
+- The full conversation history
+- The shared task list (`~/.claude/tasks/<team>/`)
+- The mailbox (`~/.claude/teams/<team>/inboxes/`)
 
-**Key behavior:** When you come back after being away, the orchestrator should be able to tell you:
-- What subagents completed
-- What's still running
-- What's blocked and needs your input
-- What it plans to do next
+### Layer 3: Teammates / Workers (spawned by team lead)
 
-### Layer 3: Subagents (spawned by orchestrator)
+Teammates are the workers. Each is a **separate Claude Code process** with its own context window, running in its own tmux pane. They are spawned by the team lead using Agent Teams.
 
-Subagents are the workers. The orchestrator spawns them to do specific, scoped tasks. They:
+**Each teammate:**
+- Gets a specific task assignment via the mailbox
+- Has full access to the project codebase
+- Works independently in its own context
+- Communicates with the team lead (and other teammates) via messages
+- Claims and completes tasks from the shared task list
+- Can be shut down by the team lead when done
 
-- Receive a clear task from the orchestrator (e.g., "fix the auth bug in `src/auth.py`")
-- Have access to the project codebase
-- Use the installed slash commands and resources as tools
-- Report results back to the orchestrator
-- Are ephemeral — they spin up, do work, and finish
+**How teammates are spawned:**
 
-**How subagents are spawned today:**
-Claude Code has a built-in `Task` tool that spawns subagents within the same session. The orchestrator uses this to delegate work:
+The team lead uses the TeammateTool to spawn workers. Under the hood, each teammate is a `claude` CLI process launched with internal flags:
+
+```bash
+CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 claude \
+  --agent-id worker-1@mirion \
+  --agent-name worker-1 \
+  --team-name mirion \
+  --agent-color blue \
+  --parent-session-id <lead-uuid> \
+  --agent-type general-purpose \
+  --model sonnet
+```
+
+Each teammate appears as a tmux split pane (or a separate window). You can see all their output at once.
+
+## The Agent Teams Protocol
+
+Agent Teams is a native Claude Code feature. The coordination is filesystem-based — no database, no daemon, no network layer. Just JSON files.
+
+### Tasks
+
+Stored in `~/.claude/tasks/<team-name>/`:
 
 ```
-Orchestrator (Claude Code) uses Task tool:
-  → subagent: "Run the test suite and fix any failures"
-  → subagent: "Refactor database.py to use connection pooling"
-  → subagent: "Review the PR diff and write review comments"
+~/.claude/tasks/mirion/
+├── .lock          # fcntl lock for atomic operations
+├── 1.json         # "Set up database schema"     → completed
+├── 2.json         # "Build ingestion pipeline"   → in_progress (worker-1)
+├── 3.json         # "Write integration tests"    → pending (blocked by 2)
+└── 4.json         # "Deploy to staging"          → pending (blocked by 2, 3)
 ```
 
-These run as child processes of the orchestrator's Claude Code session. They share the filesystem but have isolated conversation contexts.
+Each task file:
+```json
+{
+  "id": "2",
+  "subject": "Build ingestion pipeline",
+  "description": "Implement the data ingestion from S3...",
+  "activeForm": "Building ingestion pipeline",
+  "status": "in_progress",
+  "owner": "worker-1",
+  "blocks": ["3", "4"],
+  "blockedBy": ["1"]
+}
+```
+
+Tasks form a DAG. When task 1 completes, tasks that depend on it automatically unblock. Status can only move forward: `pending → in_progress → completed`. Cycle detection prevents impossible dependency chains.
+
+### Mailbox
+
+Stored in `~/.claude/teams/<team-name>/inboxes/`:
+
+```
+~/.claude/teams/mirion/inboxes/
+├── .lock              # Shared lock
+├── team-lead.json     # Lead's inbox
+├── worker-1.json      # Worker 1's inbox
+└── worker-2.json      # Worker 2's inbox
+```
+
+Message types:
+- **Direct messages** — team lead → teammate, or teammate → team lead
+- **Broadcasts** — team lead → all teammates
+- **Task assignments** — auto-sent when a task's `owner` is set
+- **Shutdown requests/approvals** — graceful shutdown handshake
+- **Plan approvals/rejections** — team lead reviews teammate plans
+
+### Team Config
+
+Stored in `~/.claude/teams/<team-name>/config.json`:
+```json
+{
+  "name": "mirion",
+  "description": "Mirion data platform",
+  "leadAgentId": "team-lead@mirion",
+  "leadSessionId": "a1b2c3d4-...",
+  "members": [
+    { "name": "team-lead", "agentType": "team-lead", "model": "claude-opus-4-6" },
+    { "name": "worker-1", "agentType": "general-purpose", "model": "sonnet", "color": "blue", "tmuxPaneId": "%42" },
+    { "name": "worker-2", "agentType": "general-purpose", "model": "sonnet", "color": "green", "tmuxPaneId": "%43" }
+  ]
+}
+```
 
 ## How Sessions Work
 
@@ -105,36 +183,60 @@ These run as child processes of the orchestrator's Claude Code session. They sha
    ├── ask: "what are you building?" → ML pipeline
    ├── ask: "what do you need?" → git workflow, testing, MLflow
    ├── install resources → .claude/commands/, CLAUDE.md
+   ├── enable Agent Teams (CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1)
    └── save session config → ~/.agent-deck/sessions/deck-mirion.conf
 
 2. LAUNCH
    agent-deck open deck-mirion
    ├── create tmux session
-   ├── start Claude Code in project dir
-   └── orchestrator boots with project context
+   ├── start Claude Code in project dir (this becomes team lead)
+   └── team lead boots with project context + Agent Teams enabled
 
 3. WORK
-   You → orchestrator: "Build the data ingestion pipeline"
-   Orchestrator:
-   ├── plans the work (breaks into tasks)
-   ├── subagent → "create the schema definitions"
-   ├── subagent → "write the ingestion logic"
-   ├── subagent → "add tests"
-   └── tracks progress, coordinates results
+   You → team lead: "Build the data ingestion pipeline"
+   Team lead:
+   ├── spawnTeam("mirion", "Mirion data platform")
+   ├── creates task DAG:
+   │   task 1: "Set up database schema"
+   │   task 2: "Build ingestion logic" (blocked by 1)
+   │   task 3: "Write tests" (blocked by 2)
+   │   task 4: "Deploy to staging" (blocked by 2, 3)
+   ├── spawns teammate worker-1 → assigns task 1
+   ├── spawns teammate worker-2 → assigns task 2 (waits for 1)
+   └── coordinates via mailbox, tracks progress via task list
 
 4. SWITCH AWAY
    agent-deck open deck-guidepoint
-   (Mirion keeps running in background via tmux)
+   (Mirion keeps running in background — tmux + Agent Teams persist)
 
 5. CHECK BACK IN
    agent-deck open deck-mirion
-   Orchestrator: "Here's what happened while you were away..."
+   Team lead: "Here's what happened:
+     ✓ Task 1 (schema) — completed by worker-1
+     ✓ Task 2 (ingestion) — completed by worker-2
+     → Task 3 (tests) — in progress, worker-1 picked it up
+     ○ Task 4 (deploy) — pending, waiting on task 3"
 
 6. PERSIST
    Session config survives tmux restarts.
-   agent-deck open deck-mirion recreates from config.
-   (Conversation history is lost on tmux kill — this is a known gap.)
+   Task and team state survive in ~/.claude/tasks/ and ~/.claude/teams/.
+   Conversation history is lost on tmux kill (known limitation).
 ```
+
+### Agent Teams vs. Subagents (Task tool)
+
+Both are available. They serve different purposes:
+
+| | Subagents (Task tool) | Agent Teams (teammates) |
+|---|---|---|
+| **Context** | Shares parent's context, returns results back | Own context window, fully independent |
+| **Communication** | One-way: result goes back to caller | Two-way: mailbox messaging between all agents |
+| **Coordination** | Parent manages everything | Shared task list, teammates self-coordinate |
+| **Visibility** | Hidden — runs inside parent's process | Visible — each gets a tmux pane |
+| **Best for** | Quick, focused lookups (search, read, analyze) | Real work (implement features, fix bugs, write tests) |
+| **Cost** | Lower (results summarized back) | Higher (each is a full Claude instance) |
+
+The team lead can use **both**: subagents for quick research/analysis, Agent Teams teammates for actual implementation work.
 
 ### Session Config
 
@@ -148,15 +250,15 @@ COMMANDS=commit context-prime mlflow-log-model optimize pr-review
 TEMPLATES=MLflow-Databricks Feature-Engineering
 ```
 
-This tells agent-deck how to reconstruct the session environment. The resources are already installed in the project directory, so any new Claude Code instance picks them up automatically.
+This tells agent-deck how to reconstruct the session environment. Resources are installed in the project directory, so any new Claude Code instance picks them up automatically via `.claude/commands/` and `CLAUDE.md`.
 
 ## Resources
 
-Resources are the building blocks the orchestrator and subagents use. Three types:
+Resources are the building blocks the team lead and teammates use. Three types:
 
 ### Slash Commands (`.claude/commands/*.md`)
 
-Prompt templates that define specific workflows. When the orchestrator or a subagent runs `/commit`, Claude reads `.claude/commands/commit.md` and follows the instructions.
+Prompt templates that define workflows. When anyone in the team runs `/commit`, Claude reads `.claude/commands/commit.md` and follows the instructions.
 
 31 available commands across categories:
 - **Git:** commit, create-pr, pr-review, fix-github-issue
@@ -166,7 +268,7 @@ Prompt templates that define specific workflows. When the orchestrator or a suba
 
 ### CLAUDE.md Templates
 
-Domain-specific instructions appended to the project's `CLAUDE.md`. They give the orchestrator and subagents deep context about the domain. 35 templates available (MLflow, Databricks, DSPy, FastAPI, etc.).
+Domain-specific instructions appended to the project's `CLAUDE.md`. They give the team lead and teammates deep context about the domain. 35 templates available (MLflow, Databricks, DSPy, FastAPI, etc.).
 
 ### Workflow Guides
 
@@ -184,29 +286,58 @@ Longer documents covering multi-step workflows:
 | Session configs | Works | Persistent `.conf` files |
 | Resources (69 total) | Works | Slash commands, templates, and guides exist |
 | `.claude/commands/` | Works | 6 core commands defined |
-| Orchestrator (manual) | Partially works | Claude Code in tmux holds context, can spawn subagents via Task tool |
+| Agent Teams (native) | Works | Requires `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` |
 | Multi-session switching | Works | tmux handles this |
 
-## What's Missing
+## What Needs Integration
 
-| Gap | Description | Impact |
-|-----|-------------|--------|
-| **Orchestrator auto-behavior** | No instructions telling the orchestrator to proactively manage work, track subagent status, or report progress on check-in | Orchestrator acts like a regular Claude session, not a project manager |
-| **Subagent coordination** | No structured way for the orchestrator to track what subagents are doing, what completed, what failed | Orchestrator loses track of parallel work |
-| **Session state persistence** | tmux kill loses conversation history — session config only stores resources, not work state | Coming back after tmux restart means starting fresh |
-| **Status dashboard** | `agent-deck list` shows session names but not what work is in progress | No way to see "Mirion: 3 tasks done, 1 blocked" from home base |
-| **Orchestrator bootstrap prompt** | No standard prompt that initializes the orchestrator with "you are the project manager for this session" behavior | Each session starts as a blank Claude instance |
+The pieces exist separately — they need to be wired together:
 
-## Next Steps
+| Gap | Description | Fix |
+|-----|-------------|-----|
+| **Agent Teams not enabled by default** | `agent-deck open` doesn't set `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` | Set the env var when launching Claude Code in tmux |
+| **Team lead doesn't know it's an orchestrator** | No instructions in CLAUDE.md telling the team lead to use Agent Teams for coordination | Add orchestrator behavior to CLAUDE.md or a bootstrap command |
+| **agent-deck doesn't read team state** | `agent-deck list` shows session names but not task progress | Read `~/.claude/tasks/<team>/` to show task counts and status |
+| **No check-in protocol** | Team lead doesn't proactively summarize progress on re-attach | Add instructions for check-in behavior to the orchestrator prompt |
+| **Session ↔ Team mapping** | Session config doesn't store the Agent Teams team name | Add `TEAM_NAME` to `.conf` so agent-deck can find the right `~/.claude/teams/` directory |
 
-To close the gap between what exists and the vision:
+## Enabling Agent Teams
 
-1. **Orchestrator system prompt** — A CLAUDE.md section or bootstrap command that tells Claude "you are the orchestrator for this project, here's how you manage work, track subagents, and report status."
+To enable the Agent Teams feature:
 
-2. **Subagent tracking** — A convention for the orchestrator to maintain a task list (using TodoWrite or a project file) that tracks spawned subagents and their status.
+```json
+// ~/.claude/settings.json
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  }
+}
+```
 
-3. **Check-in protocol** — When the user re-attaches to a session, the orchestrator summarizes what happened since they left.
+Or per-session via the environment variable:
+```bash
+CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 claude
+```
 
-4. **agent-deck status enrichment** — Pull task status from each session's tracking file so `agent-deck list` shows meaningful progress.
+### Display Modes
 
-5. **Session state file** — A `.agent-deck-state.md` or similar in the project dir that the orchestrator writes to, surviving tmux restarts. New orchestrator instances read this to resume context.
+- **In-process** (default): Teammates run inside your terminal. `Shift+Up/Down` to select, `Enter` to view, `Escape` to interrupt.
+- **Split-pane** (tmux/iTerm2): Each teammate gets its own pane. See everyone's output at once.
+
+### Delegate Mode
+
+Press `Shift+Tab` to put the team lead in delegate mode — coordination only, no direct code changes. The lead can only spawn teammates, message them, manage tasks, and approve/reject plans. This is the pure project-manager mode.
+
+### Hooks
+
+Two hooks are available for quality control:
+- **`TeammateIdle`** — runs when a teammate is about to go idle. Exit code 2 keeps them working.
+- **`TaskCompleted`** — runs when a task is marked complete. Exit code 2 blocks completion (e.g., "run tests first").
+
+### Known Limitations
+
+- No session resumption with in-process teammates (`/resume` doesn't restore teammates)
+- One team per session
+- No nested teams (teammates can't spawn their own teams)
+- Lead is fixed (can't promote a teammate)
+- Split panes require tmux or iTerm2 (not VS Code terminal, Windows Terminal, or Ghostty)
