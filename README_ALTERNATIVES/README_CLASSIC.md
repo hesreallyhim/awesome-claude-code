@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Book Factory`](https://github.com/robertguss/claude-skills) &nbsp; by &nbsp; [Robert Guss](https://github.com/robertguss)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A comprehensive pipeline of Skillsthat replicates traditional publishing infrastructure for nonfiction book creation using specialized Claude skills.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-skills&username=robertguss&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`pre-commit-hooks`](https://github.com/aRustyDev/pre-commit-hooks) &nbsp; by &nbsp; [aRustyDev](https://github.com/aRustyDev)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;GPL-3.0  
 This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and related `.claude/` documentation is exemplary. Thorough but not verbose. Unlike a lot of `CLAUDE.md`  files, it doesn't primarily consist in shouting at Claude in all-caps. Great learning resource. Also, hooks.
 
@@ -194,6 +205,17 @@ A standalone Bash script for Behavior-Driven Development with Ralph Wiggum Loop.
 
 [`AI Agent, AI Spy`](https://youtu.be/0ANECpNdt-4) &nbsp; by &nbsp; [Whittaker & Tiwari](https://signalfoundation.org/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;No License / Not Specified  
 Members from the Signal Foundation with some really great tips and tricks on how to turn your operating system into an instrument of total surveillance, and why some companies are doing this really awesome thing. [warning: YouTube link]
+
+[`Book Factory`](https://github.com/robertguss/claude-skills) &nbsp; by &nbsp; [Robert Guss](https://github.com/robertguss)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A comprehensive pipeline of Skillsthat replicates traditional publishing infrastructure for nonfiction book creation using specialized Claude skills.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-skills&username=robertguss&all_stats=true&stats_only=true)
+
+</details>
+<br>
 
 [`cc-devops-skills`](https://github.com/akin-ozer/cc-devops-skills) &nbsp; by &nbsp; [akin-ozer](https://github.com/akin-ozer)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
 Immensely detailed set of skills for DevOps Engineers (or anyone who has to deploy code, really). Works with validations, generators, shell scripts and CLI tools to create high quality IaC code for about any platform you've ever struggled painfully to work with. Worth downloading even just as a source of documentation.
