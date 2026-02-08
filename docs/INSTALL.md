@@ -219,3 +219,87 @@ For CLAUDE.md templates, find and remove the section between `# --- awesome-clau
 ## Updating Resources
 
 Re-run the install script or `/setup` to get the latest versions. Both will ask before overwriting existing files.
+
+## Agent Deck (Advanced)
+
+The Agent Deck adds a layer on top of the basic installer: **collections** (saved resource sets) + **tmux sub-sessions** (one Claude Code instance per project).
+
+### What It Does
+
+```
+                    Agent Deck (home base)
+                    ┌─────────────────────────────┐
+                    │  Collections     Sessions    │
+                    │  ● ml-pipeline   ● my-model  │
+                    │  ● api-service   ● api-v2    │
+                    │  ● devops-kit    ○ infra     │
+                    └──────┬──────────────┬────────┘
+                           │              │
+              ┌────────────┘              └────────────┐
+              ▼                                        ▼
+    tmux: deck-my-model                    tmux: deck-api-v2
+    ┌─────────────────┐                    ┌─────────────────┐
+    │  claude          │                    │  claude          │
+    │  (with ML        │                    │  (with API       │
+    │   resources)     │                    │   resources)     │
+    └─────────────────┘                    └─────────────────┘
+```
+
+- **Collections** are named, saved resource configurations (e.g., "ml-pipeline" = MLflow commands + DSPy template + commit workflow)
+- **Sessions** are tmux windows, each running their own Claude Code instance in a project directory
+- The **home base** is the agent-deck terminal, where you create collections, install them, and launch sessions
+
+### Install the Agent Deck
+
+```bash
+# During guided setup (offered at the end)
+bash install.sh
+
+# Or directly
+bash install.sh --deck
+```
+
+This installs:
+- `~/.agent-deck/agent-deck.sh` — the deck script
+- `~/.agent-deck/collections/` — where your collections are saved
+- `.claude/commands/deck.md` — the `/deck` slash command for Claude Code
+
+### Usage
+
+**From the terminal:**
+```bash
+# Add shell alias (recommended)
+alias agent-deck='bash ~/.agent-deck/agent-deck.sh'
+
+# Interactive home base
+agent-deck
+
+# Create a collection
+agent-deck new
+
+# Install collection into a project
+agent-deck install ml-pipeline ~/projects/my-model
+
+# Launch a Claude Code session
+agent-deck launch ~/projects/my-model
+
+# Show running sessions
+agent-deck status
+```
+
+**From Claude Code (after installing /deck):**
+```
+/deck              # Show dashboard
+/deck new          # Create collection
+/deck install ml-pipeline ~/projects/my-model
+/deck launch ~/projects/my-model
+```
+
+### Collection Workflow
+
+1. `agent-deck new` — Answer two questions (domain + needs), get a named collection
+2. `agent-deck install <name> <dir>` — Apply that collection to any project
+3. `agent-deck launch <dir>` — Spawn a Claude Code sub-session with all resources ready
+4. Repeat for more projects — same collection can be installed to many directories
+
+Collections are plain text `.conf` files in `~/.agent-deck/collections/`. They're portable and shareable.
