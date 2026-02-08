@@ -7,15 +7,15 @@ This guide covers how to add awesome-claude-code resources to a project you're a
 There are two pieces:
 
 1. **`install.sh`** — A one-liner that bootstraps the Agent Deck onto your machine
-2. **Agent Deck** — The actual tool. Creates collections, installs resources, manages tmux sessions. Has the guided setup built in.
+2. **Agent Deck** — The actual tool. Sets up sessions, installs resources, manages tmux agent windows. Has the guided setup built in.
 
 ```
 install.sh (run once)
     └── installs → Agent Deck (~/.agent-deck/)
                         ├── agent-deck setup    ← guided setup (this is what you use)
-                        ├── agent-deck new      ← create a collection
-                        ├── agent-deck install  ← install to a project
-                        └── agent-deck launch   ← spawn tmux sub-session
+                        ├── agent-deck open     ← open a session
+                        ├── agent-deck spawn    ← add another agent window
+                        └── agent-deck list     ← see all sessions
 ```
 
 ## Quick Start
@@ -36,13 +36,9 @@ The `setup` command will:
 1. Detect your project type (language, framework, existing config)
 2. Ask what you're building (ML, backend, frontend, etc.)
 3. Ask what you need (git workflow, code quality, docs, etc.)
-4. Create a named collection with the right resources
+4. Preview recommended resources and confirm
 5. Install everything into your project
-
-Or from Claude Code:
-```
-/deck setup
-```
+6. Save a session config so you can reopen later
 
 ## What Gets Installed Where
 
@@ -51,78 +47,81 @@ Or from Claude Code:
 | Slash commands | `.claude/commands/<name>.md` |
 | CLAUDE.md templates | Appended to `CLAUDE.md` |
 | Agent Deck | `~/.agent-deck/` (shared across projects) |
-| Collections | `~/.agent-deck/collections/` (reusable) |
+| Session configs | `~/.agent-deck/sessions/` (persist across restarts) |
+
+## Sessions
+
+A **session** is the core concept. It's scoped to a project folder, configured with the right resources, and can run multiple agent windows (each a Claude Code instance in tmux).
+
+Session configs are stored as plain `.conf` files:
+
+```ini
+# Agent Deck Session: deck-my-model
+# Created: 2026-02-08T12:00:00Z
+PROJECT_DIR=/home/user/projects/my-model
+DOMAIN=ml
+NEEDS=git quality context
+COMMANDS=commit context-prime create-pr feature-table mlflow-log-model optimize pr-review testing_plan_integration uc-register-model
+TEMPLATES=DSPy MLflow-Databricks Feature-Engineering Vector-Search Mosaic-AI-Agents Databricks-AI-Dev-Kit
+```
+
+Sessions are:
+- **Persistent** — configs survive tmux being killed; `open` re-creates from config
+- **Multi-agent** — `spawn` adds agent windows to a running session
+- **Self-contained** — resources are installed in the project dir, so any new agent window picks them up automatically via `.claude/commands/` and `CLAUDE.md`
 
 ## Agent Deck Commands
 
 ### `agent-deck setup [dir]` — Guided Setup
 
-The primary command for setting up a project. Detects your stack, asks two questions, creates a collection, and installs resources. If no directory given, uses the current directory.
+The primary command for setting up a project. Detects your stack, asks two questions, builds a resource list, installs everything, and saves a session config. If no directory given, uses the current directory.
 
-### `agent-deck new [dir]` — Create a Collection
+### `agent-deck open <session>` — Open a Session
 
-Same guided Q&A as `setup`, but just saves the collection without installing. Useful if you want to create a collection first and install it to multiple projects later.
-
-If a directory is provided, the project is inspected to pre-suggest the domain.
-
-### `agent-deck install <collection> [dir]` — Install a Collection
-
-Apply a saved collection to a project directory. If no directory given, uses the current directory.
+Attach to a running tmux session, or create one from the saved config. Starts Claude Code in the project directory.
 
 ```bash
-agent-deck install ml-pipeline ~/projects/my-model
-agent-deck install api-service .
+agent-deck open deck-my-model
+# → tmux session "deck-my-model" running claude in ~/projects/my-model
 ```
 
-### `agent-deck launch <path>` — Spawn a Sub-Session
+### `agent-deck spawn <session>` — Add an Agent Window
 
-Create a tmux session for a project directory and start Claude Code in it.
+Add another Claude Code instance to a running session. Use this for parallel work — one agent on tests, another on implementation, a third on docs.
 
 ```bash
-agent-deck launch ~/projects/my-model
-# → tmux session "deck-my-model" running claude
+agent-deck spawn deck-my-model
+# → new tmux window "agent-2" running claude
 ```
+
+### `agent-deck list` — List Sessions
+
+Show all saved sessions with their status (running/stopped), agent count, domain, and project path.
+
+```
+Sessions
+  ● deck-my-model   (3 agents)  ml       ~/projects/my-model
+  ● deck-api-v2     (1 agent)   backend  ~/projects/api-v2
+  ○ deck-infra                   devops   ~/infra
+```
+
+### `agent-deck kill <session>` — Kill a Session
+
+Terminate a running tmux session. The config persists — you can `open` it again later.
 
 ### `agent-deck` — Home Base
 
-Interactive dashboard showing collections, active sessions, and discovered projects. Navigate between them.
+Interactive dashboard showing all sessions. Navigate between them, set up new projects, spawn agents.
 
-### `agent-deck list` / `agent-deck status`
+## Session Lifecycle
 
-List saved collections or show active tmux sessions.
+Sessions are persistent configs — they survive tmux being killed. The `.conf` file remembers the project dir, domain, and resources. When you `open` a session, it re-creates the tmux session from the config.
 
-## Collections
-
-A collection is a named set of resources tailored to a project type. It's stored as a plain `.conf` file:
-
-```ini
-# Agent Deck Collection: ml-pipeline
-# Created: 2026-02-08T12:00:00Z
-DOMAIN=ml
-NEEDS=git quality context
-COMMANDS=commit context-prime create-pr deck feature-table mlflow-log-model optimize pr-review testing_plan_integration uc-register-model
-TEMPLATES=DSPy MLflow-Databricks Feature-Engineering Vector-Search Mosaic-AI-Agents Databricks-AI-Dev-Kit
-```
-
-Collections are:
-- **Reusable** — install the same collection to multiple projects
-- **Portable** — share `.conf` files with your team
-- **Saved** — in `~/.agent-deck/collections/`, persist across sessions
-
-## Claude Code Integration
-
-The installer also copies `/deck` into your project's `.claude/commands/`, giving you the full Agent Deck experience within Claude Code:
-
-```
-/deck                    Home dashboard
-/deck setup              Guided project setup
-/deck new                Create a collection
-/deck install <name>     Install a collection
-/deck launch <path>      Spawn a tmux session
-/deck status             Show active sessions
-```
-
-`/setup` is also available as a shortcut for `/deck setup`.
+Agents within a session spin up and down naturally:
+- `spawn` adds agents when there's parallel work to do
+- Individual windows close when their work is done
+- The session config persists so you can always `open` it again
+- Resources are already installed in the project — new agents pick them up automatically via `.claude/commands/` and `CLAUDE.md`
 
 ## What Gets Installed (Resource Catalog)
 
@@ -130,8 +129,6 @@ The installer also copies `/deck` into your project's `.claude/commands/`, givin
 
 | Command | Purpose |
 |---|---|
-| `/deck` | Agent Deck — collection manager + session launcher |
-| `/setup` | Guided project setup (alias for `/deck setup`) |
 | `/commit` | Conventional commit workflow |
 | `/pr-review` | Multi-perspective code review |
 | `/optimize` | Performance analysis |
@@ -145,7 +142,7 @@ The installer also copies `/deck` into your project's `.claude/commands/`, givin
 | `/mlflow-log-model` | MLflow model logging |
 | `/databricks-deploy` | Deploy to Databricks |
 | `/databricks-job` | Manage Databricks jobs |
-| ... | And more — run `agent-deck new` to see domain-specific options |
+| ... | And more — domain-specific commands are recommended during setup |
 
 ### CLAUDE.md Templates
 

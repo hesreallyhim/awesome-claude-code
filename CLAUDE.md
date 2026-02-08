@@ -89,30 +89,24 @@ From your project directory:
 curl -fsSL https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/main/install.sh | bash
 ```
 
-This installs the Agent Deck (`~/.agent-deck/agent-deck.sh`) and the `/deck` slash command.
+This installs the Agent Deck (`~/.agent-deck/agent-deck.sh`) and sets up the resource cache.
 
 ### Step 2: Set Up Your Project
 
-**From the terminal:**
 ```bash
 agent-deck setup              # Guided setup for current directory
 agent-deck setup ~/my-project # ...or specify a path
 ```
 
-**From Claude Code:**
-```
-/deck setup
-```
+Setup detects your project, asks what you're building and what you need, installs the right resources, and saves a session config.
 
-Both paths do the same thing: detect your project, ask what you're building and what you need, create a collection, and install the right resources.
-
-### Ongoing: Manage Collections + Sessions
+### Ongoing: Manage Sessions
 
 ```bash
-agent-deck                    # Home base — collections, sessions, projects
-agent-deck new                # Create a reusable collection
-agent-deck install <name> .   # Apply a collection to a directory
-agent-deck launch <path>      # Spawn a Claude Code tmux sub-session
+agent-deck                    # Home base — all sessions at a glance
+agent-deck open <session>     # Open a session (attach or launch)
+agent-deck spawn <session>    # Add another agent window
+agent-deck list               # List all sessions
 ```
 
 See [docs/INSTALL.md](docs/INSTALL.md) for the full guide.
