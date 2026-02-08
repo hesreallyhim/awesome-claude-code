@@ -68,6 +68,40 @@ main() {
         exit 1
     fi
 
+    # ── Enable Agent Teams ──
+
+    local claude_settings_dir="$HOME/.claude"
+    local claude_settings="$claude_settings_dir/settings.json"
+    mkdir -p "$claude_settings_dir"
+
+    if [ -f "$claude_settings" ]; then
+        # Check if Agent Teams is already enabled
+        if ! grep -q 'CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS' "$claude_settings" 2>/dev/null; then
+            # Add env block if it exists, or create it
+            if grep -q '"env"' "$claude_settings" 2>/dev/null; then
+                warn "Agent Teams not enabled in settings. Add manually:"
+                echo -e "  ${DIM}\"CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS\": \"1\"${RESET}"
+                echo -e "  ${DIM}to the \"env\" block in $claude_settings${RESET}"
+            else
+                warn "Agent Teams not enabled in settings. Add manually:"
+                echo -e "  ${DIM}\"env\": { \"CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS\": \"1\" }${RESET}"
+                echo -e "  ${DIM}to $claude_settings${RESET}"
+            fi
+        else
+            ok "Agent Teams: already enabled"
+        fi
+    else
+        # Create settings with Agent Teams enabled
+        cat > "$claude_settings" << 'SETTINGS_EOF'
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  }
+}
+SETTINGS_EOF
+        ok "Agent Teams: enabled in $claude_settings"
+    fi
+
     # ── Set up shell alias ──
 
     echo ""
@@ -81,8 +115,8 @@ main() {
     echo ""
     echo "Get started:"
     echo -e "  ${BOLD}agent-deck setup${RESET}             Guided setup for your project"
-    echo -e "  ${BOLD}agent-deck open <session>${RESET}    Open a session"
-    echo -e "  ${BOLD}agent-deck spawn <session>${RESET}   Add another agent window"
+    echo -e "  ${BOLD}agent-deck open <session>${RESET}    Open a session (launches team lead)"
+    echo -e "  ${BOLD}agent-deck list${RESET}              See all sessions + task progress"
     echo -e "  ${BOLD}agent-deck${RESET}                   Home base (interactive)"
     echo ""
 }

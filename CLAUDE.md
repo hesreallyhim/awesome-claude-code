@@ -1,17 +1,40 @@
-# Awesome Claude Code - Interactive Toolkit
+# Awesome Claude Code - Agent Deck
 
-## What Are We Building?
+## How It Works
 
-Use `/start` to begin an interactive session that configures this project based on what you're building.
+Each project gets a **persistent team lead** — a Claude Code session with Agent Teams enabled that manages work, spawns teammates, and tracks progress. You switch between projects with `agent-deck`.
 
 ```
-/start
+You
+├── agent-deck open deck-mirion      → Team Lead for Mirion
+│   ├── teammate → "fix auth bug"        (own tmux pane)
+│   ├── teammate → "run tests"           (own tmux pane)
+│   └── tracks tasks, reports on check-in
+│
+├── agent-deck open deck-guidepoint  → Team Lead for Guidepoint
+│   ├── teammate → "build API endpoint"  (own tmux pane)
+│   └── teammate → "review PR"           (own tmux pane)
+│
+└── agent-deck list                  → status + task progress
+```
 
-→ "What are we building today?"
-→ You: "ML pipeline on Databricks"
-→ "Which area?" (MLflow, DLT, Feature Store, etc.)
-→ "What style of help?" (hands-on coding, architecture review, debugging)
-→ Pulls in relevant resources automatically
+See [docs/SYSTEM_OVERVIEW.md](docs/SYSTEM_OVERVIEW.md) for the full architecture.
+
+## Quick Start
+
+```bash
+# Install (one-time)
+curl -fsSL https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/main/install.sh | bash
+alias agent-deck='bash ~/.agent-deck/agent-deck.sh'
+
+# Set up a project
+agent-deck setup ~/mirion           # guided: detects stack, installs resources
+agent-deck setup ~/guidepoint       # same for another project
+
+# Work
+agent-deck open deck-mirion         # orchestrator session
+agent-deck open deck-guidepoint     # switch projects
+agent-deck list                     # see all sessions
 ```
 
 ## Available Domains
@@ -51,6 +74,57 @@ Use `/start` to begin an interactive session that configures this project based 
 - Stage specific files (avoid `git add -A`)
 - One logical change per commit
 
+## The Orchestrator (Team Lead)
+
+When you `agent-deck open` a session, Claude Code starts as the **team lead** for that project. Agent Teams is enabled automatically.
+
+### How to Orchestrate
+
+When given a complex task, the team lead should:
+
+1. **Plan the work** — Break it into a task DAG with dependencies
+2. **Spawn a team** — Use `spawnTeam` to create the team
+3. **Create tasks** — Use `TaskCreate` for each work item, with `blockedBy` for dependencies
+4. **Spawn teammates** — Each teammate is a separate Claude Code process in its own tmux pane
+5. **Coordinate** — Use direct messages (`write`) or `broadcast` to communicate
+6. **Track progress** — Monitor the shared task list, unblock downstream work
+7. **Report** — When the user checks in, summarize status
+
+### When to Use Teammates vs. Subagents
+
+| Use | For |
+|-----|-----|
+| **Agent Teams teammates** | Real implementation work — features, bug fixes, tests, deployments. Each gets its own context, tmux pane, and codebase access. |
+| **Subagents (Task tool)** | Quick lookups — search for a file, read docs, analyze a diff. Results come back inline, no tmux pane needed. |
+
+### Delegate Mode
+
+Press `Shift+Tab` to enter delegate mode — the team lead coordinates only, no direct code changes. Use this for pure project management: spawn teammates, message them, manage tasks, approve plans.
+
+### Check-In Protocol
+
+When the user returns to a session after being away, immediately:
+
+1. Read the task list (`~/.claude/tasks/<team>/`) for current status
+2. Check the mailbox for any messages from teammates
+3. Present a status summary:
+   ```
+   Status for <team>:
+     ✓ Task 1 (description) — completed by worker-1
+     ✓ Task 2 (description) — completed by worker-2
+     → Task 3 (description) — in progress (worker-1)
+     ○ Task 4 (description) — pending (blocked by 3)
+     ✗ Task 5 (description) — needs attention: [reason]
+   ```
+4. Flag anything that needs user input or decision
+5. Suggest next steps
+
+### Quality Gates
+
+Use hooks to enforce standards:
+- **`TaskCompleted`** — exit code 2 blocks completion (e.g., "run tests before marking done")
+- **`TeammateIdle`** — exit code 2 sends feedback to keep teammate working
+
 ## Commands
 
 | Command | Purpose |
@@ -63,72 +137,14 @@ Use `/start` to begin an interactive session that configures this project based 
 
 ## Resources
 
-Browse `/resources/` for domain-specific content:
+69 resources across three types, installed per-project during setup:
 
-```
-resources/
-├── claude.md-files/        # Project templates
-│   ├── Databricks-Full-Stack/
-│   ├── DSPy/
-│   ├── MLflow/
-│   └── ...
-├── slash-commands/         # Reusable commands
-│   ├── commit/
-│   ├── pr-review/
-│   ├── optimize/
-│   └── ...
-└── workflows-knowledge-guides/
-```
+| Type | Location | Count | Purpose |
+|------|----------|-------|---------|
+| Slash commands | `.claude/commands/` | 31 | Workflow templates (commit, deploy, review, etc.) |
+| CLAUDE.md templates | Appended to `CLAUDE.md` | 35 | Domain-specific instructions (MLflow, Databricks, FastAPI, etc.) |
+| Workflow guides | Reference docs | 3 | Multi-step patterns (autonomous work, design review) |
 
-## Adding Resources to an Existing Project
+Browse all: `/list-resources` or see `resources/` directory.
 
-### Step 1: Install the Agent Deck
-
-From your project directory:
-```bash
-curl -fsSL https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/main/install.sh | bash
-```
-
-This installs the Agent Deck (`~/.agent-deck/agent-deck.sh`) and sets up the resource cache.
-
-### Step 2: Set Up Your Project
-
-```bash
-agent-deck setup              # Guided setup for current directory
-agent-deck setup ~/my-project # ...or specify a path
-```
-
-Setup detects your project, asks what you're building and what you need, installs the right resources, and saves a session config.
-
-### Ongoing: Manage Sessions
-
-```bash
-agent-deck                    # Home base — all sessions at a glance
-agent-deck open <session>     # Open a session (attach or launch)
-agent-deck spawn <session>    # Add another agent window
-agent-deck list               # List all sessions
-```
-
-See [docs/INSTALL.md](docs/INSTALL.md) for the full guide.
-
-## Quick Start Examples
-
-**Databricks ML Project:**
-```
-/start
-→ "Databricks ML pipeline"
-→ Adds: MLflow patterns, Unity Catalog, testing strategy
-```
-
-**API Development:**
-```
-/start
-→ "FastAPI backend"
-→ Adds: API patterns, authentication, database access
-```
-
-**Just exploring:**
-```
-/list-resources
-/pick slash-commands/optimize
-```
+See [docs/INSTALL.md](docs/INSTALL.md) for installation details.
