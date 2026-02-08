@@ -1,8 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # agent-deck - tmux session manager for Claude Code projects
 #
 # Discovers all Claude Code projects (directories containing CLAUDE.md or .claude/)
 # and provides a navigable dashboard to launch, attach, and manage sessions.
+#
+# Compatible with macOS (bash 3.2+) and Linux.
+# On macOS: brew install bash tmux (recommended for bash 4+ features, but not required)
 #
 # Usage:
 #   agent-deck                  # Interactive project picker
@@ -17,6 +20,10 @@ set -euo pipefail
 SEARCH_DIRS=("$HOME/projects" "$HOME/repos" "$HOME/code" "$HOME/work" "$HOME")
 MAX_DEPTH=3
 SESSION_PREFIX="agent"
+
+# Detect OS
+IS_MACOS=false
+[[ "$(uname -s)" == "Darwin" ]] && IS_MACOS=true
 
 # ── Colors ──────────────────────────────────────────────────────────
 BLUE='\033[0;34m'
@@ -72,16 +79,24 @@ session_exists() {
     tmux has-session -t "$1" 2>/dev/null
 }
 
+# ── Read projects into array (bash 3.2 compatible) ────────────────
+# mapfile/readarray is bash 4+ only; this works on macOS default bash
+load_projects() {
+    PROJECTS=()
+    while IFS= read -r line; do
+        [ -n "$line" ] && PROJECTS+=("$line")
+    done < <(discover_projects)
+}
+
 # ── List projects ─────────────────────────────────────────────────
 cmd_list() {
     echo -e "${BOLD}${BLUE}  Agent Deck - Claude Code Projects${RESET}"
     echo -e "${DIM}  ─────────────────────────────────────────${RESET}"
     echo ""
 
-    local projects
-    mapfile -t projects < <(discover_projects)
+    load_projects
 
-    if [ ${#projects[@]} -eq 0 ]; then
+    if [ ${#PROJECTS[@]} -eq 0 ]; then
         echo -e "  ${YELLOW}No Claude Code projects found.${RESET}"
         echo -e "  ${DIM}Searched: ${SEARCH_DIRS[*]}${RESET}"
         echo -e "  ${DIM}Looking for: CLAUDE.md or .claude/ directories${RESET}"
@@ -89,7 +104,7 @@ cmd_list() {
     fi
 
     local idx=1
-    for project in "${projects[@]}"; do
+    for project in "${PROJECTS[@]}"; do
         local name
         name=$(session_name "$project")
         local status_icon
@@ -184,9 +199,9 @@ cmd_status() {
     fi
 
     while IFS=' ' read -r name path windows created; do
-        local age
-        age=$(( $(date +%s) - created ))
-        local human_age
+        local now age human_age
+        now=$(date +%s)
+        age=$(( now - created ))
         if [ $age -lt 3600 ]; then
             human_age="$((age / 60))m ago"
         elif [ $age -lt 86400 ]; then
@@ -205,10 +220,9 @@ cmd_interactive() {
     cmd_list
     echo ""
 
-    local projects
-    mapfile -t projects < <(discover_projects)
+    load_projects
 
-    [ ${#projects[@]} -eq 0 ] && return
+    [ ${#PROJECTS[@]} -eq 0 ] && return
 
     echo -e "${DIM}  ─────────────────────────────────────────${RESET}"
     echo -e "  ${BOLD}Commands:${RESET}"
@@ -241,8 +255,8 @@ cmd_interactive() {
                 ;;
             *)
                 local idx=$((input - 1))
-                if [ "$idx" -ge 0 ] && [ "$idx" -lt ${#projects[@]} ]; then
-                    cmd_launch "${projects[$idx]}"
+                if [ "$idx" -ge 0 ] && [ "$idx" -lt ${#PROJECTS[@]} ]; then
+                    cmd_launch "${PROJECTS[$idx]}"
                     break
                 else
                     echo -e "  ${RED}Invalid selection.${RESET}"

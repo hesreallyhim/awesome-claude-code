@@ -56,9 +56,54 @@ bind l select-pane -R
 bind C-l send-keys 'clear' Enter
 ```
 
+## macOS Setup
+
+### Install tmux
+```bash
+brew install tmux
+```
+
+### Recommended Terminal: iTerm2
+iTerm2 has native tmux integration and far better color support than Terminal.app:
+```bash
+brew install --cask iterm2
+```
+
+iTerm2 also supports tmux integration mode (`tmux -CC`) which renders tmux windows as native iTerm2 tabs/splits - but for autonomous workflows, standard tmux is more portable.
+
+### Clipboard Integration (pbcopy/pbpaste)
+Add to your `~/.tmux.conf` to copy from tmux directly to the macOS clipboard:
+```bash
+# ── macOS Clipboard ─────────────────────────────────────────────────
+# Copy from tmux copy mode to macOS clipboard
+bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "pbcopy"
+bind -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "pbcopy"
+
+# Paste from macOS clipboard into tmux
+bind p run "pbpaste | tmux load-buffer - && tmux paste-buffer"
+```
+
+### Prevent Sleep for Autonomous Sessions
+Closing your MacBook lid puts the machine to sleep, which **pauses tmux**. Use `caffeinate` to keep the Mac awake while Claude works:
+
+```bash
+# Keep Mac awake indefinitely (until you Ctrl+C)
+caffeinate &
+
+# Keep Mac awake for 8 hours (28800 seconds)
+caffeinate -t 28800 &
+
+# Keep Mac awake while a specific process runs
+caffeinate -w $(pgrep -f "tmux")
+```
+
+You can also go to **System Settings > Energy > Prevent automatic sleeping when the display is off**.
+
+For truly hands-off autonomy (leave the house, close the lid), the best approach is a remote server - see [Autonomous Workflows](./autonomous-workflows.md).
+
 ## Shell Environment
 
-Add to `~/.zshrc` or `~/.bashrc`:
+Add to `~/.zshrc` (macOS default) or `~/.bashrc`:
 
 ```bash
 export TERM=xterm-256color
@@ -104,3 +149,17 @@ export LC_ALL=en_US.UTF-8
 The config remaps prefix to `Ctrl+a`:
 - Detach: `Ctrl+a d`
 - Not: `Ctrl+b d`
+
+**macOS: tmux command not found after brew install?**
+```bash
+# Ensure Homebrew bin is in your PATH (add to ~/.zshrc)
+export PATH="/opt/homebrew/bin:$PATH"
+```
+
+**macOS: Bash scripts failing with syntax errors?**
+macOS ships with bash 3.2 (2007). Scripts using modern bash features need Homebrew bash:
+```bash
+brew install bash
+# Scripts should use: #!/usr/bin/env bash
+# Verify: /opt/homebrew/bin/bash --version
+```

@@ -15,6 +15,36 @@ The key insight: tmux sessions persist on the server regardless of your connecti
 6. Review completed work
 ```
 
+### macOS: Keeping Your Mac Awake
+
+Closing a MacBook lid puts it to sleep, which **pauses all tmux sessions**. You have three options:
+
+**Option A: `caffeinate` (simplest)**
+```bash
+# Keep Mac awake for 8 hours while Claude works
+caffeinate -t 28800 &
+
+# Or keep it awake indefinitely
+caffeinate &
+```
+
+**Option B: System Settings**
+System Settings > Energy > **Prevent automatic sleeping when the display is off**
+
+**Option C: Remote server (best for true autonomy)**
+```bash
+# SSH into a remote machine (EC2, VPS, home server, etc.)
+ssh dev-server
+
+# Start tmux there - now it survives everything:
+# laptop sleep, lid close, wifi drops, going on vacation
+tmux new -s my-task
+claude
+# Give Claude the task, then disconnect completely
+```
+
+Option C is the recommended approach for hours-long autonomous work. Your Mac can sleep, reboot, or be left at home - the remote tmux session doesn't care.
+
 ## Workflow 1: Overnight Refactoring
 
 Start a large refactoring task before leaving for the day:
@@ -168,10 +198,14 @@ set -g history-limit 50000
 SSH into your development machine from any device to check on progress:
 
 ```bash
+# From your Mac terminal
 ssh dev-server
 tmux attach -t migration
 # See exactly where Claude is in the task
 # Ctrl+a d to detach again
+
+# From your iPhone/iPad (using Blink Shell, Termius, or Prompt)
+# Same commands - full tmux support on iOS SSH clients
 ```
 
 ### 5. Session Naming Convention

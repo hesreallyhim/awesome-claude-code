@@ -36,12 +36,33 @@ Agent Deck scans your common project directories for `CLAUDE.md` files or `.clau
 
 ## Installation
 
+### macOS
 ```bash
+# Prerequisites
+brew install tmux
+
+# Copy the script somewhere on your PATH
+cp agent-deck.sh /usr/local/bin/agent-deck
+chmod +x /usr/local/bin/agent-deck
+
+# Or if using Homebrew paths (Apple Silicon)
+cp agent-deck.sh /opt/homebrew/bin/agent-deck
+chmod +x /opt/homebrew/bin/agent-deck
+```
+
+### Linux
+```bash
+# Prerequisites
+sudo apt install tmux   # Debian/Ubuntu
+sudo dnf install tmux   # Fedora/RHEL
+
 # Copy the script somewhere on your PATH
 cp agent-deck.sh ~/.local/bin/agent-deck
 chmod +x ~/.local/bin/agent-deck
+```
 
-# Or symlink it
+### Either platform (symlink)
+```bash
 ln -s "$(pwd)/agent-deck.sh" ~/.local/bin/agent-deck
 ```
 
@@ -163,4 +184,32 @@ agent-deck status
 
 # Jump into any one
 agent-deck attach api
+```
+
+## macOS-Specific Notes
+
+### Keeping sessions alive when you walk away
+
+On a Mac, closing the lid suspends all processes including tmux. For true autonomy:
+
+```bash
+# Option 1: Keep Mac awake with caffeinate
+caffeinate -t 28800 &    # 8 hours
+agent-deck launch ~/projects/big-refactor
+# Close the terminal window (not the lid) - Claude keeps working
+
+# Option 2: Run on a remote server
+ssh my-server
+agent-deck launch ~/projects/big-refactor
+# Now you can close your Mac entirely
+```
+
+### Checking sessions from your phone
+
+Any iOS SSH client (Blink Shell, Termius, Prompt) works:
+
+```bash
+ssh my-mac.local          # or your remote server
+agent-deck status         # See what's running
+agent-deck attach api     # Jump in to check progress
 ```
