@@ -19,7 +19,7 @@ set -euo pipefail
 # ── Config ────────────────────────────────────────────────────────────
 DECK_HOME="${AGENT_DECK_HOME:-$HOME/.agent-deck}"
 SESSIONS_DIR="$DECK_HOME/sessions"
-ACC_REPO_URL="https://github.com/hesreallyhim/awesome-claude-code.git"
+ACC_REPO_URL="https://github.com/stuagano/awesome-claude-code.git"
 ACC_CACHE="$DECK_HOME/cache/awesome-claude-code"
 SESSION_PREFIX="deck"
 
@@ -559,12 +559,18 @@ cmd_home() {
             o\ *|open\ *)
                 local target="${input#* }"
                 cmd_open "$target"
-                break
+                # After detaching from tmux, return here
+                echo ""
+                echo -e "${BOLD}${BLUE}  Agent Deck${RESET}"
+                cmd_list
                 ;;
             p\ *|spawn\ *)
                 local target="${input#* }"
                 cmd_spawn "$target"
-                break
+                # After detaching from tmux, return here
+                echo ""
+                echo -e "${BOLD}${BLUE}  Agent Deck${RESET}"
+                cmd_list
                 ;;
             k\ *|kill\ *)
                 local target="${input#* }"

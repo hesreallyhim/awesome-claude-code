@@ -24,17 +24,17 @@ See [docs/SYSTEM_OVERVIEW.md](docs/SYSTEM_OVERVIEW.md) for the full architecture
 
 ```bash
 # Install (one-time)
-curl -fsSL https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/main/install.sh | bash
-alias agent-deck='bash ~/.agent-deck/agent-deck.sh'
+curl -fsSL https://raw.githubusercontent.com/stuagano/awesome-claude-code/main/install.sh | bash
 
-# Set up a project
-agent-deck setup ~/mirion           # guided: detects stack, installs resources
-agent-deck setup ~/guidepoint       # same for another project
+# Set up projects
+deck setup ~/mirion           # guided: detects stack, installs resources
+deck setup ~/guidepoint       # same for another project
 
 # Work
-agent-deck open deck-mirion         # orchestrator session
-agent-deck open deck-guidepoint     # switch projects
-agent-deck list                     # see all sessions
+deck                          # dashboard (home base)
+deck open mirion              # enter a project session
+deck                          # (from inside a project) back to dashboard
+deck open guidepoint          # enter another project
 ```
 
 ## Available Domains
