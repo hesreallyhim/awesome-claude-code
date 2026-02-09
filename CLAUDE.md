@@ -137,13 +137,13 @@ Use hooks to enforce standards:
 
 ## Resources
 
-69 resources across three types, installed per-project during setup:
+78 resources across three types, installed per-project during setup:
 
 | Type | Location | Count | Purpose |
 |------|----------|-------|---------|
 | Slash commands | `.claude/commands/` | 31 | Workflow templates (commit, deploy, review, etc.) |
-| CLAUDE.md templates | Appended to `CLAUDE.md` | 35 | Domain-specific instructions (MLflow, Databricks, FastAPI, etc.) |
-| Workflow guides | Reference docs | 3 | Multi-step patterns (autonomous work, design review) |
+| CLAUDE.md templates | Appended to `CLAUDE.md` | 36 | Domain-specific instructions (MLflow, Databricks, FastAPI, etc.) |
+| Workflow guides | Reference docs | 11 | Multi-step patterns (autonomous work, design review, blogging) |
 
 Browse all: `/list-resources` or see `resources/` directory.
 
