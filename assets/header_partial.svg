@@ -1,0 +1,94 @@
+<svg width="100%" height="100" viewBox="169 0 462 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Subtle glow for hero text - reduced blur for better readability -->
+    <filter id="heroGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Hero gradient - brighter, more saturated colors for contrast -->
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF8855" stop-opacity="1">
+        <animate attributeName="stop-color" values="#FF8855;#FFAA77;#FF8855" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#FFAA77" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FF8855" stop-opacity="1">
+        <animate attributeName="stop-color" values="#FF8855;#FFCC99;#FF8855" dur="5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Accent line gradient -->
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFB088" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FF8855" stop-opacity="1">
+        <animate attributeName="stop-opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#FFB088" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Radial glow background - more subtle -->
+    <radialGradient id="bgGlow">
+      <stop offset="0%" stop-color="#FF8C5A" stop-opacity="0.08">
+        <animate attributeName="stop-opacity" values="0.05;0.12;0.05" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#FF8C5A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background glow - more subtle -->
+  <ellipse cx="400" cy="50" rx="300" ry="40" fill="url(#bgGlow)"/>
+
+  <!-- Top accent line -->
+  <line x1="200" y1="20" x2="600" y2="20" stroke="url(#accentLine)" stroke-width="2" stroke-linecap="round">
+    <animate attributeName="stroke-width" values="2;2.5;2" dur="3s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Main hero text - larger, bolder, with subtle dark outline for contrast -->
+  <text x="400" y="58" font-family="system-ui, -apple-system, sans-serif" font-size="38" font-weight="900" fill="url(#heroGrad)" text-anchor="middle" filter="url(#heroGlow)" letter-spacing="0.5" stroke="#221111" stroke-width="0.5" paint-order="stroke fill">
+    Partial Category 🟡
+  </text>
+
+  <!-- Bottom accent line -->
+  <line x1="200" y1="80" x2="600" y2="80" stroke="url(#accentLine)" stroke-width="2" stroke-linecap="round">
+    <animate attributeName="stroke-width" values="2;2.5;2" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Decorative corner elements -->
+  <g opacity="0.6">
+    <!-- Top left -->
+    <path d="M 195,16 L 195,24 M 195,20 L 187,20" stroke="#FF8855" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <!-- Top right -->
+    <path d="M 605,16 L 605,24 M 605,20 L 613,20" stroke="#FF8855" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </path>
+    <!-- Bottom left -->
+    <path d="M 195,76 L 195,84 M 195,80 L 187,80" stroke="#FFAA77" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </path>
+    <!-- Bottom right -->
+    <path d="M 605,76 L 605,84 M 605,80 L 613,80" stroke="#FFAA77" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Floating accent particles - reduced opacity -->
+  <g opacity="0.35">
+    <circle cx="250" cy="35" r="2" fill="#FFCBA4">
+      <animate attributeName="cy" values="35;30;35" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.5;0" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="550" cy="45" r="2.5" fill="#FFB088">
+      <animate attributeName="cy" values="45;40;45" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="320" cy="68" r="1.5" fill="#FF9B70">
+      <animate attributeName="cy" values="68;63;68" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.4;0" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
