@@ -559,12 +559,18 @@ cmd_home() {
             o\ *|open\ *)
                 local target="${input#* }"
                 cmd_open "$target"
-                break
+                # After detaching from tmux, return here
+                echo ""
+                echo -e "${BOLD}${BLUE}  Agent Deck${RESET}"
+                cmd_list
                 ;;
             p\ *|spawn\ *)
                 local target="${input#* }"
                 cmd_spawn "$target"
-                break
+                # After detaching from tmux, return here
+                echo ""
+                echo -e "${BOLD}${BLUE}  Agent Deck${RESET}"
+                cmd_list
                 ;;
             k\ *|kill\ *)
                 local target="${input#* }"
