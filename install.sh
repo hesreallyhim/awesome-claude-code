@@ -102,22 +102,48 @@ SETTINGS_EOF
         ok "Agent Teams: enabled in $claude_settings"
     fi
 
-    # ── Set up shell alias ──
+    # ── Install `deck` command ──
+
+    local bin_dir="$HOME/.local/bin"
+    mkdir -p "$bin_dir"
+
+    # Create `deck` wrapper that detaches if inside tmux, launches dashboard otherwise
+    cat > "$bin_dir/deck" << 'DECK_EOF'
+#!/usr/bin/env bash
+if [ -n "${TMUX:-}" ]; then
+    tmux detach
+else
+    exec bash ~/.agent-deck/agent-deck.sh "$@"
+fi
+DECK_EOF
+    chmod +x "$bin_dir/deck"
+    ok "Installed: ~/.local/bin/deck"
+
+    # Also install as agent-deck for backwards compat
+    cat > "$bin_dir/agent-deck" << 'AD_EOF'
+#!/usr/bin/env bash
+exec bash ~/.agent-deck/agent-deck.sh "$@"
+AD_EOF
+    chmod +x "$bin_dir/agent-deck"
+    ok "Installed: ~/.local/bin/agent-deck"
+
+    # Check if ~/.local/bin is in PATH
+    if ! echo "$PATH" | tr ':' '\n' | grep -q "$bin_dir"; then
+        warn "$bin_dir is not in your PATH. Add to your shell profile:"
+        echo -e "  ${CYAN}export PATH=\"\$HOME/.local/bin:\$PATH\"${RESET}"
+        echo ""
+    fi
 
     echo ""
     echo -e "${BOLD}${GREEN}Agent Deck installed.${RESET}"
     echo ""
-    echo "Add this alias to your shell profile (~/.bashrc, ~/.zshrc, etc.):"
-    echo ""
-    echo -e "  ${CYAN}alias agent-deck='bash ~/.agent-deck/agent-deck.sh'${RESET}"
-    echo ""
     echo -e "${DIM}────────────────────────────────────────${RESET}"
     echo ""
-    echo "Get started:"
-    echo -e "  ${BOLD}agent-deck setup${RESET}             Guided setup for your project"
-    echo -e "  ${BOLD}agent-deck open <session>${RESET}    Open a session (launches team lead)"
-    echo -e "  ${BOLD}agent-deck list${RESET}              See all sessions + task progress"
-    echo -e "  ${BOLD}agent-deck${RESET}                   Home base (interactive)"
+    echo "Usage:"
+    echo -e "  ${BOLD}deck${RESET}                          Dashboard (home base)"
+    echo -e "  ${BOLD}deck setup ~/myproject${RESET}        Set up a project"
+    echo -e "  ${BOLD}deck open mirion${RESET}              Enter a project session"
+    echo -e "  ${BOLD}deck${RESET}                          ${DIM}(from inside a project) back to dashboard${RESET}"
     echo ""
 }
 
