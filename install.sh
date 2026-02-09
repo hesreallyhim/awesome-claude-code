@@ -15,7 +15,7 @@
 
 set -euo pipefail
 
-REPO_URL="https://github.com/hesreallyhim/awesome-claude-code.git"
+REPO_URL="https://github.com/stuagano/awesome-claude-code.git"
 REPO_BRANCH="main"
 DECK_HOME="${AGENT_DECK_HOME:-$HOME/.agent-deck}"
 

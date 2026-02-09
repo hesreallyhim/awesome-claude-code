@@ -24,7 +24,7 @@ See [docs/SYSTEM_OVERVIEW.md](docs/SYSTEM_OVERVIEW.md) for the full architecture
 
 ```bash
 # Install (one-time)
-curl -fsSL https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/stuagano/awesome-claude-code/main/install.sh | bash
 
 # Set up projects
 deck setup ~/mirion           # guided: detects stack, installs resources

@@ -19,7 +19,7 @@ set -euo pipefail
 # ── Config ────────────────────────────────────────────────────────────
 DECK_HOME="${AGENT_DECK_HOME:-$HOME/.agent-deck}"
 SESSIONS_DIR="$DECK_HOME/sessions"
-ACC_REPO_URL="https://github.com/hesreallyhim/awesome-claude-code.git"
+ACC_REPO_URL="https://github.com/stuagano/awesome-claude-code.git"
 ACC_CACHE="$DECK_HOME/cache/awesome-claude-code"
 SESSION_PREFIX="deck"
 
