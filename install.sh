@@ -5,7 +5,7 @@
 # is the actual tool for managing Claude Code resources across projects.
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/main/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/stuagano/awesome-claude-code/main/install.sh | bash
 #   bash install.sh
 #
 # After install, use:
