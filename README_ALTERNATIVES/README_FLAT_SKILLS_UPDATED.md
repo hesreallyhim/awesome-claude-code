@@ -161,6 +161,15 @@ A flat list view of all resources. Category: **Skills** | Sorted: by last update
 <td colspan="4"><img src="https://img.shields.io/github/stars/jawwadfirdousi/agent-skills?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/jawwadfirdousi/agent-skills?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/jawwadfirdousi/agent-skills?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jawwadfirdousi/agent-skills?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/jawwadfirdousi/agent-skills?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/jawwadfirdousi/agent-skills?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jawwadfirdousi/agent-skills?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/jawwadfirdousi/agent-skills?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/jawwadfirdousi/agent-skills?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/undeadlist/claude-code-agents"><b>Claude Code Agents</b></a><br>by <a href="https://github.com/undeadlist">Paul - UndeadList</a></td>
+<td>Agent Skills</td>
+<td>General</td>
+<td>Comprehensive E2E development workflow with helpful Claude Code subagent prompts for solo devs. Run multiple auditors in parallel, automate fix cycles with micro-checkpoint protocols, and do browser-based QA. Includes strict protocols to prevent AI going rogue.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/undeadlist/claude-code-agents?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/undeadlist/claude-code-agents?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/undeadlist/claude-code-agents?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/undeadlist/claude-code-agents?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/undeadlist/claude-code-agents?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/undeadlist/claude-code-agents?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/undeadlist/claude-code-agents?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/undeadlist/claude-code-agents?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/undeadlist/claude-code-agents?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/alonw0/web-asset-generator"><b>Web Assets Generator Skill</b></a><br>by <a href="https://github.com/alonw0">Alon Wolenitz</a></td>
 <td>Agent Skills</td>
 <td>General</td>
@@ -192,6 +201,6 @@ A flat list view of all resources. Category: **Skills** | Sorted: by last update
 
 ---
 
-**Total Resources:** 15
+**Total Resources:** 16
 
 **Last Generated:** 2026-02-11

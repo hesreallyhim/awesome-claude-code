@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Claude Code Agents`](https://github.com/undeadlist/claude-code-agents) &nbsp; by &nbsp; [Paul - UndeadList](https://github.com/undeadlist)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Comprehensive E2E development workflow with helpful Claude Code subagent prompts for solo devs. Run multiple auditors in parallel, automate fix cycles with micro-checkpoint protocols, and do browser-based QA. Includes strict protocols to prevent AI going rogue.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-code-agents](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-agents&username=undeadlist&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Claude Code Ultimate Guide`](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) &nbsp; by &nbsp; [Florian BRUNIAUX](https://www.linkedin.com/in/florian-bruniaux-43408b83/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;CC BY-SA 4.0 (guide) / CC0 1.0 (templates)  
 A tremendous feat of documentation, this guide covers Claude Code from beginner to power user, with production-ready templates for Claude Code features, guides on agentic workflows, and a lot of great learning materials, including quizzes and a handy "cheatsheet". Whether it's the "ultimate" guide to Claude Code will be up to the reader, but a valuable resource nonetheless (as with all documentation sites, make sure it's up to date before you bet the farm).
 
@@ -202,6 +213,17 @@ Immensely detailed set of skills for DevOps Engineers (or anyone who has to depl
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for cc-devops-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=cc-devops-skills&username=akin-ozer&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Claude Code Agents`](https://github.com/undeadlist/claude-code-agents) &nbsp; by &nbsp; [Paul - UndeadList](https://github.com/undeadlist)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Comprehensive E2E development workflow with helpful Claude Code subagent prompts for solo devs. Run multiple auditors in parallel, automate fix cycles with micro-checkpoint protocols, and do browser-based QA. Includes strict protocols to prevent AI going rogue.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-code-agents](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-agents&username=undeadlist&all_stats=true&stats_only=true)
 
 </details>
 <br>
