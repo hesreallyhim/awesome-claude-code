@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/FlorianBruniaux/claude-code-ultimate-guide"><img src="../assets/badge-claude-code-ultimate-guide.svg" alt="Claude Code Ultimate Guide"></a>  
+_A tremendous feat of documentation, this guide covers Claude Code from beginner to power user, with production-ready templates for Claude Code features, guides on agentic workflows, and a lot of great learning materials, including quizzes and a handy "cheatsheet". Whether it's the "ultimate" guide to Claude Code will be up to the reader, but a valuable resource nonetheless (as with all documentation sites, make sure it's up to date before you bet the farm)._  
+![GitHub Stats for claude-code-ultimate-guide](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-ultimate-guide&username=FlorianBruniaux&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/robertguss/claude-skills"><img src="../assets/badge-book-factory.svg" alt="Book Factory"></a>  
 _A comprehensive pipeline of Skillsthat replicates traditional publishing infrastructure for nonfiction book creation using specialized Claude skills._  
 ![GitHub Stats for claude-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-skills&username=robertguss&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -198,18 +202,6 @@ _This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and r
 <a href="https://github.com/jeffallan/claude-skills"><img src="../assets/badge-fullstack-dev-skills.svg" alt="Fullstack Dev Skills"></a>  
 _A comprehensive Claude Code plugin with 65 specialized skills covering full-stack development across a wide range of specific frameworks. Features 9 project workflow commands for Jira/Confluence integration and, notably, an interesting approach to context engineering via a  `/common-ground` command that surfaces Claude's hidden assumptions about your project. This is a smart thing to do._  
 ![GitHub Stats for claude-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-skills&username=jeffallan&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/jawwadfirdousi/agent-skills"><img src="../assets/badge-read-only-postgres.svg" alt="read-only-postgres"></a>  
-_Read-only PostgreSQL query skill for Claude Code. Executes SELECT/SHOW/EXPLAIN/WITH queries across configured databases with strict validation, timeouts, and row limits. Supports multiple connections with descriptions for database selection._  
-![GitHub Stats for agent-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=agent-skills&username=jawwadfirdousi&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/snwfdhmp/awesome-ralph"><img src="../assets/badge-awesome-ralph.svg" alt="awesome-ralph"></a>  
-_A curated list of resources about Ralph, the AI coding technique that runs AI coding agents in automated loops until specifications are fulfilled._  
-![GitHub Stats for awesome-ralph](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=awesome-ralph&username=snwfdhmp&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/marcindulak/ralph-wiggum-bdd"><img src="../assets/badge-ralph-wiggum-bdd.svg" alt="ralph-wiggum-bdd"></a>  
-_A standalone Bash script for Behavior-Driven Development with Ralph Wiggum Loop. In principle, while running unattended, the script can keep code and requirements in sync, but in practice it still requires interactive human supervision, so it supports both modes. The script is standalone and can be modified and committed into your project._  
-![GitHub Stats for ralph-wiggum-bdd](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ralph-wiggum-bdd&username=marcindulak&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 
 <br>
@@ -759,6 +751,13 @@ _All parts of Claude Code's system prompt, including builtin tool descriptions, 
 <a href="https://github.com/ykdojo/claude-code-tips"><img src="../assets/badge-claude-code-tips.svg" alt="Claude Code Tips"></a>  
 _A nice variety of 35+ brief but information-dense Claude Code tips covering voice input, system prompt patching, container workflows for risky tasks, conversation cloning(!), multi-model orchestration with Gemini CLI, and plenty more. Nice demos, working scripts, a plugin, I'd say this probably has a little something for everyone._  
 ![GitHub Stats for claude-code-tips](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-tips&username=ykdojo&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/FlorianBruniaux/claude-code-ultimate-guide"><img src="../assets/badge-claude-code-ultimate-guide.svg" alt="Claude Code Ultimate Guide"></a>  
+_A tremendous feat of documentation, this guide covers Claude Code from beginner to power user, with production-ready templates for Claude Code features, guides on agentic workflows, and a lot of great learning materials, including quizzes and a handy "cheatsheet". Whether it's the "ultimate" guide to Claude Code will be up to the reader, but a valuable resource nonetheless (as with all documentation sites, make sure it's up to date before you bet the farm)._  
+![GitHub Stats for claude-code-ultimate-guide](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-ultimate-guide&username=FlorianBruniaux&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 
