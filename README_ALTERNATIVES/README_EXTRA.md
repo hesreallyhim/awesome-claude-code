@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/undeadlist/claude-code-agents"><img src="../assets/badge-claude-code-agents.svg" alt="Claude Code Agents"></a>  
+_Comprehensive E2E development workflow with helpful Claude Code subagent prompts for solo devs. Run multiple auditors in parallel, automate fix cycles with micro-checkpoint protocols, and do browser-based QA. Includes strict protocols to prevent AI going rogue._  
+![GitHub Stats for claude-code-agents](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-agents&username=undeadlist&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/FlorianBruniaux/claude-code-ultimate-guide"><img src="../assets/badge-claude-code-ultimate-guide.svg" alt="Claude Code Ultimate Guide"></a>  
 _A tremendous feat of documentation, this guide covers Claude Code from beginner to power user, with production-ready templates for Claude Code features, guides on agentic workflows, and a lot of great learning materials, including quizzes and a handy "cheatsheet". Whether it's the "ultimate" guide to Claude Code will be up to the reader, but a valuable resource nonetheless (as with all documentation sites, make sure it's up to date before you bet the farm)._  
 ![GitHub Stats for claude-code-ultimate-guide](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-ultimate-guide&username=FlorianBruniaux&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -555,6 +559,13 @@ _A comprehensive pipeline of Skillsthat replicates traditional publishing infras
 <a href="https://github.com/akin-ozer/cc-devops-skills"><img src="../assets/badge-cc-devops-skills.svg" alt="cc-devops-skills"></a>  
 _Immensely detailed set of skills for DevOps Engineers (or anyone who has to deploy code, really). Works with validations, generators, shell scripts and CLI tools to create high quality IaC code for about any platform you've ever struggled painfully to work with. Worth downloading even just as a source of documentation._  
 ![GitHub Stats for cc-devops-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=cc-devops-skills&username=akin-ozer&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/undeadlist/claude-code-agents"><img src="../assets/badge-claude-code-agents.svg" alt="Claude Code Agents"></a>  
+_Comprehensive E2E development workflow with helpful Claude Code subagent prompts for solo devs. Run multiple auditors in parallel, automate fix cycles with micro-checkpoint protocols, and do browser-based QA. Includes strict protocols to prevent AI going rogue._  
+![GitHub Stats for claude-code-agents](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-agents&username=undeadlist&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 

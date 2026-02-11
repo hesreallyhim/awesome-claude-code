@@ -779,6 +779,15 @@ A flat list view of all resources. Category: **All** | Sorted: by last updated d
 <td colspan="4"><img src="https://img.shields.io/github/stars/parruda/claude-swarm?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/parruda/claude-swarm?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/parruda/claude-swarm?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/parruda/claude-swarm?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/parruda/claude-swarm?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/parruda/claude-swarm?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/parruda/claude-swarm?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/parruda/claude-swarm?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/parruda/claude-swarm?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/undeadlist/claude-code-agents"><b>Claude Code Agents</b></a><br>by <a href="https://github.com/undeadlist">Paul - UndeadList</a></td>
+<td>Agent Skills</td>
+<td>General</td>
+<td>Comprehensive E2E development workflow with helpful Claude Code subagent prompts for solo devs. Run multiple auditors in parallel, automate fix cycles with micro-checkpoint protocols, and do browser-based QA. Includes strict protocols to prevent AI going rogue.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/undeadlist/claude-code-agents?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/undeadlist/claude-code-agents?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/undeadlist/claude-code-agents?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/undeadlist/claude-code-agents?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/undeadlist/claude-code-agents?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/undeadlist/claude-code-agents?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/undeadlist/claude-code-agents?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/undeadlist/claude-code-agents?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/undeadlist/claude-code-agents?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/rsmdt/the-startup"><b>The Agentic Startup</b></a><br>by <a href="https://github.com/rsmdt">Rudolf Schmidt</a></td>
 <td>Tooling</td>
 <td>Orchestrators</td>
@@ -1692,6 +1701,6 @@ A flat list view of all resources. Category: **All** | Sorted: by last updated d
 
 ---
 
-**Total Resources:** 183
+**Total Resources:** 184
 
 **Last Generated:** 2026-02-11
