@@ -60,9 +60,9 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by latest r
 <tbody>
 <tr>
 <td><a href="https://github.com/Piebald-AI/claude-code-system-prompts"><b>Claude Code System Prompts</b></a><br>by <a href="https://github.com/Piebald-AI">Piebald AI</a></td>
-<td>v2.1.37</td>
+<td>v2.1.39</td>
 <td>GitHub</td>
-<td>2026-02-07</td>
+<td>2026-02-10</td>
 <td>All parts of Claude Code's system prompt, including builtin tool descriptions, sub agent prompts (Plan/Explore/Task), utility prompts (CLAUDE.md, compact, Bash cmd, security review, agent creation, etc.). Updated for each Claude Code version.</td>
 </tr>
 <tr>
@@ -70,9 +70,9 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by latest r
 </tr>
 <tr>
 <td><a href="https://github.com/maxritter/claude-codepro"><b>Claude CodePro</b></a><br>by <a href="https://www.maxritter.net">Max Ritter</a></td>
-<td>v6.2.1</td>
+<td>v6.2.2</td>
 <td>GitHub</td>
-<td>2026-02-07</td>
+<td>2026-02-08</td>
 <td>Professional development environment for Claude Code with spec-driven workflow, TDD enforcement, cross-session memory, semantic search, quality hooks, and modular rules integration. A bit "heavyweight" but feature-packed and has wide coverage.</td>
 </tr>
 <tr>
@@ -80,9 +80,9 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by latest r
 </tr>
 <tr>
 <td><a href="https://github.com/mikeyobrien/ralph-orchestrator"><b>ralph-orchestrator</b></a><br>by <a href="https://github.com/mikeyobrien">mikeyobrien</a></td>
-<td>v2.4.4</td>
+<td>v2.5.0</td>
 <td>GitHub</td>
-<td>2026-02-05</td>
+<td>2026-02-08</td>
 <td>Ralph Orchestrator implements the simple but effective "Ralph Wiggum" technique for autonomous task completion, continuously running an AI agent against a prompt file until the task is marked as complete or limits are reached. This implementation provides a robust, well-tested, and feature-complete orchestration system for AI-driven development. Also cited in the Anthropic Ralph plugin documentation.</td>
 </tr>
 <tr>
@@ -105,4 +105,4 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by latest r
 
 **Total Resources:** 4
 
-**Last Generated:** 2026-02-08
+**Last Generated:** 2026-02-11
