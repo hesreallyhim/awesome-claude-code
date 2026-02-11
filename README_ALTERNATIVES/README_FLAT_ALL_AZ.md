@@ -818,6 +818,15 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/ykdojo/claude-code-tips?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ykdojo/claude-code-tips?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ykdojo/claude-code-tips?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ykdojo/claude-code-tips?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ykdojo/claude-code-tips?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ykdojo/claude-code-tips?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ykdojo/claude-code-tips?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ykdojo/claude-code-tips?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ykdojo/claude-code-tips?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/FlorianBruniaux/claude-code-ultimate-guide"><b>Claude Code Ultimate Guide</b></a><br>by <a href="https://www.linkedin.com/in/florian-bruniaux-43408b83/">Florian BRUNIAUX</a></td>
+<td>Workflows & Knowledge Guides</td>
+<td>General</td>
+<td>An 18K-line community guide covering Claude Code from beginner to power user, with 107 production-ready templates (agents, hooks, skills, commands, CLAUDE.md files), architecture documentation, methodology guides (TDD, SDD, BDD), and a 257-question quiz. Includes a machine-readable reference.yaml for LLM consumption and a cheatsheet for daily use.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/FlorianBruniaux/claude-code-ultimate-guide?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/FlorianBruniaux/claude-code-ultimate-guide?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/FlorianBruniaux/claude-code-ultimate-guide?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/FlorianBruniaux/claude-code-ultimate-guide?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/FlorianBruniaux/claude-code-ultimate-guide?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/FlorianBruniaux/claude-code-ultimate-guide?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/FlorianBruniaux/claude-code-ultimate-guide?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/FlorianBruniaux/claude-code-ultimate-guide?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/FlorianBruniaux/claude-code-ultimate-guide?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor"><b>Claude Code Usage Monitor</b></a><br>by <a href="https://github.com/Maciek-roboblog">Maciek-roboblog</a></td>
 <td>Tooling</td>
 <td>Usage Monitors</td>
@@ -1683,6 +1692,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 
 ---
 
-**Total Resources:** 182
+**Total Resources:** 183
 
-**Last Generated:** 2026-02-08
+**Last Generated:** 2026-02-11
