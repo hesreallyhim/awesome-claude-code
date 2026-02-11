@@ -60,9 +60,9 @@ A flat list view of all resources. Category: **Status** | Sorted: by latest rele
 <tbody>
 <tr>
 <td><a href="https://github.com/Haleclipse/CCometixLine"><b>CCometixLine - Claude Code Statusline</b></a><br>by <a href="https://github.com/Haleclipse">Haleclipse</a></td>
-<td>v1.1.0</td>
+<td>v1.1.1</td>
 <td>GitHub</td>
-<td>2026-01-25</td>
+<td>2026-02-09</td>
 <td>A high-performance Claude Code statusline tool written in Rust with Git integration, usage tracking, interactive TUI configuration, and Claude Code enhancement utilities.</td>
 </tr>
 <tr>
@@ -105,4 +105,4 @@ A flat list view of all resources. Category: **Status** | Sorted: by latest rele
 
 **Total Resources:** 4
 
-**Last Generated:** 2026-02-08
+**Last Generated:** 2026-02-11
