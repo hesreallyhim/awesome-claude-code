@@ -147,6 +147,7 @@ Claude Code is a CLI-based coding assistant from [Anthropic](https://www.anthrop
 
 ### General
 
+- [agnix](https://github.com/avifenesh/agnix) by [Avi Fenesh](https://github.com/avifenesh) - Linter for AI agent configurations (CLAUDE.md, skills, hooks, agents, plugins, MCP) with 156 validation rules, auto-fix, LSP server, and IDE extensions for VS Code, JetBrains, Neovim, and Zed.
 - [cc-sessions](https://github.com/GWUDCAP/cc-sessions) by [toastdev](https://github.com/satoastshi) - An opinionated approach to productive development with Claude Code.
 - [cc-tools](https://github.com/Veraticus/cc-tools) by [Josh Symonds](https://github.com/Veraticus) - High-performance Go implementation of Claude Code hooks and utilities. Provides smart linting, testing, and statusline generation with minimal overhead.
 - [ccexp](https://github.com/nyatinte/ccexp) by [nyatinte](https://github.com/nyatinte) - Interactive CLI tool for discovering and managing Claude Code configuration files and slash commands with a beautiful terminal UI.
