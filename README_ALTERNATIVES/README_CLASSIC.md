@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`AgentSys`](https://github.com/avifenesh/agentsys) &nbsp; by &nbsp; [avifenesh](https://github.com/avifenesh)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Workflow automation system for Claude with a group of useful plugins, agents, and skills. Automates task-to-production workflows, PR management, code cleanup, performance investigation, drift detection, and multi-agent code review. Includes [agnix](https://github.com/avifenesh/agnix) for linting agent configurations. Built on thousands of lines of code with thousands of tests. Uses deterministic detection (regex, AST) with LLM judgment for efficiency. Used on many production systems.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for agentsys](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=agentsys&username=avifenesh&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Auto-Claude`](https://github.com/AndyMik90/Auto-Claude) &nbsp; by &nbsp; [AndyMik90](https://github.com/AndyMik90)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;AGPL-3.0  
 Autonomous multi-agent coding framework for Claude Code (Claude Agent SDK) that integrates the full SDLC - "plans, builds, and validates software for you". Features a slick kanban-style UI and a well-designed but not over-engineered agent orchestration system.
 
@@ -191,6 +202,17 @@ This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and re
 
 <details open>
 <summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
+
+[`AgentSys`](https://github.com/avifenesh/agentsys) &nbsp; by &nbsp; [avifenesh](https://github.com/avifenesh)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Workflow automation system for Claude with a group of useful plugins, agents, and skills. Automates task-to-production workflows, PR management, code cleanup, performance investigation, drift detection, and multi-agent code review. Includes [agnix](https://github.com/avifenesh/agnix) for linting agent configurations. Built on thousands of lines of code with thousands of tests. Uses deterministic detection (regex, AST) with LLM judgment for efficiency. Used on many production systems.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for agentsys](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=agentsys&username=avifenesh&all_stats=true&stats_only=true)
+
+</details>
+<br>
 
 [`AI Agent, AI Spy`](https://youtu.be/0ANECpNdt-4) &nbsp; by &nbsp; [Whittaker & Tiwari](https://signalfoundation.org/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;No License / Not Specified  
 Members from the Signal Foundation with some really great tips and tricks on how to turn your operating system into an instrument of total surveillance, and why some companies are doing this really awesome thing. [warning: YouTube link]
