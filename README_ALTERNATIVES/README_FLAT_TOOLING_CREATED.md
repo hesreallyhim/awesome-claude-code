@@ -71,6 +71,15 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by date creat
 <td colspan="4"><img src="https://img.shields.io/github/stars/ZENG3LD/claude-session-restore?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ZENG3LD/claude-session-restore?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ZENG3LD/claude-session-restore?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ZENG3LD/claude-session-restore?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ZENG3LD/claude-session-restore?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ZENG3LD/claude-session-restore?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ZENG3LD/claude-session-restore?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ZENG3LD/claude-session-restore?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ZENG3LD/claude-session-restore?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/AndyMik90/Auto-Claude"><b>Auto-Claude</b></a><br>by <a href="https://github.com/AndyMik90">AndyMik90</a></td>
+<td>Tooling</td>
+<td>Orchestrators</td>
+<td>Autonomous multi-agent coding framework for Claude Code (Claude Agent SDK) that integrates the full SDLC - "plans, builds, and validates software for you". Features a slick kanban-style UI and a well-designed but not over-engineered agent orchestration system.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/AndyMik90/Auto-Claude?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/AndyMik90/Auto-Claude?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/AndyMik90/Auto-Claude?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/AndyMik90/Auto-Claude?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/AndyMik90/Auto-Claude?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/AndyMik90/Auto-Claude?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/AndyMik90/Auto-Claude?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/AndyMik90/Auto-Claude?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/AndyMik90/Auto-Claude?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/zippoxer/recall"><b>recall</b></a><br>by <a href="https://github.com/zippoxer">zippoxer</a></td>
 <td>Tooling</td>
 <td>General</td>
@@ -444,6 +453,6 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by date creat
 
 ---
 
-**Total Resources:** 43
+**Total Resources:** 44
 
-**Last Generated:** 2026-02-11
+**Last Generated:** 2026-02-13

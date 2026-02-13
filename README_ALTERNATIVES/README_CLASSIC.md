@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Auto-Claude`](https://github.com/AndyMik90/Auto-Claude) &nbsp; by &nbsp; [AndyMik90](https://github.com/AndyMik90)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;AGPL-3.0  
+Autonomous multi-agent coding framework for Claude Code (Claude Agent SDK) that integrates the full SDLC - "plans, builds, and validates software for you". Features a slick kanban-style UI and a well-designed but not over-engineered agent orchestration system.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for Auto-Claude](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Auto-Claude&username=AndyMik90&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Claude Code Agents`](https://github.com/undeadlist/claude-code-agents) &nbsp; by &nbsp; [Paul - UndeadList](https://github.com/undeadlist)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Comprehensive E2E development workflow with helpful Claude Code subagent prompts for solo devs. Run multiple auditors in parallel, automate fix cycles with micro-checkpoint protocols, and do browser-based QA. Includes strict protocols to prevent AI going rogue.
 
@@ -86,17 +97,6 @@ This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and re
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for pre-commit-hooks](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=pre-commit-hooks&username=aRustyDev&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Fullstack Dev Skills`](https://github.com/jeffallan/claude-skills) &nbsp; by &nbsp; [jeffallan](https://github.com/jeffallan)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A comprehensive Claude Code plugin with 65 specialized skills covering full-stack development across a wide range of specific frameworks. Features 9 project workflow commands for Jira/Confluence integration and, notably, an interesting approach to context engineering via a  `/common-ground` command that surfaces Claude's hidden assumptions about your project. This is a smart thing to do.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claude-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-skills&username=jeffallan&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1118,6 +1118,17 @@ A community-driven leaderboard tool that enables developers to visualize, track,
 
 <details open>
 <summary><h3>Orchestrators <a href="#awesome-claude-code">🔝</a></h3></summary>
+
+[`Auto-Claude`](https://github.com/AndyMik90/Auto-Claude) &nbsp; by &nbsp; [AndyMik90](https://github.com/AndyMik90)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;AGPL-3.0  
+Autonomous multi-agent coding framework for Claude Code (Claude Agent SDK) that integrates the full SDLC - "plans, builds, and validates software for you". Features a slick kanban-style UI and a well-designed but not over-engineered agent orchestration system.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for Auto-Claude](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Auto-Claude&username=AndyMik90&all_stats=true&stats_only=true)
+
+</details>
+<br>
 
 [`Claude Code Flow`](https://github.com/ruvnet/claude-code-flow) &nbsp; by &nbsp; [ruvnet](https://github.com/ruvnet)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 This mode serves as a code-first orchestration layer, enabling Claude to write, edit, test, and optimize code autonomously across recursive agent cycles.

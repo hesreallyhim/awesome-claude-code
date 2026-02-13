@@ -59,54 +59,54 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by latest r
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/langchain-ai/langgraphjs/blob/main/CLAUDE.md"><b>LangGraphJS</b></a><br>by <a href="https://github.com/langchain-ai">langchain-ai</a></td>
-<td>@langchain/langgraph-sdk@1.6.1</td>
-<td>GitHub</td>
-<td>2026-02-11</td>
-<td>Offers comprehensive build and test commands with detailed TypeScript style guidelines, layered library architecture, and monorepo structure using yarn workspaces.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/langchain-ai/langgraphjs?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/langchain-ai/langgraphjs?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/langchain-ai/langgraphjs?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/langchain-ai/langgraphjs?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/langchain-ai/langgraphjs?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/langchain-ai/langgraphjs?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/langchain-ai/langgraphjs?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/langchain-ai/langgraphjs?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/langchain-ai/langgraphjs?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/giselles-ai/giselle/blob/main/CLAUDE.md"><b>Giselle</b></a><br>by <a href="https://github.com/giselles-ai">giselles-ai</a></td>
-<td>v0.62.11</td>
+<td>v0.63.1</td>
 <td>GitHub</td>
-<td>2026-02-10</td>
+<td>2026-02-13</td>
 <td>Provides detailed build and test commands using pnpm and Vitest with strict code formatting requirements and comprehensive naming conventions for code consistency.</td>
 </tr>
 <tr>
 <td colspan="5"><img src="https://img.shields.io/github/stars/giselles-ai/giselle?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/giselles-ai/giselle?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/giselles-ai/giselle?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/giselles-ai/giselle?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/giselles-ai/giselle?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/giselles-ai/giselle?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/giselles-ai/giselle?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/giselles-ai/giselle?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/giselles-ai/giselle?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/sgcarstrends/backend/blob/main/CLAUDE.md"><b>SG Cars Trends Backend</b></a><br>by <a href="https://github.com/sgcarstrends">sgcarstrends</a></td>
-<td>v4.46.0</td>
+<td><a href="https://github.com/basicmachines-co/basic-memory/blob/main/CLAUDE.md"><b>Basic Memory</b></a><br>by <a href="https://github.com/basicmachines-co">basicmachines-co</a></td>
+<td>v0.18.4</td>
 <td>GitHub</td>
-<td>2026-02-09</td>
-<td>Provides comprehensive structure for TypeScript monorepo projects with detailed commands for development, testing, deployment, and AWS/Cloudflare integration.</td>
+<td>2026-02-12</td>
+<td>Presents an innovative AI-human collaboration framework with Model Context Protocol for bidirectional LLM-markdown communication and flexible knowledge structure for complex projects.</td>
 </tr>
 <tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/sgcarstrends/backend?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/sgcarstrends/backend?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/sgcarstrends/backend?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/sgcarstrends/backend?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/sgcarstrends/backend?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/sgcarstrends/backend?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/sgcarstrends/backend?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/sgcarstrends/backend?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/sgcarstrends/backend?style=flat-square" alt="license"></td>
+<td colspan="5"><img src="https://img.shields.io/github/stars/basicmachines-co/basic-memory?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/basicmachines-co/basic-memory?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/basicmachines-co/basic-memory?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/basicmachines-co/basic-memory?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/basicmachines-co/basic-memory?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/basicmachines-co/basic-memory?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/basicmachines-co/basic-memory?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/basicmachines-co/basic-memory?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/basicmachines-co/basic-memory?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/metabase/metabase/blob/master/CLAUDE.md"><b>Metabase</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
-<td>v0.58.5</td>
+<td>v0.58.6</td>
 <td>GitHub</td>
-<td>2026-02-06</td>
+<td>2026-02-12</td>
 <td>Details workflow for REPL-driven development in Clojure/ClojureScript with emphasis on incremental development, testing, and step-by-step approach for feature implementation.</td>
 </tr>
 <tr>
 <td colspan="5"><img src="https://img.shields.io/github/stars/metabase/metabase?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/metabase/metabase?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/metabase/metabase?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/metabase/metabase?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/metabase/metabase?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/metabase/metabase?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/metabase/metabase?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/metabase/metabase?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/metabase/metabase?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/basicmachines-co/basic-memory/blob/main/CLAUDE.md"><b>Basic Memory</b></a><br>by <a href="https://github.com/basicmachines-co">basicmachines-co</a></td>
-<td>v0.18.0</td>
+<td><a href="https://github.com/sgcarstrends/backend/blob/main/CLAUDE.md"><b>SG Cars Trends Backend</b></a><br>by <a href="https://github.com/sgcarstrends">sgcarstrends</a></td>
+<td>v4.47.0</td>
 <td>GitHub</td>
-<td>2026-01-30</td>
-<td>Presents an innovative AI-human collaboration framework with Model Context Protocol for bidirectional LLM-markdown communication and flexible knowledge structure for complex projects.</td>
+<td>2026-02-12</td>
+<td>Provides comprehensive structure for TypeScript monorepo projects with detailed commands for development, testing, deployment, and AWS/Cloudflare integration.</td>
 </tr>
 <tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/basicmachines-co/basic-memory?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/basicmachines-co/basic-memory?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/basicmachines-co/basic-memory?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/basicmachines-co/basic-memory?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/basicmachines-co/basic-memory?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/basicmachines-co/basic-memory?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/basicmachines-co/basic-memory?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/basicmachines-co/basic-memory?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/basicmachines-co/basic-memory?style=flat-square" alt="license"></td>
+<td colspan="5"><img src="https://img.shields.io/github/stars/sgcarstrends/backend?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/sgcarstrends/backend?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/sgcarstrends/backend?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/sgcarstrends/backend?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/sgcarstrends/backend?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/sgcarstrends/backend?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/sgcarstrends/backend?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/sgcarstrends/backend?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/sgcarstrends/backend?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/langchain-ai/langgraphjs/blob/main/CLAUDE.md"><b>LangGraphJS</b></a><br>by <a href="https://github.com/langchain-ai">langchain-ai</a></td>
+<td>@langchain/langgraph-api@1.1.13</td>
+<td>GitHub</td>
+<td>2026-02-11</td>
+<td>Offers comprehensive build and test commands with detailed TypeScript style guidelines, layered library architecture, and monorepo structure using yarn workspaces.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/langchain-ai/langgraphjs?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/langchain-ai/langgraphjs?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/langchain-ai/langgraphjs?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/langchain-ai/langgraphjs?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/langchain-ai/langgraphjs?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/langchain-ai/langgraphjs?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/langchain-ai/langgraphjs?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/langchain-ai/langgraphjs?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/langchain-ai/langgraphjs?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/hashintel/hash/blob/main/CLAUDE.md"><b>HASH</b></a><br>by <a href="https://github.com/hashintel">hashintel</a></td>
@@ -128,21 +128,11 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by latest r
 <tr>
 <td colspan="5"><img src="https://img.shields.io/github/stars/CommE2E/comm?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/CommE2E/comm?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/CommE2E/comm?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/CommE2E/comm?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/CommE2E/comm?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/CommE2E/comm?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/CommE2E/comm?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/CommE2E/comm?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/CommE2E/comm?style=flat-square" alt="license"></td>
 </tr>
-<tr>
-<td><a href="https://github.com/ParetoSecurity/pareto-mac/blob/main/CLAUDE.md"><b>Pareto Mac</b></a><br>by <a href="https://github.com/ParetoSecurity">ParetoSecurity</a></td>
-<td>1.21.0</td>
-<td>GitHub</td>
-<td>2026-01-14</td>
-<td>Serves as development guide for Mac security audit tool with build instructions, contribution guidelines, testing procedures, and workflow documentation.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/ParetoSecurity/pareto-mac?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ParetoSecurity/pareto-mac?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ParetoSecurity/pareto-mac?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ParetoSecurity/pareto-mac?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ParetoSecurity/pareto-mac?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ParetoSecurity/pareto-mac?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ParetoSecurity/pareto-mac?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ParetoSecurity/pareto-mac?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ParetoSecurity/pareto-mac?style=flat-square" alt="license"></td>
-</tr>
 </tbody>
 </table>
 
 ---
 
-**Total Resources:** 8
+**Total Resources:** 7
 
-**Last Generated:** 2026-02-11
+**Last Generated:** 2026-02-13

@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/AndyMik90/Auto-Claude"><img src="../assets/badge-auto-claude.svg" alt="Auto-Claude"></a>  
+_Autonomous multi-agent coding framework for Claude Code (Claude Agent SDK) that integrates the full SDLC - "plans, builds, and validates software for you". Features a slick kanban-style UI and a well-designed but not over-engineered agent orchestration system._  
+![GitHub Stats for Auto-Claude](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Auto-Claude&username=AndyMik90&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/undeadlist/claude-code-agents"><img src="../assets/badge-claude-code-agents.svg" alt="Claude Code Agents"></a>  
 _Comprehensive E2E development workflow with helpful Claude Code subagent prompts for solo devs. Run multiple auditors in parallel, automate fix cycles with micro-checkpoint protocols, and do browser-based QA. Includes strict protocols to prevent AI going rogue._  
 ![GitHub Stats for claude-code-agents](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-agents&username=undeadlist&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -202,10 +206,6 @@ _A comprehensive pipeline of Skillsthat replicates traditional publishing infras
 <a href="https://github.com/aRustyDev/pre-commit-hooks"><img src="../assets/badge-pre-commit-hooks.svg" alt="pre-commit-hooks"></a>  
 _This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and related `.claude/` documentation is exemplary. Thorough but not verbose. Unlike a lot of `CLAUDE.md`  files, it doesn't primarily consist in shouting at Claude in all-caps. Great learning resource. Also, hooks._  
 ![GitHub Stats for pre-commit-hooks](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=pre-commit-hooks&username=aRustyDev&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/jeffallan/claude-skills"><img src="../assets/badge-fullstack-dev-skills.svg" alt="Fullstack Dev Skills"></a>  
-_A comprehensive Claude Code plugin with 65 specialized skills covering full-stack development across a wide range of specific frameworks. Features 9 project workflow commands for Jira/Confluence integration and, notably, an interesting approach to context engineering via a  `/common-ground` command that surfaces Claude's hidden assumptions about your project. This is a smart thing to do._  
-![GitHub Stats for claude-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-skills&username=jeffallan&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 
 <br>
@@ -1225,6 +1225,13 @@ _A community-driven leaderboard tool that enables developers to visualize, track
 
 <details open id="orchestrators">
 <summary><span><picture><img src="../assets/subheader_orchestrators.svg" alt="Orchestrators" align="absmiddle"></picture></span></summary>
+
+<a href="https://github.com/AndyMik90/Auto-Claude"><img src="../assets/badge-auto-claude.svg" alt="Auto-Claude"></a>  
+_Autonomous multi-agent coding framework for Claude Code (Claude Agent SDK) that integrates the full SDLC - "plans, builds, and validates software for you". Features a slick kanban-style UI and a well-designed but not over-engineered agent orchestration system._  
+![GitHub Stats for Auto-Claude](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Auto-Claude&username=AndyMik90&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
 
 <a href="https://github.com/ruvnet/claude-code-flow"><img src="../assets/badge-claude-code-flow.svg" alt="Claude Code Flow"></a>  
 _This mode serves as a code-first orchestration layer, enabling Claude to write, edit, test, and optimize code autonomously across recursive agent cycles._  
