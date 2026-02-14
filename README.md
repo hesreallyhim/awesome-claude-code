@@ -202,6 +202,7 @@ Claude Code is a CLI-based coding assistant from [Anthropic](https://www.anthrop
 - [Happy Coder](https://github.com/slopus/happy) by [GrocerPublishAgent](https://peoplesgrocers.com/en/projects) - Spawn and control multiple Claude Codes in parallel from your phone or desktop. Happy Coder runs Claude Code on your hardware, sends push notifications when Claude needs more input or permission, and costs nothing.
 - [The Agentic Startup](https://github.com/rsmdt/the-startup) by [Rudolf Schmidt](https://github.com/rsmdt) - Yet Another Claude Orchestrator - a collection of agents, commands, etc., for shipping production code - but I like this because it's comprehensive, well-written, and one of the few resources that actually uses Output Styles! +10 points!
 - [TSK - AI Agent Task Manager and Sandbox](https://github.com/dtormoen/tsk) by [dtormoen](https://github.com/dtormoen) - A Rust CLI tool that lets you delegate development tasks to AI agents running in sandboxed Docker environments. Multiple agents work in parallel, returning git branches for human review.
+- [claude-pipe](https://github.com/bluzir/claude-pipe) by [bluzir](https://github.com/bluzir) - Conventions for building multi-step Claude Code pipelines that survive failures and stay debuggable. Workers write results to YAML files, ROOT orchestrates everything flat (no nested spawns), and `state.yaml` lets you resume from exactly where things broke instead of starting over. Ships with a research pipeline and batch classifier you can run out of the box.
 
 <br>
 
