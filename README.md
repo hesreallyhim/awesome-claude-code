@@ -115,9 +115,6 @@ A pretty stunning list (88 at the time of this post!) of slash-commands ranging 
 [`CC Usage`](https://github.com/ryoppippi/ccusage) &nbsp; by &nbsp; [ryoppippi](https://github.com/ryoppippi)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Handy CLI tool for managing and analyzing Claude Code usage, based on analyzing local Claude Code logs. Presents a nice dashboard regarding cost information, token consumption, etc.
 
-[`Claude Context`](https://github.com/zilliztech/claude-context) &nbsp; by &nbsp; [zilliztech](https://github.com/zilliztech)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Toolkit for Claude Code and other code IDEs. Uses context-aware semantic search to efficiently retrieve relevant code from millions of lines without breaking your budget.
-
 [`ccexp`](https://github.com/nyatinte/ccexp) &nbsp; by &nbsp; [nyatinte](https://github.com/nyatinte)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Interactive CLI tool for discovering and managing Claude Code configuration files and slash commands with a beautiful terminal UI.
 
@@ -129,6 +126,9 @@ A real-time terminal-based tool for monitoring Claude Code token usage. It shows
 
 [`Claude Composer`](https://github.com/possibilities/claude-composer) &nbsp; by &nbsp; [Mike Bannister](https://github.com/possibilities)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Unlicense  
 A tool that adds small enhancements to Claude Code.
+
+[`Claude Context`](https://github.com/zilliztech/claude-context) &nbsp; by &nbsp; [zilliztech](https://github.com/zilliztech)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Toolkit for Claude Code and other code IDEs. Uses context-aware semantic search to efficiently retrieve relevant code from millions of lines without breaking your budget.
 
 [`Claude Hub`](https://github.com/claude-did-this/claude-hub) &nbsp; by &nbsp; [Claude Did This](https://github.com/claude-did-this)    
 A webhook service that connects Claude Code to GitHub repositories, enabling AI-powered code assistance directly through pull requests and issues. This integration allows Claude to analyze repositories, answer technical questions, and help developers understand and improve their codebase through simple @mentions.
@@ -191,6 +191,9 @@ A TypeScript-based system for configuring and customizing Claude Code hooks with
 
 [`Linting, testing, and notifications (in go)`](https://github.com/Veraticus/nix-config/tree/main/home-manager/claude-code/hooks) &nbsp; by &nbsp; [Josh Symonds](https://github.com/Veraticus)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Nice set of hooks for enforcing code quality (linting, testing, notifications), with a nice configuration setup as well.
+
+[`memsearch`](https://github.com/zilliztech/memsearch) &nbsp; by &nbsp; [zilliztech](https://github.com/zilliztech)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A hooks-based plugin that gives Claude Code automatic persistent memory across sessions. Every session is summarized to markdown, every prompt triggers semantic search over past memories via Milvus hybrid search, and a three-layer progressive disclosure model keeps context window usage minimal.
 
 [`TDD Guard`](https://github.com/nizos/tdd-guard) &nbsp; by &nbsp; [Nizar Selander](https://github.com/nizos)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A hooks-driven system that monitors file operations in real-time and blocks changes that violate TDD principles.
