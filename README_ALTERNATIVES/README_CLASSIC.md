@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`memsearch`](https://github.com/zilliztech/memsearch) &nbsp; by &nbsp; [zilliztech](https://github.com/zilliztech)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A hooks-based plugin that gives Claude Code automatic persistent memory across sessions. Every session is summarized to markdown, every prompt triggers semantic search over past memories via Milvus hybrid search, and a three-layer progressive disclosure model keeps context window usage minimal.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for memsearch](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=memsearch&username=zilliztech&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`AgentSys`](https://github.com/avifenesh/agentsys) &nbsp; by &nbsp; [avifenesh](https://github.com/avifenesh)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Workflow automation system for Claude with a group of useful plugins, agents, and skills. Automates task-to-production workflows, PR management, code cleanup, performance investigation, drift detection, and multi-agent code review. Includes [agnix](https://github.com/avifenesh/agnix) for linting agent configurations. Built on thousands of lines of code with thousands of tests. Uses deterministic detection (regex, AST) with LLM judgment for efficiency. Used on many production systems.
 
@@ -97,17 +108,6 @@ A comprehensive pipeline of Skillsthat replicates traditional publishing infrast
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-skills&username=robertguss&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`pre-commit-hooks`](https://github.com/aRustyDev/pre-commit-hooks) &nbsp; by &nbsp; [aRustyDev](https://github.com/aRustyDev)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;GPL-3.0  
-This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and related `.claude/` documentation is exemplary. Thorough but not verbose. Unlike a lot of `CLAUDE.md`  files, it doesn't primarily consist in shouting at Claude in all-caps. Great learning resource. Also, hooks.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for pre-commit-hooks](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=pre-commit-hooks&username=aRustyDev&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1416,6 +1416,17 @@ Quality check hook for Node.js TypeScript projects with TypeScript compilation. 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-code-typescript-hooks](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-typescript-hooks&username=bartolli&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`memsearch`](https://github.com/zilliztech/memsearch) &nbsp; by &nbsp; [zilliztech](https://github.com/zilliztech)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A hooks-based plugin that gives Claude Code automatic persistent memory across sessions. Every session is summarized to markdown, every prompt triggers semantic search over past memories via Milvus hybrid search, and a three-layer progressive disclosure model keeps context window usage minimal.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for memsearch](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=memsearch&username=zilliztech&all_stats=true&stats_only=true)
 
 </details>
 <br>

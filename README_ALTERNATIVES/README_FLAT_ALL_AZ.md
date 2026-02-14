@@ -1349,6 +1349,15 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/cheukyin175/learn-faster-kit?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/cheukyin175/learn-faster-kit?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/cheukyin175/learn-faster-kit?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/cheukyin175/learn-faster-kit?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/cheukyin175/learn-faster-kit?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/cheukyin175/learn-faster-kit?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/cheukyin175/learn-faster-kit?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/cheukyin175/learn-faster-kit?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/cheukyin175/learn-faster-kit?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/zilliztech/memsearch"><b>memsearch</b></a><br>by <a href="https://github.com/zilliztech">zilliztech</a></td>
+<td>Hooks</td>
+<td>General</td>
+<td>A hooks-based plugin that gives Claude Code automatic persistent memory across sessions. Every session is summarized to markdown, every prompt triggers semantic search over past memories via Milvus hybrid search, and a three-layer progressive disclosure model keeps context window usage minimal.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/zilliztech/memsearch?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/zilliztech/memsearch?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/zilliztech/memsearch?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/zilliztech/memsearch?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/zilliztech/memsearch?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/zilliztech/memsearch?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/zilliztech/memsearch?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/zilliztech/memsearch?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/zilliztech/memsearch?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/metabase/metabase/blob/master/CLAUDE.md"><b>Metabase</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
 <td>CLAUDE.md Files</td>
 <td>Language-Specific</td>
@@ -1719,6 +1728,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 
 ---
 
-**Total Resources:** 186
+**Total Resources:** 187
 
-**Last Generated:** 2026-02-13
+**Last Generated:** 2026-02-14

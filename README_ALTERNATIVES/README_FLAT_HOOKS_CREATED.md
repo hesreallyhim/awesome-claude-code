@@ -56,6 +56,15 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by date created
 </thead>
 <tbody>
 <tr>
+<td><a href="https://github.com/zilliztech/memsearch"><b>memsearch</b></a><br>by <a href="https://github.com/zilliztech">zilliztech</a></td>
+<td>Hooks</td>
+<td>General</td>
+<td>A hooks-based plugin that gives Claude Code automatic persistent memory across sessions. Every session is summarized to markdown, every prompt triggers semantic search over past memories via Milvus hybrid search, and a three-layer progressive disclosure model keeps context window usage minimal.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/zilliztech/memsearch?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/zilliztech/memsearch?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/zilliztech/memsearch?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/zilliztech/memsearch?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/zilliztech/memsearch?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/zilliztech/memsearch?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/zilliztech/memsearch?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/zilliztech/memsearch?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/zilliztech/memsearch?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/backnotprop/plannotator"><b>Plannotator</b></a><br>by <a href="https://github.com/backnotprop">backnotprop</a></td>
 <td>Hooks</td>
 <td>-</td>
@@ -150,6 +159,6 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by date created
 
 ---
 
-**Total Resources:** 10
+**Total Resources:** 11
 
-**Last Generated:** 2026-02-13
+**Last Generated:** 2026-02-14
