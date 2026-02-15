@@ -379,6 +379,16 @@ A flat list view of all resources. Category: **All** | Sorted: by latest release
 <td colspan="5"><img src="https://img.shields.io/github/stars/dreamiurg/claude-mountaineering-skills?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/dreamiurg/claude-mountaineering-skills?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/dreamiurg/claude-mountaineering-skills?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/dreamiurg/claude-mountaineering-skills?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/dreamiurg/claude-mountaineering-skills?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/dreamiurg/claude-mountaineering-skills?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/dreamiurg/claude-mountaineering-skills?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/dreamiurg/claude-mountaineering-skills?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/dreamiurg/claude-mountaineering-skills?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/nulone/claude-rules-doctor"><b>claude-rules-doctor</b></a><br>by <a href="https://github.com/nulone">nulone</a></td>
+<td>v0.2.2</td>
+<td>GitHub</td>
+<td>2026-01-28</td>
+<td>CLI that detects dead `.claude/rules/` files by checking if `paths:` globs actually match files in your repo. Catches silent rule failures where renamed directories or typos in glob patterns cause rules to never apply. Features CI mode (exit 1 on dead rules), JSON output, and verbose mode showing matched files.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/nulone/claude-rules-doctor?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/nulone/claude-rules-doctor?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/nulone/claude-rules-doctor?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/nulone/claude-rules-doctor?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/nulone/claude-rules-doctor?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/nulone/claude-rules-doctor?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/nulone/claude-rules-doctor?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/nulone/claude-rules-doctor?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/nulone/claude-rules-doctor?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/hashintel/hash/blob/main/CLAUDE.md"><b>HASH</b></a><br>by <a href="https://github.com/hashintel">hashintel</a></td>
 <td>@hashintel/petrinaut@0.0.8</td>
 <td>GitHub</td>
@@ -453,6 +463,6 @@ A flat list view of all resources. Category: **All** | Sorted: by latest release
 
 ---
 
-**Total Resources:** 39
+**Total Resources:** 40
 
-**Last Generated:** 2026-02-14
+**Last Generated:** 2026-02-15

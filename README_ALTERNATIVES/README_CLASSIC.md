@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`claude-rules-doctor`](https://github.com/nulone/claude-rules-doctor) &nbsp; by &nbsp; [nulone](https://github.com/nulone)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+CLI that detects dead `.claude/rules/` files by checking if `paths:` globs actually match files in your repo. Catches silent rule failures where renamed directories or typos in glob patterns cause rules to never apply. Features CI mode (exit 1 on dead rules), JSON output, and verbose mode showing matched files.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-rules-doctor](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-rules-doctor&username=nulone&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`ClaudeCTX`](https://github.com/foxj77/claudectx) &nbsp; by &nbsp; [John Fox](https://github.com/foxj77)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 claudectx lets you switch your entire Claude Code configuration with a single command.
 
@@ -1234,6 +1245,17 @@ A Rust CLI tool that lets you delegate development tasks to AI agents running in
 
 <details open>
 <summary><h3>Config Managers <a href="#awesome-claude-code">🔝</a></h3></summary>
+
+[`claude-rules-doctor`](https://github.com/nulone/claude-rules-doctor) &nbsp; by &nbsp; [nulone](https://github.com/nulone)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+CLI that detects dead `.claude/rules/` files by checking if `paths:` globs actually match files in your repo. Catches silent rule failures where renamed directories or typos in glob patterns cause rules to never apply. Features CI mode (exit 1 on dead rules), JSON output, and verbose mode showing matched files.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-rules-doctor](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-rules-doctor&username=nulone&all_stats=true&stats_only=true)
+
+</details>
+<br>
 
 [`ClaudeCTX`](https://github.com/foxj77/claudectx) &nbsp; by &nbsp; [John Fox](https://github.com/foxj77)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 claudectx lets you switch your entire Claude Code configuration with a single command.
