@@ -680,6 +680,15 @@ A flat list view of all resources. Category: **All** | Sorted: by last updated d
 <td colspan="4"><img src="https://img.shields.io/github/stars/undeadlist/claude-code-agents?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/undeadlist/claude-code-agents?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/undeadlist/claude-code-agents?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/undeadlist/claude-code-agents?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/undeadlist/claude-code-agents?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/undeadlist/claude-code-agents?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/undeadlist/claude-code-agents?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/undeadlist/claude-code-agents?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/undeadlist/claude-code-agents?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/nulone/claude-rules-doctor"><b>claude-rules-doctor</b></a><br>by <a href="https://github.com/nulone">nulone</a></td>
+<td>Tooling</td>
+<td>Config Managers</td>
+<td>CLI that detects dead `.claude/rules/` files by checking if `paths:` globs actually match files in your repo. Catches silent rule failures where renamed directories or typos in glob patterns cause rules to never apply. Features CI mode (exit 1 on dead rules), JSON output, and verbose mode showing matched files.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/nulone/claude-rules-doctor?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/nulone/claude-rules-doctor?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/nulone/claude-rules-doctor?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/nulone/claude-rules-doctor?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/nulone/claude-rules-doctor?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/nulone/claude-rules-doctor?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/nulone/claude-rules-doctor?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/nulone/claude-rules-doctor?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/nulone/claude-rules-doctor?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/alonw0/web-asset-generator"><b>Web Assets Generator Skill</b></a><br>by <a href="https://github.com/alonw0">Alon Wolenitz</a></td>
 <td>Agent Skills</td>
 <td>General</td>
@@ -1602,6 +1611,6 @@ A flat list view of all resources. Category: **All** | Sorted: by last updated d
 
 ---
 
-**Total Resources:** 173
+**Total Resources:** 174
 
-**Last Generated:** 2026-02-14
+**Last Generated:** 2026-02-15

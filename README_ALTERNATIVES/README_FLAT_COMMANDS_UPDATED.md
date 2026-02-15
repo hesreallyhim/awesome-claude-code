@@ -368,4 +368,4 @@ A flat list view of all resources. Category: **Commands** | Sorted: by last upda
 
 **Total Resources:** 34
 
-**Last Generated:** 2026-02-14
+**Last Generated:** 2026-02-15

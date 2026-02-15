@@ -169,6 +169,16 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by latest rel
 <td colspan="5"><img src="https://img.shields.io/github/stars/serpro69/claude-starter-kit?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/serpro69/claude-starter-kit?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/serpro69/claude-starter-kit?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/serpro69/claude-starter-kit?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/serpro69/claude-starter-kit?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/serpro69/claude-starter-kit?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/serpro69/claude-starter-kit?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/serpro69/claude-starter-kit?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/serpro69/claude-starter-kit?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/nulone/claude-rules-doctor"><b>claude-rules-doctor</b></a><br>by <a href="https://github.com/nulone">nulone</a></td>
+<td>v0.2.2</td>
+<td>GitHub</td>
+<td>2026-01-28</td>
+<td>CLI that detects dead `.claude/rules/` files by checking if `paths:` globs actually match files in your repo. Catches silent rule failures where renamed directories or typos in glob patterns cause rules to never apply. Features CI mode (exit 1 on dead rules), JSON output, and verbose mode showing matched files.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/nulone/claude-rules-doctor?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/nulone/claude-rules-doctor?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/nulone/claude-rules-doctor?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/nulone/claude-rules-doctor?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/nulone/claude-rules-doctor?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/nulone/claude-rules-doctor?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/nulone/claude-rules-doctor?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/nulone/claude-rules-doctor?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/nulone/claude-rules-doctor?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/AndyMik90/Auto-Claude"><b>Auto-Claude</b></a><br>by <a href="https://github.com/AndyMik90">AndyMik90</a></td>
 <td>v2.7.5</td>
 <td>GitHub</td>
@@ -193,6 +203,6 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by latest rel
 
 ---
 
-**Total Resources:** 13
+**Total Resources:** 14
 
-**Last Generated:** 2026-02-14
+**Last Generated:** 2026-02-15
