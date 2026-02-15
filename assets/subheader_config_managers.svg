@@ -1,0 +1,36 @@
+<svg width="100%" height="36" viewBox="0 0 200 36" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Very subtle glow -->
+    <filter id="minimalGlow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Simple gradient -->
+    <linearGradient id="minimalGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6B35" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#8B5A3C" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left decorative element -->
+  <g>
+    <line x1="0" y1="18" x2="12" y2="18" stroke="#FF6B35" stroke-width="3" stroke-linecap="round" opacity="0.8">
+      <animate attributeName="x2" values="12;16;12" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <circle cx="18" cy="18" r="2" fill="#FF8C5A" opacity="0.7">
+      <animate attributeName="r" values="2;2.5;2" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.9;0.6" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Header text -->
+  <text x="30" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="url(#minimalGrad)" filter="url(#minimalGlow)">
+    Config Managers
+    <animate attributeName="opacity" values="0.93;1;0.93" dur="4s" repeatCount="indefinite"/>
+  </text>
+</svg>

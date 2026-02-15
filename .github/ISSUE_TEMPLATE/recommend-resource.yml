@@ -76,6 +76,7 @@ body:
         - "Tooling: IDE Integrations"
         - "Tooling: Usage Monitors"
         - "Tooling: Orchestrators"
+        - "Tooling: Config Managers"
         - "Slash-Commands: Version Control & Git"
         - "Slash-Commands: Code Analysis & Testing"
         - "Slash-Commands: Context Loading & Priming"

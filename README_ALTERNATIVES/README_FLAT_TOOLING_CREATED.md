@@ -62,6 +62,15 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by date creat
 <td>An elegant and user-friendly Claude Code chat interface for VS Code.</td>
 </tr>
 <tr>
+<td><a href="https://github.com/foxj77/claudectx"><b>ClaudeCTX</b></a><br>by <a href="https://github.com/foxj77">John Fox</a></td>
+<td>Tooling</td>
+<td>Config Managers</td>
+<td>claudectx lets you switch your entire Claude Code configuration with a single command.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/foxj77/claudectx?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/foxj77/claudectx?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/foxj77/claudectx?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/foxj77/claudectx?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/foxj77/claudectx?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/foxj77/claudectx?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/foxj77/claudectx?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/foxj77/claudectx?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/foxj77/claudectx?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/ZENG3LD/claude-session-restore"><b>Claude Session Restore</b></a><br>by <a href="https://github.com/ZENG3LD">ZENG3LD</a></td>
 <td>Tooling</td>
 <td>General</td>
@@ -314,15 +323,6 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by date creat
 <td colspan="4"><img src="https://img.shields.io/github/stars/dyoshikawa/rulesync?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/dyoshikawa/rulesync?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/dyoshikawa/rulesync?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/dyoshikawa/rulesync?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/dyoshikawa/rulesync?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/dyoshikawa/rulesync?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/dyoshikawa/rulesync?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/dyoshikawa/rulesync?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/dyoshikawa/rulesync?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/stravu/crystal"><b>crystal</b></a><br>by <a href="https://github.com/stravu">stravu</a></td>
-<td>Tooling</td>
-<td>IDE Integrations</td>
-<td>A full-fledged desktop application for orchestrating, monitoring, and interacting with Claude Code agents.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/stravu/crystal?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/stravu/crystal?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/stravu/crystal?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/stravu/crystal?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/stravu/crystal?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/stravu/crystal?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/stravu/crystal?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/stravu/crystal?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/stravu/crystal?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/mbailey/voicemode"><b>VoiceMode MCP</b></a><br>by <a href="https://github.com/mbailey">Mike Bailey</a></td>
 <td>Tooling</td>
 <td>General</td>
@@ -455,4 +455,4 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by date creat
 
 **Total Resources:** 44
 
-**Last Generated:** 2026-02-13
+**Last Generated:** 2026-02-14

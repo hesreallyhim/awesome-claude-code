@@ -4,6 +4,7 @@ awesome-claude-code
 ci--deployment
 claudemd-files-
 code-analysis--testing
+config-managers
 contents
 context-loading--priming
 contributing-

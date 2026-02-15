@@ -1,0 +1,28 @@
+<svg width="400" height="40" viewBox="0 0 400 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet">
+  <defs>
+    <linearGradient id="paperBgSub" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbfaf6"/>
+      <stop offset="100%" style="stop-color:#f4efe5"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="36" fill="url(#paperBgSub)"/>
+  <line x1="2" y1="0" x2="2" y2="36" stroke="#c4baa8" stroke-width="1"/>
+  <line x1="398" y1="0" x2="398" y2="36" stroke="#c4baa8" stroke-width="1"/>
+
+  <text x="22" y="24"
+        font-family="'Courier New', Courier, monospace"
+        font-size="12"
+        fill="#c96442"
+        opacity="0.8">
+    |-
+  </text>
+  <text x="60" y="24"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="13"
+        fill="#3d3530">
+    Config Managers
+  </text>
+
+  <line x1="20" y1="33" x2="380" y2="33" stroke="#c4baa8" stroke-width="0.5" opacity="0.3"/>
+</svg>

@@ -52,6 +52,8 @@ def create_h3_svg_file(text: str, filename: str, assets_dir: str) -> str:
     filepath = os.path.join(assets_dir, filename)
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(svg_content)
+        if not svg_content.endswith("\n"):
+            f.write("\n")
 
     return filename
 
@@ -170,6 +172,7 @@ def get_subcategory_svg_filename(subcat_id: str) -> str:
         "ide-integrations": "toc-sub-ide.svg",
         "usage-monitors": "toc-sub-monitors.svg",
         "orchestrators": "toc-sub-orchestrators.svg",
+        "config-managers": "toc-sub-config-managers.svg",
         "version-control-git": "toc-sub-git.svg",
         "code-analysis-testing": "toc-sub-code-analysis.svg",
         "context-loading-priming": "toc-sub-context.svg",
@@ -309,6 +312,8 @@ def save_resource_badge_svg(display_name: str, author_name: str, assets_dir: str
     filepath = os.path.join(assets_dir, filename)
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(svg_content)
+        if not svg_content.endswith("\n"):
+            f.write("\n")
 
     return filename
 

@@ -60,7 +60,7 @@ A flat list view of all resources. Category: **Skills** | Sorted: by latest rele
 <tbody>
 <tr>
 <td><a href="https://github.com/avifenesh/agentsys"><b>AgentSys</b></a><br>by <a href="https://github.com/avifenesh">avifenesh</a></td>
-<td>v5.0.0</td>
+<td>v5.0.1</td>
 <td>GitHub</td>
 <td>2026-02-13</td>
 <td>Workflow automation system for Claude with a group of useful plugins, agents, and skills. Automates task-to-production workflows, PR management, code cleanup, performance investigation, drift detection, and multi-agent code review. Includes [agnix](https://github.com/avifenesh/agnix) for linting agent configurations. Built on thousands of lines of code with thousands of tests. Uses deterministic detection (regex, AST) with LLM judgment for efficiency. Used on many production systems.</td>
@@ -145,4 +145,4 @@ A flat list view of all resources. Category: **Skills** | Sorted: by latest rele
 
 **Total Resources:** 8
 
-**Last Generated:** 2026-02-13
+**Last Generated:** 2026-02-14

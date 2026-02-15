@@ -74,15 +74,6 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by date cre
 <td colspan="4"><img src="https://img.shields.io/github/stars/hesreallyhim/awesome-claude-code?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/hesreallyhim/awesome-claude-code?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/hesreallyhim/awesome-claude-code?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/hesreallyhim/awesome-claude-code?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/hesreallyhim/awesome-claude-code?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/hesreallyhim/awesome-claude-code?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/hesreallyhim/awesome-claude-code?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/hesreallyhim/awesome-claude-code?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/hesreallyhim/awesome-claude-code?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/Layr-Labs/avs-vibe-developer-guide/blob/master/CLAUDE.md"><b>AVS Vibe Developer Guide</b></a><br>by <a href="https://github.com/Layr-Labs">Layr-Labs</a></td>
-<td>CLAUDE.md Files</td>
-<td>Domain-Specific</td>
-<td>Structures AI-assisted EigenLayer AVS development workflow with consistent naming conventions for prompt files and established terminology standards for blockchain concepts.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/alexei-led/aws-mcp-server/blob/main/CLAUDE.md"><b>AWS MCP Server</b></a><br>by <a href="https://github.com/alexei-led">alexei-led</a></td>
 <td>CLAUDE.md Files</td>
 <td>Language-Specific</td>
@@ -99,15 +90,6 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by date cre
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/Fimeg/NetworkChronicles?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Fimeg/NetworkChronicles?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Fimeg/NetworkChronicles?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Fimeg/NetworkChronicles?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Fimeg/NetworkChronicles?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Fimeg/NetworkChronicles?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Fimeg/NetworkChronicles?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Fimeg/NetworkChronicles?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Fimeg/NetworkChronicles?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/eastlondoner/cursor-tools/blob/main/CLAUDE.md"><b>Cursor Tools</b></a><br>by <a href="https://github.com/eastlondoner">eastlondoner</a></td>
-<td>CLAUDE.md Files</td>
-<td>Domain-Specific</td>
-<td>Creates a versatile AI command interface supporting multiple providers and models with flexible command options and browser automation through "Stagehand" feature.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/eastlondoner/cursor-tools?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/eastlondoner/cursor-tools?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/eastlondoner/cursor-tools?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/eastlondoner/cursor-tools?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/eastlondoner/cursor-tools?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/eastlondoner/cursor-tools?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/eastlondoner/cursor-tools?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/eastlondoner/cursor-tools?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/eastlondoner/cursor-tools?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/basicmachines-co/basic-memory/blob/main/CLAUDE.md"><b>Basic Memory</b></a><br>by <a href="https://github.com/basicmachines-co">basicmachines-co</a></td>
@@ -263,15 +245,6 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by date cre
 <td colspan="4"><img src="https://img.shields.io/github/stars/CommE2E/comm?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/CommE2E/comm?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/CommE2E/comm?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/CommE2E/comm?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/CommE2E/comm?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/CommE2E/comm?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/CommE2E/comm?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/CommE2E/comm?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/CommE2E/comm?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/metabase/metabase/blob/master/CLAUDE.md"><b>Metabase</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
-<td>CLAUDE.md Files</td>
-<td>Language-Specific</td>
-<td>Details workflow for REPL-driven development in Clojure/ClojureScript with emphasis on incremental development, testing, and step-by-step approach for feature implementation.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/metabase/metabase?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/metabase/metabase?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/metabase/metabase?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/metabase/metabase?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/metabase/metabase?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/metabase/metabase?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/metabase/metabase?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/metabase/metabase?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/metabase/metabase?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/mattgodbolt/jsbeeb/blob/main/CLAUDE.md"><b>JSBeeb</b></a><br>by <a href="https://github.com/mattgodbolt">mattgodbolt</a></td>
 <td>CLAUDE.md Files</td>
 <td>Language-Specific</td>
@@ -285,6 +258,6 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by date cre
 
 ---
 
-**Total Resources:** 25
+**Total Resources:** 22
 
-**Last Generated:** 2026-02-13
+**Last Generated:** 2026-02-14

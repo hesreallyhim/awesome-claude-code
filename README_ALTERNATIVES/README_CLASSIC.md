@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`ClaudeCTX`](https://github.com/foxj77/claudectx) &nbsp; by &nbsp; [John Fox](https://github.com/foxj77)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+claudectx lets you switch your entire Claude Code configuration with a single command.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claudectx](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claudectx&username=foxj77&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`AgentSys`](https://github.com/avifenesh/agentsys) &nbsp; by &nbsp; [avifenesh](https://github.com/avifenesh)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Workflow automation system for Claude with a group of useful plugins, agents, and skills. Automates task-to-production workflows, PR management, code cleanup, performance investigation, drift detection, and multi-agent code review. Includes [agnix](https://github.com/avifenesh/agnix) for linting agent configurations. Built on thousands of lines of code with thousands of tests. Uses deterministic detection (regex, AST) with LLM judgment for efficiency. Used on many production systems.
 
@@ -79,7 +90,7 @@ Comprehensive E2E development workflow with helpful Claude Code subagent prompts
 </details>
 <br>
 
-[`Claude Code Ultimate Guide`](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) &nbsp; by &nbsp; [Florian BRUNIAUX](https://www.linkedin.com/in/florian-bruniaux-43408b83/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;CC BY-SA 4.0 (guide) / CC0 1.0 (templates)  
+[`Claude Code Ultimate Guide`](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) &nbsp; by &nbsp; [Florian BRUNIAUX](https://www.linkedin.com/in/florian-bruniaux-43408b83/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;CC-BY-SA-4.0  
 A tremendous feat of documentation, this guide covers Claude Code from beginner to power user, with production-ready templates for Claude Code features, guides on agentic workflows, and a lot of great learning materials, including quizzes and a handy "cheatsheet". Whether it's the "ultimate" guide to Claude Code will be up to the reader, but a valuable resource nonetheless (as with all documentation sites, make sure it's up to date before you bet the farm).
 
 <details>
@@ -91,23 +102,12 @@ A tremendous feat of documentation, this guide covers Claude Code from beginner 
 <br>
 
 [`Book Factory`](https://github.com/robertguss/claude-skills) &nbsp; by &nbsp; [Robert Guss](https://github.com/robertguss)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A comprehensive pipeline of Skillsthat replicates traditional publishing infrastructure for nonfiction book creation using specialized Claude skills.
+A comprehensive pipeline of Skills that replicates traditional publishing infrastructure for nonfiction book creation using specialized Claude skills.
 
 <details>
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-skills&username=robertguss&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`pre-commit-hooks`](https://github.com/aRustyDev/pre-commit-hooks) &nbsp; by &nbsp; [aRustyDev](https://github.com/aRustyDev)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;GPL-3.0  
-This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and related `.claude/` documentation is exemplary. Thorough but not verbose. Unlike a lot of `CLAUDE.md`  files, it doesn't primarily consist in shouting at Claude in all-caps. Great learning resource. Also, hooks.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for pre-commit-hooks](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=pre-commit-hooks&username=aRustyDev&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -140,6 +140,7 @@ This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and re
   - [IDE Integrations](#ide-integrations-)
   - [Usage Monitors](#usage-monitors-)
   - [Orchestrators](#orchestrators-)
+  - [Config Managers](#config-managers-)
 
   </details>
 
@@ -218,7 +219,7 @@ Workflow automation system for Claude with a group of useful plugins, agents, an
 Members from the Signal Foundation with some really great tips and tricks on how to turn your operating system into an instrument of total surveillance, and why some companies are doing this really awesome thing. [warning: YouTube link]
 
 [`Book Factory`](https://github.com/robertguss/claude-skills) &nbsp; by &nbsp; [Robert Guss](https://github.com/robertguss)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A comprehensive pipeline of Skillsthat replicates traditional publishing infrastructure for nonfiction book creation using specialized Claude skills.
+A comprehensive pipeline of Skills that replicates traditional publishing infrastructure for nonfiction book creation using specialized Claude skills.
 
 <details>
 <summary>📊 GitHub Stats</summary>
@@ -272,7 +273,7 @@ Claude Code skill that automates mountain route research for North American peak
 </details>
 <br>
 
-[`Codex Skill`](https://github.com/skills-directory/skill-codex) &nbsp; by &nbsp; [klaudworks](https://github.com/klaudworks)    
+[`Codex Skill`](https://github.com/skills-directory/skill-codex) &nbsp; by &nbsp; [klaudworks](https://github.com/klaudworks)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Enables users to prompt codex from claude code. Unlike the raw codex mcp server, this skill infers parameters such as model, reasoning effort, sandboxing from your prompt or asks you to specify them. It also simplifies continuing prior codex sessions so that codex can continue with the prior context.
 
 <details>
@@ -327,7 +328,7 @@ A comprehensive Claude Code plugin with 65 specialized skills covering full-stac
 </details>
 <br>
 
-[`read-only-postgres`](https://github.com/jawwadfirdousi/agent-skills) &nbsp; by &nbsp; [jawwadfirdousi](https://github.com/jawwadfirdousi)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`read-only-postgres`](https://github.com/jawwadfirdousi/agent-skills) &nbsp; by &nbsp; [jawwadfirdousi](https://github.com/jawwadfirdousi)    
 Read-only PostgreSQL query skill for Claude Code. Executes SELECT/SHOW/EXPLAIN/WITH queries across configured databases with strict validation, timeouts, and row limits. Supports multiple connections with descriptions for database selection.
 
 <details>
@@ -497,7 +498,7 @@ A nice variety of 35+ brief but information-dense Claude Code tips covering voic
 </details>
 <br>
 
-[`Claude Code Ultimate Guide`](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) &nbsp; by &nbsp; [Florian BRUNIAUX](https://www.linkedin.com/in/florian-bruniaux-43408b83/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;CC BY-SA 4.0 (guide) / CC0 1.0 (templates)  
+[`Claude Code Ultimate Guide`](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) &nbsp; by &nbsp; [Florian BRUNIAUX](https://www.linkedin.com/in/florian-bruniaux-43408b83/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;CC-BY-SA-4.0  
 A tremendous feat of documentation, this guide covers Claude Code from beginner to power user, with production-ready templates for Claude Code features, guides on agentic workflows, and a lot of great learning materials, including quizzes and a handy "cheatsheet". Whether it's the "ultimate" guide to Claude Code will be up to the reader, but a valuable resource nonetheless (as with all documentation sites, make sure it's up to date before you bet the farm).
 
 <details>
@@ -670,7 +671,7 @@ A broader project management workflow for Claude Code that encompasses not just 
 <details open>
 <summary><h3>Ralph Wiggum <a href="#awesome-claude-code">🔝</a></h3></summary>
 
-[`awesome-ralph`](https://github.com/snwfdhmp/awesome-ralph) &nbsp; by &nbsp; [Martin Joly](https://github.com/snwfdhmp)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`awesome-ralph`](https://github.com/snwfdhmp/awesome-ralph) &nbsp; by &nbsp; [Martin Joly](https://github.com/snwfdhmp)    
 A curated list of resources about Ralph, the AI coding technique that runs AI coding agents in automated loops until specifications are fulfilled.
 
 <details>
@@ -837,7 +838,7 @@ A webhook service that connects Claude Code to GitHub repositories, enabling AI-
 </details>
 <br>
 
-[`Claude Session Restore`](https://github.com/ZENG3LD/claude-session-restore) &nbsp; by &nbsp; [ZENG3LD](https://github.com/ZENG3LD)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT OR Apache-2.0  
+[`Claude Session Restore`](https://github.com/ZENG3LD/claude-session-restore) &nbsp; by &nbsp; [ZENG3LD](https://github.com/ZENG3LD)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
 Efficiently restore context from previous Claude Code sessions by analyzing session files and git history. Features multi-factor data collection across numerous Claude Code capacities with time-based filtering. Uses tail-based parsing for efficient handling of large session files up to 2GB. Includes both a CLI tool for manual analysis and a Claude Code skill for automatic session restoration.
 
 <details>
@@ -1054,17 +1055,6 @@ A VSCode extension that brings Claude Code directly into your editor with intera
 </details>
 <br>
 
-[`crystal`](https://github.com/stravu/crystal) &nbsp; by &nbsp; [stravu](https://github.com/stravu)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A full-fledged desktop application for orchestrating, monitoring, and interacting with Claude Code agents.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for crystal](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=crystal&username=stravu&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
 </details>
 
 <details open>
@@ -1236,6 +1226,22 @@ A Rust CLI tool that lets you delegate development tasks to AI agents running in
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for tsk](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=tsk&username=dtormoen&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+</details>
+
+<details open>
+<summary><h3>Config Managers <a href="#awesome-claude-code">🔝</a></h3></summary>
+
+[`ClaudeCTX`](https://github.com/foxj77/claudectx) &nbsp; by &nbsp; [John Fox](https://github.com/foxj77)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+claudectx lets you switch your entire Claude Code configuration with a single command.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claudectx](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claudectx&username=foxj77&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1537,28 +1543,6 @@ Analyzes and fixes GitHub issues using a structured approach with GitHub CLI for
 </details>
 <br>
 
-[`/fix-issue`](https://github.com/metabase/metabase/blob/master/.claude/commands/fix-issue.md) &nbsp; by &nbsp; [metabase](https://github.com/metabase)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
-Addresses GitHub issues by taking issue number as parameter, analyzing context, implementing solution, and testing/validating the fix for proper integration.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for metabase](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=metabase&username=metabase&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`/fix-pr`](https://github.com/metabase/metabase/blob/master/.claude/commands/fix-pr.md) &nbsp; by &nbsp; [metabase](https://github.com/metabase)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
-Fetches and fixes unresolved PR comments by automatically retrieving feedback, addressing reviewer concerns, making targeted code improvements, and streamlining the review process.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for metabase](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=metabase&username=metabase&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
 [`/husky`](https://github.com/evmts/tevm-monorepo/blob/main/.claude/commands/husky.md) &nbsp; by &nbsp; [evmts](https://github.com/evmts)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Sets up and manages Husky Git hooks by configuring pre-commit hooks, establishing commit message standards, integrating with linting tools, and ensuring code quality on commits.
 
@@ -1586,17 +1570,6 @@ Updates branch names with proper prefixes and formats, enforcing naming conventi
 <details open>
 <summary><h3>Code Analysis & Testing <a href="#awesome-claude-code">🔝</a></h3></summary>
 
-[`/check`](https://github.com/rygwdn/slack-tools/blob/main/.claude/commands/check.md) &nbsp; by &nbsp; [rygwdn](https://github.com/rygwdn)    
-Performs comprehensive code quality and security checks, featuring static analysis integration, security vulnerability scanning, code style enforcement, and detailed reporting.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for slack-tools](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=slack-tools&username=rygwdn&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
 [`/code_analysis`](https://github.com/kingler/n8n_agent/blob/main/.claude/commands/code_analysis.md) &nbsp; by &nbsp; [kingler](https://github.com/kingler)    
 Provides a menu of advanced code analysis commands for deep inspection, including knowledge graph generation, optimization suggestions, and quality evaluation.
 
@@ -1615,17 +1588,6 @@ Analyzes code performance to identify bottlenecks, proposing concrete optimizati
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for ai-project-rules](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ai-project-rules&username=to4iki&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`/repro-issue`](https://github.com/rzykov/metabase/blob/master/.claude/commands/repro-issue.md) &nbsp; by &nbsp; [rzykov](https://github.com/rzykov)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
-Creates reproducible test cases for GitHub issues, ensuring tests fail reliably and documenting clear reproduction steps for developers.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for metabase](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=metabase&username=rzykov&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1686,50 +1648,6 @@ Loads LLM configuration files to context, importing specific terminology, model 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for xatu-data](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=xatu-data&username=ethpandaops&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`/load_coo_context`](https://github.com/Mjvolk3/torchcell/blob/main/.claude/commands/load_coo_context.md) &nbsp; by &nbsp; [Mjvolk3](https://github.com/Mjvolk3)    
-References specific files for sparse matrix operations, explains transform usage, compares with previous approaches, and sets data formatting context for development.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for torchcell](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=torchcell&username=Mjvolk3&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`/load_dango_pipeline`](https://github.com/Mjvolk3/torchcell/blob/main/.claude/commands/load_dango_pipeline.md) &nbsp; by &nbsp; [Mjvolk3](https://github.com/Mjvolk3)    
-Sets context for model training by referencing pipeline files, establishing working context, and preparing for pipeline work with relevant documentation.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for torchcell](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=torchcell&username=Mjvolk3&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`/prime`](https://github.com/yzyydev/AI-Engineering-Structure/blob/main/.claude/commands/prime.md) &nbsp; by &nbsp; [yzyydev](https://github.com/yzyydev)    
-Sets up initial project context by viewing directory structure and reading key files, creating standardized context with directory visualization and key documentation focus.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for AI-Engineering-Structure](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=AI-Engineering-Structure&username=yzyydev&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`/rsi`](https://github.com/ddisisto/si/blob/main/.claude/commands/rsi.md) &nbsp; by &nbsp; [ddisisto](https://github.com/ddisisto)    
-Reads all commands and key project files to optimize AI-assisted development by streamlining the process, loading command context, and setting up for better development workflow.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for si](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=si&username=ddisisto&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1798,17 +1716,6 @@ Reviews current documentation status, updates implementation progress, reviews p
 
 <details open>
 <summary><h3>CI / Deployment <a href="#awesome-claude-code">🔝</a></h3></summary>
-
-[`/release`](https://github.com/kelp/webdown/blob/main/.claude/commands/release.md) &nbsp; by &nbsp; [kelp](https://github.com/kelp)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Manages software releases by updating changelogs, reviewing README changes, evaluating version increments, and documenting release changes for better version tracking.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for webdown](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=webdown&username=kelp&all_stats=true&stats_only=true)
-
-</details>
-<br>
 
 [`/run-ci`](https://github.com/hackdays-io/toban-contribution-viewer/blob/main/.claude/commands/run-ci.md) &nbsp; by &nbsp; [hackdays-io](https://github.com/hackdays-io)    
 Activates virtual environments, runs CI-compatible check scripts, iteratively fixes errors, and ensures all tests pass before completion.
@@ -1908,17 +1815,6 @@ Focuses on Gene Ontology annotation integration in graph databases, handling mul
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for torchcell](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=torchcell&username=Mjvolk3&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`/mermaid`](https://github.com/GaloyMoney/lana-bank/blob/main/.claude/commands/mermaid.md) &nbsp; by &nbsp; [GaloyMoney](https://github.com/GaloyMoney)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
-Generates Mermaid diagrams from SQL schema files, creating entity relationship diagrams with table properties, validating diagram compilation, and ensuring complete entity coverage.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for lana-bank](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=lana-bank&username=GaloyMoney&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -2061,17 +1957,6 @@ Offers comprehensive build and test commands with detailed TypeScript style guid
 </details>
 <br>
 
-[`Metabase`](https://github.com/metabase/metabase/blob/master/CLAUDE.md) &nbsp; by &nbsp; [metabase](https://github.com/metabase)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
-Details workflow for REPL-driven development in Clojure/ClojureScript with emphasis on incremental development, testing, and step-by-step approach for feature implementation.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for metabase](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=metabase&username=metabase&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
 [`SG Cars Trends Backend`](https://github.com/sgcarstrends/backend/blob/main/CLAUDE.md) &nbsp; by &nbsp; [sgcarstrends](https://github.com/sgcarstrends)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Provides comprehensive structure for TypeScript monorepo projects with detailed commands for development, testing, deployment, and AWS/Cloudflare integration.
 
@@ -2110,17 +1995,6 @@ Details Go project conventions with comprehensive error handling recommendations
 <details open>
 <summary><h3>Domain-Specific <a href="#awesome-claude-code">🔝</a></h3></summary>
 
-[`AVS Vibe Developer Guide`](https://github.com/Layr-Labs/avs-vibe-developer-guide/blob/master/CLAUDE.md) &nbsp; by &nbsp; [Layr-Labs](https://github.com/Layr-Labs)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Structures AI-assisted EigenLayer AVS development workflow with consistent naming conventions for prompt files and established terminology standards for blockchain concepts.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for avs-vibe-developer-guide](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=avs-vibe-developer-guide&username=Layr-Labs&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
 [`Comm`](https://github.com/CommE2E/comm/blob/master/CLAUDE.md) &nbsp; by &nbsp; [CommE2E](https://github.com/CommE2E)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;BSD-3-Clause  
 Serves as a development reference for E2E-encrypted messaging applications with code organization architecture, security implementation details, and testing procedures.
 
@@ -2139,17 +2013,6 @@ Enables real-time multiplayer capabilities for collaborative course creation wit
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for course-builder](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=course-builder&username=badass-courses&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Cursor Tools`](https://github.com/eastlondoner/cursor-tools/blob/main/CLAUDE.md) &nbsp; by &nbsp; [eastlondoner](https://github.com/eastlondoner)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Creates a versatile AI command interface supporting multiple providers and models with flexible command options and browser automation through "Stagehand" feature.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for cursor-tools](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=cursor-tools&username=eastlondoner&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -2187,7 +2050,7 @@ Serves as development guide for Mac security audit tool with build instructions,
 </details>
 <br>
 
-[`pre-commit-hooks`](https://github.com/aRustyDev/pre-commit-hooks) &nbsp; by &nbsp; [aRustyDev](https://github.com/aRustyDev)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;GPL-3.0  
+[`pre-commit-hooks`](https://github.com/aRustyDev/pre-commit-hooks) &nbsp; by &nbsp; [aRustyDev](https://github.com/aRustyDev)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;AGPL-3.0  
 This repository is about pre-commit-hooks in general, but the `CLAUDE.md` and related `.claude/` documentation is exemplary. Thorough but not verbose. Unlike a lot of `CLAUDE.md`  files, it doesn't primarily consist in shouting at Claude in all-caps. Great learning resource. Also, hooks.
 
 <details>
@@ -2260,13 +2123,13 @@ Claudable is an open-source web builder that leverages local CLI agents, such as
 </details>
 <br>
 
-[`Omnara`](https://github.com/omnara-ai/omnara) &nbsp; by &nbsp; [Ishaan Sehgal](https://github.com/ishaansehgal99)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
-A command center for AI agents that syncs Claude Code sessions across terminal, web, and mobile. Allows for remote monitoring, human-in-the-loop interaction, and team collaboration.
+[`crystal`](https://github.com/stravu/crystal) &nbsp; by &nbsp; [stravu](https://github.com/stravu)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A full-fledged desktop application for orchestrating, monitoring, and interacting with Claude Code agents.
 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for omnara](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=omnara&username=omnara-ai&all_stats=true&stats_only=true)
+![GitHub Stats for crystal](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=crystal&username=stravu&all_stats=true&stats_only=true)
 
 </details>
 <br>

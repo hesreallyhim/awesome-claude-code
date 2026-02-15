@@ -74,15 +74,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/jerseycheese/Narraitor?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/jerseycheese/Narraitor?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/jerseycheese/Narraitor?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jerseycheese/Narraitor?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/jerseycheese/Narraitor?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/jerseycheese/Narraitor?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jerseycheese/Narraitor?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/jerseycheese/Narraitor?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/jerseycheese/Narraitor?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/rygwdn/slack-tools/blob/main/.claude/commands/check.md"><b>/check</b></a><br>by <a href="https://github.com/rygwdn">rygwdn</a></td>
-<td>Slash-Commands</td>
-<td>Code Analysis & Testing</td>
-<td>Performs comprehensive code quality and security checks, featuring static analysis integration, security vulnerability scanning, code style enforcement, and detailed reporting.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/rygwdn/slack-tools?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/rygwdn/slack-tools?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/rygwdn/slack-tools?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/rygwdn/slack-tools?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/rygwdn/slack-tools?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/rygwdn/slack-tools?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/rygwdn/slack-tools?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/rygwdn/slack-tools?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/rygwdn/slack-tools?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/kingler/n8n_agent/blob/main/.claude/commands/code_analysis.md"><b>/code_analysis</b></a><br>by <a href="https://github.com/kingler">kingler</a></td>
 <td>Slash-Commands</td>
 <td>Code Analysis & Testing</td>
@@ -227,24 +218,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/jeremymailen/kotlinter-gradle?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/jeremymailen/kotlinter-gradle?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/jeremymailen/kotlinter-gradle?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jeremymailen/kotlinter-gradle?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/jeremymailen/kotlinter-gradle?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/jeremymailen/kotlinter-gradle?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jeremymailen/kotlinter-gradle?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/jeremymailen/kotlinter-gradle?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/jeremymailen/kotlinter-gradle?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/metabase/metabase/blob/master/.claude/commands/fix-issue.md"><b>/fix-issue</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
-<td>Slash-Commands</td>
-<td>Version Control & Git</td>
-<td>Addresses GitHub issues by taking issue number as parameter, analyzing context, implementing solution, and testing/validating the fix for proper integration.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/metabase/metabase?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/metabase/metabase?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/metabase/metabase?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/metabase/metabase?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/metabase/metabase?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/metabase/metabase?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/metabase/metabase?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/metabase/metabase?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/metabase/metabase?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/metabase/metabase/blob/master/.claude/commands/fix-pr.md"><b>/fix-pr</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
-<td>Slash-Commands</td>
-<td>Version Control & Git</td>
-<td>Fetches and fixes unresolved PR comments by automatically retrieving feedback, addressing reviewer concerns, making targeted code improvements, and streamlining the review process.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/metabase/metabase?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/metabase/metabase?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/metabase/metabase?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/metabase/metabase?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/metabase/metabase?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/metabase/metabase?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/metabase/metabase?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/metabase/metabase?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/metabase/metabase?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/Mjvolk3/torchcell/blob/main/.claude/commands/fixing_go_in_graph.md"><b>/fixing_go_in_graph</b></a><br>by <a href="https://github.com/Mjvolk3">Mjvolk3</a></td>
 <td>Slash-Commands</td>
 <td>Miscellaneous</td>
@@ -290,33 +263,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/ethpandaops/xatu-data?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ethpandaops/xatu-data?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ethpandaops/xatu-data?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ethpandaops/xatu-data?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ethpandaops/xatu-data?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ethpandaops/xatu-data?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ethpandaops/xatu-data?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ethpandaops/xatu-data?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ethpandaops/xatu-data?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/Mjvolk3/torchcell/blob/main/.claude/commands/load_coo_context.md"><b>/load_coo_context</b></a><br>by <a href="https://github.com/Mjvolk3">Mjvolk3</a></td>
-<td>Slash-Commands</td>
-<td>Context Loading & Priming</td>
-<td>References specific files for sparse matrix operations, explains transform usage, compares with previous approaches, and sets data formatting context for development.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/Mjvolk3/torchcell?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Mjvolk3/torchcell?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Mjvolk3/torchcell?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Mjvolk3/torchcell?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Mjvolk3/torchcell?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Mjvolk3/torchcell?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Mjvolk3/torchcell?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Mjvolk3/torchcell?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Mjvolk3/torchcell?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/Mjvolk3/torchcell/blob/main/.claude/commands/load_dango_pipeline.md"><b>/load_dango_pipeline</b></a><br>by <a href="https://github.com/Mjvolk3">Mjvolk3</a></td>
-<td>Slash-Commands</td>
-<td>Context Loading & Priming</td>
-<td>Sets context for model training by referencing pipeline files, establishing working context, and preparing for pipeline work with relevant documentation.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/Mjvolk3/torchcell?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Mjvolk3/torchcell?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Mjvolk3/torchcell?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Mjvolk3/torchcell?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Mjvolk3/torchcell?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Mjvolk3/torchcell?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Mjvolk3/torchcell?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Mjvolk3/torchcell?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Mjvolk3/torchcell?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/GaloyMoney/lana-bank/blob/main/.claude/commands/mermaid.md"><b>/mermaid</b></a><br>by <a href="https://github.com/GaloyMoney">GaloyMoney</a></td>
-<td>Slash-Commands</td>
-<td>Miscellaneous</td>
-<td>Generates Mermaid diagrams from SQL schema files, creating entity relationship diagrams with table properties, validating diagram compilation, and ensuring complete entity coverage.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/GaloyMoney/lana-bank?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/GaloyMoney/lana-bank?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/GaloyMoney/lana-bank?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/GaloyMoney/lana-bank?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/GaloyMoney/lana-bank?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/GaloyMoney/lana-bank?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/GaloyMoney/lana-bank?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/GaloyMoney/lana-bank?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/GaloyMoney/lana-bank?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/to4iki/ai-project-rules/blob/main/.claude/commands/optimize.md"><b>/optimize</b></a><br>by <a href="https://github.com/to4iki">to4iki</a></td>
 <td>Slash-Commands</td>
 <td>Code Analysis & Testing</td>
@@ -335,15 +281,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/dredozubov/prd-generator?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/dredozubov/prd-generator?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/dredozubov/prd-generator?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/dredozubov/prd-generator?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/dredozubov/prd-generator?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/dredozubov/prd-generator?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/dredozubov/prd-generator?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/dredozubov/prd-generator?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/dredozubov/prd-generator?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/yzyydev/AI-Engineering-Structure/blob/main/.claude/commands/prime.md"><b>/prime</b></a><br>by <a href="https://github.com/yzyydev">yzyydev</a></td>
-<td>Slash-Commands</td>
-<td>Context Loading & Priming</td>
-<td>Sets up initial project context by viewing directory structure and reading key files, creating standardized context with directory visualization and key documentation focus.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/yzyydev/AI-Engineering-Structure?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/yzyydev/AI-Engineering-Structure?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/yzyydev/AI-Engineering-Structure?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/yzyydev/AI-Engineering-Structure?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/yzyydev/AI-Engineering-Structure?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/yzyydev/AI-Engineering-Structure?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/yzyydev/AI-Engineering-Structure?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/yzyydev/AI-Engineering-Structure?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/yzyydev/AI-Engineering-Structure?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/disler/just-prompt/blob/main/.claude/commands/project_hello_w_name.md"><b>/project_hello_w_name</b></a><br>by <a href="https://github.com/disler">disler</a></td>
 <td>Slash-Commands</td>
 <td>Project & Task Management</td>
@@ -353,24 +290,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/disler/just-prompt?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/disler/just-prompt?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/disler/just-prompt?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/disler/just-prompt?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/disler/just-prompt?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/disler/just-prompt?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/disler/just-prompt?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/disler/just-prompt?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/disler/just-prompt?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/kelp/webdown/blob/main/.claude/commands/release.md"><b>/release</b></a><br>by <a href="https://github.com/kelp">kelp</a></td>
-<td>Slash-Commands</td>
-<td>CI / Deployment</td>
-<td>Manages software releases by updating changelogs, reviewing README changes, evaluating version increments, and documenting release changes for better version tracking.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/kelp/webdown?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/kelp/webdown?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/kelp/webdown?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/kelp/webdown?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/kelp/webdown?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/kelp/webdown?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/kelp/webdown?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/kelp/webdown?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/kelp/webdown?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/rzykov/metabase/blob/master/.claude/commands/repro-issue.md"><b>/repro-issue</b></a><br>by <a href="https://github.com/rzykov">rzykov</a></td>
-<td>Slash-Commands</td>
-<td>Code Analysis & Testing</td>
-<td>Creates reproducible test cases for GitHub issues, ensuring tests fail reliably and documenting clear reproduction steps for developers.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/rzykov/metabase?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/rzykov/metabase?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/rzykov/metabase?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/rzykov/metabase?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/rzykov/metabase?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/rzykov/metabase?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/rzykov/metabase?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/rzykov/metabase?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/rzykov/metabase?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/Mjvolk3/torchcell/blob/main/.claude/commands/review_dcell_model.md"><b>/review_dcell_model</b></a><br>by <a href="https://github.com/Mjvolk3">Mjvolk3</a></td>
 <td>Slash-Commands</td>
 <td>Miscellaneous</td>
@@ -378,15 +297,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/Mjvolk3/torchcell?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Mjvolk3/torchcell?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Mjvolk3/torchcell?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Mjvolk3/torchcell?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Mjvolk3/torchcell?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Mjvolk3/torchcell?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Mjvolk3/torchcell?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Mjvolk3/torchcell?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Mjvolk3/torchcell?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/ddisisto/si/blob/main/.claude/commands/rsi.md"><b>/rsi</b></a><br>by <a href="https://github.com/ddisisto">ddisisto</a></td>
-<td>Slash-Commands</td>
-<td>Context Loading & Priming</td>
-<td>Reads all commands and key project files to optimize AI-assisted development by streamlining the process, loading command context, and setting up for better development workflow.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/ddisisto/si?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ddisisto/si?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ddisisto/si?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ddisisto/si?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ddisisto/si?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ddisisto/si?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ddisisto/si?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ddisisto/si?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ddisisto/si?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/hackdays-io/toban-contribution-viewer/blob/main/.claude/commands/run-ci.md"><b>/run-ci</b></a><br>by <a href="https://github.com/hackdays-io">hackdays-io</a></td>
@@ -518,15 +428,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/AndyMik90/Auto-Claude?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/AndyMik90/Auto-Claude?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/AndyMik90/Auto-Claude?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/AndyMik90/Auto-Claude?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/AndyMik90/Auto-Claude?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/AndyMik90/Auto-Claude?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/AndyMik90/Auto-Claude?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/AndyMik90/Auto-Claude?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/AndyMik90/Auto-Claude?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/Layr-Labs/avs-vibe-developer-guide/blob/master/CLAUDE.md"><b>AVS Vibe Developer Guide</b></a><br>by <a href="https://github.com/Layr-Labs">Layr-Labs</a></td>
-<td>CLAUDE.md Files</td>
-<td>Domain-Specific</td>
-<td>Structures AI-assisted EigenLayer AVS development workflow with consistent naming conventions for prompt files and established terminology standards for blockchain concepts.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like"><b>Awesome Claude Code Output Styles (That I Really Like)</b></a><br>by <a href="https://github.com/hesreallyhim/">Really Him</a></td>
 <td>Output Styles</td>
 <td>General</td>
@@ -575,7 +476,7 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td><a href="https://github.com/robertguss/claude-skills"><b>Book Factory</b></a><br>by <a href="https://github.com/robertguss">Robert Guss</a></td>
 <td>Agent Skills</td>
 <td>General</td>
-<td>A comprehensive pipeline of Skillsthat replicates traditional publishing infrastructure for nonfiction book creation using specialized Claude skills.</td>
+<td>A comprehensive pipeline of Skills that replicates traditional publishing infrastructure for nonfiction book creation using specialized Claude skills.</td>
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/robertguss/claude-skills?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/robertguss/claude-skills?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/robertguss/claude-skills?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/robertguss/claude-skills?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/robertguss/claude-skills?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/robertguss/claude-skills?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/robertguss/claude-skills?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/robertguss/claude-skills?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/robertguss/claude-skills?style=flat-square" alt="license"></td>
@@ -1052,6 +953,15 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/serpro69/claude-starter-kit?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/serpro69/claude-starter-kit?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/serpro69/claude-starter-kit?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/serpro69/claude-starter-kit?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/serpro69/claude-starter-kit?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/serpro69/claude-starter-kit?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/serpro69/claude-starter-kit?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/serpro69/claude-starter-kit?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/serpro69/claude-starter-kit?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/foxj77/claudectx"><b>ClaudeCTX</b></a><br>by <a href="https://github.com/foxj77">John Fox</a></td>
+<td>Tooling</td>
+<td>Config Managers</td>
+<td>claudectx lets you switch your entire Claude Code configuration with a single command.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/foxj77/claudectx?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/foxj77/claudectx?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/foxj77/claudectx?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/foxj77/claudectx?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/foxj77/claudectx?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/foxj77/claudectx?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/foxj77/claudectx?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/foxj77/claudectx?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/foxj77/claudectx?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/carlrannaberg/claudekit"><b>claudekit</b></a><br>by <a href="https://github.com/carlrannaberg">Carl Rannaberg</a></td>
 <td>Tooling</td>
 <td>General</td>
@@ -1179,21 +1089,12 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 </tr>
 <tr>
 <td><a href="https://github.com/stravu/crystal"><b>crystal</b></a><br>by <a href="https://github.com/stravu">stravu</a></td>
-<td>Tooling</td>
-<td>IDE Integrations</td>
+<td>Alternative Clients</td>
+<td>General</td>
 <td>A full-fledged desktop application for orchestrating, monitoring, and interacting with Claude Code agents.</td>
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/stravu/crystal?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/stravu/crystal?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/stravu/crystal?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/stravu/crystal?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/stravu/crystal?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/stravu/crystal?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/stravu/crystal?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/stravu/crystal?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/stravu/crystal?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/eastlondoner/cursor-tools/blob/main/CLAUDE.md"><b>Cursor Tools</b></a><br>by <a href="https://github.com/eastlondoner">eastlondoner</a></td>
-<td>CLAUDE.md Files</td>
-<td>Domain-Specific</td>
-<td>Creates a versatile AI command interface supporting multiple providers and models with flexible command options and browser automation through "Stagehand" feature.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/eastlondoner/cursor-tools?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/eastlondoner/cursor-tools?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/eastlondoner/cursor-tools?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/eastlondoner/cursor-tools?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/eastlondoner/cursor-tools?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/eastlondoner/cursor-tools?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/eastlondoner/cursor-tools?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/eastlondoner/cursor-tools?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/eastlondoner/cursor-tools?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/OneRedOak/claude-code-workflows/tree/main/design-review"><b>Design Review Workflow</b></a><br>by <a href="https://github.com/OneRedOak">Patrick Ellis</a></td>
@@ -1349,15 +1250,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/cheukyin175/learn-faster-kit?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/cheukyin175/learn-faster-kit?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/cheukyin175/learn-faster-kit?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/cheukyin175/learn-faster-kit?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/cheukyin175/learn-faster-kit?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/cheukyin175/learn-faster-kit?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/cheukyin175/learn-faster-kit?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/cheukyin175/learn-faster-kit?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/cheukyin175/learn-faster-kit?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/metabase/metabase/blob/master/CLAUDE.md"><b>Metabase</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
-<td>CLAUDE.md Files</td>
-<td>Language-Specific</td>
-<td>Details workflow for REPL-driven development in Clojure/ClojureScript with emphasis on incremental development, testing, and step-by-step approach for feature implementation.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/metabase/metabase?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/metabase/metabase?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/metabase/metabase?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/metabase/metabase?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/metabase/metabase?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/metabase/metabase?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/metabase/metabase?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/metabase/metabase?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/metabase/metabase?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/kingler/n8n_agent/tree/main/.claude/commands"><b>n8n_agent</b></a><br>by <a href="https://github.com/kingler">kingler</a></td>
 <td>Workflows & Knowledge Guides</td>
 <td>General</td>
@@ -1374,15 +1266,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/Fimeg/NetworkChronicles?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Fimeg/NetworkChronicles?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Fimeg/NetworkChronicles?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Fimeg/NetworkChronicles?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Fimeg/NetworkChronicles?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Fimeg/NetworkChronicles?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Fimeg/NetworkChronicles?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Fimeg/NetworkChronicles?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Fimeg/NetworkChronicles?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/omnara-ai/omnara"><b>Omnara</b></a><br>by <a href="https://github.com/ishaansehgal99">Ishaan Sehgal</a></td>
-<td>Alternative Clients</td>
-<td>General</td>
-<td>A command center for AI agents that syncs Claude Code sessions across terminal, web, and mobile. Allows for remote monitoring, human-in-the-loop interaction, and team collaboration.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/omnara-ai/omnara?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/omnara-ai/omnara?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/omnara-ai/omnara?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/omnara-ai/omnara?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/omnara-ai/omnara?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/omnara-ai/omnara?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/omnara-ai/omnara?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/omnara-ai/omnara?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/omnara-ai/omnara?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/ParetoSecurity/pareto-mac/blob/main/CLAUDE.md"><b>Pareto Mac</b></a><br>by <a href="https://github.com/ParetoSecurity">ParetoSecurity</a></td>
@@ -1719,6 +1602,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 
 ---
 
-**Total Resources:** 186
+**Total Resources:** 173
 
-**Last Generated:** 2026-02-13
+**Last Generated:** 2026-02-14

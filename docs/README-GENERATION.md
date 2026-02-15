@@ -99,7 +99,7 @@ style_order:
 |------|------------|------------|
 | Add a new resource | Yes | Add row to CSV, run `make generate` |
 | Add a new category | Yes | Use `make add-category` or edit `categories.yaml` |
-| Add a new subcategory | Yes | Edit `categories.yaml`, run generator |
+| Add a new subcategory | Yes | Edit `categories.yaml`, run `make generate-toc-assets`, run generator |
 | Update resource info | Yes | Edit CSV, run `make generate` |
 | Customize asset style | Manual | Edit generator templates or asset files |
 
@@ -178,9 +178,14 @@ The reason for the last field is due to the fact that (i) well, it's good to kno
    - `assets/subheader_{subcat}.svg` - Subcategory header (when resources exist)
    - Section in all README styles
 
-5. **What needs manual creation:**
-   - `assets/toc-row-{category}.svg` and `assets/toc-row-{category}-light-anim-scanline.svg` - TOC row assets
-   - `assets/toc-sub-{subcat}.svg` and `assets/toc-sub-{subcat}-light-anim-scanline.svg` - TOC sub-row assets
+5. **Regenerate subcategory TOC SVGs** (if subcategories were added):
+   ```bash
+   make generate-toc-assets
+   ```
+   This creates/updates `assets/toc-sub-{subcat}.svg` and `assets/toc-sub-{subcat}-light-anim-scanline.svg` files for all subcategories.
+
+6. **What needs manual creation:**
+   - `assets/toc-row-{category}.svg` and `assets/toc-row-{category}-light-anim-scanline.svg` - TOC row assets (category-level)
    - Card assets if using the EXTRA style navigation grid
 
 ## Adding a New Subcategory
@@ -199,7 +204,13 @@ Subcategories can be added to any category.
            name: My New Subcat
    ```
 
-2. **Run the generator** - Subcategory headers are auto-generated; TOC sub-row assets are manual
+2. **Regenerate subcategory TOC SVGs:**
+   ```bash
+   make generate-toc-assets
+   ```
+   This creates/updates the `toc-sub-*.svg` and `toc-sub-*-light-anim-scanline.svg` files in `assets/` for all subcategories.
+
+3. **Run the generator** - Subcategory headers are auto-generated alongside the README content
 
 ## If You Change Category IDs or Names
 
@@ -322,6 +333,7 @@ The tickers:
 | Sort badges | `badge-sort-{type}.svg` | `scripts/readme/helpers/readme_assets.py:generate_flat_badges()` |
 | Category filter badges | `badge-cat-{slug}.svg` | `scripts/readme/helpers/readme_assets.py:generate_flat_badges()` |
 | Repo tickers | `repo-ticker*.svg` | `generate_ticker_svg()` / `generate_awesome_ticker_svg()` |
+| Subcategory TOC rows | `toc-sub-{subcat}.svg`, `toc-sub-{subcat}-light-anim-scanline.svg` | `scripts/readme/helpers/readme_assets.py:regenerate_sub_toc_svgs()` via `make generate-toc-assets` |
 | Style selector badges | `badge-style-{style}.svg` | Manual |
 
 ### Pre-Made Assets (Manual)
@@ -330,7 +342,8 @@ The tickers:
 |-------|---------|
 | `section-divider-alt2.svg` | Dark mode section divider |
 | `desc-box-{top,bottom}.svg` | Dark mode description boxes |
-| `toc-*.svg` | TOC assets (rows, sub-rows, headers; light variants use `-light-anim-scanline`) |
+| `toc-row-*.svg` | Category-level TOC row assets (light variants use `-light-anim-scanline`) |
+| `toc-header*.svg` | TOC header assets (light variants use `-light-anim-scanline`) |
 | `card-*.svg` | Terminal Navigation grid cards |
 | `badge-style-*.svg` | Style selector badges |
 | Hero banners, logos | Top-of-README branding |
@@ -386,6 +399,18 @@ Key asset writers in `scripts/readme/helpers/readme_assets.py`:
 ```python
 # Flat list badges (writes SVGs using scripts/readme/svg_templates/badges.py)
 generate_flat_badges(assets_dir, sort_types, categories)
+
+# Regenerate subcategory TOC SVGs for the Visual (Extra) style
+regenerate_sub_toc_svgs(categories, assets_dir)
+```
+
+Standalone TOC asset script (`scripts/readme/helpers/generate_toc_assets.py`):
+
+```bash
+# Regenerate subcategory TOC SVGs from categories.yaml
+make generate-toc-assets
+# or directly:
+python -m scripts.readme.helpers.generate_toc_assets
 ```
 
 Key functions in `scripts/ticker/generate_ticker_svg.py`:
@@ -446,6 +471,7 @@ awesome-claude-code//
 │   │   │   ├── readme_assets.py
 │   │   │   ├── readme_config.py
 │   │   │   ├── readme_utils.py
+│   │   │   ├── generate_toc_assets.py
 │   │   │   └── readme_paths.py
 │   │   ├── markup/  # Markdown/HTML renderers by style
 │   │   │   ├── awesome.py
@@ -494,11 +520,12 @@ awesome-claude-code//
 ## Makefile Commands
 
 ```bash
-make generate        # Generate all READMEs (sorts CSV first)
-make add-category    # Interactive category addition
-make sort            # Sort resources in CSV
-make validate        # Validate all resource links
-make docs-tree       # Update README-GENERATION tree block
+make generate            # Generate all READMEs (sorts CSV first)
+make generate-toc-assets # Regenerate subcategory TOC SVGs (after adding subcategories)
+make add-category        # Interactive category addition
+make sort                # Sort resources in CSV
+make validate            # Validate all resource links
+make docs-tree           # Update README-GENERATION tree block
 ```
 
 ## Environment Variables

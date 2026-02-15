@@ -74,7 +74,7 @@ A flat list view of all resources. Category: **Skills** | Sorted: alphabetically
 <td><a href="https://github.com/robertguss/claude-skills"><b>Book Factory</b></a><br>by <a href="https://github.com/robertguss">Robert Guss</a></td>
 <td>Agent Skills</td>
 <td>General</td>
-<td>A comprehensive pipeline of Skillsthat replicates traditional publishing infrastructure for nonfiction book creation using specialized Claude skills.</td>
+<td>A comprehensive pipeline of Skills that replicates traditional publishing infrastructure for nonfiction book creation using specialized Claude skills.</td>
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/robertguss/claude-skills?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/robertguss/claude-skills?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/robertguss/claude-skills?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/robertguss/claude-skills?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/robertguss/claude-skills?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/robertguss/claude-skills?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/robertguss/claude-skills?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/robertguss/claude-skills?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/robertguss/claude-skills?style=flat-square" alt="license"></td>
@@ -212,4 +212,4 @@ A flat list view of all resources. Category: **Skills** | Sorted: alphabetically
 
 **Total Resources:** 17
 
-**Last Generated:** 2026-02-13
+**Last Generated:** 2026-02-14

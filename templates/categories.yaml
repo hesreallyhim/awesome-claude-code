@@ -45,6 +45,8 @@ categories:
         name: "Usage Monitors"
       - id: orchestrators
         name: "Orchestrators"
+      - id: config-managers
+        name: "Config Managers"
         
   - id: statusline
     name: "Status Lines"

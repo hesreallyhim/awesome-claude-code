@@ -82,7 +82,8 @@ To add a new category:
    - `description`: Markdown description
    - `subcategories`: Optional list of subcategories
 2. Update `.github/ISSUE_TEMPLATE/recommend-resource.yml` to add the category to the dropdown
-3. Run `make generate` to update the README
+3. If subcategories were added, run `make generate-toc-assets` to create subcategory TOC SVGs
+4. Run `make generate` to update the README
 
 All scripts automatically use the new category without any code changes.
 
@@ -142,7 +143,16 @@ The generated README uses collapsible `<details>` elements for better navigation
 
 **Note on anchor links**: Initially, all categories were made collapsible, but this caused issues with anchor links from the Table of Contents - links couldn't navigate to subcategories when their parent category was collapsed. The current design balances navigation and collapsibility.
 
-### 2a. `ticker/generate_ticker_svg.py`
+### 2a. `readme/helpers/generate_toc_assets.py`
+**Purpose**: Regenerates subcategory TOC SVG assets from `templates/categories.yaml`
+**Usage**: `make generate-toc-assets`
+**Features**:
+- Creates/updates `toc-sub-*.svg` and `toc-sub-*-light-anim-scanline.svg` files in `assets/`
+- Uses `regenerate_sub_toc_svgs()` from `readme_assets.py` with categories from `category_manager`
+- Should be run after adding or modifying subcategories in `templates/categories.yaml`
+- SVGs are used by the Visual (Extra) README style for subcategory TOC rows
+
+### 2b. `ticker/generate_ticker_svg.py`
 **Purpose**: Generates animated SVG tickers showing featured projects
 **Usage**: `python scripts/ticker/generate_ticker_svg.py`
 **Features**:
@@ -151,7 +161,7 @@ The generated README uses collapsible `<details>` elements for better navigation
 - Displays repo name, owner, stars, and daily delta
 - Seamless horizontal scrolling animation
 
-### 2b. `ticker/fetch_repo_ticker_data.py`
+### 2c. `ticker/fetch_repo_ticker_data.py`
 **Purpose**: Fetches GitHub statistics for repos tracked in the ticker
 **Usage**: `python scripts/ticker/fetch_repo_ticker_data.py`
 **Features**:
@@ -284,9 +294,10 @@ make validate         # Validate all links
 
 ### Maintenance Tasks
 ```bash
-make sort            # Sort CSV entries
-make validate        # Check all links
+make sort                # Sort CSV entries
+make validate            # Check all links
 make download-resources  # Archive resources
+make generate-toc-assets # Regenerate subcategory TOC SVGs (after adding subcategories)
 ```
 
 ## Configuration

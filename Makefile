@@ -7,7 +7,7 @@ else
 endif
 SCRIPTS_DIR := ./scripts
 
-.PHONY: help validate validate-single validate-toc test coverage generate test-regenerate test-regenerate-no-cleanup test-regenerate-allow-diff test-regenerate-cycle docs-tree docs-tree-check download-resources add_resource add-category sort format format-check generate-resource-id mypy ci clean clean-all
+.PHONY: help validate validate-single validate-toc test coverage generate generate-toc-assets test-regenerate test-regenerate-no-cleanup test-regenerate-allow-diff test-regenerate-cycle docs-tree docs-tree-check download-resources add_resource add-category sort format format-check generate-resource-id mypy ci clean clean-all
 
 help:
 	@echo "Available commands:"
@@ -22,6 +22,7 @@ help:
 	@echo "  make format-check      - Check code formatting without fixing"
 	@echo "  make ci                - Run format-check, mypy, and tests"
 	@echo "  make generate          - Generate README.md from CSV data, and create SVG badges"
+	@echo "  make generate-toc-assets - Regenerate subcategory TOC SVGs (after adding subcategories)"
 	@echo "  make test-regenerate   - Regenerate READMEs after deletion and fail if diff"
 	@echo "  make generate-resource-id - Interactive resource ID generator"
 	@echo "  make download-resources - Download active resources from GitHub"
@@ -131,6 +132,11 @@ clean-all: clean
 sort:
 	@echo "Sorting resources in THE_RESOURCES_TABLE.csv..."
 	$(PYTHON) -m scripts.resources.sort_resources
+
+# Regenerate subcategory TOC SVGs from categories.yaml
+generate-toc-assets:
+	@echo "Regenerating subcategory TOC SVGs..."
+	$(PYTHON) -m scripts.readme.helpers.generate_toc_assets
 
 # Generate README.md from CSV data using template system
 generate: sort
