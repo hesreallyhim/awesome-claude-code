@@ -75,7 +75,9 @@ Claude Code is a CLI-based coding assistant from [Anthropic](https://www.anthrop
 - [Official Documentation 🏛️](#official-documentation-%EF%B8%8F)
   - [General](#general-7)
 
-## Agent Skills 🤖
+## Agent Skills
+
+- [Orchard Kit](https://github.com/OrchardHarmonics/orchard-kit) — Alignment, safety & cognitive architecture for autonomous AI agents. Six modules: membrane security, epistemic tagger, self-audit, beacon, cognitive architecture, collective cognition. Zero dependencies. 🤖
 
 > Agent skills are model-controlled configurations (files, scripts, resources, etc.) that enable Claude Code to perform specialized tasks requiring specific knowledge or capabilities.
 
