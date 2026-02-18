@@ -364,6 +364,7 @@ Claude Code is a CLI-based coding assistant from [Anthropic](https://www.anthrop
 - [Anthropic Documentation](https://docs.claude.com/en/home) by [Anthropic](https://github.com/anthropics) - The official documentation for Claude Code, including installation instructions, usage guidelines, API references, tutorials, examples, loads of information that I won't list individually. Like Claude Code, the documentation is frequently updated.
 - [Anthropic Quickstarts](https://github.com/anthropics/claude-quickstarts) by [Anthropic](https://github.com/anthropics) - Offers comprehensive development guides for three distinct AI-powered demo projects with standardized workflows, strict code style guidelines, and containerization instructions.
 - [Claude Code GitHub Actions](https://github.com/anthropics/claude-code-action/tree/main/examples) by [Anthropic](https://github.com/anthropics) - Official GitHub Actions integration for Claude Code with examples and documentation for automating AI-powered workflows in CI/CD pipelines.
+- [Mysti](https://github.com/DeepMyst/Mysti) - Multi-agent AI coding assistant for VS Code. Unified interface for Claude Code, Codex, Gemini, Cline, and Copilot with brainstorm mode, conversation persistence, and MCP integration.
 
 
 ## Contributing [🔝](#awesome-claude-code)
