@@ -222,6 +222,7 @@ Claude Code is a CLI-based coding assistant from [Anthropic](https://www.anthrop
 - [claude-code-statusline](https://github.com/rz1989s/claude-code-statusline) by [rz1989s](https://github.com/rz1989s) - Enhanced 4-line statusline for Claude Code with themes, cost tracking, and MCP server monitoring.
 - [claude-powerline](https://github.com/Owloops/claude-powerline) by [Owloops](https://github.com/Owloops) - A vim-style powerline statusline for Claude Code with real-time usage tracking, git integration, custom themes, and more.
 - [claudia-statusline](https://github.com/hagan/claudia-statusline) by [Hagan Franks](https://github.com/hagan) - High-performance Rust-based statusline for Claude Code with persistent stats tracking, progress bars, and optional cloud sync. Features SQLite-first persistence, git integration, context progress bars, burn rate calculation, XDG-compliant with theme support (dark/light, NO_COLOR).
+- [oh-my-claude](https://github.com/npow/oh-my-claude) by [npow](https://github.com/npow) - Like oh-my-zsh but for Claude Code. An extensible statusline framework with themes (tamagotchi, boss-battle, RPG, narrator, and more), dozens of mix-and-match segments, and a plugin system for custom segments. Zero npm dependencies.
 
 <br>
 
