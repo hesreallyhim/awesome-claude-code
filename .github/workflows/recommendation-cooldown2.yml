@@ -1,0 +1,341 @@
+name: Recommendation Cooldown
+# Tracks rule violations and applies exponential cooldown periods.
+# Violations: missing form label, repo too young, submitting during cooldown.
+# State persisted via workflow artifacts. Level 6 = permanent ban.
+
+on:
+  issues:
+    types: [opened, reopened]
+
+concurrency:
+  group: cooldown-enforcement
+  cancel-in-progress: false
+
+jobs:
+  enforce-cooldown:
+    runs-on: ubuntu-latest
+    # Skip if the issue has the "excused" label (maintainer override)
+    if: ${{ !contains(github.event.issue.labels.*.name, 'excused') }}
+    outputs:
+      allowed: ${{ steps.enforce.outputs.allowed }}
+
+    steps:
+      # ----------------------------------------------------------
+      # 1. Download the latest cooldown state artifact (if any)
+      # ----------------------------------------------------------
+      - name: Download cooldown state
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            // Find the most recent 'cooldown-state' artifact across all runs
+            const artifacts = await github.rest.actions.listArtifactsForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              name: 'cooldown-state',
+              per_page: 1
+            });
+
+            if (artifacts.data.total_count === 0) {
+              console.log('No existing cooldown state found. Starting fresh.');
+              fs.writeFileSync('cooldown-state.json', '{}');
+              return;
+            }
+
+            const artifact = artifacts.data.artifacts[0];
+            console.log(`Downloading artifact ${artifact.id} from run ${artifact.workflow_run.id}`);
+
+            const download = await github.rest.actions.downloadArtifact({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              artifact_id: artifact.id,
+              archive_format: 'zip'
+            });
+
+            fs.writeFileSync('cooldown-state.zip', Buffer.from(download.data));
+
+      - name: Extract state file
+        run: |
+          if [ -f cooldown-state.zip ]; then
+            unzip -o cooldown-state.zip -d .
+            rm cooldown-state.zip
+          fi
+          # Ensure the file exists even if unzip produced nothing
+          if [ ! -f cooldown-state.json ]; then
+            echo '{}' > cooldown-state.json
+          fi
+          cat cooldown-state.json
+
+      # ----------------------------------------------------------
+      # 2. Run the enforcement logic
+      # ----------------------------------------------------------
+      - name: Enforce cooldown rules
+        id: enforce
+        uses: actions/github-script@v7
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        with:
+          script: |
+            const fs = require('fs');
+            const author = context.payload.issue.user.login;
+            const issueNumber = context.payload.issue.number;
+            const repo = context.repo;
+            const issueBody = process.env.ISSUE_BODY || '';
+            const labels = context.payload.issue.labels.map(l => l.name);
+            const now = new Date();
+
+            // Load state
+            let state = {};
+            try {
+              state = JSON.parse(fs.readFileSync('cooldown-state.json', 'utf8'));
+            } catch {
+              state = {};
+            }
+
+            const userState = state[author] || null;
+            let stateChanged = false;
+
+            // Helper: record a violation and set cooldown
+            function recordViolation(reason) {
+              const level = userState
+                ? userState.cooldown_level
+                : 0;
+
+              if (level >= 6) {
+                // Level 6 = permanent ban
+                state[author] = {
+                  active_until: '9999-01-01T00:00:00Z',
+                  cooldown_level: 6,
+                  banned: true,
+                  last_violation: now.toISOString(),
+                  last_reason: reason
+                };
+              } else {
+                const hours = 24 * Math.pow(2, level);
+                const activeUntil = new Date(
+                  now.getTime() + hours * 60 * 60 * 1000
+                );
+                state[author] = {
+                  active_until: activeUntil.toISOString(),
+                  cooldown_level: level + 1,
+                  last_violation: now.toISOString(),
+                  last_reason: reason
+                };
+              }
+
+              stateChanged = true;
+            }
+
+            // Helper: close issue with comment
+            async function closeWithComment(comment) {
+              await github.rest.issues.createComment({
+                ...repo,
+                issue_number: issueNumber,
+                body: comment
+              });
+
+              await github.rest.issues.update({
+                ...repo,
+                issue_number: issueNumber,
+                state: 'closed',
+                state_reason: 'not_planned'
+              });
+            }
+
+            // Helper: format remaining time as rounded days
+            function formatRemaining(activeUntilISO) {
+              const remaining = new Date(activeUntilISO) - now;
+              const days = Math.ceil(remaining / (1000 * 60 * 60 * 24));
+              if (days <= 0) return 'less than a day';
+              if (days === 1) return '1 day';
+              return `${days} days`;
+            }
+
+            // ==========================================================
+            // CHECK 1: Is the author currently in cooldown?
+            // ==========================================================
+            if (userState) {
+              // Permanent ban check
+              if (userState.banned === true) {
+                await closeWithComment(
+                  `This account has been permanently restricted from ` +
+                  `submitting recommendations due to repeated violations. ` +
+                  `If you believe this is in error, please open a discussion ` +
+                  `or contact the maintainer.`
+                );
+                console.log(
+                  `BANNED: ${author} — rejected #${issueNumber}`
+                );
+                core.setOutput('allowed', 'false');
+                fs.writeFileSync(
+                  'cooldown-state.json',
+                  JSON.stringify(state, null, 2)
+                );
+                return;
+              }
+
+              // Active cooldown check
+              const activeUntil = new Date(userState.active_until);
+
+              if (activeUntil > now) {
+                // Submitting during cooldown is itself a violation
+                const prevLevel = userState.cooldown_level;
+                recordViolation('submitted-during-cooldown');
+
+                const updated = state[author];
+                const waitTime = updated.banned
+                  ? 'This restriction is now permanent.'
+                  : `Please wait at least **${formatRemaining(updated.active_until)}** before opening any more submissions.`;
+
+                await closeWithComment(
+                  `A cooldown period is currently in effect for your account. ` +
+                  `Submitting during an active cooldown extends the restriction.\n\n` +
+                  `${waitTime}\n\n` +
+                  `Please review the [CONTRIBUTING guidelines](../blob/main/CONTRIBUTING.md) ` +
+                  `and [pinned issues](https://github.com/${repo.owner}/${repo.repo}/issues) ` +
+                  `before your next submission.`
+                );
+
+                console.log(
+                  `COOLDOWN: ${author} — rejected #${issueNumber}, ` +
+                  `level ${prevLevel} → ${updated.cooldown_level}`
+                );
+                core.setOutput('allowed', 'false');
+                fs.writeFileSync(
+                  'cooldown-state.json',
+                  JSON.stringify(state, null, 2)
+                );
+                return;
+              }
+
+              // Cooldown expired — fall through to violation checks
+              console.log(`${author}: cooldown expired. Checking for violations.`);
+            }
+
+            // ==========================================================
+            // CHECK 2: Missing "resource-submission" label?
+            //   Issue was not submitted via the web form.
+            // ==========================================================
+            if (!labels.includes('resource-submission')) {
+              recordViolation('missing-resource-submission-label');
+
+              const updated = state[author];
+
+              await closeWithComment(
+                `This submission was not made through the required web form. ` +
+                `As noted in [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md), ` +
+                `recommendations must be submitted using the ` +
+                `[web form](https://github.com/${repo.owner}/${repo.repo}/issues/new?template=recommend-resource.yml).\n\n` +
+                `A cooldown of **${formatRemaining(updated.active_until)}** has been applied. ` +
+                `Please use the web form for your next submission.`
+              );
+
+              console.log(
+                `VIOLATION (no label): ${author} — rejected #${issueNumber}, ` +
+                `level → ${updated.cooldown_level}`
+              );
+              core.setOutput('allowed', 'false');
+              fs.writeFileSync(
+                'cooldown-state.json',
+                JSON.stringify(state, null, 2)
+              );
+              return;
+            }
+
+            // ==========================================================
+            // CHECK 3: Repo less than 1 week old?
+            //   Parse the first GitHub URL found in the issue body.
+            //   If no GitHub URL found, skip this check.
+            // ==========================================================
+            const repoUrlPattern =
+              /https?:\/\/github\.com\/([^\/\s]+)\/([^\/\s#?"]+)/g;
+            const repoMatches = [...issueBody.matchAll(repoUrlPattern)];
+
+            if (repoMatches.length > 0) {
+              const [, repoOwner, rawRepoName] = repoMatches[0];
+              const repoName = rawRepoName.replace(/\.git$/, '');
+
+              try {
+                const repoData = await github.rest.repos.get({
+                  owner: repoOwner,
+                  repo: repoName
+                });
+
+                const created = new Date(repoData.data.created_at);
+                const ageDays = (now - created) / (1000 * 60 * 60 * 24);
+
+                if (ageDays < 7) {
+                  recordViolation('repo-too-young');
+
+                  const updated = state[author];
+                  const readyDate = new Date(created);
+                  readyDate.setDate(readyDate.getDate() + 7);
+                  const readyStr = readyDate.toLocaleDateString('en-US', {
+                    month: 'long', day: 'numeric', year: 'numeric'
+                  });
+
+                  await closeWithComment(
+                    `Thanks for the recommendation! This repository is less ` +
+                    `than a week old. We ask that projects have some time in ` +
+                    `the wild before being recommended — you're welcome to ` +
+                    `re-submit after **${readyStr}**.\n\n` +
+                    `A cooldown of **${formatRemaining(updated.active_until)}** ` +
+                    `has been applied.`
+                  );
+
+                  console.log(
+                    `VIOLATION (repo age): ${author} — rejected #${issueNumber}, ` +
+                    `${repoOwner}/${repoName} is ${ageDays.toFixed(1)}d old, ` +
+                    `level → ${updated.cooldown_level}`
+                  );
+                  core.setOutput('allowed', 'false');
+                  fs.writeFileSync(
+                    'cooldown-state.json',
+                    JSON.stringify(state, null, 2)
+                  );
+                  return;
+                }
+              } catch (e) {
+                // Repo not found, private, or API error — skip
+                console.log(
+                  `Skipping repo age check for ${repoOwner}/${repoName}: ${e.message}`
+                );
+              }
+            } else {
+              console.log('No GitHub URL in issue body. Skipping repo age check.');
+            }
+
+            // ==========================================================
+            // No violations — allow through for normal processing
+            // ==========================================================
+            console.log(
+              `CLEAN: ${author} — issue #${issueNumber} allowed through.`
+            );
+            core.setOutput('allowed', 'true');
+
+            // Always write state so the artifact stays fresh
+            fs.writeFileSync(
+              'cooldown-state.json',
+              JSON.stringify(state, null, 2)
+            );
+
+      # ----------------------------------------------------------
+      # 3. Upload updated state as artifact (always, even on failure)
+      # ----------------------------------------------------------
+      - name: Upload cooldown state
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cooldown-state
+          path: cooldown-state.json
+          overwrite: true
+          retention-days: 400
+
+  # ----------------------------------------------------------
+  # Second job: run validation only if cooldown allowed it
+  # ----------------------------------------------------------
+  validate:
+    needs: enforce-cooldown
+    if: needs.enforce-cooldown.outputs.allowed == 'true'
+    uses: ./.github/workflows/validate-new-issue.yml

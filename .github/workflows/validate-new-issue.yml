@@ -1,8 +1,9 @@
 name: Validate New Issue
 
 on:
-  issues:
-    types: [opened, reopened, edited]
+  workflow_call:
+  # issues:
+    # types: [opened, reopened, edited]
     # This listens for events on the issue body itself,
     # which is what the bot checks for validation.
     # This is not for handling comments.
