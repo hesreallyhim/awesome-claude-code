@@ -60,9 +60,9 @@ A flat list view of all resources. Category: **Commands** | Sorted: by latest re
 <tbody>
 <tr>
 <td><a href="https://github.com/giselles-ai/giselle/blob/main/.claude/commands/update-branch-name.md"><b>/update-branch-name</b></a><br>by <a href="https://github.com/giselles-ai">giselles-ai</a></td>
-<td>v0.63.1</td>
+<td>v0.65.0</td>
 <td>GitHub</td>
-<td>2026-02-13</td>
+<td>2026-02-20</td>
 <td>Updates branch names with proper prefixes and formats, enforcing naming conventions, supporting semantic prefixes, and managing remote branch updates.</td>
 </tr>
 <tr>
@@ -85,4 +85,4 @@ A flat list view of all resources. Category: **Commands** | Sorted: by latest re
 
 **Total Resources:** 2
 
-**Last Generated:** 2026-02-15
+**Last Generated:** 2026-02-22

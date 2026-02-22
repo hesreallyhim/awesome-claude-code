@@ -199,22 +199,6 @@ _claudectx lets you switch your entire Claude Code configuration with a single c
 _Workflow automation system for Claude with a group of useful plugins, agents, and skills. Automates task-to-production workflows, PR management, code cleanup, performance investigation, drift detection, and multi-agent code review. Includes [agnix](https://github.com/avifenesh/agnix) for linting agent configurations. Built on thousands of lines of code with thousands of tests. Uses deterministic detection (regex, AST) with LLM judgment for efficiency. Used on many production systems._  
 ![GitHub Stats for agentsys](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=agentsys&username=avifenesh&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
-<a href="https://github.com/AndyMik90/Auto-Claude"><img src="../assets/badge-auto-claude.svg" alt="Auto-Claude"></a>  
-_Autonomous multi-agent coding framework for Claude Code (Claude Agent SDK) that integrates the full SDLC - "plans, builds, and validates software for you". Features a slick kanban-style UI and a well-designed but not over-engineered agent orchestration system._  
-![GitHub Stats for Auto-Claude](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Auto-Claude&username=AndyMik90&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/undeadlist/claude-code-agents"><img src="../assets/badge-claude-code-agents.svg" alt="Claude Code Agents"></a>  
-_Comprehensive E2E development workflow with helpful Claude Code subagent prompts for solo devs. Run multiple auditors in parallel, automate fix cycles with micro-checkpoint protocols, and do browser-based QA. Includes strict protocols to prevent AI going rogue._  
-![GitHub Stats for claude-code-agents](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-agents&username=undeadlist&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/FlorianBruniaux/claude-code-ultimate-guide"><img src="../assets/badge-claude-code-ultimate-guide.svg" alt="Claude Code Ultimate Guide"></a>  
-_A tremendous feat of documentation, this guide covers Claude Code from beginner to power user, with production-ready templates for Claude Code features, guides on agentic workflows, and a lot of great learning materials, including quizzes and a handy "cheatsheet". Whether it's the "ultimate" guide to Claude Code will be up to the reader, but a valuable resource nonetheless (as with all documentation sites, make sure it's up to date before you bet the farm)._  
-![GitHub Stats for claude-code-ultimate-guide](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-ultimate-guide&username=FlorianBruniaux&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/robertguss/claude-skills"><img src="../assets/badge-book-factory.svg" alt="Book Factory"></a>  
-_A comprehensive pipeline of Skills that replicates traditional publishing infrastructure for nonfiction book creation using specialized Claude skills._  
-![GitHub Stats for claude-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-skills&username=robertguss&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
 
 <br>
 
