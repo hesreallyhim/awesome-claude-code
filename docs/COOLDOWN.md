@@ -22,7 +22,10 @@ What happens if any of the above requirements are violated:
 1st Time: 1-day cooldown period (no more posts during this time) \
 2nd Time: 2-day cooldown period \
 3rd TIme: 4-day cooldown period \
-4th Time: 8-day cooldown period
+4th Time: 8-day cooldown period \
+5th Time: 16-day cooldown period \
+5th Time: 32-day cooldown period \
+6th Time: Permanent Ban
 
 **"Cooldown"** - no interactions with the respository during this time. It corresponds to a temporary ban such as described in the Code of Conduct, and reflects the seriousness of respecting the Community Guidelines and Contributing Guidelines of any repository whatsoever. The conditions I've laid out are not hard to comply with by anyone who has visited the repository and read the CONTRIBUTING doc, which is, as a matter of course, your obligation to do before enngaging with a repository. GitHub is a very nice place, where people are held to a somewhat higher standard, and it's my responsibility to follow the rules of conduct that I have set out.
 
