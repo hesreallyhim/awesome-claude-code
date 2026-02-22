@@ -1,0 +1,142 @@
+name: Close Resource Submission PRs
+
+on:
+  pull_request_target:
+    types: [opened]
+
+jobs:
+  detect-and-close:
+    name: Classify and Close Resource PRs
+    runs-on: ubuntu-latest
+
+    if: github.event.pull_request.user.type != 'Bot'
+
+    permissions:
+      pull-requests: write
+
+    steps:
+      - name: Get changed files
+        id: files
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const files = await github.rest.pulls.listFiles({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number,
+              per_page: 50,
+            });
+            return files.data.map(f => f.filename).join('\n');
+          result-encoding: string
+
+      - name: Classify PR with Claude
+        id: classify
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_BODY: ${{ github.event.pull_request.body }}
+          PR_FILES: ${{ steps.files.outputs.result }}
+        run: |
+          # Use jq to safely construct JSON (handles all escaping)
+          PAYLOAD=$(jq -n \
+            --arg title "$PR_TITLE" \
+            --arg body "${PR_BODY:0:2000}" \
+            --arg files "$PR_FILES" \
+            '{
+              model: "claude-haiku-4-5-20251001",
+              max_tokens: 50,
+              system: "You classify GitHub pull requests for the awesome-claude-code repository (a curated awesome-list of tools, skills, hooks, and resources for the coding agent Claude Code).\n\nA \"resource submission\" is any PR that attempts to add, recommend, or promote a tool, project, library, skill, MCP server, hook, workflow, guide, or ANY resource whatsoever to the list. This includes any PR that edit THE_RESOURCES_TABLE.csv.\n\nA \"not resource submission\" is a PR that fixes bugs, improves CI/workflows, corrects typos, updates documentation about the repo itself (not adding a new external resource), refactors code, or makes other repository maintenance changes.\n\nRespond with ONLY a JSON object, no markdown fences: {\"classification\": \"resource_submission\" | \"not_resource_submission\", \"confidence\": \"high\" | \"low\"}",
+              messages: [
+                {
+                  role: "user",
+                  content: ("PR Title: " + $title + "\n\nPR Body:\n" + $body + "\n\nChanged files:\n" + $files)
+                }
+              ]
+            }')
+
+          RESPONSE=$(curl -sf https://api.anthropic.com/v1/messages \
+            -H "content-type: application/json" \
+            -H "x-api-key: $ANTHROPIC_API_KEY" \
+            -H "anthropic-version: 2023-06-01" \
+            -d "$PAYLOAD") || {
+            echo "API call failed"
+            echo "classification=error" >> "$GITHUB_OUTPUT"
+            echo "confidence=none" >> "$GITHUB_OUTPUT"
+            exit 0
+          }
+
+          # Extract Claude's text response, then parse the JSON within it
+          TEXT=$(echo "$RESPONSE" | jq -r '.content[0].text')
+          echo "Claude response: $TEXT"
+
+          CLASSIFICATION=$(echo "$TEXT" | jq -r '.classification // "error"')
+          CONFIDENCE=$(echo "$TEXT" | jq -r '.confidence // "low"')
+
+          echo "Classification: $CLASSIFICATION"
+          echo "Confidence: $CONFIDENCE"
+          echo "classification=$CLASSIFICATION" >> "$GITHUB_OUTPUT"
+          echo "confidence=$CONFIDENCE" >> "$GITHUB_OUTPUT"
+
+      - name: Post comment and close PR
+        if: steps.classify.outputs.classification == 'resource_submission'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr_number = context.payload.pull_request.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const templateUrl = `https://github.com/${owner}/${repo}/issues/new?template=recommend-resource.yml`;
+            const contributingUrl = `https://github.com/${owner}/${repo}/blob/main/docs/CONTRIBUTING.md`;
+
+            const body = [
+              '## ⚠️ Resource recommendations are not accepted via pull request',
+              '',
+              'Thank you for your interest in contributing to Awesome Claude Code!',
+              '',
+              'However, resource recommendations **must** be submitted through our issue template, not as a pull request. The entire resource pipeline — validation, review, and merging — is managed by automatioEven the maintainer does not use PRs to add entries to the list.',
+              '',
+              '**To submit your resource correctly:**',
+              '',
+              `1. 📖 Read the [CONTRIBUTING.md](${contributingUrl}) document`,
+              `2. 📝 [Submit your resource using the official template](${templateUrl})`,
+              '3. ✅ The bot will validate your submission automatically',
+              '4. 👀 A maintainer will review it once validation passes',
+              '',
+              'If this PR is **not** a resource submission (e.g., it\'s a bug fix or improvement), please comment below and we\'ll reopen it.',
+              '',
+              '---',
+              '*This PR was automatically closed.*',
+            ].join('\n');
+
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: pr_number,
+              body,
+            });
+
+            await github.rest.pulls.update({
+              owner,
+              repo,
+              pull_number: pr_number,
+              state: 'closed',
+            });
+
+            await github.rest.issues.addLabels({
+              owner,
+              repo,
+              issue_number: pr_number,
+              labels: ['needs-template'],
+            });
+
+      - name: Flag low-confidence non-resource PR for review
+        if: steps.classify.outputs.classification == 'not_resource_submission' && steps.classify.outputs.confidence == 'low'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              labels: ['needs-review'],
+            });

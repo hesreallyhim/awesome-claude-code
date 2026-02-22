@@ -59,6 +59,26 @@ A flat list view of all resources. Category: **Status** | Sorted: by latest rele
 </thead>
 <tbody>
 <tr>
+<td><a href="https://github.com/Owloops/claude-powerline"><b>claude-powerline</b></a><br>by <a href="https://github.com/Owloops">Owloops</a></td>
+<td>v1.17.2</td>
+<td>GitHub</td>
+<td>2026-02-18</td>
+<td>A vim-style powerline statusline for Claude Code with real-time usage tracking, git integration, custom themes, and more</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/Owloops/claude-powerline?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Owloops/claude-powerline?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Owloops/claude-powerline?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Owloops/claude-powerline?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Owloops/claude-powerline?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Owloops/claude-powerline?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Owloops/claude-powerline?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Owloops/claude-powerline?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Owloops/claude-powerline?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/rz1989s/claude-code-statusline"><b>claude-code-statusline</b></a><br>by <a href="https://github.com/rz1989s">rz1989s</a></td>
+<td>v2.18.0</td>
+<td>GitHub</td>
+<td>2026-02-15</td>
+<td>Enhanced 4-line statusline for Claude Code with themes, cost tracking, and MCP server monitoring</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/rz1989s/claude-code-statusline?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/rz1989s/claude-code-statusline?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/rz1989s/claude-code-statusline?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/rz1989s/claude-code-statusline?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/rz1989s/claude-code-statusline?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/rz1989s/claude-code-statusline?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/rz1989s/claude-code-statusline?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/rz1989s/claude-code-statusline?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/rz1989s/claude-code-statusline?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/Haleclipse/CCometixLine"><b>CCometixLine - Claude Code Statusline</b></a><br>by <a href="https://github.com/Haleclipse">Haleclipse</a></td>
 <td>v1.1.1</td>
 <td>GitHub</td>
@@ -68,26 +88,6 @@ A flat list view of all resources. Category: **Status** | Sorted: by latest rele
 <tr>
 <td colspan="5"><img src="https://img.shields.io/github/stars/Haleclipse/CCometixLine?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Haleclipse/CCometixLine?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Haleclipse/CCometixLine?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Haleclipse/CCometixLine?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Haleclipse/CCometixLine?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Haleclipse/CCometixLine?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Haleclipse/CCometixLine?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Haleclipse/CCometixLine?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Haleclipse/CCometixLine?style=flat-square" alt="license"></td>
 </tr>
-<tr>
-<td><a href="https://github.com/rz1989s/claude-code-statusline"><b>claude-code-statusline</b></a><br>by <a href="https://github.com/rz1989s">rz1989s</a></td>
-<td>v2.17.0</td>
-<td>GitHub</td>
-<td>2026-01-23</td>
-<td>Enhanced 4-line statusline for Claude Code with themes, cost tracking, and MCP server monitoring</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/rz1989s/claude-code-statusline?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/rz1989s/claude-code-statusline?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/rz1989s/claude-code-statusline?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/rz1989s/claude-code-statusline?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/rz1989s/claude-code-statusline?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/rz1989s/claude-code-statusline?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/rz1989s/claude-code-statusline?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/rz1989s/claude-code-statusline?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/rz1989s/claude-code-statusline?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/hagan/claudia-statusline"><b>claudia-statusline</b></a><br>by <a href="https://github.com/hagan">Hagan Franks</a></td>
-<td>v2.22.1</td>
-<td>GitHub</td>
-<td>2026-01-17</td>
-<td>High-performance Rust-based statusline for Claude Code with persistent stats tracking, progress bars, and optional cloud sync. Features SQLite-first persistence, git integration, context progress bars, burn rate calculation, XDG-compliant with theme support (dark/light, NO_COLOR).</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/hagan/claudia-statusline?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/hagan/claudia-statusline?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/hagan/claudia-statusline?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/hagan/claudia-statusline?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/hagan/claudia-statusline?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/hagan/claudia-statusline?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/hagan/claudia-statusline?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/hagan/claudia-statusline?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/hagan/claudia-statusline?style=flat-square" alt="license"></td>
-</tr>
 </tbody>
 </table>
 
@@ -95,4 +95,4 @@ A flat list view of all resources. Category: **Status** | Sorted: by latest rele
 
 **Total Resources:** 3
 
-**Last Generated:** 2026-02-15
+**Last Generated:** 2026-02-22

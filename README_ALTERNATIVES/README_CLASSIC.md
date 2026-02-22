@@ -79,50 +79,6 @@ Workflow automation system for Claude with a group of useful plugins, agents, an
 </details>
 <br>
 
-[`Auto-Claude`](https://github.com/AndyMik90/Auto-Claude) &nbsp; by &nbsp; [AndyMik90](https://github.com/AndyMik90)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;AGPL-3.0  
-Autonomous multi-agent coding framework for Claude Code (Claude Agent SDK) that integrates the full SDLC - "plans, builds, and validates software for you". Features a slick kanban-style UI and a well-designed but not over-engineered agent orchestration system.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for Auto-Claude](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Auto-Claude&username=AndyMik90&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Claude Code Agents`](https://github.com/undeadlist/claude-code-agents) &nbsp; by &nbsp; [Paul - UndeadList](https://github.com/undeadlist)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Comprehensive E2E development workflow with helpful Claude Code subagent prompts for solo devs. Run multiple auditors in parallel, automate fix cycles with micro-checkpoint protocols, and do browser-based QA. Includes strict protocols to prevent AI going rogue.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claude-code-agents](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-agents&username=undeadlist&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Claude Code Ultimate Guide`](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) &nbsp; by &nbsp; [Florian BRUNIAUX](https://www.linkedin.com/in/florian-bruniaux-43408b83/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;CC-BY-SA-4.0  
-A tremendous feat of documentation, this guide covers Claude Code from beginner to power user, with production-ready templates for Claude Code features, guides on agentic workflows, and a lot of great learning materials, including quizzes and a handy "cheatsheet". Whether it's the "ultimate" guide to Claude Code will be up to the reader, but a valuable resource nonetheless (as with all documentation sites, make sure it's up to date before you bet the farm).
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claude-code-ultimate-guide](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-ultimate-guide&username=FlorianBruniaux&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Book Factory`](https://github.com/robertguss/claude-skills) &nbsp; by &nbsp; [Robert Guss](https://github.com/robertguss)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A comprehensive pipeline of Skills that replicates traditional publishing infrastructure for nonfiction book creation using specialized Claude skills.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claude-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-skills&username=robertguss&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
 
 ## Contents [🔝](#awesome-claude-code)
 

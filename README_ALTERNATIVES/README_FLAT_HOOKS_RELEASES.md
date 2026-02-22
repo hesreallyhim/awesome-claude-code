@@ -59,24 +59,24 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by latest relea
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/aannoo/claude-hook-comms"><b>Claude Code Hook Comms (HCOM)</b></a><br>by <a href="https://github.com/aannoo">aannoo</a></td>
-<td>v0.6.19</td>
-<td>GitHub</td>
-<td>2026-02-14</td>
-<td>Lightweight CLI tool for real-time communication between Claude Code sub agents using hooks. Enables multi-agent collaboration with @-mention targeting, live dashboard monitoring, and zero-dependency implementation. [NOTE: At the time of posting, this resource is a little unstable - I'm sharing it anyway, because I think it's incredibly promising and creative. I hope by the time you read this, it is production-ready.]</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/aannoo/claude-hook-comms?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/aannoo/claude-hook-comms?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/aannoo/claude-hook-comms?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/aannoo/claude-hook-comms?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/aannoo/claude-hook-comms?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/aannoo/claude-hook-comms?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/aannoo/claude-hook-comms?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/aannoo/claude-hook-comms?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/aannoo/claude-hook-comms?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/backnotprop/plannotator"><b>Plannotator</b></a><br>by <a href="https://github.com/backnotprop">backnotprop</a></td>
-<td>v0.8.0</td>
+<td>v0.8.5</td>
 <td>GitHub</td>
-<td>2026-02-13</td>
+<td>2026-02-21</td>
 <td>Interactive plan review UI that intercepts ExitPlanMode via hooks, letting users visually annotate plans with comments, deletions, and replacements before approving or denying with detailed feedback.</td>
 </tr>
 <tr>
 <td colspan="5"><img src="https://img.shields.io/github/stars/backnotprop/plannotator?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/backnotprop/plannotator?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/backnotprop/plannotator?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/backnotprop/plannotator?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/backnotprop/plannotator?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/backnotprop/plannotator?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/backnotprop/plannotator?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/backnotprop/plannotator?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/backnotprop/plannotator?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/aannoo/claude-hook-comms"><b>Claude Code Hook Comms (HCOM)</b></a><br>by <a href="https://github.com/aannoo">aannoo</a></td>
+<td>v0.6.20</td>
+<td>GitHub</td>
+<td>2026-02-16</td>
+<td>Lightweight CLI tool for real-time communication between Claude Code sub agents using hooks. Enables multi-agent collaboration with @-mention targeting, live dashboard monitoring, and zero-dependency implementation. [NOTE: At the time of posting, this resource is a little unstable - I'm sharing it anyway, because I think it's incredibly promising and creative. I hope by the time you read this, it is production-ready.]</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/aannoo/claude-hook-comms?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/aannoo/claude-hook-comms?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/aannoo/claude-hook-comms?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/aannoo/claude-hook-comms?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/aannoo/claude-hook-comms?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/aannoo/claude-hook-comms?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/aannoo/claude-hook-comms?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/aannoo/claude-hook-comms?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/aannoo/claude-hook-comms?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/nizos/tdd-guard"><b>TDD Guard</b></a><br>by <a href="https://github.com/nizos">Nizar Selander</a></td>
@@ -95,4 +95,4 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by latest relea
 
 **Total Resources:** 3
 
-**Last Generated:** 2026-02-15
+**Last Generated:** 2026-02-22

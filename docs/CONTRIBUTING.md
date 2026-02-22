@@ -2,6 +2,9 @@
 
 Please take a moment to read through this docoument if you plan to submit something for recommendation.
 
+> [!WARNING]
+> Due to recent activity that is visible across various repositories, stricter measures have been put in place to reduce spam. Policies have changed very little, only their enforcement will be much stricter going forward, and I will have little patience for anyone who neglects to read this document before opening an issue. Please see [COOLDOWN](./COOLDOWN.md) for additional information.
+
 - I am very grateful to receive recommendations from the visitors to this list. But be aware that there is no formal submission/review process at the moment. My responsibility is to share links to awesome things. One way I find out about awesome things is via the repo's issues, and I'm very grateful to everyone who shares their amazing work. But it's not the only way, and creating an issue does not represent any sort of contract.
 - Bear in mind that the point of an Awesome List is to be *selective* - I cannot recommend every single resource that is submitted.
 - The goal of this list is to identify and highlight resources that provide value to the Claude Code community - not the other way around. Please do not create any repositories just so that you can submit them to this list. And don't plan a marketing strategy that has anything to do with being added to the list.
@@ -14,6 +17,8 @@ If getting a review from the maintainer is important to you, here are some thing
 - Try to make it as easy and as fast as possible for the user to see the value in your software. If you make bold claims, you must be prepared to offer clear and convincing evidence. Tell me exactly what task I should give to Claude and what prompts I should use.
 
 ## How to Recommend a Resource
+
+**NOTE: ALL RECOMMENDATIONS MUST BE MADE USING THE WEB UI ISSUE FORM TEMPLATE, OR YOU RISK BEING BANNED FROM INTERACTING WITH THIS REPOSITORY TEMPORARILY OR PERMANENTLY.**
 
 First, make sure you've read the above information. Second, make sure you've read, and agree with, the [Code of Conduct](./CODE_OF_CONDUCT.md) Then:
 

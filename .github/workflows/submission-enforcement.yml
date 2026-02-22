@@ -1,0 +1,554 @@
+name: Submission Enforcement
+# Unified workflow: cooldown enforcement for issues, Claude-powered PR
+# classification, and validation dispatch for clean issue submissions.
+#
+# Triggers:
+#   issues opened/reopened  → cooldown check → if clean → validate
+#   issues edited           → skip cooldown  → validate directly
+#   PR opened/reopened      → classify with Claude → if resource submission → cooldown violation
+#
+# Cooldown state stored in a private ops repo as cooldown-state.json.
+# Requires ACC_OPS secret (fine-grained PAT with contents:rw on ops repo).
+# Violations: missing form label, repo too young, submitting during cooldown,
+# submitting resource as PR. Level 6 = permanent ban.
+# Exponential backoff: 24h * 2^level.
+
+on:
+  issues:
+    types: [opened, reopened, edited]
+  pull_request_target:
+    types: [opened, reopened]
+
+# Per-user concurrency: different users run in parallel, same user queues.
+# Optimistic locking on the ops repo file handles any remaining races.
+concurrency:
+  group: >-
+    cooldown-${{
+      github.event.pull_request.user.login ||
+      github.event.issue.user.login ||
+      'unknown'
+    }}
+  cancel-in-progress: false
+
+env:
+  OPS_OWNER: hesreallyhim
+  OPS_REPO: awesome-claude-code-ops
+  OPS_PATH: cooldown-state.json
+
+jobs:
+  # ----------------------------------------------------------
+  # Job 1: Enforce cooldown rules (skipped on issue edits)
+  # ----------------------------------------------------------
+  enforce-cooldown:
+    runs-on: ubuntu-latest
+    if: github.event.action != 'edited'
+    outputs:
+      allowed: ${{ steps.enforce.outputs.allowed }}
+
+    permissions:
+      issues: write
+      pull-requests: write
+
+    steps:
+      # ----------------------------------------------------------
+      # 1. For PRs: get changed files for classification
+      # ----------------------------------------------------------
+      - name: Get PR changed files
+        id: files
+        if: github.event_name == 'pull_request_target'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const files = await github.rest.pulls.listFiles({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number,
+              per_page: 50,
+            });
+            return files.data.map(f => f.filename).join('\n');
+          result-encoding: string
+
+      # ----------------------------------------------------------
+      # 2. For PRs: classify with Claude
+      # ----------------------------------------------------------
+      - name: Classify PR with Claude
+        id: classify
+        if: github.event_name == 'pull_request_target'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_BODY: ${{ github.event.pull_request.body }}
+          PR_FILES: ${{ steps.files.outputs.result }}
+        run: |
+          PAYLOAD=$(jq -n \
+            --arg title "$PR_TITLE" \
+            --arg body "${PR_BODY:0:2000}" \
+            --arg files "$PR_FILES" \
+            '{
+              model: "claude-haiku-4-5-20251001",
+              max_tokens: 50,
+              system: "You classify GitHub pull requests for the awesome-claude-code repository (a curated awesome-list of tools, skills, hooks, and resources for Claude Code by Anthropic).\n\nA \"resource submission\" is any PR that attempts to add, recommend, or promote a tool, project, library, skill, MCP server, hook, workflow, guide, or similar resource to the list. This includes PRs that edit README.md or a resources CSV to insert a new entry.\n\nA \"not resource submission\" is a PR that fixes bugs, improves CI/workflows, corrects typos, updates documentation about the repo itself (not adding a new external resource), refactors code, or makes other repository maintenance changes.\n\nRespond with ONLY a JSON object, no markdown fences: {\"classification\": \"resource_submission\" | \"not_resource_submission\", \"confidence\": \"high\" | \"low\"}",
+              messages: [
+                {
+                  role: "user",
+                  content: ("PR Title: " + $title + "\n\nPR Body:\n" + $body + "\n\nChanged files:\n" + $files)
+                }
+              ]
+            }')
+
+          RESPONSE=$(curl -sf https://api.anthropic.com/v1/messages \
+            -H "content-type: application/json" \
+            -H "x-api-key: $ANTHROPIC_API_KEY" \
+            -H "anthropic-version: 2023-06-01" \
+            -d "$PAYLOAD") || {
+            echo "API call failed"
+            echo "classification=error" >> "$GITHUB_OUTPUT"
+            echo "confidence=none" >> "$GITHUB_OUTPUT"
+            exit 0
+          }
+
+          TEXT=$(echo "$RESPONSE" | jq -r '.content[0].text')
+          echo "Claude response: $TEXT"
+
+          CLASSIFICATION=$(echo "$TEXT" | jq -r '.classification // "error"')
+          CONFIDENCE=$(echo "$TEXT" | jq -r '.confidence // "low"')
+
+          echo "Classification: $CLASSIFICATION"
+          echo "Confidence: $CONFIDENCE"
+          echo "classification=$CLASSIFICATION" >> "$GITHUB_OUTPUT"
+          echo "confidence=$CONFIDENCE" >> "$GITHUB_OUTPUT"
+
+      # ----------------------------------------------------------
+      # 3. Main enforcement logic (handles both issues and PRs)
+      # ----------------------------------------------------------
+      - name: Enforce cooldown rules
+        id: enforce
+        uses: actions/github-script@v7
+        env:
+          OPS_TOKEN: ${{ secrets.ACC_OPS }}
+          OPS_OWNER: ${{ env.OPS_OWNER }}
+          OPS_REPO: ${{ env.OPS_REPO }}
+          OPS_PATH: ${{ env.OPS_PATH }}
+          ISSUE_BODY: ${{ github.event.issue.body || '' }}
+          PR_CLASSIFICATION: ${{ steps.classify.outputs.classification || '' }}
+          PR_CONFIDENCE: ${{ steps.classify.outputs.confidence || '' }}
+        with:
+          script: |
+            const { Octokit } = require('@octokit/rest');
+            const ops = new Octokit({ auth: process.env.OPS_TOKEN });
+            const opsOwner = process.env.OPS_OWNER;
+            const opsRepo = process.env.OPS_REPO;
+            const opsPath = process.env.OPS_PATH;
+
+            const isPR = context.eventName === 'pull_request_target';
+            const repo = context.repo;
+            const now = new Date();
+
+            const author = isPR
+              ? context.payload.pull_request.user.login
+              : context.payload.issue.user.login;
+            const number = isPR
+              ? context.payload.pull_request.number
+              : context.payload.issue.number;
+
+            // ---- PR: skip bots ----
+            if (isPR && context.payload.pull_request.user.type === 'Bot') {
+              console.log(`Skipping bot PR by ${author}`);
+              core.setOutput('allowed', 'false');
+              return;
+            }
+
+            // ---- PR: classification gate ----
+            if (isPR) {
+              const classification = process.env.PR_CLASSIFICATION;
+              const confidence = process.env.PR_CONFIDENCE;
+
+              if (classification === 'error') {
+                console.log('Classification failed — fail open.');
+                core.setOutput('allowed', 'false');
+                return;
+              }
+
+              if (classification !== 'resource_submission') {
+                if (confidence === 'low') {
+                  await github.rest.issues.addLabels({
+                    ...repo,
+                    issue_number: number,
+                    labels: ['needs-review'],
+                  });
+                }
+                console.log(
+                  `PR #${number} classified as ${classification} ` +
+                  `(${confidence}) — no enforcement needed.`
+                );
+                core.setOutput('allowed', 'false');
+                return;
+              }
+
+              console.log(
+                `PR #${number} classified as resource_submission — enforcing.`
+              );
+            }
+
+            // ---- Issue: excused label bypass ----
+            if (!isPR) {
+              const labels = context.payload.issue.labels.map(l => l.name);
+              if (labels.includes('excused')) {
+                console.log(`Issue #${number} has excused label — skipping.`);
+                core.setOutput('allowed', 'true');
+                return;
+              }
+            }
+
+            // ---- Load cooldown state from ops repo ----
+            let state = {};
+            let fileSha = null;
+
+            try {
+              const { data } = await ops.rest.repos.getContent({
+                owner: opsOwner,
+                repo: opsRepo,
+                path: opsPath
+              });
+              state = JSON.parse(
+                Buffer.from(data.content, 'base64').toString()
+              );
+              fileSha = data.sha;
+              console.log(`Loaded state (sha: ${fileSha})`);
+            } catch (e) {
+              if (e.status === 404) {
+                console.log('No state file found. Starting fresh.');
+              } else {
+                console.log(`Error loading state: ${e.message}. Starting fresh.`);
+              }
+            }
+
+            const userState = state[author] || null;
+            let stateChanged = false;
+
+            // Helper: record a violation and set cooldown
+            function recordViolation(reason) {
+              const level = userState ? userState.cooldown_level : 0;
+
+              if (level >= 6) {
+                state[author] = {
+                  active_until: '9999-01-01T00:00:00Z',
+                  cooldown_level: 6,
+                  banned: true,
+                  last_violation: now.toISOString(),
+                  last_reason: reason
+                };
+              } else {
+                const hours = 24 * Math.pow(2, level);
+                const activeUntil = new Date(
+                  now.getTime() + hours * 60 * 60 * 1000
+                );
+                state[author] = {
+                  active_until: activeUntil.toISOString(),
+                  cooldown_level: level + 1,
+                  last_violation: now.toISOString(),
+                  last_reason: reason
+                };
+              }
+
+              stateChanged = true;
+            }
+
+            // Helper: close issue or PR with comment
+            async function closeWithComment(comment) {
+              await github.rest.issues.createComment({
+                ...repo,
+                issue_number: number,
+                body: comment
+              });
+
+              if (isPR) {
+                await github.rest.pulls.update({
+                  ...repo,
+                  pull_number: number,
+                  state: 'closed'
+                });
+              } else {
+                await github.rest.issues.update({
+                  ...repo,
+                  issue_number: number,
+                  state: 'closed',
+                  state_reason: 'not_planned'
+                });
+              }
+            }
+
+            // Helper: format remaining cooldown time
+            function formatRemaining(activeUntilISO) {
+              const remaining = new Date(activeUntilISO) - now;
+              const days = Math.ceil(remaining / (1000 * 60 * 60 * 24));
+              if (days <= 0) return 'less than a day';
+              if (days === 1) return '1 day';
+              return `${days} days`;
+            }
+
+            // Helper: save state to ops repo and set output
+            async function saveAndExit(allowed) {
+              core.setOutput('allowed', allowed);
+
+              if (!stateChanged) return;
+
+              const content = Buffer.from(
+                JSON.stringify(state, null, 2)
+              ).toString('base64');
+
+              const commitMsg =
+                `cooldown: ${author} — ` +
+                (state[author]?.last_reason || 'clean') +
+                ` (#${number})`;
+
+              try {
+                const params = {
+                  owner: opsOwner,
+                  repo: opsRepo,
+                  path: opsPath,
+                  message: commitMsg,
+                  content
+                };
+                if (fileSha) params.sha = fileSha;
+
+                await ops.rest.repos.createOrUpdateFileContents(params);
+                console.log(`State saved: ${commitMsg}`);
+              } catch (e) {
+                if (e.status === 409) {
+                  // Optimistic lock conflict — another run wrote first.
+                  // Fail open: violation not recorded, user caught next time.
+                  console.log(
+                    `Conflict writing state (409). ` +
+                    `Violation for ${author} will be caught on next submission.`
+                  );
+                } else {
+                  console.log(`Error saving state: ${e.message}`);
+                }
+              }
+            }
+
+            // ==========================================================
+            // PR PATH: resource submission via PR is always a violation
+            // ==========================================================
+            if (isPR) {
+              if (userState && userState.banned === true) {
+                recordViolation('submitted-as-pr');
+              } else if (
+                userState &&
+                new Date(userState.active_until) > now
+              ) {
+                recordViolation('submitted-as-pr-during-cooldown');
+              } else {
+                recordViolation('submitted-as-pr');
+              }
+
+              const updated = state[author];
+              const templateUrl =
+                `https://github.com/${repo.owner}/${repo.repo}` +
+                `/issues/new?template=recommend-resource.yml`;
+              const contributingUrl =
+                `https://github.com/${repo.owner}/${repo.repo}` +
+                `/blob/main/docs/CONTRIBUTING.md`;
+
+              let cooldownNote = '';
+              if (updated.banned) {
+                cooldownNote =
+                  '\n\n⚠️ Due to repeated violations, this account has been ' +
+                  'permanently restricted from submitting recommendations.';
+              } else {
+                cooldownNote =
+                  `\n\nA cooldown of **${formatRemaining(updated.active_until)}** ` +
+                  `has been applied to this account.`;
+              }
+
+              await closeWithComment(
+                `## ⚠️ Resource submissions are not accepted via pull request\n\n` +
+                `Resource recommendations **must** be submitted through the ` +
+                `issue template, not as a pull request. The entire resource ` +
+                `pipeline — validation, review, and merging — is managed by ` +
+                `automation.\n\n` +
+                `**To submit your resource correctly:**\n` +
+                `1. 📖 Read [CONTRIBUTING.md](${contributingUrl})\n` +
+                `2. 📝 [Submit using the official template](${templateUrl})\n\n` +
+                `If this PR is **not** a resource submission (e.g., a bug fix ` +
+                `or improvement), please comment below and we'll reopen it.` +
+                cooldownNote +
+                `\n\n---\n*This PR was automatically closed.*`
+              );
+
+              await github.rest.issues.addLabels({
+                ...repo,
+                issue_number: number,
+                labels: ['needs-template'],
+              });
+
+              console.log(
+                `VIOLATION (PR): ${author} — closed #${number}, ` +
+                `level → ${updated.cooldown_level}`
+              );
+              await saveAndExit('false');
+              return;
+            }
+
+            // ==========================================================
+            // ISSUE PATH: cooldown and violation checks
+            // ==========================================================
+            const issueBody = process.env.ISSUE_BODY || '';
+            const labels = context.payload.issue.labels.map(l => l.name);
+
+            // CHECK 1: Permanent ban
+            if (userState && userState.banned === true) {
+              await closeWithComment(
+                `This account has been permanently restricted from ` +
+                `submitting recommendations due to repeated violations. ` +
+                `If you believe this is in error, please open a discussion ` +
+                `or contact the maintainer.`
+              );
+              console.log(`BANNED: ${author} — rejected #${number}`);
+              await saveAndExit('false');
+              return;
+            }
+
+            // CHECK 2: Active cooldown
+            if (userState) {
+              const activeUntil = new Date(userState.active_until);
+
+              if (activeUntil > now) {
+                const prevLevel = userState.cooldown_level;
+                recordViolation('submitted-during-cooldown');
+
+                const updated = state[author];
+                const waitTime = updated.banned
+                  ? 'This restriction is now permanent.'
+                  : `Please wait at least **${formatRemaining(updated.active_until)}** ` +
+                    `before opening any more submissions.`;
+
+                await closeWithComment(
+                  `A cooldown period is currently in effect for your account. ` +
+                  `Submitting during an active cooldown extends the ` +
+                  `restriction.\n\n` +
+                  `${waitTime}\n\n` +
+                  `Please review the [CONTRIBUTING guidelines](../blob/main/CONTRIBUTING.md) ` +
+                  `and [pinned issues](https://github.com/${repo.owner}/${repo.repo}/issues) ` +
+                  `before your next submission.`
+                );
+
+                console.log(
+                  `COOLDOWN: ${author} — rejected #${number}, ` +
+                  `level ${prevLevel} → ${updated.cooldown_level}`
+                );
+                await saveAndExit('false');
+                return;
+              }
+
+              console.log(
+                `${author}: cooldown expired. Checking for violations.`
+              );
+            }
+
+            // CHECK 3: Missing "resource-submission" label (not via form)
+            if (!labels.includes('resource-submission')) {
+              recordViolation('missing-resource-submission-label');
+
+              const updated = state[author];
+
+              await closeWithComment(
+                `This submission was not made through the required web form. ` +
+                `As noted in [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md), ` +
+                `recommendations must be submitted using the ` +
+                `[web form](https://github.com/${repo.owner}/${repo.repo}/issues/new?template=recommend-resource.yml).\n\n` +
+                `A cooldown of **${formatRemaining(updated.active_until)}** ` +
+                `has been applied. Please use the web form for your next ` +
+                `submission.`
+              );
+
+              console.log(
+                `VIOLATION (no label): ${author} — rejected #${number}, ` +
+                `level → ${updated.cooldown_level}`
+              );
+              await saveAndExit('false');
+              return;
+            }
+
+            // CHECK 4: Repo less than 1 week old
+            const repoUrlPattern =
+              /https?:\/\/github\.com\/([^\/\s]+)\/([^\/\s#?"]+)/g;
+            const repoMatches = [...issueBody.matchAll(repoUrlPattern)];
+
+            if (repoMatches.length > 0) {
+              const [, repoOwner, rawRepoName] = repoMatches[0];
+              const repoName = rawRepoName.replace(/\.git$/, '');
+
+              try {
+                const repoData = await github.rest.repos.get({
+                  owner: repoOwner,
+                  repo: repoName
+                });
+
+                const created = new Date(repoData.data.created_at);
+                const ageDays = (now - created) / (1000 * 60 * 60 * 24);
+
+                if (ageDays < 7) {
+                  recordViolation('repo-too-young');
+
+                  const updated = state[author];
+                  const readyDate = new Date(created);
+                  readyDate.setDate(readyDate.getDate() + 7);
+                  const readyStr = readyDate.toLocaleDateString('en-US', {
+                    month: 'long', day: 'numeric', year: 'numeric'
+                  });
+
+                  await closeWithComment(
+                    `Thanks for the recommendation! This repository is less ` +
+                    `than a week old. We ask that projects have some time in ` +
+                    `the wild before being recommended — you're welcome to ` +
+                    `re-submit after **${readyStr}**.\n\n` +
+                    `A cooldown of **${formatRemaining(updated.active_until)}** ` +
+                    `has been applied.`
+                  );
+
+                  console.log(
+                    `VIOLATION (repo age): ${author} — rejected #${number}, ` +
+                    `${repoOwner}/${repoName} is ${ageDays.toFixed(1)}d old, ` +
+                    `level → ${updated.cooldown_level}`
+                  );
+                  await saveAndExit('false');
+                  return;
+                }
+              } catch (e) {
+                console.log(
+                  `Skipping repo age check for ` +
+                  `${repoOwner}/${repoName}: ${e.message}`
+                );
+              }
+            } else {
+              console.log(
+                'No GitHub URL in issue body. Skipping repo age check.'
+              );
+            }
+
+            // ==========================================================
+            // No violations — allow through for validation
+            // ==========================================================
+            console.log(
+              `CLEAN: ${author} — issue #${number} allowed through.`
+            );
+            await saveAndExit('true');
+
+  # ----------------------------------------------------------
+  # Job 2: Validate submission
+  #   Runs if: cooldown allowed it (opened/reopened)
+  #         or: issue was edited (cooldown skipped)
+  #   Only for issues — PRs don't go through validation.
+  # ----------------------------------------------------------
+  validate:
+    needs: enforce-cooldown
+    if: |
+      always() &&
+      github.event_name == 'issues' &&
+      (
+        github.event.action == 'edited' ||
+        needs.enforce-cooldown.outputs.allowed == 'true'
+      )
+    uses: ./.github/workflows/validate-new-issue.yml
