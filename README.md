@@ -383,3 +383,5 @@ This list is licensed under [Creative Commons CC BY-NC-ND 4.0](https://creativec
 
 
 <!-- OBLIGATORY GUARD AGAINST SILLY END-OF-FILE PROBLEM -->
+
+- [ODEI MCP Server](https://github.com/odei-ai/mcp-odei) - Constitutional world model for Claude. Query 91-node knowledge graph, validate actions (APPROVED/REJECTED/ESCALATE), get agent trust scores. `npx @odei/mcp-server`
