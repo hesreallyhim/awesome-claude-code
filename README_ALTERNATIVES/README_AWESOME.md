@@ -31,9 +31,9 @@ Claude Code is a CLI-based coding assistant from [Anthropic](https://www.anthrop
 
 ## Latest Additions
 
+- [BodAIGuard](https://github.com/AxonLabsDev/BodAIGuard) by [Axon Labs Dev](https://github.com/AxonLabsDev) - Universal AI agent guardrail with 42 block rules, prompt injection detection, 4 enforcement modes (hooks, proxy, prompt injection, REST API). Integrates with Claude Code hooks to enforce safety constraints in real-time during agentic workflows.
 - [claude-rules-doctor](https://github.com/nulone/claude-rules-doctor) by [nulone](https://github.com/nulone) - CLI that detects dead `.claude/rules/` files by checking if `paths:` globs actually match files in your repo. Catches silent rule failures where renamed directories or typos in glob patterns cause rules to never apply. Features CI mode (exit 1 on dead rules), JSON output, and verbose mode showing matched files.
 - [ClaudeCTX](https://github.com/foxj77/claudectx) by [John Fox](https://github.com/foxj77) - claudectx lets you switch your entire Claude Code configuration with a single command.
-- [AgentSys](https://github.com/avifenesh/agentsys) by [avifenesh](https://github.com/avifenesh) - Workflow automation system for Claude with a group of useful plugins, agents, and skills. Automates task-to-production workflows, PR management, code cleanup, performance investigation, drift detection, and multi-agent code review. Includes [agnix](https://github.com/avifenesh/agnix) for linting agent configurations. Built on thousands of lines of code with thousands of tests. Uses deterministic detection (regex, AST) with LLM judgment for efficiency. Used on many production systems.
 
 
 ## Contents
@@ -227,6 +227,7 @@ Claude Code is a CLI-based coding assistant from [Anthropic](https://www.anthrop
 
 ### General
 
+- [BodAIGuard](https://github.com/AxonLabsDev/BodAIGuard) by [Axon Labs Dev](https://github.com/AxonLabsDev) - Universal AI agent guardrail with 42 block rules, prompt injection detection, 4 enforcement modes (hooks, proxy, prompt injection, REST API). Integrates with Claude Code hooks to enforce safety constraints in real-time during agentic workflows.
 - [Britfix](https://github.com/Talieisin/britfix) by [Talieisin](https://github.com/Talieisin) - Claude outputs American spellings by default, which can have an impact on: professional credibility, compliance, documentation, and more. Britfix converts to British English, with a Claude Code hook for automatic conversion as files are written. Context-aware: handles code files intelligently by only converting comments and docstrings, never identifiers or string literals.
 - [CC Notify](https://github.com/dazuiba/CCNotify) by [dazuiba](https://github.com/dazuiba) - CCNotify provides desktop notifications for Claude Code, alerting you to input needs or task completion, with one-click jumps back to VS Code and task duration display.
 - [cchooks](https://github.com/GowayLee/cchooks) by [GowayLee](https://github.com/GowayLee) - A lightweight Python SDK with a clean API and good documentation; simplifies the process of writing hooks and integrating them into your codebase, providing a nice abstraction over the JSON configuration files.

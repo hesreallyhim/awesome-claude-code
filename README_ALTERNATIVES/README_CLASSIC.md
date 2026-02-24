@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`BodAIGuard`](https://github.com/AxonLabsDev/BodAIGuard) &nbsp; by &nbsp; [Axon Labs Dev](https://github.com/AxonLabsDev)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Universal AI agent guardrail with 42 block rules, prompt injection detection, 4 enforcement modes (hooks, proxy, prompt injection, REST API). Integrates with Claude Code hooks to enforce safety constraints in real-time during agentic workflows.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for BodAIGuard](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=BodAIGuard&username=AxonLabsDev&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`claude-rules-doctor`](https://github.com/nulone/claude-rules-doctor) &nbsp; by &nbsp; [nulone](https://github.com/nulone)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 CLI that detects dead `.claude/rules/` files by checking if `paths:` globs actually match files in your repo. Catches silent rule failures where renamed directories or typos in glob patterns cause rules to never apply. Features CI mode (exit 1 on dead rules), JSON output, and verbose mode showing matched files.
 
@@ -64,17 +75,6 @@ claudectx lets you switch your entire Claude Code configuration with a single co
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claudectx](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claudectx&username=foxj77&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`AgentSys`](https://github.com/avifenesh/agentsys) &nbsp; by &nbsp; [avifenesh](https://github.com/avifenesh)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Workflow automation system for Claude with a group of useful plugins, agents, and skills. Automates task-to-production workflows, PR management, code cleanup, performance investigation, drift detection, and multi-agent code review. Includes [agnix](https://github.com/avifenesh/agnix) for linting agent configurations. Built on thousands of lines of code with thousands of tests. Uses deterministic detection (regex, AST) with LLM judgment for efficiency. Used on many production systems.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for agentsys](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=agentsys&username=avifenesh&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1304,6 +1304,17 @@ High-performance Rust-based statusline for Claude Code with persistent stats tra
 
 <details open>
 <summary><h3>General <a href="#awesome-claude-code">🔝</a></h3></summary>
+
+[`BodAIGuard`](https://github.com/AxonLabsDev/BodAIGuard) &nbsp; by &nbsp; [Axon Labs Dev](https://github.com/AxonLabsDev)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Universal AI agent guardrail with 42 block rules, prompt injection detection, 4 enforcement modes (hooks, proxy, prompt injection, REST API). Integrates with Claude Code hooks to enforce safety constraints in real-time during agentic workflows.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for BodAIGuard](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=BodAIGuard&username=AxonLabsDev&all_stats=true&stats_only=true)
+
+</details>
+<br>
 
 [`Britfix`](https://github.com/Talieisin/britfix) &nbsp; by &nbsp; [Talieisin](https://github.com/Talieisin)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Claude outputs American spellings by default, which can have an impact on: professional credibility, compliance, documentation, and more. Britfix converts to British English, with a Claude Code hook for automatic conversion as files are written. Context-aware: handles code files intelligently by only converting comments and docstrings, never identifiers or string literals.

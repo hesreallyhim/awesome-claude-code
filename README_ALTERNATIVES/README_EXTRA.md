@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/AxonLabsDev/BodAIGuard"><img src="../assets/badge-bodaiguard.svg" alt="BodAIGuard"></a>  
+_Universal AI agent guardrail with 42 block rules, prompt injection detection, 4 enforcement modes (hooks, proxy, prompt injection, REST API). Integrates with Claude Code hooks to enforce safety constraints in real-time during agentic workflows._  
+![GitHub Stats for BodAIGuard](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=BodAIGuard&username=AxonLabsDev&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/nulone/claude-rules-doctor"><img src="../assets/badge-claude-rules-doctor.svg" alt="claude-rules-doctor"></a>  
 _CLI that detects dead `.claude/rules/` files by checking if `paths:` globs actually match files in your repo. Catches silent rule failures where renamed directories or typos in glob patterns cause rules to never apply. Features CI mode (exit 1 on dead rules), JSON output, and verbose mode showing matched files._  
 ![GitHub Stats for claude-rules-doctor](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-rules-doctor&username=nulone&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -194,10 +198,6 @@ _CLI that detects dead `.claude/rules/` files by checking if `paths:` globs actu
 <a href="https://github.com/foxj77/claudectx"><img src="../assets/badge-claudectx.svg" alt="ClaudeCTX"></a>  
 _claudectx lets you switch your entire Claude Code configuration with a single command._  
 ![GitHub Stats for claudectx](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claudectx&username=foxj77&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/avifenesh/agentsys"><img src="../assets/badge-agentsys.svg" alt="AgentSys"></a>  
-_Workflow automation system for Claude with a group of useful plugins, agents, and skills. Automates task-to-production workflows, PR management, code cleanup, performance investigation, drift detection, and multi-agent code review. Includes [agnix](https://github.com/avifenesh/agnix) for linting agent configurations. Built on thousands of lines of code with thousands of tests. Uses deterministic detection (regex, AST) with LLM judgment for efficiency. Used on many production systems._  
-![GitHub Stats for agentsys](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=agentsys&username=avifenesh&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 
 <br>
@@ -1429,6 +1429,13 @@ _High-performance Rust-based statusline for Claude Code with persistent stats tr
 
 <details open id="hooks-general">
 <summary><span><picture><img src="../assets/subheader_hooks_general.svg" alt="General" align="absmiddle"></picture></span></summary>
+
+<a href="https://github.com/AxonLabsDev/BodAIGuard"><img src="../assets/badge-bodaiguard.svg" alt="BodAIGuard"></a>  
+_Universal AI agent guardrail with 42 block rules, prompt injection detection, 4 enforcement modes (hooks, proxy, prompt injection, REST API). Integrates with Claude Code hooks to enforce safety constraints in real-time during agentic workflows._  
+![GitHub Stats for BodAIGuard](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=BodAIGuard&username=AxonLabsDev&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
 
 <a href="https://github.com/Talieisin/britfix"><img src="../assets/badge-britfix.svg" alt="Britfix"></a>  
 _Claude outputs American spellings by default, which can have an impact on: professional credibility, compliance, documentation, and more. Britfix converts to British English, with a Claude Code hook for automatic conversion as files are written. Context-aware: handles code files intelligently by only converting comments and docstrings, never identifiers or string literals._  

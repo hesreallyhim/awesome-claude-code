@@ -89,6 +89,15 @@ A flat list view of all resources. Category: **All** | Sorted: by date created
 <td colspan="4"><img src="https://img.shields.io/github/stars/foxj77/claudectx?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/foxj77/claudectx?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/foxj77/claudectx?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/foxj77/claudectx?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/foxj77/claudectx?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/foxj77/claudectx?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/foxj77/claudectx?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/foxj77/claudectx?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/foxj77/claudectx?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/AxonLabsDev/BodAIGuard"><b>BodAIGuard</b></a><br>by <a href="https://github.com/AxonLabsDev">Axon Labs Dev</a></td>
+<td>Hooks</td>
+<td>General</td>
+<td>Universal AI agent guardrail with 42 block rules, prompt injection detection, 4 enforcement modes (hooks, proxy, prompt injection, REST API). Integrates with Claude Code hooks to enforce safety constraints in real-time during agentic workflows.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/AxonLabsDev/BodAIGuard?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/AxonLabsDev/BodAIGuard?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/AxonLabsDev/BodAIGuard?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/AxonLabsDev/BodAIGuard?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/AxonLabsDev/BodAIGuard?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/AxonLabsDev/BodAIGuard?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/AxonLabsDev/BodAIGuard?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/AxonLabsDev/BodAIGuard?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/AxonLabsDev/BodAIGuard?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://docs.claude.com/en/home"><b>Anthropic Documentation</b></a><br>by <a href="https://github.com/anthropics">Anthropic</a></td>
 <td>Official Documentation</td>
 <td>General</td>
@@ -1611,6 +1620,6 @@ A flat list view of all resources. Category: **All** | Sorted: by date created
 
 ---
 
-**Total Resources:** 174
+**Total Resources:** 175
 
-**Last Generated:** 2026-02-22
+**Last Generated:** 2026-02-24

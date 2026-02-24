@@ -60,9 +60,9 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by latest r
 <tbody>
 <tr>
 <td><a href="https://github.com/sgcarstrends/backend/blob/main/CLAUDE.md"><b>SG Cars Trends Backend</b></a><br>by <a href="https://github.com/sgcarstrends">sgcarstrends</a></td>
-<td>v4.57.0</td>
+<td>v4.57.4</td>
 <td>GitHub</td>
-<td>2026-02-21</td>
+<td>2026-02-23</td>
 <td>Provides comprehensive structure for TypeScript monorepo projects with detailed commands for development, testing, deployment, and AWS/Cloudflare integration.</td>
 </tr>
 <tr>
@@ -125,4 +125,4 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by latest r
 
 **Total Resources:** 6
 
-**Last Generated:** 2026-02-22
+**Last Generated:** 2026-02-24

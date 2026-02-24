@@ -60,9 +60,9 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by latest rel
 <tbody>
 <tr>
 <td><a href="https://github.com/dtormoen/tsk"><b>TSK - AI Agent Task Manager and Sandbox</b></a><br>by <a href="https://github.com/dtormoen">dtormoen</a></td>
-<td>v0.8.5</td>
+<td>v0.8.6</td>
 <td>GitHub</td>
-<td>2026-02-21</td>
+<td>2026-02-23</td>
 <td>A Rust CLI tool that lets you delegate development tasks to AI agents running in sandboxed Docker environments. Multiple agents work in parallel, returning git branches for human review.</td>
 </tr>
 <tr>
@@ -70,9 +70,9 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by latest rel
 </tr>
 <tr>
 <td><a href="https://github.com/Piebald-AI/tweakcc"><b>tweakcc</b></a><br>by <a href="https://github.com/Piebald-AI">Piebald-AI</a></td>
-<td>v4.0.4</td>
+<td>v4.0.6</td>
 <td>GitHub</td>
-<td>2026-02-21</td>
+<td>2026-02-23</td>
 <td>Command-line tool to customize your Claude Code styling.</td>
 </tr>
 <tr>
@@ -80,9 +80,9 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by latest rel
 </tr>
 <tr>
 <td><a href="https://github.com/tombii/better-ccflare/"><b>ccflare -> **better-ccflare**</b></a><br>by <a href="https://github.com/tombii">tombii</a></td>
-<td>v3.1.17</td>
+<td>v3.1.18</td>
 <td>GitHub</td>
-<td>2026-02-21</td>
+<td>2026-02-22</td>
 <td>A well-maintained and feature-enhanced fork of the glorious `ccflare` usage dashboard by @snipeship (which at the time of writing has not had an update in a few months). `better-ccflare` builds on this foundation with some performance enhancements, extended provider support, bug fixes, Docker deployment, and more.</td>
 </tr>
 <tr>
@@ -90,9 +90,9 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by latest rel
 </tr>
 <tr>
 <td><a href="https://github.com/rsmdt/the-startup"><b>The Agentic Startup</b></a><br>by <a href="https://github.com/rsmdt">Rudolf Schmidt</a></td>
-<td>v3.2.1</td>
+<td>v3.3.0</td>
 <td>GitHub</td>
-<td>2026-02-20</td>
+<td>2026-02-22</td>
 <td>Yet Another Claude Orchestrator - a collection of agents, commands, etc., for shipping production code - but I like this because it's comprehensive, well-written, and one of the few resources that actually uses Output Styles! +10 points!</td>
 </tr>
 <tr>
@@ -195,4 +195,4 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by latest rel
 
 **Total Resources:** 13
 
-**Last Generated:** 2026-02-22
+**Last Generated:** 2026-02-24
