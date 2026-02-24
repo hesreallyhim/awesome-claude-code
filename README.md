@@ -348,6 +348,7 @@ Claude Code is a CLI-based coding assistant from [Anthropic](https://www.anthrop
 
 - [Claudable](https://github.com/opactorai/Claudable) by [Ethan Park](https://www.linkedin.com/in/seongil-park/) - Claudable is an open-source web builder that leverages local CLI agents, such as Claude Code and Cursor Agent, to build and deploy products effortlessly.
 - [crystal](https://github.com/stravu/crystal) by [stravu](https://github.com/stravu) - A full-fledged desktop application for orchestrating, monitoring, and interacting with Claude Code agents.
+- [Poirot](https://github.com/LeonardoCardoso/Poirot) by [Leonardo Cardoso](https://github.com/LeonardoCardoso) - A native macOS companion app for browsing Claude Code sessions, exploring diffs, and re-running commands. Built with SwiftUI, works offline, no login required.
 
 <br>
 
