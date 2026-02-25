@@ -95,6 +95,7 @@ Claude Code is a CLI-based coding assistant from [Anthropic](https://www.anthrop
 - [TÂCHES Claude Code Resources](https://github.com/glittercowboy/taches-cc-resources) by [TÂCHES](https://github.com/glittercowboy) - A well-balanced, "down-to-Earth" set of sub agents, skills, and commands,  that are well-organized, easy to read, and a healthy focus on "meta"-skills/agents, like "skill-auditor", hook creation, etc. - the kind of things you can adapt to your workflow, and not the other way around.
 - [Web Assets Generator Skill](https://github.com/alonw0/web-asset-generator) by [Alon Wolenitz](https://github.com/alonw0) - Easily generate web assets from Claude Code including favicons, app icons (PWA), and social media meta images (Open Graph) for Facebook, Twitter, WhatsApp, and LinkedIn. Handles image resizing, text-to-image generation, emojis, and provides proper HTML meta tags.
 
+- [chrome-store-publish](https://github.com/ofelipelourenco/chrome-store-publish) by [Felipe Lourenco](https://github.com/ofelipelourenco) - Automates Chrome extension preparation for Chrome Web Store publishing with 7-phase workflow (audit, cleanup, build, legal, listing, assets, validation). Includes MV3 compliance enforcement, GDPR-aware privacy policy generation, and 17-point pre-submission validation.
 <br>
 
 ## Workflows & Knowledge Guides 🧠
