@@ -1481,6 +1481,15 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/marcindulak/stt-mcp-server-linux?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/marcindulak/stt-mcp-server-linux?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/marcindulak/stt-mcp-server-linux?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/marcindulak/stt-mcp-server-linux?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/marcindulak/stt-mcp-server-linux?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/marcindulak/stt-mcp-server-linux?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/marcindulak/stt-mcp-server-linux?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/marcindulak/stt-mcp-server-linux?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/marcindulak/stt-mcp-server-linux?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/sudocode-ai/sudocode"><b>sudocode</b></a><br>by <a href="https://github.com/ssh-randy">ssh-randy</a></td>
+<td>Tooling</td>
+<td>Orchestrators</td>
+<td>Lightweight agent orchestration dev tool that lives in your repo. Integrates with various specification frameworks. It's giving Jira.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/sudocode-ai/sudocode?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/sudocode-ai/sudocode?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/sudocode-ai/sudocode?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/sudocode-ai/sudocode?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/sudocode-ai/sudocode?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/sudocode-ai/sudocode?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/sudocode-ai/sudocode?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/sudocode-ai/sudocode?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/sudocode-ai/sudocode?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/SuperClaude-Org/SuperClaude_Framework"><b>SuperClaude</b></a><br>by <a href="https://github.com/SuperClaude-Org">SuperClaude-Org</a></td>
 <td>Tooling</td>
 <td>General</td>
@@ -1629,6 +1638,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 
 ---
 
-**Total Resources:** 176
+**Total Resources:** 177
 
 **Last Generated:** 2026-02-26

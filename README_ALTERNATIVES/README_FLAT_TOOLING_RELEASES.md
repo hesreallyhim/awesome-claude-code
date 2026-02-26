@@ -119,6 +119,16 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by latest rel
 <td colspan="5"><img src="https://img.shields.io/github/stars/mbailey/voicemode?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/mbailey/voicemode?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/mbailey/voicemode?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/mbailey/voicemode?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/mbailey/voicemode?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/mbailey/voicemode?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/mbailey/voicemode?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/mbailey/voicemode?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/mbailey/voicemode?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/sudocode-ai/sudocode"><b>sudocode</b></a><br>by <a href="https://github.com/ssh-randy">ssh-randy</a></td>
+<td>v0.1.25</td>
+<td>GitHub</td>
+<td>2026-02-23</td>
+<td>Lightweight agent orchestration dev tool that lives in your repo. Integrates with various specification frameworks. It's giving Jira.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/sudocode-ai/sudocode?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/sudocode-ai/sudocode?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/sudocode-ai/sudocode?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/sudocode-ai/sudocode?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/sudocode-ai/sudocode?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/sudocode-ai/sudocode?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/sudocode-ai/sudocode?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/sudocode-ai/sudocode?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/sudocode-ai/sudocode?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/rsmdt/the-startup"><b>The Agentic Startup</b></a><br>by <a href="https://github.com/rsmdt">Rudolf Schmidt</a></td>
 <td>v3.3.0</td>
 <td>GitHub</td>
@@ -203,6 +213,6 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by latest rel
 
 ---
 
-**Total Resources:** 14
+**Total Resources:** 15
 
 **Last Generated:** 2026-02-26

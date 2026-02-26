@@ -31,9 +31,9 @@ Claude Code is a CLI-based coding assistant from [Anthropic](https://www.anthrop
 
 ## Latest Additions
 
+- [sudocode](https://github.com/sudocode-ai/sudocode) by [ssh-randy](https://github.com/ssh-randy) - Lightweight agent orchestration dev tool that lives in your repo. Integrates with various specification frameworks. It's giving Jira.
 - [claude-tmux](https://github.com/nielsgroen/claude-tmux) by [Niels Groeneveld](https://github.com/nielsgroen) - Manage Claude Code within tmux. A tmux popup of all your Claude Code instances, enabling quick switching, status monitoring, session lifecycle management, with git worktree and pull request support.
 - [claude-esp](https://github.com/phiat/claude-esp) by [phiat](https://github.com/phiat) - Go-based TUI that streams Claude Code's hidden output (thinking, tool calls, subagents) to a separate terminal. Watch multiple sessions simultaneously, filter by content type, and track background tasks. Ideal for debugging or understanding what Claude is doing under the hood without interrupting your main session.
-- [claude-rules-doctor](https://github.com/nulone/claude-rules-doctor) by [nulone](https://github.com/nulone) - CLI that detects dead `.claude/rules/` files by checking if `paths:` globs actually match files in your repo. Catches silent rule failures where renamed directories or typos in glob patterns cause rules to never apply. Features CI mode (exit 1 on dead rules), JSON output, and verbose mode showing matched files.
 
 
 ## Contents
@@ -197,6 +197,7 @@ Claude Code is a CLI-based coding assistant from [Anthropic](https://www.anthrop
 - [Claude Task Master](https://github.com/eyaltoledano/claude-task-master) by [eyaltoledano](https://github.com/eyaltoledano) - A task management system for AI-driven development with Claude, designed to work seamlessly with Cursor AI.
 - [Claude Task Runner](https://github.com/grahama1970/claude-task-runner) by [grahama1970](https://github.com/grahama1970) - A specialized tool to manage context isolation and focused task execution with Claude Code, solving the critical challenge of context length limitations and task focus when working with Claude on complex, multi-step projects.
 - [Happy Coder](https://github.com/slopus/happy) by [GrocerPublishAgent](https://peoplesgrocers.com/en/projects) - Spawn and control multiple Claude Codes in parallel from your phone or desktop. Happy Coder runs Claude Code on your hardware, sends push notifications when Claude needs more input or permission, and costs nothing.
+- [sudocode](https://github.com/sudocode-ai/sudocode) by [ssh-randy](https://github.com/ssh-randy) - Lightweight agent orchestration dev tool that lives in your repo. Integrates with various specification frameworks. It's giving Jira.
 - [The Agentic Startup](https://github.com/rsmdt/the-startup) by [Rudolf Schmidt](https://github.com/rsmdt) - Yet Another Claude Orchestrator - a collection of agents, commands, etc., for shipping production code - but I like this because it's comprehensive, well-written, and one of the few resources that actually uses Output Styles! +10 points!
 - [TSK - AI Agent Task Manager and Sandbox](https://github.com/dtormoen/tsk) by [dtormoen](https://github.com/dtormoen) - A Rust CLI tool that lets you delegate development tasks to AI agents running in sandboxed Docker environments. Multiple agents work in parallel, returning git branches for human review.
 

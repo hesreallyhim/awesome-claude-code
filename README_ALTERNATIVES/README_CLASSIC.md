@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`sudocode`](https://github.com/sudocode-ai/sudocode) &nbsp; by &nbsp; [ssh-randy](https://github.com/ssh-randy)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
+Lightweight agent orchestration dev tool that lives in your repo. Integrates with various specification frameworks. It's giving Jira.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for sudocode](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=sudocode&username=sudocode-ai&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`claude-tmux`](https://github.com/nielsgroen/claude-tmux) &nbsp; by &nbsp; [Niels Groeneveld](https://github.com/nielsgroen)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;AGPL-3.0  
 Manage Claude Code within tmux. A tmux popup of all your Claude Code instances, enabling quick switching, status monitoring, session lifecycle management, with git worktree and pull request support.
 
@@ -64,17 +75,6 @@ Go-based TUI that streams Claude Code's hidden output (thinking, tool calls, sub
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-esp](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-esp&username=phiat&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`claude-rules-doctor`](https://github.com/nulone/claude-rules-doctor) &nbsp; by &nbsp; [nulone](https://github.com/nulone)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-CLI that detects dead `.claude/rules/` files by checking if `paths:` globs actually match files in your repo. Catches silent rule failures where renamed directories or typos in glob patterns cause rules to never apply. Features CI mode (exit 1 on dead rules), JSON output, and verbose mode showing matched files.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claude-rules-doctor](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-rules-doctor&username=nulone&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1171,6 +1171,17 @@ Spawn and control multiple Claude Codes in parallel from your phone or desktop. 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for happy](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=happy&username=slopus&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`sudocode`](https://github.com/sudocode-ai/sudocode) &nbsp; by &nbsp; [ssh-randy](https://github.com/ssh-randy)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
+Lightweight agent orchestration dev tool that lives in your repo. Integrates with various specification frameworks. It's giving Jira.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for sudocode](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=sudocode&username=sudocode-ai&all_stats=true&stats_only=true)
 
 </details>
 <br>

@@ -239,6 +239,16 @@ A flat list view of all resources. Category: **All** | Sorted: by latest release
 <td colspan="5"><img src="https://img.shields.io/github/stars/mattgodbolt/jsbeeb?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/mattgodbolt/jsbeeb?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/mattgodbolt/jsbeeb?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/mattgodbolt/jsbeeb?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/mattgodbolt/jsbeeb?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/mattgodbolt/jsbeeb?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/mattgodbolt/jsbeeb?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/mattgodbolt/jsbeeb?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/mattgodbolt/jsbeeb?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/sudocode-ai/sudocode"><b>sudocode</b></a><br>by <a href="https://github.com/ssh-randy">ssh-randy</a></td>
+<td>v0.1.25</td>
+<td>GitHub</td>
+<td>2026-02-23</td>
+<td>Lightweight agent orchestration dev tool that lives in your repo. Integrates with various specification frameworks. It's giving Jira.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/sudocode-ai/sudocode?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/sudocode-ai/sudocode?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/sudocode-ai/sudocode?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/sudocode-ai/sudocode?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/sudocode-ai/sudocode?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/sudocode-ai/sudocode?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/sudocode-ai/sudocode?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/sudocode-ai/sudocode?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/sudocode-ai/sudocode?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/aannoo/claude-hook-comms"><b>Claude Code Hook Comms (HCOM)</b></a><br>by <a href="https://github.com/aannoo">aannoo</a></td>
 <td>v0.6.22</td>
 <td>GitHub</td>
@@ -473,6 +483,6 @@ A flat list view of all resources. Category: **All** | Sorted: by latest release
 
 ---
 
-**Total Resources:** 41
+**Total Resources:** 42
 
 **Last Generated:** 2026-02-26
