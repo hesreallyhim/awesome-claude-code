@@ -204,6 +204,7 @@ Claude Code is a CLI-based coding assistant from [Anthropic](https://www.anthrop
 
 ### Config Managers
 
+- [claude-config](https://gitlab.com/oldmission/claude-config) by [Greg Smethells](https://github.com/gsmethells) - Complete skills library for Claude Code with 12 production-ready skills (`/boot`, `/design`, `/review`, `/ship`, `/goal`, and more), automated hooks for linting and test enforcement, and team coding standards. One-command install, automatic updates.
 - [claude-rules-doctor](https://github.com/nulone/claude-rules-doctor) by [nulone](https://github.com/nulone) - CLI that detects dead `.claude/rules/` files by checking if `paths:` globs actually match files in your repo. Catches silent rule failures where renamed directories or typos in glob patterns cause rules to never apply. Features CI mode (exit 1 on dead rules), JSON output, and verbose mode showing matched files.
 - [ClaudeCTX](https://github.com/foxj77/claudectx) by [John Fox](https://github.com/foxj77) - claudectx lets you switch your entire Claude Code configuration with a single command.
 
