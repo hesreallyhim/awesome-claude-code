@@ -65,6 +65,15 @@ A flat list view of all resources. Category: **Clients** | Sorted: alphabeticall
 <td colspan="4"><img src="https://img.shields.io/github/stars/opactorai/Claudable?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/opactorai/Claudable?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/opactorai/Claudable?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/opactorai/Claudable?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/opactorai/Claudable?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/opactorai/Claudable?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/opactorai/Claudable?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/opactorai/Claudable?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/opactorai/Claudable?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/phiat/claude-esp"><b>claude-esp</b></a><br>by <a href="https://github.com/phiat">phiat</a></td>
+<td>Alternative Clients</td>
+<td>General</td>
+<td>Go-based TUI that streams Claude Code's hidden output (thinking, tool calls, subagents) to a separate terminal. Watch multiple sessions simultaneously, filter by content type, and track background tasks. Ideal for debugging or understanding what Claude is doing under the hood without interrupting your main session.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/phiat/claude-esp?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/phiat/claude-esp?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/phiat/claude-esp?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/phiat/claude-esp?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/phiat/claude-esp?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/phiat/claude-esp?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/phiat/claude-esp?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/phiat/claude-esp?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/phiat/claude-esp?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/stravu/crystal"><b>crystal</b></a><br>by <a href="https://github.com/stravu">stravu</a></td>
 <td>Alternative Clients</td>
 <td>General</td>
@@ -78,6 +87,6 @@ A flat list view of all resources. Category: **Clients** | Sorted: alphabeticall
 
 ---
 
-**Total Resources:** 2
+**Total Resources:** 3
 
-**Last Generated:** 2026-02-22
+**Last Generated:** 2026-02-26

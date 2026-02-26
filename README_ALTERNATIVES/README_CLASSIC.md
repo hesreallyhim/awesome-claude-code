@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`claude-esp`](https://github.com/phiat/claude-esp) &nbsp; by &nbsp; [phiat](https://github.com/phiat)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Go-based TUI that streams Claude Code's hidden output (thinking, tool calls, subagents) to a separate terminal. Watch multiple sessions simultaneously, filter by content type, and track background tasks. Ideal for debugging or understanding what Claude is doing under the hood without interrupting your main session.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-esp](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-esp&username=phiat&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`claude-rules-doctor`](https://github.com/nulone/claude-rules-doctor) &nbsp; by &nbsp; [nulone](https://github.com/nulone)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 CLI that detects dead `.claude/rules/` files by checking if `paths:` globs actually match files in your repo. Catches silent rule failures where renamed directories or typos in glob patterns cause rules to never apply. Features CI mode (exit 1 on dead rules), JSON output, and verbose mode showing matched files.
 
@@ -64,17 +75,6 @@ claudectx lets you switch your entire Claude Code configuration with a single co
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claudectx](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claudectx&username=foxj77&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`AgentSys`](https://github.com/avifenesh/agentsys) &nbsp; by &nbsp; [avifenesh](https://github.com/avifenesh)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Workflow automation system for Claude with a group of useful plugins, agents, and skills. Automates task-to-production workflows, PR management, code cleanup, performance investigation, drift detection, and multi-agent code review. Includes [agnix](https://github.com/avifenesh/agnix) for linting agent configurations. Built on thousands of lines of code with thousands of tests. Uses deterministic detection (regex, AST) with LLM judgment for efficiency. Used on many production systems.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for agentsys](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=agentsys&username=avifenesh&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -2097,6 +2097,17 @@ Claudable is an open-source web builder that leverages local CLI agents, such as
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for Claudable](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Claudable&username=opactorai&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`claude-esp`](https://github.com/phiat/claude-esp) &nbsp; by &nbsp; [phiat](https://github.com/phiat)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Go-based TUI that streams Claude Code's hidden output (thinking, tool calls, subagents) to a separate terminal. Watch multiple sessions simultaneously, filter by content type, and track background tasks. Ideal for debugging or understanding what Claude is doing under the hood without interrupting your main session.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-esp](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-esp&username=phiat&all_stats=true&stats_only=true)
 
 </details>
 <br>
