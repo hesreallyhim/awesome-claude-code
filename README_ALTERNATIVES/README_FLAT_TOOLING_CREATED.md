@@ -56,6 +56,15 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by date creat
 </thead>
 <tbody>
 <tr>
+<td><a href="https://github.com/jonradoff/lightcms"><b>LightCMS</b></a><br>by <a href="https://github.com/jonradoff">Jon Radoff</a></td>
+<td>Tooling</td>
+<td>General</td>
+<td>AI-native CMS with 41 MCP tools for managing websites through natural language. Create pages, templates, assets, themes, collections, redirects, and more with full content versioning.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/jonradoff/lightcms?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/jonradoff/lightcms?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/jonradoff/lightcms?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jonradoff/lightcms?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/jonradoff/lightcms?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/jonradoff/lightcms?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jonradoff/lightcms?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/jonradoff/lightcms?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/jonradoff/lightcms?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=AndrePimenta.claude-code-chat"><b>Claude Code Chat</b></a><br>by <a href="https://github.com/andrepimenta">andrepimenta</a></td>
 <td>Tooling</td>
 <td>IDE Integrations</td>
@@ -471,6 +480,6 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by date creat
 
 ---
 
-**Total Resources:** 46
+**Total Resources:** 47
 
 **Last Generated:** 2026-02-26

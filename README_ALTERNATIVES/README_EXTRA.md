@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/jonradoff/lightcms"><img src="../assets/badge-lightcms.svg" alt="LightCMS"></a>  
+_AI-native CMS with 41 MCP tools for managing websites through natural language. Create pages, templates, assets, themes, collections, redirects, and more with full content versioning._  
+![GitHub Stats for lightcms](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=lightcms&username=jonradoff&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/ldayton/Dippy"><img src="../assets/badge-dippy.svg" alt="Dippy"></a>  
 _Auto-approve safe bash commands using AST-based parsing, while prompting for destructive operations. Solves permission fatigue without disabling safety. Supports Claude Code, Gemini CLI, and Cursor._  
 ![GitHub Stats for Dippy](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Dippy&username=ldayton&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -1073,6 +1077,13 @@ _Development environments for coding agents. Enable multiple agents to work safe
 <a href="https://github.com/FlineDev/ContextKit"><img src="../assets/badge-contextkit.svg" alt="ContextKit"></a>  
 _A systematic development framework that transforms Claude Code into a proactive development partner. Features 4-phase planning methodology, specialized quality agents, and structured workflows that help AI produce production-ready code on first try._  
 ![GitHub Stats for ContextKit](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ContextKit&username=FlineDev&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/jonradoff/lightcms"><img src="../assets/badge-lightcms.svg" alt="LightCMS"></a>  
+_AI-native CMS with 41 MCP tools for managing websites through natural language. Create pages, templates, assets, themes, collections, redirects, and more with full content versioning._  
+![GitHub Stats for lightcms](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=lightcms&username=jonradoff&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 

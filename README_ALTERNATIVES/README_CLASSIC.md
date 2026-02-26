@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`LightCMS`](https://github.com/jonradoff/lightcms) &nbsp; by &nbsp; [Jon Radoff](https://github.com/jonradoff)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+AI-native CMS with 41 MCP tools for managing websites through natural language. Create pages, templates, assets, themes, collections, redirects, and more with full content versioning.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for lightcms](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=lightcms&username=jonradoff&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Dippy`](https://github.com/ldayton/Dippy) &nbsp; by &nbsp; [Lily Dayton](https://github.com/ldayton)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Auto-approve safe bash commands using AST-based parsing, while prompting for destructive operations. Solves permission fatigue without disabling safety. Supports Claude Code, Gemini CLI, and Cursor.
 
@@ -878,6 +889,17 @@ A systematic development framework that transforms Claude Code into a proactive 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for ContextKit](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ContextKit&username=FlineDev&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`LightCMS`](https://github.com/jonradoff/lightcms) &nbsp; by &nbsp; [Jon Radoff](https://github.com/jonradoff)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+AI-native CMS with 41 MCP tools for managing websites through natural language. Create pages, templates, assets, themes, collections, redirects, and more with full content versioning.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for lightcms](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=lightcms&username=jonradoff&all_stats=true&stats_only=true)
 
 </details>
 <br>
