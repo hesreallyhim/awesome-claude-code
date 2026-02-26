@@ -439,6 +439,16 @@ A flat list view of all resources. Category: **All** | Sorted: by latest release
 <td colspan="5"><img src="https://img.shields.io/github/stars/serpro69/claude-starter-kit?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/serpro69/claude-starter-kit?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/serpro69/claude-starter-kit?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/serpro69/claude-starter-kit?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/serpro69/claude-starter-kit?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/serpro69/claude-starter-kit?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/serpro69/claude-starter-kit?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/serpro69/claude-starter-kit?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/serpro69/claude-starter-kit?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/ldayton/Dippy"><b>Dippy</b></a><br>by <a href="https://github.com/ldayton">Lily Dayton</a></td>
+<td>v0.2.5</td>
+<td>GitHub</td>
+<td>2026-02-01</td>
+<td>Auto-approve safe bash commands using AST-based parsing, while prompting for destructive operations. Solves permission fatigue without disabling safety. Supports Claude Code, Gemini CLI, and Cursor.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/ldayton/Dippy?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ldayton/Dippy?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ldayton/Dippy?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ldayton/Dippy?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ldayton/Dippy?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ldayton/Dippy?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ldayton/Dippy?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ldayton/Dippy?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ldayton/Dippy?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/nizos/tdd-guard"><b>TDD Guard</b></a><br>by <a href="https://github.com/nizos">Nizar Selander</a></td>
 <td>storybook-v0.1.0</td>
 <td>GitHub</td>
@@ -483,6 +493,6 @@ A flat list view of all resources. Category: **All** | Sorted: by latest release
 
 ---
 
-**Total Resources:** 42
+**Total Resources:** 43
 
 **Last Generated:** 2026-02-26

@@ -79,6 +79,16 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by latest relea
 <td colspan="5"><img src="https://img.shields.io/github/stars/aannoo/claude-hook-comms?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/aannoo/claude-hook-comms?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/aannoo/claude-hook-comms?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/aannoo/claude-hook-comms?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/aannoo/claude-hook-comms?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/aannoo/claude-hook-comms?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/aannoo/claude-hook-comms?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/aannoo/claude-hook-comms?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/aannoo/claude-hook-comms?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/ldayton/Dippy"><b>Dippy</b></a><br>by <a href="https://github.com/ldayton">Lily Dayton</a></td>
+<td>v0.2.5</td>
+<td>GitHub</td>
+<td>2026-02-01</td>
+<td>Auto-approve safe bash commands using AST-based parsing, while prompting for destructive operations. Solves permission fatigue without disabling safety. Supports Claude Code, Gemini CLI, and Cursor.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/ldayton/Dippy?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ldayton/Dippy?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ldayton/Dippy?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ldayton/Dippy?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ldayton/Dippy?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ldayton/Dippy?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ldayton/Dippy?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ldayton/Dippy?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ldayton/Dippy?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/nizos/tdd-guard"><b>TDD Guard</b></a><br>by <a href="https://github.com/nizos">Nizar Selander</a></td>
 <td>storybook-v0.1.0</td>
 <td>GitHub</td>
@@ -93,6 +103,6 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by latest relea
 
 ---
 
-**Total Resources:** 3
+**Total Resources:** 4
 
 **Last Generated:** 2026-02-26

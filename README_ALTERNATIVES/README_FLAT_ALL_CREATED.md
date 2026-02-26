@@ -221,6 +221,15 @@ A flat list view of all resources. Category: **All** | Sorted: by date created
 <td colspan="4"><img src="https://img.shields.io/github/stars/phiat/claude-esp?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/phiat/claude-esp?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/phiat/claude-esp?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/phiat/claude-esp?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/phiat/claude-esp?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/phiat/claude-esp?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/phiat/claude-esp?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/phiat/claude-esp?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/phiat/claude-esp?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/ldayton/Dippy"><b>Dippy</b></a><br>by <a href="https://github.com/ldayton">Lily Dayton</a></td>
+<td>Hooks</td>
+<td>General</td>
+<td>Auto-approve safe bash commands using AST-based parsing, while prompting for destructive operations. Solves permission fatigue without disabling safety. Supports Claude Code, Gemini CLI, and Cursor.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/ldayton/Dippy?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ldayton/Dippy?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ldayton/Dippy?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ldayton/Dippy?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ldayton/Dippy?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ldayton/Dippy?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ldayton/Dippy?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ldayton/Dippy?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ldayton/Dippy?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/muratcankoylan/ralph-wiggum-marketer"><b>Ralph Wiggum Marketer</b></a><br>by <a href="https://github.com/muratcankoylan">Muratcan Koylan</a></td>
 <td>Workflows & Knowledge Guides</td>
 <td>Ralph Wiggum</td>
@@ -1638,6 +1647,6 @@ A flat list view of all resources. Category: **All** | Sorted: by date created
 
 ---
 
-**Total Resources:** 177
+**Total Resources:** 178
 
 **Last Generated:** 2026-02-26

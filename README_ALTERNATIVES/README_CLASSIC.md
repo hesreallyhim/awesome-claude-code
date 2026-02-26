@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Dippy`](https://github.com/ldayton/Dippy) &nbsp; by &nbsp; [Lily Dayton](https://github.com/ldayton)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Auto-approve safe bash commands using AST-based parsing, while prompting for destructive operations. Solves permission fatigue without disabling safety. Supports Claude Code, Gemini CLI, and Cursor.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for Dippy](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Dippy&username=ldayton&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`sudocode`](https://github.com/sudocode-ai/sudocode) &nbsp; by &nbsp; [ssh-randy](https://github.com/ssh-randy)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
 Lightweight agent orchestration dev tool that lives in your repo. Integrates with various specification frameworks. It's giving Jira.
 
@@ -1389,6 +1400,17 @@ A no-frills little library that adds delightful OS-native sounds to Claude Code 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claudio](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claudio&username=ctoth&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Dippy`](https://github.com/ldayton/Dippy) &nbsp; by &nbsp; [Lily Dayton](https://github.com/ldayton)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Auto-approve safe bash commands using AST-based parsing, while prompting for destructive operations. Solves permission fatigue without disabling safety. Supports Claude Code, Gemini CLI, and Cursor.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for Dippy](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Dippy&username=ldayton&all_stats=true&stats_only=true)
 
 </details>
 <br>
