@@ -971,6 +971,15 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/serpro69/claude-starter-kit?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/serpro69/claude-starter-kit?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/serpro69/claude-starter-kit?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/serpro69/claude-starter-kit?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/serpro69/claude-starter-kit?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/serpro69/claude-starter-kit?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/serpro69/claude-starter-kit?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/serpro69/claude-starter-kit?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/serpro69/claude-starter-kit?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/nielsgroen/claude-tmux"><b>claude-tmux</b></a><br>by <a href="https://github.com/nielsgroen">Niels Groeneveld</a></td>
+<td>Alternative Clients</td>
+<td>General</td>
+<td>Manage Claude Code within tmux. A tmux popup of all your Claude Code instances, enabling quick switching, status monitoring, session lifecycle management, with git worktree and pull request support.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/nielsgroen/claude-tmux?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/nielsgroen/claude-tmux?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/nielsgroen/claude-tmux?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/nielsgroen/claude-tmux?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/nielsgroen/claude-tmux?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/nielsgroen/claude-tmux?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/nielsgroen/claude-tmux?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/nielsgroen/claude-tmux?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/nielsgroen/claude-tmux?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/foxj77/claudectx"><b>ClaudeCTX</b></a><br>by <a href="https://github.com/foxj77">John Fox</a></td>
 <td>Tooling</td>
 <td>Config Managers</td>
@@ -1620,6 +1629,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 
 ---
 
-**Total Resources:** 175
+**Total Resources:** 176
 
 **Last Generated:** 2026-02-26

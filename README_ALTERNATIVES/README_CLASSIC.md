@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`claude-tmux`](https://github.com/nielsgroen/claude-tmux) &nbsp; by &nbsp; [Niels Groeneveld](https://github.com/nielsgroen)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;AGPL-3.0  
+Manage Claude Code within tmux. A tmux popup of all your Claude Code instances, enabling quick switching, status monitoring, session lifecycle management, with git worktree and pull request support.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-tmux](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-tmux&username=nielsgroen&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`claude-esp`](https://github.com/phiat/claude-esp) &nbsp; by &nbsp; [phiat](https://github.com/phiat)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Go-based TUI that streams Claude Code's hidden output (thinking, tool calls, subagents) to a separate terminal. Watch multiple sessions simultaneously, filter by content type, and track background tasks. Ideal for debugging or understanding what Claude is doing under the hood without interrupting your main session.
 
@@ -64,17 +75,6 @@ CLI that detects dead `.claude/rules/` files by checking if `paths:` globs actua
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-rules-doctor](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-rules-doctor&username=nulone&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`ClaudeCTX`](https://github.com/foxj77/claudectx) &nbsp; by &nbsp; [John Fox](https://github.com/foxj77)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-claudectx lets you switch your entire Claude Code configuration with a single command.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claudectx](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claudectx&username=foxj77&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -2108,6 +2108,17 @@ Go-based TUI that streams Claude Code's hidden output (thinking, tool calls, sub
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-esp](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-esp&username=phiat&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`claude-tmux`](https://github.com/nielsgroen/claude-tmux) &nbsp; by &nbsp; [Niels Groeneveld](https://github.com/nielsgroen)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;AGPL-3.0  
+Manage Claude Code within tmux. A tmux popup of all your Claude Code instances, enabling quick switching, status monitoring, session lifecycle management, with git worktree and pull request support.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-tmux](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-tmux&username=nielsgroen&all_stats=true&stats_only=true)
 
 </details>
 <br>
