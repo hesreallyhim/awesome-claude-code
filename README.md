@@ -270,6 +270,7 @@
 - [/optimize](https://github.com/to4iki/ai-project-rules/blob/main/.claude/commands/optimize.md) by [to4iki](https://github.com/to4iki) - Analyzes code performance to identify bottlenecks, proposing concrete optimizations with implementation guidance for improved application performance.
 - [/tdd](https://github.com/zscott/pane/blob/main/.claude/commands/tdd.md) by [zscott](https://github.com/zscott) - Guides development using Test-Driven Development principles, enforcing Red-Green-Refactor discipline, integrating with git workflow, and managing PR creation.
 - [/tdd-implement](https://github.com/jerseycheese/Narraitor/blob/feature/issue-227-ai-suggestions/.claude/commands/tdd-implement.md) by [jerseycheese](https://github.com/jerseycheese) - Implements Test-Driven Development by analyzing feature requirements, creating tests first (red), implementing minimal passing code (green), and refactoring while maintaining tests.
+- [/tidy](https://github.com/Jacknelson6/tidy) by [Jack Nelson](https://github.com/Jacknelson6) - Codebase structure auditor that detects god files, junk drawer roots, deep nesting, barrel export mazes, bloated CLAUDE.md files, and circular imports. Estimates token waste per issue, shows a dry-run of planned fixes, and reports savings after cleanup.
 
 ### Context Loading & Priming
 
