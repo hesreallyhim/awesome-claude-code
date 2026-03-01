@@ -60,9 +60,9 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by latest r
 <tbody>
 <tr>
 <td><a href="https://github.com/Piebald-AI/claude-code-system-prompts"><b>Claude Code System Prompts</b></a><br>by <a href="https://github.com/Piebald-AI">Piebald AI</a></td>
-<td>v2.1.62</td>
+<td>v2.1.63</td>
 <td>GitHub</td>
-<td>2026-02-27</td>
+<td>2026-02-28</td>
 <td>All parts of Claude Code's system prompt, including builtin tool descriptions, sub agent prompts (Plan/Explore/Task), utility prompts (CLAUDE.md, compact, Bash cmd, security review, agent creation, etc.). Updated for each Claude Code version.</td>
 </tr>
 <tr>
@@ -70,9 +70,9 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by latest r
 </tr>
 <tr>
 <td><a href="https://github.com/costiash/claude-code-docs"><b>claude-code-docs</b></a><br>by <a href="https://github.com/costiash">Constantin Shafranski</a></td>
-<td>v0.5.1</td>
+<td>v0.6.0</td>
 <td>GitHub</td>
-<td>2026-02-26</td>
+<td>2026-02-28</td>
 <td>A mirror of the Anthropic&copy; PBC documentation site for Claude/Code, but with bonus features like full-text search and query-time updates - a nice companion to `claude-code-docs` for up-to-the-minute, fully-indexed information so that Claude Code can read about itself.</td>
 </tr>
 <tr>
