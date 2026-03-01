@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import re
-from datetime import datetime
+from datetime import datetime, timezone
 
 
 def extract_github_owner_repo(url: str) -> tuple[str, str] | None:
@@ -172,7 +172,7 @@ def parse_resource_date(date_string: str | None) -> datetime | None:
 
     for fmt in date_formats:
         try:
-            return datetime.strptime(date_string, fmt)
+            return datetime.strptime(date_string, fmt).replace(tzinfo=timezone.utc)
         except ValueError:
             continue
 

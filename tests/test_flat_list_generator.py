@@ -4,7 +4,7 @@
 import csv
 import sys
 from dataclasses import dataclass
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import pytest
@@ -418,7 +418,7 @@ class TestReleasesSort:
 
     def test_releases_filter_recent(self, tmp_path: Path) -> None:
         """Test that releases sort only includes recent releases."""
-        now = datetime.now()
+        now = datetime.now(timezone.utc)
         recent = (now - timedelta(days=10)).strftime("%Y-%m-%d:%H-%M-%S")
         old = (now - timedelta(days=60)).strftime("%Y-%m-%d:%H-%M-%S")
 
@@ -463,7 +463,7 @@ class TestReleasesSort:
 
     def test_releases_sort_order(self, tmp_path: Path) -> None:
         """Test that releases are sorted by date (most recent first)."""
-        now = datetime.now()
+        now = datetime.now(timezone.utc)
         day5 = (now - timedelta(days=5)).strftime("%Y-%m-%d:%H-%M-%S")
         day10 = (now - timedelta(days=10)).strftime("%Y-%m-%d:%H-%M-%S")
         day15 = (now - timedelta(days=15)).strftime("%Y-%m-%d:%H-%M-%S")
@@ -523,7 +523,7 @@ class TestReleasesSort:
 
     def test_releases_table_format(self, tmp_path: Path) -> None:
         """Test releases table has correct columns."""
-        now = datetime.now()
+        now = datetime.now(timezone.utc)
         recent = (now - timedelta(days=5)).strftime("%Y-%m-%d:%H-%M-%S")
 
         rows = [

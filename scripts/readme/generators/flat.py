@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import os
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from scripts.readme.generators.base import ReadmeGenerator, load_template
@@ -139,20 +139,20 @@ class ParameterizedFlatListGenerator(ReadmeGenerator):
             )
             return [r for _, r in with_dates]
         if self.sort_type == "releases":
-            cutoff = datetime.now() - timedelta(days=self.DAYS_THRESHOLD)
+            cutoff = datetime.now(timezone.utc) - timedelta(days=self.DAYS_THRESHOLD)
             recent = []
             for row in resources:
                 release_date_str = row.get("Latest Release", "")
                 if not release_date_str:
                     continue
                 try:
-                    release_date = datetime.strptime(release_date_str, "%Y-%m-%d:%H-%M-%S")
+                    release_date = datetime.strptime(release_date_str, "%Y-%m-%d:%H-%M-%S").replace(tzinfo=timezone.utc)
                 except ValueError:
                     continue
                 if release_date >= cutoff:
                     row["_parsed_release_date"] = release_date
                     recent.append(row)
-            recent.sort(key=lambda x: x.get("_parsed_release_date", datetime.min), reverse=True)
+            recent.sort(key=lambda x: x.get("_parsed_release_date", datetime.min.replace(tzinfo=timezone.utc)), reverse=True)
             return recent
         return resources
 
@@ -213,7 +213,7 @@ class ParameterizedFlatListGenerator(ReadmeGenerator):
         )
         resources_table = generate_flat_resources_table(sorted_resources, self.sort_type)
 
-        generated_date = datetime.now().strftime("%Y-%m-%d")
+        generated_date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
         _, cat_display, _ = self._category_info
         _, _, sort_desc = self._sort_info
 

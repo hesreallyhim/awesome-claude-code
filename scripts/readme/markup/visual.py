@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from scripts.readme.helpers.readme_assets import (
@@ -116,7 +116,7 @@ def generate_weekly_section(
     resources_sorted_by_date.sort(key=lambda x: x[0], reverse=True)
 
     latest_additions: list[dict] = []
-    cutoff_date = datetime.now() - timedelta(days=7)
+    cutoff_date = datetime.now(timezone.utc) - timedelta(days=7)
     for dated_resource in resources_sorted_by_date:
         if dated_resource[0] >= cutoff_date or len(latest_additions) < 3:
             latest_additions.append(dated_resource[1])

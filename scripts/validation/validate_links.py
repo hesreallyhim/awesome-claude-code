@@ -841,7 +841,7 @@ def validate_links(csv_file, max_links=None, ignore_overrides=False, verbose=Fal
 
         # Update timestamp if not locked
         if "last_checked" not in locked_fields:
-            row[LAST_CHECKED_HEADER_NAME] = datetime.now().strftime("%Y-%m-%d:%H-%M-%S")
+            row[LAST_CHECKED_HEADER_NAME] = datetime.now(UTC).strftime("%Y-%m-%d:%H-%M-%S")
 
         # Track broken links
         if not is_active and "active" not in locked_fields:
@@ -961,7 +961,7 @@ def validate_links(csv_file, max_links=None, ignore_overrides=False, verbose=Fal
         "locked_fields": locked_field_count,
         "broken_links": broken_links,
         "newly_broken_links": newly_broken_links,
-        "timestamp": datetime.now().strftime("%Y-%m-%d:%H-%M-%S"),
+        "timestamp": datetime.now(UTC).strftime("%Y-%m-%d:%H-%M-%S"),
     }
 
 

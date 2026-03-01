@@ -31,7 +31,7 @@ import os
 import random
 import re
 import time
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -291,7 +291,7 @@ def process_resources(
     """
     Process and download resources from the CSV file.
     """
-    start_time = datetime.now()
+    start_time = datetime.now(timezone.utc)
     print(f"Starting download at: {start_time.strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"Archive directory (all resources): {output_dir}")
     print(f"Hosted directory (open-source only): {hosted_dir}")
@@ -450,7 +450,7 @@ def process_resources(
             time.sleep(random.uniform(1, 2))
 
     # Summary
-    end_time = datetime.now()
+    end_time = datetime.now(timezone.utc)
     duration = end_time - start_time
 
     print(f"\n{'=' * 60}")

@@ -12,7 +12,7 @@ import csv
 import sys
 import tempfile
 from collections.abc import Generator
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import pytest
@@ -174,9 +174,9 @@ def test_append_to_csv_date_fields(
     set_csv_path(monkeypatch, temp_csv)
 
     # Capture the current time window
-    before_time = datetime.now()
+    before_time = datetime.now(timezone.utc)
     result = append_to_csv(sample_resource_data)
-    after_time = datetime.now()
+    after_time = datetime.now(timezone.utc)
 
     assert result is True
 
@@ -186,9 +186,9 @@ def test_append_to_csv_date_fields(
         next(reader)  # Skip header
         data_row = next(reader)
 
-        # Parse the date fields
-        date_added = datetime.strptime(data_row[9], "%Y-%m-%d:%H-%M-%S")
-        last_checked = datetime.strptime(data_row[11], "%Y-%m-%d:%H-%M-%S")
+        # Parse the date fields (UTC-aware to match datetime.now(timezone.utc))
+        date_added = datetime.strptime(data_row[9], "%Y-%m-%d:%H-%M-%S").replace(tzinfo=timezone.utc)
+        last_checked = datetime.strptime(data_row[11], "%Y-%m-%d:%H-%M-%S").replace(tzinfo=timezone.utc)
 
         # Verify dates are within the expected time window (account for second precision)
         # The strptime loses microseconds, so we need to compare at second precision

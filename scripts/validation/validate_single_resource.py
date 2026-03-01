@@ -8,7 +8,7 @@ workflows to validate resources before they are committed to the CSV file.
 """
 
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -93,7 +93,7 @@ def validate_single_resource(
     # Set active status
     is_valid = len(errors) == 0
     enriched_data["active"] = "TRUE" if is_valid else "FALSE"
-    enriched_data["last_checked"] = datetime.now().strftime("%Y-%m-%d:%H-%M-%S")
+    enriched_data["last_checked"] = datetime.now(timezone.utc).strftime("%Y-%m-%d:%H-%M-%S")
 
     return is_valid, enriched_data, errors
 

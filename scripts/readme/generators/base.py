@@ -7,7 +7,7 @@ import csv
 import os
 import shutil
 from abc import ABC, abstractmethod
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 import yaml  # type: ignore[import-untyped]
@@ -70,7 +70,7 @@ def create_backup(file_path: str, keep_latest: int = 1) -> str | None:
     if not os.path.exists(file_path):
         return None
 
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    timestamp = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
     backup_dir = os.path.join(REPO_ROOT, ".myob", "backups")
     os.makedirs(backup_dir, exist_ok=True)
 

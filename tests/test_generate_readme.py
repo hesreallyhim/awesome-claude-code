@@ -3,7 +3,7 @@
 
 import os
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any
 
 import pytest
@@ -37,19 +37,19 @@ class TestParseResourceDate:
     def test_parse_date_only_format(self) -> None:
         """Test parsing YYYY-MM-DD format."""
         result = parse_resource_date("2025-08-07")
-        expected = datetime(2025, 8, 7)
+        expected = datetime(2025, 8, 7, tzinfo=timezone.utc)
         assert result == expected
 
     def test_parse_date_with_timestamp_format(self) -> None:
         """Test parsing YYYY-MM-DD:HH-MM-SS format."""
         result = parse_resource_date("2025-08-07:18-26-57")
-        expected = datetime(2025, 8, 7, 18, 26, 57)
+        expected = datetime(2025, 8, 7, 18, 26, 57, tzinfo=timezone.utc)
         assert result == expected
 
     def test_parse_with_whitespace(self) -> None:
         """Test parsing with leading/trailing whitespace."""
         result = parse_resource_date("  2025-08-07  ")
-        expected = datetime(2025, 8, 7)
+        expected = datetime(2025, 8, 7, tzinfo=timezone.utc)
         assert result == expected
 
     def test_parse_empty_string(self) -> None:
@@ -78,10 +78,10 @@ class TestParseResourceDate:
     @pytest.mark.parametrize(
         "date_string, expected",
         [
-            ("2025-08-05:11-48-39", datetime(2025, 8, 5, 11, 48, 39)),
-            ("2025-07-29:18-37-05", datetime(2025, 7, 29, 18, 37, 5)),
-            ("2025-08-07:00-00-00", datetime(2025, 8, 7, 0, 0, 0)),
-            ("2025-12-31:23-59-59", datetime(2025, 12, 31, 23, 59, 59)),
+            ("2025-08-05:11-48-39", datetime(2025, 8, 5, 11, 48, 39, tzinfo=timezone.utc)),
+            ("2025-07-29:18-37-05", datetime(2025, 7, 29, 18, 37, 5, tzinfo=timezone.utc)),
+            ("2025-08-07:00-00-00", datetime(2025, 8, 7, 0, 0, 0, tzinfo=timezone.utc)),
+            ("2025-12-31:23-59-59", datetime(2025, 12, 31, 23, 59, 59, tzinfo=timezone.utc)),
         ],
     )
     def test_parse_various_timestamps(self, date_string: str, expected: datetime) -> None:

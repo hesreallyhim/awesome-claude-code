@@ -12,7 +12,7 @@ import os
 import re
 import subprocess
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from scripts.utils.repo_root import find_repo_root
@@ -36,7 +36,7 @@ def run_command(cmd: list[str], check: bool = True) -> subprocess.CompletedProce
 
 def create_unique_branch_name(base_name: str) -> str:
     """Create a unique branch name with timestamp."""
-    timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+    timestamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
     return f"{base_name}-{timestamp}"
 
 

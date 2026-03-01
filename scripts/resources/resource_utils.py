@@ -5,7 +5,7 @@ from __future__ import annotations
 
 import csv
 import os
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from scripts.utils.repo_root import find_repo_root
@@ -31,7 +31,7 @@ def append_to_csv(data: dict[str, str]) -> bool:
         print("Error reading CSV header: missing header row")
         return False
 
-    now = datetime.now().strftime("%Y-%m-%d:%H-%M-%S")
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%d:%H-%M-%S")
     value_map = {
         "ID": data.get("id", ""),
         "Display Name": data.get("display_name", ""),

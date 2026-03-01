@@ -9,7 +9,7 @@ import json
 import logging
 import re
 import time
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from github import Github
@@ -435,14 +435,14 @@ class ManualNotificationTracker:
             "repo_url": repo_url,
             "issue_url": issue_url,
             "resource_name": resource_name,
-            "timestamp": datetime.now().isoformat(),
+            "timestamp": datetime.now(timezone.utc).isoformat(),
         }
         self.history.append(entry)
         self._save_history()
 
     def get_notification_count(self, repo_url: str, time_window_hours: int = 24) -> int:
         """Get count of recent notifications for a repository"""
-        cutoff = datetime.now().timestamp() - (time_window_hours * 3600)
+        cutoff = datetime.now(timezone.utc).timestamp() - (time_window_hours * 3600)
         count = 0
 
         for entry in self.history:
