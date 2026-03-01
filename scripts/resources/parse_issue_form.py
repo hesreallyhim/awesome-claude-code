@@ -173,11 +173,12 @@ def validate_parsed_data(data: dict[str, str]) -> tuple[bool, list[str], list[st
     url_fields = ["primary_link", "secondary_link", "author_link"]
     for field in url_fields:
         value = data.get(field, "").strip()
-        if value and field != "secondary_link":  # secondary is optional
-            if not value.startswith("https://"):
-                errors.append(f"{field} must start with https://")
-            elif " " in value:
-                errors.append(f"{field} contains spaces")
+        if not value:
+            continue  # required-field check above handles primary_link/author_link
+        if not value.startswith("https://"):
+            errors.append(f"{field} must start with https://")
+        elif " " in value:
+            errors.append(f"{field} contains spaces")
 
     # Validate license
     if data.get("license") == "No License / Not Specified":
