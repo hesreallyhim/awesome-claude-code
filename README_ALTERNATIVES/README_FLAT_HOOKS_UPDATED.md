@@ -161,4 +161,4 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by last updated
 
 **Total Resources:** 11
 
-**Last Generated:** 2026-02-26
+**Last Generated:** 2026-03-01
