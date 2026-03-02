@@ -1421,6 +1421,15 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/ParetoSecurity/pareto-mac?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ParetoSecurity/pareto-mac?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ParetoSecurity/pareto-mac?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ParetoSecurity/pareto-mac?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ParetoSecurity/pareto-mac?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ParetoSecurity/pareto-mac?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ParetoSecurity/pareto-mac?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ParetoSecurity/pareto-mac?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ParetoSecurity/pareto-mac?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/vaporif/parry"><b>parry</b></a><br>by <a href="https://github.com/vaporif">Dmytro Onypko</a></td>
+<td>Hooks</td>
+<td>General</td>
+<td>Prompt injection scanner for Claude Code hooks. Scans tool inputs and outputs for injection attacks, secrets, and data exfiltration attempts. [NOTE: Early development phase but worth a look.]</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/vaporif/parry?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/vaporif/parry?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/vaporif/parry?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/vaporif/parry?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/vaporif/parry?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/vaporif/parry?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/vaporif/parry?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/vaporif/parry?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/vaporif/parry?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/backnotprop/plannotator"><b>Plannotator</b></a><br>by <a href="https://github.com/backnotprop">backnotprop</a></td>
 <td>Hooks</td>
 <td>-</td>
@@ -1755,6 +1764,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 
 ---
 
-**Total Resources:** 190
+**Total Resources:** 191
 
 **Last Generated:** 2026-03-02

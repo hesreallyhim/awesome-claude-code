@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`parry`](https://github.com/vaporif/parry) &nbsp; by &nbsp; [Dmytro Onypko](https://github.com/vaporif)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Prompt injection scanner for Claude Code hooks. Scans tool inputs and outputs for injection attacks, secrets, and data exfiltration attempts. [NOTE: Early development phase but worth a look.]
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for parry](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=parry&username=vaporif&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Dippy`](https://github.com/ldayton/Dippy) &nbsp; by &nbsp; [Lily Dayton](https://github.com/ldayton)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Auto-approve safe bash commands using AST-based parsing, while prompting for destructive operations. Solves permission fatigue without disabling safety. Supports Claude Code, Gemini CLI, and Cursor.
 
@@ -1411,6 +1422,17 @@ Auto-approve safe bash commands using AST-based parsing, while prompting for des
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for Dippy](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Dippy&username=ldayton&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`parry`](https://github.com/vaporif/parry) &nbsp; by &nbsp; [Dmytro Onypko](https://github.com/vaporif)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Prompt injection scanner for Claude Code hooks. Scans tool inputs and outputs for injection attacks, secrets, and data exfiltration attempts. [NOTE: Early development phase but worth a look.]
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for parry](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=parry&username=vaporif&all_stats=true&stats_only=true)
 
 </details>
 <br>

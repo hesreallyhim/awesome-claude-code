@@ -29,6 +29,7 @@
 
 ## Latest Additions
 
+- [parry](https://github.com/vaporif/parry) by [Dmytro Onypko](https://github.com/vaporif) - Prompt injection scanner for Claude Code hooks. Scans tool inputs and outputs for injection attacks, secrets, and data exfiltration attempts. [NOTE: Early development phase but worth a look.].
 - [Dippy](https://github.com/ldayton/Dippy) by [Lily Dayton](https://github.com/ldayton) - Auto-approve safe bash commands using AST-based parsing, while prompting for destructive operations. Solves permission fatigue without disabling safety. Supports Claude Code, Gemini CLI, and Cursor.
 - [sudocode](https://github.com/sudocode-ai/sudocode) by [ssh-randy](https://github.com/ssh-randy) - Lightweight agent orchestration dev tool that lives in your repo. Integrates with various specification frameworks. It's giving Jira.
 - [claude-tmux](https://github.com/nielsgroen/claude-tmux) by [Niels Groeneveld](https://github.com/nielsgroen) - Manage Claude Code within tmux. A tmux popup of all your Claude Code instances, enabling quick switching, status monitoring, session lifecycle management, with git worktree and pull request support.
@@ -235,6 +236,7 @@
 - [claude-hooks](https://github.com/johnlindquist/claude-hooks) by [John Lindquist](https://github.com/johnlindquist) - A TypeScript-based system for configuring and customizing Claude Code hooks with a powerful and flexible interface.
 - [Claudio](https://github.com/ctoth/claudio) by [Christopher Toth](https://github.com/ctoth) - A no-frills little library that adds delightful OS-native sounds to Claude Code via simple hooks. It really sparks joy.
 - [Dippy](https://github.com/ldayton/Dippy) by [Lily Dayton](https://github.com/ldayton) - Auto-approve safe bash commands using AST-based parsing, while prompting for destructive operations. Solves permission fatigue without disabling safety. Supports Claude Code, Gemini CLI, and Cursor.
+- [parry](https://github.com/vaporif/parry) by [Dmytro Onypko](https://github.com/vaporif) - Prompt injection scanner for Claude Code hooks. Scans tool inputs and outputs for injection attacks, secrets, and data exfiltration attempts. [NOTE: Early development phase but worth a look.].
 - [TDD Guard](https://github.com/nizos/tdd-guard) by [Nizar Selander](https://github.com/nizos) - A hooks-driven system that monitors file operations in real-time and blocks changes that violate TDD principles.
 - [TypeScript Quality Hooks](https://github.com/bartolli/claude-code-typescript-hooks) by [bartolli](https://github.com/bartolli) - Quality check hook for Node.js TypeScript projects with TypeScript compilation. ESLint auto-fixing, and Prettier formatting. Uses SHA256 config caching for < 5ms validation performance during real-time editing.
 

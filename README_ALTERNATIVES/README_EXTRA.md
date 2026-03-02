@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/vaporif/parry"><img src="../assets/badge-parry.svg" alt="parry"></a>  
+_Prompt injection scanner for Claude Code hooks. Scans tool inputs and outputs for injection attacks, secrets, and data exfiltration attempts. [NOTE: Early development phase but worth a look.]_  
+![GitHub Stats for parry](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=parry&username=vaporif&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/ldayton/Dippy"><img src="../assets/badge-dippy.svg" alt="Dippy"></a>  
 _Auto-approve safe bash commands using AST-based parsing, while prompting for destructive operations. Solves permission fatigue without disabling safety. Supports Claude Code, Gemini CLI, and Cursor._  
 ![GitHub Stats for Dippy](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Dippy&username=ldayton&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -1493,6 +1497,13 @@ _A no-frills little library that adds delightful OS-native sounds to Claude Code
 <a href="https://github.com/ldayton/Dippy"><img src="../assets/badge-dippy.svg" alt="Dippy"></a>  
 _Auto-approve safe bash commands using AST-based parsing, while prompting for destructive operations. Solves permission fatigue without disabling safety. Supports Claude Code, Gemini CLI, and Cursor._  
 ![GitHub Stats for Dippy](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Dippy&username=ldayton&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/vaporif/parry"><img src="../assets/badge-parry.svg" alt="parry"></a>  
+_Prompt injection scanner for Claude Code hooks. Scans tool inputs and outputs for injection attacks, secrets, and data exfiltration attempts. [NOTE: Early development phase but worth a look.]_  
+![GitHub Stats for parry](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=parry&username=vaporif&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 
