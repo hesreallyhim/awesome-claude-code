@@ -98,4 +98,4 @@ A flat list view of all resources. Category: **Clients** | Sorted: alphabeticall
 
 **Total Resources:** 4
 
-**Last Generated:** 2026-03-01
+**Last Generated:** 2026-03-02

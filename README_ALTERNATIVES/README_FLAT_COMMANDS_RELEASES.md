@@ -85,4 +85,4 @@ A flat list view of all resources. Category: **Commands** | Sorted: by latest re
 
 **Total Resources:** 2
 
-**Last Generated:** 2026-03-01
+**Last Generated:** 2026-03-02
