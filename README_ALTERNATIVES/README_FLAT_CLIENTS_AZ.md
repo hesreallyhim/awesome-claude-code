@@ -91,11 +91,20 @@ A flat list view of all resources. Category: **Clients** | Sorted: alphabeticall
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/stravu/crystal?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/stravu/crystal?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/stravu/crystal?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/stravu/crystal?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/stravu/crystal?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/stravu/crystal?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/stravu/crystal?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/stravu/crystal?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/stravu/crystal?style=flat-square" alt="license"></td>
 </tr>
+<tr>
+<td><a href="https://github.com/omnara-ai/omnara"><b>Omnara</b></a><br>by <a href="https://github.com/ishaansehgal99">Ishaan Sehgal</a></td>
+<td>Alternative Clients</td>
+<td>General</td>
+<td>A command center for AI agents that syncs Claude Code sessions across terminal, web, and mobile. Allows for remote monitoring, human-in-the-loop interaction, and team collaboration.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/omnara-ai/omnara?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/omnara-ai/omnara?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/omnara-ai/omnara?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/omnara-ai/omnara?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/omnara-ai/omnara?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/omnara-ai/omnara?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/omnara-ai/omnara?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/omnara-ai/omnara?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/omnara-ai/omnara?style=flat-square" alt="license"></td>
+</tr>
 </tbody>
 </table>
 
 ---
 
-**Total Resources:** 4
+**Total Resources:** 5
 
-**Last Generated:** 2026-03-01
+**Last Generated:** 2026-03-02

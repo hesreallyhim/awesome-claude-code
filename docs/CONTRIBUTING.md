@@ -3,33 +3,33 @@
 Please take a moment to read through this docoument if you plan to submit something for recommendation.
 
 > [!WARNING]
-> Due to recent activity that is visible across various repositories, stricter measures have been put in place to reduce spam. Policies have changed very little, only their enforcement will be much stricter going forward, and I will have little patience for anyone who neglects to read this document before opening an issue. Please see [COOLDOWN](./COOLDOWN.md) for additional information.
+> Due to aggressive spamming of the repository's recommendation system, strict measures are in place to ensure that submissions are made accoring to the requirements stated in this document. The penalties are harsh, but compliance is very easy, and any well-meaning user who reads this document is unlikely to be affected. In additiion, please note that a temporary ban is also in place for any submissions relating to OpenClaw. I hope that these incidents were the result of a few irresponsible users, and not reflective of the OpenClaw community as a whole, and I'm sure this will be removed in the near future, but it is deemed necessary as a palliative measure.
 
 - I am very grateful to receive recommendations from the visitors to this list. But be aware that there is no formal submission/review process at the moment. My responsibility is to share links to awesome things. One way I find out about awesome things is via the repo's issues, and I'm very grateful to everyone who shares their amazing work. But it's not the only way, and creating an issue does not represent any sort of contract.
 - Bear in mind that the point of an Awesome List is to be *selective* - I cannot recommend every single resource that is submitted.
-- The goal of this list is to identify and highlight resources that provide value to the Claude Code community - not the other way around. Please do not create any repositories just so that you can submit them to this list. And don't plan a marketing strategy that has anything to do with being added to the list.
-- I prioritize the following above all: ***security***. Usually, I have to run the software in order to know if it's any good. And I am not content to recommend something unless I have high confidence that it is not malicious or overly risky - and that any risks (permissions, etc.) are prominently declared.
-- Understand that I am not going to download and execute a shell script or a binary unless I have high confidence that it is safe to do so. The longer the shell script is, the less likely that I'm going to execute it. Also bear in mind that I am probably not going to devote an entire week to ramping up on a specialized framework.
-
-If getting a review from the maintainer is important to you, here are some things that might help:
-
-- What I tend to prioritize: projects that are (i) easy to try out and show their value immediately; (ii) projects with great documentation (especially demos); (iii) projects that easy to spin up and tear down (and even better if they don't touch any core directories); (iv) projects that are unique or creative; (v) projects that are "interoperable" - meaning, resources that users can adapt to their own workflow, rather than ones that require total buy-in.
-- Try to make it as easy and as fast as possible for the user to see the value in your software. If you make bold claims, you must be prepared to offer clear and convincing evidence. Tell me exactly what task I should give to Claude and what prompts I should use.
+- Although many awesome resources are inter-operable, we especially welcome and invite recommendations of resources that focus on the unique features and functionality of Claude Code. This is not a hard requirement but it is a guideline.
+- I'm constantly trying to improve the way in which recommendations can be submitted, and to provide clear guidance to users who wish to share their work. Here are some of those guidelines:
+    - security is of the utmost importance. I'm unlikely to install any software unless I have high confidence that it is free of malware, spyware, adware, or bloat. If a resource involves executing a shell script, for example, it is recommended to supply clear and thorough comments explaining exactly what it does.
+    - If your library makes any network calls except to Anthropic servers; modifies shared system files; involves any form of telemetry; or requires "bypass-permissions" mode, this must be stated very clearly.
+    - Do not submit resources that do not comply with the licensing rights of other developers. Make sure you understand what OSS licenses require.
+    - I value _focused_ resources with a clear purpose and use value. Even if you have a marketplace full of awesome plugins, you are encouraged to select one, or a small subset.
+    - Claims about what a resource does have to be evidence-based - and you should not expect me, or probably any user, to do the work of proving it themselves. If you can provide a video demonstrating the effectiveness of a skill, e.g., this is tremendously helpful. Otherwise, provide instructions for validating the claims made in the description, and make them as detailed as possible. "Install this library into your favorite project and watch the magic happen" - no. "Clone this demo repository and install the plugin; give Claude the following prompt: ..." - yes.
+    - Put a tiny bit of time and effort into your README. It's a shame that developers will put so much effort into a project and then let an agent write the README and hardly give it any thought. 
 
 ## How to Recommend a Resource
 
 **NOTE: ALL RECOMMENDATIONS MUST BE MADE USING THE WEB UI ISSUE FORM TEMPLATE, OR YOU RISK BEING BANNED FROM INTERACTING WITH THIS REPOSITORY TEMPORARILY OR PERMANENTLY.**
 
-First, make sure you've read the above information. Second, make sure you've read, and agree with, the [Code of Conduct](./CODE_OF_CONDUCT.md) Then:
+First, make sure you've read the above information. Second, make sure you've read, and agree with, the [Code of Conduct](./CODE_OF_CONDUCT.md). Then:
 
 ### **[Click here to submit a new resource](https://github.com/hesreallyhim/awesome-claude-code/issues/new?template=recommend-resource.yml)**
 
-That's it! Just click the link above and fill out the form. You don't even need to use git. (And please don't open a PR for this.)
+Do not open a PR. Just fill out the form. If there are any issues with the form, the bot will notify you. (A notification from the bot that your recommendation needs some changes in formatting are not related to the warning above, which mainly applies to submissions that attempt to bypass the GitHub Web UI issue form entirely. You need not worry that formatting errors alone will incur a ban.)
 
 > [!Warning]
 > It is **not** possible to submit a resource recommendation using the `gh` CLI.
 
-Resource recommendations must be created by human beings.
+Although resources themselves may be partially or entirely written by a coding agent, resource recommendations must be created by human beings. 
 
 ### The Recommendation Process
 
@@ -46,7 +46,7 @@ graph TD
     F --> G{Decision}
     G -->|👍 Approved| H[Bot creates PR automatically]
     G -->|🔄 Changes requested| I[Maintainer requests changes]
-    G -->|👎 Rejected| J[Issue closed with reason]
+    G -->|👎 Rejected| J[Issue closed]
     I --> E
     H --> K[PR merged]
     K --> L[🎉 Resource goes live!]
