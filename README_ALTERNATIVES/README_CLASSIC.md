@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Claude Scientific Skills`](https://github.com/K-Dense-AI/claude-scientific-skills) &nbsp; by &nbsp; [K-Dense](https://github.com/K-Dense-AI/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+"A set of ready-to-use Agent Skills for research, science, engineering, analysis, finance and writing." That's their description - modest, simple. That's how you can tell this is really one of the best skills repos on GitHub. If you've ever thought about getting a PhD... just read all of these documents instead. Also I think it IS an AI agent or something? Awesome.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-scientific-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-scientific-skills&username=K-Dense-AI&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`parry`](https://github.com/vaporif/parry) &nbsp; by &nbsp; [Dmytro Onypko](https://github.com/vaporif)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Prompt injection scanner for Claude Code hooks. Scans tool inputs and outputs for injection attacks, secrets, and data exfiltration attempts. [NOTE: Early development phase but worth a look.]
 
@@ -258,6 +269,17 @@ Claude Code skill that automates mountain route research for North American peak
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-mountaineering-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-mountaineering-skills&username=dreamiurg&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Claude Scientific Skills`](https://github.com/K-Dense-AI/claude-scientific-skills) &nbsp; by &nbsp; [K-Dense](https://github.com/K-Dense-AI/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+"A set of ready-to-use Agent Skills for research, science, engineering, analysis, finance and writing." That's their description - modest, simple. That's how you can tell this is really one of the best skills repos on GitHub. If you've ever thought about getting a PhD... just read all of these documents instead. Also I think it IS an AI agent or something? Awesome.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-scientific-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-scientific-skills&username=K-Dense-AI&all_stats=true&stats_only=true)
 
 </details>
 <br>
