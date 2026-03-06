@@ -14,10 +14,10 @@ name: Submission Enforcement
 # because we use a single token for BOTH repos in the enforcement step.
 
 on:
-  # issues:
-  #   types: [opened, reopened, edited]
-  # pull_request_target:
-  #   types: [opened, reopened]
+  issues:
+    types: [opened, reopened, edited]
+  pull_request_target:
+    types: [opened, reopened]
   workflow_dispatch:
 
 concurrency:
