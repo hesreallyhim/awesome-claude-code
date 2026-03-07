@@ -180,6 +180,7 @@
 - [claude-code.el](https://github.com/stevemolitor/claude-code.el) by [stevemolitor](https://github.com/stevemolitor) - An Emacs interface for Claude Code CLI.
 - [claude-code.nvim](https://github.com/greggh/claude-code.nvim) by [greggh](https://github.com/greggh) - A seamless integration between Claude Code AI assistant and Neovim.
 - [Claudix - Claude Code for VSCode](https://github.com/Haleclipse/Claudix) by [Haleclipse](https://github.com/Haleclipse) - A VSCode extension that brings Claude Code directly into your editor with interactive chat interface, session management, intelligent file operations, terminal execution, and real-time streaming responses. Built with Vue 3, TypeScript.
+- [Skill Dock](https://marketplace.visualstudio.com/items?itemName=skill-dock.skill-dock) by [yen0304](https://github.com/yen0304) - Local-first agent skill manager for VS Code. Browse, create, and import agent skills across Claude Code, Cursor, Copilot, and 20+ AI tools. Features a built-in marketplace with skills.sh integration, multi-language support (en, zh-tw, zh-cn, ja), and 443 tests.
 
 ### Usage Monitors
 
