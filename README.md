@@ -149,6 +149,7 @@
 
 ### General
 
+- [Accessibility DevKit LLM](https://github.com/lukeslp/accessibility-devkit-llm) by [Luke Steuber](https://github.com/lukeslp) - Alt text generation, WCAG auditing CLI, and MCP server for accessibility workflows. Runs with OpenAI, Anthropic, HuggingFace, or Ollama locally — no API key required for local models.
 - [cc-sessions](https://github.com/GWUDCAP/cc-sessions) by [toastdev](https://github.com/satoastshi) - An opinionated approach to productive development with Claude Code.
 - [cc-tools](https://github.com/Veraticus/cc-tools) by [Josh Symonds](https://github.com/Veraticus) - High-performance Go implementation of Claude Code hooks and utilities. Provides smart linting, testing, and statusline generation with minimal overhead.
 - [ccexp](https://github.com/nyatinte/ccexp) by [nyatinte](https://github.com/nyatinte) - Interactive CLI tool for discovering and managing Claude Code configuration files and slash commands with a beautiful terminal UI.
