@@ -193,6 +193,7 @@
 ### Orchestrators
 
 - [Auto-Claude](https://github.com/AndyMik90/Auto-Claude) by [AndyMik90](https://github.com/AndyMik90) - Autonomous multi-agent coding framework for Claude Code (Claude Agent SDK) that integrates the full SDLC - "plans, builds, and validates software for you". Features a slick kanban-style UI and a well-designed but not over-engineered agent orchestration system.
+- [Auto-Co](https://github.com/NikitaDmitrieff/auto-co-meta) by [NikitaDmitrieff](https://github.com/NikitaDmitrieff) - An open-source bash loop that runs 14 specialized AI agents as an autonomous company. Each agent models an expert (Bezos for strategy, DHH for engineering, Munger for critique) and they coordinate through a single markdown "relay baton" file. Ships real products autonomously — 39+ cycles, ~$56 total cost.
 - [Claude Code Flow](https://github.com/ruvnet/claude-code-flow) by [ruvnet](https://github.com/ruvnet) - This mode serves as a code-first orchestration layer, enabling Claude to write, edit, test, and optimize code autonomously across recursive agent cycles.
 - [Claude Squad](https://github.com/smtg-ai/claude-squad) by [smtg-ai](https://github.com/smtg-ai) - Claude Squad is a terminal app that manages multiple Claude Code, Codex (and other local agents including Aider) in separate workspaces, allowing you to work on multiple tasks simultaneously.
 - [Claude Swarm](https://github.com/parruda/claude-swarm) by [parruda](https://github.com/parruda) - Launch Claude Code session that is connected to a swarm of Claude Code Agents.
