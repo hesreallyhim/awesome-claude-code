@@ -78,6 +78,7 @@
 
 ### General
 
+- [Agent Skills](https://github.com/ZLHad/agent-skills) by [ZLHad](https://github.com/ZLHad) - A collection of agent skills for OpenClaw and Claude Code. Includes cc-bridge (bridges OpenClaw messaging platforms to persistent Claude Code CLI sessions via tmux) and ieee-reference-manager (full-pipeline IEEE Trans reference management with BibTeX fixes, DOI verification, journal name standardization, and IEEE compliance checks).
 - [AgentSys](https://github.com/avifenesh/agentsys) by [avifenesh](https://github.com/avifenesh) - Workflow automation system for Claude with a group of useful plugins, agents, and skills. Automates task-to-production workflows, PR management, code cleanup, performance investigation, drift detection, and multi-agent code review. Includes [agnix](https://github.com/avifenesh/agnix) for linting agent configurations. Built on thousands of lines of code with thousands of tests. Uses deterministic detection (regex, AST) with LLM judgment for efficiency. Used on many production systems.
 - [AI Agent, AI Spy](https://youtu.be/0ANECpNdt-4) by [Whittaker & Tiwari](https://signalfoundation.org/) - Members from the Signal Foundation with some really great tips and tricks on how to turn your operating system into an instrument of total surveillance, and why some companies are doing this really awesome thing. [warning: YouTube link].
 - [Book Factory](https://github.com/robertguss/claude-skills) by [Robert Guss](https://github.com/robertguss) - A comprehensive pipeline of Skills that replicates traditional publishing infrastructure for nonfiction book creation using specialized Claude skills.
@@ -402,3 +403,4 @@ This list is licensed under [Creative Commons CC BY-NC-ND 4.0](https://creativec
 
 
 <!-- OBLIGATORY GUARD AGAINST SILLY END-OF-FILE PROBLEM -->
+
