@@ -99,6 +99,7 @@
 
 <br>
 
+- [Xquik X Twitter Scraper](https://github.com/Xquik-dev/x-twitter-scraper) by [Xquik-dev](https://github.com/Xquik-dev) - X/Twitter data platform skill with 76 REST API endpoints covering tweet search, user lookup, follower extraction, 20 bulk extraction tools, account monitoring, giveaway draws, trending topics, write actions (tweet, like, retweet, follow, DM), Telegram integrations, and MCP server (v2 sandbox + v1 legacy). Works with Claude Code, Cursor, Codex, Copilot, Gemini CLI, and 40+ agents via the skills.sh protocol.
 ## Workflows & Knowledge Guides 🧠
 
 > A workflow is a tightly coupled set of Claude Code-native resources that facilitate specific projects
