@@ -172,6 +172,7 @@
 - [Vibe-Log](https://github.com/vibe-log/vibe-log-cli) by [Vibe-Log](https://github.com/vibe-log) - Analyzes your Claude Code prompts locally (using CC), provides intelligent session analysis and actionable strategic guidance - works in the statusline and produces very pretty HTML reports as well. Easy to install and remove.
 - [viwo-cli](https://github.com/OverseedAI/viwo) by [Hal Shin](https://github.com/hal-shin) - Run Claude Code in a Docker container with git worktrees as volume mounts to enable safer usage of `--dangerously-skip-permissions` for frictionless one-shotting prompts. Allows users to spin up multiple instances of Claude Code in the background easily with reduced permission fatigue.
 - [VoiceMode MCP](https://github.com/mbailey/voicemode) by [Mike Bailey](https://github.com/mbailey) - VoiceMode MCP brings natural conversations to Claude Code. It supports any OpenAI API compatible voice services and installs free and open source voice services (Whisper.cpp and Kokoro-FastAPI).
+- [gui.new](https://gui.new) by [Dylan Feltus](https://github.com/dylanfeltus) - Visual output layer for Claude. Paste `Read https://gui.new/docs/llms.txt` into any conversation and Claude renders dashboards, charts, and UIs as shareable links instead of code blocks. Includes real-time input sync, state persistence, and a component library. [npm](https://npmjs.com/package/gui-new) · [pip](https://pypi.org/project/gui-new/).
 
 ### IDE Integrations
 
