@@ -350,6 +350,7 @@
 - [SteadyStart](https://github.com/steadycursor/steadystart/blob/main/CLAUDE.md) by [steadycursor](https://github.com/steadycursor) - Clear and direct instructives about style, permissions, Claude's "role", communications, and documentation of Claude Code sessions for other team members to stay abreast.
 
 ### Project Scaffolding & MCP
+n- [Iris MCP Server](https://github.com/iris-eval/mcp-server) by [irparent](https://github.com/irparent) - The agent eval standard for MCP. Scores output quality, catches safety failures (PII, hallucinations, prompt injection), and enforces cost budgets — all as an MCP server your agent discovers automatically. Includes 12 built-in eval rules, interactive playground at iris-eval.com/playground, and a real-time dashboard. Zero code changes required.
 
 - [Basic Memory](https://github.com/basicmachines-co/basic-memory/blob/main/CLAUDE.md) by [basicmachines-co](https://github.com/basicmachines-co) - Presents an innovative AI-human collaboration framework with Model Context Protocol for bidirectional LLM-markdown communication and flexible knowledge structure for complex projects.
 - [claude-code-mcp-enhanced](https://github.com/grahama1970/claude-code-mcp-enhanced/blob/main/CLAUDE.md) by [grahama1970](https://github.com/grahama1970) - Provides detailed and emphatic instructions for Claude to follow as a coding agent, with testing guidance, code examples, and compliance checks.
