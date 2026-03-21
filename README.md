@@ -353,6 +353,7 @@
 
 - [Basic Memory](https://github.com/basicmachines-co/basic-memory/blob/main/CLAUDE.md) by [basicmachines-co](https://github.com/basicmachines-co) - Presents an innovative AI-human collaboration framework with Model Context Protocol for bidirectional LLM-markdown communication and flexible knowledge structure for complex projects.
 - [claude-code-mcp-enhanced](https://github.com/grahama1970/claude-code-mcp-enhanced/blob/main/CLAUDE.md) by [grahama1970](https://github.com/grahama1970) - Provides detailed and emphatic instructions for Claude to follow as a coding agent, with testing guidance, code examples, and compliance checks.
+- [SimpleFunctions MCP](https://simplefunctions.dev) by [spfunctions](https://github.com/spfunctions) - Prediction market intelligence MCP server for Kalshi + Polymarket. 16 tools: thesis management, edge detection, orderbook analysis, what-if scenarios, and trading. Connect with `claude mcp add simplefunctions --url https://simplefunctions.dev/api/mcp/mcp`.
 
 <br>
 
