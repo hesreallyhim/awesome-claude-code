@@ -74,15 +74,6 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by last updated
 <td colspan="4"><img src="https://img.shields.io/github/stars/vaporif/parry?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/vaporif/parry?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/vaporif/parry?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/vaporif/parry?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/vaporif/parry?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/vaporif/parry?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/vaporif/parry?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/vaporif/parry?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/vaporif/parry?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/nizos/tdd-guard"><b>TDD Guard</b></a><br>by <a href="https://github.com/nizos">Nizar Selander</a></td>
-<td>Hooks</td>
-<td>General</td>
-<td>A hooks-driven system that monitors file operations in real-time and blocks changes that violate TDD principles.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/nizos/tdd-guard?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/nizos/tdd-guard?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/nizos/tdd-guard?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/nizos/tdd-guard?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/nizos/tdd-guard?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/nizos/tdd-guard?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/nizos/tdd-guard?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/nizos/tdd-guard?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/nizos/tdd-guard?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/aannoo/claude-hook-comms"><b>Claude Code Hook Comms (HCOM)</b></a><br>by <a href="https://github.com/aannoo">aannoo</a></td>
 <td>Hooks</td>
 <td>General</td>
@@ -92,13 +83,13 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by last updated
 <td colspan="4"><img src="https://img.shields.io/github/stars/aannoo/claude-hook-comms?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/aannoo/claude-hook-comms?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/aannoo/claude-hook-comms?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/aannoo/claude-hook-comms?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/aannoo/claude-hook-comms?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/aannoo/claude-hook-comms?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/aannoo/claude-hook-comms?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/aannoo/claude-hook-comms?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/aannoo/claude-hook-comms?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/ctoth/claudio"><b>Claudio</b></a><br>by <a href="https://github.com/ctoth">Christopher Toth</a></td>
+<td><a href="https://github.com/Talieisin/britfix"><b>Britfix</b></a><br>by <a href="https://github.com/Talieisin">Talieisin</a></td>
 <td>Hooks</td>
 <td>General</td>
-<td>A no-frills little library that adds delightful OS-native sounds to Claude Code via simple hooks. It really sparks joy.</td>
+<td>Claude outputs American spellings by default, which can have an impact on: professional credibility, compliance, documentation, and more. Britfix converts to British English, with a Claude Code hook for automatic conversion as files are written. Context-aware: handles code files intelligently by only converting comments and docstrings, never identifiers or string literals.</td>
 </tr>
 <tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/ctoth/claudio?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ctoth/claudio?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ctoth/claudio?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ctoth/claudio?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ctoth/claudio?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ctoth/claudio?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ctoth/claudio?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ctoth/claudio?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ctoth/claudio?style=flat-square" alt="license"></td>
+<td colspan="4"><img src="https://img.shields.io/github/stars/Talieisin/britfix?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Talieisin/britfix?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Talieisin/britfix?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Talieisin/britfix?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Talieisin/britfix?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Talieisin/britfix?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Talieisin/britfix?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Talieisin/britfix?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Talieisin/britfix?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/ldayton/Dippy"><b>Dippy</b></a><br>by <a href="https://github.com/ldayton">Lily Dayton</a></td>
@@ -110,13 +101,22 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by last updated
 <td colspan="4"><img src="https://img.shields.io/github/stars/ldayton/Dippy?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ldayton/Dippy?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ldayton/Dippy?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ldayton/Dippy?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ldayton/Dippy?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ldayton/Dippy?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ldayton/Dippy?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ldayton/Dippy?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ldayton/Dippy?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/Talieisin/britfix"><b>Britfix</b></a><br>by <a href="https://github.com/Talieisin">Talieisin</a></td>
+<td><a href="https://github.com/nizos/tdd-guard"><b>TDD Guard</b></a><br>by <a href="https://github.com/nizos">Nizar Selander</a></td>
 <td>Hooks</td>
 <td>General</td>
-<td>Claude outputs American spellings by default, which can have an impact on: professional credibility, compliance, documentation, and more. Britfix converts to British English, with a Claude Code hook for automatic conversion as files are written. Context-aware: handles code files intelligently by only converting comments and docstrings, never identifiers or string literals.</td>
+<td>A hooks-driven system that monitors file operations in real-time and blocks changes that violate TDD principles.</td>
 </tr>
 <tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/Talieisin/britfix?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Talieisin/britfix?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Talieisin/britfix?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Talieisin/britfix?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Talieisin/britfix?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Talieisin/britfix?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Talieisin/britfix?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Talieisin/britfix?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Talieisin/britfix?style=flat-square" alt="license"></td>
+<td colspan="4"><img src="https://img.shields.io/github/stars/nizos/tdd-guard?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/nizos/tdd-guard?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/nizos/tdd-guard?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/nizos/tdd-guard?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/nizos/tdd-guard?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/nizos/tdd-guard?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/nizos/tdd-guard?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/nizos/tdd-guard?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/nizos/tdd-guard?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ctoth/claudio"><b>Claudio</b></a><br>by <a href="https://github.com/ctoth">Christopher Toth</a></td>
+<td>Hooks</td>
+<td>General</td>
+<td>A no-frills little library that adds delightful OS-native sounds to Claude Code via simple hooks. It really sparks joy.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/ctoth/claudio?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ctoth/claudio?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ctoth/claudio?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ctoth/claudio?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ctoth/claudio?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ctoth/claudio?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ctoth/claudio?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ctoth/claudio?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ctoth/claudio?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/beyondcode/claude-hooks-sdk"><b>claude-code-hooks-sdk</b></a><br>by <a href="https://github.com/beyondcode">beyondcode</a></td>
@@ -170,4 +170,4 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by last updated
 
 **Total Resources:** 12
 
-**Last Generated:** 2026-03-02
+**Last Generated:** 2026-03-25

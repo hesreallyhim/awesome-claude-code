@@ -60,9 +60,9 @@ A flat list view of all resources. Category: **Commands** | Sorted: by latest re
 <tbody>
 <tr>
 <td><a href="https://github.com/giselles-ai/giselle/blob/main/.claude/commands/update-branch-name.md"><b>/update-branch-name</b></a><br>by <a href="https://github.com/giselles-ai">giselles-ai</a></td>
-<td>v0.67.0</td>
+<td>v0.72.0</td>
 <td>GitHub</td>
-<td>2026-02-27</td>
+<td>2026-03-13</td>
 <td>Updates branch names with proper prefixes and formats, enforcing naming conventions, supporting semantic prefixes, and managing remote branch updates.</td>
 </tr>
 <tr>
@@ -70,9 +70,9 @@ A flat list view of all resources. Category: **Commands** | Sorted: by latest re
 </tr>
 <tr>
 <td><a href="https://github.com/metabase/metabase/blob/master/.claude/commands/fix-issue.md"><b>/fix-issue</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
-<td>v0.58.6</td>
+<td>v0.59.2</td>
 <td>GitHub</td>
-<td>2026-02-12</td>
+<td>2026-03-12</td>
 <td>Addresses GitHub issues by taking issue number as parameter, analyzing context, implementing solution, and testing/validating the fix for proper integration.</td>
 </tr>
 <tr>
@@ -80,9 +80,9 @@ A flat list view of all resources. Category: **Commands** | Sorted: by latest re
 </tr>
 <tr>
 <td><a href="https://github.com/metabase/metabase/blob/master/.claude/commands/fix-pr.md"><b>/fix-pr</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
-<td>v0.58.6</td>
+<td>v0.59.2</td>
 <td>GitHub</td>
-<td>2026-02-12</td>
+<td>2026-03-12</td>
 <td>Fetches and fixes unresolved PR comments by automatically retrieving feedback, addressing reviewer concerns, making targeted code improvements, and streamlining the review process.</td>
 </tr>
 <tr>
@@ -90,29 +90,19 @@ A flat list view of all resources. Category: **Commands** | Sorted: by latest re
 </tr>
 <tr>
 <td><a href="https://github.com/GaloyMoney/lana-bank/blob/main/.claude/commands/mermaid.md"><b>/mermaid</b></a><br>by <a href="https://github.com/GaloyMoney">GaloyMoney</a></td>
-<td>0.40.1</td>
+<td>0.47.0</td>
 <td>GitHub</td>
-<td>2026-02-12</td>
+<td>2026-03-10</td>
 <td>Generates Mermaid diagrams from SQL schema files, creating entity relationship diagrams with table properties, validating diagram compilation, and ensuring complete entity coverage.</td>
 </tr>
 <tr>
 <td colspan="5"><img src="https://img.shields.io/github/stars/GaloyMoney/lana-bank?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/GaloyMoney/lana-bank?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/GaloyMoney/lana-bank?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/GaloyMoney/lana-bank?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/GaloyMoney/lana-bank?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/GaloyMoney/lana-bank?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/GaloyMoney/lana-bank?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/GaloyMoney/lana-bank?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/GaloyMoney/lana-bank?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/jeremymailen/kotlinter-gradle/blob/master/.claude/commands/fix-github-issue.md"><b>/fix-github-issue</b></a><br>by <a href="https://github.com/jeremymailen">jeremymailen</a></td>
-<td>5.4.2</td>
-<td>GitHub</td>
-<td>2026-02-10</td>
-<td>Analyzes and fixes GitHub issues using a structured approach with GitHub CLI for issue details, implementing necessary code changes, running tests, and creating proper commit messages.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/jeremymailen/kotlinter-gradle?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/jeremymailen/kotlinter-gradle?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/jeremymailen/kotlinter-gradle?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jeremymailen/kotlinter-gradle?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/jeremymailen/kotlinter-gradle?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/jeremymailen/kotlinter-gradle?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jeremymailen/kotlinter-gradle?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/jeremymailen/kotlinter-gradle?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/jeremymailen/kotlinter-gradle?style=flat-square" alt="license"></td>
 </tr>
 </tbody>
 </table>
 
 ---
 
-**Total Resources:** 5
+**Total Resources:** 4
 
-**Last Generated:** 2026-03-02
+**Last Generated:** 2026-03-25

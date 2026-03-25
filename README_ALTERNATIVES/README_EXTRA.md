@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/ruvnet/ruflo"><img src="../assets/badge-ruflo.svg" alt="Ruflo"></a>  
+_An orchestration platform for deploying and coordinating multi-agent swarms. If I tried to go into detail it would probably crash my browser. An impressive feat of engineering that tries to cover everything and actually does a good job. Self-learning, autonomous multi-agent swarms, vector-based multi-layered memory, systematic planning, security guardrails, and so on. It's a growing project, and YMMV, but even just studying the patterns is immensely valuable, and it's clearly well-engineered._  
+![GitHub Stats for ruflo](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ruflo&username=ruvnet&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/K-Dense-AI/claude-scientific-skills"><img src="../assets/badge-claude-scientific-skills.svg" alt="Claude Scientific Skills"></a>  
 _"A set of ready-to-use Agent Skills for research, science, engineering, analysis, finance and writing." That's their description - modest, simple. That's how you can tell this is really one of the best skills repos on GitHub. If you've ever thought about getting a PhD... just read all of these documents instead. Also I think it IS an AI agent or something? Awesome._  
 ![GitHub Stats for claude-scientific-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-scientific-skills&username=K-Dense-AI&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -194,22 +198,6 @@ _"A set of ready-to-use Agent Skills for research, science, engineering, analysi
 <a href="https://github.com/vaporif/parry"><img src="../assets/badge-parry.svg" alt="parry"></a>  
 _Prompt injection scanner for Claude Code hooks. Scans tool inputs and outputs for injection attacks, secrets, and data exfiltration attempts. [NOTE: Early development phase but worth a look.]_  
 ![GitHub Stats for parry](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=parry&username=vaporif&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/ldayton/Dippy"><img src="../assets/badge-dippy.svg" alt="Dippy"></a>  
-_Auto-approve safe bash commands using AST-based parsing, while prompting for destructive operations. Solves permission fatigue without disabling safety. Supports Claude Code, Gemini CLI, and Cursor._  
-![GitHub Stats for Dippy](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Dippy&username=ldayton&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/sudocode-ai/sudocode"><img src="../assets/badge-sudocode.svg" alt="sudocode"></a>  
-_Lightweight agent orchestration dev tool that lives in your repo. Integrates with various specification frameworks. It's giving Jira._  
-![GitHub Stats for sudocode](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=sudocode&username=sudocode-ai&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/nielsgroen/claude-tmux"><img src="../assets/badge-claude-tmux.svg" alt="claude-tmux"></a>  
-_Manage Claude Code within tmux. A tmux popup of all your Claude Code instances, enabling quick switching, status monitoring, session lifecycle management, with git worktree and pull request support._  
-![GitHub Stats for claude-tmux](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-tmux&username=nielsgroen&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/phiat/claude-esp"><img src="../assets/badge-claude-esp.svg" alt="claude-esp"></a>  
-_Go-based TUI that streams Claude Code's hidden output (thinking, tool calls, subagents) to a separate terminal. Watch multiple sessions simultaneously, filter by content type, and track background tasks. Ideal for debugging or understanding what Claude is doing under the hood without interrupting your main session._  
-![GitHub Stats for claude-esp](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-esp&username=phiat&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 
 <br>
@@ -1291,6 +1279,13 @@ _A specialized tool to manage context isolation and focused task execution with 
 <a href="https://github.com/slopus/happy"><img src="../assets/badge-happy-coder.svg" alt="Happy Coder"></a>  
 _Spawn and control multiple Claude Codes in parallel from your phone or desktop. Happy Coder runs Claude Code on your hardware, sends push notifications when Claude needs more input or permission, and costs nothing._  
 ![GitHub Stats for happy](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=happy&username=slopus&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/ruvnet/ruflo"><img src="../assets/badge-ruflo.svg" alt="Ruflo"></a>  
+_An orchestration platform for deploying and coordinating multi-agent swarms. If I tried to go into detail it would probably crash my browser. An impressive feat of engineering that tries to cover everything and actually does a good job. Self-learning, autonomous multi-agent swarms, vector-based multi-layered memory, systematic planning, security guardrails, and so on. It's a growing project, and YMMV, but even just studying the patterns is immensely valuable, and it's clearly well-engineered._  
+![GitHub Stats for ruflo](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ruflo&username=ruvnet&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 

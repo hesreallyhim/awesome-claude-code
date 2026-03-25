@@ -59,34 +59,74 @@ A flat list view of all resources. Category: **Skills** | Sorted: by latest rele
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/K-Dense-AI/claude-scientific-skills"><b>Claude Scientific Skills</b></a><br>by <a href="https://github.com/K-Dense-AI/">K-Dense</a></td>
-<td>v2.24.0</td>
+<td><a href="https://github.com/EveryInc/compound-engineering-plugin"><b>Compound Engineering Plugin</b></a><br>by <a href="https://github.com/EveryInc">EveryInc</a></td>
+<td>v2.37.0</td>
 <td>GitHub</td>
-<td>2026-02-27</td>
-<td>"A set of ready-to-use Agent Skills for research, science, engineering, analysis, finance and writing." That's their description - modest, simple. That's how you can tell this is really one of the best skills repos on GitHub. If you've ever thought about getting a PhD... just read all of these documents instead. Also I think it IS an AI agent or something? Awesome.</td>
+<td>2026-03-15</td>
+<td>A very pragmatic set of well-designed agents, skills, and commands, built around a discipline of turning past mistakes and errors into lessons and opportunities for future growth and improvement. Good documentation.</td>
 </tr>
 <tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="license"></td>
+<td colspan="5"><img src="https://img.shields.io/github/stars/EveryInc/compound-engineering-plugin?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/EveryInc/compound-engineering-plugin?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/EveryInc/compound-engineering-plugin?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/EveryInc/compound-engineering-plugin?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/EveryInc/compound-engineering-plugin?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/EveryInc/compound-engineering-plugin?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/EveryInc/compound-engineering-plugin?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/EveryInc/compound-engineering-plugin?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/EveryInc/compound-engineering-plugin?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/avifenesh/agentsys"><b>AgentSys</b></a><br>by <a href="https://github.com/avifenesh">avifenesh</a></td>
+<td>v5.4.1</td>
+<td>GitHub</td>
+<td>2026-03-10</td>
+<td>Workflow automation system for Claude with a group of useful plugins, agents, and skills. Automates task-to-production workflows, PR management, code cleanup, performance investigation, drift detection, and multi-agent code review. Includes [agnix](https://github.com/avifenesh/agnix) for linting agent configurations. Built on thousands of lines of code with thousands of tests. Uses deterministic detection (regex, AST) with LLM judgment for efficiency. Used on many production systems.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/avifenesh/agentsys?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/avifenesh/agentsys?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/avifenesh/agentsys?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/avifenesh/agentsys?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/avifenesh/agentsys?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/avifenesh/agentsys?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/avifenesh/agentsys?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/avifenesh/agentsys?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/avifenesh/agentsys?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/jeffallan/claude-skills"><b>Fullstack Dev Skills</b></a><br>by <a href="https://github.com/jeffallan">jeffallan</a></td>
+<td>v0.4.10</td>
+<td>GitHub</td>
+<td>2026-03-06</td>
+<td>A comprehensive Claude Code plugin with 65 specialized skills covering full-stack development across a wide range of specific frameworks. Features 9 project workflow commands for Jira/Confluence integration and, notably, an interesting approach to context engineering via a  `/common-ground` command that surfaces Claude's hidden assumptions about your project. This is a smart thing to do.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/jeffallan/claude-skills?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/jeffallan/claude-skills?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/jeffallan/claude-skills?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jeffallan/claude-skills?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/jeffallan/claude-skills?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/jeffallan/claude-skills?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jeffallan/claude-skills?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/jeffallan/claude-skills?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/jeffallan/claude-skills?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/fcakyon/claude-codex-settings"><b>Claude Codex Settings</b></a><br>by <a href="https://github.com/fcakyon">fatih akyon</a></td>
+<td>v2.2.0</td>
+<td>GitHub</td>
+<td>2026-03-06</td>
+<td>A well-organized, well-written set of plugins covering core developer activities, such as working with common cloud platforms like GitHub, Azure, MongoDB, and popular services such as Tavily, Playwright, and more. Clear, not overly-opinionated, and compatible with a few other providers.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/fcakyon/claude-codex-settings?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/fcakyon/claude-codex-settings?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/fcakyon/claude-codex-settings?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/fcakyon/claude-codex-settings?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/fcakyon/claude-codex-settings?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/fcakyon/claude-codex-settings?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/fcakyon/claude-codex-settings?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/fcakyon/claude-codex-settings?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/fcakyon/claude-codex-settings?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/affaan-m/everything-claude-code"><b>Everything Claude Code</b></a><br>by <a href="https://github.com/affaan-m/">Affaan Mustafa</a></td>
-<td>v1.7.0</td>
+<td>v1.8.0</td>
 <td>GitHub</td>
-<td>2026-02-27</td>
+<td>2026-03-05</td>
 <td>Top-notch, well-written resources covering "just about everything" from core engineering domains. What's nice about this "everything-" store is most of the resources have significant standalone value and unlike some all-encompassing frameworks, although you can opt in to the author's own specific workflow patterns if you choose, the individual resources offer exemplary patterns in (just about) every Claude Code feature you can find (apologies to the Output Styles devotees).</td>
 </tr>
 <tr>
 <td colspan="5"><img src="https://img.shields.io/github/stars/affaan-m/everything-claude-code?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/affaan-m/everything-claude-code?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/affaan-m/everything-claude-code?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/affaan-m/everything-claude-code?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/affaan-m/everything-claude-code?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/affaan-m/everything-claude-code?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/affaan-m/everything-claude-code?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/affaan-m/everything-claude-code?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/affaan-m/everything-claude-code?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/avifenesh/agentsys"><b>AgentSys</b></a><br>by <a href="https://github.com/avifenesh">avifenesh</a></td>
-<td>v5.2.0</td>
+<td><a href="https://github.com/K-Dense-AI/claude-scientific-skills"><b>Claude Scientific Skills</b></a><br>by <a href="https://github.com/K-Dense-AI/">K-Dense</a></td>
+<td>v2.27.0</td>
 <td>GitHub</td>
-<td>2026-02-27</td>
-<td>Workflow automation system for Claude with a group of useful plugins, agents, and skills. Automates task-to-production workflows, PR management, code cleanup, performance investigation, drift detection, and multi-agent code review. Includes [agnix](https://github.com/avifenesh/agnix) for linting agent configurations. Built on thousands of lines of code with thousands of tests. Uses deterministic detection (regex, AST) with LLM judgment for efficiency. Used on many production systems.</td>
+<td>2026-03-05</td>
+<td>"A set of ready-to-use Agent Skills for research, science, engineering, analysis, finance and writing." That's their description - modest, simple. That's how you can tell this is really one of the best skills repos on GitHub. If you've ever thought about getting a PhD... just read all of these documents instead. Also I think it IS an AI agent or something? Awesome.</td>
 </tr>
 <tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/avifenesh/agentsys?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/avifenesh/agentsys?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/avifenesh/agentsys?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/avifenesh/agentsys?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/avifenesh/agentsys?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/avifenesh/agentsys?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/avifenesh/agentsys?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/avifenesh/agentsys?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/avifenesh/agentsys?style=flat-square" alt="license"></td>
+<td colspan="5"><img src="https://img.shields.io/github/stars/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/akin-ozer/cc-devops-skills"><b>cc-devops-skills</b></a><br>by <a href="https://github.com/akin-ozer">akin-ozer</a></td>
+<td>v1.0.0</td>
+<td>GitHub</td>
+<td>2026-03-04</td>
+<td>Immensely detailed set of skills for DevOps Engineers (or anyone who has to deploy code, really). Works with validations, generators, shell scripts and CLI tools to create high quality IaC code for about any platform you've ever struggled painfully to work with. Worth downloading even just as a source of documentation.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/akin-ozer/cc-devops-skills?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/akin-ozer/cc-devops-skills?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/akin-ozer/cc-devops-skills?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/akin-ozer/cc-devops-skills?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/akin-ozer/cc-devops-skills?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/akin-ozer/cc-devops-skills?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/akin-ozer/cc-devops-skills?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/akin-ozer/cc-devops-skills?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/akin-ozer/cc-devops-skills?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/NeoLabHQ/context-engineering-kit"><b>Context Engineering Kit</b></a><br>by <a href="https://github.com/LeoVS09">Vlad Goncharov</a></td>
@@ -98,41 +138,11 @@ A flat list view of all resources. Category: **Skills** | Sorted: by latest rele
 <tr>
 <td colspan="5"><img src="https://img.shields.io/github/stars/NeoLabHQ/context-engineering-kit?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/NeoLabHQ/context-engineering-kit?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/NeoLabHQ/context-engineering-kit?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/NeoLabHQ/context-engineering-kit?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/NeoLabHQ/context-engineering-kit?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/NeoLabHQ/context-engineering-kit?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/NeoLabHQ/context-engineering-kit?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/NeoLabHQ/context-engineering-kit?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/NeoLabHQ/context-engineering-kit?style=flat-square" alt="license"></td>
 </tr>
-<tr>
-<td><a href="https://github.com/jeffallan/claude-skills"><b>Fullstack Dev Skills</b></a><br>by <a href="https://github.com/jeffallan">jeffallan</a></td>
-<td>v0.4.9</td>
-<td>GitHub</td>
-<td>2026-02-24</td>
-<td>A comprehensive Claude Code plugin with 65 specialized skills covering full-stack development across a wide range of specific frameworks. Features 9 project workflow commands for Jira/Confluence integration and, notably, an interesting approach to context engineering via a  `/common-ground` command that surfaces Claude's hidden assumptions about your project. This is a smart thing to do.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/jeffallan/claude-skills?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/jeffallan/claude-skills?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/jeffallan/claude-skills?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jeffallan/claude-skills?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/jeffallan/claude-skills?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/jeffallan/claude-skills?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jeffallan/claude-skills?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/jeffallan/claude-skills?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/jeffallan/claude-skills?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/EveryInc/compound-engineering-plugin"><b>Compound Engineering Plugin</b></a><br>by <a href="https://github.com/EveryInc">EveryInc</a></td>
-<td>v0.8.0</td>
-<td>GitHub</td>
-<td>2026-02-17</td>
-<td>A very pragmatic set of well-designed agents, skills, and commands, built around a discipline of turning past mistakes and errors into lessons and opportunities for future growth and improvement. Good documentation.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/EveryInc/compound-engineering-plugin?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/EveryInc/compound-engineering-plugin?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/EveryInc/compound-engineering-plugin?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/EveryInc/compound-engineering-plugin?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/EveryInc/compound-engineering-plugin?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/EveryInc/compound-engineering-plugin?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/EveryInc/compound-engineering-plugin?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/EveryInc/compound-engineering-plugin?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/EveryInc/compound-engineering-plugin?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/fcakyon/claude-codex-settings"><b>Claude Codex Settings</b></a><br>by <a href="https://github.com/fcakyon">fatih akyon</a></td>
-<td>v2.1.0</td>
-<td>GitHub</td>
-<td>2026-02-04</td>
-<td>A well-organized, well-written set of plugins covering core developer activities, such as working with common cloud platforms like GitHub, Azure, MongoDB, and popular services such as Tavily, Playwright, and more. Clear, not overly-opinionated, and compatible with a few other providers.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/fcakyon/claude-codex-settings?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/fcakyon/claude-codex-settings?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/fcakyon/claude-codex-settings?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/fcakyon/claude-codex-settings?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/fcakyon/claude-codex-settings?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/fcakyon/claude-codex-settings?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/fcakyon/claude-codex-settings?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/fcakyon/claude-codex-settings?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/fcakyon/claude-codex-settings?style=flat-square" alt="license"></td>
-</tr>
 </tbody>
 </table>
 
 ---
 
-**Total Resources:** 7
+**Total Resources:** 8
 
-**Last Generated:** 2026-03-02
+**Last Generated:** 2026-03-25

@@ -1547,6 +1547,15 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/tony/claude-code-riper-5?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/tony/claude-code-riper-5?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/tony/claude-code-riper-5?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/tony/claude-code-riper-5?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/tony/claude-code-riper-5?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/tony/claude-code-riper-5?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/tony/claude-code-riper-5?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/tony/claude-code-riper-5?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/tony/claude-code-riper-5?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/ruvnet/ruflo"><b>Ruflo</b></a><br>by <a href="https://github.com/ruvnet">rUv</a></td>
+<td>Tooling</td>
+<td>Orchestrators</td>
+<td>An orchestration platform for deploying and coordinating multi-agent swarms. If I tried to go into detail it would probably crash my browser. An impressive feat of engineering that tries to cover everything and actually does a good job. Self-learning, autonomous multi-agent swarms, vector-based multi-layered memory, systematic planning, security guardrails, and so on. It's a growing project, and YMMV, but even just studying the patterns is immensely valuable, and it's clearly well-engineered.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/ruvnet/ruflo?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ruvnet/ruflo?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ruvnet/ruflo?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ruvnet/ruflo?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ruvnet/ruflo?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ruvnet/ruflo?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ruvnet/ruflo?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ruvnet/ruflo?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ruvnet/ruflo?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/dyoshikawa/rulesync"><b>Rulesync</b></a><br>by <a href="https://github.com/dyoshikawa">dyoshikawa</a></td>
 <td>Tooling</td>
 <td>General</td>
@@ -1773,6 +1782,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 
 ---
 
-**Total Resources:** 192
+**Total Resources:** 193
 
-**Last Generated:** 2026-03-02
+**Last Generated:** 2026-03-25
