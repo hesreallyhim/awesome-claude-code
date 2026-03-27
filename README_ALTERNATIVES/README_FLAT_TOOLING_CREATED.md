@@ -116,13 +116,13 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by date creat
 <td colspan="4"><img src="https://img.shields.io/github/stars/Haleclipse/Claudix?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Haleclipse/Claudix?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Haleclipse/Claudix?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Haleclipse/Claudix?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Haleclipse/Claudix?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Haleclipse/Claudix?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Haleclipse/Claudix?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Haleclipse/Claudix?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Haleclipse/Claudix?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/serpro69/claude-starter-kit"><b>claude-starter-kit</b></a><br>by <a href="https://github.com/serpro69">serpro69</a></td>
+<td><a href="https://github.com/serpro69/claude-toolbox"><b>claude-toolbox</b></a><br>by <a href="https://github.com/serpro69">serpro69</a></td>
 <td>Tooling</td>
 <td>General</td>
 <td>This is a starter template repository designed to provide a complete development environment for Claude-Code with pre-configured MCP servers and tools for AI-powered development workflows. The repository is intentionally minimal, containing only configuration templates for three primary systems: Claude Code, Serena, and Task Master.</td>
 </tr>
 <tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/serpro69/claude-starter-kit?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/serpro69/claude-starter-kit?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/serpro69/claude-starter-kit?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/serpro69/claude-starter-kit?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/serpro69/claude-starter-kit?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/serpro69/claude-starter-kit?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/serpro69/claude-starter-kit?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/serpro69/claude-starter-kit?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/serpro69/claude-starter-kit?style=flat-square" alt="license"></td>
+<td colspan="4"><img src="https://img.shields.io/github/stars/serpro69/claude-toolbox?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/serpro69/claude-toolbox?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/serpro69/claude-toolbox?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/serpro69/claude-toolbox?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/serpro69/claude-toolbox?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/serpro69/claude-toolbox?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/serpro69/claude-toolbox?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/serpro69/claude-toolbox?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/serpro69/claude-toolbox?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/sudocode-ai/sudocode"><b>sudocode</b></a><br>by <a href="https://github.com/ssh-randy">ssh-randy</a></td>
@@ -482,4 +482,4 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by date creat
 
 **Total Resources:** 47
 
-**Last Generated:** 2026-03-25
+**Last Generated:** 2026-03-26

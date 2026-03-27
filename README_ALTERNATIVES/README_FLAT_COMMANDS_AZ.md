@@ -308,15 +308,6 @@ A flat list view of all resources. Category: **Commands** | Sorted: alphabetical
 <td colspan="4"><img src="https://img.shields.io/github/stars/Mjvolk3/torchcell?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Mjvolk3/torchcell?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Mjvolk3/torchcell?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Mjvolk3/torchcell?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Mjvolk3/torchcell?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Mjvolk3/torchcell?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Mjvolk3/torchcell?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Mjvolk3/torchcell?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Mjvolk3/torchcell?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/GaloyMoney/lana-bank/blob/main/.claude/commands/mermaid.md"><b>/mermaid</b></a><br>by <a href="https://github.com/GaloyMoney">GaloyMoney</a></td>
-<td>Slash-Commands</td>
-<td>Miscellaneous</td>
-<td>Generates Mermaid diagrams from SQL schema files, creating entity relationship diagrams with table properties, validating diagram compilation, and ensuring complete entity coverage.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/GaloyMoney/lana-bank?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/GaloyMoney/lana-bank?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/GaloyMoney/lana-bank?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/GaloyMoney/lana-bank?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/GaloyMoney/lana-bank?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/GaloyMoney/lana-bank?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/GaloyMoney/lana-bank?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/GaloyMoney/lana-bank?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/GaloyMoney/lana-bank?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/to4iki/ai-project-rules/blob/main/.claude/commands/optimize.md"><b>/optimize</b></a><br>by <a href="https://github.com/to4iki">to4iki</a></td>
 <td>Slash-Commands</td>
 <td>Code Analysis & Testing</td>
@@ -456,6 +447,6 @@ A flat list view of all resources. Category: **Commands** | Sorted: alphabetical
 
 ---
 
-**Total Resources:** 44
+**Total Resources:** 43
 
-**Last Generated:** 2026-03-25
+**Last Generated:** 2026-03-26

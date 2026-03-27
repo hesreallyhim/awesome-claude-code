@@ -1052,9 +1052,9 @@ _Well-crafted toolset for session continuity, featuring skills/commands to avoid
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 
 
-<a href="https://github.com/serpro69/claude-starter-kit"><img src="../assets/badge-claude-starter-kit.svg" alt="claude-starter-kit"></a>  
+<a href="https://github.com/serpro69/claude-toolbox"><img src="../assets/badge-claude-toolbox.svg" alt="claude-toolbox"></a>  
 _This is a starter template repository designed to provide a complete development environment for Claude-Code with pre-configured MCP servers and tools for AI-powered development workflows. The repository is intentionally minimal, containing only configuration templates for three primary systems: Claude Code, Serena, and Task Master._  
-![GitHub Stats for claude-starter-kit](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-starter-kit&username=serpro69&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+![GitHub Stats for claude-toolbox](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-toolbox&username=serpro69&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 
@@ -1893,13 +1893,6 @@ _Focuses on Gene Ontology annotation integration in graph databases, handling mu
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 
 
-<a href="https://github.com/GaloyMoney/lana-bank/blob/main/.claude/commands/mermaid.md"><img src="../assets/badge-mermaid.svg" alt="/mermaid"></a>  
-_Generates Mermaid diagrams from SQL schema files, creating entity relationship diagrams with table properties, validating diagram compilation, and ensuring complete entity coverage._  
-![GitHub Stats for lana-bank](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=lana-bank&username=GaloyMoney&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
-
-
 <a href="https://github.com/Mjvolk3/torchcell/blob/main/.claude/commands/review_dcell_model.md"><img src="../assets/badge-review-dcell-model.svg" alt="/review_dcell_model"></a>  
 _Reviews old Dcell implementation files, comparing with newer Dango model, noting changes over time, and analyzing refactoring approaches for better code organization._  
 ![GitHub Stats for torchcell](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=torchcell&username=Mjvolk3&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -2060,9 +2053,9 @@ _Details Go project conventions with comprehensive error handling recommendation
 <details open id="domain-specific">
 <summary><span><picture><img src="../assets/subheader_domain_specific.svg" alt="Domain-Specific" align="absmiddle"></picture></span></summary>
 
-<a href="https://github.com/badass-courses/course-builder/blob/main/CLAUDE.md"><img src="../assets/badge-course-builder.svg" alt="Course Builder"></a>  
-_Enables real-time multiplayer capabilities for collaborative course creation with diverse tech stack integration and monorepo architecture using Turborepo._  
-![GitHub Stats for course-builder](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=course-builder&username=badass-courses&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+<a href="https://github.com/Layr-Labs/avs-vibe-developer-guide/blob/master/CLAUDE.md"><img src="../assets/badge-avs-vibe-developer-guide.svg" alt="AVS Vibe Developer Guide"></a>  
+_Structures AI-assisted EigenLayer AVS development workflow with consistent naming conventions for prompt files and established terminology standards for blockchain concepts._  
+![GitHub Stats for avs-vibe-developer-guide](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=avs-vibe-developer-guide&username=Layr-Labs&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 

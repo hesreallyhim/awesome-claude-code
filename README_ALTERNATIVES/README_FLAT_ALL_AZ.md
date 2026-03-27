@@ -308,15 +308,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/Mjvolk3/torchcell?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Mjvolk3/torchcell?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Mjvolk3/torchcell?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Mjvolk3/torchcell?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Mjvolk3/torchcell?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Mjvolk3/torchcell?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Mjvolk3/torchcell?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Mjvolk3/torchcell?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Mjvolk3/torchcell?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/GaloyMoney/lana-bank/blob/main/.claude/commands/mermaid.md"><b>/mermaid</b></a><br>by <a href="https://github.com/GaloyMoney">GaloyMoney</a></td>
-<td>Slash-Commands</td>
-<td>Miscellaneous</td>
-<td>Generates Mermaid diagrams from SQL schema files, creating entity relationship diagrams with table properties, validating diagram compilation, and ensuring complete entity coverage.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/GaloyMoney/lana-bank?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/GaloyMoney/lana-bank?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/GaloyMoney/lana-bank?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/GaloyMoney/lana-bank?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/GaloyMoney/lana-bank?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/GaloyMoney/lana-bank?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/GaloyMoney/lana-bank?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/GaloyMoney/lana-bank?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/GaloyMoney/lana-bank?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/to4iki/ai-project-rules/blob/main/.claude/commands/optimize.md"><b>/optimize</b></a><br>by <a href="https://github.com/to4iki">to4iki</a></td>
 <td>Slash-Commands</td>
 <td>Code Analysis & Testing</td>
@@ -516,6 +507,15 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/AndyMik90/Auto-Claude?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/AndyMik90/Auto-Claude?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/AndyMik90/Auto-Claude?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/AndyMik90/Auto-Claude?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/AndyMik90/Auto-Claude?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/AndyMik90/Auto-Claude?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/AndyMik90/Auto-Claude?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/AndyMik90/Auto-Claude?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/AndyMik90/Auto-Claude?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Layr-Labs/avs-vibe-developer-guide/blob/master/CLAUDE.md"><b>AVS Vibe Developer Guide</b></a><br>by <a href="https://github.com/Layr-Labs">Layr-Labs</a></td>
+<td>CLAUDE.md Files</td>
+<td>Domain-Specific</td>
+<td>Structures AI-assisted EigenLayer AVS development workflow with consistent naming conventions for prompt files and established terminology standards for blockchain concepts.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Layr-Labs/avs-vibe-developer-guide?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like"><b>Awesome Claude Code Output Styles (That I Really Like)</b></a><br>by <a href="https://github.com/hesreallyhim/">Really Him</a></td>
@@ -1061,15 +1061,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/nulone/claude-rules-doctor?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/nulone/claude-rules-doctor?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/nulone/claude-rules-doctor?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/nulone/claude-rules-doctor?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/nulone/claude-rules-doctor?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/nulone/claude-rules-doctor?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/nulone/claude-rules-doctor?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/nulone/claude-rules-doctor?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/nulone/claude-rules-doctor?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/serpro69/claude-starter-kit"><b>claude-starter-kit</b></a><br>by <a href="https://github.com/serpro69">serpro69</a></td>
-<td>Tooling</td>
-<td>General</td>
-<td>This is a starter template repository designed to provide a complete development environment for Claude-Code with pre-configured MCP servers and tools for AI-powered development workflows. The repository is intentionally minimal, containing only configuration templates for three primary systems: Claude Code, Serena, and Task Master.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/serpro69/claude-starter-kit?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/serpro69/claude-starter-kit?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/serpro69/claude-starter-kit?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/serpro69/claude-starter-kit?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/serpro69/claude-starter-kit?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/serpro69/claude-starter-kit?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/serpro69/claude-starter-kit?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/serpro69/claude-starter-kit?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/serpro69/claude-starter-kit?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/nielsgroen/claude-tmux"><b>claude-tmux</b></a><br>by <a href="https://github.com/nielsgroen">Niels Groeneveld</a></td>
 <td>Alternative Clients</td>
 <td>General</td>
@@ -1077,6 +1068,15 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/nielsgroen/claude-tmux?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/nielsgroen/claude-tmux?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/nielsgroen/claude-tmux?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/nielsgroen/claude-tmux?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/nielsgroen/claude-tmux?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/nielsgroen/claude-tmux?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/nielsgroen/claude-tmux?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/nielsgroen/claude-tmux?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/nielsgroen/claude-tmux?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/serpro69/claude-toolbox"><b>claude-toolbox</b></a><br>by <a href="https://github.com/serpro69">serpro69</a></td>
+<td>Tooling</td>
+<td>General</td>
+<td>This is a starter template repository designed to provide a complete development environment for Claude-Code with pre-configured MCP servers and tools for AI-powered development workflows. The repository is intentionally minimal, containing only configuration templates for three primary systems: Claude Code, Serena, and Task Master.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/serpro69/claude-toolbox?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/serpro69/claude-toolbox?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/serpro69/claude-toolbox?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/serpro69/claude-toolbox?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/serpro69/claude-toolbox?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/serpro69/claude-toolbox?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/serpro69/claude-toolbox?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/serpro69/claude-toolbox?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/serpro69/claude-toolbox?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/foxj77/claudectx"><b>ClaudeCTX</b></a><br>by <a href="https://github.com/foxj77">John Fox</a></td>
@@ -1194,15 +1194,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/FlineDev/ContextKit?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/FlineDev/ContextKit?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/FlineDev/ContextKit?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/FlineDev/ContextKit?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/FlineDev/ContextKit?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/FlineDev/ContextKit?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/FlineDev/ContextKit?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/FlineDev/ContextKit?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/FlineDev/ContextKit?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/badass-courses/course-builder/blob/main/CLAUDE.md"><b>Course Builder</b></a><br>by <a href="https://github.com/badass-courses">badass-courses</a></td>
-<td>CLAUDE.md Files</td>
-<td>Domain-Specific</td>
-<td>Enables real-time multiplayer capabilities for collaborative course creation with diverse tech stack integration and monorepo architecture using Turborepo.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/badass-courses/course-builder?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/badass-courses/course-builder?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/badass-courses/course-builder?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/badass-courses/course-builder?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/badass-courses/course-builder?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/badass-courses/course-builder?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/badass-courses/course-builder?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/badass-courses/course-builder?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/badass-courses/course-builder?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/stravu/crystal"><b>crystal</b></a><br>by <a href="https://github.com/stravu">stravu</a></td>
@@ -1782,6 +1773,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 
 ---
 
-**Total Resources:** 193
+**Total Resources:** 192
 
-**Last Generated:** 2026-03-25
+**Last Generated:** 2026-03-26

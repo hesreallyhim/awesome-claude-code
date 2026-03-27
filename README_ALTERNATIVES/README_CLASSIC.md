@@ -704,7 +704,7 @@ A standalone Bash script for Behavior-Driven Development with Ralph Wiggum Loop.
 </details>
 <br>
 
-[`The Ralph Playbook`](https://github.com/ClaytonFarr/ralph-playbook) &nbsp; by &nbsp; [Clayton Farr](https://github.com/ClaytonFarr)    
+[`The Ralph Playbook`](https://github.com/ClaytonFarr/ralph-playbook) &nbsp; by &nbsp; [Clayton Farr](https://github.com/ClaytonFarr)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A remarkably detailed and comprehensive guide to the Ralph Wiggum technique, featuring well-written theoretical commentary paired with practical guidelines and advice.
 
 <details>
@@ -838,13 +838,13 @@ Well-crafted toolset for session continuity, featuring skills/commands to avoid 
 </details>
 <br>
 
-[`claude-starter-kit`](https://github.com/serpro69/claude-starter-kit) &nbsp; by &nbsp; [serpro69](https://github.com/serpro69)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`claude-toolbox`](https://github.com/serpro69/claude-toolbox) &nbsp; by &nbsp; [serpro69](https://github.com/serpro69)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 This is a starter template repository designed to provide a complete development environment for Claude-Code with pre-configured MCP servers and tools for AI-powered development workflows. The repository is intentionally minimal, containing only configuration templates for three primary systems: Claude Code, Serena, and Task Master.
 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for claude-starter-kit](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-starter-kit&username=serpro69&all_stats=true&stats_only=true)
+![GitHub Stats for claude-toolbox](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-toolbox&username=serpro69&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1951,17 +1951,6 @@ Focuses on Gene Ontology annotation integration in graph databases, handling mul
 </details>
 <br>
 
-[`/mermaid`](https://github.com/GaloyMoney/lana-bank/blob/main/.claude/commands/mermaid.md) &nbsp; by &nbsp; [GaloyMoney](https://github.com/GaloyMoney)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
-Generates Mermaid diagrams from SQL schema files, creating entity relationship diagrams with table properties, validating diagram compilation, and ensuring complete entity coverage.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for lana-bank](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=lana-bank&username=GaloyMoney&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
 [`/review_dcell_model`](https://github.com/Mjvolk3/torchcell/blob/main/.claude/commands/review_dcell_model.md) &nbsp; by &nbsp; [Mjvolk3](https://github.com/Mjvolk3)    
 Reviews old Dcell implementation files, comparing with newer Dango model, noting changes over time, and analyzing refactoring approaches for better code organization.
 
@@ -2149,13 +2138,13 @@ Details Go project conventions with comprehensive error handling recommendations
 <details open>
 <summary><h3>Domain-Specific <a href="#awesome-claude-code">🔝</a></h3></summary>
 
-[`Course Builder`](https://github.com/badass-courses/course-builder/blob/main/CLAUDE.md) &nbsp; by &nbsp; [badass-courses](https://github.com/badass-courses)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Enables real-time multiplayer capabilities for collaborative course creation with diverse tech stack integration and monorepo architecture using Turborepo.
+[`AVS Vibe Developer Guide`](https://github.com/Layr-Labs/avs-vibe-developer-guide/blob/master/CLAUDE.md) &nbsp; by &nbsp; [Layr-Labs](https://github.com/Layr-Labs)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+Structures AI-assisted EigenLayer AVS development workflow with consistent naming conventions for prompt files and established terminology standards for blockchain concepts.
 
 <details>
 <summary>📊 GitHub Stats</summary>
 
-![GitHub Stats for course-builder](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=course-builder&username=badass-courses&all_stats=true&stats_only=true)
+![GitHub Stats for avs-vibe-developer-guide](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=avs-vibe-developer-guide&username=Layr-Labs&all_stats=true&stats_only=true)
 
 </details>
 <br>
