@@ -71,6 +71,15 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by date creat
 <td colspan="4"><img src="https://img.shields.io/github/stars/foxj77/claudectx?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/foxj77/claudectx?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/foxj77/claudectx?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/foxj77/claudectx?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/foxj77/claudectx?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/foxj77/claudectx?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/foxj77/claudectx?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/foxj77/claudectx?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/foxj77/claudectx?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/agent-sh/agnix"><b>agnix</b></a><br>by <a href="https://github.com/agent-sh">agent-sh</a></td>
+<td>Tooling</td>
+<td>Config Managers</td>
+<td>A comprehensive linter for Claude Code agent files. Validate CLAUDE.md, AGENTS.md, SKILL.md, hooks, MCP, and more. Plugin for all major IDEs included, with auto-fixes.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/agent-sh/agnix?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/agent-sh/agnix?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/agent-sh/agnix?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/agent-sh/agnix?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/agent-sh/agnix?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/agent-sh/agnix?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/agent-sh/agnix?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/agent-sh/agnix?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/agent-sh/agnix?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/nulone/claude-rules-doctor"><b>claude-rules-doctor</b></a><br>by <a href="https://github.com/nulone">nulone</a></td>
 <td>Tooling</td>
 <td>Config Managers</td>
@@ -480,6 +489,6 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by date creat
 
 ---
 
-**Total Resources:** 47
+**Total Resources:** 48
 
 **Last Generated:** 2026-03-28
