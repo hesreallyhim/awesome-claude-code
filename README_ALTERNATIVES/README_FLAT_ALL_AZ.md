@@ -1142,6 +1142,15 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/JSONbored/claudepro-directory?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/JSONbored/claudepro-directory?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/JSONbored/claudepro-directory?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/JSONbored/claudepro-directory?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/JSONbored/claudepro-directory?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/JSONbored/claudepro-directory?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/JSONbored/claudepro-directory?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/JSONbored/claudepro-directory?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/JSONbored/claudepro-directory?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/zarazhangrui/codebase-to-course"><b>Codebase to Course</b></a><br>by <a href="https://github.com/zarazhangrui">Zara Zhang</a></td>
+<td>Agent Skills</td>
+<td>General</td>
+<td>A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML course for non-technical vibe coders.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/zarazhangrui/codebase-to-course?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/zarazhangrui/codebase-to-course?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/zarazhangrui/codebase-to-course?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/zarazhangrui/codebase-to-course?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/zarazhangrui/codebase-to-course?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/zarazhangrui/codebase-to-course?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/zarazhangrui/codebase-to-course?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/zarazhangrui/codebase-to-course?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/zarazhangrui/codebase-to-course?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/skills-directory/skill-codex"><b>Codex Skill</b></a><br>by <a href="https://github.com/klaudworks">klaudworks</a></td>
 <td>Agent Skills</td>
 <td>General</td>
@@ -1773,6 +1782,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 
 ---
 
-**Total Resources:** 192
+**Total Resources:** 193
 
-**Last Generated:** 2026-03-26
+**Last Generated:** 2026-03-28

@@ -98,4 +98,4 @@ A flat list view of all resources. Category: **Styles** | Sorted: alphabetically
 
 **Total Resources:** 4
 
-**Last Generated:** 2026-03-26
+**Last Generated:** 2026-03-28

@@ -135,4 +135,4 @@ A flat list view of all resources. Category: **Skills** | Sorted: by latest rele
 
 **Total Resources:** 7
 
-**Last Generated:** 2026-03-26
+**Last Generated:** 2026-03-28

@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Codebase to Course`](https://github.com/zarazhangrui/codebase-to-course) &nbsp; by &nbsp; [Zara Zhang](https://github.com/zarazhangrui)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;No License / Not Specified  
+A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML course for non-technical vibe coders.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for codebase-to-course](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=codebase-to-course&username=zarazhangrui&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Ruflo`](https://github.com/ruvnet/ruflo) &nbsp; by &nbsp; [rUv](https://github.com/ruvnet)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 An orchestration platform for deploying and coordinating multi-agent swarms. If I tried to go into detail it would probably crash my browser. An impressive feat of engineering that tries to cover everything and actually does a good job. Self-learning, autonomous multi-agent swarms, vector-based multi-layered memory, systematic planning, security guardrails, and so on. It's a growing project, and YMMV, but even just studying the patterns is immensely valuable, and it's clearly well-engineered.
 
@@ -64,17 +75,6 @@ An orchestration platform for deploying and coordinating multi-agent swarms. If 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-scientific-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-scientific-skills&username=K-Dense-AI&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`parry`](https://github.com/vaporif/parry) &nbsp; by &nbsp; [Dmytro Onypko](https://github.com/vaporif)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-Prompt injection scanner for Claude Code hooks. Scans tool inputs and outputs for injection attacks, secrets, and data exfiltration attempts. [NOTE: Early development phase but worth a look.]
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for parry](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=parry&username=vaporif&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -247,6 +247,17 @@ Claude Code skill that automates mountain route research for North American peak
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-scientific-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-scientific-skills&username=K-Dense-AI&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Codebase to Course`](https://github.com/zarazhangrui/codebase-to-course) &nbsp; by &nbsp; [Zara Zhang](https://github.com/zarazhangrui)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;No License / Not Specified  
+A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML course for non-technical vibe coders.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for codebase-to-course](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=codebase-to-course&username=zarazhangrui&all_stats=true&stats_only=true)
 
 </details>
 <br>

@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/zarazhangrui/codebase-to-course"><img src="../assets/badge-codebase-to-course.svg" alt="Codebase to Course"></a>  
+_A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML course for non-technical vibe coders._  
+![GitHub Stats for codebase-to-course](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=codebase-to-course&username=zarazhangrui&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/ruvnet/ruflo"><img src="../assets/badge-ruflo.svg" alt="Ruflo"></a>  
 _An orchestration platform for deploying and coordinating multi-agent swarms. If I tried to go into detail it would probably crash my browser. An impressive feat of engineering that tries to cover everything and actually does a good job. Self-learning, autonomous multi-agent swarms, vector-based multi-layered memory, systematic planning, security guardrails, and so on. It's a growing project, and YMMV, but even just studying the patterns is immensely valuable, and it's clearly well-engineered._  
 ![GitHub Stats for ruflo](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ruflo&username=ruvnet&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -194,10 +198,6 @@ _An orchestration platform for deploying and coordinating multi-agent swarms. If
 <a href="https://github.com/K-Dense-AI/claude-scientific-skills"><img src="../assets/badge-claude-scientific-skills.svg" alt="Claude Scientific Skills"></a>  
 _"A set of ready-to-use Agent Skills for research, science, engineering, analysis, finance and writing." That's their description - modest, simple. That's how you can tell this is really one of the best skills repos on GitHub. If you've ever thought about getting a PhD... just read all of these documents instead. Also I think it IS an AI agent or something? Awesome._  
 ![GitHub Stats for claude-scientific-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-scientific-skills&username=K-Dense-AI&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/vaporif/parry"><img src="../assets/badge-parry.svg" alt="parry"></a>  
-_Prompt injection scanner for Claude Code hooks. Scans tool inputs and outputs for injection attacks, secrets, and data exfiltration attempts. [NOTE: Early development phase but worth a look.]_  
-![GitHub Stats for parry](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=parry&username=vaporif&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 
 <br>
@@ -595,6 +595,13 @@ _Claude Code skill that automates mountain route research for North American pea
 <a href="https://github.com/K-Dense-AI/claude-scientific-skills"><img src="../assets/badge-claude-scientific-skills.svg" alt="Claude Scientific Skills"></a>  
 _"A set of ready-to-use Agent Skills for research, science, engineering, analysis, finance and writing." That's their description - modest, simple. That's how you can tell this is really one of the best skills repos on GitHub. If you've ever thought about getting a PhD... just read all of these documents instead. Also I think it IS an AI agent or something? Awesome._  
 ![GitHub Stats for claude-scientific-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-scientific-skills&username=K-Dense-AI&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/zarazhangrui/codebase-to-course"><img src="../assets/badge-codebase-to-course.svg" alt="Codebase to Course"></a>  
+_A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML course for non-technical vibe coders._  
+![GitHub Stats for codebase-to-course](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=codebase-to-course&username=zarazhangrui&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 
