@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`agnix`](https://github.com/agent-sh/agnix) &nbsp; by &nbsp; [agent-sh](https://github.com/agent-sh)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
+A comprehensive linter for Claude Code agent files. Validate CLAUDE.md, AGENTS.md, SKILL.md, hooks, MCP, and more. Plugin for all major IDEs included, with auto-fixes.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for agnix](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=agnix&username=agent-sh&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Codebase to Course`](https://github.com/zarazhangrui/codebase-to-course) &nbsp; by &nbsp; [Zara Zhang](https://github.com/zarazhangrui)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;No License / Not Specified  
 A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML course for non-technical vibe coders.
 
@@ -64,17 +75,6 @@ An orchestration platform for deploying and coordinating multi-agent swarms. If 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for ruflo](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ruflo&username=ruvnet&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Claude Scientific Skills`](https://github.com/K-Dense-AI/claude-scientific-skills) &nbsp; by &nbsp; [K-Dense](https://github.com/K-Dense-AI/)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-"A set of ready-to-use Agent Skills for research, science, engineering, analysis, finance and writing." That's their description - modest, simple. That's how you can tell this is really one of the best skills repos on GitHub. If you've ever thought about getting a PhD... just read all of these documents instead. Also I think it IS an AI agent or something? Awesome.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claude-scientific-skills](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-scientific-skills&username=K-Dense-AI&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1245,6 +1245,17 @@ A Rust CLI tool that lets you delegate development tasks to AI agents running in
 
 <details open>
 <summary><h3>Config Managers <a href="#awesome-claude-code">🔝</a></h3></summary>
+
+[`agnix`](https://github.com/agent-sh/agnix) &nbsp; by &nbsp; [agent-sh](https://github.com/agent-sh)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
+A comprehensive linter for Claude Code agent files. Validate CLAUDE.md, AGENTS.md, SKILL.md, hooks, MCP, and more. Plugin for all major IDEs included, with auto-fixes.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for agnix](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=agnix&username=agent-sh&all_stats=true&stats_only=true)
+
+</details>
+<br>
 
 [`claude-rules-doctor`](https://github.com/nulone/claude-rules-doctor) &nbsp; by &nbsp; [nulone](https://github.com/nulone)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 CLI that detects dead `.claude/rules/` files by checking if `paths:` globs actually match files in your repo. Catches silent rule failures where renamed directories or typos in glob patterns cause rules to never apply. Features CI mode (exit 1 on dead rules), JSON output, and verbose mode showing matched files.
