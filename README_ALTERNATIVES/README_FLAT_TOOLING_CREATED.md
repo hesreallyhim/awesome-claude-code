@@ -71,6 +71,15 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by date creat
 <td colspan="4"><img src="https://img.shields.io/github/stars/foxj77/claudectx?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/foxj77/claudectx?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/foxj77/claudectx?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/foxj77/claudectx?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/foxj77/claudectx?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/foxj77/claudectx?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/foxj77/claudectx?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/foxj77/claudectx?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/foxj77/claudectx?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/matt1398/claude-devtools"><b>claude-devtools</b></a><br>by <a href="https://github.com/matt1398">matt1398</a></td>
+<td>Tooling</td>
+<td>General</td>
+<td>A well-designed desktop app that provides detailed observability into your Claude Code sessions by analyzing the session logs. Provides turn-based context data across numerous categories, compaction visualization, subagent execution trees, and custom notification triggers. Easy to install, and nice visual design.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/matt1398/claude-devtools?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/matt1398/claude-devtools?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/matt1398/claude-devtools?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/matt1398/claude-devtools?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/matt1398/claude-devtools?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/matt1398/claude-devtools?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/matt1398/claude-devtools?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/matt1398/claude-devtools?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/matt1398/claude-devtools?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/agent-sh/agnix"><b>agnix</b></a><br>by <a href="https://github.com/agent-sh">agent-sh</a></td>
 <td>Tooling</td>
 <td>Config Managers</td>
@@ -489,6 +498,6 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by date creat
 
 ---
 
-**Total Resources:** 48
+**Total Resources:** 49
 
-**Last Generated:** 2026-03-28
+**Last Generated:** 2026-03-30

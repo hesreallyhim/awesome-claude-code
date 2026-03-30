@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`claude-devtools`](https://github.com/matt1398/claude-devtools) &nbsp; by &nbsp; [matt1398](https://github.com/matt1398)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A well-designed desktop app that provides detailed observability into your Claude Code sessions by analyzing the session logs. Provides turn-based context data across numerous categories, compaction visualization, subagent execution trees, and custom notification triggers. Easy to install, and nice visual design.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-devtools](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-devtools&username=matt1398&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`agnix`](https://github.com/agent-sh/agnix) &nbsp; by &nbsp; [agent-sh](https://github.com/agent-sh)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
 A comprehensive linter for Claude Code agent files. Validate CLAUDE.md, AGENTS.md, SKILL.md, hooks, MCP, and more. Plugin for all major IDEs included, with auto-fixes.
 
@@ -845,6 +856,17 @@ Well-crafted toolset for session continuity, featuring skills/commands to avoid 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-code-tools](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-tools&username=pchalasani&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`claude-devtools`](https://github.com/matt1398/claude-devtools) &nbsp; by &nbsp; [matt1398](https://github.com/matt1398)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A well-designed desktop app that provides detailed observability into your Claude Code sessions by analyzing the session logs. Provides turn-based context data across numerous categories, compaction visualization, subagent execution trees, and custom notification triggers. Easy to install, and nice visual design.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-devtools](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-devtools&username=matt1398&all_stats=true&stats_only=true)
 
 </details>
 <br>

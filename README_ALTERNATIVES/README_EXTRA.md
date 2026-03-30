@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/matt1398/claude-devtools"><img src="../assets/badge-claude-devtools.svg" alt="claude-devtools"></a>  
+_A well-designed desktop app that provides detailed observability into your Claude Code sessions by analyzing the session logs. Provides turn-based context data across numerous categories, compaction visualization, subagent execution trees, and custom notification triggers. Easy to install, and nice visual design._  
+![GitHub Stats for claude-devtools](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-devtools&username=matt1398&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/agent-sh/agnix"><img src="../assets/badge-agnix.svg" alt="agnix"></a>  
 _A comprehensive linter for Claude Code agent files. Validate CLAUDE.md, AGENTS.md, SKILL.md, hooks, MCP, and more. Plugin for all major IDEs included, with auto-fixes._  
 ![GitHub Stats for agnix](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=agnix&username=agent-sh&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -1055,6 +1059,13 @@ _Efficiently restore context from previous Claude Code sessions by analyzing ses
 <a href="https://github.com/pchalasani/claude-code-tools"><img src="../assets/badge-claude-code-tools.svg" alt="claude-code-tools"></a>  
 _Well-crafted toolset for session continuity, featuring skills/commands to avoid compaction and recover context across sessions with cross-agent handoff between Claude Code and Codex CLI. Includes a fast Rust/Tantivy-powered full-text session search (TUI for humans, skill/CLI for agents), tmux-cli skill + command for interacting with scripts and CLI agents, and safety hooks to block dangerous commands._  
 ![GitHub Stats for claude-code-tools](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-tools&username=pchalasani&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/matt1398/claude-devtools"><img src="../assets/badge-claude-devtools.svg" alt="claude-devtools"></a>  
+_A well-designed desktop app that provides detailed observability into your Claude Code sessions by analyzing the session logs. Provides turn-based context data across numerous categories, compaction visualization, subagent execution trees, and custom notification triggers. Easy to install, and nice visual design._  
+![GitHub Stats for claude-devtools](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-devtools&username=matt1398&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 
