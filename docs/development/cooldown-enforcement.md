@@ -11,7 +11,8 @@ Every submission is checked against a state file (`cooldown-state.json`) stored 
 | Violation | Trigger |
 |---|---|
 | Missing form label | Issue opened without using the submission template |
-| Repo too young | Linked repository is less than 7 days old |
+| Repo too young | Linked repository is less than 7 days old since first public commit |
+| User account too young | User account must be at least 14 days old |
 | Submitted as PR | Pull request classified as a resource submission by Claude |
 | Submitted during cooldown | Any submission while an active cooldown is in effect |
 
@@ -19,13 +20,10 @@ Every submission is checked against a state file (`cooldown-state.json`) stored 
 
 | Level | Duration |
 |---|---|
-| 0 → 1 | 24 hours |
-| 1 → 2 | 48 hours |
-| 2 → 3 | 4 days |
-| 3 → 4 | 8 days |
-| 4 → 5 | 16 days |
-| 5 → 6 | 32 days |
-| 6 | Permanent ban |
+| 0 → 1 | 7 days |
+| 1 → 2 | 14 days |
+| 2 → 3 | 30 days |
+| 3 → 4 | Permanent |
 
 Submitting during an active cooldown is itself a violation — the cooldown extends and the level increments. Persistence is counterproductive.
 

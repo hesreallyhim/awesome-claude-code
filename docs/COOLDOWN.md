@@ -16,16 +16,18 @@ Violating "The GOLDEN Rule" will (a) cause the issue to be immediately closed; (
 * Submitting a resource via the `gh` CLI. Alas, the CLI does not presently supopport the creation of issues using issue templates, which carry the labels that are used to manage the processing of issues. If this happens to serve as a deterrent against bot submissions, I can't say I'm terribly despondent about that.
 * Although I have a lot of respect for some bots, only human beings are permitted to open issues in this repo. First of all, it's direspectful to Claude, who is supposed to be the star of the show; second of all, it is extremely obvious, and embarrassing.
 * You may not recommend a repo unless it is at least 7 days since the first public commit.
+- At least 7 days since the first public commit.
+- Has at least 5 stars
+- User account is at least 14 days old.
+- Project does not have to do with cryptocurrency.
+- Resource is submitted via a PR.
 
-What happens if any of the above requirements are violated:
+What happens if any of the above requirements are violated (UPDATED):
 
-1st Time: 1-day cooldown period (no more posts during this time) \
-2nd Time: 2-day cooldown period \
-3rd TIme: 4-day cooldown period \
-4th Time: 8-day cooldown period \
-5th Time: 16-day cooldown period \
-5th Time: 32-day cooldown period \
-6th Time: Permanent Ban
+1st Time: 7-day cooldown period (no interactions during this time) \
+2nd Time: 14-day cooldown period \
+3rd Time: 30-day cooldown period \
+4th Time: Permanent Ban
 
 **"Cooldown"** - no interactions with the respository during this time. It corresponds to a temporary ban such as described in the Code of Conduct, and reflects the seriousness of respecting the Community Guidelines and Contributing Guidelines of any repository whatsoever. The conditions I've laid out are not hard to comply with by anyone who has visited the repository and read the CONTRIBUTING doc, which is, as a matter of course, your obligation to do before enngaging with a repository. GitHub is a very nice place, where people are held to a somewhat higher standard, and it's my responsibility to follow the rules of conduct that I have set out.
 

@@ -280,8 +280,8 @@ jobs:
             function recordViolation(reason) {
               const level = userState ? userState.cooldown_level : 0;
 
-              if (level >= 2) {
-                // 3rd+ violation: permanent ban
+              if (level >= 3) {
+                // 4th+ violation: permanent ban
                 state[author] = {
                   active_until: '9999-01-01T00:00:00Z',
                   cooldown_level: level + 1,
@@ -290,8 +290,8 @@ jobs:
                   last_reason: reason
                 };
               } else {
-                // 1st violation: 7 days; 2nd violation: 14 days
-                const days = level === 0 ? 7 : 14;
+                // 1st violation: 7 days; 2nd violation: 14 days; 3rd violation: 30 days
+                const days = level === 0 ? 7 : level === 1 ? 14 : 30;
                 const activeUntil = new Date(now.getTime() + days * 24 * 60 * 60 * 1000);
                 state[author] = {
                   active_until: activeUntil.toISOString(),
@@ -466,21 +466,32 @@ jobs:
                 const waitTime = updated.banned
                   ? 'This restriction is now permanent.'
                   : `Please wait at least **${formatRemaining(updated.active_until)}** before opening any more submissions.`;
-
-                await closeWithComment(
-                  `A cooldown period is currently in effect for your account. ` +
-                  `Submitting during an active cooldown extends the restriction.\n\n` +
-                  `${waitTime}\n\n` +
-                  `Please review the [CONTRIBUTING guidelines](https://github.com/hesreallyhim/awesome-claude-code/blob/main/docs/CONTRIBUTING.md) ` +
-                  `and [pinned issues](https://github.com/${repo.owner}/${repo.repo}/issues) ` +
-                  `before your next submission.`
-                );
-
-                console.log(
-                  `COOLDOWN: ${author} — rejected #${number}, level ${prevLevel} → ${updated.cooldown_level}`
-                );
-                await saveAndExit('false', repoUrl, String(updated.cooldown_level));
-                return;
+                
+                if (updated.banned) {
+                  await closeWithComment(
+                    `A cooldown period is currently in effect for your account. ` +
+                    `Submitting during an active cooldown extends the restriction.\n\n` +
+                    `${waitTime}\n\n` +
+                    `If you believe this is in error, please open a discussion thread.`
+                  );
+                  console.log(`PERMANENT BAN: ${author} — repeated violations, level ${updated.cooldown_level}`);
+                  await saveAndExit('false', repoUrl, String(updated.cooldown_level));
+                  return;
+                } else {
+                  await closeWithComment(
+                    `A cooldown period is currently in effect for your account. ` +
+                    `Submitting during an active cooldown extends the restriction.\n\n` +
+                    `${waitTime}\n\n` +
+                    `Please review the [CONTRIBUTING guidelines](https://github.com/hesreallyhim/awesome-claude-code/blob/main/docs/CONTRIBUTING.md) ` +
+                    `and [pinned issues](https://github.com/${repo.owner}/${repo.repo}/issues) ` +
+                    `before your next submission.`
+                  );
+                  console.log(
+                    `COOLDOWN: ${author} — rejected #${number}, level ${prevLevel} → ${updated.cooldown_level}`
+                  );
+                  await saveAndExit('false', repoUrl, String(updated.cooldown_level));
+                  return;
+                }
               }
 
               console.log(`${author}: cooldown expired. Checking for violations.`);
