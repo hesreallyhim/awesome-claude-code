@@ -1,6 +1,6 @@
 name: 🚀 Recommend New Resource
 description: Recommend a new resource to be featured in Awesome Claude Code
-title: "[Resource]: WRITE THE NAME OF YOUR RESOURCE HERE"
+title: "[Resource]: WRITE THE NAME OF YOUR RESOURCE HERE <-"
 labels: ["resource-submission", "pending-validation"]
 
 body:
@@ -12,7 +12,7 @@ body:
         Thank you for recommending a resource to Awesome Claude Code! This form will guide you through the recommendation process. 
         Please make sure that you have already reviewed the [CONTRIBUTING](https://github.com/hesreallyhim/awesome-claude-code/blob/main/docs/CONTRIBUTING.md) document as well as the [CODE_OF_CONDUCT](https://github.com/hesreallyhim/awesome-claude-code/blob/main/docs/CODE_OF_CONDUCT.md), and that you agree to abide by the terms. Be really, really sure.
 
-        **WARNING: A strict spam-deterrent system has been put in place. Failure to comply with the simple requirements stated in the [CONTRIBUTING](https://github.com/hesreallyhim/awesome-claude-code/blob/main/docs/CONTRIBUTING.md) document will result in intreasingly severe penalties.**
+        **WARNING: A strict spam-deterrent system has been put in place. Failure to comply with the simple requirements stated in the [CONTRIBUTING](https://github.com/hesreallyhim/awesome-claude-code/blob/main/docs/CONTRIBUTING.md) document will result in increasingly severe penalties.**
 
         **Resource Guidelines:**
         - Issues must be submitted by human users using the github.com UI. The system does not allow resource submissions via the `gh` CLI or other programmatic means. Doing so violates the Code of Conduct and submissions will be automatically closed.
@@ -219,6 +219,9 @@ body:
           required: true
         - label: I am primarily composed of human-y stuff and not electrical circuits
           required: true
+    validations:
+      required: true
+      
 
   - type: markdown
     attributes:
@@ -230,4 +233,4 @@ body:
         3. **Approval**: If approved, a PR will be automatically created with your resource
         4. **Notification**: You'll be notified when your resource is added
 
-        Thank you for contributing to Awesome Claude Code. I have 
+        Thank you for contributing to Awesome Claude Code.  xs 
