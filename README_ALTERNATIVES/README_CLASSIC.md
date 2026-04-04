@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Claude Code Agent Teams: Exercises`](https://github.com/panaversity/claude-code-agent-teams-exercises) &nbsp; by &nbsp; [Panaversity](https://github.com/panaversity)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;No License / Not Specified  
+Practical exercises for Claude Code Agent Teams - 6 exercises + 2 capstones covering team creation, task coordination, quality hooks, and parallel code review - good learning resource.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-code-agent-teams-exercises](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-agent-teams-exercises&username=panaversity&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Harness`](https://github.com/revfactory/harness) &nbsp; by &nbsp; [revfactory](https://github.com/revfactory)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
 A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use. Resources are in Korean but can produce high-quality English-language output.
 
@@ -64,17 +75,6 @@ A well-designed desktop app that provides detailed observability into your Claud
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-devtools](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-devtools&username=matt1398&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`agnix`](https://github.com/agent-sh/agnix) &nbsp; by &nbsp; [agent-sh](https://github.com/agent-sh)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
-A comprehensive linter for Claude Code agent files. Validate CLAUDE.md, AGENTS.md, SKILL.md, hooks, MCP, and more. Plugin for all major IDEs included, with auto-fixes.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for agnix](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=agnix&username=agent-sh&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -415,6 +415,17 @@ Provides a well-structured set of commands for publishing and maintaining a blog
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for cloudartisan.github.io](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=cloudartisan.github.io&username=cloudartisan&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Claude Code Agent Teams: Exercises`](https://github.com/panaversity/claude-code-agent-teams-exercises) &nbsp; by &nbsp; [Panaversity](https://github.com/panaversity)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;No License / Not Specified  
+Practical exercises for Claude Code Agent Teams - 6 exercises + 2 capstones covering team creation, task coordination, quality hooks, and parallel code review - good learning resource.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-code-agent-teams-exercises](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-agent-teams-exercises&username=panaversity&all_stats=true&stats_only=true)
 
 </details>
 <br>

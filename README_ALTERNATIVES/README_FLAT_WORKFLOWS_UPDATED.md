@@ -212,6 +212,15 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by last upd
 <td colspan="4"><img src="https://img.shields.io/github/stars/cloudartisan/cloudartisan.github.io?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/cloudartisan/cloudartisan.github.io?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/cloudartisan/cloudartisan.github.io?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/cloudartisan/cloudartisan.github.io?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/cloudartisan/cloudartisan.github.io?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/cloudartisan/cloudartisan.github.io?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/cloudartisan/cloudartisan.github.io?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/cloudartisan/cloudartisan.github.io?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/cloudartisan/cloudartisan.github.io?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/panaversity/claude-code-agent-teams-exercises"><b>Claude Code Agent Teams: Exercises</b></a><br>by <a href="https://github.com/panaversity">Panaversity</a></td>
+<td>Workflows & Knowledge Guides</td>
+<td>General</td>
+<td>Practical exercises for Claude Code Agent Teams - 6 exercises + 2 capstones covering team creation, task coordination, quality hooks, and parallel code review - good learning resource.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/panaversity/claude-code-agent-teams-exercises?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/panaversity/claude-code-agent-teams-exercises?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/panaversity/claude-code-agent-teams-exercises?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/panaversity/claude-code-agent-teams-exercises?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/panaversity/claude-code-agent-teams-exercises?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/panaversity/claude-code-agent-teams-exercises?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/panaversity/claude-code-agent-teams-exercises?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/panaversity/claude-code-agent-teams-exercises?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/panaversity/claude-code-agent-teams-exercises?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/tony/claude-code-riper-5"><b>RIPER Workflow</b></a><br>by <a href="https://tony.sh">Tony Narlock</a></td>
 <td>Workflows & Knowledge Guides</td>
 <td>General</td>
@@ -351,6 +360,6 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by last upd
 
 ---
 
-**Total Resources:** 33
+**Total Resources:** 34
 
 **Last Generated:** 2026-04-04
