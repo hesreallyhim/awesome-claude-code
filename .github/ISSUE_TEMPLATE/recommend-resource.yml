@@ -76,6 +76,7 @@ body:
       description: Select a sub-category if applicable (based on your category choice above)
       options:
         - General
+        - "Workflows & Knowledge Guides: Teams"
         - "Workflows & Knowledge Guides: Ralph Wiggum"
         - "Tooling: IDE Integrations"
         - "Tooling: Usage Monitors"
