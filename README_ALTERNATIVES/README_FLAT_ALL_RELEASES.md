@@ -468,41 +468,11 @@ A flat list view of all resources. Category: **All** | Sorted: by latest release
 <tr>
 <td colspan="5"><img src="https://img.shields.io/github/stars/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/K-Dense-AI/claude-scientific-skills?style=flat-square" alt="license"></td>
 </tr>
-<tr>
-<td><a href="https://github.com/akin-ozer/cc-devops-skills"><b>cc-devops-skills</b></a><br>by <a href="https://github.com/akin-ozer">akin-ozer</a></td>
-<td>v1.0.0</td>
-<td>GitHub</td>
-<td>2026-03-04</td>
-<td>Immensely detailed set of skills for DevOps Engineers (or anyone who has to deploy code, really). Works with validations, generators, shell scripts and CLI tools to create high quality IaC code for about any platform you've ever struggled painfully to work with. Worth downloading even just as a source of documentation.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/akin-ozer/cc-devops-skills?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/akin-ozer/cc-devops-skills?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/akin-ozer/cc-devops-skills?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/akin-ozer/cc-devops-skills?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/akin-ozer/cc-devops-skills?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/akin-ozer/cc-devops-skills?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/akin-ozer/cc-devops-skills?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/akin-ozer/cc-devops-skills?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/akin-ozer/cc-devops-skills?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/phiat/claude-esp"><b>claude-esp</b></a><br>by <a href="https://github.com/phiat">phiat</a></td>
-<td>v0.3.1</td>
-<td>GitHub</td>
-<td>2026-02-28</td>
-<td>Go-based TUI that streams Claude Code's hidden output (thinking, tool calls, subagents) to a separate terminal. Watch multiple sessions simultaneously, filter by content type, and track background tasks. Ideal for debugging or understanding what Claude is doing under the hood without interrupting your main session.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/phiat/claude-esp?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/phiat/claude-esp?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/phiat/claude-esp?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/phiat/claude-esp?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/phiat/claude-esp?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/phiat/claude-esp?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/phiat/claude-esp?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/phiat/claude-esp?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/phiat/claude-esp?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/rsmdt/the-startup"><b>The Agentic Startup</b></a><br>by <a href="https://github.com/rsmdt">Rudolf Schmidt</a></td>
-<td>v3.4.0</td>
-<td>GitHub</td>
-<td>2026-02-28</td>
-<td>Yet Another Claude Orchestrator - a collection of agents, commands, etc., for shipping production code - but I like this because it's comprehensive, well-written, and one of the few resources that actually uses Output Styles! +10 points!</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/rsmdt/the-startup?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/rsmdt/the-startup?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/rsmdt/the-startup?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/rsmdt/the-startup?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/rsmdt/the-startup?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/rsmdt/the-startup?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/rsmdt/the-startup?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/rsmdt/the-startup?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/rsmdt/the-startup?style=flat-square" alt="license"></td>
-</tr>
 </tbody>
 </table>
 
 ---
 
-**Total Resources:** 44
+**Total Resources:** 41
 
-**Last Generated:** 2026-03-30
+**Last Generated:** 2026-04-04

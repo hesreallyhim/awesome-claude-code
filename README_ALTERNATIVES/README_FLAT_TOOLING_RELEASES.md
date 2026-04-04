@@ -208,21 +208,11 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by latest rel
 <tr>
 <td colspan="5"><img src="https://img.shields.io/github/stars/Piebald-AI/tweakcc?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Piebald-AI/tweakcc?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Piebald-AI/tweakcc?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Piebald-AI/tweakcc?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Piebald-AI/tweakcc?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Piebald-AI/tweakcc?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Piebald-AI/tweakcc?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Piebald-AI/tweakcc?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Piebald-AI/tweakcc?style=flat-square" alt="license"></td>
 </tr>
-<tr>
-<td><a href="https://github.com/rsmdt/the-startup"><b>The Agentic Startup</b></a><br>by <a href="https://github.com/rsmdt">Rudolf Schmidt</a></td>
-<td>v3.4.0</td>
-<td>GitHub</td>
-<td>2026-02-28</td>
-<td>Yet Another Claude Orchestrator - a collection of agents, commands, etc., for shipping production code - but I like this because it's comprehensive, well-written, and one of the few resources that actually uses Output Styles! +10 points!</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/rsmdt/the-startup?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/rsmdt/the-startup?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/rsmdt/the-startup?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/rsmdt/the-startup?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/rsmdt/the-startup?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/rsmdt/the-startup?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/rsmdt/the-startup?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/rsmdt/the-startup?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/rsmdt/the-startup?style=flat-square" alt="license"></td>
-</tr>
 </tbody>
 </table>
 
 ---
 
-**Total Resources:** 16
+**Total Resources:** 15
 
-**Last Generated:** 2026-03-30
+**Last Generated:** 2026-04-04

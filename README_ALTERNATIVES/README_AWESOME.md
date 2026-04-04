@@ -32,7 +32,6 @@
 - [claude-devtools](https://github.com/matt1398/claude-devtools) by [matt1398](https://github.com/matt1398) - A well-designed desktop app that provides detailed observability into your Claude Code sessions by analyzing the session logs. Provides turn-based context data across numerous categories, compaction visualization, subagent execution trees, and custom notification triggers. Easy to install, and nice visual design.
 - [agnix](https://github.com/agent-sh/agnix) by [agent-sh](https://github.com/agent-sh) - A comprehensive linter for Claude Code agent files. Validate CLAUDE.md, AGENTS.md, SKILL.md, hooks, MCP, and more. Plugin for all major IDEs included, with auto-fixes.
 - [Codebase to Course](https://github.com/zarazhangrui/codebase-to-course) by [Zara Zhang](https://github.com/zarazhangrui) - A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML course for non-technical vibe coders.
-- [Ruflo](https://github.com/ruvnet/ruflo) by [rUv](https://github.com/ruvnet) - An orchestration platform for deploying and coordinating multi-agent swarms. If I tried to go into detail it would probably crash my browser. An impressive feat of engineering that tries to cover everything and actually does a good job. Self-learning, autonomous multi-agent swarms, vector-based multi-layered memory, systematic planning, security guardrails, and so on. It's a growing project, and YMMV, but even just studying the patterns is immensely valuable, and it's clearly well-engineered.
 
 
 ## Contents

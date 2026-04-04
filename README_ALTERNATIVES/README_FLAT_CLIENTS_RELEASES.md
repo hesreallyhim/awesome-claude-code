@@ -47,32 +47,10 @@ A flat list view of all resources. Category: **Clients** | Sorted: by latest rel
 
 > **Note:** Latest release data is pulled from GitHub Releases only. Projects without GitHub Releases will not show release info here. Please verify with the project directly.
 
-<table>
-<thead>
-<tr>
-<th>Resource</th>
-<th>Version</th>
-<th>Source</th>
-<th>Release Date</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/phiat/claude-esp"><b>claude-esp</b></a><br>by <a href="https://github.com/phiat">phiat</a></td>
-<td>v0.3.1</td>
-<td>GitHub</td>
-<td>2026-02-28</td>
-<td>Go-based TUI that streams Claude Code's hidden output (thinking, tool calls, subagents) to a separate terminal. Watch multiple sessions simultaneously, filter by content type, and track background tasks. Ideal for debugging or understanding what Claude is doing under the hood without interrupting your main session.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/phiat/claude-esp?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/phiat/claude-esp?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/phiat/claude-esp?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/phiat/claude-esp?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/phiat/claude-esp?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/phiat/claude-esp?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/phiat/claude-esp?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/phiat/claude-esp?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/phiat/claude-esp?style=flat-square" alt="license"></td>
-</tr>
-</tbody>
-</table>
+*No releases in the past 30 days for this category.*
 
 ---
 
-**Total Resources:** 1
+**Total Resources:** 0
 
-**Last Generated:** 2026-03-30
+**Last Generated:** 2026-04-04

@@ -79,17 +79,6 @@ A Claude Code skill that turns any codebase into a beautiful, interactive single
 </details>
 <br>
 
-[`Ruflo`](https://github.com/ruvnet/ruflo) &nbsp; by &nbsp; [rUv](https://github.com/ruvnet)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-An orchestration platform for deploying and coordinating multi-agent swarms. If I tried to go into detail it would probably crash my browser. An impressive feat of engineering that tries to cover everything and actually does a good job. Self-learning, autonomous multi-agent swarms, vector-based multi-layered memory, systematic planning, security guardrails, and so on. It's a growing project, and YMMV, but even just studying the patterns is immensely valuable, and it's clearly well-engineered.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for ruflo](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ruflo&username=ruvnet&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
 
 ## Contents [🔝](#awesome-claude-code)
 

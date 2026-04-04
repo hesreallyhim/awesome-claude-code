@@ -26,9 +26,11 @@ categories:
     subcategories:
       - id: general
         name: "General"
+      - id: teams
+        name: "Teams"
       - id: ralph-wiggum
         name: "Ralph Wiggum"
-    
+
   - id: tooling
     name: "Tooling"
     prefix: tool

@@ -199,10 +199,6 @@ _A comprehensive linter for Claude Code agent files. Validate CLAUDE.md, AGENTS.
 _A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML course for non-technical vibe coders._  
 ![GitHub Stats for codebase-to-course](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=codebase-to-course&username=zarazhangrui&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
-<a href="https://github.com/ruvnet/ruflo"><img src="../assets/badge-ruflo.svg" alt="Ruflo"></a>  
-_An orchestration platform for deploying and coordinating multi-agent swarms. If I tried to go into detail it would probably crash my browser. An impressive feat of engineering that tries to cover everything and actually does a good job. Self-learning, autonomous multi-agent swarms, vector-based multi-layered memory, systematic planning, security guardrails, and so on. It's a growing project, and YMMV, but even just studying the patterns is immensely valuable, and it's clearly well-engineered._  
-![GitHub Stats for ruflo](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ruflo&username=ruvnet&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
 
 <br>
 
