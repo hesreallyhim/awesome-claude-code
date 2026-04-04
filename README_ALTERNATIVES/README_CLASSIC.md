@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Harness`](https://github.com/revfactory/harness) &nbsp; by &nbsp; [revfactory](https://github.com/revfactory)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
+A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use. Resources are in Korean but can produce high-quality English-language output.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for harness](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=harness&username=revfactory&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`claude-devtools`](https://github.com/matt1398/claude-devtools) &nbsp; by &nbsp; [matt1398](https://github.com/matt1398)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A well-designed desktop app that provides detailed observability into your Claude Code sessions by analyzing the session logs. Provides turn-based context data across numerous categories, compaction visualization, subagent execution trees, and custom notification triggers. Easy to install, and nice visual design.
 
@@ -68,17 +79,6 @@ A comprehensive linter for Claude Code agent files. Validate CLAUDE.md, AGENTS.m
 </details>
 <br>
 
-[`Codebase to Course`](https://github.com/zarazhangrui/codebase-to-course) &nbsp; by &nbsp; [Zara Zhang](https://github.com/zarazhangrui)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;No License / Not Specified  
-A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML course for non-technical vibe coders.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for codebase-to-course](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=codebase-to-course&username=zarazhangrui&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
 
 ## Contents [🔝](#awesome-claude-code)
 
@@ -96,6 +96,7 @@ A Claude Code skill that turns any codebase into a beautiful, interactive single
   <summary><a href="#workflows--knowledge-guides--">Workflows & Knowledge Guides</a></summary>
 
   - [General](#general--1)
+  - [Teams](#teams-)
   - [Ralph Wiggum](#ralph-wiggum-)
 
   </details>
@@ -651,6 +652,22 @@ A broader project management workflow for Claude Code that encompasses not just 
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-simone](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-simone&username=Helmi&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+</details>
+
+<details open>
+<summary><h3>Teams <a href="#awesome-claude-code">🔝</a></h3></summary>
+
+[`Harness`](https://github.com/revfactory/harness) &nbsp; by &nbsp; [revfactory](https://github.com/revfactory)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
+A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use. Resources are in Korean but can produce high-quality English-language output.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for harness](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=harness&username=revfactory&all_stats=true&stats_only=true)
 
 </details>
 <br>

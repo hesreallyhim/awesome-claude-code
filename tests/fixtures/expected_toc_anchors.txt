@@ -34,6 +34,7 @@ ralph-wiggum
 recommend-a-new-resource-here
 slash-commands-
 status-lines-
+teams
 tooling-
 usage-monitors
 version-control--git
