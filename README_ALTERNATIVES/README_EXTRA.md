@@ -749,13 +749,6 @@ _Provides a well-structured set of commands for publishing and maintaining a blo
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 
 
-<a href="https://github.com/panaversity/claude-code-agent-teams-exercises"><img src="../assets/badge-claude-code-agent-teams-exercises.svg" alt="Claude Code Agent Teams: Exercises"></a>  
-_Practical exercises for Claude Code Agent Teams - 6 exercises + 2 capstones covering team creation, task coordination, quality hooks, and parallel code review - good learning resource._  
-![GitHub Stats for claude-code-agent-teams-exercises](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-agent-teams-exercises&username=panaversity&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
-
-
 <a href="https://github.com/ericbuess/claude-code-docs"><img src="../assets/badge-claude-code-documentation-mirror.svg" alt="Claude Code Documentation Mirror"></a>  
 _A mirror of the Anthropic &copy; PBC documentation pages for Claude Code, updated every few hours. Can come in handy when trying to stay on top of the ever-expanding feature-set of Dr. Claw D. Code, Ph.D._  
 ![GitHub Stats for claude-code-docs](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-docs&username=ericbuess&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -919,6 +912,13 @@ _A broader project management workflow for Claude Code that encompasses not just
 
 <details open id="teams">
 <summary><span><picture><img src="../assets/subheader_teams.svg" alt="Teams" align="absmiddle"></picture></span></summary>
+
+<a href="https://github.com/panaversity/claude-code-agent-teams-exercises"><img src="../assets/badge-claude-code-agent-teams-exercises.svg" alt="Claude Code Agent Teams: Exercises"></a>  
+_Practical exercises for Claude Code Agent Teams - 6 exercises + 2 capstones covering team creation, task coordination, quality hooks, and parallel code review - good learning resource._  
+![GitHub Stats for claude-code-agent-teams-exercises](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-agent-teams-exercises&username=panaversity&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
 
 <a href="https://github.com/revfactory/harness"><img src="../assets/badge-harness.svg" alt="Harness"></a>  
 _A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use. Resources are in Korean but can produce high-quality English-language output._  

@@ -419,17 +419,6 @@ Provides a well-structured set of commands for publishing and maintaining a blog
 </details>
 <br>
 
-[`Claude Code Agent Teams: Exercises`](https://github.com/panaversity/claude-code-agent-teams-exercises) &nbsp; by &nbsp; [Panaversity](https://github.com/panaversity)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;No License / Not Specified  
-Practical exercises for Claude Code Agent Teams - 6 exercises + 2 capstones covering team creation, task coordination, quality hooks, and parallel code review - good learning resource.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claude-code-agent-teams-exercises](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-agent-teams-exercises&username=panaversity&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
 [`Claude Code Documentation Mirror`](https://github.com/ericbuess/claude-code-docs) &nbsp; by &nbsp; [Eric Buess](https://github.com/ericbuess)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
 A mirror of the Anthropic &copy; PBC documentation pages for Claude Code, updated every few hours. Can come in handy when trying to stay on top of the ever-expanding feature-set of Dr. Claw D. Code, Ph.D.
 
@@ -671,6 +660,17 @@ A broader project management workflow for Claude Code that encompasses not just 
 
 <details open>
 <summary><h3>Teams <a href="#awesome-claude-code">🔝</a></h3></summary>
+
+[`Claude Code Agent Teams: Exercises`](https://github.com/panaversity/claude-code-agent-teams-exercises) &nbsp; by &nbsp; [Panaversity](https://github.com/panaversity)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;No License / Not Specified  
+Practical exercises for Claude Code Agent Teams - 6 exercises + 2 capstones covering team creation, task coordination, quality hooks, and parallel code review - good learning resource.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-code-agent-teams-exercises](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-agent-teams-exercises&username=panaversity&all_stats=true&stats_only=true)
+
+</details>
+<br>
 
 [`Harness`](https://github.com/revfactory/harness) &nbsp; by &nbsp; [revfactory](https://github.com/revfactory)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
 A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use. Resources are in Korean but can produce high-quality English-language output.

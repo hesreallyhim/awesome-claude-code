@@ -214,7 +214,7 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by last upd
 <tr>
 <td><a href="https://github.com/panaversity/claude-code-agent-teams-exercises"><b>Claude Code Agent Teams: Exercises</b></a><br>by <a href="https://github.com/panaversity">Panaversity</a></td>
 <td>Workflows & Knowledge Guides</td>
-<td>General</td>
+<td>Teams</td>
 <td>Practical exercises for Claude Code Agent Teams - 6 exercises + 2 capstones covering team creation, task coordination, quality hooks, and parallel code review - good learning resource.</td>
 </tr>
 <tr>
