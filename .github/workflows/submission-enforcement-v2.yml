@@ -207,6 +207,14 @@ jobs:
             core.setOutput('repo_url', '');
             core.setOutput('cooldown_level', '');
 
+            // ---- Skip repo owner/admin ----
+            const REPO_OWNER = context.repo.owner;
+            if (author.toLowerCase() === REPO_OWNER.toLowerCase()) {
+              console.log(`Skipping enforcement for repo owner: ${author}`);
+              core.setOutput('allowed', 'true');
+              return;
+            }
+
             // ---- PR: skip bots ----
             if (isPR && context.payload.pull_request.user.type === 'Bot') {
               console.log(`Skipping bot PR by ${author}`);
