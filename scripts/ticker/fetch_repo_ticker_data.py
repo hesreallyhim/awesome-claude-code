@@ -85,6 +85,9 @@ def fetch_repos(token: str) -> list[dict[str, Any]]:
 
         repos = []
         for item in data.get("items", []):
+            # Skip repos named exactly "claude-code" (too generic)
+            if item["full_name"].split("/")[-1] == "claude-code":
+                continue
             repos.append(
                 {
                     "full_name": item["full_name"],
