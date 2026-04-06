@@ -9,7 +9,7 @@
 
 <p align="center">
   <picture>
-    <img src="assets/awesome-claude-code-social-clawd-leo.png" alt="Awesome Claude Code" width="600">
+    <img src="assets/ACC-social-banner.png" alt="Awesome Claude Code" width="600">
   </picture>
 </p>
 
