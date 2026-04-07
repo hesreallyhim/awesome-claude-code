@@ -55,58 +55,8 @@
         dur="54s"
         repeatCount="indefinite"/>
 
-      <!-- Repo: snarktank/ralph -->
-      <g transform="translate(0, 0)">
-        <!-- Repo name -->
-        <text x="140" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
-              fill="#24292e">ralph</text>
-        <!-- Owner name -->
-        <text x="140" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
-              fill="#586069">snarktank</text>
-        <text x="270" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#6a737d">| 14.5K ★</text>
-        <text x="356" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#22863a"> +81</text>
-      </g>
-      <!-- Repo: zstmfhy/Claude-code -->
-      <g transform="translate(300, 0)">
-        <!-- Owner name -->
-        <text x="140" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
-              fill="#586069">zstmfhy</text>
-        <text x="246" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#6a737d">| 188 ★</text>
-        <text x="314" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#22863a"> +1</text>
-        <!-- Repo name -->
-        <text x="140" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
-              fill="#24292e">Claude-code</text>
-      </g>
-      <!-- Repo: OneRedOak/claude-code-workflows -->
-      <g transform="translate(600, 0)">
-        <!-- Repo name -->
-        <text x="140" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
-              fill="#24292e">claude-code-workflows</text>
-        <!-- Owner name -->
-        <text x="140" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
-              fill="#586069">OneRedOak</text>
-        <text x="270" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#6a737d">| 3.8K ★</text>
-        <text x="347" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#22863a"> +2</text>
-      </g>
-      <!-- Repo: kodu-ai/claude-coder -->
-      <g transform="translate(900, 0)">
-        <!-- Owner name -->
-        <text x="140" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
-              fill="#586069">kodu-ai</text>
-        <text x="246" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#6a737d">| 5.3K ★</text>
-        <!-- Repo name -->
-        <text x="140" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
-              fill="#24292e">claude-coder</text>
-      </g>
       <!-- Repo: 777genius/claude-code-source-code -->
-      <g transform="translate(1200, 0)">
+      <g transform="translate(0, 0)">
         <!-- Repo name -->
         <text x="140" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
               fill="#24292e">claude-code-source-code</text>
@@ -114,124 +64,176 @@
         <text x="140" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
               fill="#586069">777genius</text>
         <text x="270" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#6a737d">| 884 ★</text>
+              fill="#6a737d">| 887 ★</text>
         <text x="338" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#22863a"> +8</text>
+              fill="#22863a"> +11</text>
       </g>
-      <!-- Repo: rohitg00/awesome-claude-code-toolkit -->
-      <g transform="translate(1500, 0)">
+      <!-- Repo: darcyegb/ClaudeCodeAgents -->
+      <g transform="translate(300, 0)">
         <!-- Owner name -->
         <text x="140" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
-              fill="#586069">rohitg00</text>
+              fill="#586069">darcyegb</text>
         <text x="258" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#6a737d">| 1.1K ★</text>
-        <text x="335" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#22863a"> +20</text>
-        <!-- Repo name -->
-        <text x="140" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
-              fill="#24292e">awesome-claude-code-tool...</text>
-      </g>
-      <!-- Repo: alirezarezvani/claude-skills -->
-      <g transform="translate(1800, 0)">
-        <!-- Repo name -->
-        <text x="140" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
-              fill="#24292e">claude-skills</text>
-        <!-- Owner name -->
-        <text x="140" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
-              fill="#586069">alirezarezvani</text>
-        <text x="330" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#6a737d">| 9.8K ★</text>
-        <text x="407" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#22863a"> +193</text>
-      </g>
-      <!-- Repo: huangserva/claude-code-cli -->
-      <g transform="translate(2100, 0)">
-        <!-- Owner name -->
-        <text x="140" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
-              fill="#586069">huangserva</text>
-        <text x="282" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#6a737d">| 522 ★</text>
-        <text x="350" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#22863a"> +6</text>
-        <!-- Repo name -->
-        <text x="140" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
-              fill="#24292e">claude-code-cli</text>
-      </g>
-      <!-- Repo: lintsinghua/claude-code-book -->
-      <g transform="translate(2400, 0)">
-        <!-- Repo name -->
-        <text x="140" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
-              fill="#24292e">claude-code-book</text>
-        <!-- Owner name -->
-        <text x="140" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
-              fill="#586069">lintsinghua</text>
-        <text x="294" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#6a737d">| 2.2K ★</text>
-        <text x="371" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#22863a"> +113</text>
-      </g>
-      <!-- Repo: shanraisshan/claude-code-best-practice -->
-      <g transform="translate(2700, 0)">
-        <!-- Owner name -->
-        <text x="140" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
-              fill="#586069">shanraisshan</text>
-        <text x="306" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#6a737d">| 32.5K ★</text>
-        <text x="392" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#22863a"> +349</text>
-        <!-- Repo name -->
-        <text x="140" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
-              fill="#24292e">claude-code-best-practic...</text>
-      </g>
-      <!-- Repo: snarktank/ralph -->
-      <g transform="translate(3000, 0)">
-        <!-- Repo name -->
-        <text x="140" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
-              fill="#24292e">ralph</text>
-        <!-- Owner name -->
-        <text x="140" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
-              fill="#586069">snarktank</text>
-        <text x="270" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#6a737d">| 14.5K ★</text>
-        <text x="356" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#22863a"> +81</text>
-      </g>
-      <!-- Repo: zstmfhy/Claude-code -->
-      <g transform="translate(3300, 0)">
-        <!-- Owner name -->
-        <text x="140" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
-              fill="#586069">zstmfhy</text>
-        <text x="246" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#6a737d">| 188 ★</text>
-        <text x="314" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#6a737d">| 647 ★</text>
+        <text x="326" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
               fill="#22863a"> +1</text>
         <!-- Repo name -->
         <text x="140" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
-              fill="#24292e">Claude-code</text>
+              fill="#24292e">ClaudeCodeAgents</text>
       </g>
-      <!-- Repo: OneRedOak/claude-code-workflows -->
+      <!-- Repo: Piebald-AI/claude-code-system-prompts -->
+      <g transform="translate(600, 0)">
+        <!-- Repo name -->
+        <text x="140" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
+              fill="#24292e">claude-code-system-promp...</text>
+        <!-- Owner name -->
+        <text x="140" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
+              fill="#586069">Piebald-AI</text>
+        <text x="282" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#6a737d">| 8.4K ★</text>
+        <text x="359" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#22863a"> +73</text>
+      </g>
+      <!-- Repo: siteboon/claudecodeui -->
+      <g transform="translate(900, 0)">
+        <!-- Owner name -->
+        <text x="140" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
+              fill="#586069">siteboon</text>
+        <text x="258" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#6a737d">| 9.5K ★</text>
+        <text x="335" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#22863a"> +43</text>
+        <!-- Repo name -->
+        <text x="140" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
+              fill="#24292e">claudecodeui</text>
+      </g>
+      <!-- Repo: garrytan/gstack -->
+      <g transform="translate(1200, 0)">
+        <!-- Repo name -->
+        <text x="140" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
+              fill="#24292e">gstack</text>
+        <!-- Owner name -->
+        <text x="140" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
+              fill="#586069">garrytan</text>
+        <text x="258" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#6a737d">| 65.8K ★</text>
+        <text x="344" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#22863a"> +982</text>
+      </g>
+      <!-- Repo: AprilNEA/claude-code-source -->
+      <g transform="translate(1500, 0)">
+        <!-- Owner name -->
+        <text x="140" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
+              fill="#586069">AprilNEA</text>
+        <text x="258" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#6a737d">| 362 ★</text>
+        <text x="326" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#22863a"> +5</text>
+        <!-- Repo name -->
+        <text x="140" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
+              fill="#24292e">claude-code-source</text>
+      </g>
+      <!-- Repo: kodu-ai/claude-coder -->
+      <g transform="translate(1800, 0)">
+        <!-- Repo name -->
+        <text x="140" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
+              fill="#24292e">claude-coder</text>
+        <!-- Owner name -->
+        <text x="140" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
+              fill="#586069">kodu-ai</text>
+        <text x="246" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#6a737d">| 5.3K ★</text>
+      </g>
+      <!-- Repo: obra/superpowers -->
+      <g transform="translate(2100, 0)">
+        <!-- Owner name -->
+        <text x="140" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
+              fill="#586069">obra</text>
+        <text x="210" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#6a737d">| 138.0K ★</text>
+        <text x="305" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#22863a"> +1.5K</text>
+        <!-- Repo name -->
+        <text x="140" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
+              fill="#24292e">superpowers</text>
+      </g>
+      <!-- Repo: fuergaosi233/claude-code-proxy -->
+      <g transform="translate(2400, 0)">
+        <!-- Repo name -->
+        <text x="140" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
+              fill="#24292e">claude-code-proxy</text>
+        <!-- Owner name -->
+        <text x="140" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
+              fill="#586069">fuergaosi233</text>
+        <text x="306" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#6a737d">| 2.4K ★</text>
+        <text x="383" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#22863a"> +8</text>
+      </g>
+      <!-- Repo: snarktank/ralph -->
+      <g transform="translate(2700, 0)">
+        <!-- Owner name -->
+        <text x="140" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
+              fill="#586069">snarktank</text>
+        <text x="270" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#6a737d">| 14.5K ★</text>
+        <text x="356" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#22863a"> +84</text>
+        <!-- Repo name -->
+        <text x="140" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
+              fill="#24292e">ralph</text>
+      </g>
+      <!-- Repo: 777genius/claude-code-source-code -->
+      <g transform="translate(3000, 0)">
+        <!-- Repo name -->
+        <text x="140" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
+              fill="#24292e">claude-code-source-code</text>
+        <!-- Owner name -->
+        <text x="140" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
+              fill="#586069">777genius</text>
+        <text x="270" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#6a737d">| 887 ★</text>
+        <text x="338" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#22863a"> +11</text>
+      </g>
+      <!-- Repo: darcyegb/ClaudeCodeAgents -->
+      <g transform="translate(3300, 0)">
+        <!-- Owner name -->
+        <text x="140" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
+              fill="#586069">darcyegb</text>
+        <text x="258" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#6a737d">| 647 ★</text>
+        <text x="326" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#22863a"> +1</text>
+        <!-- Repo name -->
+        <text x="140" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
+              fill="#24292e">ClaudeCodeAgents</text>
+      </g>
+      <!-- Repo: Piebald-AI/claude-code-system-prompts -->
       <g transform="translate(3600, 0)">
         <!-- Repo name -->
         <text x="140" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
-              fill="#24292e">claude-code-workflows</text>
+              fill="#24292e">claude-code-system-promp...</text>
         <!-- Owner name -->
         <text x="140" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
-              fill="#586069">OneRedOak</text>
-        <text x="270" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#6a737d">| 3.8K ★</text>
-        <text x="347" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#22863a"> +2</text>
+              fill="#586069">Piebald-AI</text>
+        <text x="282" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#6a737d">| 8.4K ★</text>
+        <text x="359" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#22863a"> +73</text>
       </g>
-      <!-- Repo: kodu-ai/claude-coder -->
+      <!-- Repo: siteboon/claudecodeui -->
       <g transform="translate(3900, 0)">
         <!-- Owner name -->
         <text x="140" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="400"
-              fill="#586069">kodu-ai</text>
-        <text x="246" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
-              fill="#6a737d">| 5.3K ★</text>
+              fill="#586069">siteboon</text>
+        <text x="258" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#6a737d">| 9.5K ★</text>
+        <text x="335" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500"
+              fill="#22863a"> +43</text>
         <!-- Repo name -->
         <text x="140" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="600"
-              fill="#24292e">claude-coder</text>
+              fill="#24292e">claudecodeui</text>
       </g>
     </g>
   </g>
