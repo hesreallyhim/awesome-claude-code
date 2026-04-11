@@ -46,7 +46,7 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
-[`Claude Code Agent Teams: Exercises`](https://github.com/panaversity/claude-code-agent-teams-exercises) &nbsp; by &nbsp; [Panaversity](https://github.com/panaversity)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;No License / Not Specified  
+[`Claude Code Agent Teams: Exercises`](https://github.com/panaversity/claude-code-agent-teams-exercises) &nbsp; by &nbsp; [Panaversity](https://github.com/panaversity)    
 Practical exercises for Claude Code Agent Teams - 6 exercises + 2 capstones covering team creation, task coordination, quality hooks, and parallel code review - good learning resource.
 
 <details>
@@ -252,7 +252,7 @@ Claude Code skill that automates mountain route research for North American peak
 </details>
 <br>
 
-[`Codebase to Course`](https://github.com/zarazhangrui/codebase-to-course) &nbsp; by &nbsp; [Zara Zhang](https://github.com/zarazhangrui)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;No License / Not Specified  
+[`Codebase to Course`](https://github.com/zarazhangrui/codebase-to-course) &nbsp; by &nbsp; [Zara Zhang](https://github.com/zarazhangrui)    
 A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML course for non-technical vibe coders.
 
 <details>
@@ -661,7 +661,7 @@ A broader project management workflow for Claude Code that encompasses not just 
 <details open>
 <summary><h3>Teams <a href="#awesome-claude-code">🔝</a></h3></summary>
 
-[`Claude Code Agent Teams: Exercises`](https://github.com/panaversity/claude-code-agent-teams-exercises) &nbsp; by &nbsp; [Panaversity](https://github.com/panaversity)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;No License / Not Specified  
+[`Claude Code Agent Teams: Exercises`](https://github.com/panaversity/claude-code-agent-teams-exercises) &nbsp; by &nbsp; [Panaversity](https://github.com/panaversity)    
 Practical exercises for Claude Code Agent Teams - 6 exercises + 2 capstones covering team creation, task coordination, quality hooks, and parallel code review - good learning resource.
 
 <details>
@@ -888,7 +888,7 @@ A well-designed desktop app that provides detailed observability into your Claud
 </details>
 <br>
 
-[`claude-toolbox`](https://github.com/serpro69/claude-toolbox) &nbsp; by &nbsp; [serpro69](https://github.com/serpro69)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+[`claude-toolbox`](https://github.com/serpro69/claude-toolbox) &nbsp; by &nbsp; [serpro69](https://github.com/serpro69)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;NOASSERTION  
 This is a starter template repository designed to provide a complete development environment for Claude-Code with pre-configured MCP servers and tools for AI-powered development workflows. The repository is intentionally minimal, containing only configuration templates for three primary systems: Claude Code, Serena, and Task Master.
 
 <details>
@@ -2206,6 +2206,17 @@ Structures AI-assisted EigenLayer AVS development workflow with consistent namin
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for avs-vibe-developer-guide](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=avs-vibe-developer-guide&username=Layr-Labs&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Comm`](https://github.com/CommE2E/comm/blob/master/AGENTS.md) &nbsp; by &nbsp; [CommE2E](https://github.com/CommE2E)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;BSD-3-Clause  
+Serves as a development reference for E2E-encrypted messaging applications with code organization architecture, security implementation details, and testing procedures.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for comm](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=comm&username=CommE2E&all_stats=true&stats_only=true)
 
 </details>
 <br>

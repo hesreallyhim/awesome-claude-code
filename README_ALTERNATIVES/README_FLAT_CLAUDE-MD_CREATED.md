@@ -245,6 +245,15 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by date cre
 <td colspan="4"><img src="https://img.shields.io/github/stars/soramimi/Guitar?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/soramimi/Guitar?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/soramimi/Guitar?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/soramimi/Guitar?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/soramimi/Guitar?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/soramimi/Guitar?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/soramimi/Guitar?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/soramimi/Guitar?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/soramimi/Guitar?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/CommE2E/comm/blob/master/AGENTS.md"><b>Comm</b></a><br>by <a href="https://github.com/CommE2E">CommE2E</a></td>
+<td>CLAUDE.md Files</td>
+<td>Domain-Specific</td>
+<td>Serves as a development reference for E2E-encrypted messaging applications with code organization architecture, security implementation details, and testing procedures.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/CommE2E/comm?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/CommE2E/comm?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/CommE2E/comm?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/CommE2E/comm?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/CommE2E/comm?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/CommE2E/comm?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/CommE2E/comm?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/CommE2E/comm?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/CommE2E/comm?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/metabase/metabase/blob/master/CLAUDE.md"><b>Metabase</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
 <td>CLAUDE.md Files</td>
 <td>Language-Specific</td>
@@ -267,6 +276,6 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by date cre
 
 ---
 
-**Total Resources:** 23
+**Total Resources:** 24
 
-**Last Generated:** 2026-04-04
+**Last Generated:** 2026-04-11
