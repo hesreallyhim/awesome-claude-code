@@ -68,31 +68,22 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by last upd
 <td>A detailed blog post explaining the author's process for shipping a product with Claude Code, including CLAUDE.md files and other interesting resources.</td>
 </tr>
 <tr>
-<td><a href="https://github.com/revfactory/harness"><b>Harness</b></a><br>by <a href="https://github.com/revfactory">revfactory</a></td>
-<td>Workflows & Knowledge Guides</td>
-<td>Teams</td>
-<td>A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use. Resources are in Korean but can produce high-quality English-language output.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/revfactory/harness?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/revfactory/harness?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/revfactory/harness?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/revfactory/harness?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/revfactory/harness?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/revfactory/harness?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/revfactory/harness?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/revfactory/harness?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/revfactory/harness?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/ykdojo/claude-code-tips"><b>Claude Code Tips</b></a><br>by <a href="https://github.com/ykdojo">ykdojo</a></td>
+<td><a href="https://github.com/Piebald-AI/claude-code-system-prompts"><b>Claude Code System Prompts</b></a><br>by <a href="https://github.com/Piebald-AI">Piebald AI</a></td>
 <td>Workflows & Knowledge Guides</td>
 <td>General</td>
-<td>A nice variety of 35+ brief but information-dense Claude Code tips covering voice input, system prompt patching, container workflows for risky tasks, conversation cloning(!), multi-model orchestration with Gemini CLI, and plenty more. Nice demos, working scripts, a plugin, I'd say this probably has a little something for everyone.</td>
+<td>All parts of Claude Code's system prompt, including builtin tool descriptions, sub agent prompts (Plan/Explore/Task), utility prompts (CLAUDE.md, compact, Bash cmd, security review, agent creation, etc.). Updated for each Claude Code version.</td>
 </tr>
 <tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/ykdojo/claude-code-tips?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ykdojo/claude-code-tips?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ykdojo/claude-code-tips?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ykdojo/claude-code-tips?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ykdojo/claude-code-tips?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ykdojo/claude-code-tips?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ykdojo/claude-code-tips?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ykdojo/claude-code-tips?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ykdojo/claude-code-tips?style=flat-square" alt="license"></td>
+<td colspan="4"><img src="https://img.shields.io/github/stars/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/mikeyobrien/ralph-orchestrator"><b>ralph-orchestrator</b></a><br>by <a href="https://github.com/mikeyobrien">mikeyobrien</a></td>
+<td><a href="https://github.com/JSONbored/claudepro-directory"><b>ClaudoPro Directory</b></a><br>by <a href="https://github.com/JSONbored">ghost</a></td>
 <td>Workflows & Knowledge Guides</td>
-<td>Ralph Wiggum</td>
-<td>Ralph Orchestrator implements the simple but effective "Ralph Wiggum" technique for autonomous task completion, continuously running an AI agent against a prompt file until the task is marked as complete or limits are reached. This implementation provides a robust, well-tested, and feature-complete orchestration system for AI-driven development. Also cited in the Anthropic Ralph plugin documentation.</td>
+<td>General</td>
+<td>Well-crafted, wide selection of Claude Code hooks, slash commands, subagent files, and more, covering a range of specialized tasks and workflows. Better resources than your average "Claude-template-for-everything" site.</td>
 </tr>
 <tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/mikeyobrien/ralph-orchestrator?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/mikeyobrien/ralph-orchestrator?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/mikeyobrien/ralph-orchestrator?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/mikeyobrien/ralph-orchestrator?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/mikeyobrien/ralph-orchestrator?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/mikeyobrien/ralph-orchestrator?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/mikeyobrien/ralph-orchestrator?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/mikeyobrien/ralph-orchestrator?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/mikeyobrien/ralph-orchestrator?style=flat-square" alt="license"></td>
+<td colspan="4"><img src="https://img.shields.io/github/stars/JSONbored/claudepro-directory?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/JSONbored/claudepro-directory?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/JSONbored/claudepro-directory?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/JSONbored/claudepro-directory?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/JSONbored/claudepro-directory?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/JSONbored/claudepro-directory?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/JSONbored/claudepro-directory?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/JSONbored/claudepro-directory?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/JSONbored/claudepro-directory?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/costiash/claude-code-docs"><b>claude-code-docs</b></a><br>by <a href="https://github.com/costiash">Constantin Shafranski</a></td>
@@ -104,15 +95,6 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by last upd
 <td colspan="4"><img src="https://img.shields.io/github/stars/costiash/claude-code-docs?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/costiash/claude-code-docs?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/costiash/claude-code-docs?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/costiash/claude-code-docs?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/costiash/claude-code-docs?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/costiash/claude-code-docs?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/costiash/claude-code-docs?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/costiash/claude-code-docs?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/costiash/claude-code-docs?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/Piebald-AI/claude-code-system-prompts"><b>Claude Code System Prompts</b></a><br>by <a href="https://github.com/Piebald-AI">Piebald AI</a></td>
-<td>Workflows & Knowledge Guides</td>
-<td>General</td>
-<td>All parts of Claude Code's system prompt, including builtin tool descriptions, sub agent prompts (Plan/Explore/Task), utility prompts (CLAUDE.md, compact, Bash cmd, security review, agent creation, etc.). Updated for each Claude Code version.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Piebald-AI/claude-code-system-prompts?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/ericbuess/claude-code-docs"><b>Claude Code Documentation Mirror</b></a><br>by <a href="https://github.com/ericbuess">Eric Buess</a></td>
 <td>Workflows & Knowledge Guides</td>
 <td>General</td>
@@ -120,15 +102,6 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by last upd
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/ericbuess/claude-code-docs?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ericbuess/claude-code-docs?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ericbuess/claude-code-docs?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ericbuess/claude-code-docs?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ericbuess/claude-code-docs?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ericbuess/claude-code-docs?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ericbuess/claude-code-docs?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ericbuess/claude-code-docs?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ericbuess/claude-code-docs?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/danielrosehill/Claude-Code-Repos-Index"><b>Claude Code Repos Index</b></a><br>by <a href="https://github.com/danielrosehill">Daniel Rosehill</a></td>
-<td>Workflows & Knowledge Guides</td>
-<td>General</td>
-<td>This is either the work of a prolific genius, or a very clever bot (or both), although it hardly matters because the quality is so good - an index of 75+ Claude Code repositories published by the author - and I'm not talking about slop. CMS, system design, deep research, IoT, agentic workflows, server management, personal health... If you spot the lie, let me know, otherwise please check these out.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/FlorianBruniaux/claude-code-ultimate-guide"><b>Claude Code Ultimate Guide</b></a><br>by <a href="https://www.linkedin.com/in/florian-bruniaux-43408b83/">Florian BRUNIAUX</a></td>
@@ -140,6 +113,24 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by last upd
 <td colspan="4"><img src="https://img.shields.io/github/stars/FlorianBruniaux/claude-code-ultimate-guide?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/FlorianBruniaux/claude-code-ultimate-guide?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/FlorianBruniaux/claude-code-ultimate-guide?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/FlorianBruniaux/claude-code-ultimate-guide?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/FlorianBruniaux/claude-code-ultimate-guide?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/FlorianBruniaux/claude-code-ultimate-guide?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/FlorianBruniaux/claude-code-ultimate-guide?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/FlorianBruniaux/claude-code-ultimate-guide?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/FlorianBruniaux/claude-code-ultimate-guide?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/mikeyobrien/ralph-orchestrator"><b>ralph-orchestrator</b></a><br>by <a href="https://github.com/mikeyobrien">mikeyobrien</a></td>
+<td>Workflows & Knowledge Guides</td>
+<td>Ralph Wiggum</td>
+<td>Ralph Orchestrator implements the simple but effective "Ralph Wiggum" technique for autonomous task completion, continuously running an AI agent against a prompt file until the task is marked as complete or limits are reached. This implementation provides a robust, well-tested, and feature-complete orchestration system for AI-driven development. Also cited in the Anthropic Ralph plugin documentation.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/mikeyobrien/ralph-orchestrator?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/mikeyobrien/ralph-orchestrator?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/mikeyobrien/ralph-orchestrator?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/mikeyobrien/ralph-orchestrator?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/mikeyobrien/ralph-orchestrator?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/mikeyobrien/ralph-orchestrator?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/mikeyobrien/ralph-orchestrator?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/mikeyobrien/ralph-orchestrator?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/mikeyobrien/ralph-orchestrator?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/danielrosehill/Claude-Code-Repos-Index"><b>Claude Code Repos Index</b></a><br>by <a href="https://github.com/danielrosehill">Daniel Rosehill</a></td>
+<td>Workflows & Knowledge Guides</td>
+<td>General</td>
+<td>This is either the work of a prolific genius, or a very clever bot (or both), although it hardly matters because the quality is so good - an index of 75+ Claude Code repositories published by the author - and I'm not talking about slop. CMS, system design, deep research, IoT, agentic workflows, server management, personal health... If you spot the lie, let me know, otherwise please check these out.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/danielrosehill/Claude-Code-Repos-Index?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/maxritter/claude-codepro"><b>Claude CodePro</b></a><br>by <a href="https://www.maxritter.net">Max Ritter</a></td>
 <td>Workflows & Knowledge Guides</td>
 <td>General</td>
@@ -149,6 +140,33 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by last upd
 <td colspan="4"><img src="https://img.shields.io/github/stars/maxritter/claude-codepro?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/maxritter/claude-codepro?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/maxritter/claude-codepro?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/maxritter/claude-codepro?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/maxritter/claude-codepro?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/maxritter/claude-codepro?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/maxritter/claude-codepro?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/maxritter/claude-codepro?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/maxritter/claude-codepro?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/muratcankoylan/ralph-wiggum-marketer"><b>Ralph Wiggum Marketer</b></a><br>by <a href="https://github.com/muratcankoylan">Muratcan Koylan</a></td>
+<td>Workflows & Knowledge Guides</td>
+<td>Ralph Wiggum</td>
+<td>A Claude Code plugin that provides an autonomous AI copywriter,  integrating the Ralph loop with customized knowledge bases for market research agents. The agents do the research, Ralph writes the copy, you stay in bed. Whether or not you practice Ralph-Driven Development (RDD), I think these projects are interesting and creative explorations of general agentic patterns.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/revfactory/harness"><b>Harness</b></a><br>by <a href="https://github.com/revfactory">revfactory</a></td>
+<td>Workflows & Knowledge Guides</td>
+<td>Teams</td>
+<td>A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use. Resources are in Korean but can produce high-quality English-language output.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/revfactory/harness?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/revfactory/harness?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/revfactory/harness?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/revfactory/harness?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/revfactory/harness?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/revfactory/harness?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/revfactory/harness?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/revfactory/harness?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/revfactory/harness?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/shareAI-lab/learn-claude-code"><b>Learn Claude Code</b></a><br>by <a href="https://github.com/shareAI-lab/">shareAI-Lab</a></td>
+<td>Workflows & Knowledge Guides</td>
+<td>General</td>
+<td>A really interesting analysis of how coding agents like Claude Code are designed. It attempts to break an agent down into its fundamental parts and reconstruct it with minimal code. Great learning resource. Final product is a rudimentary agent with skills, sub-agents, and a todo-list in roughly a few hundred lines of Python.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/shareAI-lab/learn-claude-code?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/shareAI-lab/learn-claude-code?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/shareAI-lab/learn-claude-code?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/shareAI-lab/learn-claude-code?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/shareAI-lab/learn-claude-code?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/shareAI-lab/learn-claude-code?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/shareAI-lab/learn-claude-code?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/shareAI-lab/learn-claude-code?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/shareAI-lab/learn-claude-code?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/frankbria/ralph-claude-code"><b>Ralph for Claude Code</b></a><br>by <a href="https://github.com/frankbria">Frank Bria</a></td>
 <td>Workflows & Knowledge Guides</td>
 <td>Ralph Wiggum</td>
@@ -156,6 +174,15 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by last upd
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/frankbria/ralph-claude-code?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/frankbria/ralph-claude-code?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/frankbria/ralph-claude-code?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/frankbria/ralph-claude-code?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/frankbria/ralph-claude-code?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/frankbria/ralph-claude-code?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/frankbria/ralph-claude-code?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/frankbria/ralph-claude-code?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/frankbria/ralph-claude-code?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ykdojo/claude-code-tips"><b>Claude Code Tips</b></a><br>by <a href="https://github.com/ykdojo">ykdojo</a></td>
+<td>Workflows & Knowledge Guides</td>
+<td>General</td>
+<td>A nice variety of 35+ brief but information-dense Claude Code tips covering voice input, system prompt patching, container workflows for risky tasks, conversation cloning(!), multi-model orchestration with Gemini CLI, and plenty more. Nice demos, working scripts, a plugin, I'd say this probably has a little something for everyone.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/ykdojo/claude-code-tips?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ykdojo/claude-code-tips?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ykdojo/claude-code-tips?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ykdojo/claude-code-tips?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ykdojo/claude-code-tips?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ykdojo/claude-code-tips?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ykdojo/claude-code-tips?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ykdojo/claude-code-tips?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ykdojo/claude-code-tips?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/harperreed/dotfiles/tree/master/.claude/commands"><b>Project Workflow System</b></a><br>by <a href="https://github.com/harperreed">harperreed</a></td>
@@ -174,15 +201,6 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by last upd
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/automazeio/ccpm?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/automazeio/ccpm?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/automazeio/ccpm?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/automazeio/ccpm?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/automazeio/ccpm?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/automazeio/ccpm?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/automazeio/ccpm?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/automazeio/ccpm?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/automazeio/ccpm?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/shareAI-lab/learn-claude-code"><b>Learn Claude Code</b></a><br>by <a href="https://github.com/shareAI-lab/">shareAI-Lab</a></td>
-<td>Workflows & Knowledge Guides</td>
-<td>General</td>
-<td>A really interesting analysis of how coding agents like Claude Code are designed. It attempts to break an agent down into its fundamental parts and reconstruct it with minimal code. Great learning resource. Final product is a rudimentary agent with skills, sub-agents, and a todo-list in roughly a few hundred lines of Python.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/shareAI-lab/learn-claude-code?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/shareAI-lab/learn-claude-code?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/shareAI-lab/learn-claude-code?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/shareAI-lab/learn-claude-code?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/shareAI-lab/learn-claude-code?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/shareAI-lab/learn-claude-code?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/shareAI-lab/learn-claude-code?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/shareAI-lab/learn-claude-code?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/shareAI-lab/learn-claude-code?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/marcindulak/ralph-wiggum-bdd"><b>ralph-wiggum-bdd</b></a><br>by <a href="https://github.com/marcindulak">marcindulak</a></td>
@@ -239,15 +257,6 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by last upd
 <td colspan="4"><img src="https://img.shields.io/github/stars/snwfdhmp/awesome-ralph?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/snwfdhmp/awesome-ralph?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/snwfdhmp/awesome-ralph?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/snwfdhmp/awesome-ralph?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/snwfdhmp/awesome-ralph?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/snwfdhmp/awesome-ralph?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/snwfdhmp/awesome-ralph?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/snwfdhmp/awesome-ralph?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/snwfdhmp/awesome-ralph?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/muratcankoylan/ralph-wiggum-marketer"><b>Ralph Wiggum Marketer</b></a><br>by <a href="https://github.com/muratcankoylan">Muratcan Koylan</a></td>
-<td>Workflows & Knowledge Guides</td>
-<td>Ralph Wiggum</td>
-<td>A Claude Code plugin that provides an autonomous AI copywriter,  integrating the Ralph loop with customized knowledge bases for market research agents. The agents do the research, Ralph writes the copy, you stay in bed. Whether or not you practice Ralph-Driven Development (RDD), I think these projects are interesting and creative explorations of general agentic patterns.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/ThibautMelen/agentic-workflow-patterns"><b>Agentic Workflow Patterns</b></a><br>by <a href="https://github.com/ThibautMelen">ThibautMelen</a></td>
 <td>Workflows & Knowledge Guides</td>
 <td>General</td>
@@ -255,15 +264,6 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by last upd
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ThibautMelen/agentic-workflow-patterns?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/JSONbored/claudepro-directory"><b>ClaudoPro Directory</b></a><br>by <a href="https://github.com/JSONbored">ghost</a></td>
-<td>Workflows & Knowledge Guides</td>
-<td>General</td>
-<td>Well-crafted, wide selection of Claude Code hooks, slash commands, subagent files, and more, covering a range of specialized tasks and workflows. Better resources than your average "Claude-template-for-everything" site.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/JSONbored/claudepro-directory?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/JSONbored/claudepro-directory?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/JSONbored/claudepro-directory?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/JSONbored/claudepro-directory?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/JSONbored/claudepro-directory?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/JSONbored/claudepro-directory?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/JSONbored/claudepro-directory?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/JSONbored/claudepro-directory?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/JSONbored/claudepro-directory?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/cheukyin175/learn-faster-kit"><b>learn-faster-kit</b></a><br>by <a href="https://github.com/cheukyin175">Hugo Lau</a></td>
@@ -362,4 +362,4 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by last upd
 
 **Total Resources:** 34
 
-**Last Generated:** 2026-04-04
+**Last Generated:** 2026-04-11

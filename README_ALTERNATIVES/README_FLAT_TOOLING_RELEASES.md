@@ -138,81 +138,11 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by latest rel
 <tr>
 <td colspan="5"><img src="https://img.shields.io/github/stars/Haleclipse/Claudix?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Haleclipse/Claudix?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Haleclipse/Claudix?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Haleclipse/Claudix?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Haleclipse/Claudix?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Haleclipse/Claudix?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Haleclipse/Claudix?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Haleclipse/Claudix?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Haleclipse/Claudix?style=flat-square" alt="license"></td>
 </tr>
-<tr>
-<td><a href="https://github.com/smtg-ai/claude-squad"><b>Claude Squad</b></a><br>by <a href="https://github.com/smtg-ai">smtg-ai</a></td>
-<td>v1.0.17</td>
-<td>GitHub</td>
-<td>2026-03-12</td>
-<td>Claude Squad is a terminal app that manages multiple Claude Code, Codex (and other local agents including Aider) in separate workspaces, allowing you to work on multiple tasks simultaneously.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/smtg-ai/claude-squad?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/smtg-ai/claude-squad?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/smtg-ai/claude-squad?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/smtg-ai/claude-squad?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/smtg-ai/claude-squad?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/smtg-ai/claude-squad?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/smtg-ai/claude-squad?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/smtg-ai/claude-squad?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/smtg-ai/claude-squad?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/serpro69/claude-toolbox"><b>claude-toolbox</b></a><br>by <a href="https://github.com/serpro69">serpro69</a></td>
-<td>v0.3.0</td>
-<td>GitHub</td>
-<td>2026-03-11</td>
-<td>This is a starter template repository designed to provide a complete development environment for Claude-Code with pre-configured MCP servers and tools for AI-powered development workflows. The repository is intentionally minimal, containing only configuration templates for three primary systems: Claude Code, Serena, and Task Master.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/serpro69/claude-toolbox?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/serpro69/claude-toolbox?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/serpro69/claude-toolbox?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/serpro69/claude-toolbox?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/serpro69/claude-toolbox?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/serpro69/claude-toolbox?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/serpro69/claude-toolbox?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/serpro69/claude-toolbox?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/serpro69/claude-toolbox?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/ryoppippi/ccusage"><b>CC Usage</b></a><br>by <a href="https://github.com/ryoppippi">ryoppippi</a></td>
-<td>v18.0.10</td>
-<td>GitHub</td>
-<td>2026-03-10</td>
-<td>Handy CLI tool for managing and analyzing Claude Code usage, based on analyzing local Claude Code logs. Presents a nice dashboard regarding cost information, token consumption, etc.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/ryoppippi/ccusage?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ryoppippi/ccusage?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ryoppippi/ccusage?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ryoppippi/ccusage?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ryoppippi/ccusage?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ryoppippi/ccusage?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ryoppippi/ccusage?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ryoppippi/ccusage?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ryoppippi/ccusage?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/pchalasani/claude-code-tools"><b>claude-code-tools</b></a><br>by <a href="https://github.com/pchalasani">Prasad Chalasani</a></td>
-<td>v1.10.8</td>
-<td>GitHub</td>
-<td>2026-03-09</td>
-<td>Well-crafted toolset for session continuity, featuring skills/commands to avoid compaction and recover context across sessions with cross-agent handoff between Claude Code and Codex CLI. Includes a fast Rust/Tantivy-powered full-text session search (TUI for humans, skill/CLI for agents), tmux-cli skill + command for interacting with scripts and CLI agents, and safety hooks to block dangerous commands.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/pchalasani/claude-code-tools?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/pchalasani/claude-code-tools?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/pchalasani/claude-code-tools?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/pchalasani/claude-code-tools?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/pchalasani/claude-code-tools?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/pchalasani/claude-code-tools?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/pchalasani/claude-code-tools?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/pchalasani/claude-code-tools?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/pchalasani/claude-code-tools?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/ruvnet/claude-code-flow"><b>Claude Code Flow</b></a><br>by <a href="https://github.com/ruvnet">ruvnet</a></td>
-<td>v3.5.15</td>
-<td>GitHub</td>
-<td>2026-03-09</td>
-<td>This mode serves as a code-first orchestration layer, enabling Claude to write, edit, test, and optimize code autonomously across recursive agent cycles.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/ruvnet/claude-code-flow?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ruvnet/claude-code-flow?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ruvnet/claude-code-flow?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ruvnet/claude-code-flow?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ruvnet/claude-code-flow?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ruvnet/claude-code-flow?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ruvnet/claude-code-flow?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ruvnet/claude-code-flow?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ruvnet/claude-code-flow?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/sudocode-ai/sudocode"><b>sudocode</b></a><br>by <a href="https://github.com/ssh-randy">ssh-randy</a></td>
-<td>v0.1.26</td>
-<td>GitHub</td>
-<td>2026-03-07</td>
-<td>Lightweight agent orchestration dev tool that lives in your repo. Integrates with various specification frameworks. It's giving Jira.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/sudocode-ai/sudocode?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/sudocode-ai/sudocode?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/sudocode-ai/sudocode?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/sudocode-ai/sudocode?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/sudocode-ai/sudocode?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/sudocode-ai/sudocode?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/sudocode-ai/sudocode?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/sudocode-ai/sudocode?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/sudocode-ai/sudocode?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/Piebald-AI/tweakcc"><b>tweakcc</b></a><br>by <a href="https://github.com/Piebald-AI">Piebald-AI</a></td>
-<td>v4.0.11</td>
-<td>GitHub</td>
-<td>2026-03-05</td>
-<td>Command-line tool to customize your Claude Code styling.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/Piebald-AI/tweakcc?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Piebald-AI/tweakcc?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Piebald-AI/tweakcc?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Piebald-AI/tweakcc?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Piebald-AI/tweakcc?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Piebald-AI/tweakcc?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Piebald-AI/tweakcc?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Piebald-AI/tweakcc?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Piebald-AI/tweakcc?style=flat-square" alt="license"></td>
-</tr>
 </tbody>
 </table>
 
 ---
 
-**Total Resources:** 15
+**Total Resources:** 8
 
-**Last Generated:** 2026-04-04
+**Last Generated:** 2026-04-11

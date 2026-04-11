@@ -2109,6 +2109,13 @@ _Structures AI-assisted EigenLayer AVS development workflow with consistent nami
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 
 
+<a href="https://github.com/CommE2E/comm/blob/master/CLAUDE.md"><img src="../assets/badge-comm.svg" alt="Comm"></a>  
+_Serves as a development reference for E2E-encrypted messaging applications with code organization architecture, security implementation details, and testing procedures._  
+![GitHub Stats for comm](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=comm&username=CommE2E&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
 <a href="https://github.com/eastlondoner/cursor-tools/blob/main/CLAUDE.md"><img src="../assets/badge-cursor-tools.svg" alt="Cursor Tools"></a>  
 _Creates a versatile AI command interface supporting multiple providers and models with flexible command options and browser automation through "Stagehand" feature._  
 ![GitHub Stats for cursor-tools](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=cursor-tools&username=eastlondoner&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)

@@ -56,6 +56,15 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by last upd
 </thead>
 <tbody>
 <tr>
+<td><a href="https://github.com/sgcarstrends/backend/blob/main/CLAUDE.md"><b>SG Cars Trends Backend</b></a><br>by <a href="https://github.com/sgcarstrends">sgcarstrends</a></td>
+<td>CLAUDE.md Files</td>
+<td>Language-Specific</td>
+<td>Provides comprehensive structure for TypeScript monorepo projects with detailed commands for development, testing, deployment, and AWS/Cloudflare integration.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/sgcarstrends/backend?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/sgcarstrends/backend?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/sgcarstrends/backend?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/sgcarstrends/backend?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/sgcarstrends/backend?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/sgcarstrends/backend?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/sgcarstrends/backend?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/sgcarstrends/backend?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/sgcarstrends/backend?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/metabase/metabase/blob/master/CLAUDE.md"><b>Metabase</b></a><br>by <a href="https://github.com/metabase">metabase</a></td>
 <td>CLAUDE.md Files</td>
 <td>Language-Specific</td>
@@ -65,13 +74,22 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by last upd
 <td colspan="4"><img src="https://img.shields.io/github/stars/metabase/metabase?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/metabase/metabase?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/metabase/metabase?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/metabase/metabase?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/metabase/metabase?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/metabase/metabase?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/metabase/metabase?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/metabase/metabase?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/metabase/metabase?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/sgcarstrends/backend/blob/main/CLAUDE.md"><b>SG Cars Trends Backend</b></a><br>by <a href="https://github.com/sgcarstrends">sgcarstrends</a></td>
+<td><a href="https://github.com/CommE2E/comm/blob/master/CLAUDE.md"><b>Comm</b></a><br>by <a href="https://github.com/CommE2E">CommE2E</a></td>
 <td>CLAUDE.md Files</td>
-<td>Language-Specific</td>
-<td>Provides comprehensive structure for TypeScript monorepo projects with detailed commands for development, testing, deployment, and AWS/Cloudflare integration.</td>
+<td>Domain-Specific</td>
+<td>Serves as a development reference for E2E-encrypted messaging applications with code organization architecture, security implementation details, and testing procedures.</td>
 </tr>
 <tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/sgcarstrends/backend?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/sgcarstrends/backend?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/sgcarstrends/backend?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/sgcarstrends/backend?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/sgcarstrends/backend?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/sgcarstrends/backend?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/sgcarstrends/backend?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/sgcarstrends/backend?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/sgcarstrends/backend?style=flat-square" alt="license"></td>
+<td colspan="4"><img src="https://img.shields.io/github/stars/CommE2E/comm?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/CommE2E/comm?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/CommE2E/comm?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/CommE2E/comm?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/CommE2E/comm?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/CommE2E/comm?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/CommE2E/comm?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/CommE2E/comm?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/CommE2E/comm?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/langchain-ai/langgraphjs/blob/main/CLAUDE.md"><b>LangGraphJS</b></a><br>by <a href="https://github.com/langchain-ai">langchain-ai</a></td>
+<td>CLAUDE.md Files</td>
+<td>Language-Specific</td>
+<td>Offers comprehensive build and test commands with detailed TypeScript style guidelines, layered library architecture, and monorepo structure using yarn workspaces.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/langchain-ai/langgraphjs?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/langchain-ai/langgraphjs?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/langchain-ai/langgraphjs?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/langchain-ai/langgraphjs?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/langchain-ai/langgraphjs?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/langchain-ai/langgraphjs?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/langchain-ai/langgraphjs?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/langchain-ai/langgraphjs?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/langchain-ai/langgraphjs?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/mattgodbolt/jsbeeb/blob/main/CLAUDE.md"><b>JSBeeb</b></a><br>by <a href="https://github.com/mattgodbolt">mattgodbolt</a></td>
@@ -117,15 +135,6 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by last upd
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/ParetoSecurity/pareto-mac?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ParetoSecurity/pareto-mac?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ParetoSecurity/pareto-mac?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ParetoSecurity/pareto-mac?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ParetoSecurity/pareto-mac?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ParetoSecurity/pareto-mac?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ParetoSecurity/pareto-mac?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ParetoSecurity/pareto-mac?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ParetoSecurity/pareto-mac?style=flat-square" alt="license"></td>
-</tr>
-<tr>
-<td><a href="https://github.com/langchain-ai/langgraphjs/blob/main/CLAUDE.md"><b>LangGraphJS</b></a><br>by <a href="https://github.com/langchain-ai">langchain-ai</a></td>
-<td>CLAUDE.md Files</td>
-<td>Language-Specific</td>
-<td>Offers comprehensive build and test commands with detailed TypeScript style guidelines, layered library architecture, and monorepo structure using yarn workspaces.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/langchain-ai/langgraphjs?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/langchain-ai/langgraphjs?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/langchain-ai/langgraphjs?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/langchain-ai/langgraphjs?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/langchain-ai/langgraphjs?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/langchain-ai/langgraphjs?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/langchain-ai/langgraphjs?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/langchain-ai/langgraphjs?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/langchain-ai/langgraphjs?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/giselles-ai/giselle/blob/main/CLAUDE.md"><b>Giselle</b></a><br>by <a href="https://github.com/giselles-ai">giselles-ai</a></td>
@@ -267,6 +276,6 @@ A flat list view of all resources. Category: **CLAUDE.md** | Sorted: by last upd
 
 ---
 
-**Total Resources:** 23
+**Total Resources:** 24
 
-**Last Generated:** 2026-04-04
+**Last Generated:** 2026-04-11

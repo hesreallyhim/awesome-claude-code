@@ -173,15 +173,6 @@ A flat list view of all resources. Category: **Commands** | Sorted: by last upda
 <td colspan="4"><img src="https://img.shields.io/github/stars/slunsford/coffee-analytics?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/slunsford/coffee-analytics?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/slunsford/coffee-analytics?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/slunsford/coffee-analytics?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/slunsford/coffee-analytics?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/slunsford/coffee-analytics?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/slunsford/coffee-analytics?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/slunsford/coffee-analytics?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/slunsford/coffee-analytics?style=flat-square" alt="license"></td>
 </tr>
 <tr>
-<td><a href="https://github.com/Wirasm/claudecode-utils/blob/main/.claude/commands/create-prp.md"><b>/create-prp</b></a><br>by <a href="https://github.com/Wirasm">Wirasm</a></td>
-<td>Slash-Commands</td>
-<td>Project & Task Management</td>
-<td>Creates product requirement plans by reading PRP methodology, following template structure, creating comprehensive requirements, and structuring product definitions for development.</td>
-</tr>
-<tr>
-<td colspan="4"><img src="https://img.shields.io/github/stars/Wirasm/claudecode-utils?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Wirasm/claudecode-utils?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Wirasm/claudecode-utils?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Wirasm/claudecode-utils?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Wirasm/claudecode-utils?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Wirasm/claudecode-utils?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Wirasm/claudecode-utils?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Wirasm/claudecode-utils?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Wirasm/claudecode-utils?style=flat-square" alt="license"></td>
-</tr>
-<tr>
 <td><a href="https://github.com/Consiliency/Flutter-Structurizr/blob/main/.claude/commands/update-docs.md"><b>/update-docs</b></a><br>by <a href="https://github.com/Consiliency">Consiliency</a></td>
 <td>Slash-Commands</td>
 <td>Documentation & Changelogs</td>
@@ -189,6 +180,15 @@ A flat list view of all resources. Category: **Commands** | Sorted: by last upda
 </tr>
 <tr>
 <td colspan="4"><img src="https://img.shields.io/github/stars/Consiliency/Flutter-Structurizr?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Consiliency/Flutter-Structurizr?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Consiliency/Flutter-Structurizr?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Consiliency/Flutter-Structurizr?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Consiliency/Flutter-Structurizr?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Consiliency/Flutter-Structurizr?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Consiliency/Flutter-Structurizr?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Consiliency/Flutter-Structurizr?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Consiliency/Flutter-Structurizr?style=flat-square" alt="license"></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Wirasm/claudecode-utils/blob/main/.claude/commands/create-prp.md"><b>/create-prp</b></a><br>by <a href="https://github.com/Wirasm">Wirasm</a></td>
+<td>Slash-Commands</td>
+<td>Project & Task Management</td>
+<td>Creates product requirement plans by reading PRP methodology, following template structure, creating comprehensive requirements, and structuring product definitions for development.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/Wirasm/claudecode-utils?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Wirasm/claudecode-utils?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Wirasm/claudecode-utils?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Wirasm/claudecode-utils?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Wirasm/claudecode-utils?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Wirasm/claudecode-utils?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Wirasm/claudecode-utils?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Wirasm/claudecode-utils?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Wirasm/claudecode-utils?style=flat-square" alt="license"></td>
 </tr>
 <tr>
 <td><a href="https://github.com/ddisisto/si/blob/main/.claude/commands/rsi.md"><b>/rsi</b></a><br>by <a href="https://github.com/ddisisto">ddisisto</a></td>
@@ -449,4 +449,4 @@ A flat list view of all resources. Category: **Commands** | Sorted: by last upda
 
 **Total Resources:** 43
 
-**Last Generated:** 2026-04-04
+**Last Generated:** 2026-04-11
