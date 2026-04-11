@@ -2210,7 +2210,7 @@ Structures AI-assisted EigenLayer AVS development workflow with consistent namin
 </details>
 <br>
 
-[`Comm`](https://github.com/CommE2E/comm/blob/master/CLAUDE.md) &nbsp; by &nbsp; [CommE2E](https://github.com/CommE2E)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;BSD-3-Clause  
+[`Comm`](https://github.com/CommE2E/comm/blob/master/AGENTS.md) &nbsp; by &nbsp; [CommE2E](https://github.com/CommE2E)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;BSD-3-Clause  
 Serves as a development reference for E2E-encrypted messaging applications with code organization architecture, security implementation details, and testing procedures.
 
 <details>
