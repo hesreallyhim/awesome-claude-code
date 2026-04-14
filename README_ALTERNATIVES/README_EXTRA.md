@@ -187,6 +187,9 @@
   </picture>
 </div>
 
+<a href="https://aipatternbook.com"><img src="../assets/badge-encyclopedia-of-agentic-coding-patterns.svg" alt="Encyclopedia of Agentic Coding Patterns"></a>  
+_A freely available reference covering 190+ patterns for AI-assisted software development (and actually a whole bunch of related technical topics) from foundational concepts through agentic construction patterns, governance, testing, and socio-technical systems. Each entry follows a consistent pattern-language format with Context, Problem, Forces, Solution, Consequences, and Related Patterns. Opinionated and erudiate, which is actually good for an "encyclopedia" in some ways._
+
 <a href="https://github.com/panaversity/claude-code-agent-teams-exercises"><img src="../assets/badge-claude-code-agent-teams-exercises.svg" alt="Claude Code Agent Teams: Exercises"></a>  
 _Practical exercises for Claude Code Agent Teams - 6 exercises + 2 capstones covering team creation, task coordination, quality hooks, and parallel code review - good learning resource._  
 ![GitHub Stats for claude-code-agent-teams-exercises](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-agent-teams-exercises&username=panaversity&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -194,10 +197,6 @@ _Practical exercises for Claude Code Agent Teams - 6 exercises + 2 capstones cov
 <a href="https://github.com/revfactory/harness"><img src="../assets/badge-harness.svg" alt="Harness"></a>  
 _A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use. Resources are in Korean but can produce high-quality English-language output._  
 ![GitHub Stats for harness](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=harness&username=revfactory&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/matt1398/claude-devtools"><img src="../assets/badge-claude-devtools.svg" alt="claude-devtools"></a>  
-_A well-designed desktop app that provides detailed observability into your Claude Code sessions by analyzing the session logs. Provides turn-based context data across numerous categories, compaction visualization, subagent execution trees, and custom notification triggers. Easy to install, and nice visual design._  
-![GitHub Stats for claude-devtools](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-devtools&username=matt1398&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 
 <br>
@@ -835,6 +834,12 @@ _Provides a systematic approach to priming Claude Code with comprehensive projec
 <a href="https://github.com/OneRedOak/claude-code-workflows/tree/main/design-review"><img src="../assets/badge-design-review-workflow.svg" alt="Design Review Workflow"></a>  
 _A tailored workflow for enabling automated UI/UX design review, including specialized sub agents, slash commands, `CLAUDE.md` excerpts, and more. Covers a broad range of criteria from responsive design to accessibility._  
 ![GitHub Stats for claude-code-workflows](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-workflows&username=OneRedOak&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://aipatternbook.com"><img src="../assets/badge-encyclopedia-of-agentic-coding-patterns.svg" alt="Encyclopedia of Agentic Coding Patterns"></a>  
+_A freely available reference covering 190+ patterns for AI-assisted software development (and actually a whole bunch of related technical topics) from foundational concepts through agentic construction patterns, governance, testing, and socio-technical systems. Each entry follows a consistent pattern-language format with Context, Problem, Forces, Solution, Consequences, and Related Patterns. Opinionated and erudiate, which is actually good for an "encyclopedia" in some ways._
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 

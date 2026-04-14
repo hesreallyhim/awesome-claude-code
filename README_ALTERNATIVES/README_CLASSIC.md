@@ -46,6 +46,9 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Encyclopedia of Agentic Coding Patterns`](https://aipatternbook.com) &nbsp; by &nbsp; [Wolf McNally](https://github.com/wolfmcnally)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;&copy;  
+A freely available reference covering 190+ patterns for AI-assisted software development (and actually a whole bunch of related technical topics) from foundational concepts through agentic construction patterns, governance, testing, and socio-technical systems. Each entry follows a consistent pattern-language format with Context, Problem, Forces, Solution, Consequences, and Related Patterns. Opinionated and erudiate, which is actually good for an "encyclopedia" in some ways.
+
 [`Claude Code Agent Teams: Exercises`](https://github.com/panaversity/claude-code-agent-teams-exercises) &nbsp; by &nbsp; [Panaversity](https://github.com/panaversity)    
 Practical exercises for Claude Code Agent Teams - 6 exercises + 2 capstones covering team creation, task coordination, quality hooks, and parallel code review - good learning resource.
 
@@ -64,17 +67,6 @@ A meta-skill that designs domain-specific agent teams, defines specialized agent
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for harness](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=harness&username=revfactory&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`claude-devtools`](https://github.com/matt1398/claude-devtools) &nbsp; by &nbsp; [matt1398](https://github.com/matt1398)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A well-designed desktop app that provides detailed observability into your Claude Code sessions by analyzing the session logs. Provides turn-based context data across numerous categories, compaction visualization, subagent execution trees, and custom notification triggers. Easy to install, and nice visual design.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for claude-devtools](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-devtools&username=matt1398&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -553,6 +545,9 @@ A tailored workflow for enabling automated UI/UX design review, including specia
 
 </details>
 <br>
+
+[`Encyclopedia of Agentic Coding Patterns`](https://aipatternbook.com) &nbsp; by &nbsp; [Wolf McNally](https://github.com/wolfmcnally)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;&copy;  
+A freely available reference covering 190+ patterns for AI-assisted software development (and actually a whole bunch of related technical topics) from foundational concepts through agentic construction patterns, governance, testing, and socio-technical systems. Each entry follows a consistent pattern-language format with Context, Problem, Forces, Solution, Consequences, and Related Patterns. Opinionated and erudiate, which is actually good for an "encyclopedia" in some ways.
 
 [`Laravel TALL Stack AI Development Starter Kit`](https://github.com/tott/laravel-tall-claude-ai-configs) &nbsp; by &nbsp; [tott](https://github.com/tott)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 Transform your Laravel TALL (Tailwind, AlpineJS, Laravel, Livewire) stack development with comprehensive Claude Code configurations that provide intelligent assistance, systematic workflows, and domain expert consultation.
