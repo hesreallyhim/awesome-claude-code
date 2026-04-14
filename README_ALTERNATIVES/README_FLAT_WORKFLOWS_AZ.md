@@ -215,6 +215,12 @@ A flat list view of all resources. Category: **Workflows** | Sorted: alphabetica
 <td colspan="4"><img src="https://img.shields.io/github/stars/OneRedOak/claude-code-workflows?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/OneRedOak/claude-code-workflows?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/OneRedOak/claude-code-workflows?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/OneRedOak/claude-code-workflows?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/OneRedOak/claude-code-workflows?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/OneRedOak/claude-code-workflows?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/OneRedOak/claude-code-workflows?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/OneRedOak/claude-code-workflows?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/OneRedOak/claude-code-workflows?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://aipatternbook.com"><b>Encyclopedia of Agentic Coding Patterns</b></a><br>by <a href="https://github.com/wolfmcnally">Wolf McNally</a></td>
+<td>Workflows & Knowledge Guides</td>
+<td>General</td>
+<td>A freely available reference covering 190+ patterns for AI-assisted software development (and actually a whole bunch of related technical topics) from foundational concepts through agentic construction patterns, governance, testing, and socio-technical systems. Each entry follows a consistent pattern-language format with Context, Problem, Forces, Solution, Consequences, and Related Patterns. Opinionated and erudiate, which is actually good for an "encyclopedia" in some ways.</td>
+</tr>
+<tr>
 <td><a href="https://github.com/revfactory/harness"><b>Harness</b></a><br>by <a href="https://github.com/revfactory">revfactory</a></td>
 <td>Workflows & Knowledge Guides</td>
 <td>Teams</td>
@@ -360,6 +366,6 @@ A flat list view of all resources. Category: **Workflows** | Sorted: alphabetica
 
 ---
 
-**Total Resources:** 34
+**Total Resources:** 35
 
-**Last Generated:** 2026-04-11
+**Last Generated:** 2026-04-14

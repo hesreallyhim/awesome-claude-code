@@ -47,32 +47,10 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by latest relea
 
 > **Note:** Latest release data is pulled from GitHub Releases only. Projects without GitHub Releases will not show release info here. Please verify with the project directly.
 
-<table>
-<thead>
-<tr>
-<th>Resource</th>
-<th>Version</th>
-<th>Source</th>
-<th>Release Date</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/vaporif/parry"><b>parry</b></a><br>by <a href="https://github.com/vaporif">Dmytro Onypko</a></td>
-<td>v0.1.0-alpha.2</td>
-<td>GitHub</td>
-<td>2026-03-14</td>
-<td>Prompt injection scanner for Claude Code hooks. Scans tool inputs and outputs for injection attacks, secrets, and data exfiltration attempts. [NOTE: Early development phase but worth a look.]</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/vaporif/parry?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/vaporif/parry?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/vaporif/parry?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/vaporif/parry?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/vaporif/parry?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/vaporif/parry?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/vaporif/parry?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/vaporif/parry?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/vaporif/parry?style=flat-square" alt="license"></td>
-</tr>
-</tbody>
-</table>
+*No releases in the past 30 days for this category.*
 
 ---
 
-**Total Resources:** 1
+**Total Resources:** 0
 
-**Last Generated:** 2026-04-11
+**Last Generated:** 2026-04-14

@@ -62,6 +62,12 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by date cre
 <td>Collection of best practices, tips, and techniques for Claude Code development workflows, enhanced with distributable plugins</td>
 </tr>
 <tr>
+<td><a href="https://aipatternbook.com"><b>Encyclopedia of Agentic Coding Patterns</b></a><br>by <a href="https://github.com/wolfmcnally">Wolf McNally</a></td>
+<td>Workflows & Knowledge Guides</td>
+<td>General</td>
+<td>A freely available reference covering 190+ patterns for AI-assisted software development (and actually a whole bunch of related technical topics) from foundational concepts through agentic construction patterns, governance, testing, and socio-technical systems. Each entry follows a consistent pattern-language format with Context, Problem, Forces, Solution, Consequences, and Related Patterns. Opinionated and erudiate, which is actually good for an "encyclopedia" in some ways.</td>
+</tr>
+<tr>
 <td><a href="https://diwank.space/field-notes-from-shipping-real-code-with-claude"><b>Shipping Real Code w/ Claude</b></a><br>by <a href="https://github.com/creatorrr">Diwank</a></td>
 <td>Workflows & Knowledge Guides</td>
 <td>General</td>
@@ -360,6 +366,6 @@ A flat list view of all resources. Category: **Workflows** | Sorted: by date cre
 
 ---
 
-**Total Resources:** 34
+**Total Resources:** 35
 
-**Last Generated:** 2026-04-11
+**Last Generated:** 2026-04-14
