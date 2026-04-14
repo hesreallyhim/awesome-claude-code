@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`ccxray`](https://github.com/lis186/ccxray) &nbsp; by &nbsp; [lis186](https://github.com/lis186)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A transparent HTTP proxy and real-time dashboard that sits between Claude Code and the Anthropic API. Captures every request and response without configuration, presenting them in a Miller-column interface with session grouping, token/cost tracking, and context-window visualization.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for ccxray](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ccxray&username=lis186&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Encyclopedia of Agentic Coding Patterns`](https://aipatternbook.com) &nbsp; by &nbsp; [Wolf McNally](https://github.com/wolfmcnally)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;&copy;  
 A freely available reference covering 190+ patterns for AI-assisted software development (and actually a whole bunch of related technical topics) from foundational concepts through agentic construction patterns, governance, testing, and socio-technical systems. Each entry follows a consistent pattern-language format with Context, Problem, Forces, Solution, Consequences, and Related Patterns. Opinionated and erudiate, which is actually good for an "encyclopedia" in some ways.
 
@@ -56,17 +67,6 @@ Practical exercises for Claude Code Agent Teams - 6 exercises + 2 capstones cove
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-code-agent-teams-exercises](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-agent-teams-exercises&username=panaversity&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Harness`](https://github.com/revfactory/harness) &nbsp; by &nbsp; [revfactory](https://github.com/revfactory)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;Apache-2.0  
-A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use. Resources are in Korean but can produce high-quality English-language output.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for harness](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=harness&username=revfactory&all_stats=true&stats_only=true)
 
 </details>
 <br>
@@ -1112,6 +1112,17 @@ A well-maintained and feature-enhanced fork of the glorious `ccflare` usage dash
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for better-ccflare](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=better-ccflare&username=tombii&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`ccxray`](https://github.com/lis186/ccxray) &nbsp; by &nbsp; [lis186](https://github.com/lis186)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A transparent HTTP proxy and real-time dashboard that sits between Claude Code and the Anthropic API. Captures every request and response without configuration, presenting them in a Miller-column interface with session grouping, token/cost tracking, and context-window visualization.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for ccxray](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ccxray&username=lis186&all_stats=true&stats_only=true)
 
 </details>
 <br>

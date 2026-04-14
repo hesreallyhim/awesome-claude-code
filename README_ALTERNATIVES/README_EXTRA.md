@@ -187,16 +187,16 @@
   </picture>
 </div>
 
+<a href="https://github.com/lis186/ccxray"><img src="../assets/badge-ccxray.svg" alt="ccxray"></a>  
+_A transparent HTTP proxy and real-time dashboard that sits between Claude Code and the Anthropic API. Captures every request and response without configuration, presenting them in a Miller-column interface with session grouping, token/cost tracking, and context-window visualization._  
+![GitHub Stats for ccxray](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ccxray&username=lis186&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://aipatternbook.com"><img src="../assets/badge-encyclopedia-of-agentic-coding-patterns.svg" alt="Encyclopedia of Agentic Coding Patterns"></a>  
 _A freely available reference covering 190+ patterns for AI-assisted software development (and actually a whole bunch of related technical topics) from foundational concepts through agentic construction patterns, governance, testing, and socio-technical systems. Each entry follows a consistent pattern-language format with Context, Problem, Forces, Solution, Consequences, and Related Patterns. Opinionated and erudiate, which is actually good for an "encyclopedia" in some ways._
 
 <a href="https://github.com/panaversity/claude-code-agent-teams-exercises"><img src="../assets/badge-claude-code-agent-teams-exercises.svg" alt="Claude Code Agent Teams: Exercises"></a>  
 _Practical exercises for Claude Code Agent Teams - 6 exercises + 2 capstones covering team creation, task coordination, quality hooks, and parallel code review - good learning resource._  
 ![GitHub Stats for claude-code-agent-teams-exercises](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-agent-teams-exercises&username=panaversity&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
-
-<a href="https://github.com/revfactory/harness"><img src="../assets/badge-harness.svg" alt="Harness"></a>  
-_A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use. Resources are in Korean but can produce high-quality English-language output._  
-![GitHub Stats for harness](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=harness&username=revfactory&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 
 <br>
@@ -1251,6 +1251,13 @@ _Claude Code usage dashboard with a web-UI that would put Tableau to shame. Thor
 <a href="https://github.com/tombii/better-ccflare/"><img src="../assets/badge-ccflare-better-ccflare.svg" alt="ccflare -> **better-ccflare**"></a>  
 _A well-maintained and feature-enhanced fork of the glorious `ccflare` usage dashboard by @snipeship (which at the time of writing has not had an update in a few months). `better-ccflare` builds on this foundation with some performance enhancements, extended provider support, bug fixes, Docker deployment, and more._  
 ![GitHub Stats for better-ccflare](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=better-ccflare&username=tombii&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/lis186/ccxray"><img src="../assets/badge-ccxray.svg" alt="ccxray"></a>  
+_A transparent HTTP proxy and real-time dashboard that sits between Claude Code and the Anthropic API. Captures every request and response without configuration, presenting them in a Miller-column interface with session grouping, token/cost tracking, and context-window visualization._  
+![GitHub Stats for ccxray](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ccxray&username=lis186&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 

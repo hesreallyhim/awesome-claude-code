@@ -92,6 +92,15 @@ A flat list view of all resources. Category: **All** | Sorted: by last updated d
 <td>The official documentation for Claude Code, including installation instructions, usage guidelines, API references, tutorials, examples, loads of information that I won't list individually. Like Claude Code, the documentation is frequently updated.</td>
 </tr>
 <tr>
+<td><a href="https://github.com/lis186/ccxray"><b>ccxray</b></a><br>by <a href="https://github.com/lis186">lis186</a></td>
+<td>Tooling</td>
+<td>Usage Monitors</td>
+<td>A transparent HTTP proxy and real-time dashboard that sits between Claude Code and the Anthropic API. Captures every request and response without configuration, presenting them in a Miller-column interface with session grouping, token/cost tracking, and context-window visualization.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/lis186/ccxray?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/lis186/ccxray?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/lis186/ccxray?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/lis186/ccxray?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/lis186/ccxray?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/lis186/ccxray?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/lis186/ccxray?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/lis186/ccxray?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/lis186/ccxray?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/Piebald-AI/claude-code-system-prompts"><b>Claude Code System Prompts</b></a><br>by <a href="https://github.com/Piebald-AI">Piebald AI</a></td>
 <td>Workflows & Knowledge Guides</td>
 <td>General</td>
@@ -1833,6 +1842,6 @@ A flat list view of all resources. Category: **All** | Sorted: by last updated d
 
 ---
 
-**Total Resources:** 199
+**Total Resources:** 200
 
 **Last Generated:** 2026-04-14

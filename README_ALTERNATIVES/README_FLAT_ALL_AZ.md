@@ -716,6 +716,15 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 <td colspan="4"><img src="https://img.shields.io/github/stars/sirmalloc/ccstatusline?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/sirmalloc/ccstatusline?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/sirmalloc/ccstatusline?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/sirmalloc/ccstatusline?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/sirmalloc/ccstatusline?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/sirmalloc/ccstatusline?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/sirmalloc/ccstatusline?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/sirmalloc/ccstatusline?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/sirmalloc/ccstatusline?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/lis186/ccxray"><b>ccxray</b></a><br>by <a href="https://github.com/lis186">lis186</a></td>
+<td>Tooling</td>
+<td>Usage Monitors</td>
+<td>A transparent HTTP proxy and real-time dashboard that sits between Claude Code and the Anthropic API. Captures every request and response without configuration, presenting them in a Miller-column interface with session grouping, token/cost tracking, and context-window visualization.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/lis186/ccxray?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/lis186/ccxray?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/lis186/ccxray?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/lis186/ccxray?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/lis186/ccxray?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/lis186/ccxray?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/lis186/ccxray?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/lis186/ccxray?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/lis186/ccxray?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/opactorai/Claudable"><b>Claudable</b></a><br>by <a href="https://www.linkedin.com/in/seongil-park/">Ethan Park</a></td>
 <td>Alternative Clients</td>
 <td>General</td>
@@ -1833,6 +1842,6 @@ A flat list view of all resources. Category: **All** | Sorted: alphabetically by
 
 ---
 
-**Total Resources:** 199
+**Total Resources:** 200
 
 **Last Generated:** 2026-04-14
