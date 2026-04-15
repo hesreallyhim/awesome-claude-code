@@ -56,6 +56,15 @@ A flat list view of all resources. Category: **Status** | Sorted: by date create
 </thead>
 <tbody>
 <tr>
+<td><a href="https://github.com/Astro-Han/claude-pace"><b>claude-pace</b></a><br>by <a href="https://github.com/Astro-Han">Astro-Han</a></td>
+<td>Status Lines</td>
+<td>General</td>
+<td>A lightweight Bash + jq statusline for Claude Code that displays rate limit pace delta (burn rate vs. time remaining), 5h/7d usage percentage, context window usage, git branch and diff stats. Compares current consumption rate against time remaining in each rate limit window to indicate whether quota is being used faster or slower than the window allows. Single file with no external dependencies beyond jq.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/Astro-Han/claude-pace?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Astro-Han/claude-pace?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Astro-Han/claude-pace?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Astro-Han/claude-pace?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Astro-Han/claude-pace?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Astro-Han/claude-pace?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Astro-Han/claude-pace?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Astro-Han/claude-pace?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Astro-Han/claude-pace?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/hagan/claudia-statusline"><b>claudia-statusline</b></a><br>by <a href="https://github.com/hagan">Hagan Franks</a></td>
 <td>Status Lines</td>
 <td>General</td>
@@ -105,6 +114,6 @@ A flat list view of all resources. Category: **Status** | Sorted: by date create
 
 ---
 
-**Total Resources:** 5
+**Total Resources:** 6
 
 **Last Generated:** 2026-04-15

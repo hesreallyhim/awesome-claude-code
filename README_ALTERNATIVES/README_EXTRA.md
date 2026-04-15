@@ -187,6 +187,10 @@
   </picture>
 </div>
 
+<a href="https://github.com/Astro-Han/claude-pace"><img src="../assets/badge-claude-pace.svg" alt="claude-pace"></a>  
+_A lightweight Bash + jq statusline for Claude Code that displays rate limit pace delta (burn rate vs. time remaining), 5h/7d usage percentage, context window usage, git branch and diff stats. Compares current consumption rate against time remaining in each rate limit window to indicate whether quota is being used faster or slower than the window allows. Single file with no external dependencies beyond jq._  
+![GitHub Stats for claude-pace](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-pace&username=Astro-Han&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/rullerzhou-afk/clawd-on-desk"><img src="../assets/badge-clawd-on-desk.svg" alt="Clawd on Desk"></a>  
 _A desktop pet that reacts to your Claude Code sessions in real-time — thinking, typing, juggling, sleeping, and more. Yep. It's undeniably endearing. And at the end of the day, isn't that what Claude Code is all about?_  
 ![GitHub Stats for clawd-on-desk](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=clawd-on-desk&username=rullerzhou-afk&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
@@ -1458,6 +1462,13 @@ _A highly customizable status line formatter for Claude Code CLI that displays m
 <a href="https://github.com/rz1989s/claude-code-statusline"><img src="../assets/badge-claude-code-statusline.svg" alt="claude-code-statusline"></a>  
 _Enhanced 4-line statusline for Claude Code with themes, cost tracking, and MCP server monitoring_  
 ![GitHub Stats for claude-code-statusline](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-statusline&username=rz1989s&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/Astro-Han/claude-pace"><img src="../assets/badge-claude-pace.svg" alt="claude-pace"></a>  
+_A lightweight Bash + jq statusline for Claude Code that displays rate limit pace delta (burn rate vs. time remaining), 5h/7d usage percentage, context window usage, git branch and diff stats. Compares current consumption rate against time remaining in each rate limit window to indicate whether quota is being used faster or slower than the window allows. Single file with no external dependencies beyond jq._  
+![GitHub Stats for claude-pace](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-pace&username=Astro-Han&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 
