@@ -59,6 +59,16 @@ A flat list view of all resources. Category: **All** | Sorted: by latest release
 </thead>
 <tbody>
 <tr>
+<td><a href="https://github.com/Astro-Han/claude-pace"><b>claude-pace</b></a><br>by <a href="https://github.com/Astro-Han">Astro-Han</a></td>
+<td>v0.8.2</td>
+<td>GitHub</td>
+<td>2026-04-13</td>
+<td>A lightweight Bash + jq statusline for Claude Code that displays rate limit pace delta (burn rate vs. time remaining), 5h/7d usage percentage, context window usage, git branch and diff stats. Compares current consumption rate against time remaining in each rate limit window to indicate whether quota is being used faster or slower than the window allows. Single file with no external dependencies beyond jq.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/Astro-Han/claude-pace?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Astro-Han/claude-pace?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Astro-Han/claude-pace?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Astro-Han/claude-pace?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Astro-Han/claude-pace?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Astro-Han/claude-pace?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Astro-Han/claude-pace?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Astro-Han/claude-pace?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Astro-Han/claude-pace?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/lis186/ccxray"><b>ccxray</b></a><br>by <a href="https://github.com/lis186">lis186</a></td>
 <td>v1.2.5</td>
 <td>GitHub</td>
@@ -113,6 +123,6 @@ A flat list view of all resources. Category: **All** | Sorted: by latest release
 
 ---
 
-**Total Resources:** 5
+**Total Resources:** 6
 
 **Last Generated:** 2026-04-15

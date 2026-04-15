@@ -128,6 +128,15 @@ A flat list view of all resources. Category: **All** | Sorted: by date created
 <td colspan="4"><img src="https://img.shields.io/github/stars/zarazhangrui/codebase-to-course?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/zarazhangrui/codebase-to-course?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/zarazhangrui/codebase-to-course?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/zarazhangrui/codebase-to-course?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/zarazhangrui/codebase-to-course?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/zarazhangrui/codebase-to-course?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/zarazhangrui/codebase-to-course?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/zarazhangrui/codebase-to-course?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/zarazhangrui/codebase-to-course?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/Astro-Han/claude-pace"><b>claude-pace</b></a><br>by <a href="https://github.com/Astro-Han">Astro-Han</a></td>
+<td>Status Lines</td>
+<td>General</td>
+<td>A lightweight Bash + jq statusline for Claude Code that displays rate limit pace delta (burn rate vs. time remaining), 5h/7d usage percentage, context window usage, git branch and diff stats. Compares current consumption rate against time remaining in each rate limit window to indicate whether quota is being used faster or slower than the window allows. Single file with no external dependencies beyond jq.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/Astro-Han/claude-pace?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/Astro-Han/claude-pace?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/Astro-Han/claude-pace?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/Astro-Han/claude-pace?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/Astro-Han/claude-pace?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/Astro-Han/claude-pace?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/Astro-Han/claude-pace?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/Astro-Han/claude-pace?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/Astro-Han/claude-pace?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/rullerzhou-afk/clawd-on-desk"><b>Clawd on Desk</b></a><br>by <a href="https://github.com/rullerzhou-afk">Ruller_Lulu</a></td>
 <td>Tooling</td>
 <td>IDE Integrations</td>
@@ -1851,6 +1860,6 @@ A flat list view of all resources. Category: **All** | Sorted: by date created
 
 ---
 
-**Total Resources:** 201
+**Total Resources:** 202
 
 **Last Generated:** 2026-04-15

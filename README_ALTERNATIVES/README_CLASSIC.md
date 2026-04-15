@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`claude-pace`](https://github.com/Astro-Han/claude-pace) &nbsp; by &nbsp; [Astro-Han](https://github.com/Astro-Han)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A lightweight Bash + jq statusline for Claude Code that displays rate limit pace delta (burn rate vs. time remaining), 5h/7d usage percentage, context window usage, git branch and diff stats. Compares current consumption rate against time remaining in each rate limit window to indicate whether quota is being used faster or slower than the window allows. Single file with no external dependencies beyond jq.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-pace](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-pace&username=Astro-Han&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`Clawd on Desk`](https://github.com/rullerzhou-afk/clawd-on-desk) &nbsp; by &nbsp; [Ruller_Lulu](https://github.com/rullerzhou-afk)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A desktop pet that reacts to your Claude Code sessions in real-time — thinking, typing, juggling, sleeping, and more. Yep. It's undeniably endearing. And at the end of the day, isn't that what Claude Code is all about?
 
@@ -1377,6 +1388,17 @@ Enhanced 4-line statusline for Claude Code with themes, cost tracking, and MCP s
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for claude-code-statusline](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-statusline&username=rz1989s&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`claude-pace`](https://github.com/Astro-Han/claude-pace) &nbsp; by &nbsp; [Astro-Han](https://github.com/Astro-Han)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A lightweight Bash + jq statusline for Claude Code that displays rate limit pace delta (burn rate vs. time remaining), 5h/7d usage percentage, context window usage, git branch and diff stats. Compares current consumption rate against time remaining in each rate limit window to indicate whether quota is being used faster or slower than the window allows. Single file with no external dependencies beyond jq.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-pace](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-pace&username=Astro-Han&all_stats=true&stats_only=true)
 
 </details>
 <br>
