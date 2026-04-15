@@ -69,6 +69,16 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by latest rel
 <td colspan="5"><img src="https://img.shields.io/github/stars/lis186/ccxray?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/lis186/ccxray?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/lis186/ccxray?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/lis186/ccxray?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/lis186/ccxray?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/lis186/ccxray?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/lis186/ccxray?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/lis186/ccxray?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/lis186/ccxray?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/rullerzhou-afk/clawd-on-desk"><b>Clawd on Desk</b></a><br>by <a href="https://github.com/rullerzhou-afk">Ruller_Lulu</a></td>
+<td>v0.5.10</td>
+<td>GitHub</td>
+<td>2026-04-06</td>
+<td>A desktop pet that reacts to your Claude Code sessions in real-time — thinking, typing, juggling, sleeping, and more. Yep. It's undeniably endearing. And at the end of the day, isn't that what Claude Code is all about?</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/matt1398/claude-devtools"><b>claude-devtools</b></a><br>by <a href="https://github.com/matt1398">matt1398</a></td>
 <td>v0.4.9</td>
 <td>GitHub</td>
@@ -103,6 +113,6 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by latest rel
 
 ---
 
-**Total Resources:** 4
+**Total Resources:** 5
 
-**Last Generated:** 2026-04-14
+**Last Generated:** 2026-04-15

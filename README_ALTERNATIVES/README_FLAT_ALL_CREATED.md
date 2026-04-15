@@ -128,6 +128,15 @@ A flat list view of all resources. Category: **All** | Sorted: by date created
 <td colspan="4"><img src="https://img.shields.io/github/stars/zarazhangrui/codebase-to-course?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/zarazhangrui/codebase-to-course?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/zarazhangrui/codebase-to-course?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/zarazhangrui/codebase-to-course?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/zarazhangrui/codebase-to-course?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/zarazhangrui/codebase-to-course?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/zarazhangrui/codebase-to-course?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/zarazhangrui/codebase-to-course?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/zarazhangrui/codebase-to-course?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/rullerzhou-afk/clawd-on-desk"><b>Clawd on Desk</b></a><br>by <a href="https://github.com/rullerzhou-afk">Ruller_Lulu</a></td>
+<td>Tooling</td>
+<td>IDE Integrations</td>
+<td>A desktop pet that reacts to your Claude Code sessions in real-time — thinking, typing, juggling, sleeping, and more. Yep. It's undeniably endearing. And at the end of the day, isn't that what Claude Code is all about?</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/vaporif/parry"><b>parry</b></a><br>by <a href="https://github.com/vaporif">Dmytro Onypko</a></td>
 <td>Hooks</td>
 <td>General</td>
@@ -1842,6 +1851,6 @@ A flat list view of all resources. Category: **All** | Sorted: by date created
 
 ---
 
-**Total Resources:** 200
+**Total Resources:** 201
 
-**Last Generated:** 2026-04-14
+**Last Generated:** 2026-04-15

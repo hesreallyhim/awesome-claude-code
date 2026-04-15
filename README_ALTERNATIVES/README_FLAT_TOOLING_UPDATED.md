@@ -62,6 +62,15 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by last updat
 <td>An elegant and user-friendly Claude Code chat interface for VS Code.</td>
 </tr>
 <tr>
+<td><a href="https://github.com/rullerzhou-afk/clawd-on-desk"><b>Clawd on Desk</b></a><br>by <a href="https://github.com/rullerzhou-afk">Ruller_Lulu</a></td>
+<td>Tooling</td>
+<td>IDE Integrations</td>
+<td>A desktop pet that reacts to your Claude Code sessions in real-time — thinking, typing, juggling, sleeping, and more. Yep. It's undeniably endearing. And at the end of the day, isn't that what Claude Code is all about?</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/lis186/ccxray"><b>ccxray</b></a><br>by <a href="https://github.com/lis186">lis186</a></td>
 <td>Tooling</td>
 <td>Usage Monitors</td>
@@ -507,6 +516,6 @@ A flat list view of all resources. Category: **Tooling** | Sorted: by last updat
 
 ---
 
-**Total Resources:** 50
+**Total Resources:** 51
 
-**Last Generated:** 2026-04-14
+**Last Generated:** 2026-04-15
