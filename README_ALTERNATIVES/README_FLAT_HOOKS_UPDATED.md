@@ -170,4 +170,4 @@ A flat list view of all resources. Category: **Hooks** | Sorted: by last updated
 
 **Total Resources:** 12
 
-**Last Generated:** 2026-04-14
+**Last Generated:** 2026-04-15

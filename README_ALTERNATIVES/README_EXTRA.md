@@ -187,16 +187,16 @@
   </picture>
 </div>
 
+<a href="https://github.com/rullerzhou-afk/clawd-on-desk"><img src="../assets/badge-clawd-on-desk.svg" alt="Clawd on Desk"></a>  
+_A desktop pet that reacts to your Claude Code sessions in real-time — thinking, typing, juggling, sleeping, and more. Yep. It's undeniably endearing. And at the end of the day, isn't that what Claude Code is all about?_  
+![GitHub Stats for clawd-on-desk](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=clawd-on-desk&username=rullerzhou-afk&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
 <a href="https://github.com/lis186/ccxray"><img src="../assets/badge-ccxray.svg" alt="ccxray"></a>  
 _A transparent HTTP proxy and real-time dashboard that sits between Claude Code and the Anthropic API. Captures every request and response without configuration, presenting them in a Miller-column interface with session grouping, token/cost tracking, and context-window visualization._  
 ![GitHub Stats for ccxray](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ccxray&username=lis186&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <a href="https://aipatternbook.com"><img src="../assets/badge-encyclopedia-of-agentic-coding-patterns.svg" alt="Encyclopedia of Agentic Coding Patterns"></a>  
 _A freely available reference covering 190+ patterns for AI-assisted software development (and actually a whole bunch of related technical topics) from foundational concepts through agentic construction patterns, governance, testing, and socio-technical systems. Each entry follows a consistent pattern-language format with Context, Problem, Forces, Solution, Consequences, and Related Patterns. Opinionated and erudiate, which is actually good for an "encyclopedia" in some ways._
-
-<a href="https://github.com/panaversity/claude-code-agent-teams-exercises"><img src="../assets/badge-claude-code-agent-teams-exercises.svg" alt="Claude Code Agent Teams: Exercises"></a>  
-_Practical exercises for Claude Code Agent Teams - 6 exercises + 2 capstones covering team creation, task coordination, quality hooks, and parallel code review - good learning resource._  
-![GitHub Stats for claude-code-agent-teams-exercises](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-code-agent-teams-exercises&username=panaversity&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 
 <br>
@@ -1225,6 +1225,13 @@ _A seamless integration between Claude Code AI assistant and Neovim._
 <a href="https://github.com/Haleclipse/Claudix"><img src="../assets/badge-claudix-claude-code-for-vscode.svg" alt="Claudix - Claude Code for VSCode"></a>  
 _A VSCode extension that brings Claude Code directly into your editor with interactive chat interface, session management, intelligent file operations, terminal execution, and real-time streaming responses. Built with Vue 3, TypeScript._  
 ![GitHub Stats for Claudix](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=Claudix&username=Haleclipse&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
+
+<div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
+
+
+<a href="https://github.com/rullerzhou-afk/clawd-on-desk"><img src="../assets/badge-clawd-on-desk.svg" alt="Clawd on Desk"></a>  
+_A desktop pet that reacts to your Claude Code sessions in real-time — thinking, typing, juggling, sleeping, and more. Yep. It's undeniably endearing. And at the end of the day, isn't that what Claude Code is all about?_  
+![GitHub Stats for clawd-on-desk](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=clawd-on-desk&username=rullerzhou-afk&all_stats=true&stats_only=true&hide_border=true&bg_color=00000000&icon_color=FF0000&text_color=FF0000)
 
 <div align="center"><img src="../assets/entry-separator-light-animated.svg" alt=""></div>
 
