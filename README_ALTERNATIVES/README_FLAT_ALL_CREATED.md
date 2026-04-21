@@ -326,6 +326,15 @@ A flat list view of all resources. Category: **All** | Sorted: by date created
 <td colspan="4"><img src="https://img.shields.io/github/stars/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/muratcankoylan/ralph-wiggum-marketer?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/jarrodwatts/claude-hud"><b>Claude HUD</b></a><br>by <a href="https://github.com/jarrodwatts">Jarrod Watts</a></td>
+<td>Status Lines</td>
+<td>General</td>
+<td>A really stacked status line that exposes just about everything you might need - context usage, tools, agents, todos, etc. Highly configurable and actively maintained at the time of writing - code quality is strong.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/jarrodwatts/claude-hud?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/jarrodwatts/claude-hud?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/jarrodwatts/claude-hud?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jarrodwatts/claude-hud?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/jarrodwatts/claude-hud?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/jarrodwatts/claude-hud?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jarrodwatts/claude-hud?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/jarrodwatts/claude-hud?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/jarrodwatts/claude-hud?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/backnotprop/plannotator"><b>Plannotator</b></a><br>by <a href="https://github.com/backnotprop">backnotprop</a></td>
 <td>Hooks</td>
 <td>-</td>
@@ -1860,6 +1869,6 @@ A flat list view of all resources. Category: **All** | Sorted: by date created
 
 ---
 
-**Total Resources:** 202
+**Total Resources:** 203
 
-**Last Generated:** 2026-04-15
+**Last Generated:** 2026-04-21

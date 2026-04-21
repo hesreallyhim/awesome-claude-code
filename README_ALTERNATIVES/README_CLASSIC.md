@@ -46,6 +46,17 @@ Claude Code is a cutting-edge CLI-based coding assistant and agent released by [
 ## Latest Additions ✨ [🔝](#awesome-claude-code)
 
 
+[`Claude HUD`](https://github.com/jarrodwatts/claude-hud) &nbsp; by &nbsp; [Jarrod Watts](https://github.com/jarrodwatts)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A really stacked status line that exposes just about everything you might need - context usage, tools, agents, todos, etc. Highly configurable and actively maintained at the time of writing - code quality is strong.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-hud](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-hud&username=jarrodwatts&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
 [`claude-pace`](https://github.com/Astro-Han/claude-pace) &nbsp; by &nbsp; [Astro-Han](https://github.com/Astro-Han)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
 A lightweight Bash + jq statusline for Claude Code that displays rate limit pace delta (burn rate vs. time remaining), 5h/7d usage percentage, context window usage, git branch and diff stats. Compares current consumption rate against time remaining in each rate limit window to indicate whether quota is being used faster or slower than the window allows. Single file with no external dependencies beyond jq.
 
@@ -67,20 +78,6 @@ A desktop pet that reacts to your Claude Code sessions in real-time — thinking
 
 </details>
 <br>
-
-[`ccxray`](https://github.com/lis186/ccxray) &nbsp; by &nbsp; [lis186](https://github.com/lis186)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
-A transparent HTTP proxy and real-time dashboard that sits between Claude Code and the Anthropic API. Captures every request and response without configuration, presenting them in a Miller-column interface with session grouping, token/cost tracking, and context-window visualization.
-
-<details>
-<summary>📊 GitHub Stats</summary>
-
-![GitHub Stats for ccxray](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ccxray&username=lis186&all_stats=true&stats_only=true)
-
-</details>
-<br>
-
-[`Encyclopedia of Agentic Coding Patterns`](https://aipatternbook.com) &nbsp; by &nbsp; [Wolf McNally](https://github.com/wolfmcnally)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;&copy;  
-A freely available reference covering 190+ patterns for AI-assisted software development (and actually a whole bunch of related technical topics) from foundational concepts through agentic construction patterns, governance, testing, and socio-technical systems. Each entry follows a consistent pattern-language format with Context, Problem, Forces, Solution, Consequences, and Related Patterns. Opinionated and erudiate, which is actually good for an "encyclopedia" in some ways.
 
 
 ## Contents [🔝](#awesome-claude-code)
@@ -1377,6 +1374,17 @@ A highly customizable status line formatter for Claude Code CLI that displays mo
 <summary>📊 GitHub Stats</summary>
 
 ![GitHub Stats for ccstatusline](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=ccstatusline&username=sirmalloc&all_stats=true&stats_only=true)
+
+</details>
+<br>
+
+[`Claude HUD`](https://github.com/jarrodwatts/claude-hud) &nbsp; by &nbsp; [Jarrod Watts](https://github.com/jarrodwatts)  &nbsp;&nbsp;⚖️&nbsp;&nbsp;MIT  
+A really stacked status line that exposes just about everything you might need - context usage, tools, agents, todos, etc. Highly configurable and actively maintained at the time of writing - code quality is strong.
+
+<details>
+<summary>📊 GitHub Stats</summary>
+
+![GitHub Stats for claude-hud](https://github-readme-stats-fork-orpin.vercel.app/api/pin/?repo=claude-hud&username=jarrodwatts&all_stats=true&stats_only=true)
 
 </details>
 <br>

@@ -92,6 +92,15 @@ A flat list view of all resources. Category: **All** | Sorted: by last updated d
 <td>The official documentation for Claude Code, including installation instructions, usage guidelines, API references, tutorials, examples, loads of information that I won't list individually. Like Claude Code, the documentation is frequently updated.</td>
 </tr>
 <tr>
+<td><a href="https://github.com/jarrodwatts/claude-hud"><b>Claude HUD</b></a><br>by <a href="https://github.com/jarrodwatts">Jarrod Watts</a></td>
+<td>Status Lines</td>
+<td>General</td>
+<td>A really stacked status line that exposes just about everything you might need - context usage, tools, agents, todos, etc. Highly configurable and actively maintained at the time of writing - code quality is strong.</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://img.shields.io/github/stars/jarrodwatts/claude-hud?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/jarrodwatts/claude-hud?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/jarrodwatts/claude-hud?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jarrodwatts/claude-hud?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/jarrodwatts/claude-hud?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/jarrodwatts/claude-hud?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jarrodwatts/claude-hud?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/jarrodwatts/claude-hud?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/jarrodwatts/claude-hud?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/rullerzhou-afk/clawd-on-desk"><b>Clawd on Desk</b></a><br>by <a href="https://github.com/rullerzhou-afk">Ruller_Lulu</a></td>
 <td>Tooling</td>
 <td>IDE Integrations</td>
@@ -1860,6 +1869,6 @@ A flat list view of all resources. Category: **All** | Sorted: by last updated d
 
 ---
 
-**Total Resources:** 202
+**Total Resources:** 203
 
-**Last Generated:** 2026-04-15
+**Last Generated:** 2026-04-21
