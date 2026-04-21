@@ -89,6 +89,16 @@ A flat list view of all resources. Category: **All** | Sorted: by latest release
 <td colspan="5"><img src="https://img.shields.io/github/stars/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/rullerzhou-afk/clawd-on-desk?style=flat-square" alt="license"></td>
 </tr>
 <tr>
+<td><a href="https://github.com/jarrodwatts/claude-hud"><b>Claude HUD</b></a><br>by <a href="https://github.com/jarrodwatts">Jarrod Watts</a></td>
+<td>v0.0.12</td>
+<td>GitHub</td>
+<td>2026-04-04</td>
+<td>A really stacked status line that exposes just about everything you might need - context usage, tools, agents, todos, etc. Highly configurable and actively maintained at the time of writing - code quality is strong.</td>
+</tr>
+<tr>
+<td colspan="5"><img src="https://img.shields.io/github/stars/jarrodwatts/claude-hud?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/jarrodwatts/claude-hud?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/jarrodwatts/claude-hud?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/jarrodwatts/claude-hud?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/jarrodwatts/claude-hud?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/jarrodwatts/claude-hud?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/jarrodwatts/claude-hud?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/jarrodwatts/claude-hud?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/jarrodwatts/claude-hud?style=flat-square" alt="license"></td>
+</tr>
+<tr>
 <td><a href="https://github.com/matt1398/claude-devtools"><b>claude-devtools</b></a><br>by <a href="https://github.com/matt1398">matt1398</a></td>
 <td>v0.4.9</td>
 <td>GitHub</td>
@@ -108,16 +118,6 @@ A flat list view of all resources. Category: **All** | Sorted: by latest release
 <tr>
 <td colspan="5"><img src="https://img.shields.io/github/stars/agent-sh/agnix?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/agent-sh/agnix?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/agent-sh/agnix?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/agent-sh/agnix?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/agent-sh/agnix?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/agent-sh/agnix?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/agent-sh/agnix?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/agent-sh/agnix?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/agent-sh/agnix?style=flat-square" alt="license"></td>
 </tr>
-<tr>
-<td><a href="https://github.com/ruvnet/ruflo"><b>Ruflo</b></a><br>by <a href="https://github.com/ruvnet">rUv</a></td>
-<td>v3.5.31</td>
-<td>GitHub</td>
-<td>2026-03-18</td>
-<td>An orchestration platform for deploying and coordinating multi-agent swarms. If I tried to go into detail it would probably crash my browser. An impressive feat of engineering that tries to cover everything and actually does a good job. Self-learning, autonomous multi-agent swarms, vector-based multi-layered memory, systematic planning, security guardrails, and so on. It's a growing project, and YMMV, but even just studying the patterns is immensely valuable, and it's clearly well-engineered.</td>
-</tr>
-<tr>
-<td colspan="5"><img src="https://img.shields.io/github/stars/ruvnet/ruflo?style=flat-square" alt="stars"> <img src="https://img.shields.io/github/forks/ruvnet/ruflo?style=flat-square" alt="forks"> <img src="https://img.shields.io/github/issues/ruvnet/ruflo?style=flat-square" alt="issues"> <img src="https://img.shields.io/github/issues-pr/ruvnet/ruflo?style=flat-square" alt="prs"> <img src="https://img.shields.io/github/created-at/ruvnet/ruflo?style=flat-square" alt="created"> <img src="https://img.shields.io/github/last-commit/ruvnet/ruflo?style=flat-square" alt="last-commit"> <img src="https://img.shields.io/github/release-date/ruvnet/ruflo?style=flat-square" alt="release-date"> <img src="https://img.shields.io/github/v/release/ruvnet/ruflo?style=flat-square" alt="version"> <img src="https://img.shields.io/github/license/ruvnet/ruflo?style=flat-square" alt="license"></td>
-</tr>
 </tbody>
 </table>
 
@@ -125,4 +125,4 @@ A flat list view of all resources. Category: **All** | Sorted: by latest release
 
 **Total Resources:** 6
 
-**Last Generated:** 2026-04-15
+**Last Generated:** 2026-04-21
