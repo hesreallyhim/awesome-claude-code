@@ -13,3 +13,19 @@
   <source media="(prefers-color-scheme: light)" srcset="assets/update-in-progress-light-2.svg">
   <img alt="Update in progress" src="assets/update-in-progress-light-2.svg">
 </picture>
+
+<br>
+
+# Table of Contents
+
+I. TODO
+
+hm.
+
+Him: Claude have you got any ideas?
+
+Claude: Just hit me up on Telegram, I'll sort it out.
+
+Him: I don't have Telegram...
+
+Claude: ... This does not bode well.
