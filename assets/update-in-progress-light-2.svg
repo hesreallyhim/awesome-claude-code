@@ -1,0 +1,389 @@
+<svg viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg"
+     style="background:#FAFAFA;border-radius:16px">
+  <title>awesome-claude-code: Update in Progress</title>
+  <desc>awesome-claude-code is being updated. Please stand by.</desc>
+
+  <defs>
+    <filter id="soft-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="shadow"/>
+      <feOffset dx="0" dy="2" result="offset"/>
+      <feFlood flood-color="#000" flood-opacity="0.06" result="color"/>
+      <feComposite in="color" in2="offset" operator="in" result="comp"/>
+      <feMerge>
+        <feMergeNode in="comp"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="bar-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#007AFF"/>
+      <stop offset="100%" stop-color="#5AC8FA"/>
+    </linearGradient>
+    <radialGradient id="center-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#007AFF" stop-opacity="0.04"/>
+      <stop offset="70%" stop-color="#007AFF" stop-opacity="0.01"/>
+      <stop offset="100%" stop-color="#007AFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="480" fill="#FAFAFA" rx="16"/>
+  <rect x="0.5" y="0.5" width="799" height="479" rx="16" fill="none" stroke="#E5E5EA" stroke-width="1"/>
+
+  <!-- Floating particles -->
+  <circle cx="463" cy="254" r="1.9001508891498908" fill="#AF52DE" opacity="0.0400460403350088">
+    <animate attributeName="cy" values="254;237;254" dur="5.9s" begin="2.0s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    <animate attributeName="opacity" values="0.0400460403350088;0.10011510083752201;0.0400460403350088" dur="5.9s" begin="2.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="593" cy="410" r="2.9009763976727294" fill="#FF9500" opacity="0.04686557165450621">
+    <animate attributeName="cy" values="410;389;410" dur="5.4s" begin="5.0s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    <animate attributeName="opacity" values="0.04686557165450621;0.11716392913626553;0.04686557165450621" dur="5.4s" begin="5.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="652" cy="170" r="3.085228024452914" fill="#5AC8FA" opacity="0.03609106137200692">
+    <animate attributeName="cy" values="170;149;170" dur="8.9s" begin="6.6s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    <animate attributeName="opacity" values="0.03609106137200692;0.09022765343001729;0.03609106137200692" dur="8.9s" begin="6.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="630" cy="233" r="1.6659310154148796" fill="#AF52DE" opacity="0.04876156190525852">
+    <animate attributeName="cy" values="233;216;233" dur="8.6s" begin="5.4s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    <animate attributeName="opacity" values="0.04876156190525852;0.1219039047631463;0.04876156190525852" dur="8.6s" begin="5.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="93" cy="197" r="2.6159038693848222" fill="#FF9500" opacity="0.0332326571530362">
+    <animate attributeName="cy" values="197;165;197" dur="7.1s" begin="2.9s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    <animate attributeName="opacity" values="0.0332326571530362;0.0830816428825905;0.0332326571530362" dur="7.1s" begin="2.9s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="252" cy="370" r="2.425400912414668" fill="#AF52DE" opacity="0.05990033232922528">
+    <animate attributeName="cy" values="370;350;370" dur="5.3s" begin="1.0s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    <animate attributeName="opacity" values="0.05990033232922528;0.1497508308230632;0.05990033232922528" dur="5.3s" begin="1.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="659" cy="150" r="3.3878211901068007" fill="#AF52DE" opacity="0.03684748902133908">
+    <animate attributeName="cy" values="150;135;150" dur="8.3s" begin="0.3s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    <animate attributeName="opacity" values="0.03684748902133908;0.0921187225533477;0.03684748902133908" dur="8.3s" begin="0.3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="133" cy="277" r="2.7640293998423053" fill="#FF9500" opacity="0.04318790737861875">
+    <animate attributeName="cy" values="277;250;277" dur="5.7s" begin="4.9s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    <animate attributeName="opacity" values="0.04318790737861875;0.10796976844654688;0.04318790737861875" dur="5.7s" begin="4.9s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="465" cy="162" r="3.2999402997972944" fill="#AF52DE" opacity="0.040303062959155714">
+    <animate attributeName="cy" values="162;133;162" dur="9.9s" begin="5.1s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    <animate attributeName="opacity" values="0.040303062959155714;0.10075765739788928;0.040303062959155714" dur="9.9s" begin="5.1s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="179" cy="241" r="3.382704894170149" fill="#5AC8FA" opacity="0.061157681270605724">
+    <animate attributeName="cy" values="241;207;241" dur="7.4s" begin="0.4s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    <animate attributeName="opacity" values="0.061157681270605724;0.1528942031765143;0.061157681270605724" dur="7.4s" begin="0.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="672" cy="269" r="1.7487338944745547" fill="#5AC8FA" opacity="0.04639498267934067">
+    <animate attributeName="cy" values="269;249;269" dur="5.6s" begin="2.4s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    <animate attributeName="opacity" values="0.04639498267934067;0.11598745669835167;0.04639498267934067" dur="5.6s" begin="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="624" cy="223" r="3.041134305285417" fill="#34C759" opacity="0.06431464398573294">
+    <animate attributeName="cy" values="223;205;223" dur="9.0s" begin="6.8s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    <animate attributeName="opacity" values="0.06431464398573294;0.16078660996433236;0.06431464398573294" dur="9.0s" begin="6.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="240" cy="407" r="1.6447788849656706" fill="#AF52DE" opacity="0.04349739796409671">
+    <animate attributeName="cy" values="407;391;407" dur="6.4s" begin="4.7s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    <animate attributeName="opacity" values="0.04349739796409671;0.10874349491024178;0.04349739796409671" dur="6.4s" begin="4.7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="458" cy="232" r="3.144734230821907" fill="#5AC8FA" opacity="0.05137471559425125">
+    <animate attributeName="cy" values="232;206;232" dur="7.0s" begin="3.3s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    <animate attributeName="opacity" values="0.05137471559425125;0.1284367889856281;0.05137471559425125" dur="7.0s" begin="3.3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="88" cy="250" r="2.9433200338056897" fill="#5AC8FA" opacity="0.06414328147600118">
+    <animate attributeName="cy" values="250;226;250" dur="7.0s" begin="3.6s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    <animate attributeName="opacity" values="0.06414328147600118;0.16035820369000295;0.06414328147600118" dur="7.0s" begin="3.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="719" cy="219" r="1.7114974390600644" fill="#AF52DE" opacity="0.04534218290340207">
+    <animate attributeName="cy" values="219;197;219" dur="8.4s" begin="2.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    <animate attributeName="opacity" values="0.04534218290340207;0.11335545725850518;0.04534218290340207" dur="8.4s" begin="2.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Pulsing rings -->
+  <circle cx="400" cy="130" r="85" fill="none" stroke="#007AFF" stroke-width="0.5" opacity="0">
+    <animate attributeName="r" values="85;105" dur="3s" begin="0.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.08;0" dur="3s" begin="0.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" cy="130" r="105" fill="none" stroke="#007AFF" stroke-width="0.5" opacity="0">
+    <animate attributeName="r" values="105;125" dur="3s" begin="1.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.08;0" dur="3s" begin="1.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" cy="130" r="125" fill="none" stroke="#007AFF" stroke-width="0.5" opacity="0">
+    <animate attributeName="r" values="125;145" dur="3s" begin="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.08;0" dur="3s" begin="2.4s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="400" cy="130" r="85" fill="url(#center-glow)"/>
+  <circle cx="400" cy="130" r="48" fill="none" stroke="#E5E5EA" stroke-width="5"/>
+  <circle cx="400" cy="130" r="48" fill="none"
+          stroke="#007AFF" stroke-width="5" stroke-linecap="round"
+          stroke-dasharray="60.3 241.3">
+    <animateTransform attributeName="transform" type="rotate"
+      from="0 400 130" to="360 400 130"
+      dur="2.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-dasharray"
+             values="60.3 241.3;277.5 24.1;277.5 24.1;60.3 241.3"
+             keyTimes="0;0.6;0.85;1"
+             dur="8s" repeatCount="indefinite"
+             calcMode="spline"
+             keySplines="0.1 0.8 0.3 1;0.42 0 0.58 1;0.9 0 1 1"/>
+  </circle>
+  <circle r="3" fill="#007AFF" opacity="0.35">
+    <animate attributeName="cx" values="468.0;467.0;463.9;458.9;452.1;443.7;434.0;423.3;411.8;400.0;388.2;376.7;366.0;356.3;347.9;341.1;336.1;333.0;332.0;333.0;336.1;341.1;347.9;356.3;366.0;376.7;388.2;400.0;411.8;423.3;434.0;443.7;452.1;458.9;463.9;467.0;468.0" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="130.0;141.8;153.3;164.0;173.7;182.1;188.9;193.9;197.0;198.0;197.0;193.9;188.9;182.1;173.7;164.0;153.3;141.8;130.0;118.2;106.7;96.0;86.3;77.9;71.1;66.1;63.0;62.0;63.0;66.1;71.1;77.9;86.3;96.0;106.7;118.2;130.0" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.15;0.5;0.15" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <text x="400" y="218" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif" font-size="28" font-weight="600" fill="#1D1D1F" letter-spacing="-0.5">
+    Update in Progress
+    <animate attributeName="opacity" values="1;0.7;1" dur="3s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+  </text>
+  <text x="400" y="244" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif" font-size="14" font-weight="400" fill="#86868B" letter-spacing="0.1">
+    awesome-claude-code is being reimagined... again.
+  </text>
+
+  <g filter="url(#soft-shadow)">
+    <rect x="200" y="275" width="400" height="6" rx="3" fill="#E5E5EA"/>
+    <rect x="200" y="275" width="0" height="6" rx="3" fill="url(#bar-grad)">
+      <animate attributeName="width"
+               values="0;360;376;388;397;400;0;0"
+               dur="12s" repeatCount="indefinite"
+               keyTimes="0;0.15;0.35;0.55;0.75;0.91;0.92;1"
+               calcMode="spline"
+               keySplines="0.1 0.8 0.2 1;0.7 0 0.9 0.4;0.7 0 0.95 0.3;0.8 0 0.98 0.2;0.85 0 0.99 0.1;0.3 0 0.7 1;0 0 1 1"/>
+    </rect>
+  </g>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" fill="#86868B">
+    <text x="400" y="300" text-anchor="middle" opacity="0">0%
+      <animate attributeName="opacity" values="0;0;0.8;0.8;0;0"
+               keyTimes="0;0.0000;0.0083;0.0184;0.0226;1"
+               dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="300" text-anchor="middle" opacity="0">14%
+      <animate attributeName="opacity" values="0;0;0.8;0.8;0;0"
+               keyTimes="0;0.0226;0.0309;0.0410;0.0452;1"
+               dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="300" text-anchor="middle" opacity="0">31%
+      <animate attributeName="opacity" values="0;0;0.8;0.8;0;0"
+               keyTimes="0;0.0452;0.0535;0.0636;0.0678;1"
+               dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="300" text-anchor="middle" opacity="0">52%
+      <animate attributeName="opacity" values="0;0;0.8;0.8;0;0"
+               keyTimes="0;0.0678;0.0761;0.0862;0.0903;1"
+               dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="300" text-anchor="middle" opacity="0">71%
+      <animate attributeName="opacity" values="0;0;0.8;0.8;0;0"
+               keyTimes="0;0.0903;0.0987;0.1088;0.1129;1"
+               dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="300" text-anchor="middle" opacity="0">85%
+      <animate attributeName="opacity" values="0;0;0.8;0.8;0;0"
+               keyTimes="0;0.1129;0.1213;0.1314;0.1355;1"
+               dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="300" text-anchor="middle" opacity="0">90%
+      <animate attributeName="opacity" values="0;0;0.8;0.8;0;0"
+               keyTimes="0;0.1355;0.1439;0.1539;0.1581;1"
+               dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="300" text-anchor="middle" opacity="0">91%
+      <animate attributeName="opacity" values="0;0;0.8;0.8;0;0"
+               keyTimes="0;0.1581;0.1664;0.2207;0.2248;1"
+               dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="300" text-anchor="middle" opacity="0">92%
+      <animate attributeName="opacity" values="0;0;0.8;0.8;0;0"
+               keyTimes="0;0.2248;0.2332;0.2874;0.2916;1"
+               dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="300" text-anchor="middle" opacity="0">93%
+      <animate attributeName="opacity" values="0;0;0.8;0.8;0;0"
+               keyTimes="0;0.2916;0.2999;0.3541;0.3583;1"
+               dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="300" text-anchor="middle" opacity="0">94%
+      <animate attributeName="opacity" values="0;0;0.8;0.8;0;0"
+               keyTimes="0;0.3583;0.3666;0.4209;0.4251;1"
+               dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="300" text-anchor="middle" opacity="0">95%
+      <animate attributeName="opacity" values="0;0;0.8;0.8;0;0"
+               keyTimes="0;0.4251;0.4334;0.4876;0.4918;1"
+               dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="300" text-anchor="middle" opacity="0">96%
+      <animate attributeName="opacity" values="0;0;0.8;0.8;0;0"
+               keyTimes="0;0.4918;0.5001;0.5544;0.5585;1"
+               dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="300" text-anchor="middle" opacity="0">97%
+      <animate attributeName="opacity" values="0;0;0.8;0.8;0;0"
+               keyTimes="0;0.5585;0.5669;0.6211;0.6253;1"
+               dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="300" text-anchor="middle" opacity="0">98%
+      <animate attributeName="opacity" values="0;0;0.8;0.8;0;0"
+               keyTimes="0;0.6253;0.6336;0.6878;0.6920;1"
+               dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="300" text-anchor="middle" opacity="0">99%
+      <animate attributeName="opacity" values="0;0;0.8;0.8;0;0"
+               keyTimes="0;0.6920;0.7003;0.9445;0.9487;1"
+               dur="12s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11" fill="#AEAEB2">
+    <text x="400" y="318" text-anchor="middle" opacity="0">About 23 minutes remaining...
+      <animate attributeName="opacity" values="0;0;0.6;0.6;0;0"
+               keyTimes="0;0.0000;0.0144;0.1106;0.1250;1"
+               dur="10.4s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="318" text-anchor="middle" opacity="0">About 19 minutes remaining...
+      <animate attributeName="opacity" values="0;0;0.6;0.6;0;0"
+               keyTimes="0;0.1250;0.1394;0.2356;0.2500;1"
+               dur="10.4s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="318" text-anchor="middle" opacity="0">About 4 hours remaining...
+      <animate attributeName="opacity" values="0;0;0.6;0.6;0;0"
+               keyTimes="0;0.2500;0.2644;0.3606;0.3750;1"
+               dur="10.4s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="318" text-anchor="middle" opacity="0">Less than a minute remaining...
+      <animate attributeName="opacity" values="0;0;0.6;0.6;0;0"
+               keyTimes="0;0.3750;0.3894;0.4856;0.5000;1"
+               dur="10.4s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="318" text-anchor="middle" opacity="0">About 37 minutes remaining...
+      <animate attributeName="opacity" values="0;0;0.6;0.6;0;0"
+               keyTimes="0;0.5000;0.5144;0.6106;0.6250;1"
+               dur="10.4s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="318" text-anchor="middle" opacity="0">Calculating time remaining...
+      <animate attributeName="opacity" values="0;0;0.6;0.6;0;0"
+               keyTimes="0;0.6250;0.6394;0.7356;0.7500;1"
+               dur="10.4s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="318" text-anchor="middle" opacity="0">About 2 minutes remaining...
+      <animate attributeName="opacity" values="0;0;0.6;0.6;0;0"
+               keyTimes="0;0.7500;0.7644;0.8606;0.8750;1"
+               dur="10.4s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="318" text-anchor="middle" opacity="0">About 58 minutes remaining...
+      <animate attributeName="opacity" values="0;0;0.6;0.6;0;0"
+               keyTimes="0;0.8750;0.8894;0.9856;1.0000;1"
+               dur="10.4s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" fill="#86868B">
+    <text x="400" y="348" text-anchor="middle" opacity="0">preparing next phase of updates
+      <animate attributeName="opacity" values="0;0;0.7;0.7;0;0"
+               keyTimes="0;0.0000;0.0025;0.0975;0.1000;1"
+               dur="120s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="348" text-anchor="middle" opacity="0">installing system files
+      <animate attributeName="opacity" values="0;0;0.7;0.7;0;0"
+               keyTimes="0;0.1000;0.1025;0.1975;0.2000;1"
+               dur="120s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="348" text-anchor="middle" opacity="0">uninstalling old system files
+      <animate attributeName="opacity" values="0;0;0.7;0.7;0;0"
+               keyTimes="0;0.2000;0.2025;0.2975;0.3000;1"
+               dur="120s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="348" text-anchor="middle" opacity="0">optimizing configuration
+      <animate attributeName="opacity" values="0;0;0.7;0.7;0;0"
+               keyTimes="0;0.3000;0.3025;0.3975;0.4000;1"
+               dur="120s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="348" text-anchor="middle" opacity="0">re-installing system files
+      <animate attributeName="opacity" values="0;0;0.7;0.7;0;0"
+               keyTimes="0;0.4000;0.4025;0.4975;0.5000;1"
+               dur="120s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="348" text-anchor="middle" opacity="0">maximizing storage usage
+      <animate attributeName="opacity" values="0;0;0.7;0.7;0;0"
+               keyTimes="0;0.5000;0.5025;0.5975;0.6000;1"
+               dur="120s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="348" text-anchor="middle" opacity="0">calibrating system settings
+      <animate attributeName="opacity" values="0;0;0.7;0.7;0;0"
+               keyTimes="0;0.6000;0.6025;0.6975;0.7000;1"
+               dur="120s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="348" text-anchor="middle" opacity="0">planning obsolescence
+      <animate attributeName="opacity" values="0;0;0.7;0.7;0;0"
+               keyTimes="0;0.7000;0.7025;0.7975;0.8000;1"
+               dur="120s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="348" text-anchor="middle" opacity="0">preparing final installation plan
+      <animate attributeName="opacity" values="0;0;0.7;0.7;0;0"
+               keyTimes="0;0.8000;0.8025;0.8975;0.9000;1"
+               dur="120s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="348" text-anchor="middle" opacity="0">finalizing updates
+      <animate attributeName="opacity" values="0;0;0.7;0.7;0;0"
+               keyTimes="0;0.9000;0.9025;0.9975;1.0000;1"
+               dur="120s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="13" fill="#AEAEB2" font-style="italic">
+    <text x="400" y="378" text-anchor="middle" opacity="0">awesome claude code
+      <animate attributeName="opacity" values="0;0;0.6;0.6;0;0"
+               keyTimes="0;0.0000;0.0080;0.0920;0.1000;1"
+               dur="50s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="378" text-anchor="middle" opacity="0">a new era of doing awesome
+      <animate attributeName="opacity" values="0;0;0.6;0.6;0;0"
+               keyTimes="0;0.1000;0.1080;0.1920;0.2000;1"
+               dur="50s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="378" text-anchor="middle" opacity="0">awesome claude code
+      <animate attributeName="opacity" values="0;0;0.6;0.6;0;0"
+               keyTimes="0;0.2000;0.2080;0.2920;0.3000;1"
+               dur="50s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="378" text-anchor="middle" opacity="0">where awesome is built
+      <animate attributeName="opacity" values="0;0;0.6;0.6;0;0"
+               keyTimes="0;0.3000;0.3080;0.3920;0.4000;1"
+               dur="50s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="378" text-anchor="middle" opacity="0">awesome claude code
+      <animate attributeName="opacity" values="0;0;0.6;0.6;0;0"
+               keyTimes="0;0.4000;0.4080;0.4920;0.5000;1"
+               dur="50s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="378" text-anchor="middle" opacity="0">think big... claude bigger
+      <animate attributeName="opacity" values="0;0;0.6;0.6;0;0"
+               keyTimes="0;0.5000;0.5080;0.5920;0.6000;1"
+               dur="50s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="378" text-anchor="middle" opacity="0">awesome claude code
+      <animate attributeName="opacity" values="0;0;0.6;0.6;0;0"
+               keyTimes="0;0.6000;0.6080;0.6920;0.7000;1"
+               dur="50s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="378" text-anchor="middle" opacity="0">chaotic neutral
+      <animate attributeName="opacity" values="0;0;0.6;0.6;0;0"
+               keyTimes="0;0.7000;0.7080;0.7920;0.8000;1"
+               dur="50s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="378" text-anchor="middle" opacity="0">awesome claude code
+      <animate attributeName="opacity" values="0;0;0.6;0.6;0;0"
+               keyTimes="0;0.8000;0.8080;0.8920;0.9000;1"
+               dur="50s" repeatCount="indefinite"/>
+    </text>
+    <text x="400" y="378" text-anchor="middle" opacity="0">reinventing itself every two months
+      <animate attributeName="opacity" values="0;0;0.6;0.6;0;0"
+               keyTimes="0;0.9000;0.9080;0.9920;1.0000;1"
+               dur="50s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <line x1="250" y1="428" x2="550" y2="428" stroke="#E5E5EA" stroke-width="0.5"/>
+  <text x="400" y="455" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11" fill="#C7C7CC" letter-spacing="0.3">
+    awesome-claude-code · Designed in California · v∞.0
+  </text>
+
+</svg>
