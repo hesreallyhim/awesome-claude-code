@@ -4,28 +4,10 @@
 
 <br>
 
-> [!NOTE]
-> The old ways have come and gone. It's time to embrace the next phase.
-> The previous Table of Contents was no longer fit for purpose, so a new organizational system is being prepared. Thanks to everyone who has contributed to and supported this repo, be ye human or machine.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/update-in-progress-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/update-in-progress-light-2.svg">
-  <img alt="Update in progress" src="assets/update-in-progress-light-2.svg">
-</picture>
+![ACC RETURNS](https://github.com/hesreallyhim/awesome-claude-code/blob/e02f52370722e9153e59ea837920d7dc0c082e80/assets/acc-returns-2.mp4)
 
 <br>
 
 # Table of Contents
 
-I. TODO
-
-hm.
-
-Him: Claude have you got any ideas?
-
-Claude: Just hit me up on Telegram, I'll sort it out.
-
-Him: I don't have Telegram...
-
-Claude: ... This does not bode well.
+Coming soon...
