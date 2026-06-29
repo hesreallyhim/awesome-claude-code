@@ -4,7 +4,7 @@
 
 <br>
 
-![ACC RETURNS](assets/ACC-RETURNS.mp4)
+![ACC RETURNS](assets/acc-returns-2.mp4)
 
 <br>
 
