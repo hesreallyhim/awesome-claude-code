@@ -4,7 +4,7 @@
 
 <br>
 
-![ACC RETURNS](assets/acc-returns-2.mp4)
+![ACC RETURNS](https://github.com/hesreallyhim/awesome-claude-code/blob/e02f52370722e9153e59ea837920d7dc0c082e80/assets/acc-returns-2.mp4)
 
 <br>
 
