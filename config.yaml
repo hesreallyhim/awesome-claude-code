@@ -1,0 +1,55 @@
+# config.yaml — drives the Table of Contents ordering and section layout for the
+# generated README.md. This is the ONLY place category / sub-category order is
+# defined; generate_readme.py reads it.
+#
+# Schema:
+#   categories:                       # list order == the order sections appear
+#     - name: "<Category heading>"    # required; must match the Category column in the CSV
+#       description: "<blurb>"        # OPTIONAL; rendered as a line under the ## heading
+#       subcategories:                # OPTIONAL; list order == sub-section order
+#         - name: "<Sub-Category>"    # required; must match the Sub-Category column
+#           description: "<blurb>"    # OPTIONAL; rendered under the ### heading
+#
+# Notes:
+#   * Within a category / sub-category, individual entries are sorted alphabetically
+#     by Display Name (case-insensitive) — that ordering is NOT configurable here.
+#   * Entries whose Sub-Category is non-empty but not listed under their category are
+#     still rendered (grouped under their sub-category name, after the listed ones).
+
+# `prefix` is the short id used when minting resource IDs ({prefix}-{hash}); it must
+# match the prefixes baked into existing IDs.
+categories:
+  - name: "Start Here"
+    prefix: start
+  - name: "From Anthropic"
+    prefix: anthropic
+  - name: "Documentation, Knowledge & Learning"
+    prefix: docs
+  - name: "Research & Scientific Inquiry"
+    prefix: research
+  - name: "Providers, Runtime & Integration Infrastructure"
+    prefix: providers
+  - name: "Remote Control, Notifications & Voice I/O"
+    prefix: remote
+  - name: "Alternative Clients"
+    prefix: clients
+  - name: "Status Lines"
+    prefix: statusline
+  - name: "Design & UI/UX"
+    prefix: design
+  - name: "Writing & Prose Quality"
+    prefix: writing
+  - name: "Creative Media"
+    prefix: media
+  - name: "Infrastructure & DevOps"
+    prefix: devops
+  - name: "Security"
+    prefix: security
+  - name: "Multi-Agent Orchestration"
+    prefix: orchestration
+  - name: "Memory & Context Persistence"
+    prefix: memory
+  - name: "Usage & Cost Monitoring"
+    prefix: usage
+  - name: "Linting"
+    prefix: lint

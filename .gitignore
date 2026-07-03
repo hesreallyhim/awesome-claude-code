@@ -1,31 +1,141 @@
-.myob/
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
 
-.mypy_cache/
-.ruff_cache/
+# Python
 __pycache__/
-.pytest_cache/
-
-.claude/
-CLAUDE.md
-!resources/**/CLAUDE.md
-.DS_Store
-
-venv/
-.env
-.pr_template_content.md
-
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
 *.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.venv/
+venv/
+ENV/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
 
+# TypeScript
+*.tsbuildinfo
+.tsc-cache/
+
+# Testing
+coverage/
+.nyc_output/
+.pytest_cache/
+htmlcov/
+.tox/
 .coverage
-
-.vscode/
-
-marketplace/
-
+.coverage.*
+.cache
+nosetests.xml
 coverage.xml
+*.cover
+.hypothesis/
 
-!.claude/
-.claude/*
-!.claude/commands/
-.claude/commands/*
-!.claude/commands/evaluate-repository.md
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+
+# Temporary files
+.tmp/
+.temp/
+tmp/
+temp/
+
+# Package files
+*.tgz
+*.tar.gz
+*.zip
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# Miscellaneous
+.eslintcache
+.stylelintcache
+*.bak
+*.orig
+
+# PERSONAL
+
+INTERNAL
+__INTERNAL__
+
+sync-from-*
+
+.rqs-tmp/
+.myob/

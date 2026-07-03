@@ -1,12 +1,14 @@
+<!-- ARCHIVAL SNAPSHOT of the pre-relaunch awesome-claude-code README (legacy commit 29755104e1f1). Images pinned to the frozen legacy tree (raw.github); non-stored sibling links point at the legacy repo. Keep the legacy branch/tag so these resolve. -->
+
 <!-- GENERATED FILE: do not edit directly -->
 <!--lint disable remark-lint:awesome-badge-->
 
 <h3 align="center">Pick Your Style:</h3>
 <p align="center">
-<a href="../"><img src="../assets/badge-style-awesome.svg" alt="Awesome" height="28"></a>
-<a href="README_EXTRA.md"><img src="../assets/badge-style-extra.svg" alt="Extra" height="28"></a>
-<a href="README_CLASSIC.md"><img src="../assets/badge-style-classic.svg" alt="Classic" height="28" style="border: 2px solid #c9a227; border-radius: 4px;"></a>
-<a href="README_FLAT_ALL_AZ.md"><img src="../assets/badge-style-flat.svg" alt="Flat" height="28"></a>
+<a href="README_AWESOME.md"><img src="https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/29755104e1f15404f99db9e5f381e23960efc4a0/assets/badge-style-awesome.svg" alt="Awesome" height="28"></a>
+<a href="README_EXTRA.md"><img src="https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/29755104e1f15404f99db9e5f381e23960efc4a0/assets/badge-style-extra.svg" alt="Extra" height="28"></a>
+<a href="README_CLASSIC.md"><img src="https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/29755104e1f15404f99db9e5f381e23960efc4a0/assets/badge-style-classic.svg" alt="Classic" height="28" style="border: 2px solid #c9a227; border-radius: 4px;"></a>
+<a href="README_FLAT_ALL_AZ.md"><img src="https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/29755104e1f15404f99db9e5f381e23960efc4a0/assets/badge-style-flat.svg" alt="Flat" height="28"></a>
 </p>
 
 <!-- Responsive Logo with Theme Support -->
@@ -14,8 +16,8 @@
 
   <!-- Same ASCII art for all screen sizes, just scales down on mobile -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="../assets/logo-dark.svg">
-    <img src="../assets/logo-light.svg" alt="Awesome Claude Code" width="100%" style="max-width: 900px;">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/29755104e1f15404f99db9e5f381e23960efc4a0/assets/logo-dark.svg">
+    <img src="https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/29755104e1f15404f99db9e5f381e23960efc4a0/assets/logo-light.svg" alt="Awesome Claude Code" width="100%" style="max-width: 900px;">
   </picture>
 
 </div>
@@ -27,7 +29,7 @@
 
 <!--lint enable remark-lint:awesome-badge-->
 
-[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) [![FREEDOM FUNDER](../assets/freedom-funder-badge.svg)](https://bailproject.org)
+[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) [![FREEDOM FUNDER](https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/29755104e1f15404f99db9e5f381e23960efc4a0/assets/freedom-funder-badge.svg)](https://bailproject.org)
 
 # Awesome Claude Code
 

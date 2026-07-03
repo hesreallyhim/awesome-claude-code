@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Tests for repo ticker data fetching utilities."""
+"""Tests for repo ticker data fetching utilities (migrated from awesome-claude-code)."""
 
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ import requests
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-import scripts.ticker.fetch_repo_ticker_data as fetch_repo_ticker_data  # noqa: E402
+import ticker.fetch_repo_ticker_data as fetch_repo_ticker_data  # noqa: E402
 
 
 class DummyResponse:

@@ -1,52 +1,25 @@
-name: 🚀 Recommend New Resource
-description: Recommend a new resource to be featured in Awesome Claude Code
-title: "[Resource]: WRITE THE NAME OF YOUR RESOURCE HERE <-"
-labels: ["resource-submission", "pending-validation"]
+name: Recommend a Resource
+description: Recommend a Claude Code resource for the list
+title: "[Resource]: <name of your resource>"
+labels: ["resource-submission", "validation-pending"]
 
 body:
   - type: markdown
     attributes:
       value: |
-        ## Welcome! 
+        Thanks for recommending a resource! An automated check will validate the form
+        and post results as a comment. Passing validation means your recommendation has
+        been received — a maintainer reviews and approves at their discretion.
 
-        Thank you for recommending a resource to Awesome Claude Code! This form will guide you through the recommendation process. 
-        Please make sure that you have already reviewed the [CONTRIBUTING](https://github.com/hesreallyhim/awesome-claude-code/blob/main/docs/CONTRIBUTING.md) document as well as the [CODE_OF_CONDUCT](https://github.com/hesreallyhim/awesome-claude-code/blob/main/docs/CODE_OF_CONDUCT.md), and that you agree to abide by the terms. Be really, really sure.
-
-        **WARNING: A strict spam-deterrent system has been put in place. Failure to comply with the simple requirements stated in the [CONTRIBUTING](https://github.com/hesreallyhim/awesome-claude-code/blob/main/docs/CONTRIBUTING.md) document will result in increasingly severe penalties.**
-
-        **Resource Guidelines:**
-        - Issues must be submitted by human users using the github.com UI. The system does not allow resource submissions via the `gh` CLI or other programmatic means. Doing so violates the Code of Conduct and submissions will be automatically closed.
-        - Ensure that you have actually visited this repo before and reviewed the entries on the list. Recommendations must be unique from existing resources, and should be of an equally high caliber.
-        - Avoid submitting resources that violate the Claude Code Usage Policy,or the licensing rights of other independent developers.
-        - Recommendations will be closely scrutinized for security and potential risk.
-        - Although most recommendations are submitted by the authors, you may submit any resource that you love.
-        - The system does not allow resource submissions via the `gh` CLI.
-        - Resources must be at least one week old.
-        
-        **Tips and Tricks for a Speedy Review:**
-        - Please provide clear installation AND uninstallation instructions for any installable resources.
-        - If your resource requires me to execute a bash script, you **must** provide me with a clearly annotated/commented version in which everything is documented clearly. I _can_ read Bash, but it hurts my eyes after a while.
-        - Short examples or demos are tremendously helpful in the review process. If I can see it in action before I think about running it, you're way ahead of the curve.
-        - If your resource requires elevated access or "--dangerously-skip-permissions", please make sure the user is aware of this(!)
-        - If your resource involves making ANY network requests except to the Anthropic API, you **must** state that here.
-        - Offering an auto-update functionality for a library may be a very nice convenience for people. (Similarly, `npx @latest`). However, this is also a known threat vector and will be viewed with caution.
-        - If you are claiming that a resource improves Claude's capacity to perform some particular action, these claims must be backed by evidence. It's your job to provide the evidence, not mine.
-        - Try to submit _focused_ resources that differentiate your project from others, not general-purpose marketplaces.
-        - Avoid submitting complex systems that require long onboarding or extensive training in a particular methodology.
-
-        **Ask Claude for a Candid Review:**
-        When I review your recommendation, I will ask my assistant Claude Code to perform a review (this is to assist me - I do not base my judgment on this review alone.) You can find the type of prompt in `.claude/commands/evaluate-repository.md`. I recommend that you run this evaluation yourself ahead of time. Also, ask yourself: "Could Opus build this in one session?"
-
-        After submission, our automated system will validate whether your Issue is well-formed with respect to the requirements of the template, and post the results as a comment. (This is merely a formality and does not constitute a review.)
-
-        Once your recommendation has been validated, you've done your job - the project has been recommended. I do my best to review recommendations. That summarizes the extent of my obligation. If I raise any further questions about your project, it's usually because I'm interested in it, and want to understand it better. Don't make any changes solely on the basis of my feedback.
+        Please make sure the resource is specific to Claude Code, of high quality, and
+        not already on the list.
 
   - type: input
     id: display_name
     attributes:
       label: Display Name
-      description: The name of the resource as it will appear in the list
-      placeholder: "e.g., My Awesome Tool, /my-command, claude-helper"
+      description: The name of the resource as it will appear in the list.
+      placeholder: "e.g., Dev Browser"
     validations:
       required: true
 
@@ -54,52 +27,32 @@ body:
     id: category
     attributes:
       label: Category
-      description: Select the primary category for your resource (note that I'm currenlty lumping most things called "plugins" under "Agent Skills" until I figure out a better classification system).
+      description: The primary category for your resource.
       options:
-        - Agent Skills
-        - Workflows & Knowledge Guides
-        - Tooling
-        - Status Lines
-        - Hooks
-        - Output Styles
-        - Slash-Commands
-        - CLAUDE.md Files
-        - Alternative Clients
-        - Official Documentation
+        - "Start Here"
+        - "Documentation, Knowledge & Learning"
+        - "Research & Scientific Inquiry"
+        - "Providers, Runtime & Integration Infrastructure"
+        - "Remote Control, Notifications & Voice I/O"
+        - "Alternative Clients"
+        - "Status Lines"
+        - "Design & UI/UX"
+        - "Writing & Prose Quality"
+        - "Creative Media"
+        - "Infrastructure & DevOps"
+        - "Security"
+        - "Multi-Agent Orchestration"
+        - "Memory & Context Persistence"
+        - "Usage & Cost Monitoring"
+        - "Linting"
     validations:
       required: true
 
-  - type: dropdown
-    id: subcategory
-    attributes:
-      label: Sub-Category
-      description: Select a sub-category if applicable (based on your category choice above)
-      options:
-        - General
-        - "Workflows & Knowledge Guides: Teams"
-        - "Workflows & Knowledge Guides: Ralph Wiggum"
-        - "Tooling: IDE Integrations"
-        - "Tooling: Usage Monitors"
-        - "Tooling: Orchestrators"
-        - "Tooling: Config Managers"
-        - "Slash-Commands: Version Control & Git"
-        - "Slash-Commands: Code Analysis & Testing"
-        - "Slash-Commands: Context Loading & Priming"
-        - "Slash-Commands: Documentation & Changelogs"
-        - "Slash-Commands: CI / Deployment"
-        - "Slash-Commands: Project & Task Management"
-        - "Slash-Commands: Miscellaneous"
-        - "CLAUDE.md Files: Language-Specific"
-        - "CLAUDE.md Files: Domain-Specific"
-        - "CLAUDE.md Files: Project Scaffolding & MCP"
-    validations:
-      required: false
-
   - type: input
-    id: primary_link
+    id: link
     attributes:
-      label: Primary Link
-      description: The main URL for your resource (must start with https://). If you have a GitHub repo and a website, _use the GitHub repo_.
+      label: Link
+      description: The main URL (must start with https://). Prefer the GitHub repo.
       placeholder: "https://github.com/username/repository"
     validations:
       required: true
@@ -108,7 +61,7 @@ body:
     id: author_name
     attributes:
       label: Author Name
-      description: "The author's name, alias, or GitHub username. (You may submit public/open-source resources that you do not own.)"
+      description: The author's name, alias, or GitHub username.
       placeholder: "Jane Doe or janedoe"
     validations:
       required: true
@@ -117,121 +70,28 @@ body:
     id: author_link
     attributes:
       label: Author Link
-      description: "Link to author's GitHub profile or personal website"
+      description: Link to the author's GitHub profile or website (https://).
       placeholder: "https://github.com/janedoe"
     validations:
       required: true
-
-  - type: dropdown
-    id: license
-    attributes:
-      label: License
-      description: Select the license for your resource (or choose 'Other' to specify something unlisted).
-      options:
-        - MIT
-        - Apache-2.0
-        - GPL-3.0
-        - BSD-3-Clause
-        - ISC
-        - MPL-2.0
-        - AGPL-3.0
-        - Unlicense
-        - CC0-1.0
-        - CC-BY-4.0
-        - CC-BY-SA-4.0
-        - "&copy;"
-        - Other (specify below)
-        - No License / Not Specified
-    validations:
-      required: true
-
-  - type: input
-    id: license_other
-    attributes:
-      label: Other License
-      description: If you selected "Other" above, please specify the license
-      placeholder: "e.g., BSD-2-Clause, Proprietary"
-    validations:
-      required: false
 
   - type: textarea
     id: description
     attributes:
       label: Description
-      description: "A brief description of your resource (1-3 sentences maximum, no emojis) - follow the list's style - be descriptive, not promotional - do not address the reader"
-      placeholder: "Describe what your resource does and its key features..."
+      description: "1–3 sentences. Descriptive, not promotional. Don't address the reader. (10–500 characters.)"
+      placeholder: "Describe what the resource does and what makes it notable."
     validations:
       required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        The following three fields are encouraged for all users. If you are recommending a plugin, skill, collection, framework, etc., then these are **mandatory**.
-
-  - type: textarea
-    id: validate_claims
-    attributes:
-      label: Validate Claims
-      description: "If you are submitting a complicated resource that gives Claude Code super-powers, suggest a low-friction way for me, or anyone, to prove it to themselves that what you're claiming is true. If you are submitting a plugin, skill, framework, or similar, this field is mandatory."
-      placeholder: "e.g., install this Skill and ask Claude how many times the letter 'r' appears in your codebase"
-    validations:
-      required: false
-
-  - type: textarea
-    id: validate_claim_part_2
-    attributes:
-      label: Specific Task(s)
-      description: "Tell me at least one specific task I should give to Claude Code to demonstrate the value of your resource."
-      placeholder: "e.g., install this Skill and give Claude a counting task."
-    validations:
-      required: false
-
-  - type: textarea
-    id: validate_claims_part_3
-    attributes:
-      label: Specific Prompt(s)
-      description: "Tell me what to say to Claude Code when I give it the task above. The more I have to figure things out for myself, the more likely it is that I will miss the unique value of your resource. So you are advised to be as specific as possible."
-      placeholder: "Ask Claude how many times the letter 'r' appears in your codebase"
-    validations:
-      required: false
-
-  - type: textarea
-    id: additional_comments
-    attributes:
-      label: Additional Comments
-      description: "Optional - Any additional information you'd like to share about your resource (not processed during validation)"
-      placeholder: "e.g., context about why you created this, special features, acknowledgments, etc."
-    validations:
-      required: false
 
   - type: checkboxes
     id: checklist
     attributes:
-      label: Recommendation Checklist
-      description: Please confirm the following
+      label: Checklist
       options:
-        - label: "I have checked that this resource hasn't already been submitted"
+        - label: "I checked that this resource isn't already on the list"
           required: true
-        - label: It has been over one week since the first public commit to the repo I am recommending
+        - label: "All links are working and publicly accessible"
           required: true
-        - label: All provided links are working and publicly accessible
+        - label: "This resource is specific to Claude Code"
           required: true
-        - label: I do NOT have any other open issues in this repository
-          required: true
-        - label: I am primarily composed of human-y stuff and not electrical circuits
-          required: true
-    validations:
-      required: true
-      
-
-  - type: markdown
-    attributes:
-      value: |
-        ## What happens next?
-
-        1. **Automated Validation**: Our bot will validate the well-formed-ness of this Issue and let you know if anything needs to be fixed
-        2. **Review**: If validation passes, you should go back to working on your library - your recommendation has been received. It will be reviewed at the discretion of the maintainer.
-        3. **Approval**: If approved, a PR will be automatically created with your resource
-        4. **Notification**: You'll be notified when your resource is added
-
-        Thank you for contributing to Awesome Claude Code.  xs 

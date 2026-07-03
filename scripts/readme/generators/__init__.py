@@ -1,1 +1,0 @@
-"""README generator implementations."""

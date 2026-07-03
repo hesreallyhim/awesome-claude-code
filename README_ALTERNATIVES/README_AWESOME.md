@@ -1,15 +1,17 @@
+<!-- ARCHIVAL SNAPSHOT of the pre-relaunch awesome-claude-code README (legacy commit 29755104e1f1). Images pinned to the frozen legacy tree (raw.github); non-stored sibling links point at the legacy repo. Keep the legacy branch/tag so these resolve. -->
+
 <!-- GENERATED FILE: do not edit directly -->
 <h3 align="center">Pick Your Style:</h3>
 <p align="center">
-<a href="../"><img src="../assets/badge-style-awesome.svg" alt="Awesome" height="28" style="border: 2px solid #cc3366; border-radius: 4px;"></a>
-<a href="README_EXTRA.md"><img src="../assets/badge-style-extra.svg" alt="Extra" height="28"></a>
-<a href="README_CLASSIC.md"><img src="../assets/badge-style-classic.svg" alt="Classic" height="28"></a>
-<a href="README_FLAT_ALL_AZ.md"><img src="../assets/badge-style-flat.svg" alt="Flat" height="28"></a>
+<a href="README_AWESOME.md"><img src="https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/29755104e1f15404f99db9e5f381e23960efc4a0/assets/badge-style-awesome.svg" alt="Awesome" height="28" style="border: 2px solid #cc3366; border-radius: 4px;"></a>
+<a href="README_EXTRA.md"><img src="https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/29755104e1f15404f99db9e5f381e23960efc4a0/assets/badge-style-extra.svg" alt="Extra" height="28"></a>
+<a href="README_CLASSIC.md"><img src="https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/29755104e1f15404f99db9e5f381e23960efc4a0/assets/badge-style-classic.svg" alt="Classic" height="28"></a>
+<a href="README_FLAT_ALL_AZ.md"><img src="https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/29755104e1f15404f99db9e5f381e23960efc4a0/assets/badge-style-flat.svg" alt="Flat" height="28"></a>
 </p>
 
 <p align="center">
   <picture>
-    <img src="../assets/ACC-social-banner.png" alt="Awesome Claude Code" width="600">
+    <img src="https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/29755104e1f15404f99db9e5f381e23960efc4a0/assets/ACC-social-banner.png" alt="Awesome Claude Code" width="600">
   </picture>
 </p>
 
@@ -21,7 +23,7 @@
 
 <div align="center">
 
-<img src="../assets/repo-ticker-awesome.svg" alt="Featured Claude Code Projects" width="100%">
+<img src="https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/29755104e1f15404f99db9e5f381e23960efc4a0/assets/repo-ticker-awesome.svg" alt="Featured Claude Code Projects" width="100%">
 
 </div>
 

@@ -2,27 +2,26 @@ name: Update Repo Ticker Data
 
 on:
   schedule:
-    # Run every 3 hours
+    # Run every 3 hours (rotates the sampled repos several times a day)
     - cron: '0 */3 * * *'
   workflow_dispatch: # Allow manual trigger for testing
 
 permissions:
-  contents: write
-
-env:
-  PYTHONPATH: ${{ github.workspace }}
+  contents: read
 
 jobs:
   update-ticker:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # commits the refreshed ticker data + SVGs back to the repo
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.11'
+          python-version: '3.12'
 
       - name: Install dependencies
         run: |
@@ -42,17 +41,17 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python -m scripts.ticker.fetch_repo_ticker_data
+          python ticker/fetch_repo_ticker_data.py
 
       - name: Generate ticker SVGs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python -m scripts.ticker.generate_ticker_svg
+          python ticker/generate_ticker_svg.py
 
       - name: Commit and push if changed
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/repo-ticker.csv data/repo-ticker-previous.csv assets/repo-ticker.svg assets/repo-ticker-light.svg assets/repo-ticker-awesome.svg
+          git add data/repo-ticker.csv data/repo-ticker-previous.csv assets/repo-ticker.svg
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update repo ticker data and SVGs [skip ci]" && git push)

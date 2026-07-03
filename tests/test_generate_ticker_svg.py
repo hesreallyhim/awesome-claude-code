@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Tests for ticker SVG generation functions."""
+"""Tests for ticker SVG generation functions (migrated from awesome-claude-code)."""
 
 import sys
 from pathlib import Path
@@ -7,24 +7,24 @@ from pathlib import Path
 # Add repo root to path so we can import the module
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from scripts.ticker.generate_ticker_svg import truncate_repo_name  # noqa: E402
+from ticker.generate_ticker_svg import truncate_repo_name  # noqa: E402
 
 
-def test_truncate_repo_name_short():
+def test_truncate_repo_name_short() -> None:
     """Test that short names are not truncated."""
     assert truncate_repo_name("short-name") == "short-name"
     assert truncate_repo_name("a") == "a"
     assert truncate_repo_name("") == ""
 
 
-def test_truncate_repo_name_exactly_20():
+def test_truncate_repo_name_exactly_20() -> None:
     """Test that names exactly 20 characters are not truncated."""
     name_20_chars = "12345678901234567890"
     assert len(name_20_chars) == 20
     assert truncate_repo_name(name_20_chars) == name_20_chars
 
 
-def test_truncate_repo_name_long():
+def test_truncate_repo_name_long() -> None:
     """Test that long names are truncated with ellipsis."""
     long_name = "very-long-repository-name-that-exceeds-twenty-chars"
     result = truncate_repo_name(long_name)
@@ -32,7 +32,7 @@ def test_truncate_repo_name_long():
     assert len(result) == 23  # 20 chars + "..."
 
 
-def test_truncate_repo_name_custom_length():
+def test_truncate_repo_name_custom_length() -> None:
     """Test truncation with custom max length."""
     name = "this-is-a-long-name"
     result = truncate_repo_name(name, max_length=10)
@@ -40,7 +40,7 @@ def test_truncate_repo_name_custom_length():
     assert len(result) == 13  # 10 chars + "..."
 
 
-def test_truncate_repo_name_preserves_beginning():
+def test_truncate_repo_name_preserves_beginning() -> None:
     """Test that truncation preserves the beginning of the name."""
     name = "claude-code-infrastructure-showcase"
     result = truncate_repo_name(name)
@@ -48,7 +48,7 @@ def test_truncate_repo_name_preserves_beginning():
     assert result.endswith("...")
 
 
-def test_truncate_repo_name_edge_cases():
+def test_truncate_repo_name_edge_cases() -> None:
     """Test edge cases for truncation."""
     # Name exactly one character longer than max
     name_21_chars = "123456789012345678901"
