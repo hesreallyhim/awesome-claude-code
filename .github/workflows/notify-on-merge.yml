@@ -1,0 +1,60 @@
+name: Notify maintainers on resource merge
+
+# Opens a one-time "featured in Awesome Claude Code" welcome issue on a resource's
+# repo. Two paths:
+#   * an approved resource PR (opened by github-actions[bot]) is merged to main — the
+#     repo is read from the PR body's `- **Link**:` field; add the `do-not-disturb`
+#     label to a PR to skip it; and
+#   * a manual run (workflow_dispatch) with an OWNER/REPO input.
+#
+# Requires a repo secret AWESOME_CC_PAT_PUBLIC_REPO: a *classic* PAT with the
+# `public_repo` scope — this opens issues on external contributors' repos, which a
+# fine-grained PAT or a GitHub App token can't do (those are limited to repos you own
+# / where the app is installed). A dedicated bot account for this PAT is recommended.
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: "OWNER/REPO (or a github.com URL) to send a welcome issue to"
+        required: true
+      name:
+        description: "Display name (optional; defaults to the repo name)"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.pull_request.merged == true &&
+       github.event.pull_request.user.login == 'github-actions[bot]' &&
+       !contains(github.event.pull_request.labels.*.name, 'do-not-disturb'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+
+      - name: Notify (merged resource PR)
+        if: github.event_name == 'pull_request'
+        env:
+          AWESOME_CC_PAT_PUBLIC_REPO: ${{ secrets.AWESOME_CC_PAT_PUBLIC_REPO }}
+          PR_BODY: ${{ github.event.pull_request.body }}
+        run: python scripts/badges/badge_notification.py --from-pr-body
+
+      - name: Notify (manual dispatch)
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          AWESOME_CC_PAT_PUBLIC_REPO: ${{ secrets.AWESOME_CC_PAT_PUBLIC_REPO }}
+          TARGET_REPO: ${{ inputs.repo }}
+          TARGET_NAME: ${{ inputs.name }}
+        run: python scripts/badges/badge_notification.py --repo "$TARGET_REPO" --name "$TARGET_NAME"
