@@ -42,8 +42,10 @@ body:
         - "Infrastructure & DevOps"
         - "Security"
         - "Multi-Agent Orchestration"
+        - "Skills"
         - "Memory & Context Persistence"
         - "Usage & Cost Monitoring"
+        - "Observability"
         - "Linting"
     validations:
       required: true

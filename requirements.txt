@@ -1,0 +1,4 @@
+# Runtime dependencies for README generation, the category tooling, and the
+# link/ticker scripts. Install with: venv/bin/python -m pip install -r requirements.txt
+PyYAML
+requests

@@ -57,7 +57,14 @@ def test_make_generate_writes_identical_output_on_rerun() -> None:
 # --------------------------------------------------------------------------- #
 def test_unknown_active_category_fails_closed() -> None:
     categories, _ = _load()
-    bad = [{"ID": "x-1", "Category": "Bogus Category", "Active": "TRUE", "Display Name": "X"}]
+    bad = [
+        {
+            "ID": "x-1",
+            "Category": "Bogus Category",
+            "Active": "TRUE",
+            "Display Name": "X",
+        }
+    ]
     with pytest.raises(SystemExit) as exc:
         gen.validate_categories(bad, categories)
     assert exc.value.code == 1
@@ -80,7 +87,9 @@ def test_entries_alphabetical_within_each_category() -> None:
         assert names == sorted(names, key=str.casefold)
 
 
-def test_inactive_rows_are_excluded(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+def test_inactive_rows_are_excluded(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
     csv_text = (
         "ID,Display Name,Category,Sub-Category,Link,Author Name,Author Link,"
         "Active,Date Added,Last Checked,Description,Stale\n"
@@ -106,7 +115,10 @@ def test_format_entry_github_has_hard_break_and_four_badges() -> None:
         "Description": "Does things.",
     }
     bullet, badge_line = fmt.format_entry(row).split("\n")
-    assert bullet == "- [Foo](https://github.com/owner/repo) by [Bob](https://github.com/bob) - Does things.  "
+    assert (
+        bullet
+        == "- [Foo](https://github.com/owner/repo) by [Bob](https://github.com/bob) - Does things.  "
+    )
     assert bullet.endswith("  ")  # CommonMark hard break
     for token in (
         "created-at/owner/repo",
@@ -143,7 +155,10 @@ def test_parse_github() -> None:
 def test_github_slug_quirks() -> None:
     assert gen.github_slug("Status Lines") == "status-lines"
     assert gen.github_slug("Design & UI/UX") == "design--uiux"
-    assert gen.github_slug("Documentation, Knowledge & Learning") == "documentation-knowledge--learning"
+    assert (
+        gen.github_slug("Documentation, Knowledge & Learning")
+        == "documentation-knowledge--learning"
+    )
     assert (
         gen.github_slug("Remote Control, Notifications & Voice I/O")
         == "remote-control-notifications--voice-io"
@@ -155,7 +170,36 @@ def test_toc_anchors_resolve_to_headings() -> None:
     toc = gen.build_toc(rows, categories)
     body = gen.build_list(rows, categories)
     anchors = re.findall(r"\]\(#([^)]+)\)", toc)
-    heading_slugs = {gen.github_slug(h) for h in re.findall(r"^#{2,3} (.+)$", body, flags=re.M)}
+    heading_slugs = {
+        gen.github_slug(h) for h in re.findall(r"^#{2,3} (.+)$", body, flags=re.M)
+    }
     assert anchors  # non-empty
     for anchor in anchors:
         assert anchor in heading_slugs
+
+
+def test_recently_added_markup_and_token_substitution() -> None:
+    """The carousel token is replaced with a theme-adaptive <picture> for both SVGs."""
+    markup = gen.recently_added_markup()
+    assert gen.RECENTLY_ADDED_SVG in markup
+    assert gen.RECENTLY_ADDED_SVG_LIGHT in markup
+    assert "prefers-color-scheme: light" in markup
+
+    categories, rows = _load()
+    template = "before\n{{RECENTLY_ADDED}}\nafter"
+    out = gen.render_readme(template, rows, categories)
+    assert "{{RECENTLY_ADDED}}" not in out
+    assert gen.RECENTLY_ADDED_SVG in out
+
+
+def test_empty_category_renders_no_heading() -> None:
+    """A category declared in config but with no active rows is skipped in the body
+    (mirrors the TOC), so declaring a category ahead of its first resource doesn't
+    leave a bare `## Heading`."""
+    categories, rows = _load()
+    categories = [
+        *categories,
+        {"name": "Empty Zzz", "description": "", "subcategories": []},
+    ]
+    body = gen.build_list(rows, categories)
+    assert "Empty Zzz" not in body

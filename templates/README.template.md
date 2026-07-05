@@ -18,6 +18,11 @@ The current iteration of the list, such as you see it today, was launched with t
 {{CLAUDE_CODE_TICKER}}
 
 
+## Recently Added
+
+{{RECENTLY_ADDED}}
+
+
 # Table of Contents
 
 <!-- THIS PART GETS GENERATED  -->

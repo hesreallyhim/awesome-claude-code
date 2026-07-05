@@ -6,6 +6,8 @@
 #   categories:                       # list order == the order sections appear
 #     - name: "<Category heading>"    # required; must match the Category column in the CSV
 #       description: "<blurb>"        # OPTIONAL; rendered as a line under the ## heading
+#       submittable: false            # OPTIONAL (default true); false = curated-only,
+#                                     #   omitted from the recommend-resource issue form
 #       subcategories:                # OPTIONAL; list order == sub-section order
 #         - name: "<Sub-Category>"    # required; must match the Sub-Category column
 #           description: "<blurb>"    # OPTIONAL; rendered under the ### heading
@@ -15,6 +17,9 @@
 #     by Display Name (case-insensitive) — that ordering is NOT configurable here.
 #   * Entries whose Sub-Category is non-empty but not listed under their category are
 #     still rendered (grouped under their sub-category name, after the listed ones).
+#   * The recommend-resource issue-form Category dropdown is generated from this file
+#     (scripts/sync_issue_form.py, run in pre-commit): every `submittable` category, in
+#     order. Never hand-edit that dropdown.
 
 # `prefix` is the short id used when minting resource IDs ({prefix}-{hash}); it must
 # match the prefixes baked into existing IDs.
@@ -23,6 +28,7 @@ categories:
     prefix: start
   - name: "From Anthropic"
     prefix: anthropic
+    submittable: false
   - name: "Documentation, Knowledge & Learning"
     prefix: docs
   - name: "Research & Scientific Inquiry"
@@ -47,9 +53,13 @@ categories:
     prefix: security
   - name: "Multi-Agent Orchestration"
     prefix: orchestration
+  - name: "Skills"
+    prefix: skill
   - name: "Memory & Context Persistence"
     prefix: memory
   - name: "Usage & Cost Monitoring"
     prefix: usage
+  - name: "Observability"
+    prefix: obs
   - name: "Linting"
     prefix: lint

@@ -1,0 +1,88 @@
+<svg viewBox="0 0 800 240" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <clipPath id="raClip"><rect x="0" y="0" width="800" height="240"/></clipPath>
+  <g clip-path="url(#raClip)">
+    <g id="raSlider">
+      <animateTransform attributeName="transform" type="translate" calcMode="spline"
+        values="0,0; 0,0; -800,0; -800,0; -1600,0; -1600,0; -2400,0; -2400,0; -3200,0; -3200,0; -4000,0; -4000,0; -4800,0"
+        keyTimes="0.0000; 0.1500; 0.1667; 0.3167; 0.3333; 0.4833; 0.5000; 0.6500; 0.6667; 0.8167; 0.8333; 0.9833; 1.0000"
+        keySplines="0 0 1 1; 0.45 0 0.55 1; 0 0 1 1; 0.45 0 0.55 1; 0 0 1 1; 0.45 0 0.55 1; 0 0 1 1; 0.45 0 0.55 1; 0 0 1 1; 0.45 0 0.55 1; 0 0 1 1; 0.45 0 0.55 1"
+        dur="39s" repeatCount="indefinite"/>
+  <g transform="translate(0, 0)">
+    <rect x="40" y="24" width="720" height="192" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+    <g transform="translate(60, 46) scale(1.4)" fill="#0969da"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
+    <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#0969da">Claude Code Agent Monitor</text>
+    <rect x="627" y="46" width="109" height="24" rx="12" fill="#f6f8fa"/>
+    <text x="681.5" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#656d76">Observability</text>
+    <text x="64" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#656d76">by hoangsonww</text>
+    <text x="64" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#1f2328">A self-hosted real-time dashboard that monitors Claude Code agent activity</text>
+    <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#1f2328">via its native hooks — live sessions, subagent orchestration trees, tool-</text>
+    <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#1f2328">call timelines, and per-session status — keeping data local (loopback-…</text>
+  </g>
+  <g transform="translate(800, 0)">
+    <rect x="40" y="24" width="720" height="192" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+    <g transform="translate(60, 46) scale(1.4)" fill="#0969da"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
+    <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#0969da">agents-observe</text>
+    <rect x="627" y="46" width="109" height="24" rx="12" fill="#f6f8fa"/>
+    <text x="681.5" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#656d76">Observability</text>
+    <text x="64" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#656d76">by Joe Johnston</text>
+    <text x="64" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#1f2328">A real-time Claude Code observability dashboard installed as a plugin: it</text>
+    <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#1f2328">registers hooks across the full session lifecycle (tool calls, subagent</text>
+    <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#1f2328">start/stop, task and permission events) and streams them to a local React…</text>
+  </g>
+  <g transform="translate(1600, 0)">
+    <rect x="40" y="24" width="720" height="192" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+    <g transform="translate(60, 46) scale(1.4)" fill="#0969da"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
+    <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#0969da">Multi-Agent Observability</text>
+    <rect x="627" y="46" width="109" height="24" rx="12" fill="#f6f8fa"/>
+    <text x="681.5" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#656d76">Observability</text>
+    <text x="64" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#656d76">by disler</text>
+    <text x="64" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#1f2328">A real-time dashboard that captures Claude Code hook events across</text>
+    <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#1f2328">concurrent agents — tracing every tool call, task handoff, and lifecycle</text>
+    <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#1f2328">event through a Bun/SQLite/WebSocket/Vue stack, with session tracking and…</text>
+  </g>
+  <g transform="translate(2400, 0)">
+    <rect x="40" y="24" width="720" height="192" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+    <g transform="translate(60, 46) scale(1.4)" fill="#0969da"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
+    <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#0969da">Claude Code Observability…</text>
+    <rect x="627" y="46" width="109" height="24" rx="12" fill="#f6f8fa"/>
+    <text x="681.5" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#656d76">Observability</text>
+    <text x="64" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#656d76">by Cole Murray</text>
+    <text x="64" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#1f2328">A Dockerized OpenTelemetry-to-Grafana observability stack for Claude Code</text>
+    <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#1f2328">that implements Anthropic's observability guidance, surfacing session</text>
+    <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#1f2328">activity, performance, token usage, and cost in prebuilt dashboards.</text>
+  </g>
+  <g transform="translate(3200, 0)">
+    <rect x="40" y="24" width="720" height="192" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+    <g transform="translate(60, 46) scale(1.4)" fill="#0969da"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
+    <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#0969da">fable-mode</text>
+    <rect x="676" y="46" width="60" height="24" rx="12" fill="#f6f8fa"/>
+    <text x="706.0" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#656d76">Skills</text>
+    <text x="64" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#656d76">by mrtooher</text>
+    <text x="64" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#1f2328">A Claude skill that activates Fable-style agentic behavior: explicit</text>
+    <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#1f2328">multi-stage planning, sub-agent delegation, and self-verification.</text>
+  </g>
+  <g transform="translate(4000, 0)">
+    <rect x="40" y="24" width="720" height="192" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+    <g transform="translate(60, 46) scale(1.4)" fill="#0969da"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
+    <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#0969da">gstack</text>
+    <rect x="543" y="46" width="193" height="24" rx="12" fill="#f6f8fa"/>
+    <text x="639.5" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#656d76">Multi-Agent Orchestration</text>
+    <text x="64" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#656d76">by Garry Tan</text>
+    <text x="64" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#1f2328">Garry Tan's (Y Combinator) Claude Code setup and &quot;open source software</text>
+    <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#1f2328">factory&quot; for managing the development lifecycle end-to-end. Includes a set</text>
+    <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#1f2328">of agents and in-depth skills/tools along with workflows for advancing a…</text>
+  </g>
+  <g transform="translate(4800, 0)">
+    <rect x="40" y="24" width="720" height="192" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+    <g transform="translate(60, 46) scale(1.4)" fill="#0969da"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
+    <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#0969da">Claude Code Agent Monitor</text>
+    <rect x="627" y="46" width="109" height="24" rx="12" fill="#f6f8fa"/>
+    <text x="681.5" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#656d76">Observability</text>
+    <text x="64" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#656d76">by hoangsonww</text>
+    <text x="64" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#1f2328">A self-hosted real-time dashboard that monitors Claude Code agent activity</text>
+    <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#1f2328">via its native hooks — live sessions, subagent orchestration trees, tool-</text>
+    <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#1f2328">call timelines, and per-session status — keeping data local (loopback-…</text>
+  </g>
+    </g>
+  </g>
+</svg>

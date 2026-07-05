@@ -8,7 +8,7 @@
 PYTHON := venv/bin/python
 DEPS_STAMP := venv/.deps-stamp
 
-.PHONY: help deps generate test ticker ticker-data ticker-svg clean
+.PHONY: help deps generate readme add-category move-category remove-category sync-form install-hooks test ticker ticker-data ticker-svg recently-added clean
 
 venv: ## Set up the venv
 	python3 -m venv venv
@@ -16,17 +16,50 @@ venv: ## Set up the venv
 help: ## Show this help.
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-12s\033[0m %s\n", $$1, $$2}'
 
-deps: $(DEPS_STAMP) ## Install generation/test dependencies (pyyaml, pytest, requests) into the venv.
+deps: $(DEPS_STAMP) ## Install dev dependencies (requirements-dev.txt) into the venv.
 
-# Stamp file: pip runs only when the stamp is missing or older than this Makefile
-# (i.e. when the pinned dependency list below changes). venv is an order-only
-# prereq so its mtime churn (from writing caches) never re-triggers the install.
-$(DEPS_STAMP): Makefile | venv
-	$(PYTHON) -m pip install pyyaml pytest requests
+# Stamp file: pip runs only when the stamp is missing or older than the requirements
+# files (i.e. when the dependency list changes). venv is an order-only prereq so its
+# mtime churn (from writing caches) never re-triggers the install.
+$(DEPS_STAMP): requirements.txt requirements-dev.txt | venv
+	$(PYTHON) -m pip install -r requirements-dev.txt
 	@touch $(DEPS_STAMP)
 
-generate: $(DEPS_STAMP) ## Generate README.md from the CSV source of truth (idempotent, fail-closed).
+# Full local regeneration: every artifact derived from config.yaml / the CSV, in one
+# command so nothing is forgotten. The ticker is intentionally excluded — it fetches
+# remote data and needs GITHUB_TOKEN (run `make ticker` separately).
+generate: sync-form recently-added readme ## Regenerate everything local: issue-form dropdown, carousel SVGs, and README.
+
+readme: $(DEPS_STAMP) ## Render README.md from the CSV + config (idempotent, fail-closed).
 	$(PYTHON) generate_readme.py
+
+# Category management: edit config.yaml, sync the recommend-resource issue-form
+# dropdown (category-level edits only), then regenerate README.md. All three take
+# CATEGORY= (required) and optional SUB_CATEGORY= to target a sub-category.
+#   make add-category    CATEGORY="Testing & QA" PREFIX=testing
+#   make add-category    CATEGORY="Security" SUB_CATEGORY="Secrets Scanning" ORDER=2
+#   make move-category   CATEGORY="Meta-Skills" ORDER=15
+#   make remove-category CATEGORY="Linting"
+add-category: $(DEPS_STAMP) ## Add a category/sub-category (CATEGORY=, [SUB_CATEGORY=], [ORDER=], [PREFIX=], [DESCRIPTION=]).
+	@test -n "$(CATEGORY)" || { echo "usage: make add-category CATEGORY=\"Name\" [SUB_CATEGORY=\"Name\"] [ORDER=N] [PREFIX=p] [DESCRIPTION=\"...\"]"; exit 2; }
+	$(PYTHON) scripts/manage_categories.py add --category "$(CATEGORY)" $(if $(SUB_CATEGORY),--subcategory "$(SUB_CATEGORY)") $(if $(ORDER),--order "$(ORDER)") $(if $(PREFIX),--prefix "$(PREFIX)") $(if $(DESCRIPTION),--description "$(DESCRIPTION)")
+	$(PYTHON) generate_readme.py
+
+move-category: $(DEPS_STAMP) ## Move a category/sub-category to a new position (CATEGORY=, ORDER=, [SUB_CATEGORY=]).
+	@test -n "$(CATEGORY)" -a -n "$(ORDER)" || { echo "usage: make move-category CATEGORY=\"Name\" ORDER=N [SUB_CATEGORY=\"Name\"]"; exit 2; }
+	$(PYTHON) scripts/manage_categories.py move --category "$(CATEGORY)" --order "$(ORDER)" $(if $(SUB_CATEGORY),--subcategory "$(SUB_CATEGORY)")
+	$(PYTHON) generate_readme.py
+
+remove-category: $(DEPS_STAMP) ## Remove a category/sub-category (CATEGORY=, [SUB_CATEGORY=], [FORCE=1]).
+	@test -n "$(CATEGORY)" || { echo "usage: make remove-category CATEGORY=\"Name\" [SUB_CATEGORY=\"Name\"] [FORCE=1]"; exit 2; }
+	$(PYTHON) scripts/manage_categories.py remove --category "$(CATEGORY)" $(if $(SUB_CATEGORY),--subcategory "$(SUB_CATEGORY)") $(if $(FORCE),--force)
+	$(PYTHON) generate_readme.py
+
+sync-form: $(DEPS_STAMP) ## Regenerate the recommend-resource category dropdown from config.yaml.
+	$(PYTHON) scripts/sync_issue_form.py
+
+install-hooks: $(DEPS_STAMP) ## Install the local pre-commit git hooks (run once per clone).
+	$(PYTHON) -m pre_commit install
 
 test: $(DEPS_STAMP) ## Run the test suite.
 	$(PYTHON) -m pytest -q
@@ -38,6 +71,9 @@ ticker-svg: $(DEPS_STAMP) ## Render the awesome-style ticker SVG from data/repo-
 	$(PYTHON) ticker/generate_ticker_svg.py
 
 ticker: ticker-data ticker-svg ## Refresh ticker data and regenerate the SVG.
+
+recently-added: $(DEPS_STAMP) ## Render the "Recently Added" carousel SVGs (dark+light) from the CSV into assets/.
+	$(PYTHON) ticker/generate_recently_added_svg.py
 
 clean: ## Remove Python caches (prunes __INTERNAL__ and venv; never touches tracked files).
 	find . -path ./venv -prune -o -path ./__INTERNAL__ -prune -o -path ./.git -prune -o -name '__pycache__' -type d -print -exec rm -rf {} +

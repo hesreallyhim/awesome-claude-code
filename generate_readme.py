@@ -35,11 +35,17 @@ OUTPUT_PATH = BASE / "README.md"
 TOC_TOKEN = "{{TABLE_OF_CONTENTS}}"
 LIST_TOKEN = "{{THE_LIST}}"
 TICKER_TOKEN = "{{CLAUDE_CODE_TICKER}}"
+RECENTLY_ADDED_TOKEN = "{{RECENTLY_ADDED}}"
 
 # Ticker SVG asset, relative to README.md at the repo root. The "awesome" (clean,
 # minimal) style is the canonical plain look for this list; produced out-of-band
 # by the ticker workflow (ticker/generate_ticker_svg.py).
 TICKER_SVG = "assets/repo-ticker.svg"
+
+# "Recently Added" carousel SVGs (theme-adaptive dark/light), produced out-of-band
+# from the CSV by ticker/generate_recently_added_svg.py (`make recently-added`).
+RECENTLY_ADDED_SVG = "assets/recently-added.svg"
+RECENTLY_ADDED_SVG_LIGHT = "assets/recently-added-light.svg"
 
 
 def _load_formatter() -> Any:
@@ -146,6 +152,11 @@ def build_list(rows: list[dict[str, str]], categories: list[dict[str, Any]]) -> 
     blocks: list[str] = []
     for cat in categories:
         cat_rows = [r for r in rows if (r.get("Category") or "").strip() == cat["name"]]
+        if not cat_rows:
+            # Skip categories with no active entries (mirrors build_toc) so a
+            # category declared ahead of its first resource doesn't render as a
+            # bare heading. It stays in config.yaml for ordering + validation.
+            continue
         section: list[str] = [f"## {cat['name']}"]
         if cat["description"]:
             section.append(cat["description"])
@@ -216,10 +227,27 @@ def ticker_markup() -> str:
     )
 
 
+def recently_added_markup() -> str:
+    """Centered theme-adaptive <picture> for the "Recently Added" carousel.
+
+    Serves the light SVG under a light color scheme, dark otherwise. Static and
+    deterministic (does not affect README idempotency); the SVGs are regenerated
+    out-of-band from the CSV by ticker/generate_recently_added_svg.py.
+    """
+    return (
+        '<div align="center">\n\n'
+        "<picture>\n"
+        f'  <source media="(prefers-color-scheme: light)" srcset="{RECENTLY_ADDED_SVG_LIGHT}">\n'
+        f'  <img src="{RECENTLY_ADDED_SVG}" alt="Recently Added Resources" width="100%">\n'
+        "</picture>\n\n"
+        "</div>"
+    )
+
+
 def render_readme(
     template: str, rows: list[dict[str, str]], categories: list[dict[str, Any]]
 ) -> str:
-    """Pure render: substitute the TOC, list, and ticker tokens into the template.
+    """Pure render: substitute the TOC, list, ticker, and carousel tokens.
 
     Deterministic in (template, rows, categories) — the basis of idempotency.
     """
@@ -227,6 +255,7 @@ def render_readme(
         template.replace(TOC_TOKEN, build_toc(rows, categories))
         .replace(LIST_TOKEN, build_list(rows, categories))
         .replace(TICKER_TOKEN, ticker_markup())
+        .replace(RECENTLY_ADDED_TOKEN, recently_added_markup())
     )
 
 

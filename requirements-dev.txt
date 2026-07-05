@@ -1,0 +1,12 @@
+# Development dependencies: runtime deps plus tests, linting, type-checking, and
+# the pre-commit framework. This is what `make deps` installs.
+#   venv/bin/python -m pip install -r requirements-dev.txt
+-r requirements.txt
+
+pytest
+pytest-cov
+ruff
+mypy
+types-PyYAML
+types-requests
+pre-commit

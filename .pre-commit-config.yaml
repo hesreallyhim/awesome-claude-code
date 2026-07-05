@@ -1,0 +1,14 @@
+# Local pre-commit hooks. Enable once per clone with `make install-hooks`
+# (which runs `pre-commit install`). Requires the dev deps (`make deps`).
+repos:
+  - repo: local
+    hooks:
+      # Regenerate the recommend-resource Category dropdown from config.yaml so the
+      # two never drift by hand. If it rewrites the form, the commit stops so you can
+      # re-stage the change. Runs only when config.yaml or the form itself changes.
+      - id: sync-issue-form
+        name: sync recommend-resource categories from config.yaml
+        entry: venv/bin/python scripts/sync_issue_form.py
+        language: system
+        pass_filenames: false
+        files: ^(config\.yaml|\.github/ISSUE_TEMPLATE/recommend-resource\.yml)$

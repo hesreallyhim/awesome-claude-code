@@ -24,6 +24,18 @@ The current iteration of the list, such as you see it today, was launched with t
 </div>
 
 
+## Recently Added
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/recently-added-light.svg">
+  <img src="assets/recently-added.svg" alt="Recently Added Resources" width="100%">
+</picture>
+
+</div>
+
+
 # Table of Contents
 
 <!-- THIS PART GETS GENERATED  -->
@@ -42,8 +54,10 @@ The current iteration of the list, such as you see it today, was launched with t
 - [Infrastructure & DevOps](#infrastructure--devops)
 - [Security](#security)
 - [Multi-Agent Orchestration](#multi-agent-orchestration)
+- [Skills](#skills)
 - [Memory & Context Persistence](#memory--context-persistence)
 - [Usage & Cost Monitoring](#usage--cost-monitoring)
+- [Observability](#observability)
 - [Linting](#linting)
 
 ## Start Here
@@ -299,6 +313,11 @@ The current iteration of the list, such as you see it today, was launched with t
 - [gstack](https://github.com/garrytan/gstack) by [Garry Tan](https://github.com/garrytan) - Garry Tan's (Y Combinator) Claude Code setup and "open source software factory" for managing the development lifecycle end-to-end. Includes a set of agents and in-depth skills/tools along with workflows for advancing a product from ideation to production.  
 <img src="https://img.shields.io/github/created-at/garrytan/gstack?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/garrytan/gstack?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/garrytan/gstack?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/garrytan/gstack?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
 
+## Skills
+
+- [fable-mode](https://github.com/mrtooher/fable-mode) by [mrtooher](https://github.com/mrtooher) - A Claude skill that activates Fable-style agentic behavior: explicit multi-stage planning, sub-agent delegation, and self-verification.  
+<img src="https://img.shields.io/github/created-at/mrtooher/fable-mode?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/mrtooher/fable-mode?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/mrtooher/fable-mode?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/mrtooher/fable-mode?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
+
 ## Memory & Context Persistence
 
 - [agentcairn](https://github.com/ccf/agentcairn) by [ccf](https://github.com/ccf) - Long-term, cross-project memory for AI coding agents. Your own Obsidian vault as the source of truth. Daemonless and without opaque databases, your memory belongs to you.  
@@ -362,6 +381,20 @@ The current iteration of the list, such as you see it today, was launched with t
 
 - [toktrack](https://github.com/mag123c/toktrack) by [mag123c](https://github.com/mag123c) - Ultra-fast token &amp; cost tracker for LLM Token Usage (e.g. Claude Code)  
 <img src="https://img.shields.io/github/created-at/mag123c/toktrack?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/mag123c/toktrack?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/mag123c/toktrack?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/mag123c/toktrack?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
+
+## Observability
+
+- [agents-observe](https://github.com/simple10/agents-observe) by [Joe Johnston](https://github.com/simple10) - A real-time Claude Code observability dashboard installed as a plugin: it registers hooks across the full session lifecycle (tool calls, subagent start/stop, task and permission events) and streams them to a local React UI backed by a Dockerized SQLite server, with filtering, parent/subagent hierarchy, full session replay, and per-model token stats.  
+<img src="https://img.shields.io/github/created-at/simple10/agents-observe?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/simple10/agents-observe?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/simple10/agents-observe?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/simple10/agents-observe?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
+
+- [Claude Code Agent Monitor](https://github.com/hoangsonww/Claude-Code-Agent-Monitor) by [hoangsonww](https://github.com/hoangsonww) - A self-hosted real-time dashboard that monitors Claude Code agent activity via its native hooks — live sessions, subagent orchestration trees, tool-call timelines, and per-session status — keeping data local (loopback-only). Built on Node/Express + React + SQLite, with a companion MCP server, VS Code extension, and desktop app.  
+<img src="https://img.shields.io/github/created-at/hoangsonww/Claude-Code-Agent-Monitor?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/hoangsonww/Claude-Code-Agent-Monitor?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/hoangsonww/Claude-Code-Agent-Monitor?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/hoangsonww/Claude-Code-Agent-Monitor?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
+
+- [Claude Code Observability Stack](https://github.com/ColeMurray/claude-code-otel) by [Cole Murray](https://github.com/ColeMurray) - A Dockerized OpenTelemetry-to-Grafana observability stack for Claude Code that implements Anthropic's observability guidance, surfacing session activity, performance, token usage, and cost in prebuilt dashboards.  
+<img src="https://img.shields.io/github/created-at/ColeMurray/claude-code-otel?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/ColeMurray/claude-code-otel?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/ColeMurray/claude-code-otel?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/ColeMurray/claude-code-otel?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
+
+- [Multi-Agent Observability](https://github.com/disler/claude-code-hooks-multi-agent-observability) by [disler](https://github.com/disler) - A real-time dashboard that captures Claude Code hook events across concurrent agents — tracing every tool call, task handoff, and lifecycle event through a Bun/SQLite/WebSocket/Vue stack, with session tracking and live filtering.  
+<img src="https://img.shields.io/github/created-at/disler/claude-code-hooks-multi-agent-observability?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/disler/claude-code-hooks-multi-agent-observability?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/disler/claude-code-hooks-multi-agent-observability?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/disler/claude-code-hooks-multi-agent-observability?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
 
 ## Linting
 
