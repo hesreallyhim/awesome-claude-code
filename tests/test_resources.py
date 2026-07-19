@@ -1,5 +1,5 @@
-"""Tests for the recommendation → CSV pipeline: ID minting, issue-form parsing,
-validation, and CSV append (new 12-column schema)."""
+"""Tests for the recommendation → CSV pipeline: issue-form parsing, validation,
+and CSV append (new 12-column schema)."""
 
 from __future__ import annotations
 
@@ -14,7 +14,6 @@ sys.path.insert(0, str(BASE))
 
 from resources import parse_issue_form as pif  # noqa: E402
 from resources import resource_utils  # noqa: E402
-from resources.ids import generate_resource_id  # noqa: E402
 
 ISSUE_BODY = """### Display Name
 
@@ -49,26 +48,6 @@ CSV_HEADER = (
     "ID,Display Name,Category,Sub-Category,Link,Author Name,Author Link,"
     "Active,Date Added,Last Checked,Description,Stale\n"
 )
-
-
-# --------------------------------------------------------------------------- #
-# IDs
-# --------------------------------------------------------------------------- #
-def test_generate_resource_id_uses_config_prefix() -> None:
-    rid = generate_resource_id("My Tool", "https://github.com/me/tool", "Status Lines")
-    prefix, _, digest = rid.partition("-")
-    assert prefix == "statusline"
-    assert len(digest) == 8 and all(c in "0123456789abcdef" for c in digest)
-
-
-def test_generate_resource_id_stable_by_link() -> None:
-    a = generate_resource_id("Name A", "https://github.com/o/r", "Status Lines")
-    b = generate_resource_id("Different Name", "https://github.com/o/r", "Status Lines")
-    assert a == b  # hash is over the link, not the name
-
-
-def test_generate_resource_id_unknown_category_falls_back() -> None:
-    assert generate_resource_id("X", "https://github.com/o/r", "Nope").startswith("res-")
 
 
 # --------------------------------------------------------------------------- #

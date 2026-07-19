@@ -1,18 +1,18 @@
-"""Stable resource IDs: {category-prefix}-{sha1(link)[:8]}.
+"""Opaque resource IDs: a random 8-char hex token, coupled to nothing.
 
-Matches the scheme used to bootstrap the CSV, so a
-re-submission of the same link yields the same ID. Hashing the link (not the name)
-means a renamed resource keeps its ID.
+Minted once when a resource is added and stored verbatim in the CSV. The ID is a
+surrogate handle deliberately independent of link, name, and category, so any of
+those can change without the row's identity moving. Existing prefixed IDs
+(``docs-…``, ``memory-…``) are grandfathered as-is; nothing derives meaning from
+the prefix, and dedupe is done on the link (see ``parse_issue_form`` /
+``add_resource``), never on the ID.
 """
 
 from __future__ import annotations
 
-import hashlib
-
-from resources.categories import category_prefixes
+import secrets
 
 
-def generate_resource_id(display_name: str, link: str, category: str) -> str:
-    prefix = category_prefixes().get(category, "res")
-    digest = hashlib.sha1(link.strip().encode("utf-8")).hexdigest()[:8]
-    return f"{prefix}-{digest}"
+def generate_resource_id() -> str:
+    """Return a fresh opaque 8-char hex ID."""
+    return secrets.token_hex(4)

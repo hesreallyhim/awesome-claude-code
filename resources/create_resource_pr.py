@@ -71,7 +71,7 @@ def main() -> int:
     data = payload.get("data", payload) if isinstance(payload, dict) else payload
 
     resource = {
-        "id": generate_resource_id(data["display_name"], data["link"], data["category"]),
+        "id": generate_resource_id(),
         "display_name": data["display_name"],
         "category": data["category"],
         "subcategory": data.get("subcategory", ""),

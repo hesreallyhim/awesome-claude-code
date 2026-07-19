@@ -31,6 +31,8 @@ categories:
     submittable: false
   - name: "Documentation, Knowledge & Learning"
     prefix: docs
+    subcategories:
+      - name: "Obsidian"
   - name: "Research & Scientific Inquiry"
     prefix: research
   - name: "Providers, Runtime & Integration Infrastructure"

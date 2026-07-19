@@ -79,10 +79,12 @@ def test_real_csv_categories_match_config() -> None:
 # --------------------------------------------------------------------------- #
 # Ordering, filtering
 # --------------------------------------------------------------------------- #
-def test_entries_alphabetical_within_each_category() -> None:
+def test_entries_alphabetical_within_each_section() -> None:
     categories, rows = _load()
     body = gen.build_list(rows, categories)
-    for section in re.split(r"^## ", body, flags=re.M)[1:]:
+    # Split on both category (##) and sub-category (###) headings: entries are
+    # sorted within each group, not across a category that has sub-categories.
+    for section in re.split(r"^#{2,3} ", body, flags=re.M)[1:]:
         names = re.findall(r"^- \[([^\]]+)\]", section, flags=re.M)
         assert names == sorted(names, key=str.casefold)
 

@@ -8,7 +8,7 @@
 PYTHON := venv/bin/python
 DEPS_STAMP := venv/.deps-stamp
 
-.PHONY: help deps generate readme add-category move-category remove-category sync-form install-hooks test ticker ticker-data ticker-svg recently-added clean
+.PHONY: help deps generate readme add-category move-category remove-category add-resource sync-form install-hooks test ticker ticker-data ticker-svg recently-added clean
 
 venv: ## Set up the venv
 	python3 -m venv venv
@@ -53,6 +53,17 @@ move-category: $(DEPS_STAMP) ## Move a category/sub-category to a new position (
 remove-category: $(DEPS_STAMP) ## Remove a category/sub-category (CATEGORY=, [SUB_CATEGORY=], [FORCE=1]).
 	@test -n "$(CATEGORY)" || { echo "usage: make remove-category CATEGORY=\"Name\" [SUB_CATEGORY=\"Name\"] [FORCE=1]"; exit 2; }
 	$(PYTHON) scripts/manage_categories.py remove --category "$(CATEGORY)" $(if $(SUB_CATEGORY),--subcategory "$(SUB_CATEGORY)") $(if $(FORCE),--force)
+	$(PYTHON) generate_readme.py
+
+# Add a single resource to the CSV: mint its opaque ID, validate the Category against
+# config.yaml, dedupe by link, append, then regenerate README.md. DISPLAY_NAME,
+# CATEGORY, and LINK are required; AUTHOR/AUTHOR_LINK/SUBCATEGORY/DESCRIPTION optional.
+#   make add-resource DISPLAY_NAME="cctop" CATEGORY="Session Monitors" \
+#       LINK="https://github.com/stefanprodan/cctop" AUTHOR="stefanprodan" \
+#       AUTHOR_LINK="https://github.com/stefanprodan" DESCRIPTION="..."
+add-resource: $(DEPS_STAMP) ## Add one resource to the CSV (DISPLAY_NAME=, CATEGORY=, LINK=; optional AUTHOR=, AUTHOR_LINK=, SUBCATEGORY=, DESCRIPTION=).
+	@test -n "$(DISPLAY_NAME)" -a -n "$(CATEGORY)" -a -n "$(LINK)" || { echo 'usage: make add-resource DISPLAY_NAME="Name" CATEGORY="Category" LINK="https://..." [AUTHOR="..."] [AUTHOR_LINK="https://..."] [SUBCATEGORY="..."] [DESCRIPTION="..."]'; exit 2; }
+	$(PYTHON) resources/add_resource.py --display-name "$(DISPLAY_NAME)" --category "$(CATEGORY)" --link "$(LINK)" $(if $(AUTHOR),--author-name "$(AUTHOR)") $(if $(AUTHOR_LINK),--author-link "$(AUTHOR_LINK)") $(if $(SUBCATEGORY),--subcategory "$(SUBCATEGORY)") $(if $(DESCRIPTION),--description "$(DESCRIPTION)")
 	$(PYTHON) generate_readme.py
 
 sync-form: $(DEPS_STAMP) ## Regenerate the recommend-resource category dropdown from config.yaml.
