@@ -8,7 +8,7 @@
 PYTHON := venv/bin/python
 DEPS_STAMP := venv/.deps-stamp
 
-.PHONY: help deps generate readme add-category move-category remove-category add-resource sync-form install-hooks test ticker ticker-data ticker-svg recently-added clean
+.PHONY: help deps generate readme add-category move-category remove-category add-resource move-resource update-resource sync-form install-hooks test ticker ticker-data ticker-svg recently-added clean
 
 venv: ## Set up the venv
 	python3 -m venv venv
@@ -64,6 +64,26 @@ remove-category: $(DEPS_STAMP) ## Remove a category/sub-category (CATEGORY=, [SU
 add-resource: $(DEPS_STAMP) ## Add one resource to the CSV (DISPLAY_NAME=, CATEGORY=, LINK=; optional AUTHOR=, AUTHOR_LINK=, SUBCATEGORY=, DESCRIPTION=).
 	@test -n "$(DISPLAY_NAME)" -a -n "$(CATEGORY)" -a -n "$(LINK)" || { echo 'usage: make add-resource DISPLAY_NAME="Name" CATEGORY="Category" LINK="https://..." [AUTHOR="..."] [AUTHOR_LINK="https://..."] [SUBCATEGORY="..."] [DESCRIPTION="..."]'; exit 2; }
 	$(PYTHON) resources/add_resource.py --display-name "$(DISPLAY_NAME)" --category "$(CATEGORY)" --link "$(LINK)" $(if $(AUTHOR),--author-name "$(AUTHOR)") $(if $(AUTHOR_LINK),--author-link "$(AUTHOR_LINK)") $(if $(SUBCATEGORY),--subcategory "$(SUBCATEGORY)") $(if $(DESCRIPTION),--description "$(DESCRIPTION)")
+	$(PYTHON) generate_readme.py
+
+# Re-file an existing resource: change its Category (and optionally Sub-Category) in
+# place, identified by ID= or LINK=, then regenerate README.md. Only that one CSV row
+# changes; the moved row keeps its ID, dates, and description.
+#   make move-resource ID=obs-9bb175c8 CATEGORY="Observability & Monitoring" SUBCATEGORY="Observability"
+#   make move-resource LINK="https://github.com/o/r" CATEGORY="Skills"
+move-resource: $(DEPS_STAMP) ## Re-file a resource to a new Category/Sub-Category (ID= or LINK=, CATEGORY=; optional SUBCATEGORY=).
+	@test -n "$(CATEGORY)" -a \( -n "$(ID)" -o -n "$(LINK)" \) || { echo 'usage: make move-resource (ID="..." | LINK="https://...") CATEGORY="Category" [SUBCATEGORY="..."]'; exit 2; }
+	$(PYTHON) resources/move_resource.py $(if $(ID),--id "$(ID)") $(if $(LINK),--link "$(LINK)") --category "$(CATEGORY)" $(if $(SUBCATEGORY),--subcategory "$(SUBCATEGORY)")
+	$(PYTHON) generate_readme.py
+
+# Update an existing resource's content fields in place (link, name, author,
+# description) by ID= or LINK=, then regenerate README.md. Category moves are
+# `make move-resource`. Only that one CSV row changes.
+#   make update-resource ID=2abd5dee NEW_LINK="https://github.com/ccusage/ccusage"
+#   make update-resource LINK="https://github.com/o/r" DESCRIPTION="..." AUTHOR="..."
+update-resource: $(DEPS_STAMP) ## Edit a resource's fields in place (ID= or LINK=; any of NEW_LINK=, DISPLAY_NAME=, AUTHOR=, AUTHOR_LINK=, DESCRIPTION=).
+	@test -n "$(ID)$(LINK)" || { echo 'usage: make update-resource (ID="..." | LINK="https://...") [NEW_LINK="..."] [DISPLAY_NAME="..."] [AUTHOR="..."] [AUTHOR_LINK="..."] [DESCRIPTION="..."]'; exit 2; }
+	$(PYTHON) resources/update_resource.py $(if $(ID),--id "$(ID)") $(if $(LINK),--link "$(LINK)") $(if $(NEW_LINK),--new-link "$(NEW_LINK)") $(if $(DISPLAY_NAME),--display-name "$(DISPLAY_NAME)") $(if $(AUTHOR),--author-name "$(AUTHOR)") $(if $(AUTHOR_LINK),--author-link "$(AUTHOR_LINK)") $(if $(DESCRIPTION),--description "$(DESCRIPTION)")
 	$(PYTHON) generate_readme.py
 
 sync-form: $(DEPS_STAMP) ## Regenerate the recommend-resource category dropdown from config.yaml.

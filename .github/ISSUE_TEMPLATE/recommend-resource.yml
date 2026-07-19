@@ -44,8 +44,7 @@ body:
         - "Multi-Agent Orchestration"
         - "Skills"
         - "Memory & Context Persistence"
-        - "Usage & Cost Monitoring"
-        - "Observability"
+        - "Observability & Monitoring"
         - "Linting"
     validations:
       required: true

@@ -12,8 +12,10 @@ import pytest
 BASE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE))
 
+from resources import move_resource  # noqa: E402
 from resources import parse_issue_form as pif  # noqa: E402
 from resources import resource_utils  # noqa: E402
+from resources import update_resource  # noqa: E402
 
 ISSUE_BODY = """### Display Name
 
@@ -209,3 +211,123 @@ def test_validate_rejects_link_with_injection_chars() -> None:
     ok, errors, _ = pif.validate_parsed_data(data)
     assert not ok
     assert any("forbidden characters" in e for e in errors)
+
+
+# --------------------------------------------------------------------------- #
+# Move (re-file) an existing resource
+# --------------------------------------------------------------------------- #
+MOVE_CSV = (
+    CSV_HEADER
+    + "m1,Tool One,Old Cat,,https://github.com/a/one,A,https://github.com/a,TRUE,,,desc one,FALSE\n"
+    + 'm2,Tool Two,Other Cat,,https://github.com/b/two,B,https://github.com/b,TRUE,,,"desc, two",FALSE\n'
+)
+
+
+def _move_csv(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
+    csv_path = tmp_path / "t.csv"
+    csv_path.write_text(MOVE_CSV, encoding="utf-8")
+    monkeypatch.setattr(resource_utils, "CSV_PATH", csv_path)  # read_lines/write_lines resolve it here
+    monkeypatch.setattr(move_resource, "category_names", lambda: {"Old Cat", "Other Cat", "New Cat"})
+    monkeypatch.setattr(move_resource, "subcategories_for", lambda c: ["Sub"])
+    return csv_path
+
+
+def test_move_resource_changes_category_in_place(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    csv_path = _move_csv(tmp_path, monkeypatch)
+    assert move_resource.main(["--id", "m1", "--category", "New Cat", "--subcategory", "Sub"]) == 0
+    rows = {r["ID"]: r for r in csv.DictReader(csv_path.open(encoding="utf-8"))}
+    assert rows["m1"]["Category"] == "New Cat"
+    assert rows["m1"]["Sub-Category"] == "Sub"
+    assert rows["m1"]["Description"] == "desc one"  # untouched
+    # the untouched row is byte-for-byte identical (commas/quoting preserved)
+    assert (
+        'm2,Tool Two,Other Cat,,https://github.com/b/two,B,https://github.com/b,TRUE,,,"desc, two",FALSE\n'
+        in csv_path.read_text(encoding="utf-8")
+    )
+
+
+def test_move_resource_by_link_clears_subcategory(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    csv_path = _move_csv(tmp_path, monkeypatch)
+    assert move_resource.main(["--link", "https://github.com/b/two", "--category", "New Cat"]) == 0
+    rows = {r["ID"]: r for r in csv.DictReader(csv_path.open(encoding="utf-8"))}
+    assert rows["m2"]["Category"] == "New Cat"
+    assert rows["m2"]["Sub-Category"] == ""  # cleared on cross-category move
+
+
+def test_move_resource_unknown_id_errors(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    _move_csv(tmp_path, monkeypatch)
+    assert move_resource.main(["--id", "nope", "--category", "New Cat"]) == 1
+
+
+def test_move_resource_unknown_category_errors(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    _move_csv(tmp_path, monkeypatch)
+    assert move_resource.main(["--id", "m1", "--category", "Bogus"]) == 1
+
+
+# --------------------------------------------------------------------------- #
+# Update (edit) an existing resource's content fields
+# --------------------------------------------------------------------------- #
+def _update_csv(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
+    csv_path = tmp_path / "t.csv"
+    csv_path.write_text(MOVE_CSV, encoding="utf-8")
+    monkeypatch.setattr(resource_utils, "CSV_PATH", csv_path)
+    return csv_path
+
+
+def test_update_resource_changes_link_in_place(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    csv_path = _update_csv(tmp_path, monkeypatch)
+    assert update_resource.main(["--id", "m1", "--new-link", "https://github.com/a/renamed"]) == 0
+    rows = {r["ID"]: r for r in csv.DictReader(csv_path.open(encoding="utf-8"))}
+    assert rows["m1"]["Link"] == "https://github.com/a/renamed"
+    assert rows["m1"]["Category"] == "Old Cat"  # untouched
+    assert (
+        'm2,Tool Two,Other Cat,,https://github.com/b/two,B,https://github.com/b,TRUE,,,"desc, two",FALSE\n'
+        in csv_path.read_text(encoding="utf-8")
+    )
+
+
+def test_update_resource_multiple_fields(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    csv_path = _update_csv(tmp_path, monkeypatch)
+    assert (
+        update_resource.main(
+            ["--link", "https://github.com/b/two", "--author-name", "New Author", "--description", "brand new"]
+        )
+        == 0
+    )
+    rows = {r["ID"]: r for r in csv.DictReader(csv_path.open(encoding="utf-8"))}
+    assert rows["m2"]["Author Name"] == "New Author"
+    assert rows["m2"]["Description"] == "brand new"
+
+
+def test_update_resource_link_collision_errors(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    _update_csv(tmp_path, monkeypatch)
+    # setting m1's link to m2's existing link must be refused
+    assert update_resource.main(["--id", "m1", "--new-link", "https://github.com/b/two"]) == 1
+
+
+def test_update_resource_requires_a_setter(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    _update_csv(tmp_path, monkeypatch)
+    assert update_resource.main(["--id", "m1"]) == 1
+
+
+def test_update_resource_unknown_id_errors(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    _update_csv(tmp_path, monkeypatch)
+    assert update_resource.main(["--id", "nope", "--description", "x"]) == 1

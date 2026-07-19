@@ -59,9 +59,11 @@ categories:
     prefix: skill
   - name: "Memory & Context Persistence"
     prefix: memory
-  - name: "Usage & Cost Monitoring"
-    prefix: usage
-  - name: "Observability"
-    prefix: obs
+  - name: "Observability & Monitoring"
+    prefix: monitor
+    subcategories:
+      - name: "Session Monitors"
+      - name: "Usage & Cost"
+      - name: "Observability"
   - name: "Linting"
     prefix: lint
