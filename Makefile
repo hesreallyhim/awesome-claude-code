@@ -8,7 +8,7 @@
 PYTHON := venv/bin/python
 DEPS_STAMP := venv/.deps-stamp
 
-.PHONY: help deps generate readme add-category move-category remove-category add-resource move-resource update-resource sync-form install-hooks test ticker ticker-data ticker-svg recently-added clean
+.PHONY: help deps generate readme add-category move-category remove-category add-resource move-resource update-resource submit-resource sync-form install-hooks test ticker ticker-data ticker-svg recently-added clean
 
 venv: ## Set up the venv
 	python3 -m venv venv
@@ -86,6 +86,18 @@ update-resource: $(DEPS_STAMP) ## Edit a resource's fields in place (ID= or LINK
 	$(PYTHON) resources/update_resource.py $(if $(ID),--id "$(ID)") $(if $(LINK),--link "$(LINK)") $(if $(NEW_LINK),--new-link "$(NEW_LINK)") $(if $(DISPLAY_NAME),--display-name "$(DISPLAY_NAME)") $(if $(AUTHOR),--author-name "$(AUTHOR)") $(if $(AUTHOR_LINK),--author-link "$(AUTHOR_LINK)") $(if $(DESCRIPTION),--description "$(DESCRIPTION)")
 	$(PYTHON) generate_readme.py
 
+# Open a resource-submission ISSUE from the CLI that enters validation: composes the
+# recommend-resource form body and creates the issue via gh WITH the resource-submission
+# + validation-pending labels, so validate-new-issue.yml runs on `opened` (the same path
+# a form submission takes). Applying those labels needs triage access, so this is a
+# maintainer/agent path. Does NOT touch the CSV/README. For a description with
+# backticks or $, pass DESCRIPTION_FILE=<path> instead of DESCRIPTION=.
+#   make submit-resource DISPLAY_NAME="X" CATEGORY="Cat" LINK="https://..." \
+#       AUTHOR="octocat" AUTHOR_LINK="https://github.com/octocat" DESCRIPTION="..." [DRY_RUN=1]
+submit-resource: $(DEPS_STAMP) ## Open a resource-submission issue via gh that enters validation (DISPLAY_NAME=, CATEGORY=, LINK=; AUTHOR=, AUTHOR_LINK=, DESCRIPTION= or DESCRIPTION_FILE=; optional SUBCATEGORY=, REPO=, DRY_RUN=1).
+	@test -n "$(DISPLAY_NAME)" -a -n "$(CATEGORY)" -a -n "$(LINK)" || { echo 'usage: make submit-resource DISPLAY_NAME="Name" CATEGORY="Category" LINK="https://..." AUTHOR="..." AUTHOR_LINK="https://..." (DESCRIPTION="..." | DESCRIPTION_FILE=path) [SUBCATEGORY="..."] [REPO=owner/repo] [DRY_RUN=1]'; exit 2; }
+	$(PYTHON) resources/submit_resource_issue.py --display-name "$(DISPLAY_NAME)" --category "$(CATEGORY)" --link "$(LINK)" $(if $(AUTHOR),--author-name "$(AUTHOR)") $(if $(AUTHOR_LINK),--author-link "$(AUTHOR_LINK)") $(if $(DESCRIPTION),--description "$(DESCRIPTION)") $(if $(DESCRIPTION_FILE),--description-file "$(DESCRIPTION_FILE)") $(if $(SUBCATEGORY),--subcategory "$(SUBCATEGORY)") $(if $(REPO),--repo "$(REPO)") $(if $(DRY_RUN),--dry-run)
+
 sync-form: $(DEPS_STAMP) ## Regenerate the recommend-resource category dropdown from config.yaml.
 	$(PYTHON) scripts/sync_issue_form.py
 
@@ -106,7 +118,6 @@ ticker: ticker-data ticker-svg ## Refresh ticker data and regenerate the SVG.
 recently-added: $(DEPS_STAMP) ## Render the "Recently Added" carousel SVGs (dark+light) from the CSV into assets/.
 	$(PYTHON) ticker/generate_recently_added_svg.py
 
-clean: ## Remove Python caches (prunes __INTERNAL__ and venv; never touches tracked files).
-	find . -path ./venv -prune -o -path ./__INTERNAL__ -prune -o -path ./.git -prune -o -name '__pycache__' -type d -print -exec rm -rf {} +
-	find . -path ./venv -prune -o -path ./__INTERNAL__ -prune -o -path ./.git -prune -o -name '*.py[co]' -type f -print -exec rm -f {} +
+clean: ## Remove Python caches (__pycache__, .pyc, pytest/mypy caches); never descends into __INTERNAL__, venv, or .git.
+	find . \( -path ./venv -o -path ./.git -o -path ./__INTERNAL__ \) -prune -o \( -name '__pycache__' -o -name '*.py[co]' \) -exec rm -rf {} +
 	rm -rf .pytest_cache .mypy_cache

@@ -15,6 +15,7 @@ sys.path.insert(0, str(BASE))
 from resources import move_resource  # noqa: E402
 from resources import parse_issue_form as pif  # noqa: E402
 from resources import resource_utils  # noqa: E402
+from resources import submit_resource_issue  # noqa: E402
 from resources import update_resource  # noqa: E402
 
 ISSUE_BODY = """### Display Name
@@ -331,3 +332,88 @@ def test_update_resource_unknown_id_errors(
 ) -> None:
     _update_csv(tmp_path, monkeypatch)
     assert update_resource.main(["--id", "nope", "--description", "x"]) == 1
+
+
+# --------------------------------------------------------------------------- #
+# Submit a resource-submission issue (body composition + guards; no gh calls)
+# --------------------------------------------------------------------------- #
+def test_compose_body_has_all_form_sections() -> None:
+    body = submit_resource_issue.compose_body(
+        display_name="X",
+        category="Cat",
+        link="https://github.com/o/r",
+        author_name="me",
+        author_link="https://github.com/me",
+        description="a description",
+    )
+    for section in (
+        "### Display Name",
+        "### Category",
+        "### Link",
+        "### Author Name",
+        "### Author Link",
+        "### Description",
+        "### Checklist",
+    ):
+        assert section in body
+    assert "### Sub-Category" not in body  # omitted when not provided
+    assert body.count("- [x]") == 3
+
+
+def test_compose_body_includes_subcategory_when_set() -> None:
+    body = submit_resource_issue.compose_body(
+        display_name="X",
+        category="Cat",
+        link="l",
+        author_name="",
+        author_link="",
+        description="d",
+        subcategory="Sub",
+    )
+    assert "### Sub-Category\n\nSub" in body
+
+
+def test_submit_dry_run_prints_body(monkeypatch: pytest.MonkeyPatch, capsys) -> None:
+    monkeypatch.setattr(submit_resource_issue, "category_names", lambda: {"Cat"})
+    rc = submit_resource_issue.main(
+        [
+            "--display-name", "X", "--category", "Cat", "--link", "https://github.com/o/r",
+            "--author-name", "me", "--author-link", "https://github.com/me",
+            "--description", "a description", "--repo", "o/r", "--dry-run",
+        ]
+    )
+    assert rc == 0
+    out = capsys.readouterr().out
+    assert "dry-run" in out and "### Description" in out
+
+
+def test_submit_unknown_category_errors(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(submit_resource_issue, "category_names", lambda: {"Cat"})
+    rc = submit_resource_issue.main(
+        ["--display-name", "X", "--category", "Bogus", "--link", "l", "--description", "d", "--repo", "o/r", "--dry-run"]
+    )
+    assert rc == 1
+
+
+def test_submit_requires_a_description(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(submit_resource_issue, "category_names", lambda: {"Cat"})
+    rc = submit_resource_issue.main(
+        ["--display-name", "X", "--category", "Cat", "--link", "l", "--repo", "o/r", "--dry-run"]
+    )
+    assert rc == 1
+
+
+def test_submit_description_file_is_backtick_safe(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, capsys
+) -> None:
+    monkeypatch.setattr(submit_resource_issue, "category_names", lambda: {"Cat"})
+    f = tmp_path / "d.txt"
+    f.write_text("a desc mentioning `--serve --watch` and $HOME", encoding="utf-8")
+    rc = submit_resource_issue.main(
+        [
+            "--display-name", "X", "--category", "Cat", "--link", "l",
+            "--description-file", str(f), "--repo", "o/r", "--dry-run",
+        ]
+    )
+    assert rc == 0
+    assert "`--serve --watch`" in capsys.readouterr().out
