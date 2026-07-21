@@ -1,8 +1,12 @@
 name: Regenerate README
 
 # "CSV update updates the board": whenever the source CSV, category config, or
-# template changes on main, regenerate README.md and commit it. The approved-PR
-# flow already includes a regenerated README, so this mainly backstops manual edits.
+# template changes on main, regenerate every derived artifact — README.md, the
+# recently-added carousel SVGs, and the recommend-resource issue-form dropdown —
+# via `make generate` (the same command run locally, so CI and local can't drift),
+# then commit them. The approved-PR flow already regenerates these; this backstops
+# manual edits. The ticker is deliberately NOT run here (it needs GITHUB_TOKEN and
+# fetches remote data — see the scheduled update-repo-ticker workflow).
 on:
   push:
     branches: [main]
@@ -19,18 +23,19 @@ jobs:
   regenerate:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # commits the regenerated README.md back to main
+      contents: write # commits the regenerated artifacts back to main
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
-      - run: pip install pyyaml
-      - name: Regenerate README from the CSV
-        run: python generate_readme.py
+      - name: Regenerate derived artifacts (README, carousel, issue-form dropdown)
+        run: make generate
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          git diff --staged --quiet || (git commit -m "chore: regenerate README from CSV [skip ci]" && git push)
+          git add README.md \
+                  assets/recently-added.svg assets/recently-added-light.svg \
+                  .github/ISSUE_TEMPLATE/recommend-resource.yml
+          git diff --staged --quiet || (git commit -m "chore: regenerate README + carousel from CSV [skip ci]" && git push)
