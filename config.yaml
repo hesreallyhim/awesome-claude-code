@@ -53,7 +53,7 @@ categories:
     prefix: devops
   - name: "Security"
     prefix: security
-  - name: "Multi-Agent Orchestration"
+  - name: "Agent Orchestration"
     prefix: orchestration
   - name: "Skills"
     prefix: skill
