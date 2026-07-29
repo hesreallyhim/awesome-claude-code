@@ -338,6 +338,9 @@ The current iteration of the list, such as you see it today, was launched with t
 
 ## Skills
 
+- [Caveman](https://github.com/JuliusBrussee/caveman) by [Julius Brussee](https://github.com/JuliusBrussee) - A plugin that conserves message tokens by communicating in fragmented "caveman speak" - sort of a clever form of compression. Now accompanied by a whole caveman ecosystem including a memory system, caveman spec kit, and a caveman agent.  
+<img src="https://img.shields.io/github/created-at/JuliusBrussee/caveman?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/JuliusBrussee/caveman?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/JuliusBrussee/caveman?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/JuliusBrussee/caveman?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
+
 - [fable-mode](https://github.com/mrtooher/fable-mode) by [mrtooher](https://github.com/mrtooher) - A Claude skill that activates Fable-style agentic behavior: explicit multi-stage planning, sub-agent delegation, and self-verification.  
 <img src="https://img.shields.io/github/created-at/mrtooher/fable-mode?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/mrtooher/fable-mode?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/mrtooher/fable-mode?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/mrtooher/fable-mode?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
 
