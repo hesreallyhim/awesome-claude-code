@@ -8,17 +8,8 @@ permissions:
   contents: read
 
 jobs:
-  # Gate: enforce the CONTRIBUTING eligibility conditions BEFORE any other
-  # validation runs. Ineligible submissions are closed without explaining which
-  # condition failed — the terse note points at CONTRIBUTING.md on purpose.
-  #
-  # Conditions (a GitHub repo passes if EITHER holds):
-  #   (i)  >= 100 stars, or
-  #   (ii) >= 14 days since the FIRST commit on the default branch
-  # Plus, regardless of host: one open resource submission per author at a time.
-  #
-  # Fails open: any API error leaves the submission alone rather than closing it,
-  # so infrastructure problems never punish a submitter.
+  # Enforces the CONTRIBUTING eligibility conditions before the rest of
+  # validation runs. Errors pass the submission through rather than closing it.
   eligibility:
     name: Check submission eligibility
     if: github.event.action == 'opened' && contains(github.event.issue.labels.*.name, 'resource-submission')
@@ -40,10 +31,12 @@ jobs:
             const issue_number = issue.number;
             const submitter = issue.user.login;
 
-            // Anything unexpected => eligible. Never auto-close on our own errors.
-            const pass = (why) => { core.info(`ELIGIBLE: ${why}`); core.setOutput('eligible', 'true'); };
+            // Strips workflow-command syntax; every logged value goes through this.
+            const safe = (s) => String(s).replace(/:/g, '.').replace(/[\r\n]+/g, ' ').slice(0, 200);
+
+            const pass = (why) => { core.info('ELIGIBLE: ' + safe(why)); core.setOutput('eligible', 'true'); };
             const fail = async (why) => {
-              core.info(`INELIGIBLE: ${why}`);
+              core.info('INELIGIBLE: ' + safe(why));
               core.setOutput('eligible', 'false');
               await github.rest.issues.createComment({
                 owner, repo, issue_number,
@@ -52,13 +45,11 @@ jobs:
                     + '[CONTRIBUTING.md](https://github.com/' + owner + '/' + repo
                     + '/blob/main/CONTRIBUTING.md) before submitting another recommendation.',
               });
-              // Marker label so auto-closed issues stay distinguishable from
-              // maintainer-closed ones. Delete these 6 lines to drop it.
               try {
                 await github.rest.issues.addLabels({
                   owner, repo, issue_number, labels: ['auto-closed'],
                 });
-              } catch (e) { core.info(`label add failed (non-fatal): ${e.message}`); }
+              } catch (e) { core.info(`label add failed (non-fatal): ${safe(e.message)}`); }
               await github.rest.issues.update({
                 owner, repo, issue_number, state: 'closed', state_reason: 'not_planned',
               });
@@ -75,35 +66,41 @@ jobs:
                 return await fail(`author has open submission(s): #${open.map(i => i.number).join(', #')}`);
               }
             } catch (e) {
-              return pass(`could not check author's open submissions (${e.message})`);
+              return pass(`could not check author's open submissions (${safe(e.message)})`);
             }
 
-            // ---- Extract the Link field ---------------------------------------
-            // Parse the "### Link" section specifically: author_link is also a
-            // github.com URL, so a naive body-wide match would grab the wrong one.
+            // Must target the Link section: author_link is also a github.com URL.
             const body = issue.body || '';
             const m = body.match(/###\s*Link\s*\r?\n+\s*(\S+)/i);
             if (!m) return pass('no Link field found — leaving to form validation');
 
-            const repoMatch = m[1].match(/^https?:\/\/(?:www\.)?github\.com\/([^\/\s#?]+)\/([^\/\s#?]+?)(?:\.git)?\/?$/i);
-            if (!repoMatch) return pass(`not a GitHub repo URL (${m[1]}) — age/star gate does not apply`);
+            // Repo names legally include '_' and '.' (claude-code.nvim, some_tool).
+            const OWNER = '[A-Za-z0-9](?:[A-Za-z0-9-]{0,37}[A-Za-z0-9])?';
+            const REPO = '[A-Za-z0-9._-]{1,100}';
+            const repoMatch = m[1].match(
+              new RegExp(`^https?://(?:www\\.)?github\\.com/(${OWNER})/(${REPO})(?:[/#?].*)?$`, 'i')
+            );
+            if (!repoMatch) return pass(`not a GitHub repo URL (${safe(m[1])}) — age/star gate does not apply`);
 
-            const [, tOwner, tRepo] = repoMatch;
+            const tOwner = repoMatch[1];
+            // '|| repoMatch[2]' keeps a repo actually named "foo.git" intact.
+            const tRepo = repoMatch[2].replace(/\.git$/i, '') || repoMatch[2];
+            if (tRepo === '.' || tRepo === '..') {
+              return pass(`not a GitHub repo URL (${safe(m[1])}) — age/star gate does not apply`);
+            }
 
             // ---- Condition (i): stars ------------------------------------------
             let target;
             try {
               target = (await github.rest.repos.get({ owner: tOwner, repo: tRepo })).data;
             } catch (e) {
-              return pass(`could not fetch ${tOwner}/${tRepo} (${e.message})`);
+              return pass(`could not fetch ${tOwner}/${tRepo} (${safe(e.message)})`);
             }
             if (target.stargazers_count >= MIN_STARS) {
               return pass(`${target.stargazers_count} stars >= ${MIN_STARS}`);
             }
 
-            // ---- Condition (ii): age of FIRST commit on the default branch -----
-            // Deliberately not repo.created_at: history pushed to a fresh repo
-            // should count from the commit, not the GitHub object.
+            // Not repo.created_at: history pushed to a fresh repo predates it.
             let firstCommitDate;
             try {
               const branch = target.default_branch;
@@ -111,7 +108,7 @@ jobs:
                 owner: tOwner, repo: tRepo, sha: branch, per_page: 1,
               });
               if (!first.data.length) return pass('empty repository — no commits to date');
-              // Walk to the last page; its single entry is the oldest commit.
+              // per_page=1 makes page number == commit index, so rel="last" is oldest.
               const link = first.headers.link || '';
               const last = link.match(/[?&]page=(\d+)>;\s*rel="last"/);
               if (last) {
@@ -123,10 +120,13 @@ jobs:
                 firstCommitDate = first.data[0].commit.committer.date;
               }
             } catch (e) {
-              return pass(`could not read commit history (${e.message})`);
+              return pass(`could not read commit history (${safe(e.message)})`);
             }
 
             const ageDays = (Date.now() - new Date(firstCommitDate).getTime()) / 86400000;
+            if (!Number.isFinite(ageDays)) {
+              return pass(`unparseable first-commit date (${firstCommitDate})`);
+            }
             core.info(`first commit ${firstCommitDate} => ${ageDays.toFixed(1)} days, ${target.stargazers_count} stars`);
             if (ageDays >= MIN_AGE_DAYS) {
               return pass(`${ageDays.toFixed(1)} days >= ${MIN_AGE_DAYS}`);
@@ -137,8 +137,7 @@ jobs:
   validate-resource:
     name: Validate Resource Submission
     needs: [eligibility]
-    # Runs when the gate passed, or on 'edited' (where the gate is skipped so a
-    # maintainer can reopen and iterate without being re-gated).
+    # 'edited' skips the gate so a maintainer can reopen and iterate.
     if: |
       always()
       && contains(github.event.issue.labels.*.name, 'resource-submission')
@@ -196,7 +195,7 @@ jobs:
             const result = JSON.parse(fs.readFileSync('validation_result.json', 'utf8'));
             let body = '## 🤖 Validation Results\n\n';
             if (result.valid) {
-              body += '✅ **All validation checks passed!** Your submission is ready for a maintainer to review.\n\n';
+              body += '✅ **All validation checks passed!** Your recommendation is ready for a maintainer to review.\n\n';
               body += '### Parsed data\n```json\n' + JSON.stringify(result.data, null, 2) + '\n```\n';
             } else {
               body += '❌ **Validation failed.** Please fix the following and edit your issue:\n\n';
