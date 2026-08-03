@@ -14,6 +14,15 @@ body:
         Please make sure the resource is specific to Claude Code, of high quality, and
         not already on the list.
 
+        To encourage people to refrain from recommending projects that have not quite matured,
+        the recommended resource must meet one of these conditions:
+
+        (a) at least 14 days of active development since the first commit to the default branch;
+        OR
+        (b) at least 100 stars.
+
+        You may only submit one resource at a time.
+
   - type: input
     id: display_name
     attributes:
@@ -80,7 +89,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: "1–3 sentences. Descriptive, not promotional. Don't address the reader. (10–500 characters.)"
+      description: "1-3 sentences. Descriptive, not promotional. Don't address the reader. (10-500 characters.)"
       placeholder: "Describe what the resource does and what makes it notable."
     validations:
       required: true
@@ -90,9 +99,15 @@ body:
     attributes:
       label: Checklist
       options:
-        - label: "I checked that this resource isn't already on the list"
+        - label: "I have visited this repo before with my own eyes, and I have confirmed that this resource is sufficiently distinct from any existing resource"
           required: true
         - label: "All links are working and publicly accessible"
           required: true
         - label: "This resource is specific to Claude Code"
           required: true
+        - label: "I have read the CONTRIBUTING.md"
+          required: true
+        - label: "I promise I actually did these things and not doing so is shameful and lazy"
+          required: true
+        - label: "Do not check the following box - leave it unchecked. By checking this box, I admit that I am not reading any of these statements."
+          required: false

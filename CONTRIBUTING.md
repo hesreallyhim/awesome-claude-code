@@ -3,12 +3,28 @@
 Thank you for visiting this repo and for your interest in contributing to this community-backed resource.
 
 > [!NOTE]
-> This document is provisional while the new redesign settles.
-> I'm disabling recommendations for a little while we "catch up".
 > If your project was previously listed on Awesome Claude Code, and you don't see it right now:
 > For initial launch, this list was deliberately selected to be non-overlapping with the previous list.
 > Resources from the previous list will be re-incorporated at a reasonable cadence.
 > I want to give some time to these new entries.
+
+---
+
+## GROUND RULES:
+
+Any resource that is recommended must either:
+
+(i) Be at least 14 days old (14 days since first commit on default branch) AND show signs of active development (I expect there to be also additional commits after the first day);
+
+OR
+
+(ii) Have at least 100 stars.
+
+In addition: **You may not recommend more than one resource at a time.**
+
+Resources that fail these criteria will be closed automatically.
+
+Now please read the rest of this document as well:
 
 ---
 
@@ -37,6 +53,7 @@ Although resources themselves may be partially or entirely written by a coding a
 ### Details
 
 - The licensing information for your resource, assuming it is on GitHub, will be discovered and reported by the bot. If the bot is unable to do so, that means other tooling that relies on GitHub's license-discovery mechanisms will also have difficulty, and you should look into why (is there a properly formatted LICENSE file in the right place?). Leave a comment in the issue thread if you have a license that is not being identified.
+- The list is not exclusively for open-source projects, however: (i) if your project is closed-source, that presents a barrier to reviewing it; (ii) if your project requires any form of signup or payment, this is a blocker for reviewing it - I can only recommend such a resource on the basis of community adoption signals.
 - **STYLE:** Resource descriptions should be written as _descriptions_ - not a sales pitch. Don't address the reader ("Don't you hate it when Claude etc.") - state what the software does. Keep it formatted to one line. Don't use any emojis.
 
 ## Other Contributions

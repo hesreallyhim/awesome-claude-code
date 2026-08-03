@@ -8,9 +8,141 @@ permissions:
   contents: read
 
 jobs:
+  # Gate: enforce the CONTRIBUTING eligibility conditions BEFORE any other
+  # validation runs. Ineligible submissions are closed without explaining which
+  # condition failed — the terse note points at CONTRIBUTING.md on purpose.
+  #
+  # Conditions (a GitHub repo passes if EITHER holds):
+  #   (i)  >= 100 stars, or
+  #   (ii) >= 14 days since the FIRST commit on the default branch
+  # Plus, regardless of host: one open resource submission per author at a time.
+  #
+  # Fails open: any API error leaves the submission alone rather than closing it,
+  # so infrastructure problems never punish a submitter.
+  eligibility:
+    name: Check submission eligibility
+    if: github.event.action == 'opened' && contains(github.event.issue.labels.*.name, 'resource-submission')
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    outputs:
+      eligible: ${{ steps.gate.outputs.eligible }}
+    steps:
+      - name: Evaluate conditions
+        id: gate
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const MIN_STARS = 100;
+            const MIN_AGE_DAYS = 14;
+            const { owner, repo } = context.repo;
+            const issue = context.payload.issue;
+            const issue_number = issue.number;
+            const submitter = issue.user.login;
+
+            // Anything unexpected => eligible. Never auto-close on our own errors.
+            const pass = (why) => { core.info(`ELIGIBLE: ${why}`); core.setOutput('eligible', 'true'); };
+            const fail = async (why) => {
+              core.info(`INELIGIBLE: ${why}`);
+              core.setOutput('eligible', 'false');
+              await github.rest.issues.createComment({
+                owner, repo, issue_number,
+                body: 'This resource does not currently satisfy the required conditions '
+                    + 'stated in the CONTRIBUTING guidelines. Please review the '
+                    + '[CONTRIBUTING.md](https://github.com/' + owner + '/' + repo
+                    + '/blob/main/CONTRIBUTING.md) before submitting another recommendation.',
+              });
+              // Marker label so auto-closed issues stay distinguishable from
+              // maintainer-closed ones. Delete these 6 lines to drop it.
+              try {
+                await github.rest.issues.addLabels({
+                  owner, repo, issue_number, labels: ['auto-closed'],
+                });
+              } catch (e) { core.info(`label add failed (non-fatal): ${e.message}`); }
+              await github.rest.issues.update({
+                owner, repo, issue_number, state: 'closed', state_reason: 'not_planned',
+              });
+            };
+
+            // ---- Condition: one open resource submission per author -----------
+            try {
+              const others = await github.paginate(github.rest.issues.listForRepo, {
+                owner, repo, state: 'open', labels: 'resource-submission',
+                creator: submitter, per_page: 100,
+              });
+              const open = others.filter(i => i.number !== issue_number && !i.pull_request);
+              if (open.length > 0) {
+                return await fail(`author has open submission(s): #${open.map(i => i.number).join(', #')}`);
+              }
+            } catch (e) {
+              return pass(`could not check author's open submissions (${e.message})`);
+            }
+
+            // ---- Extract the Link field ---------------------------------------
+            // Parse the "### Link" section specifically: author_link is also a
+            // github.com URL, so a naive body-wide match would grab the wrong one.
+            const body = issue.body || '';
+            const m = body.match(/###\s*Link\s*\r?\n+\s*(\S+)/i);
+            if (!m) return pass('no Link field found — leaving to form validation');
+
+            const repoMatch = m[1].match(/^https?:\/\/(?:www\.)?github\.com\/([^\/\s#?]+)\/([^\/\s#?]+?)(?:\.git)?\/?$/i);
+            if (!repoMatch) return pass(`not a GitHub repo URL (${m[1]}) — age/star gate does not apply`);
+
+            const [, tOwner, tRepo] = repoMatch;
+
+            // ---- Condition (i): stars ------------------------------------------
+            let target;
+            try {
+              target = (await github.rest.repos.get({ owner: tOwner, repo: tRepo })).data;
+            } catch (e) {
+              return pass(`could not fetch ${tOwner}/${tRepo} (${e.message})`);
+            }
+            if (target.stargazers_count >= MIN_STARS) {
+              return pass(`${target.stargazers_count} stars >= ${MIN_STARS}`);
+            }
+
+            // ---- Condition (ii): age of FIRST commit on the default branch -----
+            // Deliberately not repo.created_at: history pushed to a fresh repo
+            // should count from the commit, not the GitHub object.
+            let firstCommitDate;
+            try {
+              const branch = target.default_branch;
+              const first = await github.rest.repos.listCommits({
+                owner: tOwner, repo: tRepo, sha: branch, per_page: 1,
+              });
+              if (!first.data.length) return pass('empty repository — no commits to date');
+              // Walk to the last page; its single entry is the oldest commit.
+              const link = first.headers.link || '';
+              const last = link.match(/[?&]page=(\d+)>;\s*rel="last"/);
+              if (last) {
+                const oldest = await github.rest.repos.listCommits({
+                  owner: tOwner, repo: tRepo, sha: branch, per_page: 1, page: Number(last[1]),
+                });
+                firstCommitDate = oldest.data[0].commit.committer.date;
+              } else {
+                firstCommitDate = first.data[0].commit.committer.date;
+              }
+            } catch (e) {
+              return pass(`could not read commit history (${e.message})`);
+            }
+
+            const ageDays = (Date.now() - new Date(firstCommitDate).getTime()) / 86400000;
+            core.info(`first commit ${firstCommitDate} => ${ageDays.toFixed(1)} days, ${target.stargazers_count} stars`);
+            if (ageDays >= MIN_AGE_DAYS) {
+              return pass(`${ageDays.toFixed(1)} days >= ${MIN_AGE_DAYS}`);
+            }
+
+            await fail(`${ageDays.toFixed(1)}d < ${MIN_AGE_DAYS}d and ${target.stargazers_count} < ${MIN_STARS} stars`);
+
   validate-resource:
     name: Validate Resource Submission
-    if: contains(github.event.issue.labels.*.name, 'resource-submission')
+    needs: [eligibility]
+    # Runs when the gate passed, or on 'edited' (where the gate is skipped so a
+    # maintainer can reopen and iterate without being re-gated).
+    if: |
+      always()
+      && contains(github.event.issue.labels.*.name, 'resource-submission')
+      && (github.event.action == 'edited' || needs.eligibility.outputs.eligible == 'true')
     runs-on: ubuntu-latest
     permissions:
       issues: write
