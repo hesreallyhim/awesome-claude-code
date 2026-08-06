@@ -21,8 +21,11 @@
 #     (scripts/sync_issue_form.py, run in pre-commit): every `submittable` category, in
 #     order. Never hand-edit that dropdown.
 
-# `prefix` is the short id used when minting resource IDs ({prefix}-{hash}); it must
-# match the prefixes baked into existing IDs.
+# `prefix` is vestigial. IDs used to be minted as {prefix}-{hash}; they are now
+# opaque 8-char hex (see resources/ids.py), so nothing reads this key to build an
+# ID. It is still written by `make add-category` and kept unique across categories,
+# and the old prefixed IDs in the CSV are grandfathered as-is — but changing a
+# prefix here has no effect on anything.
 categories:
   - name: "Start Here"
     prefix: start
@@ -55,6 +58,8 @@ categories:
     prefix: security
   - name: "Agent Orchestration"
     prefix: orchestration
+    subcategories:
+      - name: "Ralph Wiggum"
   - name: "Skills"
     prefix: skill
   - name: "Memory & Context Persistence"

@@ -1,7 +1,9 @@
 """Category lookups backed by config.yaml (the single source of truth).
 
 config.yaml is also consumed by generate_readme.py for ordering; here we read the
-category names (for validation) and per-category `prefix` (for resource IDs).
+category names, used to validate the Category column on add / move / submit. The
+per-category `prefix` key is vestigial and deliberately not read — resource IDs are
+opaque hex (see ids.py), not {prefix}-{hash}.
 """
 
 from __future__ import annotations
@@ -21,8 +23,3 @@ def _categories() -> list[dict]:
 
 def category_names() -> list[str]:
     return [c["name"] for c in _categories()]
-
-
-def category_prefixes() -> dict[str, str]:
-    """Map category name -> ID prefix (default 'res' if unset)."""
-    return {c["name"]: c.get("prefix", "res") for c in _categories()}
