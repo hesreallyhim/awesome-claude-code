@@ -66,6 +66,8 @@ The current iteration of the list, such as you see it today, was launched with t
 
 ## Start Here
 
+- [A Field Guide to Claude Fable 5](https://claude.com/blog/a-field-guide-to-claude-fable-finding-your-unknowns) by [Thariq Shihipar, Anthropic](https://github.com/ThariqS) - Really solid, insightful guidance on working/thinking with Claude Fable, and with AI in general. Very well written. Hints of Rumsfeld epistemology, but otherwise it's a great piece.
+
 - [andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) by [multica-ai](https://github.com/multica-ai) - A drop-in CLAUDE.md distilling four behavioral guidelines for LLM-assisted coding into Claude Code — a low-friction quick win. Karpathy-inspired, derived from Andrej Karpathy's public notes on LLM coding pitfalls and authored by multica-ai.  
 <img src="https://img.shields.io/github/created-at/multica-ai/andrej-karpathy-skills?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/multica-ai/andrej-karpathy-skills?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/multica-ai/andrej-karpathy-skills?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/multica-ai/andrej-karpathy-skills?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
 
