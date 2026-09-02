@@ -404,7 +404,7 @@ The current iteration of the list, such as you see it today, was launched with t
 
 ### Dynamic Workflows
 
-- [Dynamic Workflow Design Paterns](https://github.com/zircote/workflows-plugin) by [Robert Allen](https://github.com/zircote) - A Skill based on [this](https://zircote.com/field-notes/dynamic-workflow-patterns/) extremely well authored article about dynamic workflows. Detailed explanations regarding the Workflow tool and sensible advice covering a range of patterns and anti-patterns.  
+- [Dynamic Workflow Design Patterns](https://github.com/zircote/workflows-plugin) by [Robert Allen](https://github.com/zircote) - A Skill based on [this](https://zircote.com/field-notes/dynamic-workflow-patterns/) extremely well authored article about dynamic workflows. Detailed explanations regarding the Workflow tool and sensible advice covering a range of patterns and anti-patterns.  
 <img src="https://img.shields.io/github/created-at/zircote/workflows-plugin?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/zircote/workflows-plugin?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/zircote/workflows-plugin?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/zircote/workflows-plugin?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
 
 ## Skills
