@@ -22,12 +22,10 @@ import csv
 import sys
 from pathlib import Path
 
-import yaml
-
 BASE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE))
 
-from resources.categories import category_names  # noqa: E402
+from resources.categories import category_names, subcategory_error  # noqa: E402
 from resources.resource_utils import (  # noqa: E402
     COL_CATEGORY,
     COL_DISPLAY,
@@ -39,20 +37,8 @@ from resources.resource_utils import (  # noqa: E402
     write_lines,
 )
 
-CONFIG_PATH = BASE / "config.yaml"
-
-
-def subcategories_for(category: str) -> list[str]:
-    """Declared sub-category names under `category` in config.yaml (may be empty)."""
-    data = yaml.safe_load(CONFIG_PATH.read_text(encoding="utf-8")) or {}
-    for c in data.get("categories") or []:
-        if isinstance(c, dict) and c.get("name") == category:
-            return [
-                s["name"]
-                for s in (c.get("subcategories") or [])
-                if isinstance(s, dict) and s.get("name")
-            ]
-    return []
+# Sub-category lookup and validation live in resources.categories, shared with
+# add_resource and the issue-form validator so all three agree on what is legal.
 
 
 def _build_parser() -> argparse.ArgumentParser:
@@ -79,14 +65,15 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Known categories: {', '.join(known)}", file=sys.stderr)
         return 1
 
-    if args.subcategory and args.subcategory not in subcategories_for(args.category):
+    sub_error = subcategory_error(args.category, args.subcategory)
+    if sub_error:
         print(
-            f"note: sub-category {args.subcategory!r} is not declared under "
-            f"{args.category!r} in config.yaml; it will still render, but to fix its "
-            f"order run: make add-category CATEGORY={args.category!r} "
+            f"ERROR: {sub_error}\n"
+            f"Declare it first: make add-category CATEGORY={args.category!r} "
             f"SUB_CATEGORY={args.subcategory!r}",
             file=sys.stderr,
         )
+        return 1
 
     lines = read_lines()
     selector = f"id {args.id!r}" if args.id else f"link {args.link!r}"

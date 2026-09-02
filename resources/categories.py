@@ -47,6 +47,33 @@ def subcategory_names(category: str) -> list[str]:
     return []
 
 
+def subcategory_error(category: str, sub_category: str) -> str | None:
+    """Why `sub_category` cannot be used under `category`, or None if it can.
+
+    A blank sub-category is always fine. Assumes `category` has already been
+    checked against category_names(); callers report that separately so a bad
+    category does not also produce a confusing sub-category complaint.
+
+    Every path that files a resource shares this one message, so the issue bot
+    and the maintainer CLIs cannot disagree about what is allowed.
+    """
+    sub_category = (sub_category or "").strip()
+    if not sub_category:
+        return None
+    offered = subcategory_names(category)
+    if not offered:
+        return (
+            f"Invalid sub-category: {sub_category}. "
+            f"{category} has no sub-categories; leave it blank."
+        )
+    if sub_category not in offered:
+        return (
+            f"Invalid sub-category: {sub_category}. "
+            f"Must be one of: {', '.join(offered)} (or blank)"
+        )
+    return None
+
+
 def split_option(value: str) -> tuple[str, str]:
     """Split a dropdown option into (category, sub_category).
 

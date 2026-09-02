@@ -33,7 +33,7 @@ from pathlib import Path
 BASE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE))
 
-from resources.categories import category_names  # noqa: E402
+from resources.categories import category_names, subcategory_error  # noqa: E402
 
 LABELS = "resource-submission,validation-pending"
 CHECKLIST = (
@@ -105,6 +105,12 @@ def main(argv: list[str] | None = None) -> int:
     if args.category not in known:
         print(f"ERROR: category {args.category!r} is not declared in config.yaml.", file=sys.stderr)
         print(f"Known categories: {', '.join(known)}", file=sys.stderr)
+        return 1
+
+    # Fail here rather than opening an issue the validator would only reject.
+    sub_error = subcategory_error(args.category, args.subcategory)
+    if sub_error:
+        print(f"ERROR: {sub_error}", file=sys.stderr)
         return 1
 
     description = args.description

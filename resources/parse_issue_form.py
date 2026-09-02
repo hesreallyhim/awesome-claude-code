@@ -14,7 +14,7 @@ import re
 import sys
 from pathlib import Path
 
-from resources.categories import category_names, split_option, subcategory_names
+from resources.categories import category_names, split_option, subcategory_error
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 CSV_PATH = REPO_ROOT / "THE_RESOURCES_TABLE_NEW.csv"
@@ -101,22 +101,12 @@ def validate_parsed_data(data: dict[str, str]) -> tuple[bool, list[str], list[st
 
     # A sub-category must be one config.yaml declares under the chosen category.
     # The dropdown can only produce valid pairs, so a bad one means a hand-edited
-    # issue body; submissions are held to the offered set even though the CSV
-    # schema tolerates unlisted sub-categories from the maintainer-side tools.
-    # Skipped when the category itself is bad — one error is the useful one.
-    sub_category = data.get("subcategory", "").strip()
-    if sub_category and category in valid_categories:
-        offered = subcategory_names(category)
-        if not offered:
-            errors.append(
-                f"Invalid sub-category: {sub_category}. "
-                f"{category} has no sub-categories; leave it blank."
-            )
-        elif sub_category not in offered:
-            errors.append(
-                f"Invalid sub-category: {sub_category}. "
-                f"Must be one of: {', '.join(offered)} (or blank)"
-            )
+    # issue body. Skipped when the category itself is bad — one error is the
+    # useful one.
+    if category in valid_categories:
+        sub_error = subcategory_error(category, data.get("subcategory", ""))
+        if sub_error:
+            errors.append(sub_error)
 
     for field in ("link", "author_link"):
         value = data.get(field, "").strip()

@@ -12,6 +12,8 @@ import pytest
 BASE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE))
 
+from resources import add_resource  # noqa: E402
+from resources import categories as cats  # noqa: E402
 from resources import move_resource  # noqa: E402
 from scripts import manage_categories as mc  # noqa: E402
 from resources import parse_issue_form as pif  # noqa: E402
@@ -175,6 +177,61 @@ def test_every_form_option_passes_validation() -> None:
         assert ok, f"dropdown option {option!r} was rejected: {errors}"
 
 
+# --------------------------------------------------------------------------- #
+# Sub-category rules (shared by the issue validator and the maintainer CLIs)
+# --------------------------------------------------------------------------- #
+def test_subcategory_error_accepts_declared() -> None:
+    assert cats.subcategory_error("Agent Orchestration", "Ralph Wiggum") is None
+
+
+def test_subcategory_error_accepts_blank() -> None:
+    assert cats.subcategory_error("Status Lines", "") is None
+    assert cats.subcategory_error("Agent Orchestration", "   ") is None
+
+
+def test_subcategory_error_rejects_undeclared() -> None:
+    msg = cats.subcategory_error("Agent Orchestration", "Bogus")
+    assert msg and "Invalid sub-category: Bogus" in msg and "Ralph Wiggum" in msg
+
+
+def test_subcategory_error_rejects_when_category_has_none() -> None:
+    msg = cats.subcategory_error("Status Lines", "Anything")
+    assert msg and "has no sub-categories" in msg
+
+
+def test_add_resource_rejects_undeclared_subcategory(
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """Rejection happens before any CSV read or write."""
+    rc = add_resource.main(
+        [
+            "--display-name", "X",
+            "--category", "Agent Orchestration",
+            "--subcategory", "Bogus",
+            "--link", "https://github.com/x/y",
+            "--dry-run",
+        ]
+    )
+    assert rc == 1
+    assert "Invalid sub-category: Bogus" in capsys.readouterr().err
+
+
+def test_add_resource_accepts_declared_subcategory(
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    rc = add_resource.main(
+        [
+            "--display-name", "X",
+            "--category", "Agent Orchestration",
+            "--subcategory", "Dynamic Workflows",
+            "--link", "https://github.com/x/y-unlikely-to-exist",
+            "--dry-run",
+        ]
+    )
+    assert rc == 0
+    assert "[dry-run]" in capsys.readouterr().out
+
+
 def test_validate_requires_https_link() -> None:
     data = pif.parse_issue_body(ISSUE_BODY)
     data["link"] = "http://insecure.example"
@@ -315,8 +372,24 @@ def _move_csv(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
     csv_path.write_text(MOVE_CSV, encoding="utf-8")
     monkeypatch.setattr(resource_utils, "CSV_PATH", csv_path)  # read_lines/write_lines resolve it here
     monkeypatch.setattr(move_resource, "category_names", lambda: {"Old Cat", "Other Cat", "New Cat"})
-    monkeypatch.setattr(move_resource, "subcategories_for", lambda c: ["Sub"])
+    # Stand in for config.yaml: "Sub" is the only sub-category these categories offer.
+    monkeypatch.setattr(
+        move_resource,
+        "subcategory_error",
+        lambda category, sub: None if sub in ("", "Sub") else f"Invalid sub-category: {sub}.",
+    )
     return csv_path
+
+
+def test_move_resource_rejects_undeclared_subcategory(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
+) -> None:
+    csv_path = _move_csv(tmp_path, monkeypatch)
+    before = csv_path.read_text(encoding="utf-8")
+    rc = move_resource.main(["--id", "m1", "--category", "New Cat", "--subcategory", "Nope"])
+    assert rc == 1
+    assert "Invalid sub-category: Nope" in capsys.readouterr().err
+    assert csv_path.read_text(encoding="utf-8") == before  # nothing written
 
 
 def test_move_resource_changes_category_in_place(
