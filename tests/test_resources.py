@@ -67,6 +67,41 @@ def test_parse_issue_body_maps_fields() -> None:
     assert data["description"].startswith("A genuinely useful")
 
 
+def _with_category(value: str) -> str:
+    return ISSUE_BODY.replace("### Category\n\nStatus Lines", f"### Category\n\n{value}")
+
+
+def test_parse_issue_body_splits_composite_category() -> None:
+    """The dropdown offers a sub-category as one "Category > Sub-Category" option."""
+    data = pif.parse_issue_body(_with_category("Agent Orchestration > Ralph Wiggum"))
+    assert data["category"] == "Agent Orchestration"
+    assert data["subcategory"] == "Ralph Wiggum"
+
+
+def test_parse_issue_body_composite_survives_empty_subcategory_field() -> None:
+    """An empty Sub-Category field must not wipe what the dropdown carried."""
+    body = _with_category("Agent Orchestration > Ralph Wiggum")
+    assert "### Sub-Category" in body and "_No response_" in body
+    assert pif.parse_issue_body(body)["subcategory"] == "Ralph Wiggum"
+
+
+def test_parse_issue_body_explicit_subcategory_field_wins() -> None:
+    body = _with_category("Agent Orchestration > Ralph Wiggum").replace(
+        "### Sub-Category\n\n_No response_", "### Sub-Category\n\nDynamic Workflows"
+    )
+    data = pif.parse_issue_body(body)
+    assert data["category"] == "Agent Orchestration"
+    assert data["subcategory"] == "Dynamic Workflows"
+
+
+def test_validate_accepts_composite_category() -> None:
+    """The split has to happen before validation, or the category looks bogus."""
+    ok, errors, _ = pif.validate_parsed_data(
+        pif.parse_issue_body(_with_category("Agent Orchestration > Dynamic Workflows"))
+    )
+    assert ok and errors == []
+
+
 # --------------------------------------------------------------------------- #
 # Validation
 # --------------------------------------------------------------------------- #

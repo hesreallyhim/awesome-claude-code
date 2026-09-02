@@ -19,7 +19,11 @@
 #     still rendered (grouped under their sub-category name, after the listed ones).
 #   * The recommend-resource issue-form Category dropdown is generated from this file
 #     (scripts/sync_issue_form.py, run in pre-commit): every `submittable` category, in
-#     order. Never hand-edit that dropdown.
+#     order, each followed by its sub-categories as "Category > Sub-Category" options.
+#     GitHub issue forms have no dependent dropdowns, so the two levels are flattened
+#     into one list and split back apart by resources/parse_issue_form.py. A sub-category
+#     of a non-submittable category is omitted along with its parent. Never hand-edit
+#     that dropdown.
 
 # `prefix` is vestigial. IDs used to be minted as {prefix}-{hash}; they are now
 # opaque 8-char hex (see resources/ids.py), so nothing reads this key to build an

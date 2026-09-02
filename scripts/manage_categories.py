@@ -9,8 +9,10 @@ yaml.dump round-trip would discard them).
 Category edits also keep the recommend-resource issue-form Category dropdown
 (.github/ISSUE_TEMPLATE/recommend-resource.yml) in sync. That dropdown is fully
 derived from config.yaml: every `submittable` category, in config order (curated-only
-sections like "From Anthropic" set `submittable: false`). The same rendering runs in
-pre-commit via scripts/sync_issue_form.py. Pass --skip-issue-form to opt out here.
+sections like "From Anthropic" set `submittable: false`), each followed by its
+sub-categories rendered as "Category > Sub-Category" — see form_options(). The same
+rendering runs in pre-commit via scripts/sync_issue_form.py. Pass --skip-issue-form
+to opt out here.
 
 Regenerating README.md (Table of Contents, headings) is done afterwards by
 `generate_readme.py`; the `make {add,move,remove}-category` targets chain the
@@ -43,6 +45,15 @@ BASE = Path(__file__).resolve().parent.parent
 CONFIG_PATH = BASE / "config.yaml"
 CSV_PATH = BASE / "THE_RESOURCES_TABLE_NEW.csv"
 ISSUE_FORM_PATH = BASE / ".github" / "ISSUE_TEMPLATE" / "recommend-resource.yml"
+
+# Run as `python scripts/manage_categories.py`, sys.path[0] is scripts/, so the
+# repo root has to go on the path before `resources` resolves. Importing the
+# separator rather than restating it keeps the renderer and the issue parser
+# from drifting apart.
+if str(BASE) not in sys.path:
+    sys.path.insert(0, str(BASE))
+
+from resources.categories import CATEGORY_SEPARATOR  # noqa: E402
 
 # Line classifiers (indentation is significant in the config.yaml schema):
 #   "categories:"            top-level key,  col 0
@@ -401,19 +412,41 @@ def submittable_categories(config_text: str) -> list[str]:
     ]
 
 
+def form_options(config_text: str) -> list[str]:
+    """Every Category-dropdown option, in config order.
+
+    Each submittable category contributes its own name, immediately followed by
+    one "Category > Sub-Category" option per sub-category it declares, so a
+    submitter can file straight into a sub-section instead of leaving it to
+    triage. resources.parse_issue_form splits the composite back into the two
+    CSV columns.
+
+    Sub-categories of a non-submittable category are omitted with their parent.
+    """
+    options: list[str] = []
+    for category in existing_categories(config_text):
+        name = category.get("name")
+        if not name or not category.get("submittable", True):
+            continue
+        options.append(name)
+        for sub in category.get("subcategories") or []:
+            if isinstance(sub, dict) and sub.get("name"):
+                options.append(f"{name}{CATEGORY_SEPARATOR}{sub['name']}")
+    return options
+
+
 def render_form(form_text: str, config_text: str) -> str:
     """Return the issue form with its Category dropdown regenerated from config.
 
-    The options become exactly the submittable categories, in config order —
-    config.yaml is the single source of truth. Raises ConfigEditError if the form
-    has no `id: category` dropdown.
+    The options become exactly what form_options() derives from config.yaml —
+    every submittable category plus its sub-categories. config.yaml is the single
+    source of truth. Raises ConfigEditError if the form has no `id: category`
+    dropdown.
     """
     current_form_options(form_text)  # validate structure via YAML parse
     lines = form_text.splitlines(keepends=True)
     start, end, indent = _locate_options_lines(lines)
-    lines[start:end] = [
-        f"{indent}- {_yq(n)}\n" for n in submittable_categories(config_text)
-    ]
+    lines[start:end] = [f"{indent}- {_yq(n)}\n" for n in form_options(config_text)]
     return "".join(lines)
 
 

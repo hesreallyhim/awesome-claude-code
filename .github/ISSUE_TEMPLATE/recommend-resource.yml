@@ -40,6 +40,7 @@ body:
       options:
         - "Start Here"
         - "Documentation, Knowledge & Learning"
+        - "Documentation, Knowledge & Learning > Obsidian"
         - "Research & Scientific Inquiry"
         - "Providers, Runtime & Integration Infrastructure"
         - "Remote Control, Notifications & Voice I/O"
@@ -51,9 +52,14 @@ body:
         - "Infrastructure & DevOps"
         - "Security"
         - "Agent Orchestration"
+        - "Agent Orchestration > Ralph Wiggum"
+        - "Agent Orchestration > Dynamic Workflows"
         - "Skills"
         - "Memory & Context Persistence"
         - "Observability & Monitoring"
+        - "Observability & Monitoring > Session Monitors"
+        - "Observability & Monitoring > Usage & Cost"
+        - "Observability & Monitoring > Observability"
         - "Linting"
     validations:
       required: true

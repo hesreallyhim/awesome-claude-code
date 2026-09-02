@@ -14,7 +14,7 @@ import re
 import sys
 from pathlib import Path
 
-from resources.categories import category_names
+from resources.categories import category_names, split_option
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 CSV_PATH = REPO_ROOT / "THE_RESOURCES_TABLE_NEW.csv"
@@ -40,9 +40,22 @@ def parse_issue_body(issue_body: str) -> dict[str, str]:
         if "Display Name" in label:
             data["display_name"] = value
         elif "Sub-Category" in label or "Sub-category" in label:
-            data["subcategory"] = "" if (not value or value.lower() in NONE_VALUES) else value
+            explicit = "" if (not value or value.lower() in NONE_VALUES) else value
+            # A dedicated Sub-Category field wins when it says something, but an
+            # empty one must not wipe a sub-category the Category dropdown
+            # already carried as "Category > Sub-Category" (that field sorts
+            # after Category in the body, so it would otherwise clobber it).
+            if explicit or "subcategory" not in data:
+                data["subcategory"] = explicit
         elif "Category" in label:
-            data["category"] = value
+            # The dropdown flattens the two levels into one option, so
+            # "Agent Orchestration > Ralph Wiggum" arrives here rather than in a
+            # Sub-Category field. Split it so downstream sees the same two keys
+            # whichever way the issue was filled in. A bare category leaves any
+            # sub-category already parsed alone.
+            data["category"], sub_category = split_option(value)
+            if sub_category:
+                data["subcategory"] = sub_category
         elif "Author Name" in label:
             data["author_name"] = value
         elif "Author Link" in label:
