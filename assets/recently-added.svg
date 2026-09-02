@@ -10,6 +10,17 @@
   <g transform="translate(0, 0)">
     <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
     <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
+    <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">Dynamic Workflow Design P…</text>
+    <rect x="585" y="46" width="151" height="24" rx="12" fill="#21262d"/>
+    <text x="660.5" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Agent Orchestration</text>
+    <text x="64" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#8b949e">by Robert Allen</text>
+    <text x="64" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">A Skill based on [this](https://zircote.com/field-notes/dynamic-workflow-</text>
+    <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">patterns/) extremely well authored article about dynamic workflows.</text>
+    <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">Detailed explanations regarding the Workflow tool and sensible advice…</text>
+  </g>
+  <g transform="translate(800, 0)">
+    <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+    <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
     <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">TermaGITchi</text>
     <rect x="634" y="46" width="102" height="24" rx="12" fill="#21262d"/>
     <text x="685.0" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Status Lines</text>
@@ -18,7 +29,7 @@
     <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">status line, derived by hashing the session id, with one den per git</text>
     <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">worktree. Where other status-line faces react to what the agent is doing…</text>
   </g>
-  <g transform="translate(800, 0)">
+  <g transform="translate(1600, 0)">
     <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
     <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
     <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">tmux-claude-status-tabs</text>
@@ -29,7 +40,7 @@
     <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">animated spinner while it works, amber when it waits on input, red on a</text>
     <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">permission request, green when done. Event-driven via hooks with no…</text>
   </g>
-  <g transform="translate(1600, 0)">
+  <g transform="translate(2400, 0)">
     <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
     <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
     <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">seedeep</text>
@@ -40,7 +51,7 @@
     <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">during a turn, what the session is doing: each model call and tool, the</text>
     <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">context window filling, every subagent on its own window and its own…</text>
   </g>
-  <g transform="translate(2400, 0)">
+  <g transform="translate(3200, 0)">
     <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
     <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
     <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">SuperSEO Skills</text>
@@ -51,7 +62,7 @@
     <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">content briefs, article writing, E-E-A-T audits, semantic gap analysis,</text>
     <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">and more. Each skill fetches the target page and reads the top-ranking…</text>
   </g>
-  <g transform="translate(3200, 0)">
+  <g transform="translate(4000, 0)">
     <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
     <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
     <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">Diagram Design</text>
@@ -62,26 +73,16 @@
     <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">look stylish, this collection of skills produces a variety of editorial</text>
     <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">diagrams in the form of self-contained HTML + SVG. Although I never…</text>
   </g>
-  <g transform="translate(4000, 0)">
-    <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-    <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
-    <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">Beyond the Prompt: Claude…</text>
-    <rect x="648" y="46" width="88" height="24" rx="12" fill="#21262d"/>
-    <text x="692.0" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Start Here</text>
-    <text x="64" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#8b949e">by Arpan Patel</text>
-    <text x="64" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">This has what you need. Remarkably clear, information-dense, it's Claude</text>
-    <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">Code: the good parts, for beginners, advanced users, pets, anybody.</text>
-  </g>
   <g transform="translate(4800, 0)">
     <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
     <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
-    <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">TermaGITchi</text>
-    <rect x="634" y="46" width="102" height="24" rx="12" fill="#21262d"/>
-    <text x="685.0" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Status Lines</text>
-    <text x="64" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#8b949e">by TevvvB</text>
-    <text x="64" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">A Go CLI that gives each Claude Code session its own creature in the</text>
-    <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">status line, derived by hashing the session id, with one den per git</text>
-    <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">worktree. Where other status-line faces react to what the agent is doing…</text>
+    <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">Dynamic Workflow Design P…</text>
+    <rect x="585" y="46" width="151" height="24" rx="12" fill="#21262d"/>
+    <text x="660.5" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Agent Orchestration</text>
+    <text x="64" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#8b949e">by Robert Allen</text>
+    <text x="64" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">A Skill based on [this](https://zircote.com/field-notes/dynamic-workflow-</text>
+    <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">patterns/) extremely well authored article about dynamic workflows.</text>
+    <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">Detailed explanations regarding the Workflow tool and sensible advice…</text>
   </g>
     </g>
   </g>
