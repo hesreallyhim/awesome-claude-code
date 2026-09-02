@@ -56,6 +56,7 @@ The current iteration of the list, such as you see it today, was launched with t
 - [Security](#security)
 - [Agent Orchestration](#agent-orchestration)
   - [Ralph Wiggum](#ralph-wiggum)
+  - [Dynamic Workflows](#dynamic-workflows)
 - [Skills](#skills)
 - [Memory & Context Persistence](#memory--context-persistence)
 - [Observability & Monitoring](#observability--monitoring)
@@ -400,6 +401,11 @@ The current iteration of the list, such as you see it today, was launched with t
 
 - [ralph-orchestrator](https://github.com/mikeyobrien/ralph-orchestrator) by [mikeyobrien](https://github.com/mikeyobrien) - Ralph Orchestrator implements the simple but effective "Ralph Wiggum" technique for autonomous task completion, continuously running an AI agent against a prompt file until the task is marked as complete or limits are reached. This implementation provides a robust, well-tested, and feature-complete orchestration system for AI-driven development. Also cited in the Anthropic Ralph plugin documentation.  
 <img src="https://img.shields.io/github/created-at/mikeyobrien/ralph-orchestrator?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/mikeyobrien/ralph-orchestrator?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/mikeyobrien/ralph-orchestrator?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/mikeyobrien/ralph-orchestrator?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
+
+### Dynamic Workflows
+
+- [Dynamic Workflow Design Paterns](https://github.com/zircote/workflows-plugin) by [Robert Allen](https://github.com/zircote) - A Skill based on [this](https://zircote.com/field-notes/dynamic-workflow-patterns/) extremely well authored article about dynamic workflows. Detailed explanations regarding the Workflow tool and sensible advice covering a range of patterns and anti-patterns.  
+<img src="https://img.shields.io/github/created-at/zircote/workflows-plugin?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/zircote/workflows-plugin?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/zircote/workflows-plugin?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/zircote/workflows-plugin?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
 
 ## Skills
 
