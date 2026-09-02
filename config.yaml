@@ -15,11 +15,21 @@
 # Notes:
 #   * Within a category / sub-category, individual entries are sorted alphabetically
 #     by Display Name (case-insensitive) — that ordering is NOT configurable here.
-#   * Entries whose Sub-Category is non-empty but not listed under their category are
-#     still rendered (grouped under their sub-category name, after the listed ones).
+#   * A sub-category must be declared here before anything can be filed into it: the
+#     issue validator rejects an undeclared one (so it cannot be /approve'd), and so do
+#     add-resource, move-resource and submit-resource. Add it first with
+#     `make add-category CATEGORY="..." SUB_CATEGORY="..."`.
+#   * generate_readme.py itself stays lenient — a CSV row whose Sub-Category is not
+#     listed under its category is still rendered (grouped under its own name, after
+#     the listed ones) rather than dropped. That is a safety net for hand-edited rows,
+#     not a supported way in; nothing in the repo currently relies on it.
 #   * The recommend-resource issue-form Category dropdown is generated from this file
 #     (scripts/sync_issue_form.py, run in pre-commit): every `submittable` category, in
-#     order. Never hand-edit that dropdown.
+#     order, each followed by its sub-categories as "Category > Sub-Category" options.
+#     GitHub issue forms have no dependent dropdowns, so the two levels are flattened
+#     into one list and split back apart by resources/parse_issue_form.py. A sub-category
+#     of a non-submittable category is omitted along with its parent. Never hand-edit
+#     that dropdown.
 
 # `prefix` is vestigial. IDs used to be minted as {prefix}-{hash}; they are now
 # opaque 8-char hex (see resources/ids.py), so nothing reads this key to build an
@@ -60,6 +70,7 @@ categories:
     prefix: orchestration
     subcategories:
       - name: "Ralph Wiggum"
+      - name: "Dynamic Workflows"
   - name: "Skills"
     prefix: skill
   - name: "Memory & Context Persistence"

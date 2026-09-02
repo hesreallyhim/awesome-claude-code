@@ -20,6 +20,7 @@ import yaml
 BASE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE))
 
+from resources import categories  # noqa: E402
 from scripts import manage_categories as mc  # noqa: E402
 
 SAMPLE = """\
@@ -239,6 +240,51 @@ def test_render_form_missing_dropdown_raises() -> None:
 
 def test_submittable_categories_excludes_flagged() -> None:
     assert mc.submittable_categories(FORM_CONFIG) == ["Alpha", "Gamma", "Delta"]
+
+
+# Beta is curated-only and has a sub-category, so both must stay out of the form.
+SUBCAT_CONFIG = """\
+categories:
+  - name: "Alpha"
+    subcategories:
+      - name: "One"
+      - name: "Two"
+  - name: "Beta"
+    submittable: false
+    subcategories:
+      - name: "Hidden"
+  - name: "Gamma"
+"""
+
+
+def test_form_options_lists_subcategories_under_their_category() -> None:
+    assert mc.form_options(SUBCAT_CONFIG) == [
+        "Alpha",
+        "Alpha > One",
+        "Alpha > Two",
+        "Gamma",
+    ]
+
+
+def test_form_options_omits_subcategories_of_curated_only_category() -> None:
+    assert "Beta > Hidden" not in mc.form_options(SUBCAT_CONFIG)
+
+
+def test_form_options_matches_plain_categories_when_none_declared() -> None:
+    assert mc.form_options(FORM_CONFIG) == mc.submittable_categories(FORM_CONFIG)
+
+
+def test_render_form_writes_composite_options() -> None:
+    out = mc.render_form(FORM, SUBCAT_CONFIG)
+    assert mc.current_form_options(out) == ["Alpha", "Alpha > One", "Alpha > Two", "Gamma"]
+
+
+def test_form_options_round_trip_through_split_option() -> None:
+    """Every option the form offers must split back into a real config pair."""
+    for option in mc.form_options(SUBCAT_CONFIG):
+        category, sub = categories.split_option(option)
+        assert category in ("Alpha", "Gamma")
+        assert sub in ("", "One", "Two")
 
 
 def test_add_not_submittable_writes_flag() -> None:
