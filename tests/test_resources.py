@@ -13,6 +13,7 @@ BASE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE))
 
 from resources import move_resource  # noqa: E402
+from scripts import manage_categories as mc  # noqa: E402
 from resources import parse_issue_form as pif  # noqa: E402
 from resources import resource_utils  # noqa: E402
 from resources import submit_resource_issue  # noqa: E402
@@ -122,6 +123,56 @@ def test_validate_rejects_unknown_category() -> None:
     data["category"] = "Bogus"
     ok, errors, _ = pif.validate_parsed_data(data)
     assert not ok and any("Invalid category" in e for e in errors)
+
+
+def test_validate_rejects_unknown_subcategory() -> None:
+    """A sub-category the config does not declare must fail the submission."""
+    data = pif.parse_issue_body(_with_category("Agent Orchestration > Bogus Sub"))
+    ok, errors, _ = pif.validate_parsed_data(data)
+    assert not ok
+    assert any("Invalid sub-category: Bogus Sub" in e for e in errors)
+    assert any("Ralph Wiggum" in e for e in errors)  # names the offered set
+
+
+def test_validate_rejects_subcategory_on_category_with_none() -> None:
+    data = pif.parse_issue_body(ISSUE_BODY)
+    data["subcategory"] = "Anything"  # Status Lines declares no sub-categories
+    ok, errors, _ = pif.validate_parsed_data(data)
+    assert not ok and any("has no sub-categories" in e for e in errors)
+
+
+def test_validate_accepts_declared_subcategory() -> None:
+    ok, errors, _ = pif.validate_parsed_data(
+        pif.parse_issue_body(_with_category("Agent Orchestration > Ralph Wiggum"))
+    )
+    assert ok and errors == []
+
+
+def test_validate_allows_blank_subcategory() -> None:
+    ok, errors, _ = pif.validate_parsed_data(pif.parse_issue_body(ISSUE_BODY))
+    assert ok and errors == []
+
+
+def test_validate_reports_one_error_for_bad_category_with_subcategory() -> None:
+    """A bogus category shouldn't also emit a confusing sub-category error."""
+    data = pif.parse_issue_body(ISSUE_BODY)
+    data["category"] = "Bogus"
+    data["subcategory"] = "Whatever"
+    ok, errors, _ = pif.validate_parsed_data(data)
+    assert not ok
+    assert any("Invalid category" in e for e in errors)
+    assert not any("Invalid sub-category" in e for e in errors)
+
+
+def test_every_form_option_passes_validation() -> None:
+    """Contract: nothing the dropdown offers may be rejected by the validator."""
+    form_text = mc.ISSUE_FORM_PATH.read_text(encoding="utf-8")
+    config_text = mc.CONFIG_PATH.read_text(encoding="utf-8")
+    options = mc.form_options(config_text)
+    assert options == mc.current_form_options(form_text)  # form is in sync
+    for option in options:
+        ok, errors, _ = pif.validate_parsed_data(pif.parse_issue_body(_with_category(option)))
+        assert ok, f"dropdown option {option!r} was rejected: {errors}"
 
 
 def test_validate_requires_https_link() -> None:
