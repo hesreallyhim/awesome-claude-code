@@ -60,6 +60,7 @@ categories:
     prefix: orchestration
     subcategories:
       - name: "Ralph Wiggum"
+      - name: "Dynamic Workflows"
   - name: "Skills"
     prefix: skill
   - name: "Memory & Context Persistence"
