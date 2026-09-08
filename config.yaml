@@ -46,6 +46,8 @@ categories:
     prefix: docs
     subcategories:
       - name: "Obsidian"
+  - name: "Open Source Software"
+    prefix: open
   - name: "Research & Scientific Inquiry"
     prefix: research
   - name: "Providers, Runtime & Integration Infrastructure"

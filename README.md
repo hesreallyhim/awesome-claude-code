@@ -44,6 +44,7 @@ The current iteration of the list, such as you see it today, was launched with t
 - [From Anthropic](#from-anthropic)
 - [Documentation, Knowledge & Learning](#documentation-knowledge--learning)
   - [Obsidian](#obsidian)
+- [Open Source Software](#open-source-software)
 - [Research & Scientific Inquiry](#research--scientific-inquiry)
 - [Providers, Runtime & Integration Infrastructure](#providers-runtime--integration-infrastructure)
 - [Remote Control, Notifications & Voice I/O](#remote-control-notifications--voice-io)
@@ -182,6 +183,11 @@ The current iteration of the list, such as you see it today, was launched with t
 
 - [Librarian](https://github.com/ngmeyer/librarian-mcp) by [ngmeyer](https://github.com/ngmeyer) - A standalone MCP server that gives Claude a markdown second-brain over any Obsidian vault or folder of `.md` files, with trigram search, auto-wikilinks on write, and real graph analytics (Louvain communities, PageRank, shortest-path, D3 visualization). Runs entirely locally with no network calls or telemetry, productionizing the "LLM wiki" pattern.  
 <img src="https://img.shields.io/github/created-at/ngmeyer/librarian-mcp?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/ngmeyer/librarian-mcp?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/ngmeyer/librarian-mcp?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/ngmeyer/librarian-mcp?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
+
+## Open Source Software
+
+- [OSS Autopilot](https://github.com/costajohnt/oss-autopilot) by [John Costa](https://github.com/costajohnt) - End-to-end open source contribution manager. Discovers contributable issues across GitHub, tracks PRs across multiple repos, diagnoses CI failures, and drafts maintainer responses. Great collection of skills and agents for GitHub contributors, plus a sleek dashboard, standalone CLI and MCP server.  
+<img src="https://img.shields.io/github/created-at/costajohnt/oss-autopilot?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/costajohnt/oss-autopilot?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/costajohnt/oss-autopilot?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/costajohnt/oss-autopilot?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
 
 ## Research & Scientific Inquiry
 
@@ -420,9 +426,6 @@ The current iteration of the list, such as you see it today, was launched with t
 
 - [fable-mode](https://github.com/mrtooher/fable-mode) by [mrtooher](https://github.com/mrtooher) - A Claude skill that activates Fable-style agentic behavior: explicit multi-stage planning, sub-agent delegation, and self-verification.  
 <img src="https://img.shields.io/github/created-at/mrtooher/fable-mode?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/mrtooher/fable-mode?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/mrtooher/fable-mode?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/mrtooher/fable-mode?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
-
-- [OSS Autopilot](https://github.com/costajohnt/oss-autopilot) by [John Costa](https://github.com/costajohnt) - End-to-end open source contribution manager. Discovers contributable issues across GitHub, tracks PRs across multiple repos, diagnoses CI failures, and drafts maintainer responses. Great collection of skills and agents for GitHub contributors, plus a sleek dashboard, standalone CLI and MCP server.  
-<img src="https://img.shields.io/github/created-at/costajohnt/oss-autopilot?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/costajohnt/oss-autopilot?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/costajohnt/oss-autopilot?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/costajohnt/oss-autopilot?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
 
 - [Superpowers](https://github.com/obra/superpowers) by [Jesse Vincent](https://github.com/obra) - A strong bundle of core competencies for software engineering, with good coverage of a large portion of the SDLC - from planning, reviewing, testing, debugging... Well written, well organized, and adaptable. The author refers to them as "superpowers", but many of them are just consolidating engineering best practices - which sometimes does feel like a superpower when working with Claude Code.  
 <img src="https://img.shields.io/github/created-at/obra/superpowers?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/obra/superpowers?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/obra/superpowers?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/obra/superpowers?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
