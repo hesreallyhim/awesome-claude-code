@@ -85,9 +85,7 @@ categories:
       - name: "Observability"
   - name: "Configuration"
     prefix: config
-    description: "Tools for shaping Claude Code itself — client customization, and generating or syncing the rule and context files that steer it."
   - name: "Linting"
     prefix: lint
   - name: "Multi-Purpose"
     prefix: multi
-    description: "Grab-bag toolkits that span several of the categories above rather than sitting cleanly in any one of them."
