@@ -573,8 +573,6 @@ The current iteration of the list, such as you see it today, was launched with t
 
 ## Configuration
 
-Tools for shaping Claude Code itself — client customization, and generating or syncing the rule and context files that steer it.
-
 - [Rulesync](https://github.com/dyoshikawa/rulesync) by [dyoshikawa](https://github.com/dyoshikawa) - A Node.js CLI tool that automatically generates configs (rules, ignore files, MCP servers, commands, and subagents) for various AI coding agents. Rulesync can convert configs between Claude Code and other AI agents in both directions.  
 <img src="https://img.shields.io/github/created-at/dyoshikawa/rulesync?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/dyoshikawa/rulesync?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/dyoshikawa/rulesync?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/dyoshikawa/rulesync?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
 
@@ -603,7 +601,8 @@ Tools for shaping Claude Code itself — client customization, and generating or
 
 ## Multi-Purpose
 
-Grab-bag toolkits that span several of the categories above rather than sitting cleanly in any one of them.
-
 - [claude-code-tools](https://github.com/pchalasani/claude-code-tools) by [Prasad Chalasani](https://github.com/pchalasani) - Well-crafted toolset for session continuity, featuring skills/commands to avoid compaction and recover context across sessions with cross-agent handoff between Claude Code and Codex CLI. Includes a fast Rust/Tantivy-powered full-text session search (TUI for humans, skill/CLI for agents), tmux-cli skill + command for interacting with scripts and CLI agents, and safety hooks to block dangerous commands.  
 <img src="https://img.shields.io/github/created-at/pchalasani/claude-code-tools?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/pchalasani/claude-code-tools?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/pchalasani/claude-code-tools?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/pchalasani/claude-code-tools?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
+
+- [Everything Claude Code (ECC)](https://github.com/affaan-m/ECC) by [Affaan Mustafa](https://github.com/affaan-m) - Top-notch, well-written resources covering "just about everything" from core engineering domains. What's nice about this "everything-" store is most of the resources have significant standalone value and unlike some all-encompassing frameworks, although you can opt in to the author's own specific workflow patterns if you choose, the individual resources offer exemplary patterns in (just about) every Claude Code feature you can find (apologies to the Output Styles devotees).  
+<img src="https://img.shields.io/github/created-at/affaan-m/ECC?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/affaan-m/ECC?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/affaan-m/ECC?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/affaan-m/ECC?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
