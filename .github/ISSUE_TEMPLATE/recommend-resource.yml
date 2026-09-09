@@ -61,7 +61,9 @@ body:
         - "Observability & Monitoring > Session Monitors"
         - "Observability & Monitoring > Usage & Cost"
         - "Observability & Monitoring > Observability"
+        - "Configuration"
         - "Linting"
+        - "Multi-Purpose"
     validations:
       required: true
 

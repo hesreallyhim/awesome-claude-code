@@ -83,5 +83,9 @@ categories:
       - name: "Session Monitors"
       - name: "Usage & Cost"
       - name: "Observability"
+  - name: "Configuration"
+    prefix: config
   - name: "Linting"
     prefix: lint
+  - name: "Multi-Purpose"
+    prefix: multi
