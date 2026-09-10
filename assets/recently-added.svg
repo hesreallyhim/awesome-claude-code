@@ -10,6 +10,17 @@
   <g transform="translate(0, 0)">
     <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
     <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
+    <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">Claude Code Workflows</text>
+    <rect x="585" y="46" width="151" height="24" rx="12" fill="#21262d"/>
+    <text x="660.5" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Agent Orchestration</text>
+    <text x="64" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#8b949e">by Patrick Ellis</text>
+    <text x="64" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">Three review workflows developed at an AI-native startup: automated PR</text>
+    <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">code review (dual-loop, GitHub Actions plus slash command), security</text>
+    <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">review against OWASP Top 10 with severity-classified findings, and the…</text>
+  </g>
+  <g transform="translate(800, 0)">
+    <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+    <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
     <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">ClaudoPro Directory</text>
     <rect x="516" y="46" width="220" height="24" rx="12" fill="#21262d"/>
     <text x="626.0" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Documentation, Knowledge &amp; Le…</text>
@@ -18,7 +29,7 @@
     <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">subagent files, and more, covering a range of specialized tasks and</text>
     <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">workflows. Better resources than your average &quot;Claude-template-for-…</text>
   </g>
-  <g transform="translate(800, 0)">
+  <g transform="translate(1600, 0)">
     <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
     <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
     <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">Claude CodePro</text>
@@ -29,7 +40,7 @@
     <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">workflow, TDD enforcement, cross-session memory, semantic search, quality</text>
     <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">hooks, and modular rules integration. A bit &quot;heavyweight&quot; but feature-…</text>
   </g>
-  <g transform="translate(1600, 0)">
+  <g transform="translate(2400, 0)">
     <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
     <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
     <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">Claude Code PM</text>
@@ -40,7 +51,7 @@
     <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">Claude Code. Numerous specialized agents, slash-commands, and strong</text>
     <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">documentation.</text>
   </g>
-  <g transform="translate(2400, 0)">
+  <g transform="translate(3200, 0)">
     <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
     <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
     <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">The Ralph Playbook</text>
@@ -51,7 +62,7 @@
     <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">technique, featuring well-written theoretical commentary paired with</text>
     <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">practical guidelines and advice.</text>
   </g>
-  <g transform="translate(3200, 0)">
+  <g transform="translate(4000, 0)">
     <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
     <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
     <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">Ralph Wiggum Marketer</text>
@@ -62,27 +73,16 @@
     <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">integrating the Ralph loop with customized knowledge bases for market</text>
     <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">research agents. The agents do the research, Ralph writes the copy, you…</text>
   </g>
-  <g transform="translate(4000, 0)">
-    <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-    <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
-    <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">Fusion Harness</text>
-    <rect x="516" y="46" width="220" height="24" rx="12" fill="#21262d"/>
-    <text x="626.0" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Providers, Runtime &amp; Integrat…</text>
-    <text x="64" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#8b949e">by disler</text>
-    <text x="64" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">Fuses 2–5 frontier models instead of racing them — one architect, one</text>
-    <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">primary builder, and up to three secondary builders — giving N-way</text>
-    <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">opinions, debate, fusion, coordinated implementation, direct one-agent…</text>
-  </g>
   <g transform="translate(4800, 0)">
     <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
     <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
-    <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">ClaudoPro Directory</text>
-    <rect x="516" y="46" width="220" height="24" rx="12" fill="#21262d"/>
-    <text x="626.0" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Documentation, Knowledge &amp; Le…</text>
-    <text x="64" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#8b949e">by JSONbored</text>
-    <text x="64" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">Well-crafted, wide selection of Claude Code hooks, slash commands,</text>
-    <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">subagent files, and more, covering a range of specialized tasks and</text>
-    <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">workflows. Better resources than your average &quot;Claude-template-for-…</text>
+    <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">Claude Code Workflows</text>
+    <rect x="585" y="46" width="151" height="24" rx="12" fill="#21262d"/>
+    <text x="660.5" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Agent Orchestration</text>
+    <text x="64" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#8b949e">by Patrick Ellis</text>
+    <text x="64" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">Three review workflows developed at an AI-native startup: automated PR</text>
+    <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">code review (dual-loop, GitHub Actions plus slash command), security</text>
+    <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">review against OWASP Top 10 with severity-classified findings, and the…</text>
   </g>
     </g>
   </g>
