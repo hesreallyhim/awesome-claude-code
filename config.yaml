@@ -85,6 +85,8 @@ categories:
       - name: "Observability"
   - name: "Configuration"
     prefix: config
+  - name: "Testing"
+    prefix: testing
   - name: "Linting"
     prefix: lint
   - name: "Multi-Purpose"
