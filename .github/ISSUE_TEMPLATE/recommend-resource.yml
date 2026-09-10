@@ -62,6 +62,7 @@ body:
         - "Observability & Monitoring > Usage & Cost"
         - "Observability & Monitoring > Observability"
         - "Configuration"
+        - "Testing"
         - "Linting"
         - "Multi-Purpose"
     validations:
