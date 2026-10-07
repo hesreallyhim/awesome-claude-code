@@ -65,6 +65,7 @@ body:
         - "Testing"
         - "Linting"
         - "Multi-Purpose"
+        - "Lists & Collections"
     validations:
       required: true
 

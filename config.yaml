@@ -91,3 +91,5 @@ categories:
     prefix: lint
   - name: "Multi-Purpose"
     prefix: multi
+  - name: "Lists & Collections"
+    prefix: lists
