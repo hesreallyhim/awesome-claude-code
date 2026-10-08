@@ -10,6 +10,16 @@
   <g transform="translate(0, 0)">
     <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
     <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
+    <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">claude-code-zsh-completion</text>
+    <rect x="627" y="46" width="109" height="24" rx="12" fill="#21262d"/>
+    <text x="681.5" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Configuration</text>
+    <text x="64" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#8b949e">by 1160054</text>
+    <text x="64" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">Zsh completion for the Claude Code CLI. Dynamically completes sessions,</text>
+    <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">MCP servers, agents, models and plugins from the user's configuration.</text>
+  </g>
+  <g transform="translate(800, 0)">
+    <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+    <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
     <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">Awesome Claude Code Mods</text>
     <rect x="557" y="46" width="179" height="24" rx="12" fill="#21262d"/>
     <text x="646.5" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Lists &amp; Collections</text>
@@ -18,7 +28,7 @@
     <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">public GitHub repositories and shows what the validator reports each mod</text>
     <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">can read, write, run or send over the network.</text>
   </g>
-  <g transform="translate(800, 0)">
+  <g transform="translate(1600, 0)">
     <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
     <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
     <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">Agent Workbench</text>
@@ -29,7 +39,7 @@
     <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">and adds tabs, a browsable history of past sessions, conversations</text>
     <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">rendered as cards, a context meter, and the agent's multiple-choice…</text>
   </g>
-  <g transform="translate(1600, 0)">
+  <g transform="translate(2400, 0)">
     <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
     <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
     <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">ralph-harness</text>
@@ -39,7 +49,7 @@
     <text x="64" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">A CLI that runs Claude Code in a loop, with a fresh `claude -p` process</text>
     <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">for each iteration in a harness-owned git worktree.</text>
   </g>
-  <g transform="translate(2400, 0)">
+  <g transform="translate(3200, 0)">
     <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
     <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
     <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">localpr</text>
@@ -50,7 +60,7 @@
     <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">page: comment on any line, send comments in batches while Claude keeps</text>
     <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">working, ask Claude questions answered inline in the thread, and get each…</text>
   </g>
-  <g transform="translate(3200, 0)">
+  <g transform="translate(4000, 0)">
     <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
     <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
     <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">vir</text>
@@ -61,27 +71,15 @@
     <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">markdown notes (decisions, gotchas, patterns). Serves them via MCP and a</text>
     <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">CLAUDE.md block. Integrates with Obsidian.</text>
   </g>
-  <g transform="translate(4000, 0)">
-    <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-    <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
-    <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">Cooklang skills</text>
-    <rect x="676" y="46" width="60" height="24" rx="12" fill="#21262d"/>
-    <text x="706.0" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Skills</text>
-    <text x="64" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#8b949e">by dubadub</text>
-    <text x="64" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">Skills and an MCP server that let AI agents work with</text>
-    <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">[Cooklang](https://cooklang.org/) recipes: plain-text .cook recipes and</text>
-    <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">.menu meal plans in a folder you own.</text>
-  </g>
   <g transform="translate(4800, 0)">
     <rect x="40" y="24" width="720" height="192" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
     <g transform="translate(60, 46) scale(1.4)" fill="#58a6ff"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></g>
-    <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">Awesome Claude Code Mods</text>
-    <rect x="557" y="46" width="179" height="24" rx="12" fill="#21262d"/>
-    <text x="646.5" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Lists &amp; Collections</text>
-    <text x="64" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#8b949e">by Karan Bansal</text>
-    <text x="64" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">A community list of Claude Code mods built with function hooks. Scans</text>
-    <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">public GitHub repositories and shows what the validator reports each mod</text>
-    <text x="64" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">can read, write, run or send over the network.</text>
+    <text x="98" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#58a6ff">claude-code-zsh-completion</text>
+    <rect x="627" y="46" width="109" height="24" rx="12" fill="#21262d"/>
+    <text x="681.5" y="62" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">Configuration</text>
+    <text x="64" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#8b949e">by 1160054</text>
+    <text x="64" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">Zsh completion for the Claude Code CLI. Dynamically completes sessions,</text>
+    <text x="64" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#c9d1d9">MCP servers, agents, models and plugins from the user's configuration.</text>
   </g>
     </g>
   </g>
