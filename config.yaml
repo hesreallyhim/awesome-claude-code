@@ -46,6 +46,7 @@ categories:
     prefix: docs
     subcategories:
       - name: "Obsidian"
+      - name: "Data Visualization"
   - name: "Open Source Software"
     prefix: open
   - name: "Research & Scientific Inquiry"
