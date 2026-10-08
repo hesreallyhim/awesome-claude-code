@@ -44,6 +44,7 @@ The current iteration of the list, such as you see it today, was launched with t
 - [From Anthropic](#from-anthropic)
 - [Documentation, Knowledge & Learning](#documentation-knowledge--learning)
   - [Obsidian](#obsidian)
+  - [Data Visualization](#data-visualization)
 - [Open Source Software](#open-source-software)
 - [Research & Scientific Inquiry](#research--scientific-inquiry)
 - [Providers, Runtime & Integration Infrastructure](#providers-runtime--integration-infrastructure)
@@ -193,6 +194,11 @@ The current iteration of the list, such as you see it today, was launched with t
 
 - [vir](https://github.com/djolex999/vir) by [Djordje Marković](https://github.com/djolex999) - Distills the Claude Code transcripts already on your disk into typed markdown notes (decisions, gotchas, patterns). Serves them via MCP and a CLAUDE.md block. Integrates with Obsidian.  
 <img src="https://img.shields.io/github/created-at/djolex999/vir?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/djolex999/vir?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/djolex999/vir?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/djolex999/vir?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
+
+### Data Visualization
+
+- [Archify](https://github.com/tt-a1i/archify) by [tt-a1i](https://github.com/tt-a1i) - An Agent Skill for Claude Code that generates interactive architecture, workflow, sequence, data-flow, and lifecycle diagrams as standalone HTML. Typed JSON, local renderers, and delivery checks support source-linked node details, path tracing, themes, and export.  
+<img src="https://img.shields.io/github/created-at/tt-a1i/archify?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/tt-a1i/archify?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/tt-a1i/archify?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/tt-a1i/archify?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
 
 ## Open Source Software
 
