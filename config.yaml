@@ -74,6 +74,7 @@ categories:
     subcategories:
       - name: "Ralph Wiggum"
       - name: "Dynamic Workflows"
+      - name: "SDLC"
   - name: "Skills"
     prefix: skill
   - name: "Memory & Context Persistence"

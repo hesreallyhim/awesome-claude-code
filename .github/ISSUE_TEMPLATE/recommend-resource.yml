@@ -56,6 +56,7 @@ body:
         - "Agent Orchestration"
         - "Agent Orchestration > Ralph Wiggum"
         - "Agent Orchestration > Dynamic Workflows"
+        - "Agent Orchestration > SDLC"
         - "Skills"
         - "Memory & Context Persistence"
         - "Observability & Monitoring"
