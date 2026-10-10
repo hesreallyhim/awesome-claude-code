@@ -59,6 +59,7 @@ The current iteration of the list, such as you see it today, was launched with t
 - [Agent Orchestration](#agent-orchestration)
   - [Ralph Wiggum](#ralph-wiggum)
   - [Dynamic Workflows](#dynamic-workflows)
+  - [SDLC](#sdlc)
 - [Skills](#skills)
 - [Memory & Context Persistence](#memory--context-persistence)
 - [Observability & Monitoring](#observability--monitoring)
@@ -572,6 +573,11 @@ The current iteration of the list, such as you see it today, was launched with t
 
 - [Dynamic Workflow Design Patterns](https://github.com/zircote/workflows-plugin) by [Robert Allen](https://github.com/zircote) - A Skill based on [this](https://zircote.com/field-notes/dynamic-workflow-patterns/) extremely well authored article about dynamic workflows. Detailed explanations regarding the Workflow tool and sensible advice covering a range of patterns and anti-patterns.  
 <img src="https://img.shields.io/github/created-at/zircote/workflows-plugin?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/zircote/workflows-plugin?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/zircote/workflows-plugin?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/zircote/workflows-plugin?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
+
+### SDLC
+
+- [OctoShell](https://github.com/savvasioakeim/OctoShell) by [savvasioakeim](https://github.com/savvasioakeim) - Terminal workspace for Windows and macOS, built on command blocks, that runs Claude Code in git worktrees, one per task, each with its own shell and dev server. Features include Strategy Mode (several agents plan a change before writing code), a Reviewer agent that reads each change for regressions, and QA Mode (checklist over the running app).  
+<img src="https://img.shields.io/github/created-at/savvasioakeim/OctoShell?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/savvasioakeim/OctoShell?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/savvasioakeim/OctoShell?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/savvasioakeim/OctoShell?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
 
 ## Skills
 
