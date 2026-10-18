@@ -45,7 +45,7 @@ The current iteration of the list, such as you see it today, was launched with t
 - [Documentation, Knowledge & Learning](#documentation-knowledge--learning)
   - [Obsidian](#obsidian)
   - [Data Visualization](#data-visualization)
-- [Open Source Software](#open-source-software)
+- [Open Source Contribution & Maintenance](#open-source-contribution--maintenance)
 - [Research & Scientific Inquiry](#research--scientific-inquiry)
 - [Providers, Runtime & Integration Infrastructure](#providers-runtime--integration-infrastructure)
 - [Remote Control, Notifications & Voice I/O](#remote-control-notifications--voice-io)
@@ -208,7 +208,7 @@ The current iteration of the list, such as you see it today, was launched with t
 - [Archify](https://github.com/tt-a1i/archify) by [tt-a1i](https://github.com/tt-a1i) - An Agent Skill for Claude Code that generates interactive architecture, workflow, sequence, data-flow, and lifecycle diagrams as standalone HTML. Typed JSON, local renderers, and delivery checks support source-linked node details, path tracing, themes, and export.  
 <img src="https://img.shields.io/github/created-at/tt-a1i/archify?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/tt-a1i/archify?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/tt-a1i/archify?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/tt-a1i/archify?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
 
-## Open Source Software
+## Open Source Contribution & Maintenance
 
 - [Netresearch Agentic Skills](https://github.com/netresearch/claude-code-marketplace) by [Netresearch](https://github.com/netresearch) - Skills for assessing and enhancing software projects to meet enterprise-grade standards for security, quality, and automation. Strong collection covering a range of development frameworks, enterprise-readiness, security, GitHub release management, branding, code review - really useful and well curated.  
 <img src="https://img.shields.io/github/created-at/netresearch/claude-code-marketplace?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/netresearch/claude-code-marketplace?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/netresearch/claude-code-marketplace?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/netresearch/claude-code-marketplace?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">

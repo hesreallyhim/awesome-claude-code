@@ -47,7 +47,7 @@ categories:
     subcategories:
       - name: "Obsidian"
       - name: "Data Visualization"
-  - name: "Open Source Software"
+  - name: "Open Source Contribution & Maintenance"
     prefix: open
   - name: "Research & Scientific Inquiry"
     prefix: research
