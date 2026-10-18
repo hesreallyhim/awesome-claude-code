@@ -51,6 +51,7 @@ The current iteration of the list, such as you see it today, was launched with t
 - [Remote Control, Notifications & Voice I/O](#remote-control-notifications--voice-io)
 - [Alternative Clients](#alternative-clients)
 - [Status Lines](#status-lines)
+- [Mods](#mods)
 - [Design & UI/UX](#design--uiux)
 - [Writing & Prose Quality](#writing--prose-quality)
 - [Creative Media](#creative-media)
@@ -350,6 +351,11 @@ The current iteration of the list, such as you see it today, was launched with t
 
 - [tmux-claude-status-tabs](https://github.com/LiveNL/tmux-claude-status-tabs) by [LiveNL](https://github.com/LiveNL) - Shows each Claude Code session's state in the tmux tab bar, per window: an animated spinner while it works, amber when it waits on input, red on a permission request, green when done. Event-driven via hooks with no polling; catches unreported transitions (Esc, permission grants, stop-hook continuations) with transcript watchers. 260+ test assertions run in CI.  
 <img src="https://img.shields.io/github/created-at/LiveNL/tmux-claude-status-tabs?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/LiveNL/tmux-claude-status-tabs?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/LiveNL/tmux-claude-status-tabs?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/LiveNL/tmux-claude-status-tabs?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
+
+## Mods
+
+- [prismantis](https://github.com/NahumLitvin/prismantis) by [Nahum Litvin](https://github.com/NahumLitvin) - Colorful, themeable Claude Code replies: tables, code, diagrams, charts and tool rows in over a dozen themes. Enhances mod development experience.  
+<img src="https://img.shields.io/github/created-at/NahumLitvin/prismantis?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="created">&nbsp;&nbsp;<img src="https://img.shields.io/github/last-commit/NahumLitvin/prismantis?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="last-commit">&nbsp;&nbsp;<img src="https://img.shields.io/github/license/NahumLitvin/prismantis?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="license">&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/NahumLitvin/prismantis?style=flat-square&labelColor=2b2b2b&color=6b6b6b" alt="stars">
 
 ## Design & UI/UX
 
