@@ -59,6 +59,8 @@ categories:
     prefix: clients
   - name: "Status Lines"
     prefix: statusline
+  - name: "Mods"
+    prefix: mods
   - name: "Design & UI/UX"
     prefix: design
   - name: "Writing & Prose Quality"
